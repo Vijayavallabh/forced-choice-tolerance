@@ -2,7 +2,8 @@
 """Generate the manuscript's figures from the shipped results.
 
 Every number drawn here is read from a file in ``results/``; nothing is typed
-into this script. ``validate_artifact.py`` re-reads the same files and checks
+into this script except the definitions Figure 2's schematic states.
+``validate_artifact.py`` re-reads the same files and checks
 them against the numbers typed in ``main.tex``, so a figure and the text cannot
 disagree without one of the two failing.
 
@@ -10,7 +11,9 @@ One command, ``python3 make_figures.py`` from any directory, writes every figure
 
     figures/overview.{pdf,png}       Figure 1 as the paper prints it: panels (a)-(b)
     figures/overview_full.{pdf,png}  Figure 1 with all four panels, for the poster
-    figures/withdata.{pdf,png}       Figure 2
+    figures/design.{pdf,png}         Figure 2: what is compared, one answer graded two ways
+    figures/cost.{pdf,png}           Figure 3: who bears the cost of a hidden rank, and what each design trades
+    figures/withdata.{pdf,png}       Figure 4
 
 Canvases are the NeurIPS text width, 5.5 in, and the paper includes each at
 ``width=\\linewidth`` with no trim, so the absolute font sizes below are the
@@ -38,8 +41,11 @@ plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 7.5,
                      # read when a patch is made, so a bar's legend handle is hatched alike
                      "hatch.linewidth": 0.5})
 
-BLUE, GREEN, RUST, GREY = "#35618d", "#327969", "#925738", "#6b6b6b"
-PURPLE, PALE = "#7a4d8c", "#d9d9d9"
+# BLUE, RUST and MID pass the dataviz palette check on a white page (validate_palette.js, light mode):
+# adjacent pairs differ by at least deltaE 12.0 under deuteranopia and 15.6 with full colour vision; MID is
+# the neutral "released" class and carries no hue on purpose. Marker shapes encode the same classes again.
+BLUE, GREEN, RUST, GREY = "#2f6aa8", "#327969", "#b5562b", "#6b6b6b"
+PURPLE, PALE, MID = "#7a4d8c", "#d9d9d9", "#8c8c8c"
 WIDTH = 5.5
 SMALL = 6.5  # the smallest text in the paper's figures, in points as printed
 
@@ -153,11 +159,11 @@ def panel_b(ax):
     spines(ax)
 
 
-def panel_c(ax):
+def panel_c(ax, heading="(c) The cost a grader bears", releases=False):
     """(c) how much of the nearest-option rule's cost of hiding the rank each grading bears: its gain
     on the moved keys as a share of the rule's on the same answers, against its proximity weight
     (Remark 1); code-free graders filled, BixBench's graders with the notebook open, the "none
-    within 5%" option a cross"""
+    within 5%" option a cross; with ``releases``, a second legend names the two colours"""
     cost = load("results/proximity_cost.json")
     STYLE = {"code-free": dict(marker="o", mfc=None), "notebook": dict(marker="o", mfc="white"),
              "none within 5%": dict(marker="x", mfc=None)}
@@ -177,10 +183,18 @@ def panel_c(ax):
     ax.set_ylabel("share of the rule's gain\non the moved keys")
     ax.plot([], [], "o", color="black", ms=3.4, label="code-free")
     ax.plot([], [], "o", color="black", mfc="white", mew=0.8, ms=3.4, label="with the notebook")
-    ax.plot([], [], "x", color="black", ms=3.6, label="none within 5%")
+    ax.plot([], [], "x", color="black", ms=3.6, label="within-5% option" if releases else "none within 5%")
     # 5.9 pt: at 6.5 its last entry runs into the highest code-free grading (poster only)
-    ax.legend(frameon=False, loc="upper left", handlelength=0.8, borderaxespad=0.0, fontsize=5.9)
-    title(ax, "(c) The cost a grader bears")
+    kinds = ax.legend(frameon=False, loc="upper left", handlelength=0.8, borderaxespad=0.0,
+                      fontsize=SMALL if releases else 5.9)
+    if releases:
+        ax.add_artist(kinds)
+        ax.text(0.80, 0.70, r"share $=\lambda$", fontsize=SMALL, rotation=33, ha="center", va="bottom")
+        handles = [Line2D([], [], marker="s", ls="", ms=3.6, color=RUST, label="v1.0, published runs"),
+                   Line2D([], [], marker="s", ls="", ms=3.6, color=BLUE, label="v1.5 runs")]
+        ax.legend(handles=handles, frameon=False, loc="lower right", handlelength=0.8, borderaxespad=0.0,
+                  fontsize=SMALL)
+    title(ax, heading)
     spines(ax)
 
 
@@ -240,7 +254,105 @@ save(overview(TOP_HEIGHT, "ab"), "overview")
 save(overview(FULL_HEIGHT, "abcd"), "overview_full")
 
 # ---------------------------------------------------------------------------
-# Figure 2: with the data, the options decide the reading
+# Figure 2: what is compared -- one answer, graded by the tolerance and through three option sets
+# ---------------------------------------------------------------------------
+from matplotlib.patches import FancyBboxPatch  # noqa: E402
+
+LINE = 2.35  # one 6.5-pt line, in the schematic's units (100 across the 5.5-in canvas)
+
+
+def box(ax, x, y, w, h, heading, lines, fill="white"):
+    """A rounded box with a bold heading and its lines, top-aligned."""
+    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0,rounding_size=1.2", fc=fill,
+                                ec=GREY, lw=0.7))
+    top = y + h - 1.1
+    ax.text(x + 1.2, top, heading, fontsize=7.0, fontweight="bold", va="top")
+    for i, line in enumerate(lines):
+        ax.text(x + 1.2, top - 2.7 - LINE * i, line, fontsize=SMALL, va="top", color="#222222")
+
+
+def arrow(ax, start, end):
+    ax.annotate("", xy=end, xytext=start,
+                arrowprops=dict(arrowstyle="-|>", lw=0.7, color="black", shrinkA=0, shrinkB=0,
+                                mutation_scale=7))
+
+
+fig = plt.figure(figsize=(WIDTH, 1.5))
+ax = fig.add_axes([0, 0, 1, 1])
+ax.set_xlim(0, 100)
+ax.set_ylim(0, 100 * 1.5 / WIDTH)
+ax.axis("off")
+box(ax, 0.3, 3.0, 19.8, 20.0, "One run",
+    ["BixBench's agent", "analyses the data,", "never sees the", "options and submits", "a free-text answer.",
+     "$a$: its last number"])
+box(ax, 24.0, 19.0, 40.0, 8.0, "Reference: a tolerance",
+    [r"correct when $|a-y|\leq 0.05\,|y|$, $y$ the key"], fill="#f3f3f3")
+box(ax, 24.0, 0.3, 40.0, 16.7, "Through options, after the run",
+    ["$R$ released; $P$ redrawn, key's rank kept;", "$U$ redrawn, key's rank drawn uniformly",
+     "graders: MCQ grader with the notebook,", "forced or with refusal; code-free;",
+     "within-5% option; nearest-option rule"], fill="#f3f3f3")
+box(ax, 67.5, 17.0, 32.2, 10.0, "Excess over the tolerance",
+    ["graded correct through $R$", "minus within 5% (Table 1)"])
+box(ax, 67.5, 0.3, 32.2, 12.0, "Cost of hiding the rank",
+    ["$U-P$ on the keys that $U$", "moves from bracketed to", "extreme (Table 2, Figure 3)"])
+arrow(ax, (20.1, 19.0), (24.0, 22.5))
+arrow(ax, (20.1, 8.0), (24.0, 8.0))
+arrow(ax, (64.0, 23.0), (67.5, 23.0))
+arrow(ax, (64.0, 13.5), (67.5, 19.0))
+arrow(ax, (64.0, 6.0), (67.5, 6.0))
+save(fig, "design")
+
+# ---------------------------------------------------------------------------
+# Figure 3: who bears the cost of a hidden rank, and what each design of the options trades
+# ---------------------------------------------------------------------------
+from option_design import TABLE as DESIGNS  # Table 37's rows: (design, its distractors, its key rank)
+
+design = load("results/option_design.json")
+RANK_COLOUR = {"released": MID, "middle": RUST, "uniform": BLUE}
+SPACING_MARKER = {"$R$, released": "s", "$P$": "s", "$U$": "s", "redrawn": "o", "a fifth apart": "D",
+                  "a tenth apart": "D", "agents' errors": "^"}
+
+
+def panel_designs(ax):
+    """(b) every design of v1.5's numeric options (Table 37): the rank rule's gain on held-out capsules
+    against the share of misses the nearest-option rule accepts. Colour is the key's rank policy and shape
+    how the distractors are written; each rank policy is labelled on the plot, so no class rests on colour
+    alone"""
+    rel = design["releases"]["v1.5"]["designs"]
+    points = []
+    for name, distractors, rank in DESIGNS:
+        e = rel[name]
+        x, y = e["leak"]["held_out"], e["rule"]["all"]["misses"]["accepted"]
+        points.append((x, y))
+        ax.plot(x, y, SPACING_MARKER[distractors], ms=4.0, color=RANK_COLOUR[rank], mec="black", mew=0.4,
+                zorder=3)
+    xs, ys = zip(*points)
+    lo_x, hi_y = min(xs) - 3, max(ys) + 4
+    # the corner a design would need, little rank leak and few misses accepted: none lies in it
+    ax.fill_between([lo_x, 5], 0, 10, color=PALE, alpha=0.6, lw=0, zorder=1)
+    ax.text(lo_x + 0.8, 0.8, "no design\nreaches here", fontsize=SMALL, color="#444444", va="bottom")
+    for x, y, text, colour, ha in ((lo_x + 0.8, 27.2, "rank uniform", BLUE, "left"),
+                                   (21.0, 9.4, "rank off the extremes", RUST, "center"),
+                                   (23.0, 18.2, "rank as released", MID, "center"),
+                                   (16.2, 4.4, "a fifth or a\ntenth apart", RUST, "left")):
+        ax.text(x, y, text, fontsize=SMALL, color=colour, ha=ha, va="center", fontweight="bold")
+    ax.set_xlim(lo_x, max(xs) + 4.5)
+    ax.set_ylim(0, hi_y)
+    ax.set_xlabel("rank leak on held-out capsules (points)")
+    ax.set_ylabel("misses the nearest-option\nrule accepts (%)")
+    title(ax, "(b) What each design trades")
+    spines(ax)
+
+
+fig = plt.figure(figsize=(WIDTH, 2.3))
+grid = fig.add_gridspec(1, 2, width_ratios=[1.0, 1.0], left=0.135, right=0.99, top=0.90, bottom=0.17,
+                        wspace=0.44)
+panel_c(fig.add_subplot(grid[0]), heading="(a) The cost a grader bears", releases=True)
+panel_designs(fig.add_subplot(grid[1]))
+save(fig, "cost")
+
+# ---------------------------------------------------------------------------
+# Figure 4: with the data, the options decide the reading
 # ---------------------------------------------------------------------------
 withdata = load("results/bixbench_withdata.json")
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(WIDTH, 2.25), gridspec_kw={"width_ratios": [0.9, 1.1]})

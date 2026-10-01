@@ -307,7 +307,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   on 24.9% of misses and accept 30.1% of those on which they select one. The
   split is exact (the script asserts it); the omission-aware variant scores an
   unselected grade and an empty answer as omissions.
-- **Other designs** (`option_design.py`, Section 5, Tables 37 and 38; not
+- **Other designs** (`option_design.py`, Section 4.5, Tables 37 and 38; not
   registered). Every numeric item's distractors rebuilt by the generator of P
   and U for k = 4, 6, 8, 10 options with the key's rank uniform over all or over
   the middle ranks, at fixed spacings, and from other agents' wrong numbers
