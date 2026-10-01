@@ -2800,17 +2800,17 @@ the shipped trajectories.
 ## PDF
 
 - Official NeurIPS 2026 style, workshop mode with the `final` option, unmodified geometry.
-- **9 main-text pages** against a nine-page limit: the main text ends nine lines
-  down page 9 (thirteen with the acknowledgments), the references start on the
-  same page and run to page 12, and the eight appendices run from page 13 to
-  page 44, 44 pages in total.
+- **9 main-text pages** against a nine-page limit: the main text ends sixteen
+  lines down page 9 (twenty with the acknowledgments), the references start on
+  the same page and run to page 13, and the eight appendices run from page 14 to
+  page 45, 45 pages in total.
 - No undefined references or citations, no missing glyphs, no overfull boxes;
   all fonts embedded and subset, none of them Type 3.
 - PDF metadata names the title and the author (`pdftitle`, `pdfauthor`), as the camera-ready should.
 - Non-blocking toolchain warnings in `build/main.log` (tectonic's XeTeX engine):
   `cmap` exits ("pdftex not detected"), `inputenc` is ignored, 23 `[h]` floats
-  become `[ht]`, and 28 underfull boxes, 18 of them in Table 21's narrow columns
-  and three at float pages. No overfull boxes. Full logs retained in `build/`.
+  become `[ht]`, and 31 underfull boxes, 18 of them in Table 21's narrow columns
+  and four at float pages. No overfull boxes. Full logs retained in `build/`.
 - Each appendix's tables print before the next appendix's heading: a
   `\FloatBarrier` (`placeins`) precedes every appendix after the first. Without
   it, tables of Appendices B to F floated into the next appendix (Appendix D's
