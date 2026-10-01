@@ -1,0 +1,10 @@
+Phylo, BixBench-Verified-50, dataset card at https://huggingface.co/datasets/phylobio/BixBench-Verified-50,
+retrieved 25 Sep 2026 (the card is public; the files are gated). Verbatim excerpts; table cells joined by spaces.
+
+[curation] Questions were reviewed together with several domain experts to ensure correctness of ground truth, sufficiency of provided context, and clarity of the expected answer.
+
+[revision notes] Of the 50 questions, 17 were revised from the original BixBench training set.
+
+[dataset statistics] Total questions 50 Unique data capsules 33 Evaluation modes llm_verifier (20), str_verifier (17), range_verifier (13)
+
+[schema] distractors list Incorrect answer choices (for multiple-choice evaluation)

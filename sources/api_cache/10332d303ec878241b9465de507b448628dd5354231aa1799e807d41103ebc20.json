@@ -1,0 +1,1088 @@
+{
+  "url": "https://api.crossref.org/works/10.1038/s41467-022-29205-8",
+  "retrieved_at": "2026-09-16T15:26:15.163973+00:00",
+  "status": 200,
+  "body": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            16
+          ]
+        ],
+        "date-time": "2026-09-16T02:06:54Z",
+        "timestamp": 1789524414680,
+        "version": "build-2803163510"
+      },
+      "reference-count": 67,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2022-03-25T00:00:00Z",
+            "timestamp": 1648166400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                3,
+                25
+              ]
+            ],
+            "date-time": "2022-03-25T00:00:00Z",
+            "timestamp": 1648166400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Commun"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    The cellular processes that govern tumor resistance to immunotherapy remain poorly understood. To gain insight into these processes, here we perform a genome-scale CRISPR activation screen for genes that enable human melanoma cells to evade cytotoxic T cell killing. Overexpression of four top candidate genes (\n                    <jats:italic>CD274</jats:italic>\n                    (PD-L1),\n                    <jats:italic>MCL1</jats:italic>\n                    ,\n                    <jats:italic>JUNB</jats:italic>\n                    , and\n                    <jats:italic>B3GNT2</jats:italic>\n                    ) conferred resistance in diverse cancer cell types and mouse xenografts. By investigating the resistance mechanisms, we find that MCL1 and JUNB modulate the mitochondrial apoptosis pathway.\n                    <jats:italic>JUNB</jats:italic>\n                    encodes a transcription factor that downregulates FasL and TRAIL receptors, upregulates the MCL1 relative BCL2A1, and activates the NF-\u03baB pathway.\n                    <jats:italic>B3GNT2</jats:italic>\n                    encodes a poly-N-acetyllactosamine synthase that targets &gt;10 ligands and receptors to disrupt interactions between tumor and T cells and reduce T cell activation. Inhibition of candidate genes sensitized tumor models to T cell cytotoxicity. Our results demonstrate that systematic gain-of-function screening can elucidate resistance pathways and identify potential targets for cancer immunotherapy.\n                  </jats:p>",
+      "DOI": "10.1038/s41467-022-29205-8",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            25
+          ]
+        ],
+        "date-time": "2022-03-25T07:03:05Z",
+        "timestamp": 1648191785000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 117,
+      "title": [
+        "CRISPR activation screen identifies BCL-2 proteins and B3GNT2 as drivers of cancer resistance to T cell-mediated cytotoxicity"
+      ],
+      "prefix": "10.1038",
+      "volume": "13",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8133-8510",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Joung",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul C.",
+          "family": "Kirchgatterer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ankita",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jang H.",
+          "family": "Cho",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4201-1061",
+          "authenticated-orcid": false,
+          "given": "Suchita P.",
+          "family": "Nety",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rebecca C.",
+          "family": "Larson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rhiannon K.",
+          "family": "Macrae",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9143-6296",
+          "authenticated-orcid": false,
+          "given": "Rebecca",
+          "family": "Deasy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuen-Yi",
+          "family": "Tseng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7578-0393",
+          "authenticated-orcid": false,
+          "given": "Marcela V.",
+          "family": "Maus",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0178-7995",
+          "authenticated-orcid": false,
+          "given": "Feng",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            25
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "29205_CR1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1823",
+          "DOI": "10.1056/NEJMoa1606774",
+          "volume": "375",
+          "author": "M Reck",
+          "year": "2016",
+          "unstructured": "Reck, M. et al. Pembrolizumab versus chemotherapy for PD-L1-positive non-small-cell lung cancer. N. Engl. J. Med. 375, 1823\u20131833 (2016).",
+          "journal-title": "N. Engl. J. Med."
+        },
+        {
+          "key": "29205_CR2",
+          "doi-asserted-by": "crossref",
+          "first-page": "321",
+          "DOI": "10.1038/nature21349",
+          "volume": "541",
+          "author": "DS Chen",
+          "year": "2017",
+          "unstructured": "Chen, D. S. & Mellman, I. Elements of cancer immunity and the cancer-immune set point. Nature 541, 321\u2013330 (2017).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR3",
+          "doi-asserted-by": "crossref",
+          "first-page": "17",
+          "DOI": "10.1016/j.immuni.2019.12.011",
+          "volume": "52",
+          "author": "PS Hegde",
+          "year": "2020",
+          "unstructured": "Hegde, P. S. & Chen, D. S. Top 10 challenges in cancer immunotherapy. Immunity 52, 17\u201335 (2020).",
+          "journal-title": "Immunity"
+        },
+        {
+          "key": "29205_CR4",
+          "doi-asserted-by": "crossref",
+          "first-page": "819",
+          "DOI": "10.1056/NEJMoa1604958",
+          "volume": "375",
+          "author": "JM Zaretsky",
+          "year": "2016",
+          "unstructured": "Zaretsky, J. M. et al. Mutations associated with acquired resistance to PD-1 blockade in melanoma. N. Engl. J. Med. 375, 819\u2013829 (2016).",
+          "journal-title": "N. Engl. J. Med."
+        },
+        {
+          "key": "29205_CR5",
+          "doi-asserted-by": "crossref",
+          "first-page": "793",
+          "DOI": "10.1038/nm730",
+          "volume": "8",
+          "author": "H Dong",
+          "year": "2002",
+          "unstructured": "Dong, H. et al. Tumor-associated B7-H1 promotes T-cell apoptosis: a potential mechanism of immune evasion. Nat. Med. 8, 793\u2013800 (2002).",
+          "journal-title": "Nat. Med."
+        },
+        {
+          "key": "29205_CR6",
+          "doi-asserted-by": "crossref",
+          "first-page": "1389",
+          "DOI": "10.1084/jem.20130066",
+          "volume": "210",
+          "author": "RB Holmgaard",
+          "year": "2013",
+          "unstructured": "Holmgaard, R. B., Zamarin, D., Munn, D. H., Wolchok, J. D. & Allison, J. P. Indoleamine 2,3-dioxygenase is a critical resistance mechanism in antitumor T cell immunotherapy targeting CTLA-4. J. Exp. Med. 210, 1389\u20131402 (2013).",
+          "journal-title": "J. Exp. Med."
+        },
+        {
+          "key": "29205_CR7",
+          "doi-asserted-by": "crossref",
+          "first-page": "849",
+          "DOI": "10.1016/S1074-7613(03)00152-3",
+          "volume": "18",
+          "author": "GL Sica",
+          "year": "2003",
+          "unstructured": "Sica, G. L. et al. B7-H4, a molecule of the B7 family, negatively regulates T cell immunity. Immunity 18, 849\u2013861 (2003).",
+          "journal-title": "Immunity"
+        },
+        {
+          "key": "29205_CR8",
+          "doi-asserted-by": "crossref",
+          "first-page": "11103",
+          "DOI": "10.1073/pnas.1305569110",
+          "volume": "110",
+          "author": "D Tseng",
+          "year": "2013",
+          "unstructured": "Tseng, D. et al. Anti-CD47 antibody-mediated phagocytosis of cancer by macrophages primes an effective antitumor T-cell response. Proc. Natl Acad. Sci. USA 110, 11103\u201311108 (2013).",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "29205_CR9",
+          "doi-asserted-by": "crossref",
+          "first-page": "122",
+          "DOI": "10.1056/NEJMoa1302369",
+          "volume": "369",
+          "author": "JD Wolchok",
+          "year": "2013",
+          "unstructured": "Wolchok, J. D. et al. Nivolumab plus ipilimumab in advanced melanoma. N. Engl. J. Med. 369, 122\u2013133 (2013).",
+          "journal-title": "N. Engl. J. Med."
+        },
+        {
+          "key": "29205_CR10",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41586-020-2746-2",
+          "author": "KA Lawson",
+          "year": "2020",
+          "unstructured": "Lawson, K. A. et al. Functional genomic landscape of cancer-intrinsic evasion of killing by T cells. Nature, https://doi.org/10.1038/s41586-020-2746-2 (2020).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR11",
+          "doi-asserted-by": "crossref",
+          "first-page": "413",
+          "DOI": "10.1038/nature23270",
+          "volume": "547",
+          "author": "RT Manguso",
+          "year": "2017",
+          "unstructured": "Manguso, R. T. et al. In vivo CRISPR screening identifies Ptpn2 as a cancer immunotherapy target. Nature 547, 413\u2013418 (2017).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR12",
+          "doi-asserted-by": "crossref",
+          "first-page": "770",
+          "DOI": "10.1126/science.aao1710",
+          "volume": "359",
+          "author": "D Pan",
+          "year": "2018",
+          "unstructured": "Pan, D. et al. A major chromatin regulator determines resistance of tumor cells to T cell-mediated killing. Science 359, 770\u2013775 (2018).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "29205_CR13",
+          "doi-asserted-by": "crossref",
+          "first-page": "537",
+          "DOI": "10.1038/nature23477",
+          "volume": "548",
+          "author": "SJ Patel",
+          "year": "2017",
+          "unstructured": "Patel, S. J. et al. Identification of essential genes for cancer immunotherapy. Nature 548, 537\u2013542 (2017).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR14",
+          "doi-asserted-by": "crossref",
+          "first-page": "585",
+          "DOI": "10.1016/j.cell.2019.06.014",
+          "volume": "178",
+          "author": "DW Vredevoogd",
+          "year": "2019",
+          "unstructured": "Vredevoogd, D. W. et al. Augmenting immunotherapy impact by lowering tumor TNF cytotoxicity threshold. Cell 178, 585\u2013599 e515 (2019).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "29205_CR15",
+          "doi-asserted-by": "crossref",
+          "first-page": "67",
+          "DOI": "10.1038/nrg.2017.97",
+          "volume": "19",
+          "author": "JG Doench",
+          "year": "2018",
+          "unstructured": "Doench, J. G. Am I ready for CRISPR? A user\u2019s guide to genetic screens. Nat. Rev. Genet. 19, 67\u201380 (2018).",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "29205_CR16",
+          "volume": "9",
+          "author": "CE Decker",
+          "year": "2019",
+          "unstructured": "Decker, C. E. et al. Genome-scale CRISPR activation screen uncovers tumor-intrinsic modulators of CD3 bispecific antibody efficacy. Sci. Rep. 9, 20068 (2019).",
+          "journal-title": "Sci. Rep."
+        },
+        {
+          "key": "29205_CR17",
+          "doi-asserted-by": "crossref",
+          "first-page": "6116",
+          "DOI": "10.4049/jimmunol.180.9.6116",
+          "volume": "180",
+          "author": "PF Robbins",
+          "year": "2008",
+          "unstructured": "Robbins, P. F. et al. Single and dual amino acid substitutions in TCR CDRs can enhance antigen-specific T cell functions. J. Immunol. 180, 6116\u20136131 (2008).",
+          "journal-title": "J. Immunol."
+        },
+        {
+          "key": "29205_CR18",
+          "doi-asserted-by": "crossref",
+          "first-page": "583",
+          "DOI": "10.1038/nature14136",
+          "volume": "517",
+          "author": "S Konermann",
+          "year": "2015",
+          "unstructured": "Konermann, S. et al. Genome-scale transcriptional activation by an engineered CRISPR-Cas9 complex. Nature 517, 583\u2013588 (2015).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR19",
+          "volume": "15",
+          "author": "W Li",
+          "year": "2014",
+          "unstructured": "Li, W. et al. MAGeCK enables robust identification of essential genes from genome-scale CRISPR/Cas9 knockout screens. Genome Biol. 15, 554 (2014).",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "29205_CR20",
+          "doi-asserted-by": "crossref",
+          "first-page": "231",
+          "DOI": "10.1038/nature14404",
+          "volume": "523",
+          "author": "S Spranger",
+          "year": "2015",
+          "unstructured": "Spranger, S., Bao, R. & Gajewski, T. F. Melanoma-intrinsic beta-catenin signalling prevents anti-tumour immunity. Nature 523, 231\u2013235 (2015).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR21",
+          "doi-asserted-by": "crossref",
+          "first-page": "262",
+          "DOI": "10.1038/nm.4496",
+          "volume": "24",
+          "author": "Q Xiao",
+          "year": "2018",
+          "unstructured": "Xiao, Q. et al. DKK2 imparts tumor immunity evasion through beta-catenin-independent suppression of cytotoxic immune-cell activation. Nat. Med. 24, 262\u2013270 (2018).",
+          "journal-title": "Nat. Med."
+        },
+        {
+          "key": "29205_CR22",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41586-021-03520-4",
+          "author": "GK Griffin",
+          "year": "2021",
+          "unstructured": "Griffin, G. K. et al. Epigenetic silencing by SETDB1 suppresses tumour intrinsic immunogenicity. Nature, https://doi.org/10.1038/s41586-021-03520-4 (2021).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR23",
+          "doi-asserted-by": "crossref",
+          "first-page": "48",
+          "DOI": "10.1016/j.cell.2014.12.033",
+          "volume": "160",
+          "author": "MS Rooney",
+          "year": "2015",
+          "unstructured": "Rooney, M. S., Shukla, S. A., Wu, C. J., Getz, G. & Hacohen, N. Molecular and genetic properties of tumors associated with local immune cytolytic activity. Cell 160, 48\u201361 (2015).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "29205_CR24",
+          "doi-asserted-by": "crossref",
+          "first-page": "1545",
+          "DOI": "10.1038/s41591-018-0157-9",
+          "volume": "24",
+          "author": "N Auslander",
+          "year": "2018",
+          "unstructured": "Auslander, N. et al. Robust prediction of response to immune checkpoint blockade therapy in metastatic melanoma. Nat. Med. 24, 1545\u20131549 (2018).",
+          "journal-title": "Nat. Med."
+        },
+        {
+          "key": "29205_CR25",
+          "doi-asserted-by": "crossref",
+          "first-page": "909",
+          "DOI": "10.1038/s41591-020-0839-y",
+          "volume": "26",
+          "author": "DA Braun",
+          "year": "2020",
+          "unstructured": "Braun, D. A. et al. Interplay of somatic alterations and immune infiltration modulates response to PD-1 blockade in advanced clear cell renal cell carcinoma. Nat. Med. 26, 909\u2013918 (2020).",
+          "journal-title": "Nat. Med."
+        },
+        {
+          "key": "29205_CR26",
+          "doi-asserted-by": "crossref",
+          "first-page": "238",
+          "DOI": "10.1016/j.ccell.2019.01.003",
+          "volume": "35",
+          "author": "TN Gide",
+          "year": "2019",
+          "unstructured": "Gide, T. N. et al. Distinct immune cell populations define response to anti-PD-1 monotherapy and anti-PD-1/Anti-CTLA-4 combined therapy. Cancer Cell 35, 238\u2013255 e236 (2019).",
+          "journal-title": "Cancer Cell"
+        },
+        {
+          "key": "29205_CR27",
+          "doi-asserted-by": "crossref",
+          "first-page": "35",
+          "DOI": "10.1016/j.cell.2016.02.065",
+          "volume": "165",
+          "author": "W Hugo",
+          "year": "2016",
+          "unstructured": "Hugo, W. et al. Genomic and transcriptomic features of response to anti-PD-1 therapy in metastatic melanoma. Cell 165, 35\u201344 (2016).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "29205_CR28",
+          "doi-asserted-by": "crossref",
+          "first-page": "202",
+          "DOI": "10.1158/1078-0432.CCR-20-1163",
+          "volume": "27",
+          "author": "A Pender",
+          "year": "2021",
+          "unstructured": "Pender, A. et al. Genome and transcriptome biomarkers of response to immune checkpoint inhibitors in advanced solid tumors. Clin. Cancer Res. 27, 202\u2013212 (2021).",
+          "journal-title": "Clin. Cancer Res."
+        },
+        {
+          "key": "29205_CR29",
+          "doi-asserted-by": "crossref",
+          "first-page": "934",
+          "DOI": "10.1016/j.cell.2017.09.028",
+          "volume": "171",
+          "author": "N Riaz",
+          "year": "2017",
+          "unstructured": "Riaz, N. et al. Tumor and microenvironment evolution during immunotherapy with nivolumab. Cell 171, 934\u2013949 e916 (2017).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "29205_CR30",
+          "doi-asserted-by": "crossref",
+          "first-page": "603",
+          "DOI": "10.1038/nature11003",
+          "volume": "483",
+          "author": "J Barretina",
+          "year": "2012",
+          "unstructured": "Barretina, J. et al. The cancer cell line encyclopedia enables predictive modelling of anticancer drug sensitivity. Nature 483, 603\u2013607 (2012).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR31",
+          "doi-asserted-by": "crossref",
+          "first-page": "1426",
+          "DOI": "10.1016/j.cell.2018.03.038",
+          "volume": "173",
+          "author": "JH Cho",
+          "year": "2018",
+          "unstructured": "Cho, J. H., Collins, J. J. & Wong, W. W. Universal chimeric antigen receptors for multiplexed and logical control of T cell responses. Cell 173, 1426\u20131438 e1411 (2018).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "29205_CR32",
+          "doi-asserted-by": "crossref",
+          "first-page": "49",
+          "DOI": "10.1038/nrm3722",
+          "volume": "15",
+          "author": "PE Czabotar",
+          "year": "2014",
+          "unstructured": "Czabotar, P. E., Lessene, G., Strasser, A. & Adams, J. M. Control of apoptosis by the BCL-2 protein family: implications for physiology and therapy. Nat. Rev. Mol. Cell Biol. 15, 49\u201363 (2014).",
+          "journal-title": "Nat. Rev. Mol. Cell Biol."
+        },
+        {
+          "key": "29205_CR33",
+          "doi-asserted-by": "crossref",
+          "first-page": "7301",
+          "DOI": "10.2147/OTT.S146228",
+          "volume": "11",
+          "author": "W Xiang",
+          "year": "2018",
+          "unstructured": "Xiang, W., Yang, C. Y. & Bai, L. MCL-1 inhibition in cancer treatment. Onco Targets Ther. 11, 7301\u20137314 (2018).",
+          "journal-title": "Onco Targets Ther."
+        },
+        {
+          "key": "29205_CR34",
+          "doi-asserted-by": "crossref",
+          "first-page": "7",
+          "DOI": "10.4049/jimmunol.176.1.7",
+          "volume": "176",
+          "author": "N Nausch",
+          "year": "2006",
+          "unstructured": "Nausch, N. et al. Cutting edge: the AP-1 subunit JunB determines NK cell-mediated target cell killing by regulation of the NKG2D-ligand RAE-1epsilon. J. Immunol. 176, 7\u201311 (2006).",
+          "journal-title": "J. Immunol."
+        },
+        {
+          "key": "29205_CR35",
+          "doi-asserted-by": "crossref",
+          "first-page": "185",
+          "DOI": "10.1016/S0076-6879(10)79011-X",
+          "volume": "479",
+          "author": "A Togayachi",
+          "year": "2010",
+          "unstructured": "Togayachi, A. et al. Beta3GnT2 (B3GNT2), a major polylactosamine synthase: analysis of B3GNT2-deficient mice. Methods Enzymol. 479, 185\u2013204 (2010).",
+          "journal-title": "Methods Enzymol."
+        },
+        {
+          "key": "29205_CR36",
+          "doi-asserted-by": "crossref",
+          "first-page": "91",
+          "DOI": "10.1016/S0076-6879(06)16006-1",
+          "volume": "416",
+          "author": "A Togayachi",
+          "year": "2006",
+          "unstructured": "Togayachi, A., Sato, T. & Narimatsu, H. Comprehensive enzymatic characterization of glycosyltransferases with a beta3GT or beta4GT motif. Methods Enzymol. 416, 91\u2013102 (2006).",
+          "journal-title": "Methods Enzymol."
+        },
+        {
+          "key": "29205_CR37",
+          "doi-asserted-by": "crossref",
+          "first-page": "2298",
+          "DOI": "10.1158/0008-5472.CAN-19-3133",
+          "volume": "80",
+          "author": "L Sun",
+          "year": "2020",
+          "unstructured": "Sun, L. et al. Targeting glycosylated PD-1 induces potent antitumor immunity. Cancer Res 80, 2298\u20132310 (2020).",
+          "journal-title": "Cancer Res"
+        },
+        {
+          "key": "29205_CR38",
+          "doi-asserted-by": "crossref",
+          "first-page": "511",
+          "DOI": "10.1038/ng.2231",
+          "volume": "44",
+          "author": "Y Okada",
+          "year": "2012",
+          "unstructured": "Okada, Y. et al. Meta-analysis identifies nine new loci associated with rheumatoid arthritis in the Japanese population. Nat. Genet. 44, 511\u2013516 (2012).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "29205_CR39",
+          "doi-asserted-by": "crossref",
+          "first-page": "123",
+          "DOI": "10.1038/ng.513",
+          "volume": "42",
+          "author": "Australo-Anglo-American Spondyloarthritis, C.",
+          "year": "2010",
+          "unstructured": "Australo-Anglo-American Spondyloarthritis, C. et al. Genome-wide association study of ankylosing spondylitis identifies non-MHC susceptibility loci. Nat. Genet. 42, 123\u2013127 (2010).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "29205_CR40",
+          "doi-asserted-by": "crossref",
+          "first-page": "1341",
+          "DOI": "10.1038/ng.2467",
+          "volume": "44",
+          "author": "LC Tsoi",
+          "year": "2012",
+          "unstructured": "Tsoi, L. C. et al. Identification of 15 new psoriasis susceptibility loci highlights the role of innate immunity. Nat. Genet. 44, 1341\u20131348 (2012).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "29205_CR41",
+          "doi-asserted-by": "crossref",
+          "first-page": "1189",
+          "DOI": "10.1016/j.celrep.2017.04.031",
+          "volume": "19",
+          "author": "A Garcia-Diaz",
+          "year": "2017",
+          "unstructured": "Garcia-Diaz, A. et al. Interferon receptor signaling pathways regulating PD-L1 and PD-L2 expression. Cell Rep. 19, 1189\u20131201 (2017).",
+          "journal-title": "Cell Rep."
+        },
+        {
+          "key": "29205_CR42",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1186/1476-4598-12-86",
+          "volume": "12",
+          "author": "B Hoesel",
+          "year": "2013",
+          "unstructured": "Hoesel, B. & Schmid, J. A. The complexity of NF-kappaB signaling in inflammation and cancer. Mol. Cancer 12, 86 (2013).",
+          "journal-title": "Mol. Cancer"
+        },
+        {
+          "key": "29205_CR43",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Liu, T., Zhang, L., Joo, D. & Sun, S. C. NF-kappaB signaling in inflammation. Signal Transduct. Target Ther. 2, https://doi.org/10.1038/sigtrans.2017.23 (2017).",
+          "DOI": "10.1038/sigtrans.2017.23"
+        },
+        {
+          "key": "29205_CR44",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/ncomms7537",
+          "volume": "6",
+          "author": "B Tummers",
+          "year": "2015",
+          "unstructured": "Tummers, B. et al. The interferon-related developmental regulator 1 is used by human papillomavirus to suppress NFkappaB activation. Nat. Commun. 6, 6537 (2015).",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "29205_CR45",
+          "doi-asserted-by": "crossref",
+          "first-page": "400",
+          "DOI": "10.1101/gad.13.4.400",
+          "volume": "13",
+          "author": "RJ Grumont",
+          "year": "1999",
+          "unstructured": "Grumont, R. J., Rourke, I. J. & Gerondakis, S. Rel-dependent induction of A1 transcription is required to protect B cells from antigen receptor ligation-induced apoptosis. Genes Dev. 13, 400\u2013411 (1999).",
+          "journal-title": "Genes Dev."
+        },
+        {
+          "key": "29205_CR46",
+          "doi-asserted-by": "crossref",
+          "first-page": "382",
+          "DOI": "10.1101/gad.13.4.382",
+          "volume": "13",
+          "author": "WX Zong",
+          "year": "1999",
+          "unstructured": "Zong, W. X., Edelstein, L. C., Chen, C., Bash, J. & Gelinas, C. The prosurvival Bcl-2 homolog Bfl-1/A1 is a direct transcriptional target of NF-kappaB that blocks TNFalpha-induced apoptosis. Genes Dev. 13, 382\u2013387 (1999).",
+          "journal-title": "Genes Dev."
+        },
+        {
+          "key": "29205_CR47",
+          "doi-asserted-by": "crossref",
+          "first-page": "597",
+          "DOI": "10.1182/blood.2019002121",
+          "volume": "135",
+          "author": "O Dufva",
+          "year": "2020",
+          "unstructured": "Dufva, O. et al. Integrated drug profiling and CRISPR screening identify essential pathways for CAR T-cell cytotoxicity. Blood 135, 597\u2013609 (2020).",
+          "journal-title": "Blood"
+        },
+        {
+          "key": "29205_CR48",
+          "doi-asserted-by": "crossref",
+          "first-page": "552",
+          "DOI": "10.1158/2159-8290.CD-19-0813",
+          "volume": "10",
+          "author": "N Singh",
+          "year": "2020",
+          "unstructured": "Singh, N. et al. Impaired death receptor signaling in leukemia causes antigen-independent resistance by inducing CAR T-cell dysfunction. Cancer Discov. 10, 552\u2013567 (2020).",
+          "journal-title": "Cancer Discov."
+        },
+        {
+          "key": "29205_CR49",
+          "doi-asserted-by": "crossref",
+          "first-page": "279",
+          "DOI": "10.1007/s002510100325",
+          "volume": "53",
+          "author": "A Steinle",
+          "year": "2001",
+          "unstructured": "Steinle, A. et al. Interactions of human NKG2D with its ligands MICA, MICB, and homologs of the mouse RAE-1 protein family. Immunogenetics 53, 279\u2013287 (2001).",
+          "journal-title": "Immunogenetics"
+        },
+        {
+          "key": "29205_CR50",
+          "doi-asserted-by": "crossref",
+          "first-page": "262",
+          "DOI": "10.1038/323262a0",
+          "volume": "323",
+          "author": "S Shaw",
+          "year": "1986",
+          "unstructured": "Shaw, S. et al. Two antigen-independent adhesion pathways used by human cytotoxic T-cell clones. Nature 323, 262\u2013264 (1986).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR51",
+          "doi-asserted-by": "crossref",
+          "first-page": "2219",
+          "DOI": "10.1002/eji.1830240943",
+          "volume": "24",
+          "author": "MR Alderson",
+          "year": "1994",
+          "unstructured": "Alderson, M. R. et al. Molecular and biological characterization of human 4-1BB and its ligand. Eur. J. Immunol. 24, 2219\u20132227 (1994).",
+          "journal-title": "Eur. J. Immunol."
+        },
+        {
+          "key": "29205_CR52",
+          "doi-asserted-by": "crossref",
+          "first-page": "10495",
+          "DOI": "10.1073/pnas.0802423105",
+          "volume": "105",
+          "author": "M Hashiguchi",
+          "year": "2008",
+          "unstructured": "Hashiguchi, M. et al. Triggering receptor expressed on myeloid cell-like transcript 2 (TLT-2) is a counter-receptor for B7-H3 and enhances T cell responses. Proc. Natl Acad. Sci. USA 105, 10495\u201310500 (2008).",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "29205_CR53",
+          "doi-asserted-by": "crossref",
+          "first-page": "1754",
+          "DOI": "10.1002/eji.200839028",
+          "volume": "39",
+          "author": "J Leitner",
+          "year": "2009",
+          "unstructured": "Leitner, J. et al. B7-H3 is a potent inhibitor of human T-cell activation: no evidence for B7-H3 and TREML2 interaction. Eur. J. Immunol. 39, 1754\u20131764 (2009).",
+          "journal-title": "Eur. J. Immunol."
+        },
+        {
+          "key": "29205_CR54",
+          "doi-asserted-by": "crossref",
+          "first-page": "828",
+          "DOI": "10.1038/nprot.2017.016",
+          "volume": "12",
+          "author": "J Joung",
+          "year": "2017",
+          "unstructured": "Joung, J. et al. Genome-scale CRISPR-Cas9 knockout and transcriptional activation screening. Nat. Protoc. 12, 828\u2013863 (2017).",
+          "journal-title": "Nat. Protoc."
+        },
+        {
+          "key": "29205_CR55",
+          "doi-asserted-by": "crossref",
+          "first-page": "W191",
+          "DOI": "10.1093/nar/gkz369",
+          "volume": "47",
+          "author": "U Raudvere",
+          "year": "2019",
+          "unstructured": "Raudvere, U. et al. g:Profiler: a web server for functional enrichment analysis and conversions of gene lists (2019 update). Nucleic Acids Res. 47, W191\u2013W198 (2019).",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "29205_CR56",
+          "doi-asserted-by": "crossref",
+          "first-page": "952",
+          "DOI": "10.1093/bioinformatics/btv677",
+          "volume": "32",
+          "author": "YW Wan",
+          "year": "2016",
+          "unstructured": "Wan, Y. W., Allen, G. I. & Liu, Z. TCGA2STAT: simple TCGA data access for integrated statistical analysis in R. Bioinformatics 32, 952\u2013954 (2016).",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "29205_CR57",
+          "doi-asserted-by": "crossref",
+          "first-page": "W98",
+          "DOI": "10.1093/nar/gkx247",
+          "volume": "45",
+          "author": "Z Tang",
+          "year": "2017",
+          "unstructured": "Tang, Z. et al. GEPIA: a web server for cancer and normal gene expression profiling and interactive analyses. Nucleic Acids Res. 45, W98\u2013W102 (2017).",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "29205_CR58",
+          "doi-asserted-by": "crossref",
+          "first-page": "1109",
+          "DOI": "10.1056/NEJMp1607591",
+          "volume": "375",
+          "author": "RL Grossman",
+          "year": "2016",
+          "unstructured": "Grossman, R. L. et al. Toward a shared vision for cancer genomic data. N. Engl. J. Med. 375, 1109\u20131112 (2016).",
+          "journal-title": "N. Engl. J. Med."
+        },
+        {
+          "key": "29205_CR59",
+          "volume": "12",
+          "author": "B Li",
+          "year": "2011",
+          "unstructured": "Li, B. & Dewey, C. N. RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinforma. 12, 323 (2011).",
+          "journal-title": "BMC Bioinforma."
+        },
+        {
+          "key": "29205_CR60",
+          "doi-asserted-by": "crossref",
+          "first-page": "108",
+          "DOI": "10.1038/nature08460",
+          "volume": "462",
+          "author": "DA Barbie",
+          "year": "2009",
+          "unstructured": "Barbie, D. A. et al. Systematic RNA interference reveals that oncogenic KRAS-driven cancers require TBK1. Nature 462, 108\u2013112 (2009).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "29205_CR61",
+          "volume": "10",
+          "author": "B Langmead",
+          "year": "2009",
+          "unstructured": "Langmead, B., Trapnell, C., Pop, M. & Salzberg, S. L. Ultrafast and memory-efficient alignment of short DNA sequences to the human genome. Genome Biol. 10, R25 (2009).",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "29205_CR62",
+          "doi-asserted-by": "crossref",
+          "first-page": "636",
+          "DOI": "10.1126/science.1105136",
+          "volume": "306",
+          "author": "EP Consortium",
+          "year": "2004",
+          "unstructured": "Consortium, E. P. The ENCODE (ENCyclopedia Of DNA Elements) Project. Science 306, 636\u2013640 (2004).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "29205_CR63",
+          "doi-asserted-by": "crossref",
+          "first-page": "1728",
+          "DOI": "10.1038/nprot.2012.101",
+          "volume": "7",
+          "author": "J Feng",
+          "year": "2012",
+          "unstructured": "Feng, J., Liu, T., Qin, B., Zhang, Y. & Liu, X. S. Identifying ChIP-seq enrichment using MACS. Nat. Protoc. 7, 1728\u20131740 (2012).",
+          "journal-title": "Nat. Protoc."
+        },
+        {
+          "key": "29205_CR64",
+          "doi-asserted-by": "crossref",
+          "first-page": "576",
+          "DOI": "10.1016/j.molcel.2010.05.004",
+          "volume": "38",
+          "author": "S Heinz",
+          "year": "2010",
+          "unstructured": "Heinz, S. et al. Simple combinations of lineage-determining transcription factors prime cis-regulatory elements required for macrophage and B cell identities. Mol. Cell 38, 576\u2013589 (2010).",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "29205_CR65",
+          "doi-asserted-by": "crossref",
+          "first-page": "5784",
+          "DOI": "10.1073/pnas.0901425106",
+          "volume": "106",
+          "author": "G Stewart-Jones",
+          "year": "2009",
+          "unstructured": "Stewart-Jones, G. et al. Rational development of high-affinity T-cell receptor-like antibodies. Proc. Natl Acad. Sci. USA 106, 5784\u20135788 (2009).",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "29205_CR66",
+          "doi-asserted-by": "crossref",
+          "first-page": "1762",
+          "DOI": "10.1053/j.gastro.2011.07.050",
+          "volume": "141",
+          "author": "T Sato",
+          "year": "2011",
+          "unstructured": "Sato, T. et al. Long-term expansion of epithelial organoids from human colon, adenoma, adenocarcinoma, and Barrett\u2019s epithelium. Gastroenterology 141, 1762\u20131772 (2011).",
+          "journal-title": "Gastroenterology"
+        },
+        {
+          "key": "29205_CR67",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Joung, J. et al. CRISPR activation screen identifies BCL-2 proteins and B3GNT2 as drivers of cancer resistance to T cell-mediated cytotoxicity. GitHub, https://zenodo.org/badge/latestdoi/455762271 (2022).",
+          "DOI": "10.1038/s41467-022-29205-8"
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41467-022-29205-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41467-022-29205-8",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41467-022-29205-8.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            24
+          ]
+        ],
+        "date-time": "2022-11-24T11:35:33Z",
+        "timestamp": 1669289733000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41467-022-29205-8"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            25
+          ]
+        ]
+      },
+      "references-count": 67,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "29205"
+      ],
+      "URL": "https://doi.org/10.1038/s41467-022-29205-8",
+      "relation": {},
+      "ISSN": [
+        "2041-1723"
+      ],
+      "issn-type": [
+        {
+          "value": "2041-1723",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            25
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "10 November 2021",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "25 February 2022",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "25 March 2022",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "J.J. and F.Z. are inventors listed on a U.S. Provisional Patent Application No. 63/196,520 entitled \u201cNovel Targets for Enhancing Anti-Tumor Immunity\u201d. F.Z. is a cofounder of Editas Medicine, Beam Therapeutics, Pairwise Plants, Arbor Biotechnologies, and Sherlock Biosciences. M.V.M. is on the scientific advisory board of Cabaletta Bio, Cellectis, In8bio, TCR2, and WindMIL, as well as the board of directors of 2Seventy Bio. M.V.M. is an equity holder of Century Therapeutics, Genocea, Oncternal, TCR2, and 2Seventy Bio. The remaining authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing interests"
+          }
+        }
+      ],
+      "article-number": "1606"
+    }
+  }
+}

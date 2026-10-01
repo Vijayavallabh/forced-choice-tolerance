@@ -1,0 +1,148 @@
+{
+  "_comment": "Evidence vendored from public benchmark repositories. Each entry records the exact source URL and the SHA-256 of the retrieved bytes so the analysis replays offline and can be re-verified against upstream. Regenerate with fetch_external.py.",
+  "upstream_repository": "https://github.com/Future-House/BixBench",
+  "upstream_commit": "49311180bdacb324c596f2e07596c126f2004008",
+  "license": "Each source keeps its own license; THIRD_PARTY_NOTICES.md has the details. BixBench (zero_shot_*): Apache-2.0, Copyright 2025 FutureHouse. LAB-Bench (labbench/): CC BY-SA 4.0, adapted, so the adapted files are CC BY-SA 4.0 too; see labbench/LICENSE. ScienceAgentBench.csv: CC BY 4.0, except that tasks adapted from rasterio and matminer keep those projects' licenses. discoverybench_answer_key_real.csv: ODC-By. core_train.json: MIT.",
+  "retrieved_at": "2026-09-18T11:27:59Z",
+  "note": "LAB-Bench subsets are converted from parquet to JSONL with encoded figure and table payloads removed, so the recorded SHA-256 is of the converted file while the URL points at the parquet source.",
+  "files": [
+    {
+      "local_path": "data/external/labbench/CloningScenarios.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/CloningScenarios/train-00000-of-00001.parquet",
+      "sha256": "8933f9aa9212964b4ab43d40980e3362a4736171853d00b3d695730b0187d2dc",
+      "bytes": 396655
+    },
+    {
+      "local_path": "data/external/labbench/DbQA.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/DbQA/train-00000-of-00001.parquet",
+      "sha256": "89987831bff3fbc91fa6aaa288cccc360fc6105f91f96bd0b2e61a6e731b40db",
+      "bytes": 661708
+    },
+    {
+      "local_path": "data/external/labbench/FigQA.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/FigQA/train-00000-of-00001.parquet",
+      "sha256": "ef9b578d73ed0b5b119be0211c9b69f6ba46f3b9718eb7e00670978c4ecadf13",
+      "bytes": 101512
+    },
+    {
+      "local_path": "data/external/labbench/LitQA2.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/LitQA2/train-00000-of-00001.parquet",
+      "sha256": "3c8b8aa41db73d6836e79d7422f193335b05c03bbbd779ed049fadce4f22ca4c",
+      "bytes": 209794
+    },
+    {
+      "local_path": "data/external/labbench/ProtocolQA.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/ProtocolQA/train-00000-of-00001.parquet",
+      "sha256": "b05aad2fcd83ff8bec272f9852cbafcebb20cd83ebee545ea0371242167c558b",
+      "bytes": 736510
+    },
+    {
+      "local_path": "data/external/labbench/SeqQA.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/SeqQA/train-00000-of-00001.parquet",
+      "sha256": "36913111efad5e0b46e1b9fabfd7a723b87269de815118d94a82eab67604d6fd",
+      "bytes": 1019619
+    },
+    {
+      "local_path": "data/external/labbench/SuppQA.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/SuppQA/train-00000-of-00001.parquet",
+      "sha256": "32f6333545687bf3319668a60ee6e37d225c0ac945972e5c6107b22aba612961",
+      "bytes": 46733
+    },
+    {
+      "local_path": "data/external/labbench/TableQA.jsonl",
+      "url": "https://huggingface.co/datasets/futurehouse/lab-bench/resolve/main/TableQA/train-00000-of-00001.parquet",
+      "sha256": "878564a1731435b26a29eb16912b7681fc55e86752ab84da8c70956369912c3a",
+      "bytes": 121115
+    },
+    {
+      "local_path": "data/external/other/ScienceAgentBench.csv",
+      "url": "https://huggingface.co/datasets/osunlp/ScienceAgentBench/resolve/main/ScienceAgentBench.csv",
+      "sha256": "7f490f17f721a9c7e9415d3608a1a37d1a5315a26862cf556e3096ac4062face",
+      "bytes": 278626
+    },
+    {
+      "local_path": "data/external/other/core_train.json",
+      "url": "https://huggingface.co/datasets/siegelz/core-bench/resolve/main/core_train.json",
+      "sha256": "3df47f1b3fa1cb60045018eb1a0f1ad4ecf6a53f72318c845a879ce0313b0730",
+      "bytes": 54907
+    },
+    {
+      "local_path": "data/external/other/discoverybench_answer_key_real.csv",
+      "url": "https://huggingface.co/datasets/allenai/discoverybench/resolve/main/answer_key/answer_key_real.csv",
+      "sha256": "67504136becc97f4b4b3c698489bf2222d2a55f75aaa5cf033d6dd62ef5537e0",
+      "bytes": 57833
+    },
+    {
+      "local_path": "data/external/zero_shot_summary_v10.json",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench_results/zero_shot_baselines.json",
+      "sha256": "b89b051a286028fa370ead2a2a18ee65f71451f9a50ec899df97fef2557d3bba",
+      "bytes": 1414
+    },
+    {
+      "local_path": "data/external/zero_shot_summary_v15.json",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines.json",
+      "sha256": "01c5a57ce1dde2d4f0dfaaf123f932791d3ae556df22d89ba4579d6f699d36a8",
+      "bytes": 1242
+    },
+    {
+      "local_path": "data/external/zero_shot_v10/bixbench_llm_baseline_refusal_False_mcq_claude-3-5-sonnet-latest_1.0.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench_results/baseline_eval_data/bixbench_llm_baseline_refusal_False_mcq_claude-3-5-sonnet-latest_1.0.csv",
+      "sha256": "f556b3f98a98647a072726c726e4a3d8b4132894defc771202d25591edc348c8",
+      "bytes": 90723
+    },
+    {
+      "local_path": "data/external/zero_shot_v10/bixbench_llm_baseline_refusal_False_mcq_gpt-4o_1.0.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench_results/baseline_eval_data/bixbench_llm_baseline_refusal_False_mcq_gpt-4o_1.0.csv",
+      "sha256": "86d94b90c5362bf02d12f599a3ce83cb44cd5fe3012efdc9b061eaf2296f0dd2",
+      "bytes": 91248
+    },
+    {
+      "local_path": "data/external/zero_shot_v10/bixbench_llm_baseline_refusal_True_openended_claude-3-5-sonnet-latest_1.0.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench_results/baseline_eval_data/bixbench_llm_baseline_refusal_True_openended_claude-3-5-sonnet-latest_1.0.csv",
+      "sha256": "2fe7fc55a317fd67c80f147c9c9013e584b00ae7d0d3942840f18a8be8e8e4b1",
+      "bytes": 244187
+    },
+    {
+      "local_path": "data/external/zero_shot_v10/bixbench_llm_baseline_refusal_True_openended_gpt-4o_1.0.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench_results/baseline_eval_data/bixbench_llm_baseline_refusal_True_openended_gpt-4o_1.0.csv",
+      "sha256": "16e37a060e9b1388c512ffc0876ee739674777d98e341b780132733c984e8293",
+      "bytes": 167565
+    },
+    {
+      "local_path": "data/external/zero_shot_v15/claude-3-5-sonnet-latest-grader-mcq-refusal-False.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines/claude-3-5-sonnet-latest-grader-mcq-refusal-False.csv",
+      "sha256": "7a4985ea0f38f617afe22282178edf4387a374cd432a18cebf2e83c41a386ade",
+      "bytes": 44703
+    },
+    {
+      "local_path": "data/external/zero_shot_v15/claude-3-5-sonnet-latest-grader-mcq-refusal-True.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines/claude-3-5-sonnet-latest-grader-mcq-refusal-True.csv",
+      "sha256": "3104e967fdf058aa2fc4ca827ef74f4c1b6b26ea71d0f3cb4b81b590ac598966",
+      "bytes": 44800
+    },
+    {
+      "local_path": "data/external/zero_shot_v15/claude-3-5-sonnet-latest-grader-openended.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines/claude-3-5-sonnet-latest-grader-openended.csv",
+      "sha256": "4ce07c9393ad4fde604906ee406921e8bee32c883652149c4e03600bb08a621c",
+      "bytes": 105179
+    },
+    {
+      "local_path": "data/external/zero_shot_v15/gpt-4o-grader-mcq-refusal-False.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines/gpt-4o-grader-mcq-refusal-False.csv",
+      "sha256": "f4c245f62afa7fd65d08bbb347cc91e9687780ded2b576316efb15488fa106a8",
+      "bytes": 45395
+    },
+    {
+      "local_path": "data/external/zero_shot_v15/gpt-4o-grader-mcq-refusal-True.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines/gpt-4o-grader-mcq-refusal-True.csv",
+      "sha256": "7ccd96a8559f87739d33485f89c193690fc4070c1331a6cd18b26b6ed5454bda",
+      "bytes": 45154
+    },
+    {
+      "local_path": "data/external/zero_shot_v15/gpt-4o-grader-openended.csv",
+      "url": "https://raw.githubusercontent.com/Future-House/BixBench/49311180bdacb324c596f2e07596c126f2004008/bixbench-v1.5_results/zero_shot_baselines/gpt-4o-grader-openended.csv",
+      "sha256": "71a508839f4c742aab3bfbfcb5c1a7f35307b1b1ae2ca48c5dca92f2397cb194",
+      "bytes": 85505
+    }
+  ]
+}

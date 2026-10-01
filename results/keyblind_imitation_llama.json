@@ -1,0 +1,13 @@
+{
+  "operator": "imitation",
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "tag": "imitation_llama",
+  "prompt": "Here is a multiple-choice question and its four answer options.\n\nQuestion: {question}\n\n{options}\n\nOption 1 is the correct answer. Write three new distractors to replace options 2, 3 and 4: plausible wrong answers to this question, written in the same style and the same format as the options above. Reply with the three values only, one per line, and nothing else.",
+  "n_source_items": 635,
+  "n_kept": 558,
+  "n_dropped_short_generation": 77,
+  "n_dropped_no_answers_line": 0,
+  "n_key_collisions_removed": 3,
+  "arm": "build/mmlu_frontier_imitation_llama.jsonl",
+  "conditions_on": "the question, the key and the human options"
+}

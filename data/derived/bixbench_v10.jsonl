@@ -1,0 +1,296 @@
+{"ideal": "p-adj < 0.05 for T cell activation terms", "distractors": ["raw p-value < 0.05 for T cell terms", "log2FoldChange > 1.5 for T cell genes", "p-adj < 0.01 for any immune process"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7", "short_qid": "bix-1_q1"}
+{"ideal": "At least 1 term", "distractors": ["At least 50% of all immune-related terms", "At least 10 terms", "All immune-related terms"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7", "short_qid": "bix-1_q2"}
+{"ideal": "sex", "distractors": ["sample name", "batch number", "age"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7", "short_qid": "bix-1_q3"}
+{"ideal": "Presence of confounding medical conditions", "distractors": ["Low sequencing depth", "Age of the patient", "Genetic background"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7", "short_qid": "bix-1_q4"}
+{"ideal": "1.90E-5", "distractors": ["2.15E-6", "3.23E-8", "4.56E-4"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7", "short_qid": "bix-1_q6"}
+{"ideal": "0.05", "distractors": ["0.15", "0.25", "0.45"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0", "short_qid": "bix-2_q1"}
+{"ideal": "65%", "distractors": ["75%", "55%", "45%"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0", "short_qid": "bix-2_q2"}
+{"ideal": "38.2%", "distractors": ["45.5%", "52.3%", "58.7%"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0", "short_qid": "bix-2_q3"}
+{"ideal": "53", "distractors": ["71", "89", "35"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0", "short_qid": "bix-2_q4"}
+{"ideal": "<1000", "distractors": ["5000", ">15000", "10000"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4", "short_qid": "bix-3_q1"}
+{"ideal": "(0.0312, 0.0356)", "distractors": ["(0.0281, 0.0323)", "(0.4530, 0.4653)", "(0.4563, 0.4685)"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4", "short_qid": "bix-3_q2"}
+{"ideal": "766", "distractors": ["429", "11663", "846"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4", "short_qid": "bix-3_q3"}
+{"ideal": "429", "distractors": ["773", "11746", "10316"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4", "short_qid": "bix-3_q4"}
+{"ideal": "More than 5% of total genes", "distractors": ["More than 10% of total genes", "Any number of significantly changed genes", "More than 1% of total genes"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4", "short_qid": "bix-3_q5"}
+{"ideal": "57%", "distractors": ["45%", "28%", "79%"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q1"}
+{"ideal": "0.57", "distractors": ["0.65", "0.31", "0.82"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q2"}
+{"ideal": "19808", "distractors": ["9340", "18356", "16032"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q3"}
+{"ideal": "0.30", "distractors": ["0.15", "0.28", "0.56"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q4"}
+{"ideal": "0.27", "distractors": ["0.65", "0.35", "0.52"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q5"}
+{"ideal": "1.58", "distractors": ["1.05", "0.95", "1.22"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q6"}
+{"ideal": "0.45", "distractors": ["0.32", "0.67", "0.99"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881", "short_qid": "bix-4_q7"}
+{"ideal": "Potassium ion transmembrane transport", "distractors": ["Dendrite self-avoidance", "Axon guidance", "Muscle contraction"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q1"}
+{"ideal": "0.01", "distractors": ["0.04", "0.02", "0.03"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q2"}
+{"ideal": "3", "distractors": ["2", "4", "1"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q3"}
+{"ideal": "Increase the number of significant terms", "distractors": ["Decrease the number of significant terms", "Remove all membrane-related terms", "No change in the number of terms"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q4"}
+{"ideal": "Potassium ion transmembrane transport", "distractors": ["Axon guidance", "Muscle contraction", "Dendrite self-avoidance"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q5"}
+{"ideal": "0.05", "distractors": ["0.01", "0.02", "0.001"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q6"}
+{"ideal": "0.7", "distractors": ["0.8", "0.5", "0.6"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d", "short_qid": "bix-5_q7"}
+{"ideal": "During chronic round 2 (day 6)", "distractors": ["During acute (18-hour) exposure", "During chronic round 1 (day 3)", "During chronic round 3 (day 9)"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q1"}
+{"ideal": "0.05", "distractors": ["No pathways meet any significance threshold", "0.001", "0.01"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q2"}
+{"ideal": "0 pathways", "distractors": ["2 pathways", "4 pathways", "1 pathway"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q3"}
+{"ideal": "0.021", "distractors": ["0.020", "0.013", "0.014"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q4"}
+{"ideal": "1/4 conditions", "distractors": ["0/4 conditions", "3/4 conditions", "2/4 conditions"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q5"}
+{"ideal": "0.021", "distractors": ["0.014", "0.198", "0.047"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q6"}
+{"ideal": "9.41", "distractors": ["7.43", "6.17", "1.29"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765", "short_qid": "bix-6_q7"}
+{"ideal": "CHIP variant frequencies show no statistically significant differences between groups", "distractors": ["BSyn probands show significantly higher CHIP variant frequencies than controls", "Control parents show significantly lower CHIP variant frequencies than other groups", "BLM carriers show intermediate CHIP variant frequencies between BSyn probands and controls"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960", "short_qid": "bix-7_q1"}
+{"ideal": "40-60 variants", "distractors": ["100-150 variants", "25-35 variants", "200-250 variants"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960", "short_qid": "bix-7_q2"}
+{"ideal": "10k-20k", "distractors": ["40k-50k", "50-60k", "15k-25k"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960", "short_qid": "bix-7_q3"}
+{"ideal": "4 groups", "distractors": ["3 groups", "2 groups", "5 groups"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960", "short_qid": "bix-7_q4"}
+{"ideal": "0.156 (15.6%)", "distractors": ["0.082 (8.2%)", "0.234 (23.4%)", "0.327 (32.7%)"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046", "short_qid": "bix-8_q1"}
+{"ideal": "901.45", "distractors": ["562.3", "119.8", "433.2"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046", "short_qid": "bix-8_q2"}
+{"ideal": "1.33", "distractors": ["1.85", "2.15", "0.75"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046", "short_qid": "bix-8_q3"}
+{"ideal": "74.3", "distractors": ["8.8", "12.5", "4.2"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046", "short_qid": "bix-8_q4"}
+{"ideal": "p < 2.2e-16", "distractors": ["p > 0.05", "p = 0.001", "p = 0.0338"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046", "short_qid": "bix-8_q5"}
+{"ideal": "680", "distractors": ["511", "11563", "415"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046", "short_qid": "bix-8_q6"}
+{"ideal": "F = 10.09 (p < 0.0001)", "distractors": ["F = 33.90 (p < 0.0001)", "F = 1.07 (p > 0.05)", "F = 3.24 (p > 0.05)"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843", "short_qid": "bix-9_q1"}
+{"ideal": "2 genes", "distractors": ["312 genes", "156 genes", "47 genes"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843", "short_qid": "bix-9_q2"}
+{"ideal": "No overlap between any groups", "distractors": ["Complete overlap between good responders and controls only", "Partial overlap between good and bad responders only", "Complete overlap between all groups"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843", "short_qid": "bix-9_q3"}
+{"ideal": "p = 9.92e-35", "distractors": ["p = 3.39e-12", "p = 4.26e-6", "p = 1.07e-16"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843", "short_qid": "bix-9_q4"}
+{"ideal": "Dentate gyrus (brain)", "distractors": ["Equal numbers across all tissues", "Baseline blood", "Final blood"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843", "short_qid": "bix-9_q5"}
+{"ideal": "Increases severity odds by 52.4%", "distractors": ["Decreases severity odds by 52.4%", "No significant effect on severity", "Increases severity odds by 24.5%"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q1"}
+{"ideal": "Expected interaction reduces severity odds by 24.5%", "distractors": ["Expected interaction increases severity odds by 24.5%", "Expected interaction reduces severity odds by 75.5%", "Expected interaction has no significant effect on severity"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q2"}
+{"ideal": "Significant difference only in the 1-50 patients group", "distractors": ["Significant difference only in the >100 patients group", "Significant differences across all patient number groups", "No significant differences in any patient number group"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q3"}
+{"ideal": "0.025", "distractors": ["0.367", "0.124", "0.048"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q4"}
+{"ideal": "Increases severity odds by 34.4%", "distractors": ["Decreases severity odds by 24.5%", "Has no significant effect on severity odds", "Decreases severity odds by 34.4%"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q5"}
+{"ideal": "p = 0.024", "distractors": ["p = 0.327", "p = 0.444", "p = 0.052"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q6"}
+{"ideal": "24.5% lower odds", "distractors": ["24.5% higher odds", "34.4% lower odds", "34.4% higher odds"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922", "short_qid": "bix-10_q7"}
+{"ideal": "0.05", "distractors": ["0.015", "0.105", "0.075"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765", "short_qid": "bix-11_q1"}
+{"ideal": "35%", "distractors": ["15%", "45%", "25%"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765", "short_qid": "bix-11_q2"}
+{"ideal": "0.1126", "distractors": ["0.1345", "0.0884", "0.1562"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765", "short_qid": "bix-11_q3"}
+{"ideal": "3556.0", "distractors": ["4891.0", "1247.5", "2584.0"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765", "short_qid": "bix-11_q4"}
+{"ideal": "0.0012", "distractors": ["0.0478", "0.0341", "0.1205"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765", "short_qid": "bix-11_q5"}
+{"ideal": "0.0489", "distractors": ["0.0855", "0.0612", "0.0234"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765", "short_qid": "bix-11_q6"}
+{"ideal": "Fungal proteins evolve more rapidly than animal proteins", "distractors": ["Fungal proteins are more structurally constrained than animal proteins", "Fungal proteins have identical evolutionary rates to animal proteins", "Fungal proteins show no consistent pattern of evolution"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43", "short_qid": "bix-12_q1"}
+{"ideal": "3.5%", "distractors": ["5.2%", "1.2%", "4.9%"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43", "short_qid": "bix-12_q2"}
+{"ideal": "3.0", "distractors": ["0.5", "3.0", "1.0"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43", "short_qid": "bix-12_q3"}
+{"ideal": "6948.0", "distractors": ["4532.0", "7823.0", "5891.0"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43", "short_qid": "bix-12_q4"}
+{"ideal": "29", "distractors": ["36", "24", "48"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43", "short_qid": "bix-12_q5"}
+{"ideal": "6748.0", "distractors": ["4521.0", "3245.0", "8932.0"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43", "short_qid": "bix-12_q6"}
+{"ideal": "10.6%", "distractors": ["29.8%", "0.9%", "31.8%"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c", "short_qid": "bix-13_q1"}
+{"ideal": "166", "distractors": ["137", "190", "464"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c", "short_qid": "bix-13_q2"}
+{"ideal": "7", "distractors": ["6", "9", "8"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c", "short_qid": "bix-13_q3"}
+{"ideal": "Strain 99 in Succinate", "distractors": ["Strain 1 in MMGluFePlus", "Strain 99 in MMGluFePlus", "Strain 1 in MMGluFeMinus"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c", "short_qid": "bix-13_q4"}
+{"ideal": "8.1%", "distractors": ["12.4%", "4.8%", "15.7%"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c", "short_qid": "bix-13_q5"}
+{"ideal": "397", "distractors": ["156", "89", "512"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c", "short_qid": "bix-13_q6"}
+{"ideal": "BLM helicase affects variant repair frequency but not variant type selection", "distractors": ["CHIP variants occur independently of BLM function", "BLM helicase mutations alter variant effect patterns", "BLM helicase preferentially repairs certain variant types"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6", "short_qid": "bix-14_q1"}
+{"ideal": "0.64", "distractors": ["0.13", "0.89", "0.33"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6", "short_qid": "bix-14_q2"}
+{"ideal": "0.228", "distractors": ["0.333", "0.105", "0.099"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6", "short_qid": "bix-14_q3"}
+{"ideal": "Reduces from 11,896 to 4,550 variants", "distractors": ["Reduces from 4,550 to 1,234 variants", "Reduces from 57,258 to 11,896 variants", "Reduces from 57,258 to 4,550 variants"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6", "short_qid": "bix-14_q4"}
+{"ideal": "CDKN1A", "distractors": ["CCND1", "KLF5", "RNASEK"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a", "short_qid": "bix-16_q1"}
+{"ideal": "Left-skewed with a long tail", "distractors": ["Bimodal with no clear skew", "Symmetrical with no skew", "Right-skewed with a long tail"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a", "short_qid": "bix-16_q2"}
+{"ideal": "3", "distractors": ["0", "1", "5"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a", "short_qid": "bix-16_q3"}
+{"ideal": "21.81%", "distractors": ["7.56%", "35.62%", "14.25%"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a", "short_qid": "bix-16_q4"}
+{"ideal": "0.12", "distractors": ["0.92", "0.78", "0.45"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152", "short_qid": "bix-17_q1"}
+{"ideal": "2.0", "distractors": ["1.0", "4.0", "3.0"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152", "short_qid": "bix-17_q2"}
+{"ideal": "0.863", "distractors": ["29.744", "15.321", "42.156"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152", "short_qid": "bix-17_q3"}
+{"ideal": "0.29%", "distractors": ["5.12%", "3.24%", "1.57%"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152", "short_qid": "bix-17_q4"}
+{"ideal": "0.08", "distractors": ["0.32", "0.80", "1.00"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8", "short_qid": "bix-18_q1"}
+{"ideal": "82,000", "distractors": ["92,000", "30,000", "32,000"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8", "short_qid": "bix-18_q2"}
+{"ideal": "70% reduction", "distractors": ["50% reduction", "60% reduction", "30% reduction"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8", "short_qid": "bix-18_q3"}
+{"ideal": "0.032", "distractors": ["0.012", "0.052", "0.082"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8", "short_qid": "bix-18_q4"}
+{"ideal": "Approximately 25% (1/4) of wildtype", "distractors": ["Approximately equal (1/1) to wildtype", "Approximately 50% (1/2) of wildtype", "Approximately 75% (3/4) of wildtype"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8", "short_qid": "bix-18_q5"}
+{"ideal": "0.35", "distractors": ["0.45", "0.25", "0.15"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8", "short_qid": "bix-18_q6"}
+{"ideal": "337 samples", "distractors": ["674 samples", "167 samples", "16 samples"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1", "short_qid": "bix-19_q1"}
+{"ideal": "0.216", "distractors": ["0.805", "1.311", "0.668"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1", "short_qid": "bix-19_q2"}
+{"ideal": "0.956", "distractors": ["0.774", "0.723", "0.951"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1", "short_qid": "bix-19_q3"}
+{"ideal": "1.066", "distractors": ["3.751", "1.312", "0.192"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1", "short_qid": "bix-19_q4"}
+{"ideal": "0.93", "distractors": ["0.65", "0.77", "0.85"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q1"}
+{"ideal": "0.00", "distractors": ["0.05", "0.15", "0.10"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q2"}
+{"ideal": "0.017", "distractors": ["0.025", "0.072", "0.047"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q3"}
+{"ideal": "2", "distractors": ["4", "3", "1"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q4"}
+{"ideal": "13:1", "distractors": ["7:1", "19:1", "5:1"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q5"}
+{"ideal": "94.6%", "distractors": ["89.3%", "100%", "92.9%"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q6"}
+{"ideal": "Reduces to 1 category", "distractors": ["Reduces to 0 categories", "Increases to 3 categories", "Maintains 2 categories"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799", "short_qid": "bix-20_q7"}
+{"ideal": "Lower than typical fungi due to fewer generations per unit time", "distractors": ["Higher than typical fungi due to increased DNA replication errors", "No relationship between generation time and saturation rate", "Similar to typical fungi due to phylogenetic constraints"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171", "short_qid": "bix-21_q1"}
+{"ideal": "0.62", "distractors": ["0.71", "0.45", "0.58"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171", "short_qid": "bix-21_q2"}
+{"ideal": "Remain within 5% of the original value", "distractors": ["Decrease by approximately 15%", "Double the original value", "Increase by approximately 15%"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171", "short_qid": "bix-21_q3"}
+{"ideal": "1:3", "distractors": ["1:1", "1:9", "3:1"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171", "short_qid": "bix-21_q4"}
+{"ideal": "Longer generation times", "distractors": ["Higher mutation rates", "Greater species diversity", "Larger genome sizes"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171", "short_qid": "bix-21_q5"}
+{"ideal": "0.05", "distractors": ["-0.01", "0.03", "0.12"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q1"}
+{"ideal": "0.015", "distractors": ["0.045", "0.035", "0.025"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q2"}
+{"ideal": "0.015", "distractors": ["0.005", "0.025", "0.035"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q3"}
+{"ideal": "7.8 x 10^-9", "distractors": ["3.2 x 10^-8", "5.5 x 10^-9", "1.2 x 10^-8"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q4"}
+{"ideal": "0.049889", "distractors": ["0.356620", "0.435670", "0.202527"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q5"}
+{"ideal": "CD4", "distractors": ["CD14", "CD19", "CD8"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q6"}
+{"ideal": "6.140363e-03", "distractors": ["2.677958e-11", "5.481596e-09", "1.920290e-06"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52", "short_qid": "bix-22_q7"}
+{"ideal": "33% higher in fungi", "distractors": ["45% higher in fungi", "15% higher in fungi", "90% higher in fungi"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822", "short_qid": "bix-23_q1"}
+{"ideal": "Position 47", "distractors": ["Position 126", "Position 83", "Position 158"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822", "short_qid": "bix-23_q2"}
+{"ideal": "0.48", "distractors": ["0.12", "0.32", "0.83"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822", "short_qid": "bix-23_q3"}
+{"ideal": "24%", "distractors": ["36%", "12%", "48%"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822", "short_qid": "bix-23_q4"}
+{"ideal": "Canonical glycolysis", "distractors": ["Oxidative phosphorylation", "Amino acid metabolism", "Cellular response to hypoxia"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q1"}
+{"ideal": "Downregulation", "distractors": ["No significant change in expression", "Upregulation", "No consistent direction of change"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q2"}
+{"ideal": "No significant difference", "distractors": ["Significantly upregulated in CBD-treated cells", "Significantly downregulated in CBD-treated cells", "Significantly upregulated in DMSO-treated cells"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q3"}
+{"ideal": "No significant difference", "distractors": ["Significantly upregulated in DMSO-treated cells", "Significantly upregulated in Untreated cells", "Significantly downregulated in DMSO-treated cells"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q4"}
+{"ideal": "Multiple metabolic pathways including glycolysis and glucose catabolism are among the most significantly enriched downregulated processes", "distractors": ["A single metabolic pathway appears in the top 20 enriched terms", "Only glycolysis-related pathways are enriched in downregulated genes", "Metabolic pathways are equally enriched in up- and down-regulated genes"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q5"}
+{"ideal": "Cellular response to decreased oxygen levels", "distractors": ["Canonical glycolysis", "Glycolytic process", "Carbohydrate catabolic process"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q6"}
+{"ideal": "Predominantly downregulated with genes like GPI, PGK1, and ALDOC", "distractors": ["No significant change", "Predominantly upregulated", "Mixed up- and down-regulation"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5", "short_qid": "bix-24_q7"}
+{"ideal": "0.26", "distractors": ["0.12", "0.34", "0.45"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39", "short_qid": "bix-25_q1"}
+{"ideal": "0.08", "distractors": ["-0.52", "-0.15", "0.33"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39", "short_qid": "bix-25_q2"}
+{"ideal": "15%", "distractors": ["22%", "8%", "31%"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39", "short_qid": "bix-25_q3"}
+{"ideal": "0.21", "distractors": ["0.48", "0.35", "0.62"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39", "short_qid": "bix-25_q4"}
+{"ideal": "Exclusive enrichment of cyanoamino acid metabolism in downregulated genes", "distractors": ["Dual enrichment of sulfur metabolism in both up and downregulated genes", "Enrichment of ABC transporters in upregulated genes only", "Enrichment of bacterial secretion systems in upregulated genes only"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q1"}
+{"ideal": "0.015", "distractors": ["0.010", "0.025", "0.020"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q2"}
+{"ideal": "10 genes", "distractors": ["20 genes", "15 genes", "25 genes"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q3"}
+{"ideal": "5 pathways", "distractors": ["6 pathways", "4 pathways", "2 pathways"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q4"}
+{"ideal": "3", "distractors": ["6", "1", "5"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q5"}
+{"ideal": "18 genes", "distractors": ["24 genes", "8 genes", "46 genes"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q6"}
+{"ideal": "0.05", "distractors": ["0.1", "0.001", "0.01"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584", "short_qid": "bix-26_q7"}
+{"ideal": "0.906", "distractors": ["0.881", "1.000", "0.042"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q1"}
+{"ideal": "173", "distractors": ["96", "56", "178"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q2"}
+{"ideal": "Oxidative phosphorylation", "distractors": ["Synaptic vesicle transport", "Protein degradation", "Cell adhesion"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q3"}
+{"ideal": "5%", "distractors": ["15%", "35%", "25%"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q4"}
+{"ideal": "ARI > 0.80", "distractors": ["ARI > 0.40", "ARI > 0.20", "ARI > 0.60"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q5"}
+{"ideal": "3 clusters (NMI = 0.868)", "distractors": ["2 clusters (NMI = 0.805)", "4 clusters (NMI = 0.830)", "5 clusters (NMI not calculated)"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q6"}
+{"ideal": "Oxidative phosphorylation", "distractors": ["Protein degradation", "Synaptic vesicle transport", "Cell cycle regulation"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56", "short_qid": "bix-27_q7"}
+{"ideal": "5.107 x 10^-47", "distractors": ["1.000 x 10^-15", "3.333 x 10^-25", "2.811 x 10^-29"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6", "short_qid": "bix-28_q1"}
+{"ideal": "-25.0000", "distractors": ["-33.3333", "-27.5000", "-40.1645"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6", "short_qid": "bix-28_q2"}
+{"ideal": "-30.4551", "distractors": ["-25.0000", "-28.7577", "-33.3333"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6", "short_qid": "bix-28_q3"}
+{"ideal": "4639.0", "distractors": ["2553.6", "177.0", "3265.8"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6", "short_qid": "bix-28_q4"}
+{"ideal": "-26.9", "distractors": ["-45.2", "-25.0", "-33.3"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6", "short_qid": "bix-28_q5"}
+{"ideal": "5.2", "distractors": ["3.1", "8.3", "1.7"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6", "short_qid": "bix-28_q6"}
+{"ideal": "Increases severity with odds ratio 1.63", "distractors": ["Decreases severity with odds ratio 0.74", "No significant effect (odds ratio ~1.0)", "Decreases severity only in those with multiple prior conditions"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe", "short_qid": "bix-29_q1"}
+{"ideal": "35% increase in odds of higher severity", "distractors": ["50% increase in odds of higher severity", "No significant change in severity odds", "15% decrease in odds of higher severity"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe", "short_qid": "bix-29_q2"}
+{"ideal": "No significant interaction effect (OR\u22481.0)", "distractors": ["Strongly synergistic effect increasing severity", "Strongly antagonistic effect decreasing severity", "Variable effect depending on number of conditions"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe", "short_qid": "bix-29_q3"}
+{"ideal": "No significant effect on severity (OR\u22481.02)", "distractors": ["Variable effect depending on vaccination status", "Moderate negative correlation with severity", "Strong positive correlation with severity"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe", "short_qid": "bix-29_q4"}
+{"ideal": "28%", "distractors": ["35%", "42%", "15%"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q1"}
+{"ideal": "0", "distractors": ["36", "24", "12"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q2"}
+{"ideal": "0:0", "distractors": ["2:3", "1:3", "1:2"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q3"}
+{"ideal": "80%", "distractors": ["89%", "100%", "67%"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q4"}
+{"ideal": "0 miRNAs", "distractors": ["175 miRNAs", "49 miRNAs", "18 miRNAs"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q5"}
+{"ideal": "49 miRNAs show significance", "distractors": ["175 miRNAs show significance", "25 miRNAs show significance", "0 miRNAs show significance"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q6"}
+{"ideal": "The number of significant miRNAs decreases to 35", "distractors": ["The number of significant miRNAs increases to 75", "No change in the number of significant miRNAs", "All miRNAs become significant"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc", "short_qid": "bix-30_q7"}
+{"ideal": "18.93", "distractors": ["222.38", "6.50", "-0.45"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27", "short_qid": "bix-31_q1"}
+{"ideal": "NaN", "distractors": ["<0.05", ">=0.0.5", "<0.001"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27", "short_qid": "bix-31_q2"}
+{"ideal": "197", "distractors": ["223", "147", "168"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27", "short_qid": "bix-31_q3"}
+{"ideal": "6.50e-01", "distractors": ["6.42e-97", "1.55e-79", "1.67e-19"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27", "short_qid": "bix-31_q4"}
+{"ideal": "6.50e-01", "distractors": ["1.55e-79", "1.28e-31", "6.42e-97"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27", "short_qid": "bix-31_q5"}
+{"ideal": "4 functional categories", "distractors": ["6 functional categories", "2 functional categories", "1 functional category"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q1"}
+{"ideal": "3", "distractors": ["0", "5", "7"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q2"}
+{"ideal": "No significant change", "distractors": ["Exclusively upregulated", "Both up and downregulated", "Exclusively downregulated"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q3"}
+{"ideal": "2 pathways", "distractors": ["6 pathways", "4 pathways", "0 pathways"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q4"}
+{"ideal": "Ribosome, riboflavin metabolism", "distractors": ["Starch and sucrose metabolism, two-component system", "Sulfur metabolism, quorum sensing", "Nitrogen metabolism, two-component system"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q5"}
+{"ideal": "Biosynthesis of secondary metabolites, nitrogen cycle", "distractors": ["Two-component system, ribosome", "Sulfur metabolism, phenazine biosynthesis", "Fatty acid metabolism, two-component system"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q6"}
+{"ideal": "Valine, leucine and isoleucine degradation", "distractors": ["Carbon metabolism", "Butanoate metabolism", "Nitrogen metabolism"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5", "short_qid": "bix-32_q7"}
+{"ideal": "The hypothesis is not supported as no significant downregulation of anti-inflammatory pathways was observed", "distractors": ["The hypothesis is partially supported with mixed effects across different cell types", "The hypothesis is strongly supported with significant downregulation of multiple anti-inflammatory genes", "The hypothesis cannot be evaluated due to insufficient data"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q1"}
+{"ideal": "CD14 Monocytes", "distractors": ["Regulatory T cells (Tregs)", "Plasmacytoid dendritic cells", "Natural Killer cells"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q2"}
+{"ideal": "Selective upregulation in CD14 monocytes only", "distractors": ["No significant changes in expression", "Variable expression with both up and downregulation", "Uniform downregulation across all cell types"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q3"}
+{"ideal": "Activation of inflammatory response in specific cell types", "distractors": ["Complete suppression of inflammatory pathways", "No significant changes in inflammatory pathways", "Global downregulation of immune responses"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q4"}
+{"ideal": "Significant upregulation (log2FC = 0.35)", "distractors": ["Significant upregulation (log2FC = 0.87)", "No significant change", "Significant downregulation"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q5"}
+{"ideal": "1", "distractors": ["3", "2", "4"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q6"}
+{"ideal": "CD14 Monocytes (p < 0.0001)", "distractors": ["Tregs (p < 0.01)", "CD16 Monocytes (p < 0.05)", "pDCs (not significant)"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8", "short_qid": "bix-33_q7"}
+{"ideal": "1.67", "distractors": ["0.85", "1.23", "2.15"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde", "short_qid": "bix-34_q1"}
+{"ideal": "2.63", "distractors": ["1.98", "2.72", "2.12"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde", "short_qid": "bix-34_q2"}
+{"ideal": "3516.0", "distractors": ["1035.9", "2471.6", "6211.0"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde", "short_qid": "bix-34_q3"}
+{"ideal": "1.94", "distractors": ["0.95", "2.15", "1.75"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde", "short_qid": "bix-34_q4"}
+{"ideal": "1.95", "distractors": ["0.75", "2.25", "1.25"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde", "short_qid": "bix-34_q5"}
+{"ideal": "0.91", "distractors": ["1.56", "1.23", "0.52"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde", "short_qid": "bix-34_q6"}
+{"ideal": "Longer average branch lengths in fungal trees", "distractors": ["Shorter average branch lengths in fungal trees", "Equal branch lengths between fungi and animals", "Variable branch lengths within each group"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73", "short_qid": "bix-35_q1"}
+{"ideal": "0.0471", "distractors": ["0.8489", "0.5202", "0.9882"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73", "short_qid": "bix-35_q2"}
+{"ideal": "3661", "distractors": ["0.0471", "0.6439", "1.5224"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73", "short_qid": "bix-35_q3"}
+{"ideal": "1.8921", "distractors": ["1.2103", "1.3665", "0.9918"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73", "short_qid": "bix-35_q4"}
+{"ideal": "0.35", "distractors": ["0.55", "0.45", "0.15"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73", "short_qid": "bix-35_q5"}
+{"ideal": "F = 0.77", "distractors": ["F = 8.4", "F = 3.1", "F = 5.2"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1", "short_qid": "bix-36_q1"}
+{"ideal": "Approximately normal", "distractors": ["Bimodal", "Left-skewed", "Right-skewed"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1", "short_qid": "bix-36_q2"}
+{"ideal": "Close to 0", "distractors": ["Between 0.5 and 1.0", "Between 1.0 and 2.0", "Greater than 2.0"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1", "short_qid": "bix-36_q3"}
+{"ideal": "p = 0.57", "distractors": ["p = 0.10", "p = 0.001", "p = 0.05"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1", "short_qid": "bix-36_q4"}
+{"ideal": "Normal", "distractors": ["Uniform", "Skewed", "Bimodal"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1", "short_qid": "bix-36_q5"}
+{"ideal": "ENO1 shows a log2FC of 2.27 but adjusted p-value of 0.226", "distractors": ["ENO1 shows no detectable protein levels in either condition", "ENO1 shows no expression in tumor samples", "ENO1 shows significant downregulation with adjusted p-value < 0.05"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b", "short_qid": "bix-37_q1"}
+{"ideal": "ENO1's raw p-value of 0.031 passes the threshold but adjusted p-value of 0.226 does not", "distractors": ["ENO1's expression is too low to calculate meaningful p-values", "Neither raw nor adjusted p-values are calculable for ENO1", "Both raw and adjusted p-values pass the significance threshold"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b", "short_qid": "bix-37_q2"}
+{"ideal": "4.81-fold increase in tumor", "distractors": ["2.27-fold increase in tumor", "0.031-fold decrease in tumor", "0.226-fold decrease in tumor"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b", "short_qid": "bix-37_q3"}
+{"ideal": "72,896,133 units", "distractors": ["4.81 units", "2,023 units", "350,385,456 units"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b", "short_qid": "bix-37_q4"}
+{"ideal": "0.226", "distractors": ["2.27", "0.031", "4.81"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b", "short_qid": "bix-37_q5"}
+{"ideal": "2.27", "distractors": ["-2.27", "4.81", "0.226"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b", "short_qid": "bix-37_q6"}
+{"ideal": "2x larger in fungi", "distractors": ["0.5x larger in fungi", "3x larger in fungi", "4x larger in fungi"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0", "short_qid": "bix-38_q1"}
+{"ideal": "0.55", "distractors": ["1.00", "0.25", "0.70"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0", "short_qid": "bix-38_q2"}
+{"ideal": "5%", "distractors": ["12%", "2%", "8%"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0", "short_qid": "bix-38_q3"}
+{"ideal": "0.01", "distractors": ["0.05", "0.001", "0.0001"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0", "short_qid": "bix-38_q4"}
+{"ideal": "94%", "distractors": ["65%", "32%", "45%"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0", "short_qid": "bix-38_q5"}
+{"ideal": "2.1", "distractors": ["2.8", "1.2", "3.4"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0", "short_qid": "bix-38_q6"}
+{"ideal": "Infinite (cannot be calculated)", "distractors": ["No significant difference", "2-fold increase", "5-fold increase"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4", "short_qid": "bix-39_q1"}
+{"ideal": "2.5", "distractors": ["3.5", "1.5", "4.0"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4", "short_qid": "bix-39_q2"}
+{"ideal": "28 variants", "distractors": ["35 variants", "51 variants", "42 variants"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4", "short_qid": "bix-39_q3"}
+{"ideal": "38%", "distractors": ["45%", "41%", "52%"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4", "short_qid": "bix-39_q4"}
+{"ideal": "97% in animals vs 49% in fungi", "distractors": ["15% in animals vs 85% in fungi", "95% in animals vs 5% in fungi", "50% in animals vs 50% in fungi"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5", "short_qid": "bix-40_q1"}
+{"ideal": "19 sites", "distractors": ["12 sites", "35 sites", "44 sites"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5", "short_qid": "bix-40_q2"}
+{"ideal": "50%", "distractors": ["15%", "45%", "25%"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5", "short_qid": "bix-40_q3"}
+{"ideal": "1620056at2759", "distractors": ["1193442at2759", "1194797at2759", "1014314at2759"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5", "short_qid": "bix-40_q4"}
+{"ideal": "90%", "distractors": ["50%", "75%", "25%"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5", "short_qid": "bix-40_q5"}
+{"ideal": "9 sites", "distractors": ["21 sites", "27 sites", "15 sites"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5", "short_qid": "bix-40_q6"}
+{"ideal": "10:1", "distractors": ["2:1", "3:1", "5:1"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031", "short_qid": "bix-41_q1"}
+{"ideal": "0.05", "distractors": ["0.01", "0.001", "0.1"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031", "short_qid": "bix-41_q2"}
+{"ideal": "0.43", "distractors": ["0.53", "0.73", "0.63"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031", "short_qid": "bix-41_q3"}
+{"ideal": "4", "distractors": ["7", "5", "6"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031", "short_qid": "bix-41_q4"}
+{"ideal": "5:1", "distractors": ["10:1", "3:1", "1:1"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031", "short_qid": "bix-41_q5"}
+{"ideal": "267", "distractors": ["39", "447", "328"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f", "short_qid": "bix-42_q1"}
+{"ideal": "Highly left-skewed", "distractors": ["Highly right-skewed", "Normally distributed", "Minimally right-skewed"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f", "short_qid": "bix-42_q2"}
+{"ideal": "DNA Methylation", "distractors": ["RNA Expression", "Equal between Methylation and Expression", "Integrated Methylation and Expression"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f", "short_qid": "bix-42_q3"}
+{"ideal": "Negative regulation of epithelial cell proliferation", "distractors": ["Fatty acid metabolism", "mRNA processing", "Immune system response"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q1"}
+{"ideal": "6.02", "distractors": ["15.34", "4.86", "9.45"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q2"}
+{"ideal": "679", "distractors": ["955", "2757", "1761"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q3"}
+{"ideal": "8/49", "distractors": ["4/17", "6/44", "3/9"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q4"}
+{"ideal": "p53-mediated cell cycle regulation", "distractors": ["Cell adhesion and matrix organization", "Immune system activation", "Metabolic pathway regulation"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q5"}
+{"ideal": "0.103838", "distractors": ["0.399388", "0.261997", "0.231793"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q6"}
+{"ideal": "8", "distractors": ["10", "6", "5"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821", "short_qid": "bix-43_q7"}
+{"ideal": "0.0", "distractors": ["-0.2", "0.42", "0.15"], "question": "", "cluster": "2ed9023e-75d7-40fe-a425-b6b84ac8329c", "short_qid": "bix-44_q1"}
+{"ideal": "8%", "distractors": ["15%", "22%", "35%"], "question": "", "cluster": "2ed9023e-75d7-40fe-a425-b6b84ac8329c", "short_qid": "bix-44_q2"}
+{"ideal": "7,615", "distractors": ["5,230", "9,980", "2,845"], "question": "", "cluster": "2ed9023e-75d7-40fe-a425-b6b84ac8329c", "short_qid": "bix-44_q3"}
+{"ideal": "Animals have a lower average RCV value compared to fungi, indicating lower compositional biases.", "distractors": ["There are no statistical differences between animals and fungi RCV values, indicating no compositional biases.", "Fungi and animals both have high RCV values, indicating equal compositional biases.", "Fungi have lower RCV values compared to animals, indicating lower compositional biases."], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9", "short_qid": "bix-45_q1"}
+{"ideal": "0.22", "distractors": ["0.32", "0.27", "0.15"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9", "short_qid": "bix-45_q2"}
+{"ideal": "7%", "distractors": ["39%", "24%", "12%"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9", "short_qid": "bix-45_q3"}
+{"ideal": "-0.62", "distractors": ["0.32", "-0.22", "0.42"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9", "short_qid": "bix-45_q4"}
+{"ideal": "0.12", "distractors": ["0.05", "0.20", "0.15"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9", "short_qid": "bix-45_q5"}
+{"ideal": "0.27", "distractors": ["0.18", "0.32", "0.24"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9", "short_qid": "bix-45_q6"}
+{"ideal": "Strong downregulation in \u0394rhlI (strain #97) and no change/upregulaton in \u0394lasI (strain #98)", "distractors": ["No significant change in either strain", "Strong upregulation in \u0394rhlI (strain #97) and downregulation in \u0394lasI (strain #98)", "Equal downregulation in both strains"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a", "short_qid": "bix-46_q1"}
+{"ideal": "-4.01", "distractors": ["-2.09", "-4.96", "-5.45"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a", "short_qid": "bix-46_q2"}
+{"ideal": "8", "distractors": ["45", "15", "35"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a", "short_qid": "bix-46_q3"}
+{"ideal": "Phenazine biosynthesis", "distractors": ["Quorum sensing", "Rhamnolipid production", "Biofilm formation"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a", "short_qid": "bix-46_q4"}
+{"ideal": "8", "distractors": ["5", "8", "12"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a", "short_qid": "bix-46_q5"}
+{"ideal": "-4.10", "distractors": ["-0.62", "-1.95", "-2.85"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a", "short_qid": "bix-46_q6"}
+{"ideal": "It doesn't change significantly", "distractors": ["No CHIP variants are present in the population", "It is significantly higher in individuals with mutations in the BLM gene", "It is significantly higher in individuals without mutations in the BLM gene"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3", "short_qid": "bix-47_q1"}
+{"ideal": "P184", "distractors": ["P502", "P557", "SRR5566591"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3", "short_qid": "bix-47_q2"}
+{"ideal": "0.91", "distractors": ["0.82", "0.67", "0.75"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3", "short_qid": "bix-47_q3"}
+{"ideal": "3.4:1", "distractors": ["5.9:1", "4.7:1", "2.1:1"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3", "short_qid": "bix-47_q4"}
+{"ideal": "Animals evolve 1.5x faster than fungi with p < 0.0001", "distractors": ["Fungi evolve 1.5x faster than animals with p < 0.0001", "Animals evolve 2.5x faster than fungi with p < 0.0001", "No significant difference exists between animal and fungal evolutionary rates"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q1"}
+{"ideal": "Right-skewed distribution with median 0.46 pairwise identity", "distractors": ["Bimodal distribution with peaks at 0.3 and 0.7 pairwise identity", "Left-skewed distribution with median 0.55 pairwise identity", "Normal distribution centered at 0.47 pairwise identity"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q2"}
+{"ideal": "Animals show 2.5x higher standard deviation than fungi", "distractors": ["Fungi show 1.5x higher standard deviation than animals", "Animals show 3.5x higher standard deviation than fungi", "Animals show 1.2x higher standard deviation than fungi"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q3"}
+{"ideal": "72% of genes have a higher median evolutionary rate in animals", "distractors": ["63% of genes have a higher median evolutionary rate in animals", "45% of genes have a higher median evolutionary rate in animals", "33% of genes have a higher median evolutionary rate in animals"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q4"}
+{"ideal": "0.39", "distractors": ["0.68", "0.32", "0.54"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q5"}
+{"ideal": "0.09", "distractors": ["0.48", "0.24", "0.36"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q6"}
+{"ideal": "0.09", "distractors": ["0.21", "0.28", "0.15"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53", "short_qid": "bix-48_q7"}
+{"ideal": "12:1", "distractors": ["15:1", "8:1", "6:1"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760", "short_qid": "bix-49_q1"}
+{"ideal": "4.21", "distractors": ["3.82", "2.87", "3.30"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760", "short_qid": "bix-49_q2"}
+{"ideal": "8.93e-10", "distractors": ["8.44e-07", "7.04e-26", "1.42e-05"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760", "short_qid": "bix-49_q3"}
+{"ideal": "833", "distractors": ["2118", "1054", "952"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760", "short_qid": "bix-49_q4"}
+{"ideal": "1106", "distractors": ["1766", "472", "177"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760", "short_qid": "bix-49_q5"}
+{"ideal": "4.089", "distractors": ["4.803", "3.458", "2.871"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760", "short_qid": "bix-49_q6"}
+{"ideal": "0.36 in fungi vs 0.0 in animals", "distractors": ["0.25 in fungi vs 0.45 in animals", "0.45 in fungi vs 0.25 in animals", "0.28 in fungi vs 0.32 in animals"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c", "short_qid": "bix-50_q1"}
+{"ideal": "35%", "distractors": ["45%", "25%", "15%"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c", "short_qid": "bix-50_q2"}
+{"ideal": "5,000 sites", "distractors": ["2,500 sites", "10,000 sites", "7,500 sites"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c", "short_qid": "bix-50_q3"}
+{"ideal": "7,492,955,849.5", "distractors": ["5,492,955,849.5", "8,492,955,849.5", "6,492,955,849.5"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c", "short_qid": "bix-50_q4"}
+{"ideal": "0.25-0.35", "distractors": ["0.45-0.55", "0.15-0.25", "0.65-0.75"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423", "short_qid": "bix-51_q1"}
+{"ideal": "111.81", "distractors": ["105.16", "104.14", "114.85"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423", "short_qid": "bix-51_q2"}
+{"ideal": "0.0025", "distractors": ["0.1363", "0.0021", "0.2624"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423", "short_qid": "bix-51_q3"}
+{"ideal": "-0.07951", "distractors": ["-0.61320", "0.16212", "-0.07495"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423", "short_qid": "bix-51_q4"}
+{"ideal": "0.0865", "distractors": ["0.1363", "0.9588", "0.0025"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423", "short_qid": "bix-51_q5"}
+{"ideal": "104.14", "distractors": ["114.85", "111.81", "105.16"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423", "short_qid": "bix-51_q6"}
+{"ideal": "1.5", "distractors": ["2.0", "1.0", "0.5"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9", "short_qid": "bix-52_q1"}
+{"ideal": "6.0 x 10^-8", "distractors": ["1.2 x 10^-6", "3.1 x 10^-7", "5.3 x 10^-7"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9", "short_qid": "bix-52_q2"}
+{"ideal": "458.27", "distractors": ["156.42", "328.15", "214.93"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9", "short_qid": "bix-52_q3"}
+{"ideal": "0.12", "distractors": ["0.05", "0.08", "0.02"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9", "short_qid": "bix-52_q4"}
+{"ideal": "0.000000639 CpGs per base", "distractors": ["0.00000676 CpGs per base", "0.00000470 CpGs per base", "0.00000842 CpGs per base"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9", "short_qid": "bix-52_q5"}
+{"ideal": "Chromosome W", "distractors": ["Chromosome Z", "Chromosome 1", "Chromosome 32"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9", "short_qid": "bix-52_q6"}
+{"ideal": "Oxidative stress pathways appear only after the top 10 most enriched pathways", "distractors": ["Inflammatory response pathways and oxidative stress pathways show equal enrichment", "No oxidative stress pathways appear in the enrichment analysis", "Oxidative stress pathways are among the top 5 most enriched pathways"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q1"}
+{"ideal": "Increases from 1416 to 1942 significant genes", "distractors": ["All genes become non-significant", "No change in the number of significant genes", "Decreases from 1942 to 1416 significant genes"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q2"}
+{"ideal": "22/64 genes", "distractors": ["9/22 genes", "22/9 genes", "9/64 genes"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q3"}
+{"ideal": "3.011783e-06", "distractors": ["6.250315e-07", "6.458305e-05", "1.077120e-04"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q4"}
+{"ideal": "2 out of 20 pathways", "distractors": ["8 out of 20 pathways", "5 out of 20 pathways", "12 out of 20 pathways"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q5"}
+{"ideal": "Leishmaniasis", "distractors": ["Chemokine signaling pathway", "TNF signaling pathway", "Cytokine-cytokine receptor interaction"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q6"}
+{"ideal": "Only KD samples show remaining variation", "distractors": ["Both conditions show equal variation", "Only WT samples show remaining variation", "No variation remains between replicates"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b", "short_qid": "bix-53_q7"}
+{"ideal": "0.907", "distractors": ["0.813", "0.703", "0.500"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q1"}
+{"ideal": "0.5876", "distractors": ["0.8062", "0.7834", "0.3501"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q2"}
+{"ideal": "157,912 mm\u00b2", "distractors": ["159,664 mm\u00b2", "114,531 mm\u00b2", "137,098 mm\u00b2"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q3"}
+{"ideal": "1.131e-11", "distractors": ["0.000287", "6.979e-07", "0.000428"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q4"}
+{"ideal": "0.908", "distractors": ["0.500", "0.813", "0.703"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q5"}
+{"ideal": "0.8062", "distractors": ["0.5876", "0.3501", "0.7834"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q6"}
+{"ideal": "184,372", "distractors": ["210,831", "137,098", "113,394"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295", "short_qid": "bix-54_q7"}

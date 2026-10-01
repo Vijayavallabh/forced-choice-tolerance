@@ -1,0 +1,45 @@
+{
+ "reason": "cut by the driver's own 10800 s wall clock, not by the protocol; rerun from the start with the same limit on an idle H100 replica",
+ "episodes": [
+  {
+   "file": "qwen72b/data/bix-24-q1__r2.json",
+   "question_id": "bix-24-q1",
+   "condition": "data",
+   "rollout": 2,
+   "steps": 18,
+   "seconds": 11180.7
+  },
+  {
+   "file": "qwen72b/nodata/bix-1-q1__r1.json",
+   "question_id": "bix-1-q1",
+   "condition": "nodata",
+   "rollout": 1,
+   "steps": 15,
+   "seconds": 12081.3
+  },
+  {
+   "file": "qwen72b/nodata/bix-3-q4__r1.json",
+   "question_id": "bix-3-q4",
+   "condition": "nodata",
+   "rollout": 1,
+   "steps": 25,
+   "seconds": 11057.0
+  },
+  {
+   "file": "qwen72b/nodata/bix-35-q1__r1.json",
+   "question_id": "bix-35-q1",
+   "condition": "nodata",
+   "rollout": 1,
+   "steps": 29,
+   "seconds": 10997.3
+  },
+  {
+   "file": "qwen72b/nodata/bix-53-q5__r2.json",
+   "question_id": "bix-53-q5",
+   "condition": "nodata",
+   "rollout": 2,
+   "steps": 32,
+   "seconds": 10847.2
+  }
+ ]
+}

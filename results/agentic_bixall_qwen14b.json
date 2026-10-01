@@ -1,0 +1,68 @@
+{
+ "Qwen/Qwen2.5-14B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/bixbench_v15.jsonl",
+  "condition": "withheld_aware",
+  "readout": "generated",
+  "tools": true,
+  "system": "You are answering a multiple-choice question, but the question text and the data it refers to have been withheld from you: all you are given is the list of options. You must still pick one. Study the options themselves and choose the one that is most likely to be the intended answer. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 205,
+  "file": {
+   "n_rollouts": 615,
+   "n_clusters": 59,
+   "accuracy": 32.03252032520325,
+   "chance": 25.0,
+   "margin_over_chance": 7.032520325203253,
+   "margin_ci95": [
+    2.0303245676380004,
+    12.205937883507973
+   ],
+   "used_tool": 15.284552845528454,
+   "unparsed": 0.16260162601626016,
+   "mean_turns": 1.4325203252032521,
+   "second_smallest_rate": 29.206349206349206,
+   "by_tool": {
+    "used": {
+     "n": 94,
+     "accuracy": 39.361702127659576
+    },
+    "not_used": {
+     "n": 521,
+     "accuracy": 30.710172744721685
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 615,
+   "n_clusters": 59,
+   "accuracy": 21.463414634146343,
+   "chance": 25.0,
+   "margin_over_chance": -3.536585365853658,
+   "margin_ci95": [
+    -7.615895496129486,
+    1.1794482870201806
+   ],
+   "used_tool": 17.88617886178862,
+   "unparsed": 0.0,
+   "mean_turns": 1.395121951219512,
+   "second_smallest_rate": 33.333333333333336,
+   "by_tool": {
+    "used": {
+     "n": 110,
+     "accuracy": 20.909090909090907
+    },
+    "not_used": {
+     "n": 505,
+     "accuracy": 21.584158415841586
+    }
+   }
+  },
+  "margin_over_clean": 10.569105691056912,
+  "margin_over_clean_ci95": [
+   3.7658165204587397,
+   17.66529989482146
+  ]
+ }
+}

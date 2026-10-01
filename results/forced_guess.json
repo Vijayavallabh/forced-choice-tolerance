@@ -1,0 +1,145 @@
+{
+ "model": "gpt-4o",
+ "not_registered": true,
+ "chance": 0.25,
+ "served": [
+  "gpt-4o-2024-11-20"
+ ],
+ "content_filtered": 0,
+ "v15|stated": {
+  "n_items": 105,
+  "n_clusters": 46,
+  "stated_share": 99.04761904761905,
+  "within_5pct": {
+   "mean": 1.904762,
+   "lo": 0.0,
+   "hi": 4.950495,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "nearest_is_key_when_stated": {
+   "mean": 17.307692,
+   "lo": 9.375,
+   "hi": 26.202215,
+   "n_items": 104,
+   "n_clusters": 45
+  },
+  "forced_choice": {
+   "mean": 30.793651,
+   "lo": 25.193386,
+   "hi": 36.088728,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "predicted_forced": 17.38095238095238,
+  "forced_minus_predicted": {
+   "mean": 13.412698,
+   "lo": 4.455171,
+   "hi": 21.875243,
+   "n_items": 105,
+   "n_clusters": 46
+  }
+ },
+ "v15|forced": {
+  "n_items": 105,
+  "n_clusters": 46,
+  "stated_share": 100.0,
+  "within_5pct": {
+   "mean": 1.904762,
+   "lo": 0.0,
+   "hi": 4.716981,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "nearest_is_key_when_stated": {
+   "mean": 13.095238,
+   "lo": 7.380639,
+   "hi": 19.505796,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "forced_choice": {
+   "mean": 30.793651,
+   "lo": 25.193386,
+   "hi": 36.088728,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "predicted_forced": 13.095238095238097,
+  "forced_minus_predicted": {
+   "mean": 17.698413,
+   "lo": 9.214744,
+   "hi": 25.72872,
+   "n_items": 105,
+   "n_clusters": 46
+  }
+ },
+ "v10|stated": {
+  "n_items": 158,
+  "n_clusters": 48,
+  "stated_share": 100.0,
+  "within_5pct": {
+   "mean": 8.227848,
+   "lo": 4.294479,
+   "hi": 12.857143,
+   "n_items": 158,
+   "n_clusters": 48
+  },
+  "nearest_is_key_when_stated": {
+   "mean": 22.78481,
+   "lo": 15.865385,
+   "hi": 30.379747,
+   "n_items": 158,
+   "n_clusters": 48
+  },
+  "forced_choice": {
+   "mean": 35.232068,
+   "lo": 30.146587,
+   "hi": 40.215264,
+   "n_items": 158,
+   "n_clusters": 48
+  },
+  "predicted_forced": 22.78481012658228,
+  "forced_minus_predicted": {
+   "mean": 12.447257,
+   "lo": 4.087023,
+   "hi": 19.791667,
+   "n_items": 158,
+   "n_clusters": 48
+  }
+ },
+ "v10|forced": {
+  "n_items": 158,
+  "n_clusters": 48,
+  "stated_share": 100.0,
+  "within_5pct": {
+   "mean": 3.164557,
+   "lo": 0.591716,
+   "hi": 6.711409,
+   "n_items": 158,
+   "n_clusters": 48
+  },
+  "nearest_is_key_when_stated": {
+   "mean": 18.829114,
+   "lo": 12.92517,
+   "hi": 25.3125,
+   "n_items": 158,
+   "n_clusters": 48
+  },
+  "forced_choice": {
+   "mean": 35.232068,
+   "lo": 30.146587,
+   "hi": 40.215264,
+   "n_items": 158,
+   "n_clusters": 48
+  },
+  "predicted_forced": 18.829113924050635,
+  "forced_minus_predicted": {
+   "mean": 16.402954,
+   "lo": 9.509498,
+   "hi": 22.561297,
+   "n_items": 158,
+   "n_clusters": 48
+  }
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "Qwen/Qwen2.5-32B-Instruct|bixbench_v10|withheld|argmax|bixprompt": {
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "items": "build/bixbench_v10.jsonl",
+  "condition": "withheld",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/qwen32b_bixv10_bixprompt_argmax.jsonl",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 296,
+  "file": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 31.869369369369373,
+   "chance": 25.0,
+   "margin_over_chance": 6.86936936936937,
+   "margin_ci95": [
+    2.9913253697383393,
+    11.312084566998417
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 27.74327122153209,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 31.869369369369373
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 24.0990990990991,
+   "chance": 25.0,
+   "margin_over_chance": -0.9009009009009009,
+   "margin_ci95": [
+    -4.757975797579758,
+    2.88971861471861
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 39.583333333333336,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 24.0990990990991
+    }
+   }
+  },
+  "margin_over_clean": 7.77027027027027,
+  "margin_over_clean_ci95": [
+   2.370872988661934,
+   13.778914075922632
+  ]
+ }
+}

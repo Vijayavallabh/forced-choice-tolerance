@@ -1,0 +1,725 @@
+{
+  "url": "https://api.crossref.org/works/10.1126/sciadv.adf4950",
+  "retrieved_at": "2026-09-16T15:26:15.860704+00:00",
+  "status": 200,
+  "body": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            15
+          ]
+        ],
+        "date-time": "2026-07-15T03:42:17Z",
+        "timestamp": 1784086937621,
+        "version": "3.55.0"
+      },
+      "reference-count": 60,
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "issue": "22",
+      "content-domain": {
+        "domain": [
+          "www.science.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Sci. Adv."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ]
+      },
+      "abstract": "<jats:p>\n            A major issue in neuroscience is the poor translatability of research results from preclinical studies in animals to clinical outcomes. Comparative neuroscience can overcome this barrier by studying multiple species to differentiate between species-specific and general mechanisms of neural circuit functioning. Targeted manipulation of neural circuits often depends on genetic dissection, and use of this technique has been restricted to only a few model species, limiting its application in comparative research. However, ongoing advances in genomics make genetic dissection attainable in a growing number of species. To demonstrate the potential of comparative gene editing approaches, we developed a viral-mediated CRISPR/Cas9 strategy that is predicted to target the oxytocin receptor (\n            <jats:italic>Oxtr</jats:italic>\n            ) gene in &gt;80 rodent species. This strategy specifically reduced OXTR levels in all evaluated species (\n            <jats:italic>n</jats:italic>\n            = 6) without causing gross neuronal toxicity. Thus, we show that CRISPR/Cas9-based tools can function in multiple species simultaneously. Thereby, we hope to encourage comparative gene editing and improve the translatability of neuroscientific research.\n          </jats:p>",
+      "DOI": "10.1126/sciadv.adf4950",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            31
+          ]
+        ],
+        "date-time": "2023-05-31T17:57:49Z",
+        "timestamp": 1685555869000
+      },
+      "update-policy": "https://doi.org/10.34133/aaas_crossmark",
+      "source": "Crossref",
+      "is-referenced-by-count": 21,
+      "title": [
+        "An AAV-CRISPR/Cas9 strategy for gene editing across divergent rodent species: Targeting neural oxytocin receptors as a proof of concept"
+      ],
+      "prefix": "10.1126",
+      "volume": "9",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6018-3588",
+          "authenticated-orcid": true,
+          "given": "Arjen J.",
+          "family": "Boender",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Center for Translational Social Neuroscience, Silvio O. Conte Center for Oxytocin and Social Cognition, Emory National Primate Research Center, Emory University, Atlanta, GA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1367-527X",
+          "authenticated-orcid": true,
+          "given": "Marina",
+          "family": "Boon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Translational Social Neuroscience, Silvio O. Conte Center for Oxytocin and Social Cognition, Emory National Primate Research Center, Emory University, Atlanta, GA, USA."
+            },
+            {
+              "name": "Department of Human Genetics, Donders Institute for Brain, Cognition and Behavior, Radboud University Medical Center, Nijmegen, Netherlands."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "H. Elliott",
+          "family": "Albers",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Neuroscience Institute, Georgia State University, Atlanta, GA, USA."
+            },
+            {
+              "name": "Center for Behavioral Neuroscience, Georgia State University, Atlanta, GA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Samantha R.",
+          "family": "Eck",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Psychology, University of California, Davis, Davis, CA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6037-814X",
+          "authenticated-orcid": true,
+          "given": "Brandon A.",
+          "family": "Fricker",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Psychology, Emory University, Atlanta, GA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6013-3943",
+          "authenticated-orcid": true,
+          "given": "Aubrey M.",
+          "family": "Kelly",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Psychology, Emory University, Atlanta, GA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joseph E.",
+          "family": "LeDoux",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Neural Science, New York University, New York, NY, USA."
+            },
+            {
+              "name": "Department of Psychiatry and Department of Child and Adolescent Psychiatry, New York University Langone Medical School, New York, NY, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2038-529X",
+          "authenticated-orcid": true,
+          "given": "Simone C.",
+          "family": "Motta",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Biomedical Sciences, Department of Anatomy, University of S\u00e3o Paulo, S\u00e3o Paulo, SP, Brazil."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4677-0225",
+          "authenticated-orcid": true,
+          "given": "Prerana",
+          "family": "Shrestha",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Neurobiology and Behavior, Renaissance School of Medicine, Stony Brook University, Stony Brook, NY, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4334-1468",
+          "authenticated-orcid": true,
+          "given": "Jack H.",
+          "family": "Taylor",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Neuroscience Institute, Georgia State University, Atlanta, GA, USA."
+            },
+            {
+              "name": "Center for Behavioral Neuroscience, Georgia State University, Atlanta, GA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4627-5478",
+          "authenticated-orcid": true,
+          "given": "Brian C.",
+          "family": "Trainor",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Psychology, University of California, Davis, Davis, CA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2794-6157",
+          "authenticated-orcid": true,
+          "given": "Rodrigo",
+          "family": "Triana-Del Rio",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Neural Science, New York University, New York, NY, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2044-2239",
+          "authenticated-orcid": true,
+          "given": "Larry J.",
+          "family": "Young",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Center for Translational Social Neuroscience, Silvio O. Conte Center for Oxytocin and Social Cognition, Emory National Primate Research Center, Emory University, Atlanta, GA, USA."
+            },
+            {
+              "name": "Department of Psychiatry and Behavioral Sciences, Emory University School of Medicine, Atlanta, GA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "221",
+      "reference": [
+        {
+          "key": "e_1_3_2_2_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41583-022-00644-y"
+        },
+        {
+          "key": "e_1_3_2_3_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neubiorev.2020.06.021"
+        },
+        {
+          "key": "e_1_3_2_4_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.biopsych.2020.11.015"
+        },
+        {
+          "key": "e_1_3_2_5_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.14814/phy2.12083"
+        },
+        {
+          "key": "e_1_3_2_6_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41593-021-00800-0"
+        },
+        {
+          "key": "e_1_3_2_7_2",
+          "unstructured": "J. LeDoux Anxious: Using the Brain to Understand and Treat Fear and Anxiety (Penguin Publishing Group 2015)."
+        },
+        {
+          "key": "e_1_3_2_8_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41586-021-03451-0"
+        },
+        {
+          "key": "e_1_3_2_9_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1225829"
+        },
+        {
+          "key": "e_1_3_2_10_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1231143"
+        },
+        {
+          "key": "e_1_3_2_11_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nbt.3055"
+        },
+        {
+          "key": "e_1_3_2_12_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.yhbeh.2020.104780"
+        },
+        {
+          "key": "e_1_3_2_13_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neuroscience.2020.08.023"
+        },
+        {
+          "key": "e_1_3_2_14_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.yhbeh.2018.10.011"
+        },
+        {
+          "key": "e_1_3_2_15_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1921446117"
+        },
+        {
+          "key": "e_1_3_2_16_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.2121037119"
+        },
+        {
+          "key": "e_1_3_2_17_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.physbeh.2022.113828"
+        },
+        {
+          "key": "e_1_3_2_18_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41386-020-0657-4"
+        },
+        {
+          "key": "e_1_3_2_19_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.2011890117"
+        },
+        {
+          "key": "e_1_3_2_20_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1523/JNEUROSCI.2864-20.2021"
+        },
+        {
+          "key": "e_1_3_2_21_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1523/JNEUROSCI.5039-08.2009"
+        },
+        {
+          "key": "e_1_3_2_22_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cub.2019.04.070"
+        },
+        {
+          "key": "e_1_3_2_23_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41593-020-0674-y"
+        },
+        {
+          "key": "e_1_3_2_24_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pgen.1005009"
+        },
+        {
+          "key": "e_1_3_2_25_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.isci.2022.104049"
+        },
+        {
+          "key": "e_1_3_2_26_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/7854_2017_12"
+        },
+        {
+          "key": "e_1_3_2_27_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1226201"
+        },
+        {
+          "key": "e_1_3_2_28_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1098/rstb.2021.0137"
+        },
+        {
+          "key": "e_1_3_2_29_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1210/endocr/bqac111"
+        },
+        {
+          "key": "e_1_3_2_30_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1146/annurev-neuro-102320-102847"
+        },
+        {
+          "key": "e_1_3_2_31_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41582-021-00602-9"
+        },
+        {
+          "key": "e_1_3_2_32_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.conb.2020.11.007"
+        },
+        {
+          "key": "e_1_3_2_33_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.aaa8120"
+        },
+        {
+          "key": "e_1_3_2_34_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1158668"
+        },
+        {
+          "key": "e_1_3_2_35_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.biopsych.2015.12.008"
+        },
+        {
+          "key": "e_1_3_2_36_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/tp.2015.73"
+        },
+        {
+          "key": "e_1_3_2_37_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1080/17470919.2015.1040893"
+        },
+        {
+          "key": "e_1_3_2_38_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.0505312102"
+        },
+        {
+          "key": "e_1_3_2_39_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.psyneuen.2015.11.011"
+        },
+        {
+          "key": "e_1_3_2_40_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cub.2022.01.014"
+        },
+        {
+          "key": "e_1_3_2_41_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/bioinformatics/btv494"
+        },
+        {
+          "key": "e_1_3_2_42_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/cne.25382"
+        },
+        {
+          "key": "e_1_3_2_43_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41586-020-03040-7"
+        },
+        {
+          "key": "e_1_3_2_44_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/jne.12882"
+        },
+        {
+          "key": "e_1_3_2_45_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s00429-022-02581-z"
+        },
+        {
+          "key": "e_1_3_2_46_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-020-15659-1"
+        },
+        {
+          "key": "e_1_3_2_47_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S0022-2836(05)80360-2"
+        },
+        {
+          "key": "e_1_3_2_48_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nn1327"
+        },
+        {
+          "key": "e_1_3_2_49_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41583-018-0072-6"
+        },
+        {
+          "key": "e_1_3_2_50_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.biopsych.2018.10.008"
+        },
+        {
+          "key": "e_1_3_2_51_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.yhbeh.2016.10.009"
+        },
+        {
+          "key": "e_1_3_2_52_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.psyneuen.2021.105209"
+        },
+        {
+          "key": "e_1_3_2_53_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/jne.12382"
+        },
+        {
+          "key": "e_1_3_2_54_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.neubiorev.2017.01.034"
+        },
+        {
+          "key": "e_1_3_2_55_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1111/1749-4877.12339"
+        },
+        {
+          "key": "e_1_3_2_56_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fncel.2022.1000538"
+        },
+        {
+          "key": "e_1_3_2_57_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nature22381"
+        },
+        {
+          "key": "e_1_3_2_58_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41586-021-04004-1"
+        },
+        {
+          "key": "e_1_3_2_59_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cub.2020.09.089"
+        },
+        {
+          "key": "e_1_3_2_60_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/mtm.2015.40"
+        },
+        {
+          "key": "e_1_3_2_61_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1089/hgtb.2011.034"
+        }
+      ],
+      "container-title": [
+        "Science Advances"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.science.org/doi/pdf/10.1126/sciadv.adf4950",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            9
+          ]
+        ],
+        "date-time": "2024-01-09T22:58:00Z",
+        "timestamp": 1704841080000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.science.org/doi/10.1126/sciadv.adf4950"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ]
+      },
+      "references-count": 60,
+      "journal-issue": {
+        "issue": "22",
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              2
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10.1126/sciadv.adf4950"
+      ],
+      "URL": "https://doi.org/10.1126/sciadv.adf4950",
+      "relation": {},
+      "ISSN": [
+        "2375-2548"
+      ],
+      "issn-type": [
+        {
+          "value": "2375-2548",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "2022-10-28",
+          "order": 0,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2023-04-24",
+          "order": 1,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        },
+        {
+          "value": "2023-05-31",
+          "order": 2,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        }
+      ],
+      "article-number": "eadf4950"
+    }
+  }
+}

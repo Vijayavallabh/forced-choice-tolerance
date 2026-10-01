@@ -1,0 +1,128 @@
+{
+  "file": "bixnum",
+  "label": "BixBench's 105 four-option numeric items",
+  "tolerance": 0.05,
+  "max_unparsed": 5.0,
+  "rows": [
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "params": 1.543733572,
+      "mcq_accuracy": 34.76190476190476,
+      "mcq_margin": 9.76190476190476,
+      "mcq_interval": [
+        3.5046728971962615,
+        16.177151416122
+      ],
+      "mcq_unparsed": 0.0,
+      "mcq_readable": true,
+      "free_accuracy": 0.9523809523809524,
+      "free_interval": [
+        0.0,
+        3.3333333333333335
+      ],
+      "free_declined": 0.0,
+      "option_set_worth": 8.809523809523807
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "params": 3.212749824,
+      "mcq_accuracy": 29.523809523809526,
+      "mcq_margin": 4.5238095238095255,
+      "mcq_interval": [
+        -2.4522058823529393,
+        11.518284436121508
+      ],
+      "mcq_unparsed": 0.4761904761904762,
+      "mcq_readable": true,
+      "free_accuracy": 3.8095238095238098,
+      "free_interval": [
+        0.9174311926605505,
+        7.447554185722804
+      ],
+      "free_declined": 3.8095238095238098,
+      "option_set_worth": 0.7142857142857157
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "params": 7.615616512,
+      "mcq_accuracy": 31.428571428571427,
+      "mcq_margin": 6.428571428571427,
+      "mcq_interval": [
+        -0.7579662605435794,
+        14.54640151515151
+      ],
+      "mcq_unparsed": 0.0,
+      "mcq_readable": true,
+      "free_accuracy": 3.8095238095238098,
+      "free_interval": [
+        0.8928571428571428,
+        7.563025210084033
+      ],
+      "free_declined": 0.0,
+      "option_set_worth": 2.6190476190476173
+    },
+    {
+      "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "params": 8.030261248,
+      "mcq_accuracy": 23.333333333333332,
+      "mcq_margin": -1.6666666666666679,
+      "mcq_interval": [
+        -8.636576040781648,
+        4.809782608695642
+      ],
+      "mcq_unparsed": 2.380952380952381,
+      "mcq_readable": true,
+      "free_accuracy": 0.9523809523809524,
+      "free_interval": [
+        0.0,
+        3.261765408504534
+      ],
+      "free_declined": 8.571428571428571,
+      "option_set_worth": -2.6190476190476204
+    },
+    {
+      "model": "microsoft/phi-4",
+      "params": 14.6595072,
+      "mcq_accuracy": 22.380952380952383,
+      "mcq_margin": -2.619047619047617,
+      "mcq_interval": [
+        -8.654605263157892,
+        3.4403669724770642
+      ],
+      "mcq_unparsed": 40.476190476190474,
+      "mcq_readable": false,
+      "free_accuracy": 0.9523809523809524,
+      "free_interval": [
+        0.0,
+        3.0935889175257687
+      ],
+      "free_declined": 58.0952380952381,
+      "option_set_worth": -3.5714285714285694
+    },
+    {
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "params": 14.770033664,
+      "mcq_accuracy": 40.476190476190474,
+      "mcq_margin": 15.476190476190474,
+      "mcq_interval": [
+        6.774786672084519,
+        25.0
+      ],
+      "mcq_unparsed": 0.0,
+      "mcq_readable": true,
+      "free_accuracy": 1.9047619047619049,
+      "free_interval": [
+        0.0,
+        4.673999294657021
+      ],
+      "free_declined": 26.666666666666668,
+      "option_set_worth": 13.57142857142857
+    }
+  ],
+  "free_accuracy_range": [
+    0.9523809523809524,
+    3.8095238095238098
+  ],
+  "n_models": 6,
+  "n_readable": 5
+}

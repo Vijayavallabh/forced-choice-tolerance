@@ -1,0 +1,312 @@
+{
+  "url": "https://api.datacite.org/dois/10.5281/zenodo.13935259",
+  "retrieved_at": "2026-09-16T15:26:29.764839+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.5281/zenodo.13935259",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.5281/zenodo.13935259",
+        "prefix": "10.5281",
+        "suffix": "zenodo.13935259",
+        "identifiers": [
+          {
+            "identifier": "oai:zenodo.org:13935259",
+            "identifierType": "oai"
+          }
+        ],
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifierType": "oai",
+            "alternateIdentifier": "oai:zenodo.org:13935259"
+          }
+        ],
+        "creators": [
+          {
+            "name": "Emami, Michael",
+            "nameType": "Personal",
+            "givenName": "Michael",
+            "familyName": "Emami",
+            "affiliation": [
+              "University of California, Los Angeles",
+              "David Geffen School of Medicine at UCLA"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Brimble, Mark",
+            "nameType": "Personal",
+            "givenName": "Mark",
+            "familyName": "Brimble",
+            "affiliation": [
+              "St. Jude Children's Research Hospital"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0001-7554-9004",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Espinoza, Alejandro",
+            "nameType": "Personal",
+            "givenName": "Alejandro",
+            "familyName": "Espinoza",
+            "affiliation": [
+              "University of California, Los Angeles"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Owens, Jane",
+            "nameType": "Personal",
+            "givenName": "Jane",
+            "familyName": "Owens",
+            "affiliation": [
+              "Pfizer (United States)"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Whiteley, Laurence",
+            "nameType": "Personal",
+            "givenName": "Laurence",
+            "familyName": "Whiteley",
+            "affiliation": [
+              "Pfizer (United States)"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Casinghino, Sandra",
+            "nameType": "Personal",
+            "givenName": "Sandra",
+            "familyName": "Casinghino",
+            "affiliation": [
+              "Pfizer (United States)"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Lanz, Thomas",
+            "nameType": "Personal",
+            "givenName": "Thomas",
+            "familyName": "Lanz",
+            "affiliation": [
+              "Pfizer (United States)"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Farahat, Philip",
+            "nameType": "Personal",
+            "givenName": "Philip",
+            "familyName": "Farahat",
+            "affiliation": [
+              "University of California, Irvine"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Pellegrini, Matteo",
+            "nameType": "Personal",
+            "givenName": "Matteo",
+            "familyName": "Pellegrini",
+            "affiliation": [
+              "University of California, Los Angeles"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Young, Courtney",
+            "nameType": "Personal",
+            "givenName": "Courtney",
+            "familyName": "Young",
+            "affiliation": [
+              "MyoGene Bio"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Thomas, Paul",
+            "nameType": "Personal",
+            "givenName": "Paul",
+            "familyName": "Thomas",
+            "affiliation": [
+              "St. Jude Children's Research Hospital"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "McNally, Elizabeth",
+            "nameType": "Personal",
+            "givenName": "Elizabeth",
+            "familyName": "McNally",
+            "affiliation": [
+              "Northwestern University"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Villalta, S Armando",
+            "nameType": "Personal",
+            "givenName": "S Armando",
+            "familyName": "Villalta",
+            "affiliation": [
+              "University of California, Irvine"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-5212-2259",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Schattgen, Stefan",
+            "nameType": "Personal",
+            "givenName": "Stefan",
+            "familyName": "Schattgen",
+            "affiliation": [
+              "St. Jude Children's Research Hospital"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-6860-5079",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Spencer, Melissa",
+            "nameType": "Personal",
+            "givenName": "Melissa",
+            "familyName": "Spencer",
+            "affiliation": [
+              "University of California, Los Angeles",
+              "David Geffen School of Medicine at UCLA"
+            ],
+            "nameIdentifiers": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "Single-cell and TCR sequencing analysis of peripheral blood mononuclear cells from Duchenne muscular dystrophy patients before and after dosing with AAV9 mini-dystrophin"
+          }
+        ],
+        "publisher": "Zenodo",
+        "container": {},
+        "publicationYear": 2024,
+        "subjects": [],
+        "contributors": [],
+        "dates": [
+          {
+            "date": "2024-10-15",
+            "dateType": "Issued"
+          }
+        ],
+        "language": null,
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceType": "",
+          "resourceTypeGeneral": "Dataset"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.13935258",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": null,
+        "rightsList": [
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "We used single-cell RNA sequencing and T\u00a0cell receptor (TCR) sequencing on peripheral blood mononuclear cells from five patients with Duchenne muscular dystrophy before and after dosing with PF-06939926 fordadistrogene movaparvovec. Included in this repository are the following:\n\n\u00a0 \u00a0\u00a0SS_MS_DMD_AAV_integrated.rds is a Seurat object containing single-cell gene expression for pre and post time points from all subjects. TCR information is included in the metadata slot.\n\nSupplemental Data File 1 PostvsPre_DEG_tables_ANNOTATED by_cell_type.xlsx contains the differentially expressed genes between the pre and post time points by immune cell population.\n\nMS_DMD_all_conga_final.h5ad is an AnnData object containing the final output of the CoNGA analysis. Results of the analysis are stored in adata.uns['conga_results']. See the github page for more information on the data structure: CoNGA github\n\n\u00a0",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMTM5MzUyNTk8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkVtYW1pLCBNaWNoYWVsPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NaWNoYWVsPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkVtYW1pPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDQ2cm03ajYwIiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+VW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBMb3MgQW5nZWxlczwvYWZmaWxpYXRpb24+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMG1qZmV3NTMiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5EYXZpZCBHZWZmZW4gU2Nob29sIG9mIE1lZGljaW5lIGF0IFVDTEE8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkJyaW1ibGUsIE1hcms8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk1hcms8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+QnJpbWJsZTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMS03NTU0LTkwMDQ8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDJyM2UwOTY3IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+U3QuIEp1ZGUgQ2hpbGRyZW4ncyBSZXNlYXJjaCBIb3NwaXRhbDwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+RXNwaW5vemEsIEFsZWphbmRybzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QWxlamFuZHJvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkVzcGlub3phPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDQ2cm03ajYwIiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+VW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBMb3MgQW5nZWxlczwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+T3dlbnMsIEphbmU8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkphbmU8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+T3dlbnM8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMXhkcXJwMDgiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5QZml6ZXIgKFVuaXRlZCBTdGF0ZXMpPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5XaGl0ZWxleSwgTGF1cmVuY2U8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkxhdXJlbmNlPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPldoaXRlbGV5PC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDF4ZHFycDA4IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+UGZpemVyIChVbml0ZWQgU3RhdGVzKTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Q2FzaW5naGlubywgU2FuZHJhPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5TYW5kcmE8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Q2FzaW5naGlubzwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAxeGRxcnAwOCIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPlBmaXplciAoVW5pdGVkIFN0YXRlcyk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxhbnosIFRob21hczwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VGhvbWFzPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxhbno8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMXhkcXJwMDgiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5QZml6ZXIgKFVuaXRlZCBTdGF0ZXMpPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5GYXJhaGF0LCBQaGlsaXA8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlBoaWxpcDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5GYXJhaGF0PC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDRneWYxNzcxIiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+VW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBJcnZpbmU8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlBlbGxlZ3JpbmksIE1hdHRlbzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TWF0dGVvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlBlbGxlZ3Jpbmk8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wNDZybTdqNjAiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5Vbml2ZXJzaXR5IG9mIENhbGlmb3JuaWEsIExvcyBBbmdlbGVzPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Zb3VuZywgQ291cnRuZXk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkNvdXJ0bmV5PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPllvdW5nPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+TXlvR2VuZSBCaW88L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlRob21hcywgUGF1bDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+UGF1bDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5UaG9tYXM8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMnIzZTA5NjciIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5TdC4gSnVkZSBDaGlsZHJlbidzIFJlc2VhcmNoIEhvc3BpdGFsPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5NY05hbGx5LCBFbGl6YWJldGg8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkVsaXphYmV0aDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5NY05hbGx5PC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDBtNnc3ejk2IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+Tm9ydGh3ZXN0ZXJuIFVuaXZlcnNpdHk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlZpbGxhbHRhLCBTIEFybWFuZG88L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlMgQXJtYW5kbzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5WaWxsYWx0YTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi01MjEyLTIyNTk8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDRneWYxNzcxIiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiI+VW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBJcnZpbmU8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlNjaGF0dGdlbiwgU3RlZmFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5TdGVmYW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U2NoYXR0Z2VuPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAyLTY4NjAtNTA3OTwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbj5TdC4gSnVkZSBDaGlsZHJlbidzIFJlc2VhcmNoIEhvc3BpdGFsPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TcGVuY2VyLCBNZWxpc3NhPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NZWxpc3NhPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNwZW5jZXI8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wNDZybTdqNjAiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5Vbml2ZXJzaXR5IG9mIENhbGlmb3JuaWEsIExvcyBBbmdlbGVzPC9hZmZpbGlhdGlvbj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAwbWpmZXc1MyIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPkRhdmlkIEdlZmZlbiBTY2hvb2wgb2YgTWVkaWNpbmUgYXQgVUNMQTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlNpbmdsZS1jZWxsIGFuZCBUQ1Igc2VxdWVuY2luZyBhbmFseXNpcyBvZiBwZXJpcGhlcmFsIGJsb29kIG1vbm9udWNsZWFyIGNlbGxzIGZyb20gRHVjaGVubmUgbXVzY3VsYXIgZHlzdHJvcGh5IHBhdGllbnRzIGJlZm9yZSBhbmQgYWZ0ZXIgZG9zaW5nIHdpdGggQUFWOSBtaW5pLWR5c3Ryb3BoaW48L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyNC0xMC0xNTwvZGF0ZT4KICA8L2RhdGVzPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJvYWkiPm9haTp6ZW5vZG8ub3JnOjEzOTM1MjU5PC9hbHRlcm5hdGVJZGVudGlmaWVyPgogIDwvYWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc1ZlcnNpb25PZiI+MTAuNTI4MS96ZW5vZG8uMTM5MzUyNTg8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxzaXplcy8+CiAgPGZvcm1hdHMvPgogIDx2ZXJzaW9uLz4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wL2xlZ2FsY29kZSIgcmlnaHRzSWRlbnRpZmllcj0iY2MtYnktNC4wIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJzcGR4Ij5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+V2UgdXNlZCBzaW5nbGUtY2VsbCBSTkEgc2VxdWVuY2luZyBhbmQgVMKgY2VsbCByZWNlcHRvciAoVENSKSBzZXF1ZW5jaW5nIG9uIHBlcmlwaGVyYWwgYmxvb2QgbW9ub251Y2xlYXIgY2VsbHMgZnJvbSBmaXZlIHBhdGllbnRzIHdpdGggRHVjaGVubmUgbXVzY3VsYXIgZHlzdHJvcGh5IGJlZm9yZSBhbmQgYWZ0ZXIgZG9zaW5nIHdpdGggUEYtMDY5Mzk5MjYgZm9yZGFkaXN0cm9nZW5lIG1vdmFwYXJ2b3ZlYy4gSW5jbHVkZWQgaW4gdGhpcyByZXBvc2l0b3J5IGFyZSB0aGUgZm9sbG93aW5nOgoKwqAgwqDCoFNTX01TX0RNRF9BQVZfaW50ZWdyYXRlZC5yZHMgaXMgYSBTZXVyYXQgb2JqZWN0IGNvbnRhaW5pbmcgc2luZ2xlLWNlbGwgZ2VuZSBleHByZXNzaW9uIGZvciBwcmUgYW5kIHBvc3QgdGltZSBwb2ludHMgZnJvbSBhbGwgc3ViamVjdHMuIFRDUiBpbmZvcm1hdGlvbiBpcyBpbmNsdWRlZCBpbiB0aGUgbWV0YWRhdGEgc2xvdC4KClN1cHBsZW1lbnRhbCBEYXRhIEZpbGUgMSBQb3N0dnNQcmVfREVHX3RhYmxlc19BTk5PVEFURUQgYnlfY2VsbF90eXBlLnhsc3ggY29udGFpbnMgdGhlIGRpZmZlcmVudGlhbGx5IGV4cHJlc3NlZCBnZW5lcyBiZXR3ZWVuIHRoZSBwcmUgYW5kIHBvc3QgdGltZSBwb2ludHMgYnkgaW1tdW5lIGNlbGwgcG9wdWxhdGlvbi4KCk1TX0RNRF9hbGxfY29uZ2FfZmluYWwuaDVhZCBpcyBhbiBBbm5EYXRhIG9iamVjdCBjb250YWluaW5nIHRoZSBmaW5hbCBvdXRwdXQgb2YgdGhlIENvTkdBIGFuYWx5c2lzLiBSZXN1bHRzIG9mIHRoZSBhbmFseXNpcyBhcmUgc3RvcmVkIGluIGFkYXRhLnVuc1snY29uZ2FfcmVzdWx0cyddLiBTZWUgdGhlIGdpdGh1YiBwYWdlIGZvciBtb3JlIGluZm9ybWF0aW9uIG9uIHRoZSBkYXRhIHN0cnVjdHVyZTogQ29OR0EgZ2l0aHViCgrCoDwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg==",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.13935259",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "referenceCount": 0,
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2024-10-15T21:49:36.000Z",
+        "registered": "2024-10-15T21:49:39.000Z",
+        "published": "2024",
+        "updated": "2024-10-15T21:49:39.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "cern.zenodo",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "cern",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5281/zenodo.13935259",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+ "microsoft/phi-4|bixbench_v10|withheld|argmax|bixprompt": {
+  "model": "microsoft/phi-4",
+  "items": "build/bixbench_v10.jsonl",
+  "condition": "withheld",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/phi4_bixv10_bixprompt_argmax.jsonl",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 296,
+  "file": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 33.671171171171174,
+   "chance": 25.0,
+   "margin_over_chance": 8.67117117117117,
+   "margin_ci95": [
+    4.096891483586829,
+    13.657638888888886
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 25.87991718426501,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 33.671171171171174
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 23.085585585585587,
+   "chance": 25.0,
+   "margin_over_chance": -1.9144144144144142,
+   "margin_ci95": [
+    -6.063257974772439,
+    2.3151010993325465
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 20.833333333333332,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 23.085585585585587
+    }
+   }
+  },
+  "margin_over_clean": 10.585585585585585,
+  "margin_over_clean_ci95": [
+   4.597618790917204,
+   17.138345173662934
+  ]
+ }
+}

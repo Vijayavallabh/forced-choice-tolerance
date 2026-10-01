@@ -1,0 +1,140 @@
+{
+  "url": "https://zenodo.org/api/records/12737228",
+  "retrieved_at": "2026-09-16T15:28:00.300353+00:00",
+  "status": 200,
+  "body": {
+    "created": "2024-07-13T12:01:09.057907+00:00",
+    "modified": "2024-07-13T12:01:09.268408+00:00",
+    "id": 12737228,
+    "conceptrecid": "12737227",
+    "doi": "10.5061/dryad.7m0cfxq2r",
+    "doi_url": "https://doi.org/10.5061/dryad.7m0cfxq2r",
+    "metadata": {
+      "title": "Data from: Safety and efficacy of BCG re-vaccination in relation to COVID-19 morbidity in healthcare workers: A double-blind, randomised, controlled, phase 3 trial",
+      "doi": "10.5061/dryad.7m0cfxq2r",
+      "publication_date": "2024-07-13",
+      "description": "<p>Morbidity and mortality attributable to COVID-19 is devastating global health systems and economies.\u00a0Bacillus Calmette Gu\u00e9rin (BCG) vaccination has been in use for many decades to prevent severe forms of\u00a0tuberculosis in children. Studies have also shown a combination of improved long-term innate or trained\u00a0immunity (through epigenetic reprogramming of myeloid cells) and adaptive responses after BCG\u00a0vaccination, which leads to non-specific protective effects in adults. Observational studies have shown\u00a0that countries with routine BCG vaccination programs have significantly less reported cases and deaths\u00a0of COVID-19, but such studies are prone to significant bias and need confirmation. To date, in the\u00a0absence of direct evidence, WHO does not recommend BCG for the prevention of COVID-19. This\u00a0project aims to investigate in a timely manner whether and why BCG-revaccination can reduce infection\u00a0rate and/or disease severity in health care workers during the SARS-CoV-2 outbreak in South Africa.\u00a0</p>\n<p>These objectives will be achieved with a blinded, randomised controlled trial of BCG revaccination versus\u00a0placebo in exposed front-line staff in hospitals in Cape Town. Observations will include the rate of\u00a0infection with COVID-19 as well as the occurrence of mild, moderate or severe ambulatory respiratory\u00a0tract infections, hospitalisation, need for oxygen, mechanical ventilation or death. HIV-positive\u00a0individuals will be excluded. Safety of the vaccines will be monitored. A secondary endpoint is the\u00a0occurrence of latent or active tuberculosis. Initial sample size and follow-up duration is at least 500\u00a0workers and 52 weeks. Statistical analysis will be model-based and ongoing in real time with frequent\u00a0interim analyses and optional increases of both sample size or observation time, based on the\u00a0unforeseeable trajectory of the South African COVID-19 epidemic, available funds and recommendations\u00a0of an independent data and safety monitoring board. The study will be supported by a novel 3D lung\u00a0organoid model of SARS-CoV-2 infection system that can mimic the cascade of immunological events\u00a0after SARS-CoV-2 infection to determine and analyse the contribution of cellular components to the\u00a0impact of BCG revaccination in this study.</p>\n<p>Given the immediate threat of the SARS-CoV-2 epidemic the trial has been designed as a pragmatic\u00a0study with highly feasible endpoints that can be continuously measured. This allows for the most rapid\u00a0identification of a beneficial outcome that would lead to immediate dissemination of the results,\u00a0vaccination of the control group and outreach to the health authorities to consider BCG vaccination for\u00a0all qualifying health care workers.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Mabuka, Thabo",
+          "affiliation": "TASK*",
+          "orcid": "0000-0001-6290-525X"
+        }
+      ],
+      "keywords": [
+        "BCG",
+        "COVID 19",
+        "Vaccines"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "10.1016/j.eclinm.2022.101414",
+          "relation": "isCitedBy",
+          "scheme": "doi"
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-zero"
+      },
+      "communities": [
+        {
+          "id": "dryad"
+        }
+      ],
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "12737227"
+            }
+          }
+        ]
+      },
+      "notes": "<p>Funding provided by: European &amp; Developing Countries Clinical Trials Partnership<br>ROR ID: https://ror.org/031jv9v19<br>Award Number: RIA2020EF-2968</p>",
+      "method": "<p>This dataset was collected in a clinical randomised control trial under the\u00a0TASK008-BCG CORONA protocol. The trial was conducted in South Africa. This trial was registered with ClinicalTrials.gov, <a href=\"http://clinicaltrials.gov/show/NCT04379336\">NCT04379336</a>.</p>"
+    },
+    "title": "Data from: Safety and efficacy of BCG re-vaccination in relation to COVID-19 morbidity in healthcare workers: A double-blind, randomised, controlled, phase 3 trial",
+    "links": {
+      "self": "https://zenodo.org/api/records/12737228",
+      "self_html": "https://zenodo.org/records/12737228",
+      "preview_html": "https://zenodo.org/records/12737228?preview=1",
+      "doi": "https://doi.org/10.5061/dryad.7m0cfxq2r",
+      "self_doi": "https://doi.org/10.5061/dryad.7m0cfxq2r",
+      "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.7m0cfxq2r",
+      "reserve_doi": "https://zenodo.org/api/records/12737228/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/12737227",
+      "parent_html": "https://zenodo.org/records/12737227",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:12737228/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:12737228/sequence/default",
+      "files": "https://zenodo.org/api/records/12737228/files",
+      "media_files": "https://zenodo.org/api/records/12737228/media-files",
+      "archive": "https://zenodo.org/api/records/12737228/files-archive",
+      "archive_media": "https://zenodo.org/api/records/12737228/media-files-archive",
+      "latest": "https://zenodo.org/api/records/12737228/versions/latest",
+      "latest_html": "https://zenodo.org/records/12737228/latest",
+      "versions": "https://zenodo.org/api/records/12737228/versions",
+      "draft": "https://zenodo.org/api/records/12737228/draft",
+      "access_links": "https://zenodo.org/api/records/12737228/access/links",
+      "access_grants": "https://zenodo.org/api/records/12737228/access/grants",
+      "access_users": "https://zenodo.org/api/records/12737228/access/users",
+      "access_request": "https://zenodo.org/api/records/12737228/access/request",
+      "access": "https://zenodo.org/api/records/12737228/access",
+      "communities": "https://zenodo.org/api/records/12737228/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/12737228/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/12737228/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/12737228/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/12737228/quota-increase",
+      "requests": "https://zenodo.org/api/records/12737228/requests"
+    },
+    "updated": "2024-07-13T12:01:09.268408+00:00",
+    "recid": "12737228",
+    "revision": 5,
+    "files": [
+      {
+        "id": "4a0b9eb6-77f1-4c68-8cc9-8227e57562eb",
+        "key": "TASK008-BCG_CORONA_SDTM_datasets_V5.zip",
+        "size": 4217488,
+        "checksum": "md5:df2faa6104c4678d77de929ee66c63ca",
+        "links": {
+          "self": "https://zenodo.org/api/records/12737228/files/TASK008-BCG_CORONA_SDTM_datasets_V5.zip/content"
+        }
+      },
+      {
+        "id": "91d79784-d305-4ec9-9e87-8192c6be6741",
+        "key": "README.md",
+        "size": 29399,
+        "checksum": "md5:c2b85130c056ffa588ee33390cda331a",
+        "links": {
+          "self": "https://zenodo.org/api/records/12737228/files/README.md/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "90070"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 136,
+      "unique_downloads": 131,
+      "views": 381,
+      "unique_views": 355,
+      "version_downloads": 136,
+      "version_unique_downloads": 131,
+      "version_unique_views": 355,
+      "version_views": 381
+    },
+    "state": "done",
+    "submitted": true
+  }
+}

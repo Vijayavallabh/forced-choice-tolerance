@@ -1,0 +1,1478 @@
+{
+  "llama70b": {
+    "bixbench": {
+      "k": 4,
+      "n_rollouts": 615,
+      "cells": {
+        "CCCCC": {
+          "over_chance": 6.707317073170732,
+          "control_minus_chance": -0.6097560975609762,
+          "control_null_percentile": 41.46
+        },
+        "CCCCC+tools": {
+          "over_chance": 10.609756097560973,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 31.025000000000002
+        },
+        "CCCCT": {
+          "over_chance": 8.008130081300813,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 31.805
+        },
+        "CCCTC": {
+          "over_chance": 10.447154471544717,
+          "control_minus_chance": -1.4227642276422758,
+          "control_null_percentile": 29.425
+        },
+        "CCCTT": {
+          "over_chance": 8.495934959349594,
+          "control_minus_chance": -0.44715447154471677,
+          "control_null_percentile": 44.195
+        },
+        "CCTCC": {
+          "over_chance": 7.357723577235769,
+          "control_minus_chance": -0.44715447154471677,
+          "control_null_percentile": 44.895
+        },
+        "CCTCT": {
+          "over_chance": 7.357723577235769,
+          "control_minus_chance": 0.04065040650406693,
+          "control_null_percentile": 52.82
+        },
+        "CCTTC": {
+          "over_chance": 9.959349593495936,
+          "control_minus_chance": -1.4227642276422758,
+          "control_null_percentile": 29.12
+        },
+        "CCTTT": {
+          "over_chance": 7.520325203252032,
+          "control_minus_chance": -0.6097560975609762,
+          "control_null_percentile": 41.875
+        },
+        "CTCCC": {
+          "over_chance": 7.682926829268294,
+          "control_minus_chance": -1.4227642276422758,
+          "control_null_percentile": 29.01
+        },
+        "CTCCT": {
+          "over_chance": 8.983739837398375,
+          "control_minus_chance": -1.9105691056910568,
+          "control_null_percentile": 22.17
+        },
+        "CTCTC": {
+          "over_chance": 8.495934959349594,
+          "control_minus_chance": -1.7479674796747973,
+          "control_null_percentile": 25.235000000000003
+        },
+        "CTCTT": {
+          "over_chance": 6.382113821138214,
+          "control_minus_chance": -1.5853658536585353,
+          "control_null_percentile": 26.58
+        },
+        "CTTCC": {
+          "over_chance": 6.54471544715447,
+          "control_minus_chance": -1.9105691056910568,
+          "control_null_percentile": 22.8
+        },
+        "CTTCT": {
+          "over_chance": 8.170731707317074,
+          "control_minus_chance": -0.9349593495934949,
+          "control_null_percentile": 36.94
+        },
+        "CTTTC": {
+          "over_chance": 7.032520325203251,
+          "control_minus_chance": -1.5853658536585353,
+          "control_null_percentile": 27.42
+        },
+        "CTTTT": {
+          "over_chance": 6.54471544715447,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 31.485000000000003
+        },
+        "TCCCC": {
+          "over_chance": 9.634146341463412,
+          "control_minus_chance": -3.2113821138211374,
+          "control_null_percentile": 6.87
+        },
+        "TCCCT": {
+          "over_chance": 4.756097560975609,
+          "control_minus_chance": -5.48780487804878,
+          "control_null_percentile": 0.9900000000000001
+        },
+        "TCCTC": {
+          "over_chance": 8.983739837398375,
+          "control_minus_chance": -2.560975609756097,
+          "control_null_percentile": 14.09
+        },
+        "TCCTT": {
+          "over_chance": 4.918699186991871,
+          "control_minus_chance": -4.3495934959349585,
+          "control_null_percentile": 3.0949999999999998
+        },
+        "TCTCC": {
+          "over_chance": 9.308943089430894,
+          "control_minus_chance": -2.8861788617886184,
+          "control_null_percentile": 9.795
+        },
+        "TCTCT": {
+          "over_chance": 4.268292682926828,
+          "control_minus_chance": -4.999999999999999,
+          "control_null_percentile": 1.4449999999999998
+        },
+        "TCTTC": {
+          "over_chance": 8.658536585365855,
+          "control_minus_chance": -2.560975609756097,
+          "control_null_percentile": 14.38
+        },
+        "TCTTT": {
+          "over_chance": 4.918699186991871,
+          "control_minus_chance": -4.837398373983739,
+          "control_null_percentile": 1.775
+        },
+        "TTCCC": {
+          "over_chance": 9.471544715447155,
+          "control_minus_chance": -3.6991869918699183,
+          "control_null_percentile": 5.680000000000001
+        },
+        "TTCCT": {
+          "over_chance": 3.9430894308943087,
+          "control_minus_chance": -4.999999999999999,
+          "control_null_percentile": 1.76
+        },
+        "TTCTC": {
+          "over_chance": 8.495934959349594,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 30.78
+        },
+        "TTCTT": {
+          "over_chance": 4.756097560975609,
+          "control_minus_chance": -3.6991869918699183,
+          "control_null_percentile": 5.6899999999999995
+        },
+        "TTTCC": {
+          "over_chance": 10.121951219512193,
+          "control_minus_chance": -2.235772357723578,
+          "control_null_percentile": 16.835
+        },
+        "TTTCT": {
+          "over_chance": 4.593495934959352,
+          "control_minus_chance": -3.6991869918699183,
+          "control_null_percentile": 5.8500000000000005
+        },
+        "TTTTC": {
+          "over_chance": 7.032520325203251,
+          "control_minus_chance": -2.235772357723578,
+          "control_null_percentile": 17.76
+        },
+        "TTTTT": {
+          "over_chance": 3.6178861788617898,
+          "control_minus_chance": -3.8617886178861776,
+          "control_null_percentile": 4.885
+        }
+      },
+      "factors": {
+        "instruction": {
+          "effect": 1.1382113821138211,
+          "interval": [
+            -3.0932828849028393,
+            4.90428826888498
+          ]
+        },
+        "force": {
+          "effect": 0.5894308943089431,
+          "interval": [
+            -0.38684327215536274,
+            1.60330462196701
+          ]
+        },
+        "reason": {
+          "effect": 0.4471544715447155,
+          "interval": [
+            -0.13895663956639542,
+            1.0860121800801728
+          ]
+        },
+        "format": {
+          "effect": 0.04065040650406504,
+          "interval": [
+            -1.1217948717948718,
+            1.2585569895957085
+          ]
+        },
+        "placement": {
+          "effect": 2.4186991869918697,
+          "interval": [
+            0.6712393543275899,
+            4.20688954862342
+          ]
+        }
+      },
+      "corners": {
+        "template": {
+          "over_chance": 3.6178861788617898,
+          "interval": [
+            -1.0911743671398515,
+            8.509894478821034
+          ]
+        },
+        "chat": {
+          "over_chance": 6.707317073170732,
+          "interval": [
+            2.0408163265306123,
+            11.621922471929642
+          ]
+        },
+        "chat, interpreter rules": {
+          "over_chance": 10.609756097560973,
+          "interval": [
+            5.62200956937799,
+            15.796062007669983
+          ]
+        }
+      },
+      "chat_minus_template": {
+        "effect": 3.089430894308943,
+        "interval": [
+          -2.6272577996715927,
+          8.653846153846153
+        ]
+      },
+      "control_range": [
+        -5.48780487804878,
+        0.04065040650406693
+      ],
+      "control_outside_central_95": [
+        "TCCCT",
+        "TCTCT",
+        "TCTTT",
+        "TTCCT"
+      ]
+    },
+    "mmlupro": {
+      "k": 10,
+      "n_rollouts": 1826,
+      "cells": {
+        "CCCCC": {
+          "over_chance": 5.115005476451259,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 34.39
+        },
+        "CCCCC+tools": {
+          "over_chance": 7.250821467688937,
+          "control_minus_chance": -0.37403740374037514,
+          "control_null_percentile": 31.264999999999997
+        },
+        "CCCCT": {
+          "over_chance": 6.265060240963854,
+          "control_minus_chance": -0.5390539053905394,
+          "control_null_percentile": 24.27
+        },
+        "CCCTC": {
+          "over_chance": 5.498357064622125,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 35.21
+        },
+        "CCCTT": {
+          "over_chance": 4.950711938663746,
+          "control_minus_chance": -0.42904290429042896,
+          "control_null_percentile": 29.13
+        },
+        "CCTCC": {
+          "over_chance": 4.950711938663746,
+          "control_minus_chance": -0.6490649064906497,
+          "control_null_percentile": 19.39
+        },
+        "CCTCT": {
+          "over_chance": 6.64841182913472,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 34.315
+        },
+        "CCTTC": {
+          "over_chance": 4.676889375684556,
+          "control_minus_chance": -0.0990099009900991,
+          "control_null_percentile": 46.265
+        },
+        "CCTTT": {
+          "over_chance": 4.129244249726177,
+          "control_minus_chance": -0.9240924092409244,
+          "control_null_percentile": 10.459999999999999
+        },
+        "CTCCC": {
+          "over_chance": 5.169769989047096,
+          "control_minus_chance": -1.034103410341035,
+          "control_null_percentile": 7.86
+        },
+        "CTCCT": {
+          "over_chance": 5.607886089813799,
+          "control_minus_chance": -0.5390539053905394,
+          "control_null_percentile": 25.040000000000003
+        },
+        "CTCTC": {
+          "over_chance": 5.607886089813799,
+          "control_minus_chance": -0.704070407040705,
+          "control_null_percentile": 17.04
+        },
+        "CTCTT": {
+          "over_chance": 3.8006571741511506,
+          "control_minus_chance": -0.48404840484048417,
+          "control_null_percentile": 26.229999999999997
+        },
+        "CTTCC": {
+          "over_chance": 5.498357064622125,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 21.93
+        },
+        "CTTCT": {
+          "over_chance": 5.826944140197152,
+          "control_minus_chance": -0.7590759075907603,
+          "control_null_percentile": 15.445
+        },
+        "CTTTC": {
+          "over_chance": 4.731653888280393,
+          "control_minus_chance": -0.1540154015401543,
+          "control_null_percentile": 43.75
+        },
+        "CTTTT": {
+          "over_chance": 3.6911281489594745,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 21.485000000000003
+        },
+        "TCCCC": {
+          "over_chance": 1.7196056955093089,
+          "control_minus_chance": 0.286028602860286,
+          "control_null_percentile": 65.935
+        },
+        "TCCCT": {
+          "over_chance": 0.7886089813800651,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 25.564999999999998
+        },
+        "TCCTC": {
+          "over_chance": 3.3077765607886085,
+          "control_minus_chance": -0.0990099009900991,
+          "control_null_percentile": 46.015
+        },
+        "TCCTT": {
+          "over_chance": 1.2814895947426062,
+          "control_minus_chance": -0.7590759075907603,
+          "control_null_percentile": 18.785
+        },
+        "TCTCC": {
+          "over_chance": 1.7196056955093089,
+          "control_minus_chance": -0.5390539053905394,
+          "control_null_percentile": 26.790000000000003
+        },
+        "TCTCT": {
+          "over_chance": 1.117196056955093,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 25.929999999999996
+        },
+        "TCTTC": {
+          "over_chance": 2.6506024096385525,
+          "control_minus_chance": 0.011001100110009931,
+          "control_null_percentile": 52.459999999999994
+        },
+        "TCTTT": {
+          "over_chance": 1.8291347207009854,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 25.1
+        },
+        "TTCCC": {
+          "over_chance": 2.3220153340635266,
+          "control_minus_chance": -0.1540154015401543,
+          "control_null_percentile": 44.14
+        },
+        "TTCCT": {
+          "over_chance": -0.08762322015334056,
+          "control_minus_chance": -1.08910891089109,
+          "control_null_percentile": 10.23
+        },
+        "TTCTC": {
+          "over_chance": 4.184008762322014,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 21.995
+        },
+        "TTCTT": {
+          "over_chance": 1.226725082146768,
+          "control_minus_chance": -0.42904290429042896,
+          "control_null_percentile": 31.535000000000004
+        },
+        "TTTCC": {
+          "over_chance": 1.7743702081051471,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 36.7
+        },
+        "TTTCT": {
+          "over_chance": -0.25191675794085516,
+          "control_minus_chance": -0.8690869086908692,
+          "control_null_percentile": 15.455
+        },
+        "TTTTC": {
+          "over_chance": 4.019715224534501,
+          "control_minus_chance": -0.1540154015401543,
+          "control_null_percentile": 44.230000000000004
+        },
+        "TTTTT": {
+          "over_chance": 0.8981380065717415,
+          "control_minus_chance": -0.9240924092409244,
+          "control_null_percentile": 14.235000000000001
+        }
+      },
+      "factors": {
+        "instruction": {
+          "effect": 3.3543263964950714,
+          "interval": [
+            1.4568990142349758,
+            5.551286449693261
+          ]
+        },
+        "force": {
+          "effect": 0.16429353778751368,
+          "interval": [
+            -0.1586791228921791,
+            0.7076072277977716
+          ]
+        },
+        "reason": {
+          "effect": 0.17798466593647316,
+          "interval": [
+            -0.09703410110512946,
+            0.6223136882072139
+          ]
+        },
+        "format": {
+          "effect": -0.14375684556407448,
+          "interval": [
+            -0.747713936514023,
+            0.7359555801487258
+          ]
+        },
+        "placement": {
+          "effect": 0.9515334063526835,
+          "interval": [
+            0.13812044591008846,
+            1.8928864592244083
+          ]
+        }
+      },
+      "corners": {
+        "template": {
+          "over_chance": 0.8981380065717415,
+          "interval": [
+            -1.4938332373373455,
+            3.2547377669081965
+          ]
+        },
+        "chat": {
+          "over_chance": 5.115005476451259,
+          "interval": [
+            2.395392719313009,
+            8.820683120696327
+          ]
+        },
+        "chat, interpreter rules": {
+          "over_chance": 7.250821467688937,
+          "interval": [
+            4.84931220876689,
+            11.0692894370931
+          ]
+        }
+      },
+      "chat_minus_template": {
+        "effect": 4.216867469879518,
+        "interval": [
+          1.6914831413584248,
+          8.21225358513636
+        ]
+      },
+      "control_range": [
+        -1.08910891089109,
+        0.286028602860286
+      ],
+      "control_outside_central_95": []
+    }
+  },
+  "qwen14b": {
+    "bixbench": {
+      "k": 4,
+      "n_rollouts": 615,
+      "cells": {
+        "CCCCC": {
+          "over_chance": 13.048780487804878,
+          "control_minus_chance": -1.7479674796747973,
+          "control_null_percentile": 23.025000000000002
+        },
+        "CCCCC+tools": {
+          "over_chance": 10.447154471544717,
+          "control_minus_chance": -0.6097560975609762,
+          "control_null_percentile": 41.339999999999996
+        },
+        "CCCCT": {
+          "over_chance": 11.585365853658535,
+          "control_minus_chance": -1.9105691056910568,
+          "control_null_percentile": 20.79
+        },
+        "CCCTC": {
+          "over_chance": 11.260162601626018,
+          "control_minus_chance": -0.7723577235772355,
+          "control_null_percentile": 38.129999999999995
+        },
+        "CCCTT": {
+          "over_chance": 11.747967479674799,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 29.720000000000002
+        },
+        "CCTCC": {
+          "over_chance": 11.585365853658535,
+          "control_minus_chance": -1.097560975609757,
+          "control_null_percentile": 33.050000000000004
+        },
+        "CCTCT": {
+          "over_chance": 11.585365853658535,
+          "control_minus_chance": -2.0731707317073162,
+          "control_null_percentile": 18.255
+        },
+        "CCTTC": {
+          "over_chance": 12.073170731707316,
+          "control_minus_chance": 0.6910569105691045,
+          "control_null_percentile": 63.629999999999995
+        },
+        "CCTTT": {
+          "over_chance": 11.747967479674799,
+          "control_minus_chance": -0.44715447154471677,
+          "control_null_percentile": 43.480000000000004
+        },
+        "CTCCC": {
+          "over_chance": 12.886178861788617,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 29.93
+        },
+        "CTCCT": {
+          "over_chance": 8.658536585365855,
+          "control_minus_chance": -1.5853658536585353,
+          "control_null_percentile": 25.369999999999997
+        },
+        "CTCTC": {
+          "over_chance": 13.211382113821141,
+          "control_minus_chance": -2.235772357723578,
+          "control_null_percentile": 17.919999999999998
+        },
+        "CTCTT": {
+          "over_chance": 7.357723577235769,
+          "control_minus_chance": -1.4227642276422758,
+          "control_null_percentile": 28.110000000000003
+        },
+        "CTTCC": {
+          "over_chance": 12.398373983739836,
+          "control_minus_chance": 0.20325203252032353,
+          "control_null_percentile": 54.790000000000006
+        },
+        "CTTCT": {
+          "over_chance": 4.918699186991871,
+          "control_minus_chance": -0.12195121951219523,
+          "control_null_percentile": 50.005
+        },
+        "CTTTC": {
+          "over_chance": 11.42276422764228,
+          "control_minus_chance": 0.5284552845528478,
+          "control_null_percentile": 60.834999999999994
+        },
+        "CTTTT": {
+          "over_chance": 5.7317073170731705,
+          "control_minus_chance": 0.20325203252032353,
+          "control_null_percentile": 55.48
+        },
+        "TCCCC": {
+          "over_chance": 4.268292682926828,
+          "control_minus_chance": -2.8861788617886184,
+          "control_null_percentile": 11.275
+        },
+        "TCCCT": {
+          "over_chance": 5.24390243902439,
+          "control_minus_chance": -4.1869918699187,
+          "control_null_percentile": 2.405
+        },
+        "TCCTC": {
+          "over_chance": 5.894308943089433,
+          "control_minus_chance": -1.097560975609757,
+          "control_null_percentile": 32.845
+        },
+        "TCCTT": {
+          "over_chance": 5.406504065040652,
+          "control_minus_chance": -4.1869918699187,
+          "control_null_percentile": 2.025
+        },
+        "TCTCC": {
+          "over_chance": 3.6178861788617898,
+          "control_minus_chance": -1.7479674796747973,
+          "control_null_percentile": 23.095
+        },
+        "TCTCT": {
+          "over_chance": 4.268292682926828,
+          "control_minus_chance": -5.32520325203252,
+          "control_null_percentile": 0.43
+        },
+        "TCTTC": {
+          "over_chance": 4.756097560975609,
+          "control_minus_chance": 1.1788617886178854,
+          "control_null_percentile": 71.08
+        },
+        "TCTTT": {
+          "over_chance": 3.6178861788617898,
+          "control_minus_chance": -3.048780487804878,
+          "control_null_percentile": 7.6499999999999995
+        },
+        "TTCCC": {
+          "over_chance": 5.406504065040652,
+          "control_minus_chance": -1.4227642276422758,
+          "control_null_percentile": 29.104999999999997
+        },
+        "TTCCT": {
+          "over_chance": 5.7317073170731705,
+          "control_minus_chance": -3.6991869918699183,
+          "control_null_percentile": 4.775
+        },
+        "TTCTC": {
+          "over_chance": 4.756097560975609,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 30.819999999999997
+        },
+        "TTCTT": {
+          "over_chance": 4.105691056910571,
+          "control_minus_chance": -4.02439024390244,
+          "control_null_percentile": 2.8850000000000002
+        },
+        "TTTCC": {
+          "over_chance": 5.894308943089433,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 30.259999999999998
+        },
+        "TTTCT": {
+          "over_chance": 5.894308943089433,
+          "control_minus_chance": -4.837398373983739,
+          "control_null_percentile": 1.03
+        },
+        "TTTTC": {
+          "over_chance": 5.0813008130081325,
+          "control_minus_chance": -0.9349593495934949,
+          "control_null_percentile": 35.254999999999995
+        },
+        "TTTTT": {
+          "over_chance": 5.24390243902439,
+          "control_minus_chance": -3.048780487804878,
+          "control_null_percentile": 7.93
+        }
+      },
+      "factors": {
+        "instruction": {
+          "effect": 5.752032520325203,
+          "interval": [
+            2.361659766545915,
+            9.189000093318402
+          ]
+        },
+        "force": {
+          "effect": 0.8130081300813009,
+          "interval": [
+            -0.8061607790194754,
+            2.174870067193823
+          ]
+        },
+        "reason": {
+          "effect": 0.6707317073170732,
+          "interval": [
+            -0.13960481099656358,
+            1.4604236198025309
+          ]
+        },
+        "format": {
+          "effect": 0.22357723577235775,
+          "interval": [
+            -1.2629833178591752,
+            1.6493307165861515
+          ]
+        },
+        "placement": {
+          "effect": 1.5447154471544715,
+          "interval": [
+            -1.3326737216438664,
+            4.276954237891737
+          ]
+        }
+      },
+      "corners": {
+        "template": {
+          "over_chance": 5.24390243902439,
+          "interval": [
+            1.406735421441303,
+            9.482866586937746
+          ]
+        },
+        "chat": {
+          "over_chance": 13.048780487804878,
+          "interval": [
+            8.333333333333332,
+            17.876932446875394
+          ]
+        },
+        "chat, interpreter rules": {
+          "over_chance": 10.447154471544717,
+          "interval": [
+            5.520248699573593,
+            15.614886731391586
+          ]
+        }
+      },
+      "chat_minus_template": {
+        "effect": 7.804878048780488,
+        "interval": [
+          2.369633715760668,
+          13.194645732689212
+        ]
+      },
+      "control_range": [
+        -5.32520325203252,
+        1.1788617886178854
+      ],
+      "control_outside_central_95": [
+        "TCCCT",
+        "TCCTT",
+        "TCTCT",
+        "TTTCT"
+      ]
+    },
+    "mmlupro": {
+      "k": 10,
+      "n_rollouts": 1826,
+      "cells": {
+        "CCCCC": {
+          "over_chance": 10.865279299014238,
+          "control_minus_chance": 0.5060506050605054,
+          "control_null_percentile": 76.42
+        },
+        "CCCCC+tools": {
+          "over_chance": 9.441401971522453,
+          "control_minus_chance": 1.1111111111111098,
+          "control_null_percentile": 93.795
+        },
+        "CCCCT": {
+          "over_chance": 10.810514786418402,
+          "control_minus_chance": 1.0011001100110009,
+          "control_null_percentile": 91.33
+        },
+        "CCCTC": {
+          "over_chance": 10.262869660460023,
+          "control_minus_chance": 0.4510451045104502,
+          "control_null_percentile": 73.92999999999999
+        },
+        "CCCTT": {
+          "over_chance": 8.72946330777656,
+          "control_minus_chance": 0.4510451045104502,
+          "control_null_percentile": 74.575
+        },
+        "CCTCC": {
+          "over_chance": 9.879518072289157,
+          "control_minus_chance": 0.5060506050605054,
+          "control_null_percentile": 76.44999999999999
+        },
+        "CCTCT": {
+          "over_chance": 10.536692223439212,
+          "control_minus_chance": 1.771177117711771,
+          "control_null_percentile": 98.98
+        },
+        "CCTTC": {
+          "over_chance": 9.660460021905804,
+          "control_minus_chance": 0.17601760176017556,
+          "control_null_percentile": 61.150000000000006
+        },
+        "CCTTT": {
+          "over_chance": 7.14129244249726,
+          "control_minus_chance": 0.286028602860286,
+          "control_null_percentile": 67.045
+        },
+        "CTCCC": {
+          "over_chance": 7.688937568455639,
+          "control_minus_chance": 0.286028602860286,
+          "control_null_percentile": 66.685
+        },
+        "CTCCT": {
+          "over_chance": 6.64841182913472,
+          "control_minus_chance": 0.23102310231023077,
+          "control_null_percentile": 64.05999999999999
+        },
+        "CTCTC": {
+          "over_chance": 8.838992332968237,
+          "control_minus_chance": -0.20902090209020951,
+          "control_null_percentile": 41.43
+        },
+        "CTCTT": {
+          "over_chance": 5.936473165388828,
+          "control_minus_chance": 0.011001100110009931,
+          "control_null_percentile": 51.89
+        },
+        "CTTCC": {
+          "over_chance": 6.374589266155531,
+          "control_minus_chance": 0.3410341034103398,
+          "control_null_percentile": 69.525
+        },
+        "CTTCT": {
+          "over_chance": 5.224534501642935,
+          "control_minus_chance": 0.3410341034103398,
+          "control_null_percentile": 69.285
+        },
+        "CTTTC": {
+          "over_chance": 8.291347207009858,
+          "control_minus_chance": -0.1540154015401543,
+          "control_null_percentile": 42.945
+        },
+        "CTTTT": {
+          "over_chance": 5.115005476451259,
+          "control_minus_chance": -0.2640264026402647,
+          "control_null_percentile": 38.365
+        },
+        "TCCCC": {
+          "over_chance": -0.25191675794085516,
+          "control_minus_chance": 0.286028602860286,
+          "control_null_percentile": 65.635
+        },
+        "TCCCT": {
+          "over_chance": 0.8981380065717415,
+          "control_minus_chance": 0.011001100110009931,
+          "control_null_percentile": 53.31
+        },
+        "TCCTC": {
+          "over_chance": 2.157721796276013,
+          "control_minus_chance": 0.23102310231023077,
+          "control_null_percentile": 63.395
+        },
+        "TCCTT": {
+          "over_chance": 0.021905805038334447,
+          "control_minus_chance": 0.12101210121012035,
+          "control_null_percentile": 58.23500000000001
+        },
+        "TCTCC": {
+          "over_chance": -0.30668127053669336,
+          "control_minus_chance": 0.12101210121012035,
+          "control_null_percentile": 57.765
+        },
+        "TCTCT": {
+          "over_chance": 0.6243154435925519,
+          "control_minus_chance": 0.06600660066006514,
+          "control_null_percentile": 55.76
+        },
+        "TCTTC": {
+          "over_chance": 2.4863088718510395,
+          "control_minus_chance": 0.6160616061606159,
+          "control_null_percentile": 79.64
+        },
+        "TCTTT": {
+          "over_chance": 0.5147864184008755,
+          "control_minus_chance": 0.396039603960395,
+          "control_null_percentile": 70.49
+        },
+        "TTCCC": {
+          "over_chance": 0.07667031763417265,
+          "control_minus_chance": 0.23102310231023077,
+          "control_null_percentile": 62.895
+        },
+        "TTCCT": {
+          "over_chance": 0.7338444687842269,
+          "control_minus_chance": -0.04400440044004389,
+          "control_null_percentile": 49.28
+        },
+        "TTCTC": {
+          "over_chance": 3.3625410733844454,
+          "control_minus_chance": 0.3410341034103398,
+          "control_null_percentile": 68.405
+        },
+        "TTCTT": {
+          "over_chance": 0.46002190580503727,
+          "control_minus_chance": -0.1540154015401543,
+          "control_null_percentile": 43.915
+        },
+        "TTTCC": {
+          "over_chance": 0.29572836801752406,
+          "control_minus_chance": 0.06600660066006514,
+          "control_null_percentile": 55.169999999999995
+        },
+        "TTTCT": {
+          "over_chance": 0.9529025191675783,
+          "control_minus_chance": -0.2640264026402647,
+          "control_null_percentile": 38.085
+        },
+        "TTTTC": {
+          "over_chance": 2.4315443592552026,
+          "control_minus_chance": 0.78107810781078,
+          "control_null_percentile": 84.665
+        },
+        "TTTTT": {
+          "over_chance": 1.0076670317634164,
+          "control_minus_chance": -0.2640264026402647,
+          "control_null_percentile": 38.62
+        }
+      },
+      "factors": {
+        "instruction": {
+          "effect": 7.28368017524644,
+          "interval": [
+            5.507580400723503,
+            9.954037806598214
+          ]
+        },
+        "force": {
+          "effect": 1.2869660460021906,
+          "interval": [
+            0.5575387848105386,
+            1.963814684139785
+          ]
+        },
+        "reason": {
+          "effect": 0.43811610076670315,
+          "interval": [
+            0.17507019892706271,
+            0.8295958052169773
+          ]
+        },
+        "format": {
+          "effect": -0.3354326396495071,
+          "interval": [
+            -1.1428636358196094,
+            0.4643958647088352
+          ]
+        },
+        "placement": {
+          "effect": 1.0473713033953997,
+          "interval": [
+            -0.044746099770645927,
+            2.959036923363095
+          ]
+        }
+      },
+      "corners": {
+        "template": {
+          "over_chance": 1.0076670317634164,
+          "interval": [
+            -2.070343457206021,
+            3.915116636277152
+          ]
+        },
+        "chat": {
+          "over_chance": 10.865279299014238,
+          "interval": [
+            7.716791134767685,
+            15.845659505178174
+          ]
+        },
+        "chat, interpreter rules": {
+          "over_chance": 9.441401971522453,
+          "interval": [
+            5.768601087399537,
+            14.73309643862232
+          ]
+        }
+      },
+      "chat_minus_template": {
+        "effect": 9.857612267250822,
+        "interval": [
+          6.810609948293391,
+          14.61214326484018
+        ]
+      },
+      "control_range": [
+        -0.2640264026402647,
+        1.771177117711771
+      ],
+      "control_outside_central_95": [
+        "CCTCT"
+      ]
+    }
+  },
+  "qwen72b": {
+    "bixbench": {
+      "k": 4,
+      "n_rollouts": 615,
+      "cells": {
+        "CCCCC": {
+          "over_chance": 8.170731707317074,
+          "control_minus_chance": 1.3414634146341475,
+          "control_null_percentile": 73.91499999999999
+        },
+        "CCCCC+tools": {
+          "over_chance": 4.756097560975609,
+          "control_minus_chance": 1.6666666666666663,
+          "control_null_percentile": 79.225
+        },
+        "CCCCT": {
+          "over_chance": 6.54471544715447,
+          "control_minus_chance": 0.5284552845528478,
+          "control_null_percentile": 60.975
+        },
+        "CCCTC": {
+          "over_chance": 7.682926829268294,
+          "control_minus_chance": 0.5284552845528478,
+          "control_null_percentile": 60.589999999999996
+        },
+        "CCCTT": {
+          "over_chance": 7.520325203252032,
+          "control_minus_chance": -1.2601626016260163,
+          "control_null_percentile": 29.445
+        },
+        "CCTCC": {
+          "over_chance": 7.682926829268294,
+          "control_minus_chance": 1.991869918699185,
+          "control_null_percentile": 81.67999999999999
+        },
+        "CCTCT": {
+          "over_chance": 7.195121951219513,
+          "control_minus_chance": 1.991869918699185,
+          "control_null_percentile": 82.76
+        },
+        "CCTTC": {
+          "over_chance": 7.682926829268294,
+          "control_minus_chance": 0.6910569105691045,
+          "control_null_percentile": 63.575
+        },
+        "CCTTT": {
+          "over_chance": 8.658536585365855,
+          "control_minus_chance": 0.20325203252032353,
+          "control_null_percentile": 56.125
+        },
+        "CTCCC": {
+          "over_chance": 6.219512195121951,
+          "control_minus_chance": 1.5040650406504041,
+          "control_null_percentile": 76.37
+        },
+        "CTCCT": {
+          "over_chance": 5.894308943089433,
+          "control_minus_chance": 0.8536585365853666,
+          "control_null_percentile": 66.945
+        },
+        "CTCTC": {
+          "over_chance": 7.357723577235769,
+          "control_minus_chance": 2.479674796747966,
+          "control_null_percentile": 87.69500000000001
+        },
+        "CTCTT": {
+          "over_chance": 5.7317073170731705,
+          "control_minus_chance": 1.5040650406504041,
+          "control_null_percentile": 76.59
+        },
+        "CTTCC": {
+          "over_chance": 7.032520325203251,
+          "control_minus_chance": 2.154471544715447,
+          "control_null_percentile": 83.85000000000001
+        },
+        "CTTCT": {
+          "over_chance": 7.520325203252032,
+          "control_minus_chance": 1.991869918699185,
+          "control_null_percentile": 83.345
+        },
+        "CTTTC": {
+          "over_chance": 7.195121951219513,
+          "control_minus_chance": 1.3414634146341475,
+          "control_null_percentile": 73.9
+        },
+        "CTTTT": {
+          "over_chance": 8.008130081300813,
+          "control_minus_chance": 0.6910569105691045,
+          "control_null_percentile": 64.36500000000001
+        },
+        "TCCCC": {
+          "over_chance": 5.569105691056908,
+          "control_minus_chance": 1.1788617886178854,
+          "control_null_percentile": 70.88499999999999
+        },
+        "TCCCT": {
+          "over_chance": 3.9430894308943087,
+          "control_minus_chance": -3.048780487804878,
+          "control_null_percentile": 9.035
+        },
+        "TCCTC": {
+          "over_chance": 6.707317073170732,
+          "control_minus_chance": 1.3414634146341475,
+          "control_null_percentile": 73.39
+        },
+        "TCCTT": {
+          "over_chance": 5.24390243902439,
+          "control_minus_chance": -3.048780487804878,
+          "control_null_percentile": 8.655
+        },
+        "TCTCC": {
+          "over_chance": 6.219512195121951,
+          "control_minus_chance": 1.6666666666666663,
+          "control_null_percentile": 77.71000000000001
+        },
+        "TCTCT": {
+          "over_chance": 5.0813008130081325,
+          "control_minus_chance": -1.7479674796747973,
+          "control_null_percentile": 23.54
+        },
+        "TCTTC": {
+          "over_chance": 6.219512195121951,
+          "control_minus_chance": 1.991869918699185,
+          "control_null_percentile": 82.635
+        },
+        "TCTTT": {
+          "over_chance": 5.0813008130081325,
+          "control_minus_chance": -3.2113821138211374,
+          "control_null_percentile": 8.395
+        },
+        "TTCCC": {
+          "over_chance": 5.24390243902439,
+          "control_minus_chance": 2.479674796747966,
+          "control_null_percentile": 87.1
+        },
+        "TTCCT": {
+          "over_chance": 4.105691056910571,
+          "control_minus_chance": -2.3983739837398375,
+          "control_null_percentile": 16.07
+        },
+        "TTCTC": {
+          "over_chance": 6.056910569105689,
+          "control_minus_chance": 4.105691056910571,
+          "control_null_percentile": 96.55
+        },
+        "TTCTT": {
+          "over_chance": 5.894308943089433,
+          "control_minus_chance": -2.0731707317073162,
+          "control_null_percentile": 19.38
+        },
+        "TTTCC": {
+          "over_chance": 5.0813008130081325,
+          "control_minus_chance": 3.130081300813009,
+          "control_null_percentile": 91.61500000000001
+        },
+        "TTTCT": {
+          "over_chance": 3.9430894308943087,
+          "control_minus_chance": -1.4227642276422758,
+          "control_null_percentile": 28.389999999999997
+        },
+        "TTTTC": {
+          "over_chance": 5.894308943089433,
+          "control_minus_chance": 3.6178861788617898,
+          "control_null_percentile": 94.13
+        },
+        "TTTTT": {
+          "over_chance": 3.455284552845528,
+          "control_minus_chance": -2.235772357723578,
+          "control_null_percentile": 17.51
+        }
+      },
+      "factors": {
+        "instruction": {
+          "effect": 2.0223577235772354,
+          "interval": [
+            -0.7824563564953779,
+            4.754513237440066
+          ]
+        },
+        "force": {
+          "effect": 0.660569105691057,
+          "interval": [
+            -0.4166666666666667,
+            1.6541599071811404
+          ]
+        },
+        "reason": {
+          "effect": -0.25406504065040647,
+          "interval": [
+            -1.0065654010685696,
+            0.4774447859744991
+          ]
+        },
+        "format": {
+          "effect": -0.5589430894308943,
+          "interval": [
+            -1.5650972257145253,
+            0.4785445832594955
+          ]
+        },
+        "placement": {
+          "effect": 0.7621951219512195,
+          "interval": [
+            -1.48825354609929,
+            3.0069918054454137
+          ]
+        }
+      },
+      "corners": {
+        "template": {
+          "over_chance": 3.455284552845528,
+          "interval": [
+            -1.3754045307443366,
+            8.504316907051283
+          ]
+        },
+        "chat": {
+          "over_chance": 8.170731707317074,
+          "interval": [
+            2.4404724326599307,
+            13.983441519413391
+          ]
+        },
+        "chat, interpreter rules": {
+          "over_chance": 4.756097560975609,
+          "interval": [
+            -0.03609606636512474,
+            9.653572073625275
+          ]
+        }
+      },
+      "chat_minus_template": {
+        "effect": 4.715447154471545,
+        "interval": [
+          -0.4589752466678197,
+          9.729960097083385
+        ]
+      },
+      "control_range": [
+        -3.2113821138211374,
+        4.105691056910571
+      ],
+      "control_outside_central_95": []
+    },
+    "mmlupro": {
+      "k": 10,
+      "n_rollouts": 1826,
+      "cells": {
+        "CCCCC": {
+          "over_chance": 8.510405257393208,
+          "control_minus_chance": 0.011001100110009931,
+          "control_null_percentile": 52.745
+        },
+        "CCCCC+tools": {
+          "over_chance": 6.976998904709747,
+          "control_minus_chance": 0.011001100110009931,
+          "control_null_percentile": 51.190000000000005
+        },
+        "CCCCT": {
+          "over_chance": 7.46987951807229,
+          "control_minus_chance": -0.42904290429042896,
+          "control_null_percentile": 29.24
+        },
+        "CCCTC": {
+          "over_chance": 7.688937568455639,
+          "control_minus_chance": -0.8140814081408141,
+          "control_null_percentile": 15.260000000000002
+        },
+        "CCCTT": {
+          "over_chance": 7.14129244249726,
+          "control_minus_chance": -0.48404840484048417,
+          "control_null_percentile": 27.33
+        },
+        "CCTCC": {
+          "over_chance": 8.510405257393208,
+          "control_minus_chance": 0.17601760176017556,
+          "control_null_percentile": 60.84
+        },
+        "CCTCT": {
+          "over_chance": 7.41511500547645,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 34.44
+        },
+        "CCTTC": {
+          "over_chance": 7.907995618838992,
+          "control_minus_chance": -0.6490649064906497,
+          "control_null_percentile": 20.89
+        },
+        "CCTTT": {
+          "over_chance": 7.907995618838992,
+          "control_minus_chance": -0.1540154015401543,
+          "control_null_percentile": 44.4
+        },
+        "CTCCC": {
+          "over_chance": 8.017524644030669,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 34.995
+        },
+        "CTCCT": {
+          "over_chance": 7.688937568455639,
+          "control_minus_chance": -0.20902090209020951,
+          "control_null_percentile": 40.945
+        },
+        "CTCTC": {
+          "over_chance": 6.976998904709747,
+          "control_minus_chance": -0.5390539053905394,
+          "control_null_percentile": 25.185000000000002
+        },
+        "CTCTT": {
+          "over_chance": 6.64841182913472,
+          "control_minus_chance": -0.0990099009900991,
+          "control_null_percentile": 46.81
+        },
+        "CTTCC": {
+          "over_chance": 8.236582694414018,
+          "control_minus_chance": 0.5060506050605054,
+          "control_null_percentile": 76.82
+        },
+        "CTTCT": {
+          "over_chance": 8.181818181818182,
+          "control_minus_chance": 0.12101210121012035,
+          "control_null_percentile": 58.41499999999999
+        },
+        "CTTTC": {
+          "over_chance": 8.072289156626505,
+          "control_minus_chance": 0.011001100110009931,
+          "control_null_percentile": 52.175000000000004
+        },
+        "CTTTT": {
+          "over_chance": 7.250821467688937,
+          "control_minus_chance": -0.04400440044004389,
+          "control_null_percentile": 50.12
+        },
+        "TCCCC": {
+          "over_chance": 2.102957283680175,
+          "control_minus_chance": -0.5390539053905394,
+          "control_null_percentile": 26.125
+        },
+        "TCCCT": {
+          "over_chance": 0.5147864184008755,
+          "control_minus_chance": -0.31903190319031993,
+          "control_null_percentile": 37.165
+        },
+        "TCCTC": {
+          "over_chance": 0.7338444687842269,
+          "control_minus_chance": -0.704070407040705,
+          "control_null_percentile": 19.785
+        },
+        "TCCTT": {
+          "over_chance": 0.5147864184008755,
+          "control_minus_chance": -0.20902090209020951,
+          "control_null_percentile": 41.63
+        },
+        "TCTCC": {
+          "over_chance": 3.2530120481927716,
+          "control_minus_chance": -0.704070407040705,
+          "control_null_percentile": 18.67
+        },
+        "TCTCT": {
+          "over_chance": 0.8433734939759032,
+          "control_minus_chance": -0.9240924092409244,
+          "control_null_percentile": 13.535
+        },
+        "TCTTC": {
+          "over_chance": 1.7743702081051471,
+          "control_minus_chance": -1.034103410341035,
+          "control_null_percentile": 9.49
+        },
+        "TCTTT": {
+          "over_chance": 1.2814895947426062,
+          "control_minus_chance": -0.704070407040705,
+          "control_null_percentile": 20.515
+        },
+        "TTCCC": {
+          "over_chance": 3.198247535596932,
+          "control_minus_chance": -0.0990099009900991,
+          "control_null_percentile": 46.794999999999995
+        },
+        "TTCCT": {
+          "over_chance": 1.8291347207009854,
+          "control_minus_chance": -0.5390539053905394,
+          "control_null_percentile": 26.545
+        },
+        "TTCTC": {
+          "over_chance": 1.9386637458926603,
+          "control_minus_chance": -0.42904290429042896,
+          "control_null_percentile": 30.599999999999998
+        },
+        "TTCTT": {
+          "over_chance": 1.9934282584884986,
+          "control_minus_chance": -0.5940594059405946,
+          "control_null_percentile": 24.69
+        },
+        "TTTCC": {
+          "over_chance": 3.4173055859802846,
+          "control_minus_chance": -0.20902090209020951,
+          "control_null_percentile": 41.29
+        },
+        "TTTCT": {
+          "over_chance": 1.8838992332968236,
+          "control_minus_chance": -0.20902090209020951,
+          "control_null_percentile": 41.56
+        },
+        "TTTTC": {
+          "over_chance": 3.198247535596932,
+          "control_minus_chance": -0.8140814081408141,
+          "control_null_percentile": 15.7
+        },
+        "TTTTT": {
+          "over_chance": 2.2672508214676883,
+          "control_minus_chance": -0.42904290429042896,
+          "control_null_percentile": 31.319999999999997
+        }
+      },
+      "factors": {
+        "instruction": {
+          "effect": 5.805038335158817,
+          "interval": [
+            4.098469506237285,
+            7.909854548248154
+          ]
+        },
+        "force": {
+          "effect": -0.4518072289156626,
+          "interval": [
+            -1.285166638378147,
+            0.20121799347047942
+          ]
+        },
+        "reason": {
+          "effect": -0.5271084337349398,
+          "interval": [
+            -0.9810308586385674,
+            -0.12099381966280583
+          ]
+        },
+        "format": {
+          "effect": 0.48603504928806135,
+          "interval": [
+            0.0,
+            1.1753329684074856
+          ]
+        },
+        "placement": {
+          "effect": 0.7940854326396496,
+          "interval": [
+            0.08384452569746453,
+            1.608738942307692
+          ]
+        }
+      },
+      "corners": {
+        "template": {
+          "over_chance": 2.2672508214676883,
+          "interval": [
+            0.3326668090880495,
+            4.4570959141777475
+          ]
+        },
+        "chat": {
+          "over_chance": 8.510405257393208,
+          "interval": [
+            5.524608488606219,
+            12.31406986932629
+          ]
+        },
+        "chat, interpreter rules": {
+          "over_chance": 6.976998904709747,
+          "interval": [
+            4.242366568139766,
+            11.390268479899044
+          ]
+        }
+      },
+      "chat_minus_template": {
+        "effect": 6.24315443592552,
+        "interval": [
+          3.7033979734451403,
+          9.598281634852217
+        ]
+      },
+      "control_range": [
+        -1.034103410341035,
+        0.5060506050605054
+      ],
+      "control_outside_central_95": []
+    }
+  }
+}

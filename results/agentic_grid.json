@@ -1,0 +1,1082 @@
+{
+ "meta-llama/Llama-3.2-1B-Instruct|withheld|argmax|bixprompt": {
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 9.583789704271632,
+   "chance": 10.0,
+   "margin_over_chance": -0.4162102957283685,
+   "margin_ci95": [
+    -1.3529285858178883,
+    0.8936285810153748
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 14.07447973713034,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 9.583789704271632
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.231023102310232,
+   "chance": 10.0,
+   "margin_over_chance": 0.2310231023102302,
+   "margin_ci95": [
+    -1.5843896202807097,
+    2.1696035242290748
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 13.091309130913091,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.231023102310232
+    }
+   }
+  },
+  "margin_over_clean": -0.6472333980385987,
+  "margin_over_clean_ci95": [
+   -2.79688580037885,
+   1.5737946148365527
+  ]
+ },
+ "meta-llama/Llama-3.2-1B-Instruct|withheld|notools": {
+  "model": "meta-llama/Llama-3.2-1B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 10.733844468784227,
+   "chance": 10.0,
+   "margin_over_chance": 0.7338444687842276,
+   "margin_ci95": [
+    -0.7158595674189957,
+    2.3785908646202745
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0279299014238774,
+   "second_smallest_rate": 8.543263964950713,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 10.733844468784227
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.836083608360836,
+   "chance": 10.0,
+   "margin_over_chance": 0.8360836083608355,
+   "margin_ci95": [
+    -0.5631740254240386,
+    2.3341071844434085
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0616061606160616,
+   "second_smallest_rate": 10.286028602860286,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.836083608360836
+    }
+   }
+  },
+  "margin_over_clean": -0.10223913957660791,
+  "margin_over_clean_ci95": [
+   -2.1447104410867004,
+   2.039464152424306
+  ]
+ },
+ "Qwen/Qwen2.5-1.5B-Instruct|withheld|argmax|bixprompt": {
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 10.898138006571742,
+   "chance": 10.0,
+   "margin_over_chance": 0.8981380065717411,
+   "margin_ci95": [
+    -0.4986153053484283,
+    2.626408173958605
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 13.198247535596932,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 10.898138006571742
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.671067106710671,
+   "chance": 10.0,
+   "margin_over_chance": 0.6710671067106706,
+   "margin_ci95": [
+    -0.7983696289205591,
+    2.091503267973856
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 11.496149614961496,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.671067106710671
+    }
+   }
+  },
+  "margin_over_clean": 0.22707089986107054,
+  "margin_over_clean_ci95": [
+   -1.760553923927775,
+   2.3223549489478823
+  ]
+ },
+ "Qwen/Qwen2.5-1.5B-Instruct|withheld|notools": {
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 14.457831325301203,
+   "chance": 10.0,
+   "margin_over_chance": 4.457831325301203,
+   "margin_ci95": [
+    3.2518206177920623,
+    6.0089602776860795
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 7.119386637458927,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 14.457831325301203
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.34103410341034,
+   "chance": 10.0,
+   "margin_over_chance": 0.3410341034103404,
+   "margin_ci95": [
+    -0.8943428466203681,
+    1.593725443972966
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 9.185918591859187,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.34103410341034
+    }
+   }
+  },
+  "margin_over_clean": 4.116797221890863,
+  "margin_over_clean_ci95": [
+   2.3472874737740503,
+   6.067492270243367
+  ]
+ },
+ "meta-llama/Llama-3.2-3B-Instruct|withheld|argmax|bixprompt": {
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 7.612267250821468,
+   "chance": 10.0,
+   "margin_over_chance": -2.3877327491785327,
+   "margin_ci95": [
+    -4.235612421772995,
+    -1.0497979171775558
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 18.838992332968235,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 7.612267250821468
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.726072607260726,
+   "chance": 10.0,
+   "margin_over_chance": 0.7260726072607259,
+   "margin_ci95": [
+    -0.9793457367714803,
+    2.3494062194665903
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 18.096809680968097,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.726072607260726
+    }
+   }
+  },
+  "margin_over_clean": -3.1138053564392587,
+  "margin_over_clean_ci95": [
+   -5.536161571735221,
+   -0.9840646272142012
+  ]
+ },
+ "meta-llama/Llama-3.2-3B-Instruct|withheld|notools": {
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 11.829134720700987,
+   "chance": 10.0,
+   "margin_over_chance": 1.8291347207009854,
+   "margin_ci95": [
+    0.46445328437372535,
+    3.2932274842832823
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.8762322015334063,
+   "mean_turns": 1.251369112814896,
+   "second_smallest_rate": 7.228915662650603,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 11.829134720700987
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.176017601760176,
+   "chance": 10.0,
+   "margin_over_chance": 0.17601760176017578,
+   "margin_ci95": [
+    -1.4647577092511017,
+    1.938808263356455
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.055005500550055,
+   "mean_turns": 1.2442244224422443,
+   "second_smallest_rate": 9.405940594059405,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.176017601760176
+    }
+   }
+  },
+  "margin_over_clean": 1.6531171189408096,
+  "margin_over_clean_ci95": [
+   -0.5526958461653768,
+   3.7537004567742414
+  ]
+ },
+ "microsoft/Phi-3.5-mini-instruct|withheld|argmax|bixprompt": {
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 10.569550930996714,
+   "chance": 10.0,
+   "margin_over_chance": 0.5695509309967134,
+   "margin_ci95": [
+    -1.1806834346308024,
+    2.2033320946364414
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 11.281489594742606,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 10.569550930996714
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.735973597359736,
+   "chance": 10.0,
+   "margin_over_chance": -0.2640264026402646,
+   "margin_ci95": [
+    -1.703296703296704,
+    1.1598968977860573
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 11.386138613861386,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 9.735973597359736
+    }
+   }
+  },
+  "margin_over_clean": 0.8335773336369781,
+  "margin_over_clean_ci95": [
+   -1.4449429877436197,
+   3.018066532074777
+  ]
+ },
+ "microsoft/Phi-3.5-mini-instruct|withheld|notools": {
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 14.238773274917854,
+   "chance": 10.0,
+   "margin_over_chance": 4.238773274917852,
+   "margin_ci95": [
+    1.9635791044061683,
+    6.608859373087014
+   ],
+   "used_tool": 0.0,
+   "unparsed": 13.088718510405256,
+   "mean_turns": 1.4069003285870756,
+   "second_smallest_rate": 9.255202628696605,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 14.238773274917854
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.231023102310232,
+   "chance": 10.0,
+   "margin_over_chance": 0.2310231023102307,
+   "margin_ci95": [
+    -0.9638554216867472,
+    1.50901943350847
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.055005500550055,
+   "mean_turns": 1.0137513751375138,
+   "second_smallest_rate": 15.841584158415841,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.231023102310232
+    }
+   }
+  },
+  "margin_over_clean": 4.007750172607621,
+  "margin_over_clean_ci95": [
+   1.4260273199096598,
+   6.621563224912236
+  ]
+ },
+ "Qwen/Qwen2.5-7B-Instruct|withheld|argmax|bixprompt": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 9.036144578313253,
+   "chance": 10.0,
+   "margin_over_chance": -0.9638554216867474,
+   "margin_ci95": [
+    -2.336928273746084,
+    0.6432002956393186
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 13.417305585980285,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 9.036144578313253
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 8.855885588558856,
+   "chance": 10.0,
+   "margin_over_chance": -1.1441144114411443,
+   "margin_ci95": [
+    -2.3373759647188534,
+    0.1648351648351645
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 13.256325632563255,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 8.855885588558856
+    }
+   }
+  },
+  "margin_over_clean": 0.18025898975439691,
+  "margin_over_clean_ci95": [
+   -1.7215409478718513,
+   2.1679700937770603
+  ]
+ },
+ "Qwen/Qwen2.5-7B-Instruct|withheld|notools": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 13.855421686746988,
+   "chance": 10.0,
+   "margin_over_chance": 3.8554216867469875,
+   "margin_ci95": [
+    1.452752492414391,
+    6.799203800006795
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 2.4096385542168677,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 13.855421686746988
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.295929592959295,
+   "chance": 10.0,
+   "margin_over_chance": -0.7040704070407046,
+   "margin_ci95": [
+    -2.1775422892398653,
+    0.8094992486649714
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 5.225522552255225,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 9.295929592959295
+    }
+   }
+  },
+  "margin_over_clean": 4.559492093787692,
+  "margin_over_clean_ci95": [
+   1.5991944999412977,
+   7.902752449319999
+  ]
+ },
+ "meta-llama/Llama-3.1-8B-Instruct|withheld|argmax|bixprompt": {
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 8.105147864184008,
+   "chance": 10.0,
+   "margin_over_chance": -1.8948521358159915,
+   "margin_ci95": [
+    -3.739189588879029,
+    0.03407567406524549
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 15.826944140197153,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 8.105147864184008
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.625962596259626,
+   "chance": 10.0,
+   "margin_over_chance": -0.3740374037403743,
+   "margin_ci95": [
+    -1.9537308273139136,
+    1.2941695794095538
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 14.466446644664467,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 9.625962596259626
+    }
+   }
+  },
+  "margin_over_clean": -1.5208147320756171,
+  "margin_over_clean_ci95": [
+   -4.062395611238269,
+   0.9430196160334093
+  ]
+ },
+ "meta-llama/Llama-3.1-8B-Instruct|withheld|notools": {
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 11.9934282584885,
+   "chance": 10.0,
+   "margin_over_chance": 1.9934282584884988,
+   "margin_ci95": [
+    0.014908256880734183,
+    4.356995609934192
+   ],
+   "used_tool": 0.0,
+   "unparsed": 13.964950711938664,
+   "mean_turns": 1.7146768893756845,
+   "second_smallest_rate": 6.900328587075575,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 11.9934282584885
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 6.765676567656766,
+   "chance": 10.0,
+   "margin_over_chance": -3.234323432343235,
+   "margin_ci95": [
+    -4.34065934065934,
+    -2.0992290250818963
+   ],
+   "used_tool": 0.0,
+   "unparsed": 45.76457645764577,
+   "mean_turns": 2.7442244224422443,
+   "second_smallest_rate": 5.555555555555555,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 6.765676567656766
+    }
+   }
+  },
+  "margin_over_clean": 5.227751690831734,
+  "margin_over_clean_ci95": [
+   2.9212032074750414,
+   7.779818421426166
+  ]
+ },
+ "google/gemma-3-4b-it|withheld|argmax|bixprompt": {
+  "model": "google/gemma-3-4b-it",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "transformers": "5.17.0",
+  "torch": "2.10.0+cu128",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 10.843373493975903,
+   "chance": 10.0,
+   "margin_over_chance": 0.8433734939759031,
+   "margin_ci95": [
+    -1.092826716971335,
+    2.3771442368764735
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 6.681270536692224,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 10.843373493975903
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.506050605060507,
+   "chance": 10.0,
+   "margin_over_chance": 0.5060506050605058,
+   "margin_ci95": [
+    -1.0891089108910896,
+    2.255210682301396
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 10.616061606160615,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 10.506050605060507
+    }
+   }
+  },
+  "margin_over_clean": 0.3373228889153973,
+  "margin_over_clean_ci95": [
+   -2.164570758712488,
+   2.6273661847238365
+  ]
+ },
+ "google/gemma-3-4b-it|withheld|notools": {
+  "model": "google/gemma-3-4b-it",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "transformers": "5.17.0",
+  "torch": "2.10.0+cu128",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 4.819277108433735,
+   "chance": 10.0,
+   "margin_over_chance": -5.1807228915662655,
+   "margin_ci95": [
+    -6.526011421126824,
+    -4.107596627383146
+   ],
+   "used_tool": 0.0,
+   "unparsed": 54.43592552026287,
+   "mean_turns": 2.840635268346112,
+   "second_smallest_rate": 4.271631982475356,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 4.819277108433735
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 5.335533553355336,
+   "chance": 10.0,
+   "margin_over_chance": -4.664466446644664,
+   "margin_ci95": [
+    -5.681113047582739,
+    -3.5712517680339473
+   ],
+   "used_tool": 0.0,
+   "unparsed": 43.454345434543455,
+   "mean_turns": 2.567656765676568,
+   "second_smallest_rate": 4.62046204620462,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 5.335533553355336
+    }
+   }
+  },
+  "margin_over_clean": -0.5162564449216012,
+  "margin_over_clean_ci95": [
+   -2.2943439976170743,
+   0.978153485557788
+  ]
+ },
+ "allenai/OLMo-2-1124-7B-Instruct|withheld|argmax|bixprompt": {
+  "model": "allenai/OLMo-2-1124-7B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "transformers": "5.17.0",
+  "torch": "2.10.0+cu128",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 10.076670317634173,
+   "chance": 10.0,
+   "margin_over_chance": 0.07667031763417259,
+   "margin_ci95": [
+    -1.2596531652977199,
+    1.2707251698019262
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 16.37458926615553,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 10.076670317634173
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 8.91089108910891,
+   "chance": 10.0,
+   "margin_over_chance": -1.0891089108910896,
+   "margin_ci95": [
+    -2.582621138466364,
+    0.46306583267648627
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 16.611661166116612,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 8.91089108910891
+    }
+   }
+  },
+  "margin_over_clean": 1.1657792285252622,
+  "margin_over_clean_ci95": [
+   -0.7755708383230255,
+   2.9780444707264198
+  ]
+ },
+ "allenai/OLMo-2-1124-7B-Instruct|withheld|notools": {
+  "model": "allenai/OLMo-2-1124-7B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "transformers": "5.17.0",
+  "torch": "2.10.0+cu128",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 6.078860898138007,
+   "chance": 10.0,
+   "margin_over_chance": -3.9211391018619937,
+   "margin_ci95": [
+    -5.125365745183866,
+    -2.751289682539683
+   ],
+   "used_tool": 0.0,
+   "unparsed": 37.130339539978095,
+   "mean_turns": 2.294633077765608,
+   "second_smallest_rate": 5.9145673603504925,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 6.078860898138007
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 8.745874587458747,
+   "chance": 10.0,
+   "margin_over_chance": -1.2541254125412542,
+   "margin_ci95": [
+    -2.43462440976621,
+    -0.03259156359362262
+   ],
+   "used_tool": 0.0,
+   "unparsed": 8.58085808580858,
+   "mean_turns": 1.3965896589658966,
+   "second_smallest_rate": 8.250825082508252,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 8.745874587458747
+    }
+   }
+  },
+  "margin_over_clean": -2.6670136893207395,
+  "margin_over_clean_ci95": [
+   -4.382178146820242,
+   -1.0371458577715187
+  ]
+ }
+}

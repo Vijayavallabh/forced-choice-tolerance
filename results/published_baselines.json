@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "run": "bixbench_llm_baseline_refusal_False_mcq_claude-3-5-sonnet-latest_1.0",
+      "n_items": 159,
+      "n_options": 4,
+      "chance": 0.25,
+      "accuracy": 0.27672955974842767,
+      "margin": 0.026729559748427667,
+      "lambda": 0.027685878125392208,
+      "lrt_lambda_zero_p": 0.272941668073148,
+      "goodness_of_fit_p": 0.5398933571645366,
+      "skipped": {
+        "not distinct numbers": 137
+      }
+    },
+    {
+      "run": "bixbench_llm_baseline_refusal_False_mcq_gpt-4o_1.0",
+      "n_items": 159,
+      "n_options": 4,
+      "chance": 0.25,
+      "accuracy": 0.3018867924528302,
+      "margin": 0.05188679245283018,
+      "lambda": 0.06882644336402569,
+      "lrt_lambda_zero_p": 0.07042024105889319,
+      "goodness_of_fit_p": 0.41076697272510265,
+      "skipped": {
+        "not distinct numbers": 137
+      }
+    }
+  ],
+  "statement": "neither published zero-shot baseline's recall term is distinguishable from zero at alpha=0.05"
+}

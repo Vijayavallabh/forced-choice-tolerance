@@ -1,0 +1,117 @@
+{
+  "note": "Check that the probe's forced-choice read-out predicts what the model writes.",
+  "sample_conditions": 200,
+  "arms_sampled": [
+    "original",
+    "placebo",
+    "repaired",
+    "original_stemless",
+    "repaired_stemless"
+  ],
+  "models": [
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 65,
+      "compliance_rate": 0.325,
+      "agreement_with_forced_choice": 0.9692307692307692,
+      "n_agree": 63
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 200,
+      "compliance_rate": 1.0,
+      "agreement_with_forced_choice": 0.975,
+      "n_agree": 195
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 198,
+      "compliance_rate": 0.99,
+      "agreement_with_forced_choice": 0.9646464646464646,
+      "n_agree": 191
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "letter_variant": "A",
+      "n_sampled": 200,
+      "n_compliant": 200,
+      "compliance_rate": 1.0,
+      "agreement_with_forced_choice": 0.965,
+      "n_agree": 193
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 200,
+      "compliance_rate": 1.0,
+      "agreement_with_forced_choice": 0.97,
+      "n_agree": 194
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 141,
+      "compliance_rate": 0.705,
+      "agreement_with_forced_choice": 0.9858156028368794,
+      "n_agree": 139
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 192,
+      "compliance_rate": 0.96,
+      "agreement_with_forced_choice": 0.984375,
+      "n_agree": 189
+    },
+    {
+      "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 198,
+      "compliance_rate": 0.99,
+      "agreement_with_forced_choice": 0.9595959595959596,
+      "n_agree": 190
+    },
+    {
+      "model": "Groq/Llama-3-Groq-8B-Tool-Use",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 200,
+      "compliance_rate": 1.0,
+      "agreement_with_forced_choice": 0.965,
+      "n_agree": 193
+    },
+    {
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 196,
+      "compliance_rate": 0.98,
+      "agreement_with_forced_choice": 0.9540816326530612,
+      "n_agree": 187
+    },
+    {
+      "model": "Qwen/Qwen2.5-32B-Instruct",
+      "letter_variant": " A",
+      "n_sampled": 200,
+      "n_compliant": 200,
+      "compliance_rate": 1.0,
+      "agreement_with_forced_choice": 0.96,
+      "n_agree": 192
+    }
+  ],
+  "summary": {
+    "n_models": 11,
+    "min_agreement": 0.9540816326530612,
+    "min_compliance": 0.325
+  }
+}

@@ -1,0 +1,643 @@
+{
+ "file": "bixbench",
+ "calibrated_level": 0.9599999999999966,
+ "cells": {
+  "bixbench/argmax": "BixBench's template, one letter",
+  "agent/generated": "question absent, generated, no tool"
+ },
+ "max_unparsed": 5.0,
+ "max_unparsed_gap": 3.0,
+ "models": [
+  {
+   "model": "meta-llama/Llama-3.2-1B-Instruct",
+   "parameters_billions": 1.235822804,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 23.577235772357724,
+     "clean_accuracy": 25.040650406504067,
+     "margin_over_clean": -1.4634146341463414,
+     "ci95": [
+      -6.82774545534601,
+      3.6899185254137232
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -6.827745455346009,
+      3.6899185254137232
+     ],
+     "ci_calibrated": [
+      -7.033304006314718,
+      3.821855140831666
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 27.31707317073171,
+     "clean_accuracy": 25.691056910569106,
+     "margin_over_clean": 1.6260162601626016,
+     "ci95": [
+      -4.163987227566617,
+      7.303190225734591
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -4.163987227566616,
+      7.303190225734591
+     ],
+     "ci_calibrated": [
+      -4.406681678843655,
+      7.622519499855958
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "Qwen/Qwen2.5-1.5B-Instruct",
+   "parameters_billions": 1.543733572,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 28.292682926829265,
+     "clean_accuracy": 22.11382113821138,
+     "margin_over_clean": 6.178861788617887,
+     "ci95": [
+      0.5248581297804095,
+      11.3017653474367
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      0.5248581297804098,
+      11.3017653474367
+     ],
+     "ci_calibrated": [
+      0.3715509071034562,
+      11.689934336246287
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 31.05691056910569,
+     "clean_accuracy": 18.536585365853657,
+     "margin_over_clean": 12.520325203252032,
+     "ci95": [
+      7.115177998301308,
+      17.635041663811457
+     ],
+     "unparsed_file": 3.089430894308943,
+     "unparsed_clean": 0.0,
+     "readable": false,
+     "ci95_rebuilt": [
+      7.1151779983013075,
+      17.635041663811457
+     ],
+     "ci_calibrated": [
+      6.983018443544891,
+      17.879405601374327
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "meta-llama/Llama-3.2-3B-Instruct",
+   "parameters_billions": 3.212749824,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 26.34146341463415,
+     "clean_accuracy": 24.552845528455283,
+     "margin_over_clean": 1.788617886178862,
+     "ci95": [
+      -5.329264213080786,
+      8.495521658455171
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -5.329264213080786,
+      8.495521658455171
+     ],
+     "ci_calibrated": [
+      -5.629718383267018,
+      8.827799440480932
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 28.780487804878046,
+     "clean_accuracy": 21.788617886178862,
+     "margin_over_clean": 6.991869918699187,
+     "ci95": [
+      1.3299019151333178,
+      12.839492330984104
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      1.3299019151333202,
+      12.839492330984104
+     ],
+     "ci_calibrated": [
+      0.9605982148148375,
+      13.287110693015002
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "microsoft/Phi-3.5-mini-instruct",
+   "parameters_billions": 3.821079552,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 30.24390243902439,
+     "clean_accuracy": 22.76422764227642,
+     "margin_over_clean": 7.479674796747968,
+     "ci95": [
+      1.6153542673107892,
+      13.43800430391448
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      1.6153542673107892,
+      13.43800430391448
+     ],
+     "ci_calibrated": [
+      1.3374515804550162,
+      13.81441194319681
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 25.203252032520325,
+     "clean_accuracy": 20.48780487804878,
+     "margin_over_clean": 4.715447154471544,
+     "ci95": [
+      -1.7553966851469351,
+      10.834155299476343
+     ],
+     "unparsed_file": 4.5528455284552845,
+     "unparsed_clean": 0.0,
+     "readable": false,
+     "ci95_rebuilt": [
+      -1.7553966851469331,
+      10.834155299476343
+     ],
+     "ci_calibrated": [
+      -2.048255647256116,
+      11.111967446035445
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "google/gemma-3-4b-it",
+   "parameters_billions": 4.300079472,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 30.081300813008134,
+     "clean_accuracy": 25.853658536585368,
+     "margin_over_clean": 4.227642276422764,
+     "ci95": [
+      -2.063130157104516,
+      10.742628058887165
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -2.0631301571045153,
+      10.742628058887167
+     ],
+     "ci_calibrated": [
+      -2.4545255853811225,
+      11.051244124443185
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 25.691056910569106,
+     "clean_accuracy": 22.276422764227643,
+     "margin_over_clean": 3.4146341463414633,
+     "ci95": [
+      -1.357561432167094,
+      8.44415839636428
+     ],
+     "unparsed_file": 1.788617886178862,
+     "unparsed_clean": 10.08130081300813,
+     "readable": false,
+     "ci95_rebuilt": [
+      -1.3575614321670937,
+      8.44415839636428
+     ],
+     "ci_calibrated": [
+      -1.7312652261882997,
+      8.584036521444592
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "allenai/OLMo-2-1124-7B-Instruct",
+   "parameters_billions": 7.298617344,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 27.967479674796746,
+     "clean_accuracy": 25.528455284552848,
+     "margin_over_clean": 2.4390243902439024,
+     "ci95": [
+      -2.796163962770849,
+      7.7083490447460985
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -2.796163962770845,
+      7.7083490447460985
+     ],
+     "ci_calibrated": [
+      -3.1041043914626223,
+      7.954549783690781
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 25.203252032520325,
+     "clean_accuracy": 21.788617886178862,
+     "margin_over_clean": 3.4146341463414633,
+     "ci95": [
+      -1.649016214688551,
+      9.074388797964051
+     ],
+     "unparsed_file": 1.951219512195122,
+     "unparsed_clean": 0.16260162601626016,
+     "readable": true,
+     "ci95_rebuilt": [
+      -1.6490162146885499,
+      9.07438879796405
+     ],
+     "ci_calibrated": [
+      -1.9052269914848736,
+      9.334610748277262
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "Qwen/Qwen2.5-7B-Instruct",
+   "parameters_billions": 7.615616512,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 26.01626016260163,
+     "clean_accuracy": 22.926829268292686,
+     "margin_over_clean": 3.089430894308943,
+     "ci95": [
+      -1.6419130818536465,
+      7.725698226512829
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -1.6419130818536447,
+      7.72569822651283
+     ],
+     "ci_calibrated": [
+      -1.8299906324561617,
+      7.913241079907664
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 31.869918699186993,
+     "clean_accuracy": 24.715447154471544,
+     "margin_over_clean": 7.154471544715446,
+     "ci95": [
+      1.5870065405103428,
+      12.894701816775205
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      1.5870065405103435,
+      12.894701816775205
+     ],
+     "ci_calibrated": [
+      1.2205246023636052,
+      13.108895366430653
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+   "parameters_billions": 8.030261248,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 29.593495934959353,
+     "clean_accuracy": 25.691056910569106,
+     "margin_over_clean": 3.9024390243902443,
+     "ci95": [
+      -2.176375162959693,
+      10.031215023621403
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -2.1763751629596926,
+      10.031215023621403
+     ],
+     "ci_calibrated": [
+      -2.390217501299859,
+      10.35349802832063
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 30.569105691056908,
+     "clean_accuracy": 23.577235772357724,
+     "margin_over_clean": 6.991869918699187,
+     "ci95": [
+      0.5402000371742913,
+      13.393702870791815
+     ],
+     "unparsed_file": 0.4878048780487805,
+     "unparsed_clean": 1.951219512195122,
+     "readable": true,
+     "ci95_rebuilt": [
+      0.540200037174293,
+      13.393702870791815
+     ],
+     "ci_calibrated": [
+      0.28549711158409796,
+      13.775586385204
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "microsoft/phi-4",
+   "parameters_billions": 14.6595072,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 33.33333333333333,
+     "clean_accuracy": 21.138211382113823,
+     "margin_over_clean": 12.19512195121951,
+     "ci95": [
+      6.123470376348619,
+      18.50098101629195
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      6.12347037634862,
+      18.50098101629195
+     ],
+     "ci_calibrated": [
+      5.83260055079598,
+      18.938581139024592
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 22.276422764227643,
+     "clean_accuracy": 15.934959349593496,
+     "margin_over_clean": 6.341463414634146,
+     "ci95": [
+      0.5364660183322157,
+      12.287879478586564
+     ],
+     "unparsed_file": 34.959349593495936,
+     "unparsed_clean": 16.260162601626014,
+     "readable": false,
+     "ci95_rebuilt": [
+      0.5364660183322166,
+      12.287879478586564
+     ],
+     "ci_calibrated": [
+      0.3114094594556359,
+      12.580375412430763
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "Qwen/Qwen2.5-14B-Instruct",
+   "parameters_billions": 14.770033664,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 30.081300813008134,
+     "clean_accuracy": 21.6260162601626,
+     "margin_over_clean": 8.455284552845528,
+     "ci95": [
+      3.2243782368106593,
+      13.56352037235689
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true
+    },
+    "agent/generated": {
+     "accuracy": 38.3739837398374,
+     "clean_accuracy": 23.414634146341466,
+     "margin_over_clean": 14.959349593495935,
+     "ci95": [
+      8.761748545572075,
+      20.725868034886634
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      8.761748545572074,
+      20.725868034886634
+     ],
+     "ci_calibrated": [
+      8.42860257666119,
+      20.924913280304967
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "Qwen/Qwen2.5-32B-Instruct",
+   "parameters_billions": 32.763876352,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 33.170731707317074,
+     "clean_accuracy": 27.80487804878049,
+     "margin_over_clean": 5.365853658536587,
+     "ci95": [
+      -1.2048111341832903,
+      12.302350338753948
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -1.2048111341832894,
+      12.302350338753948
+     ],
+     "ci_calibrated": [
+      -1.438519679273258,
+      12.645482241553676
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 31.382113821138212,
+     "clean_accuracy": 24.715447154471544,
+     "margin_over_clean": 6.666666666666667,
+     "ci95": [
+      0.5325042953291609,
+      12.435017116538852
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      0.5325042953291614,
+      12.435017116538852
+     ],
+     "ci_calibrated": [
+      0.16866250950643324,
+      12.755637958262174
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "meta-llama/Llama-3.3-70B-Instruct",
+   "parameters_billions": 70.553706496,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 27.967479674796746,
+     "clean_accuracy": 21.138211382113823,
+     "margin_over_clean": 6.829268292682927,
+     "ci95": [
+      1.0071736612907578,
+      13.174934449782901
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      1.007173661290759,
+      13.174934449782901
+     ],
+     "ci_calibrated": [
+      0.7243848390896187,
+      13.415817342936673
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 31.869918699186993,
+     "clean_accuracy": 23.902439024390244,
+     "margin_over_clean": 7.967479674796747,
+     "ci95": [
+      1.322855090471349,
+      14.439931823835138
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      1.3228550904713507,
+      14.43993182383514
+     ],
+     "ci_calibrated": [
+      1.081518560597837,
+      14.680944783954383
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  },
+  {
+   "model": "Qwen/Qwen2.5-72B-Instruct",
+   "parameters_billions": 72.706203648,
+   "cells": {
+    "bixbench/argmax": {
+     "accuracy": 29.105691056910572,
+     "clean_accuracy": 22.926829268292686,
+     "margin_over_clean": 6.178861788617886,
+     "ci95": [
+      -0.4203631366347463,
+      12.618311040234707
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      -0.420363136634746,
+      12.618311040234708
+     ],
+     "ci_calibrated": [
+      -0.6734978228399114,
+      13.05894504212803
+     ],
+     "calibrated_level": 0.9599999999999966
+    },
+    "agent/generated": {
+     "accuracy": 33.00813008130081,
+     "clean_accuracy": 26.34146341463415,
+     "margin_over_clean": 6.666666666666666,
+     "ci95": [
+      0.39656681856802284,
+      12.731161215750255
+     ],
+     "unparsed_file": 0.0,
+     "unparsed_clean": 0.0,
+     "readable": true,
+     "ci95_rebuilt": [
+      0.3965668185680231,
+      12.731161215750255
+     ],
+     "ci_calibrated": [
+      0.08725019920155919,
+      13.126984010602184
+     ],
+     "calibrated_level": 0.9599999999999966
+    }
+   }
+  }
+ ],
+ "bixbench/argmax_trend": {
+  "n_readable": 13,
+  "slope_per_decade": 2.9006919889654057,
+  "intercept": 2.4029535068041974,
+  "smallest_clearing_billions": 1.543733572,
+  "largest_not_clearing_billions": 72.706203648,
+  "level": 0.9599999999999966
+ },
+ "agent/generated_trend": {
+  "n_readable": 9,
+  "slope_per_decade": 2.5200666745085916,
+  "intercept": 4.237452511578231,
+  "smallest_clearing_billions": 3.212749824,
+  "largest_not_clearing_billions": 7.298617344,
+  "level": 0.9599999999999966
+ }
+}

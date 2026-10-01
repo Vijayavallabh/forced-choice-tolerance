@@ -1,0 +1,205 @@
+{
+  "note": "Eight seeds of the constructive repair of build/mmlu.jsonl with and without the reversed-tie length coordinate, so the cost of the fourth coordinate is read off a spread rather than one draw. Bounds are the audit's own credit lower bound on the numeric items.",
+  "file": "build/mmlu.jsonl",
+  "n_options": 4,
+  "seeds": [
+    20260920,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "repairs": {
+    "three coordinates": {
+      "per_seed": [
+        {
+          "seed": 11,
+          "bounds": {
+            "lexical isolation": -0.019911504424778764,
+            "written length": -0.025956284153005466,
+            "significant digits": 0.016447368421052655
+          },
+          "numeric_family_cv_accuracy": 0.25718608169440244,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 12,
+          "bounds": {
+            "lexical isolation": -0.028378378378378366,
+            "written length": -0.035714285714285726,
+            "significant digits": -0.04346405228758171
+          },
+          "numeric_family_cv_accuracy": 0.21936459909228442,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 13,
+          "bounds": {
+            "lexical isolation": -0.008551307847082495,
+            "written length": -0.02777777777777779,
+            "significant digits": -0.011658031088082915
+          },
+          "numeric_family_cv_accuracy": 0.24962178517397882,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 14,
+          "bounds": {
+            "lexical isolation": -0.01992481203007518,
+            "written length": -0.020096463022508032,
+            "significant digits": -0.013157894736842118
+          },
+          "numeric_family_cv_accuracy": 0.27987897125567324,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 15,
+          "bounds": {
+            "lexical isolation": -0.013636363636363641,
+            "written length": -0.03254211332312404,
+            "significant digits": -0.014069264069264065
+          },
+          "numeric_family_cv_accuracy": 0.27685325264750377,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 16,
+          "bounds": {
+            "lexical isolation": -0.013975155279503104,
+            "written length": -0.022063492063492063,
+            "significant digits": -0.01785714285714285
+          },
+          "numeric_family_cv_accuracy": 0.2329803328290469,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 17,
+          "bounds": {
+            "lexical isolation": -0.013305322128851549,
+            "written length": 0.028846153846153855,
+            "significant digits": -0.0018037518037518074
+          },
+          "numeric_family_cv_accuracy": 0.29046898638426627,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 20260920,
+          "bounds": {
+            "lexical isolation": -0.0011627906976744151,
+            "written length": -0.031186094069529657,
+            "significant digits": -0.013358778625954193
+          },
+          "numeric_family_cv_accuracy": 0.27987897125567324,
+          "verdict": "LEAKS"
+        }
+      ],
+      "worst_bound": {
+        "lexical isolation": -0.0011627906976744151,
+        "written length": 0.028846153846153855,
+        "significant digits": 0.016447368421052655
+      },
+      "median_bound": {
+        "lexical isolation": -0.013636363636363641,
+        "written length": -0.025956284153005466,
+        "significant digits": -0.013157894736842118
+      }
+    },
+    "four coordinates": {
+      "per_seed": [
+        {
+          "seed": 11,
+          "bounds": {
+            "lexical isolation": -0.011061946902654857,
+            "written length": -0.03186968838526913,
+            "significant digits": 0.01168224299065418
+          },
+          "numeric_family_cv_accuracy": 0.25718608169440244,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 12,
+          "bounds": {
+            "lexical isolation": -0.016423357664233584,
+            "written length": -0.026457883369330443,
+            "significant digits": -0.02419354838709678
+          },
+          "numeric_family_cv_accuracy": 0.2102874432677761,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 13,
+          "bounds": {
+            "lexical isolation": -0.01301806588735388,
+            "written length": -0.003803596127247566,
+            "significant digits": -0.02054794520547945
+          },
+          "numeric_family_cv_accuracy": 0.24962178517397882,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 14,
+          "bounds": {
+            "lexical isolation": 0.010869565217391297,
+            "written length": -0.02379095163806552,
+            "significant digits": -0.024809160305343525
+          },
+          "numeric_family_cv_accuracy": 0.28290468986384265,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 15,
+          "bounds": {
+            "lexical isolation": -0.016045548654244318,
+            "written length": -0.02300613496932516,
+            "significant digits": -0.008503401360544227
+          },
+          "numeric_family_cv_accuracy": 0.2783661119515885,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 16,
+          "bounds": {
+            "lexical isolation": -0.01728110599078342,
+            "written length": -0.008354755784061696,
+            "significant digits": -0.024834437086092703
+          },
+          "numeric_family_cv_accuracy": 0.2329803328290469,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 17,
+          "bounds": {
+            "lexical isolation": 0.0007886435331230235,
+            "written length": 0.0015723270440251569,
+            "significant digits": -0.012312633832976455
+          },
+          "numeric_family_cv_accuracy": 0.29046898638426627,
+          "verdict": "LEAKS"
+        },
+        {
+          "seed": 20260920,
+          "bounds": {
+            "lexical isolation": 0.0035612535612535856,
+            "written length": -0.012254901960784326,
+            "significant digits": -0.020573566084788025
+          },
+          "numeric_family_cv_accuracy": 0.27987897125567324,
+          "verdict": "LEAKS"
+        }
+      ],
+      "worst_bound": {
+        "lexical isolation": 0.010869565217391297,
+        "written length": 0.0015723270440251569,
+        "significant digits": 0.01168224299065418
+      },
+      "median_bound": {
+        "lexical isolation": -0.011061946902654857,
+        "written length": -0.012254901960784326,
+        "significant digits": -0.02054794520547945
+      }
+    }
+  }
+}

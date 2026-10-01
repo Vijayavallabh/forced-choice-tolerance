@@ -1,0 +1,449 @@
+{
+  "chance_mcq": 0.25,
+  "bootstrap_reps": 10000,
+  "inference": "cluster bootstrap and cluster permutation over capsule_uuid",
+  "runs": [
+    {
+      "run": "claude-3-5-sonnet-latest-grader-mcq-refusal-False",
+      "source_file": "data/external/zero_shot_v15/claude-3-5-sonnet-latest-grader-mcq-refusal-False.csv",
+      "n_questions_joined": 205,
+      "n_questions_in_file": 205,
+      "n_capsules": 59,
+      "accuracy": 0.34146341463414637,
+      "ci95_cluster_bootstrap": [
+        0.2782608695652174,
+        0.41125541125541126
+      ],
+      "clustering": {
+        "icc": 0.02711626507959853,
+        "mean_cluster_size": 3.4745762711864407,
+        "m0": 3.456181665264929,
+        "design_effect": 1.067101266129176,
+        "effective_n": 192.10922759338575,
+        "n_questions": 205,
+        "n_clusters": 59
+      },
+      "by_provenance": {
+        "source_identified": {
+          "n_questions": 137,
+          "n_capsules": 36,
+          "accuracy": 0.34306569343065696
+        },
+        "no_source_identifier": {
+          "n_questions": 68,
+          "n_capsules": 23,
+          "accuracy": 0.3382352941176471
+        },
+        "cluster_permutation": {
+          "difference": 0.004830399313009881,
+          "p_value": 0.9622037796220378,
+          "reps": 10000
+        },
+        "difference_ci95": [
+          -0.1560185185185185,
+          0.1457800511508951
+        ]
+      },
+      "chance": 0.25,
+      "above_chance_margin": 0.09146341463414637,
+      "above_chance_ci_excludes": true
+    },
+    {
+      "run": "claude-3-5-sonnet-latest-grader-mcq-refusal-True",
+      "source_file": "data/external/zero_shot_v15/claude-3-5-sonnet-latest-grader-mcq-refusal-True.csv",
+      "n_questions_joined": 205,
+      "n_questions_in_file": 205,
+      "n_capsules": 59,
+      "accuracy": 0.08292682926829269,
+      "ci95_cluster_bootstrap": [
+        0.04739336492890995,
+        0.1206896551724138
+      ],
+      "clustering": {
+        "icc": 0.01047476222763212,
+        "mean_cluster_size": 3.4745762711864407,
+        "m0": 3.456181665264929,
+        "design_effect": 1.0259205980548185,
+        "effective_n": 199.82053229917327,
+        "n_questions": 205,
+        "n_clusters": 59
+      },
+      "by_provenance": {
+        "source_identified": {
+          "n_questions": 137,
+          "n_capsules": 36,
+          "accuracy": 0.072992700729927
+        },
+        "no_source_identifier": {
+          "n_questions": 68,
+          "n_capsules": 23,
+          "accuracy": 0.10294117647058823
+        },
+        "cluster_permutation": {
+          "difference": -0.02994847574066123,
+          "p_value": 0.44815518448155184,
+          "reps": 10000
+        },
+        "difference_ci95": [
+          -0.11441532258064516,
+          0.044550352258599255
+        ]
+      },
+      "chance": 0.25,
+      "above_chance_margin": -0.1670731707317073,
+      "above_chance_ci_excludes": false
+    },
+    {
+      "run": "claude-3-5-sonnet-latest-grader-openended",
+      "source_file": "data/external/zero_shot_v15/claude-3-5-sonnet-latest-grader-openended.csv",
+      "n_questions_joined": 205,
+      "n_questions_in_file": 205,
+      "n_capsules": 59,
+      "accuracy": 0.02926829268292683,
+      "ci95_cluster_bootstrap": [
+        0.009569377990430622,
+        0.05405405405405406
+      ],
+      "clustering": {
+        "icc": 0.13844240069326033,
+        "mean_cluster_size": 3.4745762711864407,
+        "m0": 3.456181665264929,
+        "design_effect": 1.3425862796816272,
+        "effective_n": 152.69037312716503,
+        "n_questions": 205,
+        "n_clusters": 59
+      },
+      "by_provenance": {
+        "source_identified": {
+          "n_questions": 137,
+          "n_capsules": 36,
+          "accuracy": 0.021897810218978103
+        },
+        "no_source_identifier": {
+          "n_questions": 68,
+          "n_capsules": 23,
+          "accuracy": 0.04411764705882353
+        },
+        "cluster_permutation": {
+          "difference": -0.02221983683984543,
+          "p_value": 0.39146085391460855,
+          "reps": 10000
+        },
+        "difference_ci95": [
+          -0.08423124740986324,
+          0.027631578947368417
+        ]
+      }
+    },
+    {
+      "run": "gpt-4o-grader-mcq-refusal-False",
+      "source_file": "data/external/zero_shot_v15/gpt-4o-grader-mcq-refusal-False.csv",
+      "n_questions_joined": 205,
+      "n_questions_in_file": 205,
+      "n_capsules": 59,
+      "accuracy": 0.36097560975609755,
+      "ci95_cluster_bootstrap": [
+        0.28994082840236685,
+        0.43147208121827413
+      ],
+      "clustering": {
+        "icc": 0.06444647594108338,
+        "mean_cluster_size": 3.4745762711864407,
+        "m0": 3.456181665264929,
+        "design_effect": 1.1594777201253927,
+        "effective_n": 176.8037422727106,
+        "n_questions": 205,
+        "n_clusters": 59
+      },
+      "by_provenance": {
+        "source_identified": {
+          "n_questions": 137,
+          "n_capsules": 36,
+          "accuracy": 0.29927007299270075
+        },
+        "no_source_identifier": {
+          "n_questions": 68,
+          "n_capsules": 23,
+          "accuracy": 0.4852941176470588
+        },
+        "cluster_permutation": {
+          "difference": -0.18602404465435807,
+          "p_value": 0.010698930106989302,
+          "reps": 10000
+        },
+        "difference_ci95": [
+          -0.3082457111234089,
+          -0.050387596899224785
+        ]
+      },
+      "chance": 0.25,
+      "above_chance_margin": 0.11097560975609755,
+      "above_chance_ci_excludes": true
+    },
+    {
+      "run": "gpt-4o-grader-mcq-refusal-True",
+      "source_file": "data/external/zero_shot_v15/gpt-4o-grader-mcq-refusal-True.csv",
+      "n_questions_joined": 205,
+      "n_questions_in_file": 205,
+      "n_capsules": 59,
+      "accuracy": 0.03902439024390244,
+      "ci95_cluster_bootstrap": [
+        0.01020408163265306,
+        0.07547169811320754
+      ],
+      "clustering": {
+        "icc": 0.31789448087598215,
+        "mean_cluster_size": 3.4745762711864407,
+        "m0": 3.456181665264929,
+        "design_effect": 1.7866541391168371,
+        "effective_n": 114.73961048853796,
+        "n_questions": 205,
+        "n_clusters": 59
+      },
+      "by_provenance": {
+        "source_identified": {
+          "n_questions": 137,
+          "n_capsules": 36,
+          "accuracy": 0.0364963503649635
+        },
+        "no_source_identifier": {
+          "n_questions": 68,
+          "n_capsules": 23,
+          "accuracy": 0.04411764705882353
+        },
+        "cluster_permutation": {
+          "difference": -0.0076212966938600316,
+          "p_value": 0.8184181581841816,
+          "reps": 10000
+        },
+        "difference_ci95": [
+          -0.07312348668280873,
+          0.05517241379310345
+        ]
+      },
+      "chance": 0.25,
+      "above_chance_margin": -0.21097560975609755,
+      "above_chance_ci_excludes": false
+    },
+    {
+      "run": "gpt-4o-grader-openended",
+      "source_file": "data/external/zero_shot_v15/gpt-4o-grader-openended.csv",
+      "n_questions_joined": 205,
+      "n_questions_in_file": 205,
+      "n_capsules": 59,
+      "accuracy": 0.02926829268292683,
+      "ci95_cluster_bootstrap": [
+        0.009302325581395349,
+        0.05357142857142857
+      ],
+      "clustering": {
+        "icc": 0.13034245035419265,
+        "mean_cluster_size": 3.4745762711864407,
+        "m0": 3.456181665264929,
+        "design_effect": 1.3225423347747818,
+        "effective_n": 155.00448992047566,
+        "n_questions": 205,
+        "n_clusters": 59
+      },
+      "by_provenance": {
+        "source_identified": {
+          "n_questions": 137,
+          "n_capsules": 36,
+          "accuracy": 0.029197080291970802
+        },
+        "no_source_identifier": {
+          "n_questions": 68,
+          "n_capsules": 23,
+          "accuracy": 0.029411764705882353
+        },
+        "cluster_permutation": {
+          "difference": -0.00021468441391155058,
+          "p_value": 1.0,
+          "reps": 10000
+        },
+        "difference_ci95": [
+          -0.058128732581287326,
+          0.043795620437956206
+        ]
+      }
+    }
+  ],
+  "option_set_heuristics": {
+    "longest_option": {
+      "accuracy": 0.21951219512195122,
+      "n_scored": 205,
+      "ci95": [
+        0.1651376146788991,
+        0.27807486631016043
+      ],
+      "above_chance": false
+    },
+    "shortest_option": {
+      "accuracy": 0.18536585365853658,
+      "n_scored": 205,
+      "ci95": [
+        0.1330049261083744,
+        0.23873873873873874
+      ],
+      "above_chance": false
+    },
+    "most_decimal_places": {
+      "accuracy": 0.21951219512195122,
+      "n_scored": 205,
+      "ci95": [
+        0.16042780748663102,
+        0.28169014084507044
+      ],
+      "above_chance": false
+    },
+    "numeric_median": {
+      "accuracy": 0.5142857142857142,
+      "n_scored": 105,
+      "ci95": [
+        0.39473684210526316,
+        0.6336633663366337
+      ],
+      "above_chance": true
+    },
+    "numeric_extreme": {
+      "accuracy": 0.0761904761904762,
+      "n_scored": 105,
+      "ci95": [
+        0.02197802197802198,
+        0.13131313131313133
+      ],
+      "above_chance": false
+    }
+  },
+  "confounding_analysis": {
+    "composition": {
+      "source_identified": {
+        "n_questions": 137,
+        "n_capsules": 36,
+        "numeric_share": 0.36496350364963503,
+        "interior_rate_among_numeric": 0.72,
+        "eval_mode_mix": {
+          "str_verifier": 59,
+          "range_verifier": 53,
+          "llm_verifier": 25
+        },
+        "llm_graded_share": 0.18248175182481752
+      },
+      "no_source_identifier": {
+        "n_questions": 68,
+        "n_capsules": 23,
+        "numeric_share": 0.8088235294117647,
+        "interior_rate_among_numeric": 0.8909090909090909,
+        "eval_mode_mix": {
+          "llm_verifier": 58,
+          "str_verifier": 2,
+          "range_verifier": 8
+        },
+        "llm_graded_share": 0.8529411764705882
+      }
+    },
+    "contrasts": [
+      {
+        "restriction": "all questions",
+        "source_identified": {
+          "accuracy": 0.29927007299270075,
+          "n": 137,
+          "n_capsules": 36
+        },
+        "no_source_identifier": {
+          "accuracy": 0.4852941176470588,
+          "n": 68,
+          "n_capsules": 23
+        },
+        "difference": -0.18602404465435807,
+        "p_value": 0.010698930106989302,
+        "reps": 10000,
+        "difference_ci95": [
+          -0.3082457111234089,
+          -0.050387596899224785
+        ]
+      },
+      {
+        "restriction": "numeric-option questions only",
+        "source_identified": {
+          "accuracy": 0.32,
+          "n": 50,
+          "n_capsules": 25
+        },
+        "no_source_identifier": {
+          "accuracy": 0.41818181818181815,
+          "n": 55,
+          "n_capsules": 21
+        },
+        "difference": -0.09818181818181815,
+        "p_value": 0.3017698230176982,
+        "reps": 10000,
+        "difference_ci95": [
+          -0.270066889632107,
+          0.07857142857142857
+        ]
+      },
+      {
+        "restriction": "non-numeric questions only",
+        "source_identified": {
+          "accuracy": 0.28735632183908044,
+          "n": 87,
+          "n_capsules": 29
+        },
+        "no_source_identifier": {
+          "accuracy": 0.7692307692307693,
+          "n": 13,
+          "n_capsules": 5
+        },
+        "difference": -0.48187444739168883,
+        "p_value": 0.0028997100289971,
+        "reps": 10000,
+        "difference_ci95": [
+          -0.7419354838709677,
+          -0.3561872909698997
+        ]
+      },
+      {
+        "restriction": "LLM-graded questions only",
+        "source_identified": {
+          "accuracy": 0.44,
+          "n": 25,
+          "n_capsules": 15
+        },
+        "no_source_identifier": {
+          "accuracy": 0.46551724137931033,
+          "n": 58,
+          "n_capsules": 22
+        },
+        "difference": -0.02551724137931033,
+        "p_value": 0.8209179082091791,
+        "reps": 10000,
+        "difference_ci95": [
+          -0.28985507246376807,
+          0.21702127659574466
+        ]
+      },
+      {
+        "restriction": "deterministically graded questions only",
+        "source_identified": {
+          "accuracy": 0.26785714285714285,
+          "n": 112,
+          "n_capsules": 34
+        },
+        "no_source_identifier": {
+          "accuracy": 0.6,
+          "n": 10,
+          "n_capsules": 2
+        },
+        "difference": -0.33214285714285713,
+        "p_value": 0.0680931906809319,
+        "reps": 10000,
+        "difference_ci95": [
+          -0.49610389610389616,
+          -0.01366120218579231
+        ]
+      }
+    ],
+    "interpretation": "The strata differ in numeric-option share, distractor geometry, and grading mode. A score difference between them is therefore not attributable to temporal exposure without adjusting for construction."
+  }
+}

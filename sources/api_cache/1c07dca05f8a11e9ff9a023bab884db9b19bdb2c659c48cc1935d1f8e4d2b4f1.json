@@ -1,0 +1,947 @@
+{
+  "url": "https://api.crossref.org/works/10.1371/journal.pone.0150501",
+  "retrieved_at": "2026-09-16T15:26:17.519625+00:00",
+  "status": 200,
+  "body": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            14
+          ]
+        ],
+        "date-time": "2026-06-14T21:54:43Z",
+        "timestamp": 1781474083415,
+        "version": "3.54.1"
+      },
+      "reference-count": 62,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                2,
+                26
+              ]
+            ],
+            "date-time": "2016-02-26T00:00:00Z",
+            "timestamp": 1456444800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.plosone.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS ONE"
+      ],
+      "DOI": "10.1371/journal.pone.0150501",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            26
+          ]
+        ],
+        "date-time": "2016-02-26T18:43:03Z",
+        "timestamp": 1456512183000
+      },
+      "page": "e0150501",
+      "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 11,
+      "title": [
+        "Six Serum miRNAs Fail to Validate as Myotonic Dystrophy Type 1 Biomarkers"
+      ],
+      "prefix": "10.1371",
+      "volume": "11",
+      "author": [
+        {
+          "given": "Juan M.",
+          "family": "Fernandez-Costa",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Beatriz",
+          "family": "Llamusi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ariadna",
+          "family": "Bargiela",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Miren",
+          "family": "Zulaica",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M. Carmen",
+          "family": "Alvarez-Abril",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Manuel",
+          "family": "Perez-Alonso",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adolfo",
+          "family": "Lopez de Munain",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Arturo",
+          "family": "Lopez-Castel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ruben",
+          "family": "Artero",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "340",
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            26
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "author": "P Harper",
+          "year": "2001"
+        },
+        {
+          "key": "ref2",
+          "doi-asserted-by": "crossref",
+          "first-page": "800",
+          "DOI": "10.1136/jnnp.2006.107185",
+          "article-title": "Towards an integrative approach to the management of myotonic dystrophy type 1",
+          "volume": "78",
+          "author": "C Gagnon",
+          "year": "2007",
+          "journal-title": "J Neurol Neurosurg Psychiatry"
+        },
+        {
+          "key": "ref3",
+          "doi-asserted-by": "crossref",
+          "first-page": "82",
+          "DOI": "10.1016/j.ijcard.2011.08.037",
+          "article-title": "Cardiac manifestations of myotonic dystrophy type 1",
+          "volume": "160",
+          "author": "H Petri",
+          "year": "2012",
+          "journal-title": "Int J Cardiol"
+        },
+        {
+          "key": "ref4",
+          "doi-asserted-by": "crossref",
+          "first-page": "446",
+          "DOI": "10.1007/s00455-013-9458-9",
+          "article-title": "Oral motor movements and swallowing in patients with myotonic dystrophy type 1",
+          "volume": "28",
+          "author": "B Ercolin",
+          "year": "2013",
+          "journal-title": "Dysphagia"
+        },
+        {
+          "key": "ref5",
+          "doi-asserted-by": "crossref",
+          "first-page": "193",
+          "DOI": "10.1016/B978-0-08-045031-5.00015-3",
+          "article-title": "Myotonic dystrophy types 1 and 2",
+          "volume": "101",
+          "author": "T Ashizawa",
+          "year": "2011",
+          "journal-title": "Handb Clin Neurol"
+        },
+        {
+          "key": "ref6",
+          "first-page": "342",
+          "article-title": "DNA instability and neurological diseases: a new model for genetic disease",
+          "volume": "9",
+          "author": "A Lopez de Munain",
+          "year": "1994",
+          "journal-title": "Neurologia"
+        },
+        {
+          "key": "ref7",
+          "doi-asserted-by": "crossref",
+          "first-page": "35",
+          "DOI": "10.1016/S1097-2765(02)00563-4",
+          "article-title": "Expanded CUG repeats trigger aberrant splicing of ClC-1 chloride channel pre-mRNA and hyperexcitability of skeletal muscle in myotonic dystrophy",
+          "volume": "10",
+          "author": "A Mankodi",
+          "year": "2002",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "key": "ref8",
+          "doi-asserted-by": "crossref",
+          "first-page": "7388",
+          "DOI": "10.1073/pnas.94.14.7388",
+          "article-title": "Expansion of a CUG trinucleotide repeat in the 3&apos; untranslated region of myotonic dystrophy protein kinase transcripts results in nuclear retention of transcripts",
+          "volume": "94",
+          "author": "BM Davis",
+          "year": "1997",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "ref9",
+          "doi-asserted-by": "crossref",
+          "first-page": "805",
+          "DOI": "10.1093/hmg/11.7.805",
+          "article-title": "Three proteins, MBNL, MBLL and MBXL, co-localize in vivo with nuclear foci of expanded-repeat transcripts in DM1 and DM2 cells",
+          "volume": "11",
+          "author": "M Fardaei",
+          "year": "2002",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "ref10",
+          "doi-asserted-by": "crossref",
+          "first-page": "858",
+          "DOI": "10.1101/gr.184390.114",
+          "article-title": "Antagonistic regulation of mRNA expression and splicing by CELF and MBNL proteins",
+          "volume": "25",
+          "author": "ET Wang",
+          "year": "2015",
+          "journal-title": "Genome Res"
+        },
+        {
+          "key": "ref11",
+          "doi-asserted-by": "crossref",
+          "first-page": "68",
+          "DOI": "10.1016/j.molcel.2007.07.027",
+          "article-title": "Increased steady-state levels of CUGBP1 in myotonic dystrophy 1 are due to PKC-mediated hyperphosphorylation",
+          "volume": "28",
+          "author": "NM Kuyumcu-Martinez",
+          "year": "2007",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "key": "ref12",
+          "doi-asserted-by": "crossref",
+          "first-page": "187",
+          "DOI": "10.1038/nsmb.1720",
+          "article-title": "Aberrant alternative splicing and extracellular matrix gene expression in mouse models of myotonic dystrophy",
+          "volume": "17",
+          "author": "H Du",
+          "year": "2010",
+          "journal-title": "Nat Struct Mol Biol"
+        },
+        {
+          "key": "ref13",
+          "doi-asserted-by": "crossref",
+          "first-page": "e33218",
+          "DOI": "10.1371/journal.pone.0033218",
+          "article-title": "Muscleblind-like 1 knockout mice reveal novel splicing defects in the myotonic dystrophy brain",
+          "volume": "7",
+          "author": "K Suenaga",
+          "year": "2012",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref14",
+          "doi-asserted-by": "crossref",
+          "first-page": "862",
+          "DOI": "10.1002/ana.23992",
+          "article-title": "Splicing biomarkers of disease severity in myotonic dystrophy",
+          "volume": "74",
+          "author": "M Nakamori",
+          "year": "2013",
+          "journal-title": "Ann Neurol"
+        },
+        {
+          "key": "ref15",
+          "doi-asserted-by": "crossref",
+          "first-page": "311",
+          "DOI": "10.1016/j.molcel.2014.08.027",
+          "article-title": "Loss of MBNL leads to disruption of developmentally regulated alternative polyadenylation in RNA-mediated disease",
+          "volume": "56",
+          "author": "R Batra",
+          "year": "2014",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "key": "ref16",
+          "doi-asserted-by": "crossref",
+          "first-page": "R45",
+          "DOI": "10.1093/hmg/ddt371",
+          "article-title": "Repeat-associated non-ATG (RAN) translation in neurological disease",
+          "volume": "22",
+          "author": "JD Cleary",
+          "year": "2013",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "ref17",
+          "doi-asserted-by": "crossref",
+          "first-page": "580",
+          "DOI": "10.1093/hmg/ddq501",
+          "article-title": "Bidirectional transcription stimulates expansion and contraction of expanded (CTG)*(CAG) repeats",
+          "volume": "20",
+          "author": "M Nakamori",
+          "year": "2011",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "ref18",
+          "doi-asserted-by": "crossref",
+          "first-page": "383",
+          "DOI": "10.1126/science.1088679",
+          "article-title": "RNA leaching of transcription factors disrupts transcription in myotonic dystrophy",
+          "volume": "303",
+          "author": "A Ebralidze",
+          "year": "2004",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref19",
+          "doi-asserted-by": "crossref",
+          "first-page": "293",
+          "DOI": "10.1093/hmg/ddt419",
+          "article-title": "Evaluating the effects of CELF1 deficiency in a mouse model of RNA toxicity",
+          "volume": "23",
+          "author": "YK Kim",
+          "year": "2014",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "ref20",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1093/hmg/ddq427",
+          "article-title": "Expanded CTG repeat demarcates a boundary for abnormal CpG methylation in myotonic dystrophy patient tissues",
+          "volume": "20",
+          "author": "Castel A Lopez",
+          "year": "2011",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "ref21",
+          "doi-asserted-by": "crossref",
+          "first-page": "81",
+          "DOI": "10.1016/j.nmd.2010.11.012",
+          "article-title": "Dysregulation and cellular mislocalization of specific miRNAs in myotonic dystrophy type 1",
+          "volume": "21",
+          "author": "R Perbellini",
+          "year": "2011",
+          "journal-title": "Neuromuscul Disord"
+        },
+        {
+          "key": "ref22",
+          "doi-asserted-by": "crossref",
+          "first-page": "704",
+          "DOI": "10.1093/hmg/dds478",
+          "article-title": "Expanded CTG repeats trigger miRNA alterations in Drosophila that are conserved in myotonic dystrophy type 1 patients",
+          "volume": "22",
+          "author": "JM Fernandez-Costa",
+          "year": "2013",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "ref23",
+          "doi-asserted-by": "crossref",
+          "first-page": "336",
+          "DOI": "10.1016/j.celrep.2013.12.025",
+          "article-title": "The Mef2 transcription network is disrupted in myotonic dystrophy heart tissue, dramatically altering miRNA and mRNA expression",
+          "volume": "6",
+          "author": "A Kalsotra",
+          "year": "2014",
+          "journal-title": "Cell Rep"
+        },
+        {
+          "key": "ref24",
+          "doi-asserted-by": "crossref",
+          "first-page": "840",
+          "DOI": "10.1038/nsmb.2067",
+          "article-title": "Misregulation of miR-1 processing is associated with heart defects in myotonic dystrophy",
+          "volume": "18",
+          "author": "F Rau",
+          "year": "2011",
+          "journal-title": "Nat Struct Mol Biol"
+        },
+        {
+          "key": "ref25",
+          "doi-asserted-by": "crossref",
+          "first-page": "970607",
+          "DOI": "10.1155/2014/970607",
+          "article-title": "Mechanisms of miRNA-Mediated Gene Regulation from Common Downregulation to mRNA-Specific Upregulation",
+          "volume": "2014",
+          "author": "A Valinezhad Orang",
+          "year": "2014",
+          "journal-title": "Int J Genomics"
+        },
+        {
+          "key": "ref26",
+          "doi-asserted-by": "crossref",
+          "first-page": "D68",
+          "DOI": "10.1093/nar/gkt1181",
+          "article-title": "miRBase: annotating high confidence microRNAs using deep sequencing data",
+          "volume": "42",
+          "author": "A Kozomara",
+          "year": "2014",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref27",
+          "article-title": "The Functions of MicroRNAs: mRNA Decay and Translational Repression",
+          "author": "HO Iwakawa",
+          "year": "2015",
+          "journal-title": "Trends Cell Biol"
+        },
+        {
+          "key": "ref28",
+          "doi-asserted-by": "crossref",
+          "first-page": "e41561",
+          "DOI": "10.1371/journal.pone.0041561",
+          "article-title": "Comparing the MicroRNA spectrum between serum and plasma",
+          "volume": "7",
+          "author": "K Wang",
+          "year": "2012",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref29",
+          "doi-asserted-by": "crossref",
+          "first-page": "e32307",
+          "DOI": "10.1371/journal.pone.0032307",
+          "article-title": "Serum microRNA biomarkers for detection of non-small cell lung cancer",
+          "volume": "7",
+          "author": "PT Hennessey",
+          "year": "2012",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref30",
+          "doi-asserted-by": "crossref",
+          "first-page": "491",
+          "DOI": "10.1016/j.expneurol.2011.11.026",
+          "article-title": "Blood serum miRNA: non-invasive biomarkers for Alzheimer&apos;s disease",
+          "volume": "235",
+          "author": "H Geekiyanage",
+          "year": "2012",
+          "journal-title": "Exp Neurol"
+        },
+        {
+          "key": "ref31",
+          "doi-asserted-by": "crossref",
+          "first-page": "389",
+          "DOI": "10.1007/s00430-011-0223-0",
+          "article-title": "A pilot study of serum microRNA signatures as a novel biomarker for occult hepatitis B virus infection",
+          "volume": "201",
+          "author": "Y Chen",
+          "year": "2012",
+          "journal-title": "Med Microbiol Immunol"
+        },
+        {
+          "key": "ref32",
+          "doi-asserted-by": "crossref",
+          "first-page": "1733",
+          "DOI": "10.1159/000366374",
+          "article-title": "Serum miRNA biomarkers serve as a fingerprint for proliferative diabetic retinopathy",
+          "volume": "34",
+          "author": "S Qing",
+          "year": "2014",
+          "journal-title": "Cell Physiol Biochem"
+        },
+        {
+          "key": "ref33",
+          "doi-asserted-by": "crossref",
+          "first-page": "e23925",
+          "DOI": "10.1371/journal.pone.0023925",
+          "article-title": "Early second-trimester serum miRNA profiling predicts gestational diabetes mellitus",
+          "volume": "6",
+          "author": "C Zhao",
+          "year": "2011",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref34",
+          "doi-asserted-by": "crossref",
+          "first-page": "258",
+          "DOI": "10.1002/emmm.201100133",
+          "article-title": "miRNAs as serum biomarkers for Duchenne muscular dystrophy",
+          "volume": "3",
+          "author": "D Cacchiarelli",
+          "year": "2011",
+          "journal-title": "EMBO Mol Med"
+        },
+        {
+          "key": "ref35",
+          "doi-asserted-by": "crossref",
+          "first-page": "48",
+          "DOI": "10.1186/1479-5876-8-48",
+          "article-title": "Overexpression of microRNA-206 in the skeletal muscle from myotonic dystrophy type 1 patients",
+          "volume": "8",
+          "author": "S Gambardella",
+          "year": "2010",
+          "journal-title": "J Transl Med"
+        },
+        {
+          "key": "ref36",
+          "doi-asserted-by": "crossref",
+          "first-page": "11866",
+          "DOI": "10.1073/pnas.1018213108",
+          "article-title": "In vivo discovery of a peptide that prevents CUG-RNA hairpin formation and reverses RNA toxicity in myotonic dystrophy models",
+          "volume": "108",
+          "author": "A Garcia-Lopez",
+          "year": "2011",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "ref37",
+          "doi-asserted-by": "crossref",
+          "first-page": "310",
+          "DOI": "10.1124/jpet.115.226969",
+          "article-title": "Identification and Characterization of Modified Antisense Oligonucleotides Targeting DMPK in Mice and Nonhuman Primates for the Treatment of Myotonic Dystrophy Type 1",
+          "volume": "355",
+          "author": "SK Pandey",
+          "year": "2015",
+          "journal-title": "J Pharmacol Exp Ther"
+        },
+        {
+          "key": "ref38",
+          "doi-asserted-by": "crossref",
+          "first-page": "4731",
+          "DOI": "10.1021/ja210088v",
+          "article-title": "Design of a bioactive small molecule that targets the myotonic dystrophy type 1 RNA via an RNA motif-ligand database and chemical similarity searching",
+          "volume": "134",
+          "author": "R Parkesh",
+          "year": "2012",
+          "journal-title": "J Am Chem Soc"
+        },
+        {
+          "key": "ref39",
+          "doi-asserted-by": "crossref",
+          "first-page": "111",
+          "DOI": "10.1038/nature11362",
+          "article-title": "Targeting nuclear RNA for in vivo correction of myotonic dystrophy",
+          "volume": "488",
+          "author": "TM Wheeler",
+          "year": "2012",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref40",
+          "doi-asserted-by": "crossref",
+          "first-page": "1215",
+          "DOI": "10.1093/nar/16.3.1215",
+          "article-title": "A simple salting out procedure for extracting DNA from human nucleated cells",
+          "volume": "16",
+          "author": "SA Miller",
+          "year": "1988",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref41",
+          "doi-asserted-by": "crossref",
+          "first-page": "548",
+          "DOI": "10.1038/355548a0",
+          "article-title": "Cloning of the essential myotonic dystrophy region and mapping of the putative defect",
+          "volume": "355",
+          "author": "C Aslanidis",
+          "year": "1992",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref42",
+          "first-page": "385",
+          "article-title": "Molecular basis of myotonic dystrophy: expansion of a trinucleotide (CTG) repeat at the 3&apos; end of a transcript encoding a protein kinase family member",
+          "volume": "69",
+          "author": "JD Brook",
+          "year": "1992",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref43",
+          "doi-asserted-by": "crossref",
+          "first-page": "547",
+          "DOI": "10.1038/355547a0",
+          "article-title": "Detection of an unstable fragment of DNA specific to individuals with myotonic dystrophy",
+          "volume": "355",
+          "author": "J Buxton",
+          "year": "1992",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref44",
+          "doi-asserted-by": "crossref",
+          "first-page": "50",
+          "DOI": "10.1002/jcla.20004",
+          "article-title": "Improved method for molecular diagnosis of myotonic dystrophy type 1 (DM1)",
+          "volume": "18",
+          "author": "N Erginel-Unaltuna",
+          "year": "2004",
+          "journal-title": "J Clin Lab Anal"
+        },
+        {
+          "key": "ref45",
+          "doi-asserted-by": "crossref",
+          "first-page": "e24145",
+          "DOI": "10.1371/journal.pone.0024145",
+          "article-title": "Haemolysis during sample preparation alters microRNA content of plasma",
+          "volume": "6",
+          "author": "MB Kirschner",
+          "year": "2011",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref46",
+          "doi-asserted-by": "crossref",
+          "first-page": "e36",
+          "DOI": "10.1093/nar/30.9.e36",
+          "article-title": "Relative expression software tool (REST) for group-wise comparison and statistical analysis of relative expression results in real-time PCR",
+          "volume": "30",
+          "author": "MW Pfaffl",
+          "year": "2002",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref47",
+          "doi-asserted-by": "crossref",
+          "first-page": "RESEARCH0034",
+          "DOI": "10.1186/gb-2002-3-7-research0034",
+          "article-title": "Accurate normalization of real-time quantitative RT-PCR data by geometric averaging of multiple internal control genes",
+          "volume": "3",
+          "author": "J Vandesompele",
+          "year": "2002",
+          "journal-title": "Genome Biol"
+        },
+        {
+          "key": "ref48",
+          "doi-asserted-by": "crossref",
+          "first-page": "5245",
+          "DOI": "10.1158/0008-5472.CAN-04-0496",
+          "article-title": "Normalization of real-time quantitative reverse transcription-PCR data: a model-based variance estimation approach to identify genes suited for normalization, applied to bladder and colon cancer data sets",
+          "volume": "64",
+          "author": "CL Andersen",
+          "year": "2004",
+          "journal-title": "Cancer Res"
+        },
+        {
+          "key": "ref49",
+          "first-page": "94",
+          "article-title": "The Impact of Hemolysis on Cell-Free microRNA Biomarkers",
+          "volume": "4",
+          "author": "MB Kirschner",
+          "year": "2013",
+          "journal-title": "Front Genet"
+        },
+        {
+          "key": "ref50",
+          "first-page": "6576",
+          "article-title": "High miR-196a and low miR-367 cooperatively correlate with unfavorable prognosis of high-grade glioma",
+          "volume": "8",
+          "author": "Y Guan",
+          "year": "2015",
+          "journal-title": "Int J Clin Exp Pathol"
+        },
+        {
+          "key": "ref51",
+          "doi-asserted-by": "crossref",
+          "first-page": "499",
+          "DOI": "10.1186/s12885-015-1505-5",
+          "article-title": "MiR-190b, the highest up-regulated miRNA in ERalpha-positive compared to ERalpha-negative breast tumors, a new biomarker in breast cancers?",
+          "volume": "15",
+          "author": "G Cizeron-Clairac",
+          "year": "2015",
+          "journal-title": "BMC Cancer"
+        },
+        {
+          "key": "ref52",
+          "doi-asserted-by": "crossref",
+          "first-page": "e80263",
+          "DOI": "10.1371/journal.pone.0080263",
+          "article-title": "Dystromirs as serum biomarkers for monitoring the disease severity in Duchenne muscular Dystrophy",
+          "volume": "8",
+          "author": "IT Zaharieva",
+          "year": "2013",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref53",
+          "doi-asserted-by": "crossref",
+          "first-page": "4",
+          "DOI": "10.1186/2049-1891-3-4",
+          "article-title": "Identification of circulating miRNA biomarkers based on global quantitative real-time PCR profiling",
+          "volume": "3",
+          "author": "K Kang",
+          "year": "2012",
+          "journal-title": "Journal of animal science and biotechnology"
+        },
+        {
+          "key": "ref54",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0139944",
+          "DOI": "10.1371/journal.pone.0139944",
+          "article-title": "Reconstructing the Rasch-Built Myotonic Dystrophy Type 1 Activity and Participation Scale",
+          "volume": "10",
+          "author": "MC Hermans",
+          "year": "2015",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref55",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0121556",
+          "DOI": "10.1371/journal.pone.0121556",
+          "article-title": "Cell membrane integrity in myotonic dystrophy type 1: implications for therapy",
+          "volume": "10",
+          "author": "A Gonzalez-Barriga",
+          "year": "2015",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref56",
+          "doi-asserted-by": "crossref",
+          "first-page": "S1",
+          "DOI": "10.1016/j.ymeth.2012.09.015",
+          "article-title": "Assessing sample and miRNA profile quality in serum and plasma or other biofluids",
+          "volume": "59",
+          "author": "T Blondal",
+          "year": "2013",
+          "journal-title": "Methods"
+        },
+        {
+          "key": "ref57",
+          "doi-asserted-by": "crossref",
+          "first-page": "e0125341",
+          "DOI": "10.1371/journal.pone.0125341",
+          "article-title": "Elevated Muscle-Specific miRNAs in Serum of Myotonic Dystrophy Patients Relate to Muscle Disease Progress",
+          "volume": "10",
+          "author": "A Koutsoulidou",
+          "year": "2015",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref58",
+          "doi-asserted-by": "crossref",
+          "first-page": "833",
+          "DOI": "10.1373/clinchem.2010.157198",
+          "article-title": "Analysis of circulating microRNA: preanalytical and analytical challenges",
+          "volume": "57",
+          "author": "JS McDonald",
+          "year": "2011",
+          "journal-title": "Clin Chem"
+        },
+        {
+          "key": "ref59",
+          "doi-asserted-by": "crossref",
+          "first-page": "9500",
+          "DOI": "10.1093/nar/gkv849",
+          "article-title": "Cooperation meets competition in microRNA-mediated DMPK transcript regulation",
+          "volume": "43",
+          "author": "E Koscianska",
+          "year": "2015",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref60",
+          "doi-asserted-by": "crossref",
+          "first-page": "56",
+          "DOI": "10.1373/clinchem.2014.221341",
+          "article-title": "Circulating microRNA biomarker studies: pitfalls and potential solutions",
+          "volume": "61",
+          "author": "KW Witwer",
+          "year": "2015",
+          "journal-title": "Clin Chem"
+        },
+        {
+          "key": "ref61",
+          "doi-asserted-by": "crossref",
+          "first-page": "371",
+          "DOI": "10.1111/jcmm.12236",
+          "article-title": "Methodological challenges in utilizing miRNAs as circulating biomarkers",
+          "volume": "18",
+          "author": "L Moldovan",
+          "year": "2014",
+          "journal-title": "J Cell Mol Med"
+        },
+        {
+          "key": "ref62",
+          "article-title": "Plasma microRNAs as biomarkers for myotonic dystrophy type 1",
+          "author": "A Perfetti",
+          "year": "2014",
+          "journal-title": "Neuromuscul Disord"
+        }
+      ],
+      "container-title": [
+        "PLOS ONE"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://dx.plos.org/10.1371/journal.pone.0150501",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            23
+          ]
+        ],
+        "date-time": "2018-10-23T14:59:22Z",
+        "timestamp": 1540306762000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://dx.plos.org/10.1371/journal.pone.0150501"
+        }
+      },
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Ratna B.",
+          "family": "Ray",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "editor"
+            }
+          ]
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            26
+          ]
+        ]
+      },
+      "references-count": 62,
+      "journal-issue": {
+        "issue": "2",
+        "published-online": {
+          "date-parts": [
+            [
+              2016,
+              2,
+              26
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1371/journal.pone.0150501",
+      "relation": {},
+      "ISSN": [
+        "1932-6203"
+      ],
+      "issn-type": [
+        {
+          "value": "1932-6203",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            2,
+            26
+          ]
+        ]
+      }
+    }
+  }
+}

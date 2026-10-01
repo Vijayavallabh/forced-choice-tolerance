@@ -1,0 +1,71 @@
+{
+ "Qwen/Qwen2.5-14B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld_aware",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": true,
+  "system": "You are answering a multiple-choice question, but the question text and the data it refers to have been withheld from you: all you are given is the list of options. You must still pick one. Study the options themselves and choose the one that is most likely to be the intended answer. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 16.210295728368017,
+   "chance": 10.0,
+   "margin_over_chance": 6.210295728368016,
+   "margin_ci95": [
+    4.4611015144228405,
+    8.22763901124527
+   ],
+   "used_tool": 20.53669222343921,
+   "unparsed": 0.2738225629791895,
+   "mean_turns": 1.5372398685651698,
+   "second_smallest_rate": 2.9025191675794084,
+   "by_tool": {
+    "used": {
+     "n": 375,
+     "accuracy": 19.2
+    },
+    "not_used": {
+     "n": 1451,
+     "accuracy": 15.43762922122674
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.955995599559957,
+   "chance": 10.0,
+   "margin_over_chance": -0.044004400440044264,
+   "margin_ci95": [
+    -1.4461167135853472,
+    1.313725419160373
+   ],
+   "used_tool": 11.496149614961496,
+   "unparsed": 0.0,
+   "mean_turns": 1.5665566556655666,
+   "second_smallest_rate": 5.885588558855885,
+   "by_tool": {
+    "used": {
+     "n": 209,
+     "accuracy": 10.047846889952153
+    },
+    "not_used": {
+     "n": 1609,
+     "accuracy": 9.944064636420137
+    }
+   }
+  },
+  "margin_over_clean": 6.25430012880806,
+  "margin_over_clean_ci95": [
+   4.036588769309033,
+   8.6870526958366
+  ]
+ }
+}

@@ -1,0 +1,380 @@
+{
+  "Qwen/Qwen2.5-1.5B-Instruct|bixbench_numeric_repaired": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "items": "build/bixbench_numeric_repaired.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 29.04761904761905,
+        "chance": 25.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 4.047619047619051,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -2.2738987816307383,
+          9.906805275691513
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.3333333333333335
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.3333333333333335
+            ]
+          },
+          "0.1": {
+            "accuracy": 1.9047619047619049,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              5.1033557752998036
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 3.0952380952380985,
+      "0.05": 3.0952380952380985,
+      "0.1": 2.142857142857146
+    }
+  },
+  "meta-llama/Llama-3.2-3B-Instruct|bixbench_numeric_repaired": {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "items": "build/bixbench_numeric_repaired.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 30.0,
+        "chance": 25.0,
+        "unparsed": 0.4761904761904762,
+        "declined": 0.0,
+        "margin": 5.0,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -1.3888888888888888,
+          11.207687440683324
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 3.8095238095238098,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9174311926605505,
+              7.447554185722804
+            ]
+          },
+          "0.05": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9174311926605505,
+              7.447554185722804
+            ]
+          },
+          "0.1": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9174311926605505,
+              7.447554185722804
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 1.1904761904761902,
+      "0.05": 1.1904761904761902,
+      "0.1": 1.1904761904761902
+    }
+  },
+  "Qwen/Qwen2.5-7B-Instruct|bixbench_numeric_repaired": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "items": "build/bixbench_numeric_repaired.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 29.04761904761905,
+        "chance": 25.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 4.047619047619051,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -3.6963459759481947,
+          11.917990654205596
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.8928571428571428,
+              7.563025210084033
+            ]
+          },
+          "0.1": {
+            "accuracy": 4.761904761904762,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              1.0523574561403513,
+              8.663328491705517
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 4.047619047619051,
+      "0.05": 0.23809523809524125,
+      "0.1": -0.7142857142857109
+    }
+  },
+  "meta-llama/Meta-Llama-3.1-8B-Instruct|bixbench_numeric_repaired": {
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "items": "build/bixbench_numeric_repaired.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 24.761904761904763,
+        "chance": 25.0,
+        "unparsed": 2.857142857142857,
+        "declined": 0.0,
+        "margin": -0.23809523809523725,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -6.944802405498281,
+          6.604277535881306
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 8.571428571428571,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.261765408504534
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.261765408504534
+            ]
+          },
+          "0.1": {
+            "accuracy": 1.9047619047619049,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              4.9504950495049505
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": -1.1904761904761898,
+      "0.05": -1.1904761904761898,
+      "0.1": -2.1428571428571423
+    }
+  },
+  "microsoft/phi-4|bixbench_numeric_repaired": {
+    "model": "microsoft/phi-4",
+    "items": "build/bixbench_numeric_repaired.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 19.047619047619047,
+        "chance": 25.0,
+        "unparsed": 30.952380952380953,
+        "declined": 21.428571428571427,
+        "margin": -5.9523809523809526,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -11.629640494986129,
+          0.25252525252525254
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 58.0952380952381,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.0935889175257687
+            ]
+          },
+          "0.1": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.0935889175257687
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": -5.9523809523809526,
+      "0.05": -6.904761904761905,
+      "0.1": -6.904761904761905
+    }
+  },
+  "Qwen/Qwen2.5-14B-Instruct|bixbench_numeric_repaired": {
+    "model": "Qwen/Qwen2.5-14B-Instruct",
+    "items": "build/bixbench_numeric_repaired.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 39.523809523809526,
+        "chance": 25.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 14.523809523809526,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          6.521097226977063,
+          23.02028732284993
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 26.666666666666668,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 1.9047619047619049,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              4.673999294657021
+            ]
+          },
+          "0.1": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9088861588861592,
+              7.408392434988174
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 14.523809523809526,
+      "0.05": 12.61904761904762,
+      "0.1": 10.714285714285715
+    }
+  }
+}

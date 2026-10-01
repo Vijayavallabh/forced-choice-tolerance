@@ -1,0 +1,28 @@
+Dai, What the score hides: an audit of BixBench -- code and study, Zenodo, doi:10.5281/zenodo.22151932
+(v1.0.1, 2026-08-29), record description from the Zenodo API, retrieved 25 Sep 2026. Verbatim excerpt.
+
+[description] Code and writeup for a reliability audit of BixBench, FutureHouse's bioinformatics-agent benchmark: 140 replicated agent runs, 3,900 replicated grading verdicts across three graders, and every answer key re-derived from the raw capsule data.
+
+[README.md, from the record's file BixBench_eval-v1.0.1.zip (Anqi-Dai-BixBench_eval-f5abe9f/README.md), lines 5-16 and 100-102, fetched 2026-10-01]
+BixBench is FutureHouse's benchmark for bioinformatics agents. It does
+something right that most benchmarks skip — it runs every analysis ten times —
+but those runs are pooled into a single accuracy number, and everything the
+pooling flattens goes unexamined. This study audits what that score hides, on
+three capsules (14 questions, 140 agent runs, ~$80): the run-to-run variation,
+the grader's reliability, and the answer keys themselves. The headline:
+**most of what the benchmark scores as agent failure does not come from the
+agent.** 73 of 80 incorrect answers trace to the answer key or the question's
+wording — verified by re-deriving both the key and the agent's answer from the
+raw data — and 9 of the 10 runs that never answered died following the
+harness's own package-install instruction. The agent's own share is 8 runs out
+of 140.
+...
+## Scope, stated up front
+
+Small N: 3 capsules of 54, 14 questions, one agent configuration, one pinned model
+
+[env/REVIEW_REPORT.md, lines 29-32]
+The review table covers **bix-8, bix-49 and bix-26** — the three capsules with
+the full K=10 replicate campaign. Deviating answers from the K=1 pilot runs
+(bix-1, bix-43, bix-4) were verified along the way but are **excluded from the
+table and from all counts**: they are single draws, several from runs that hit

@@ -1,0 +1,65 @@
+{
+ "Qwen/Qwen2.5-14B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/bixbench_numeric_placebo.jsonl",
+  "condition": "withheld_aware",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 28.253968253968253,
+   "chance": 25.0,
+   "margin_over_chance": 3.2539682539682544,
+   "margin_ci95": [
+    -2.1043771043771047,
+    9.02061855670103
+   ],
+   "used_tool": 26.666666666666668,
+   "unparsed": 0.0,
+   "mean_turns": 1.5269841269841269,
+   "second_smallest_rate": 30.793650793650794,
+   "by_tool": {
+    "used": {
+     "n": 84,
+     "accuracy": 34.523809523809526
+    },
+    "not_used": {
+     "n": 231,
+     "accuracy": 25.97402597402597
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 22.22222222222222,
+   "chance": 25.0,
+   "margin_over_chance": -2.7777777777777777,
+   "margin_ci95": [
+    -8.012971698113208,
+    2.7804487179487034
+   ],
+   "used_tool": 18.095238095238095,
+   "unparsed": 0.0,
+   "mean_turns": 1.3492063492063493,
+   "second_smallest_rate": 26.03174603174603,
+   "by_tool": {
+    "used": {
+     "n": 57,
+     "accuracy": 31.57894736842105
+    },
+    "not_used": {
+     "n": 258,
+     "accuracy": 20.155038759689923
+    }
+   }
+  },
+  "margin_over_clean": 6.031746031746032,
+  "margin_over_clean_ci95": [
+   -1.6982582380061666,
+   13.411724169005703
+  ]
+ }
+}

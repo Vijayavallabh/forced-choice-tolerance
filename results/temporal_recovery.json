@@ -1,0 +1,157 @@
+{
+  "summary": {
+    "n_files": 12,
+    "n_items_total": 2558,
+    "n_items_dated": 740,
+    "coverage": 0.28928850664581707,
+    "n_files_with_any_date_recovered": 5,
+    "n_new_lookups": 0,
+    "statement": "no released file publishes a date; resolving the identifiers they do publish recovers one for 740 of 2558 tasks in 5 of 12 files."
+  },
+  "benchmarks": [
+    {
+      "benchmark": "BixBench v1.5",
+      "file": "data/bixbench.jsonl",
+      "n_items": 205,
+      "n_dated": 36,
+      "n_identifier_unresolved": 101,
+      "n_no_identifier": 68,
+      "coverage": 0.17560975609756097,
+      "earliest": "2016-02-26",
+      "latest": "2024-09-03",
+      "median": "2023-05-31"
+    },
+    {
+      "benchmark": "LAB-Bench LitQA2",
+      "file": "data/external/labbench/LitQA2.jsonl",
+      "n_items": 199,
+      "n_dated": 198,
+      "n_identifier_unresolved": 1,
+      "n_no_identifier": 0,
+      "coverage": 0.9949748743718593,
+      "earliest": "2002-02-15",
+      "latest": "2024-05-20",
+      "median": "2023-11-09"
+    },
+    {
+      "benchmark": "LAB-Bench SuppQA",
+      "file": "data/external/labbench/SuppQA.jsonl",
+      "n_items": 82,
+      "n_dated": 82,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 0,
+      "coverage": 1.0,
+      "earliest": "2006-12-06",
+      "latest": "2024-05-23",
+      "median": "2022-11-01"
+    },
+    {
+      "benchmark": "LAB-Bench DbQA",
+      "file": "data/external/labbench/DbQA.jsonl",
+      "n_items": 520,
+      "n_dated": 0,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 520,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    },
+    {
+      "benchmark": "LAB-Bench SeqQA",
+      "file": "data/external/labbench/SeqQA.jsonl",
+      "n_items": 600,
+      "n_dated": 0,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 600,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    },
+    {
+      "benchmark": "LAB-Bench TableQA",
+      "file": "data/external/labbench/TableQA.jsonl",
+      "n_items": 244,
+      "n_dated": 243,
+      "n_identifier_unresolved": 1,
+      "n_no_identifier": 0,
+      "coverage": 0.9959016393442623,
+      "earliest": "1991-03-01",
+      "latest": "2024-05-23",
+      "median": "2017-11-20"
+    },
+    {
+      "benchmark": "LAB-Bench FigQA",
+      "file": "data/external/labbench/FigQA.jsonl",
+      "n_items": 181,
+      "n_dated": 181,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 0,
+      "coverage": 1.0,
+      "earliest": "2011-06-25",
+      "latest": "2023-10-17",
+      "median": "2019-10-16"
+    },
+    {
+      "benchmark": "LAB-Bench ProtocolQA",
+      "file": "data/external/labbench/ProtocolQA.jsonl",
+      "n_items": 108,
+      "n_dated": 0,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 108,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    },
+    {
+      "benchmark": "LAB-Bench CloningScenarios",
+      "file": "data/external/labbench/CloningScenarios.jsonl",
+      "n_items": 33,
+      "n_dated": 0,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 33,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    },
+    {
+      "benchmark": "ScienceAgentBench",
+      "file": "data/external/other/ScienceAgentBench.csv",
+      "n_items": 102,
+      "n_dated": 0,
+      "n_identifier_unresolved": 102,
+      "n_no_identifier": 0,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    },
+    {
+      "benchmark": "CORE-Bench (train split)",
+      "file": "data/external/other/core_train.json",
+      "n_items": 45,
+      "n_dated": 0,
+      "n_identifier_unresolved": 45,
+      "n_no_identifier": 0,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    },
+    {
+      "benchmark": "DiscoveryBench (real, answer key)",
+      "file": "data/external/other/discoverybench_answer_key_real.csv",
+      "n_items": 239,
+      "n_dated": 0,
+      "n_identifier_unresolved": 0,
+      "n_no_identifier": 239,
+      "coverage": 0.0,
+      "earliest": null,
+      "latest": null,
+      "median": null
+    }
+  ]
+}

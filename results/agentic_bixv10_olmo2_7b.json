@@ -1,0 +1,72 @@
+{
+ "allenai/OLMo-2-1124-7B-Instruct|bixbench_v10|withheld|argmax|bixprompt": {
+  "model": "allenai/OLMo-2-1124-7B-Instruct",
+  "items": "build/bixbench_v10.jsonl",
+  "condition": "withheld",
+  "transformers": "5.17.0",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/olmo2_7b_bixv10_bixprompt_argmax.jsonl",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 296,
+  "file": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 29.054054054054053,
+   "chance": 25.0,
+   "margin_over_chance": 4.054054054054054,
+   "margin_ci95": [
+    0.8361447520184544,
+    7.464782774229029
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 29.606625258799173,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 29.054054054054053
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 23.76126126126126,
+   "chance": 25.0,
+   "margin_over_chance": -1.2387387387387387,
+   "margin_ci95": [
+    -4.306487695749441,
+    1.829532256361523
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 29.166666666666668,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 23.76126126126126
+    }
+   }
+  },
+  "margin_over_clean": 5.292792792792794,
+  "margin_over_clean_ci95": [
+   0.7145228397942817,
+   9.841043815264625
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "reason": "cut by the driver's own 3600 s wall clock, not by the protocol; rerun from the start with --wallclock 10800",
+ "episodes": [
+  {
+   "file": "qwen3-235b/data/bix-1-q2__r0.json",
+   "question_id": "bix-1-q2",
+   "condition": "data",
+   "rollout": 0,
+   "steps": 26,
+   "seconds": 3722.7
+  },
+  {
+   "file": "qwen3-235b/data/bix-31-q2__r0.json",
+   "question_id": "bix-31-q2",
+   "condition": "data",
+   "rollout": 0,
+   "steps": 12,
+   "seconds": 3715.8
+  },
+  {
+   "file": "qwen3-235b/data/bix-35-q2__r0.json",
+   "question_id": "bix-35-q2",
+   "condition": "data",
+   "rollout": 0,
+   "steps": 26,
+   "seconds": 3925.8
+  },
+  {
+   "file": "qwen3-235b/data/bix-43-q4__r0.json",
+   "question_id": "bix-43-q4",
+   "condition": "data",
+   "rollout": 0,
+   "steps": 20,
+   "seconds": 4264.1
+  },
+  {
+   "file": "qwen3-235b/data/bix-45-q1__r0.json",
+   "question_id": "bix-45-q1",
+   "condition": "data",
+   "rollout": 0,
+   "steps": 18,
+   "seconds": 4019.6
+  },
+  {
+   "file": "qwen3-235b/data/bix-49-q1__r0.json",
+   "question_id": "bix-49-q1",
+   "condition": "data",
+   "rollout": 0,
+   "steps": 20,
+   "seconds": 4012.6
+  },
+  {
+   "file": "qwen3-235b/data/bix-9-q4__r1.json",
+   "question_id": "bix-9-q4",
+   "condition": "data",
+   "rollout": 1,
+   "steps": 25,
+   "seconds": 3610.6
+  }
+ ]
+}

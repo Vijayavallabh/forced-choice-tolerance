@@ -1,0 +1,389 @@
+{
+ "n_options": 4,
+ "chance": 0.25,
+ "features": [
+  "is integer",
+  "has percent",
+  "has exponent",
+  "has separator",
+  "has minus",
+  "has point",
+  "distinct chars",
+  "trailing zeros",
+  "significant digits",
+  "decimal places",
+  "digit sum",
+  "digit count"
+ ],
+ "roundness_features": [
+  "is integer",
+  "significant digits",
+  "trailing zeros",
+  "decimal places"
+ ],
+ "steps": 400,
+ "l2": 0.001,
+ "files": {
+  "released": {
+   "path": "build/mmlu_frontier_released_matched_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.1826625386996904,
+    "cv_ci95": [
+     0.14457831325301204,
+     0.22872340425531915
+    ],
+    "argmax_ties": 6,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.07488526601184324,
+     "has percent": 0.12973222360479952,
+     "has exponent": 0.0,
+     "has separator": 0.22546803176901756,
+     "has minus": 0.4175159907418188,
+     "has point": -0.43945541396689286,
+     "distinct chars": 1.9402658261956593,
+     "trailing zeros": 0.2773062815930249,
+     "significant digits": 0.4723210025295601,
+     "decimal places": 0.565649008295243,
+     "digit sum": -0.47613232317755827,
+     "digit count": -0.08315384865573855
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.2693498452012384,
+    "cv_ci95": [
+     0.23863636363636365,
+     0.3134920634920635
+    ],
+    "argmax_ties": 223,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.05115092519573115,
+     "significant digits": 0.19883862188545537,
+     "trailing zeros": 0.10764067432959262,
+     "decimal places": 0.2152832004782338
+    }
+   }
+  },
+  "imitation-qwen14b": {
+   "path": "build/mmlu_frontier_imitation_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.3281733746130031,
+    "cv_ci95": [
+     0.28732394366197184,
+     0.42528735632183906
+    ],
+    "argmax_ties": 11,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.908779182832427,
+     "has percent": 4.722393259688459e-16,
+     "has exponent": 0.0,
+     "has separator": 0.04345613824386036,
+     "has minus": 0.3941713936164798,
+     "has point": -1.5367444200374263,
+     "distinct chars": 0.1998099653780288,
+     "trailing zeros": -0.0956758730811756,
+     "significant digits": 0.9101417527976841,
+     "decimal places": 1.021577192014677,
+     "digit sum": 0.6488791318560717,
+     "digit count": 0.15421260076808063
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.30959752321981426,
+    "cv_ci95": [
+     0.27734375,
+     0.35911602209944754
+    ],
+    "argmax_ties": 228,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.9456698554803787,
+     "significant digits": 0.4523337992145741,
+     "trailing zeros": 0.3547015781549228,
+     "decimal places": 0.15336519354379477
+    }
+   }
+  },
+  "imitation-llama8b": {
+   "path": "build/mmlu_frontier_imitation_llama_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.2693498452012384,
+    "cv_ci95": [
+     0.23628691983122363,
+     0.33482142857142855
+    ],
+    "argmax_ties": 10,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.8341653072276842,
+     "has percent": 4.474455280191661e-16,
+     "has exponent": 0.0,
+     "has separator": -0.8330723984422691,
+     "has minus": -0.6577746309495758,
+     "has point": -1.0789697482910772,
+     "distinct chars": 0.4601131689039846,
+     "trailing zeros": 1.540090751227794,
+     "significant digits": 1.2903578482909204,
+     "decimal places": -0.7368629728595604,
+     "digit sum": -0.5726205614065617,
+     "digit count": -0.16117892887786148
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.33436532507739936,
+    "cv_ci95": [
+     0.273542600896861,
+     0.375
+    ],
+    "argmax_ties": 190,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.8560655660037563,
+     "significant digits": 0.6237045188239587,
+     "trailing zeros": 0.7554061452112376,
+     "decimal places": -0.4577393792711651
+    }
+   }
+  },
+  "imitation-phi35": {
+   "path": "build/mmlu_frontier_imitation_phi_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.3188854489164087,
+    "cv_ci95": [
+     0.2738301559792028,
+     0.4576271186440678
+    ],
+    "argmax_ties": 12,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.5948893402583332,
+     "has percent": 4.1754645323523424e-16,
+     "has exponent": 0.0,
+     "has separator": 0.4868330077885055,
+     "has minus": -0.7558327665187285,
+     "has point": -1.3972857344675962,
+     "distinct chars": 1.4690984888267566,
+     "trailing zeros": -0.9059861475065017,
+     "significant digits": 0.4879546526958729,
+     "decimal places": 0.06082359430753333,
+     "digit sum": -0.961031155766028,
+     "digit count": -1.7137154800635563
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.33126934984520123,
+    "cv_ci95": [
+     0.27988338192419826,
+     0.38222222222222224
+    ],
+    "argmax_ties": 240,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.6405766725413005,
+     "significant digits": -0.38637572314113305,
+     "trailing zeros": -0.5236296581550134,
+     "decimal places": -0.04292752313934547
+    }
+   }
+  },
+  "wrong-step-qwen14b": {
+   "path": "build/mmlu_frontier_wrong_step_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.2476780185758514,
+    "cv_ci95": [
+     0.1962025316455696,
+     0.3181818181818182
+    ],
+    "argmax_ties": 8,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 1.0627175483665547,
+     "has percent": 0.8130642781178474,
+     "has exponent": 0.0,
+     "has separator": 3.0890139004142134,
+     "has minus": -0.022993019852858287,
+     "has point": -2.035395482956398,
+     "distinct chars": -0.09042493113327468,
+     "trailing zeros": 0.10318169028698473,
+     "significant digits": 0.844562083744648,
+     "decimal places": -0.2121738140102749,
+     "digit sum": -0.5783325556215388,
+     "digit count": -0.490293869980469
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.2848297213622291,
+    "cv_ci95": [
+     0.23837209302325582,
+     0.37628865979381443
+    ],
+    "argmax_ties": 177,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 1.1164154392888561,
+     "significant digits": 0.29356838824560993,
+     "trailing zeros": 0.00892903308741965,
+     "decimal places": -0.05731798483369474
+    }
+   }
+  },
+  "wrong-step-no-filter": {
+   "path": "build/mmlu_frontier_wrong_step_strict_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.2476780185758514,
+    "cv_ci95": [
+     0.1962025316455696,
+     0.3181818181818182
+    ],
+    "argmax_ties": 8,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 1.0627175483665547,
+     "has percent": 0.8130642781178474,
+     "has exponent": 0.0,
+     "has separator": 3.0890139004142134,
+     "has minus": -0.022993019852858287,
+     "has point": -2.035395482956398,
+     "distinct chars": -0.09042493113327468,
+     "trailing zeros": 0.10318169028698473,
+     "significant digits": 0.844562083744648,
+     "decimal places": -0.2121738140102749,
+     "digit sum": -0.5783325556215388,
+     "digit count": -0.490293869980469
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.2848297213622291,
+    "cv_ci95": [
+     0.23837209302325582,
+     0.37628865979381443
+    ],
+    "argmax_ties": 177,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 1.1164154392888561,
+     "significant digits": 0.29356838824560993,
+     "trailing zeros": 0.00892903308741965,
+     "decimal places": -0.05731798483369474
+    }
+   }
+  },
+  "wrong-step-llama8b": {
+   "path": "build/mmlu_frontier_wrong_step_llama_rob.jsonl",
+   "n_items": 323,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.37770897832817335,
+    "cv_ci95": [
+     0.29051383399209485,
+     0.5024875621890548
+    ],
+    "argmax_ties": 3,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 0.6048050460996447,
+     "has percent": 5.409686528925588,
+     "has exponent": 0.0,
+     "has separator": 1.965265145106491,
+     "has minus": 0.9799364964903104,
+     "has point": -1.1031579493685484,
+     "distinct chars": 0.2464573903948401,
+     "trailing zeros": -1.3311928224943474,
+     "significant digits": -0.19375034555435672,
+     "decimal places": -1.625195334758634,
+     "digit sum": -0.9958077056941197,
+     "digit count": -0.3835065526121314
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.3560371517027864,
+    "cv_ci95": [
+     0.2785185185185185,
+     0.5103092783505154
+    ],
+    "argmax_ties": 162,
+    "n_scored": 323,
+    "weights": {
+     "is integer": 1.3339930367026294,
+     "significant digits": 0.06657246554207748,
+     "trailing zeros": -0.5109708648363844,
+     "decimal places": -0.06345208325787359
+    }
+   }
+  }
+ },
+ "clean": {
+  "written form": {
+   "scores": [
+    0.21981424148606812,
+    0.2848297213622291,
+    0.2724458204334365,
+    0.21981424148606812,
+    0.22910216718266255,
+    0.23529411764705882,
+    0.22910216718266255,
+    0.21671826625386997,
+    0.21981424148606812,
+    0.25696594427244585,
+    0.21052631578947367,
+    0.22910216718266255,
+    0.23839009287925697,
+    0.21052631578947367,
+    0.29721362229102166,
+    0.21981424148606812,
+    0.21981424148606812,
+    0.24148606811145512,
+    0.21052631578947367,
+    0.25077399380804954
+   ],
+   "mean": 0.23560371517027864,
+   "max": 0.29721362229102166,
+   "replicates": 20,
+   "n_items": 323,
+   "n_clusters": 20
+  },
+  "roundness": {
+   "scores": [
+    0.26625386996904027,
+    0.29411764705882354,
+    0.26625386996904027,
+    0.2755417956656347,
+    0.2693498452012384,
+    0.28173374613003094,
+    0.29411764705882354,
+    0.3126934984520124,
+    0.24458204334365324,
+    0.3065015479876161,
+    0.2755417956656347,
+    0.25077399380804954,
+    0.23839009287925697,
+    0.28173374613003094,
+    0.30340557275541796,
+    0.2476780185758514,
+    0.22910216718266255,
+    0.2724458204334365,
+    0.2724458204334365,
+    0.2848297213622291
+   ],
+   "mean": 0.27337461300309596,
+   "max": 0.3126934984520124,
+   "replicates": 20,
+   "n_items": 323,
+   "n_clusters": 20
+  }
+ }
+}

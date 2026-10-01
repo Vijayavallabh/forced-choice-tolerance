@@ -1,0 +1,557 @@
+{
+  "url": "https://api.datacite.org/dois/10.5061/dryad.ttdz08kxq",
+  "retrieved_at": "2026-09-16T15:26:23.825877+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.5061/dryad.ttdz08kxq",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.5061/dryad.ttdz08kxq",
+        "prefix": "10.5061",
+        "suffix": "dryad.ttdz08kxq",
+        "identifiers": [],
+        "alternateIdentifiers": [],
+        "creators": [
+          {
+            "name": "Zheng, Chunlei",
+            "nameType": "Personal",
+            "givenName": "Chunlei",
+            "familyName": "Zheng",
+            "affiliation": [
+              "Case Western Reserve University"
+            ],
+            "nameIdentifiers": [
+              {
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-9737-461X",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Xu, Rong",
+            "nameType": "Personal",
+            "givenName": "Rong",
+            "familyName": "Xu",
+            "affiliation": [
+              "Case Western Reserve University"
+            ],
+            "nameIdentifiers": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "Molecular subtyping of alzheimer\u2019s disease with consensus non-negative matrix factorization"
+          }
+        ],
+        "publisher": "Dryad",
+        "container": {},
+        "publicationYear": 2021,
+        "subjects": [
+          {
+            "subject": "Alzheimer's disease",
+            "schemeUri": "https://github.com/PLOS/plos-thesaurus",
+            "subjectScheme": "PLOS Subject Area Thesaurus"
+          }
+        ],
+        "contributors": [],
+        "dates": [
+          {
+            "date": "2021-04-12T23:29:02Z",
+            "dateType": "Submitted"
+          },
+          {
+            "date": "2021-04-22T00:00:00Z",
+            "dateType": "Issued"
+          },
+          {
+            "date": "2021-04-22T00:00:00Z",
+            "dateType": "Available"
+          }
+        ],
+        "language": "en",
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceType": "dataset",
+          "resourceTypeGeneral": "Dataset"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsCitedBy",
+            "relatedIdentifier": "10.1371/journal.pone.0250278",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [
+          "62481644 bytes"
+        ],
+        "formats": [],
+        "version": "9",
+        "rightsList": [
+          {
+            "rights": "Creative Commons Zero v1.0 Universal",
+            "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc0-1.0",
+            "rightsIdentifierScheme": "SPDX"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "Alzheimer\u2019s disease (AD) is a heterogeneous disease\u00a0and exhibits\n diverse clinical presentations and disease progression. Some pathological\n and anatomical subtypes have been proposed. However, these subtypes\n provide a limited mechanistic understanding for AD.\u00a0Leveraging\n gene expression data of 222 AD patients from The Religious Orders Study\n and Memory and Aging Project (ROSMAP) Study, we identified two AD\n molecular subtypes (synaptic type and inflammatory type) using consensus\n non-negative matrix factorization (NMF). Synaptic type is characterized by\n disrupted synaptic vesicle priming and recycling and synaptic plasticity.\n Inflammatory type is characterized by disrupted IL2, interferon alpha and\n gamma pathways. The two AD molecular subtypes were validated using\n independent data from Gene Expression Omnibus. We further demonstrated\n that the two molecular subtypes are associated with APOE genotypes,\n with\u00a0synaptic type more prevalent in AD patients with E3E4\n genotype and inflammatory type more prevalent in AD patients with E3E3\n genotype (p = 0.031). In addition, two molecular subtypes are\n differentially represented in male and female AD, with synaptic type more\n prevalent in male and inflammatory type in female patients (p =\n 0.051).\u00a0Identification of AD molecular subtypes has potential in\n facilitating disease mechanism understanding, clinical trial design, drug\n discovery, and precision medicine for AD.",
+            "descriptionType": "Abstract"
+          },
+          {
+            "description": "ROSMAP\u00a0gene expression data\u00a0and corresponding metadata were downloaded from synapse.org (syn3219045). Raw count data were normalized and processed according to commonly used procedure described in edgeR (version: 3.28.0). Data were first normalized by sequencing library size. Non-expressed genes, defined as count per million less than 5 in 80% of samples, were then filtered out, resulting in 12281 genes. The number of genes were further narrowed down to 2456\u00a0using top 20% cut-off\u00a0based on their interquartile range (IQR) for NMF-based clustering.\u00a0",
+            "descriptionType": "Methods"
+          },
+          {
+            "description": "Please see the readme file for the datafile description and\u00a0the\n data dictionaries.",
+            "descriptionType": "Other"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTA2MS9EUllBRC5UVERaMDhLWFE8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoZW5nLCBDaHVubGVpPC9jcmVhdG9yTmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSJodHRwOi8vb3JjaWQub3JnLyI+MDAwMC0wMDAyLTk3MzctNDYxWDwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wNTFmZDk2NjYiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZyI+Q2FzZSBXZXN0ZXJuIFJlc2VydmUgVW5pdmVyc2l0eTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+WHUsIFJvbmc8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDUxZmQ5NjY2IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmciPkNhc2UgV2VzdGVybiBSZXNlcnZlIFVuaXZlcnNpdHk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT4KICAgICAgTW9sZWN1bGFyIHN1YnR5cGluZyBvZiBhbHpoZWltZXLigJlzIGRpc2Vhc2Ugd2l0aCBjb25zZW5zdXMgbm9uLW5lZ2F0aXZlCiAgICAgIG1hdHJpeCBmYWN0b3JpemF0aW9uCiAgICA8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXIgcHVibGlzaGVySWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAweDZoNW45NSIgcHVibGlzaGVySWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZy8iPkRyeWFkPC9wdWJsaXNoZXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ij5kYXRhc2V0PC9yZXNvdXJjZVR5cGU+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDIxPC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iUExPUyBTdWJqZWN0IEFyZWEgVGhlc2F1cnVzIiBzY2hlbWVVUkk9Imh0dHBzOi8vZ2l0aHViLmNvbS9QTE9TL3Bsb3MtdGhlc2F1cnVzIj5BbHpoZWltZXIncyBkaXNlYXNlPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCI+MjAyMS0wNC0xMlQyMzoyOTowMlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDIxLTA0LTIyVDAwOjAwOjAwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMjEtMDQtMjJUMDA6MDA6MDBaPC9kYXRlPgogIDwvZGF0ZXM+CiAgPGxhbmd1YWdlPmVuPC9sYW5ndWFnZT4KICA8cmVsYXRlZElkZW50aWZpZXJzPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0aW9uVHlwZT0iSXNDaXRlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+aHR0cHM6Ly9kb2kub3JnLzEwLjEzNzEvam91cm5hbC5wb25lLjAyNTAyNzg8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxzaXplcz4KICAgIDxzaXplPjYyNDgxNjQ0IGJ5dGVzPC9zaXplPgogIDwvc2l6ZXM+CiAgPHZlcnNpb24+OTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL3NwZHgub3JnL2xpY2Vuc2VzL0NDMC0xLjAuaHRtbCI+Q3JlYXRpdmUgQ29tbW9ucyBaZXJvIHYxLjAgVW5pdmVyc2FsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+CiAgICAgIEFsemhlaW1lcuKAmXMgZGlzZWFzZSAoQUQpIGlzIGEgaGV0ZXJvZ2VuZW91cyBkaXNlYXNlJmFtcDtuYnNwO2FuZCBleGhpYml0cwogICAgICBkaXZlcnNlIGNsaW5pY2FsIHByZXNlbnRhdGlvbnMgYW5kIGRpc2Vhc2UgcHJvZ3Jlc3Npb24uIFNvbWUgcGF0aG9sb2dpY2FsCiAgICAgIGFuZCBhbmF0b21pY2FsIHN1YnR5cGVzIGhhdmUgYmVlbiBwcm9wb3NlZC4gSG93ZXZlciwgdGhlc2Ugc3VidHlwZXMKICAgICAgcHJvdmlkZSBhIGxpbWl0ZWQgbWVjaGFuaXN0aWMgdW5kZXJzdGFuZGluZyBmb3IgQUQuJmFtcDtuYnNwO0xldmVyYWdpbmcKICAgICAgZ2VuZSBleHByZXNzaW9uIGRhdGEgb2YgMjIyIEFEIHBhdGllbnRzIGZyb20gVGhlIFJlbGlnaW91cyBPcmRlcnMgU3R1ZHkKICAgICAgYW5kIE1lbW9yeSBhbmQgQWdpbmcgUHJvamVjdCAoUk9TTUFQKSBTdHVkeSwgd2UgaWRlbnRpZmllZCB0d28gQUQKICAgICAgbW9sZWN1bGFyIHN1YnR5cGVzIChzeW5hcHRpYyB0eXBlIGFuZCBpbmZsYW1tYXRvcnkgdHlwZSkgdXNpbmcgY29uc2Vuc3VzCiAgICAgIG5vbi1uZWdhdGl2ZSBtYXRyaXggZmFjdG9yaXphdGlvbiAoTk1GKS4gU3luYXB0aWMgdHlwZSBpcyBjaGFyYWN0ZXJpemVkIGJ5CiAgICAgIGRpc3J1cHRlZCBzeW5hcHRpYyB2ZXNpY2xlIHByaW1pbmcgYW5kIHJlY3ljbGluZyBhbmQgc3luYXB0aWMgcGxhc3RpY2l0eS4KICAgICAgSW5mbGFtbWF0b3J5IHR5cGUgaXMgY2hhcmFjdGVyaXplZCBieSBkaXNydXB0ZWQgSUwyLCBpbnRlcmZlcm9uIGFscGhhIGFuZAogICAgICBnYW1tYSBwYXRod2F5cy4gVGhlIHR3byBBRCBtb2xlY3VsYXIgc3VidHlwZXMgd2VyZSB2YWxpZGF0ZWQgdXNpbmcKICAgICAgaW5kZXBlbmRlbnQgZGF0YSBmcm9tIEdlbmUgRXhwcmVzc2lvbiBPbW5pYnVzLiBXZSBmdXJ0aGVyIGRlbW9uc3RyYXRlZAogICAgICB0aGF0IHRoZSB0d28gbW9sZWN1bGFyIHN1YnR5cGVzIGFyZSBhc3NvY2lhdGVkIHdpdGggQVBPRSBnZW5vdHlwZXMsCiAgICAgIHdpdGgmYW1wO25ic3A7c3luYXB0aWMgdHlwZSBtb3JlIHByZXZhbGVudCBpbiBBRCBwYXRpZW50cyB3aXRoIEUzRTQKICAgICAgZ2Vub3R5cGUgYW5kIGluZmxhbW1hdG9yeSB0eXBlIG1vcmUgcHJldmFsZW50IGluIEFEIHBhdGllbnRzIHdpdGggRTNFMwogICAgICBnZW5vdHlwZSAocCA9IDAuMDMxKS4gSW4gYWRkaXRpb24sIHR3byBtb2xlY3VsYXIgc3VidHlwZXMgYXJlCiAgICAgIGRpZmZlcmVudGlhbGx5IHJlcHJlc2VudGVkIGluIG1hbGUgYW5kIGZlbWFsZSBBRCwgd2l0aCBzeW5hcHRpYyB0eXBlIG1vcmUKICAgICAgcHJldmFsZW50IGluIG1hbGUgYW5kIGluZmxhbW1hdG9yeSB0eXBlIGluIGZlbWFsZSBwYXRpZW50cyAocCA9CiAgICAgIDAuMDUxKS4mYW1wO25ic3A7SWRlbnRpZmljYXRpb24gb2YgQUQgbW9sZWN1bGFyIHN1YnR5cGVzIGhhcyBwb3RlbnRpYWwgaW4KICAgICAgZmFjaWxpdGF0aW5nIGRpc2Vhc2UgbWVjaGFuaXNtIHVuZGVyc3RhbmRpbmcsIGNsaW5pY2FsIHRyaWFsIGRlc2lnbiwgZHJ1ZwogICAgICBkaXNjb3ZlcnksIGFuZCBwcmVjaXNpb24gbWVkaWNpbmUgZm9yIEFELgogICAgPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik1ldGhvZHMiPgogICAgICAmbHQ7cAogICAgICBzdHlsZT0idGV4dC1pbmRlbnQ6MHB4O3RleHQtYWxpZ246anVzdGlmeTsiJmd0OyZsdDtzcGFuJmd0OyZsdDtzcGFuIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDsiJmd0OyZsdDtzcGFuJmd0OyZsdDtzcGFuIHN0eWxlPSJmb250LXdlaWdodDpub3JtYWw7IiZndDsmbHQ7c3BhbiBzdHlsZT0ibGV0dGVyLXNwYWNpbmc6bm9ybWFsOyImZ3Q7Jmx0O3NwYW4mZ3Q7Jmx0O3NwYW4mZ3Q7Jmx0O3NwYW4gc3R5bGU9IndoaXRlLXNwYWNlOm5vcm1hbDsiJmd0OyZsdDtzcGFuJmd0OyZsdDtzcGFuJmd0OyZsdDtzcGFuJmd0O1JPU01BUMKgZ2VuZSBleHByZXNzaW9uIGRhdGHCoGFuZCBjb3JyZXNwb25kaW5nIG1ldGFkYXRhIHdlcmUgZG93bmxvYWRlZCBmcm9tIHN5bmFwc2Uub3JnIChzeW4zMjE5MDQ1KS4gUmF3IGNvdW50IGRhdGEgd2VyZSBub3JtYWxpemVkIGFuZCBwcm9jZXNzZWQgYWNjb3JkaW5nIHRvIGNvbW1vbmx5IHVzZWQgcHJvY2VkdXJlIGRlc2NyaWJlZCBpbiBlZGdlUiAodmVyc2lvbjogMy4yOC4wKS4gRGF0YSB3ZXJlIGZpcnN0IG5vcm1hbGl6ZWQgYnkgc2VxdWVuY2luZyBsaWJyYXJ5IHNpemUuIE5vbi1leHByZXNzZWQgZ2VuZXMsIGRlZmluZWQgYXMgY291bnQgcGVyIG1pbGxpb24gbGVzcyB0aGFuIDUgaW4gODAlIG9mIHNhbXBsZXMsIHdlcmUgdGhlbiBmaWx0ZXJlZCBvdXQsIHJlc3VsdGluZyBpbiAxMjI4MSBnZW5lcy4gVGhlIG51bWJlciBvZiBnZW5lcyB3ZXJlIGZ1cnRoZXIgbmFycm93ZWQgZG93biB0byAyNDU2wqB1c2luZyB0b3AgMjAlIGN1dC1vZmbCoGJhc2VkIG9uIHRoZWlyIGludGVycXVhcnRpbGUgcmFuZ2UgKElRUikgZm9yICZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Tk1GLWJhc2VkIGNsdXN0ZXJpbmcmbHQ7c3BhbiZndDsmbHQ7c3BhbiBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7IiZndDsmbHQ7c3BhbiZndDsmbHQ7c3BhbiBzdHlsZT0iZm9udC13ZWlnaHQ6bm9ybWFsOyImZ3Q7Jmx0O3NwYW4gc3R5bGU9ImxldHRlci1zcGFjaW5nOm5vcm1hbDsiJmd0OyZsdDtzcGFuJmd0OyZsdDtzcGFuJmd0OyZsdDtzcGFuIHN0eWxlPSJ3aGl0ZS1zcGFjZTpub3JtYWw7IiZndDsmbHQ7c3BhbiZndDsmbHQ7c3BhbiZndDsmbHQ7c3BhbiZndDsuwqAmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvc3BhbiZndDsmbHQ7L3NwYW4mZ3Q7Jmx0Oy9zcGFuJmd0OyZsdDsvcCZndDsKICAgIDwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+CiAgICAgICZsdDtwJmd0O1BsZWFzZSBzZWUgdGhlIHJlYWRtZSBmaWxlIGZvciB0aGUgZGF0YWZpbGUgZGVzY3JpcHRpb24gYW5kwqB0aGUKICAgICAgZGF0YSBkaWN0aW9uYXJpZXMuJmx0Oy9wJmd0OwogICAgPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+        "url": "https://datadryad.org/dataset/doi:10.5061/dryad.ttdz08kxq",
+        "contentUrl": null,
+        "metadataVersion": 11,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "mds",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 301,
+        "viewsOverTime": [
+          {
+            "yearMonth": "2021-04",
+            "total": 5
+          },
+          {
+            "yearMonth": "2021-05",
+            "total": 5
+          },
+          {
+            "yearMonth": "2021-06",
+            "total": 5
+          },
+          {
+            "yearMonth": "2021-07",
+            "total": 1
+          },
+          {
+            "yearMonth": "2021-08",
+            "total": 3
+          },
+          {
+            "yearMonth": "2021-09",
+            "total": 4
+          },
+          {
+            "yearMonth": "2021-10",
+            "total": 2
+          },
+          {
+            "yearMonth": "2021-11",
+            "total": 5
+          },
+          {
+            "yearMonth": "2021-12",
+            "total": 5
+          },
+          {
+            "yearMonth": "2022-01",
+            "total": 6
+          },
+          {
+            "yearMonth": "2022-02",
+            "total": 2
+          },
+          {
+            "yearMonth": "2022-03",
+            "total": 33
+          },
+          {
+            "yearMonth": "2022-04",
+            "total": 7
+          },
+          {
+            "yearMonth": "2022-05",
+            "total": 3
+          },
+          {
+            "yearMonth": "2022-06",
+            "total": 2
+          },
+          {
+            "yearMonth": "2022-07",
+            "total": 6
+          },
+          {
+            "yearMonth": "2022-08",
+            "total": 15
+          },
+          {
+            "yearMonth": "2022-09",
+            "total": 4
+          },
+          {
+            "yearMonth": "2022-10",
+            "total": 5
+          },
+          {
+            "yearMonth": "2022-11",
+            "total": 1
+          },
+          {
+            "yearMonth": "2022-12",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-01",
+            "total": 6
+          },
+          {
+            "yearMonth": "2023-02",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-03",
+            "total": 2
+          },
+          {
+            "yearMonth": "2023-04",
+            "total": 2
+          },
+          {
+            "yearMonth": "2023-05",
+            "total": 2
+          },
+          {
+            "yearMonth": "2023-06",
+            "total": 4
+          },
+          {
+            "yearMonth": "2023-07",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-08",
+            "total": 40
+          },
+          {
+            "yearMonth": "2023-09",
+            "total": 37
+          },
+          {
+            "yearMonth": "2023-10",
+            "total": 7
+          },
+          {
+            "yearMonth": "2023-11",
+            "total": 5
+          },
+          {
+            "yearMonth": "2023-12",
+            "total": 3
+          },
+          {
+            "yearMonth": "2024-02",
+            "total": 2
+          },
+          {
+            "yearMonth": "2024-03",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-04",
+            "total": 6
+          },
+          {
+            "yearMonth": "2024-07",
+            "total": 5
+          },
+          {
+            "yearMonth": "2024-08",
+            "total": 6
+          },
+          {
+            "yearMonth": "2024-09",
+            "total": 3
+          },
+          {
+            "yearMonth": "2024-11",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-12",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-01",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-02",
+            "total": 2
+          },
+          {
+            "yearMonth": "2025-03",
+            "total": 4
+          },
+          {
+            "yearMonth": "2025-04",
+            "total": 4
+          },
+          {
+            "yearMonth": "2025-05",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-07",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-08",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-09",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-10",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-11",
+            "total": 3
+          },
+          {
+            "yearMonth": "2025-12",
+            "total": 4
+          },
+          {
+            "yearMonth": "2026-03",
+            "total": 3
+          },
+          {
+            "yearMonth": "2026-05",
+            "total": 8
+          }
+        ],
+        "downloadCount": 36,
+        "downloadsOverTime": [
+          {
+            "yearMonth": "2021-04",
+            "total": 1
+          },
+          {
+            "yearMonth": "2021-08",
+            "total": 1
+          },
+          {
+            "yearMonth": "2021-09",
+            "total": 2
+          },
+          {
+            "yearMonth": "2021-11",
+            "total": 2
+          },
+          {
+            "yearMonth": "2022-01",
+            "total": 1
+          },
+          {
+            "yearMonth": "2022-06",
+            "total": 1
+          },
+          {
+            "yearMonth": "2022-07",
+            "total": 3
+          },
+          {
+            "yearMonth": "2022-08",
+            "total": 1
+          },
+          {
+            "yearMonth": "2022-10",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-01",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-03",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-06",
+            "total": 2
+          },
+          {
+            "yearMonth": "2023-10",
+            "total": 3
+          },
+          {
+            "yearMonth": "2023-11",
+            "total": 1
+          },
+          {
+            "yearMonth": "2023-12",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-02",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-03",
+            "total": 0
+          },
+          {
+            "yearMonth": "2024-04",
+            "total": 4
+          },
+          {
+            "yearMonth": "2024-07",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-08",
+            "total": 2
+          },
+          {
+            "yearMonth": "2024-09",
+            "total": 0
+          },
+          {
+            "yearMonth": "2024-11",
+            "total": 0
+          },
+          {
+            "yearMonth": "2024-12",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-01",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-02",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-03",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-04",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-05",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-07",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-08",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-09",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-10",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-11",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-12",
+            "total": 1
+          },
+          {
+            "yearMonth": "2026-03",
+            "total": 0
+          },
+          {
+            "yearMonth": "2026-05",
+            "total": 0
+          }
+        ],
+        "referenceCount": 0,
+        "citationCount": 1,
+        "citationsOverTime": [
+          {
+            "year": "2026",
+            "total": 1
+          }
+        ],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2021-04-22T19:52:09.000Z",
+        "registered": "2021-04-22T19:52:10.000Z",
+        "published": "2021",
+        "updated": "2026-01-28T04:17:30.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "dryad.dryad",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "dryad",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5061/dryad.ttdz08kxq",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": [
+            {
+              "id": "10.1371/journal.pone.0250278",
+              "type": "dois"
+            }
+          ]
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        }
+      }
+    }
+  }
+}

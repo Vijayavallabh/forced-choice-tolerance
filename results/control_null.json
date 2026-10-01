@@ -1,0 +1,450 @@
+{
+  "n_controls": 87,
+  "outside_central_95": [
+    "llama8b_mmlupro_neutral_notools",
+    "phi3.5mini_bixv10_bixprompt_argmax",
+    "phi35mini_bixall_neutral_notools",
+    "phi4_bixall_neutral_notools",
+    "qwen14b_mmlupro_argmax_withheld_aware",
+    "qwen1_5b_bixall_neutral_notools",
+    "qwen32b_mmlupro",
+    "qwen72b_bixv10_bixprompt_argmax"
+  ],
+  "cells": {
+    "gemma3_4b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -1.8018018018018012,
+      "null_percentile": 17.57,
+      "unparsed": 0.0
+    },
+    "gemma4b_bixall_bixprompt_argmax": {
+      "control_minus_chance": 0.8536585365853675,
+      "null_percentile": 67.71000000000001,
+      "unparsed": 0.0
+    },
+    "gemma4b_bixall_neutral_notools": {
+      "control_minus_chance": -2.723577235772357,
+      "null_percentile": 48.17,
+      "unparsed": 10.08130081300813
+    },
+    "gemma4b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": 0.5060506050605067,
+      "null_percentile": 75.5,
+      "unparsed": 0.0
+    },
+    "gemma4b_mmlupro_neutral_notools": {
+      "control_minus_chance": -4.664466446644664,
+      "null_percentile": 29.189999999999998,
+      "unparsed": 43.454345434543455
+    },
+    "llama1b_bixall_bixprompt_argmax": {
+      "control_minus_chance": 0.04065040650406715,
+      "null_percentile": 52.15,
+      "unparsed": 0.0
+    },
+    "llama1b_bixall_neutral_notools": {
+      "control_minus_chance": 0.691056910569106,
+      "null_percentile": 64.59,
+      "unparsed": 0.0
+    },
+    "llama1b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -0.11261261261261168,
+      "null_percentile": 48.47,
+      "unparsed": 0.0
+    },
+    "llama1b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": 0.23102310231023182,
+      "null_percentile": 63.839999999999996,
+      "unparsed": 0.0
+    },
+    "llama1b_mmlupro_neutral_notools": {
+      "control_minus_chance": 0.8360836083608358,
+      "null_percentile": 89.03999999999999,
+      "unparsed": 0.0
+    },
+    "llama3b_bixall_bixprompt_argmax": {
+      "control_minus_chance": -0.4471544715447173,
+      "null_percentile": 41.089999999999996,
+      "unparsed": 0.0
+    },
+    "llama3b_bixall_neutral_notools": {
+      "control_minus_chance": -3.211382113821138,
+      "null_percentile": 8.36,
+      "unparsed": 0.0
+    },
+    "llama3b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -2.9279279279279287,
+      "null_percentile": 7.449999999999999,
+      "unparsed": 0.0
+    },
+    "llama3b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": 0.7260726072607255,
+      "null_percentile": 81.6,
+      "unparsed": 0.0
+    },
+    "llama3b_mmlupro_neutral_notools": {
+      "control_minus_chance": 0.17601760176017578,
+      "null_percentile": 61.7,
+      "unparsed": 0.055005500550055
+    },
+    "llama70b_bixall_bixprompt_argmax": {
+      "control_minus_chance": -3.8617886178861767,
+      "null_percentile": 4.72,
+      "unparsed": 0.0
+    },
+    "llama70b_bixall_neutral_notools": {
+      "control_minus_chance": -1.0975609756097562,
+      "null_percentile": 33.339999999999996,
+      "unparsed": 0.0
+    },
+    "llama70b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -3.1531531531531556,
+      "null_percentile": 4.41,
+      "unparsed": 0.0
+    },
+    "llama70b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.8140814081408134,
+      "null_percentile": 16.81,
+      "unparsed": 0.0
+    },
+    "llama70b_mmlupro_neutral_notools": {
+      "control_minus_chance": -0.15401540154015336,
+      "null_percentile": 43.46,
+      "unparsed": 0.0
+    },
+    "llama70b_mmlupro_steered_tools": {
+      "control_minus_chance": -0.26402640264026367,
+      "null_percentile": 37.940000000000005,
+      "unparsed": 0.0
+    },
+    "llama8b_bixall_bixprompt_argmax": {
+      "control_minus_chance": 0.691056910569106,
+      "null_percentile": 62.260000000000005,
+      "unparsed": 0.0
+    },
+    "llama8b_bixall_neutral_notools": {
+      "control_minus_chance": -1.4227642276422756,
+      "null_percentile": 35.64,
+      "unparsed": 1.951219512195122
+    },
+    "llama8b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -1.4639639639639626,
+      "null_percentile": 22.99,
+      "unparsed": 0.0
+    },
+    "llama8b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.374037403740374,
+      "null_percentile": 33.76,
+      "unparsed": 0.0
+    },
+    "llama8b_mmlupro_neutral_notools": {
+      "control_minus_chance": -3.234323432343234,
+      "null_percentile": 99.48,
+      "unparsed": 45.76457645764577
+    },
+    "olmo2_7b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -1.2387387387387392,
+      "null_percentile": 23.77,
+      "unparsed": 0.0
+    },
+    "olmo7b_bixall_bixprompt_argmax": {
+      "control_minus_chance": 0.5284552845528481,
+      "null_percentile": 63.38,
+      "unparsed": 0.0
+    },
+    "olmo7b_bixall_neutral_notools": {
+      "control_minus_chance": -3.211382113821138,
+      "null_percentile": 5.92,
+      "unparsed": 0.16260162601626016
+    },
+    "olmo7b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -1.08910891089109,
+      "null_percentile": 6.660000000000001,
+      "unparsed": 0.0
+    },
+    "olmo7b_mmlupro_neutral_notools": {
+      "control_minus_chance": -1.2541254125412529,
+      "null_percentile": 29.330000000000002,
+      "unparsed": 8.58085808580858
+    },
+    "phi3.5mini_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -3.7162162162162176,
+      "null_percentile": 2.39,
+      "unparsed": 0.0
+    },
+    "phi35mini_bixall_bixprompt_argmax": {
+      "control_minus_chance": -2.2357723577235795,
+      "null_percentile": 13.750000000000002,
+      "unparsed": 0.0
+    },
+    "phi35mini_bixall_neutral_notools": {
+      "control_minus_chance": -4.512195121951219,
+      "null_percentile": 2.32,
+      "unparsed": 0.0
+    },
+    "phi35mini_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.26402640264026367,
+      "null_percentile": 36.66,
+      "unparsed": 0.0
+    },
+    "phi35mini_mmlupro_neutral_notools": {
+      "control_minus_chance": 0.23102310231023182,
+      "null_percentile": 64.12,
+      "unparsed": 0.055005500550055
+    },
+    "phi4_bixall_bixprompt_argmax": {
+      "control_minus_chance": -3.8617886178861767,
+      "null_percentile": 6.65,
+      "unparsed": 0.0
+    },
+    "phi4_bixall_neutral_notools": {
+      "control_minus_chance": -9.065040650406504,
+      "null_percentile": 0.9400000000000001,
+      "unparsed": 16.260162601626014
+    },
+    "phi4_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -1.9144144144144128,
+      "null_percentile": 19.11,
+      "unparsed": 0.0
+    },
+    "phi4_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.3190319031903197,
+      "null_percentile": 36.13,
+      "unparsed": 0.0
+    },
+    "phi4_mmlupro_neutral_notools": {
+      "control_minus_chance": -2.7942794279427936,
+      "null_percentile": 96.78,
+      "unparsed": 38.778877887788774
+    },
+    "qwen1.5b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -2.59009009009009,
+      "null_percentile": 8.95,
+      "unparsed": 0.0
+    },
+    "qwen14b_bixall": {
+      "control_minus_chance": -3.5365853658536572,
+      "null_percentile": 6.3100000000000005,
+      "unparsed": 0.0
+    },
+    "qwen14b_bixall_bixprompt_argmax": {
+      "control_minus_chance": -3.3739837398373993,
+      "null_percentile": 5.680000000000001,
+      "unparsed": 0.0
+    },
+    "qwen14b_bixall_bixprompt_generated": {
+      "control_minus_chance": -5.1626016260162615,
+      "null_percentile": 5.96,
+      "unparsed": 7.642276422764227
+    },
+    "qwen14b_bixall_neutral_argmax": {
+      "control_minus_chance": -1.2601626016260177,
+      "null_percentile": 30.65,
+      "unparsed": 0.0
+    },
+    "qwen14b_bixall_neutral_notools": {
+      "control_minus_chance": -1.5853658536585336,
+      "null_percentile": 25.919999999999998,
+      "unparsed": 0.0
+    },
+    "qwen14b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -2.59009009009009,
+      "null_percentile": 7.95,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_argmax_withheld": {
+      "control_minus_chance": 1.1111111111111107,
+      "null_percentile": 93.67,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_argmax_withheld_aware": {
+      "control_minus_chance": 1.7711771177117708,
+      "null_percentile": 98.99,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_batch12": {
+      "control_minus_chance": 0.34103410341034035,
+      "null_percentile": 68.84,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.26402640264026367,
+      "null_percentile": 37.91,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_bixprompt_generated": {
+      "control_minus_chance": -0.3190319031903197,
+      "null_percentile": 39.44,
+      "unparsed": 0.77007700770077
+    },
+    "qwen14b_mmlupro_neutral_notools": {
+      "control_minus_chance": 0.3960396039603964,
+      "null_percentile": 71.28,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_neutral_tools": {
+      "control_minus_chance": 1.3311331133113313,
+      "null_percentile": 97.07000000000001,
+      "unparsed": 0.7150715071507151
+    },
+    "qwen14b_mmlupro_placebo": {
+      "control_minus_chance": 0.055248618784530024,
+      "null_percentile": 54.44,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_placebo_neutral_notools": {
+      "control_minus_chance": 0.44198895027624374,
+      "null_percentile": 73.33,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_steered_notools": {
+      "control_minus_chance": 0.7260726072607255,
+      "null_percentile": 83.89,
+      "unparsed": 0.0
+    },
+    "qwen14b_mmlupro_steered_tools": {
+      "control_minus_chance": -0.04400440044004306,
+      "null_percentile": 48.85,
+      "unparsed": 0.0
+    },
+    "qwen14b_placebo": {
+      "control_minus_chance": -2.7777777777777786,
+      "null_percentile": 20.14,
+      "unparsed": 0.0
+    },
+    "qwen14b_repaired": {
+      "control_minus_chance": -2.7777777777777786,
+      "null_percentile": 20.14,
+      "unparsed": 0.0
+    },
+    "qwen14b_withheld_aware": {
+      "control_minus_chance": -2.7777777777777786,
+      "null_percentile": 20.14,
+      "unparsed": 0.0
+    },
+    "qwen1_5b_bixall_bixprompt_argmax": {
+      "control_minus_chance": -2.8861788617886184,
+      "null_percentile": 8.04,
+      "unparsed": 0.0
+    },
+    "qwen1_5b_bixall_neutral_notools": {
+      "control_minus_chance": -6.463414634146343,
+      "null_percentile": 0.16999999999999998,
+      "unparsed": 0.0
+    },
+    "qwen1_5b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": 0.6710671067106713,
+      "null_percentile": 83.11,
+      "unparsed": 0.0
+    },
+    "qwen1_5b_mmlupro_neutral_notools": {
+      "control_minus_chance": 0.34103410341034035,
+      "null_percentile": 69.55,
+      "unparsed": 0.0
+    },
+    "qwen32b_bixall_bixprompt_argmax": {
+      "control_minus_chance": 2.804878048780491,
+      "null_percentile": 90.16,
+      "unparsed": 0.0
+    },
+    "qwen32b_bixall_neutral_notools": {
+      "control_minus_chance": -0.28455284552845583,
+      "null_percentile": 47.010000000000005,
+      "unparsed": 0.0
+    },
+    "qwen32b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -0.9009009009009006,
+      "null_percentile": 33.11,
+      "unparsed": 0.0
+    },
+    "qwen32b_mmlupro": {
+      "control_minus_chance": 1.9911991199119914,
+      "null_percentile": 99.49,
+      "unparsed": 0.0
+    },
+    "qwen32b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.7040704070407049,
+      "null_percentile": 19.64,
+      "unparsed": 0.0
+    },
+    "qwen32b_mmlupro_neutral_notools": {
+      "control_minus_chance": 0.17601760176017578,
+      "null_percentile": 61.82,
+      "unparsed": 0.0
+    },
+    "qwen32b_mmlupro_neutral_tools": {
+      "control_minus_chance": -1.1441144114411443,
+      "null_percentile": 9.75,
+      "unparsed": 1.9251925192519255
+    },
+    "qwen32b_mmlupro_steered_notools": {
+      "control_minus_chance": 1.3861386138613874,
+      "null_percentile": 96.75,
+      "unparsed": 0.0
+    },
+    "qwen32b_question": {
+      "control_minus_chance": 3.5714285714285694,
+      "null_percentile": 87.9,
+      "unparsed": 0.31746031746031744
+    },
+    "qwen32b_withheld_aware": {
+      "control_minus_chance": -0.8730158730158735,
+      "null_percentile": 41.089999999999996,
+      "unparsed": 0.0
+    },
+    "qwen72b_bixall_bixprompt_argmax": {
+      "control_minus_chance": -2.0731707317073145,
+      "null_percentile": 19.41,
+      "unparsed": 0.0
+    },
+    "qwen72b_bixall_neutral_notools": {
+      "control_minus_chance": 1.3414634146341484,
+      "null_percentile": 73.72999999999999,
+      "unparsed": 0.0
+    },
+    "qwen72b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -4.954954954954953,
+      "null_percentile": 0.6,
+      "unparsed": 0.0
+    },
+    "qwen72b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -0.3190319031903197,
+      "null_percentile": 36.28,
+      "unparsed": 0.0
+    },
+    "qwen72b_mmlupro_neutral_notools": {
+      "control_minus_chance": -0.3190319031903197,
+      "null_percentile": 35.099999999999994,
+      "unparsed": 0.0
+    },
+    "qwen72b_mmlupro_steered_tools": {
+      "control_minus_chance": 0.06600660066006547,
+      "null_percentile": 55.089999999999996,
+      "unparsed": 0.055005500550055
+    },
+    "qwen7b_bixall_bixprompt_argmax": {
+      "control_minus_chance": -2.0731707317073145,
+      "null_percentile": 15.58,
+      "unparsed": 0.0
+    },
+    "qwen7b_bixall_neutral_notools": {
+      "control_minus_chance": -0.28455284552845583,
+      "null_percentile": 47.410000000000004,
+      "unparsed": 0.0
+    },
+    "qwen7b_bixv10_bixprompt_argmax": {
+      "control_minus_chance": -1.4639639639639626,
+      "null_percentile": 22.13,
+      "unparsed": 0.0
+    },
+    "qwen7b_mmlupro_bixprompt_argmax": {
+      "control_minus_chance": -1.1441144114411443,
+      "null_percentile": 7.35,
+      "unparsed": 0.0
+    },
+    "qwen7b_mmlupro_neutral_notools": {
+      "control_minus_chance": -0.7040704070407049,
+      "null_percentile": 17.580000000000002,
+      "unparsed": 0.0
+    }
+  }
+}

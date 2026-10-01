@@ -1,0 +1,235 @@
+{
+  "url": "https://api.datacite.org/dois/10.17632/dj4sb8h3c3.1",
+  "retrieved_at": "2026-09-16T15:26:20.145510+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.17632/dj4sb8h3c3.1",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.17632/dj4sb8h3c3.1",
+        "prefix": "10.17632",
+        "suffix": "dj4sb8h3c3.1",
+        "identifiers": [],
+        "alternateIdentifiers": [],
+        "creators": [
+          {
+            "name": "Wang, Yonghua",
+            "nameType": "Personal",
+            "givenName": "Yonghua",
+            "familyName": "Wang",
+            "affiliation": [],
+            "nameIdentifiers": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "N6-Methyladenosine enhances the translation of ENO1 to promote the progression of bladder cancer by inhibiting PCNA ubiquitination"
+          }
+        ],
+        "publisher": "Mendeley Data",
+        "container": {},
+        "publicationYear": 2024,
+        "subjects": [
+          {
+            "subject": "Bladder Cancer"
+          }
+        ],
+        "contributors": [
+          {
+            "name": "Shen, Chengquan",
+            "nameType": "Personal",
+            "givenName": "Chengquan",
+            "familyName": "Shen",
+            "affiliation": [
+              "Affiliated Hospital of Medical College Qingdao University"
+            ],
+            "contributorType": "Other",
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Liu, Jing",
+            "nameType": "Personal",
+            "givenName": "Jing",
+            "familyName": "Liu",
+            "contributorType": "Other",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Xie, Fei",
+            "nameType": "Personal",
+            "givenName": "Fei",
+            "familyName": "Xie",
+            "contributorType": "Other",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Yu, Yongbo",
+            "nameType": "Personal",
+            "givenName": "Yongbo",
+            "familyName": "Yu",
+            "contributorType": "Other",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Ma, Xiaocheng",
+            "nameType": "Personal",
+            "givenName": "Xiaocheng",
+            "familyName": "Ma",
+            "contributorType": "Other",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Hu, Ding",
+            "nameType": "Personal",
+            "givenName": "Ding",
+            "familyName": "Hu",
+            "contributorType": "Other",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Liu, Changxue",
+            "nameType": "Personal",
+            "givenName": "Changxue",
+            "familyName": "Liu",
+            "contributorType": "Other",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Affiliated Hospital Of Medical College Qingdao University",
+            "nameType": "Organizational",
+            "affiliation": [],
+            "contributorType": "Other",
+            "nameIdentifiers": [
+              {
+                "schemeUri": "https://ror.org",
+                "nameIdentifier": "https://ror.org/026e9yy16",
+                "nameIdentifierScheme": "ROR"
+              }
+            ]
+          }
+        ],
+        "dates": [
+          {
+            "date": "2024-05-21T12:26:09Z",
+            "dateType": "Issued"
+          }
+        ],
+        "language": null,
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceType": "Dataset",
+          "resourceTypeGeneral": "Dataset"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.17632/dj4sb8h3c3",
+            "resourceTypeGeneral": "Dataset",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": null,
+        "rightsList": [
+          {
+            "rightsUri": "info:eu-repo/semantics/openAccess"
+          },
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "RNA methylation is involved in the regulation of cell response and cell fate, and is closely related to the development of tumors. To identify the potential roles of the mRNA m6A modification in human bladder cancer, we analyzed the profile the landscape of the mRNA m6A modification in 3 bladder cancer tissues and the corresponding non-cancerous tissues. We compare the difference in RNA m6A methylation between bladder cancer tissues and adjacent normal control tissues using MeRIP-seq. The data was shown in \u201cMeRIP_RNA_result\u201d. Moreover, Label-free quantitative proteomics was used to identify differentially expressed proteins in bladder cancer tissues. The data was shown in \u201cProteomic_data\u201d.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cmVzb3VyY2UgeG1sbnM9Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQuNC9tZXRhZGF0YS54c2QiPgogIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjE3NjMyL0RKNFNCOEgzQzMuMTwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+V2FuZywgWW9uZ2h1YTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WW9uZ2h1YTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5ONi1NZXRoeWxhZGVub3NpbmUgZW5oYW5jZXMgdGhlIHRyYW5zbGF0aW9uIG9mIEVOTzEgdG8gcHJvbW90ZSB0aGUgcHJvZ3Jlc3Npb24gb2YgYmxhZGRlciBjYW5jZXIgYnkgaW5oaWJpdGluZyBQQ05BIHViaXF1aXRpbmF0aW9uPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPk1lbmRlbGV5IERhdGE8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjQ8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5CbGFkZGVyIENhbmNlcjwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJPdGhlciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TaGVuLCBDaGVuZ3F1YW48L2NvbnRyaWJ1dG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5DaGVuZ3F1YW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U2hlbjwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIHhzaTp0eXBlPSJhZmZpbGlhdGlvbiIgYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDI2ZTl5eTE2IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmcvIj5BZmZpbGlhdGVkIEhvc3BpdGFsIG9mIE1lZGljYWwgQ29sbGVnZSBRaW5nZGFvIFVuaXZlcnNpdHk8L2FmZmlsaWF0aW9uPgogICAgPC9jb250cmlidXRvcj4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ik90aGVyIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpdSwgSmluZzwvY29udHJpYnV0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkppbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGl1PC9mYW1pbHlOYW1lPgogICAgPC9jb250cmlidXRvcj4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ik90aGVyIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlhpZSwgRmVpPC9jb250cmlidXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RmVpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlhpZTwvZmFtaWx5TmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJPdGhlciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZdSwgWW9uZ2JvPC9jb250cmlidXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WW9uZ2JvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPll1PC9mYW1pbHlOYW1lPgogICAgPC9jb250cmlidXRvcj4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ik90aGVyIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1hLCBYaWFvY2hlbmc8L2NvbnRyaWJ1dG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YaWFvY2hlbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWE8L2ZhbWlseU5hbWU+CiAgICA8L2NvbnRyaWJ1dG9yPgogICAgPGNvbnRyaWJ1dG9yIGNvbnRyaWJ1dG9yVHlwZT0iT3RoZXIiPgogICAgICA8Y29udHJpYnV0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+SHUsIERpbmc8L2NvbnRyaWJ1dG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5EaW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkh1PC9mYW1pbHlOYW1lPgogICAgPC9jb250cmlidXRvcj4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9Ik90aGVyIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpdSwgQ2hhbmd4dWU8L2NvbnRyaWJ1dG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5DaGFuZ3h1ZTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaXU8L2ZhbWlseU5hbWU+CiAgICA8L2NvbnRyaWJ1dG9yPgogICAgPGNvbnRyaWJ1dG9yIGNvbnRyaWJ1dG9yVHlwZT0iT3RoZXIiPgogICAgICA8Y29udHJpYnV0b3JOYW1lIG5hbWVUeXBlPSJPcmdhbml6YXRpb25hbCI+QWZmaWxpYXRlZCBIb3NwaXRhbCBvZiBNZWRpY2FsIENvbGxlZ2UgUWluZ2RhbyBVbml2ZXJzaXR5PC9jb250cmlidXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciB4c2k6dHlwZT0ibmFtZUlkZW50aWZpZXIiIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJST1IiIHNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnLyI+aHR0cHM6Ly9yb3Iub3JnLzAyNmU5eXkxNjwvbmFtZUlkZW50aWZpZXI+CiAgICA8L2NvbnRyaWJ1dG9yPgogIDwvY29udHJpYnV0b3JzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjQtMDUtMjFUMTI6MjY6MDlaPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc1ZlcnNpb25PZiI+MTAuMTc2MzIvZGo0c2I4aDNjMzwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9vcGVuQWNjZXNzIi8+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+Uk5BIG1ldGh5bGF0aW9uIGlzIGludm9sdmVkIGluIHRoZSByZWd1bGF0aW9uIG9mIGNlbGwgcmVzcG9uc2UgYW5kIGNlbGwgZmF0ZSwgYW5kIGlzIGNsb3NlbHkgcmVsYXRlZCB0byB0aGUgZGV2ZWxvcG1lbnQgb2YgdHVtb3JzLiBUbyBpZGVudGlmeSB0aGUgcG90ZW50aWFsIHJvbGVzIG9mIHRoZSBtUk5BIG02QSBtb2RpZmljYXRpb24gaW4gaHVtYW4gYmxhZGRlciBjYW5jZXIsIHdlIGFuYWx5emVkIHRoZSBwcm9maWxlIHRoZSBsYW5kc2NhcGUgb2YgdGhlIG1STkEgbTZBIG1vZGlmaWNhdGlvbiBpbiAzIGJsYWRkZXIgY2FuY2VyIHRpc3N1ZXMgYW5kIHRoZSBjb3JyZXNwb25kaW5nIG5vbi1jYW5jZXJvdXMgdGlzc3Vlcy4gV2UgY29tcGFyZSB0aGUgZGlmZmVyZW5jZSBpbiBSTkEgbTZBIG1ldGh5bGF0aW9uIGJldHdlZW4gYmxhZGRlciBjYW5jZXIgdGlzc3VlcyBhbmQgYWRqYWNlbnQgbm9ybWFsIGNvbnRyb2wgdGlzc3VlcyB1c2luZyBNZVJJUC1zZXEuIFRoZSBkYXRhIHdhcyBzaG93biBpbiDigJxNZVJJUF9STkFfcmVzdWx04oCdLiBNb3Jlb3ZlciwgTGFiZWwtZnJlZSBxdWFudGl0YXRpdmUgcHJvdGVvbWljcyB3YXMgdXNlZCB0byBpZGVudGlmeSBkaWZmZXJlbnRpYWxseSBleHByZXNzZWQgcHJvdGVpbnMgaW4gYmxhZGRlciBjYW5jZXIgdGlzc3Vlcy4gVGhlIGRhdGEgd2FzIHNob3duIGluIOKAnFByb3Rlb21pY19kYXRh4oCdLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+        "url": "https://data.mendeley.com/datasets/dj4sb8h3c3/1",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "referenceCount": 0,
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 1,
+        "created": "2024-05-21T12:26:11.000Z",
+        "registered": "2024-05-21T12:26:11.000Z",
+        "published": "2024",
+        "updated": "2024-05-21T12:26:18.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "bl.mendeley",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "elsevier",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.17632/dj4sb8h3c3.1",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": [
+            {
+              "id": "10.17632/dj4sb8h3c3",
+              "type": "dois"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

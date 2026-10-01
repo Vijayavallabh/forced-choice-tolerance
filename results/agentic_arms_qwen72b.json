@@ -1,0 +1,346 @@
+{
+ "Qwen/Qwen2.5-72B-Instruct|withheld|argmax|bixprompt": {
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "items": "build/bixbench_v15.jsonl",
+  "condition": "withheld",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/qwen72b_bixall_bixprompt_argmax.jsonl",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 205,
+  "file": {
+   "n_rollouts": 615,
+   "n_clusters": 59,
+   "accuracy": 29.105691056910572,
+   "chance": 25.0,
+   "margin_over_chance": 4.105691056910569,
+   "margin_ci95": [
+    -0.7575757575757576,
+    9.17606683575846
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 22.53968253968254,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 615,
+     "accuracy": 29.105691056910572
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 615,
+   "n_clusters": 59,
+   "accuracy": 22.926829268292686,
+   "chance": 25.0,
+   "margin_over_chance": -2.073170731707317,
+   "margin_ci95": [
+    -6.345605361981272,
+    2.3201185373952637
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 16.666666666666668,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 615,
+     "accuracy": 22.926829268292686
+    }
+   }
+  },
+  "margin_over_clean": 6.178861788617886,
+  "margin_over_clean_ci95": [
+   -0.4203631366347463,
+   12.618311040234707
+  ]
+ },
+ "Qwen/Qwen2.5-72B-Instruct|withheld|notools": {
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "items": "build/bixbench_v15.jsonl",
+  "condition": "withheld",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/qwen72b_bixall_neutral_notools.jsonl",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 205,
+  "file": {
+   "n_rollouts": 615,
+   "n_clusters": 59,
+   "accuracy": 33.00813008130081,
+   "chance": 25.0,
+   "margin_over_chance": 8.008130081300813,
+   "margin_ci95": [
+    2.9177818797108137,
+    13.028234171438044
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 29.523809523809526,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 615,
+     "accuracy": 33.00813008130081
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 615,
+   "n_clusters": 59,
+   "accuracy": 26.34146341463415,
+   "chance": 25.0,
+   "margin_over_chance": 1.3414634146341464,
+   "margin_ci95": [
+    -2.2120764193527878,
+    5.476785714285711
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 34.84848484848485,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 615,
+     "accuracy": 26.34146341463415
+    }
+   }
+  },
+  "margin_over_clean": 6.666666666666666,
+  "margin_over_clean_ci95": [
+   0.39656681856802284,
+   12.731161215750255
+  ]
+ },
+ "Qwen/Qwen2.5-72B-Instruct|mmlu_pro_matched_released|withheld|argmax|bixprompt": {
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "draws": 2,
+  "dump": "build/dumps/qwen72b_mmlupro_bixprompt_argmax.jsonl",
+  "rebuilt_from_dump": true,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 12.157721796276014,
+   "chance": 10.0,
+   "margin_over_chance": 2.1577217962760122,
+   "margin_ci95": [
+    0.5151751178785205,
+    3.901985466154037
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 8.762322015334064,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 12.157721796276014
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.68096809680968,
+   "chance": 10.0,
+   "margin_over_chance": -0.31903190319031965,
+   "margin_ci95": [
+    -1.8131868131868134,
+    1.1602209944751376
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 10.781078107810782,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 9.68096809680968
+    }
+   }
+  },
+  "n_items": 913,
+  "margin_over_clean": 2.476753699466332,
+  "margin_over_clean_ci95": [
+   0.22675695442172009,
+   4.798343596108954
+  ]
+ },
+ "Qwen/Qwen2.5-72B-Instruct|mmlu_pro_matched_released|withheld|notools": {
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "draws": 2,
+  "dump": "build/dumps/qwen72b_mmlupro_neutral_notools.jsonl",
+  "rebuilt_from_dump": true,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 18.236582694414018,
+   "chance": 10.0,
+   "margin_over_chance": 8.236582694414018,
+   "margin_ci95": [
+    5.753971950576566,
+    11.2241820019237
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 6.8455640744797375,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 18.236582694414018
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.68096809680968,
+   "chance": 10.0,
+   "margin_over_chance": -0.31903190319031915,
+   "margin_ci95": [
+    -1.777248971805344,
+    1.1236485966565972
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 8.250825082508252,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 9.68096809680968
+    }
+   }
+  },
+  "n_items": 913,
+  "margin_over_clean": 8.555614597604338,
+  "margin_over_clean_ci95": [
+   5.671179370093063,
+   11.81535257969658
+  ]
+ },
+ "Qwen/Qwen2.5-72B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld_aware",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/qwen72b_mmlupro_steered_tools.jsonl",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": true,
+  "system": "You are answering a multiple-choice question, but the question text and the data it refers to have been withheld from you: all you are given is the list of options. You must still pick one. Study the options themselves and choose the one that is most likely to be the intended answer. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 16.812705366922234,
+   "chance": 10.0,
+   "margin_over_chance": 6.812705366922234,
+   "margin_ci95": [
+    4.285588353818254,
+    10.225373594419999
+   ],
+   "used_tool": 45.50930996714129,
+   "unparsed": 1.04052573932092,
+   "mean_turns": 1.8346111719605696,
+   "second_smallest_rate": 3.5596933187294635,
+   "by_tool": {
+    "used": {
+     "n": 831,
+     "accuracy": 20.216606498194945
+    },
+    "not_used": {
+     "n": 995,
+     "accuracy": 13.969849246231156
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.066006600660065,
+   "chance": 10.0,
+   "margin_over_chance": 0.06600660066006524,
+   "margin_ci95": [
+    -1.501363672631526,
+    1.6576431290203488
+   ],
+   "used_tool": 12.266226622662266,
+   "unparsed": 0.055005500550055,
+   "mean_turns": 1.33003300330033,
+   "second_smallest_rate": 6.930693069306931,
+   "by_tool": {
+    "used": {
+     "n": 223,
+     "accuracy": 8.071748878923767
+    },
+    "not_used": {
+     "n": 1595,
+     "accuracy": 10.344827586206897
+    }
+   }
+  },
+  "margin_over_clean": 6.746698766262169,
+  "margin_over_clean_ci95": [
+   3.74082146049512,
+   10.50139604416039
+  ]
+ }
+}

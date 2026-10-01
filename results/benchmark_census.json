@@ -1,0 +1,452 @@
+{
+  "summary": {
+    "n_benchmark_files": 12,
+    "n_items_total": 2558,
+    "n_files_publishing_any_date": 0,
+    "n_files_with_canary": 9,
+    "statement": "0 of 12 released benchmark files covering 2558 tasks carry any date field for the source study, the underlying data, or the benchmark artifact."
+  },
+  "benchmarks": [
+    {
+      "benchmark": "BixBench v1.5",
+      "file": "data/bixbench.jsonl",
+      "n_items": 205,
+      "n_fields": 17,
+      "fields": [
+        "answer",
+        "canary",
+        "capsule_uuid",
+        "categories",
+        "data_folder",
+        "distractors",
+        "eval_mode",
+        "hypothesis",
+        "id",
+        "ideal",
+        "paper",
+        "question",
+        "question_id",
+        "result",
+        "short_id",
+        "tag",
+        "version"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 137,
+        "coverage": 0.6682926829268293,
+        "kinds": {
+          "doi": 86,
+          "url": 51
+        }
+      },
+      "version_fields": {
+        "version": {
+          "1.5": 205
+        }
+      },
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "capsule_uuid",
+        "n_distinct_sources": 59,
+        "n_items_without_source": 68,
+        "max_items_per_source": 7,
+        "mean_items_per_source": 3.4745762711864407
+      },
+      "notes": "Pinned Hugging Face revision f8cc3bd...422dc95a; audited in detail elsewhere in this repository."
+    },
+    {
+      "benchmark": "LAB-Bench LitQA2",
+      "file": "data/external/labbench/LitQA2.jsonl",
+      "n_items": 199,
+      "n_fields": 12,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "is_opensource",
+        "key-passage",
+        "question",
+        "source",
+        "sources",
+        "subtask",
+        "tag",
+        "version"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 199,
+        "coverage": 1.0,
+        "kinds": {
+          "doi": 199
+        }
+      },
+      "version_fields": {
+        "version": {
+          "1.1-dev": 199
+        }
+      },
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 186,
+        "n_items_without_source": 0,
+        "max_items_per_source": 3,
+        "mean_items_per_source": 1.0698924731182795
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench SuppQA",
+      "file": "data/external/labbench/SuppQA.jsonl",
+      "n_items": 82,
+      "n_fields": 8,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "paper-title",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 82,
+        "coverage": 1.0,
+        "kinds": {
+          "doi": 82
+        }
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 82,
+        "n_items_without_source": 0,
+        "max_items_per_source": 1,
+        "mean_items_per_source": 1.0
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench DbQA",
+      "file": "data/external/labbench/DbQA.jsonl",
+      "n_items": 520,
+      "n_fields": 7,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 0,
+        "coverage": 0.0,
+        "kinds": {}
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 0,
+        "n_items_without_source": 520,
+        "max_items_per_source": 0,
+        "mean_items_per_source": 0
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench SeqQA",
+      "file": "data/external/labbench/SeqQA.jsonl",
+      "n_items": 600,
+      "n_fields": 7,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 0,
+        "coverage": 0.0,
+        "kinds": {}
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 0,
+        "n_items_without_source": 600,
+        "max_items_per_source": 0,
+        "mean_items_per_source": 0
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench TableQA",
+      "file": "data/external/labbench/TableQA.jsonl",
+      "n_items": 244,
+      "n_fields": 8,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "n_tables",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 244,
+        "coverage": 1.0,
+        "kinds": {
+          "doi": 244
+        }
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 134,
+        "n_items_without_source": 0,
+        "max_items_per_source": 8,
+        "mean_items_per_source": 1.8208955223880596
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench FigQA",
+      "file": "data/external/labbench/FigQA.jsonl",
+      "n_items": 181,
+      "n_fields": 8,
+      "fields": [
+        "canary",
+        "distractors",
+        "figure-path",
+        "id",
+        "ideal",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 181,
+        "coverage": 1.0,
+        "kinds": {
+          "doi": 181
+        }
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 41,
+        "n_items_without_source": 0,
+        "max_items_per_source": 34,
+        "mean_items_per_source": 4.414634146341464
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench ProtocolQA",
+      "file": "data/external/labbench/ProtocolQA.jsonl",
+      "n_items": 108,
+      "n_fields": 8,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "protocol",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 0,
+        "coverage": 0.0,
+        "kinds": {}
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 0,
+        "n_items_without_source": 108,
+        "max_items_per_source": 0,
+        "mean_items_per_source": 0
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "LAB-Bench CloningScenarios",
+      "file": "data/external/labbench/CloningScenarios.jsonl",
+      "n_items": 33,
+      "n_fields": 7,
+      "fields": [
+        "canary",
+        "distractors",
+        "id",
+        "ideal",
+        "question",
+        "source",
+        "subtask"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 0,
+        "coverage": 0.0,
+        "kinds": {}
+      },
+      "version_fields": {},
+      "has_canary": true,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 0,
+        "n_items_without_source": 33,
+        "max_items_per_source": 0,
+        "mean_items_per_source": 0
+      },
+      "notes": ""
+    },
+    {
+      "benchmark": "ScienceAgentBench",
+      "file": "data/external/other/ScienceAgentBench.csv",
+      "n_items": 102,
+      "n_fields": 12,
+      "fields": [
+        "dataset_folder_tree",
+        "dataset_preview",
+        "domain",
+        "domain_knowledge",
+        "eval_script_name",
+        "github_name",
+        "gold_program_name",
+        "instance_id",
+        "output_fname",
+        "src_file_or_path",
+        "subtask_categories",
+        "task_inst"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 102,
+        "coverage": 1.0,
+        "kinds": {
+          "label": 101,
+          "url": 1
+        }
+      },
+      "version_fields": {},
+      "has_canary": false,
+      "dependence": {
+        "cluster_field": "derived source identifier",
+        "n_distinct_sources": 75,
+        "n_items_without_source": 0,
+        "max_items_per_source": 7,
+        "mean_items_per_source": 1.36
+      },
+      "notes": "Source column is a GitHub repository name, not a dated publication record."
+    },
+    {
+      "benchmark": "CORE-Bench (train split)",
+      "file": "data/external/other/core_train.json",
+      "n_items": 45,
+      "n_fields": 7,
+      "fields": [
+        "capsule_doi",
+        "capsule_id",
+        "capsule_title",
+        "field",
+        "language",
+        "results",
+        "task_prompt"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 45,
+        "coverage": 1.0,
+        "kinds": {
+          "label": 45
+        }
+      },
+      "version_fields": {},
+      "has_canary": false,
+      "dependence": {
+        "cluster_field": "capsule_id",
+        "n_distinct_sources": 45,
+        "n_items_without_source": 0,
+        "max_items_per_source": 1,
+        "mean_items_per_source": 1.0
+      },
+      "notes": "Public split only; the test split is released encrypted."
+    },
+    {
+      "benchmark": "DiscoveryBench (real, answer key)",
+      "file": "data/external/other/discoverybench_answer_key_real.csv",
+      "n_items": 239,
+      "n_fields": 4,
+      "fields": [
+        "dataset",
+        "gold_hypo",
+        "metadataid",
+        "query_id"
+      ],
+      "date_fields_by_name": [],
+      "date_fields_by_value": [],
+      "publishes_any_date": false,
+      "source_identifier": {
+        "n_with_identifier": 0,
+        "coverage": 0.0,
+        "kinds": {}
+      },
+      "version_fields": {},
+      "has_canary": false,
+      "dependence": {
+        "cluster_field": "dataset",
+        "n_distinct_sources": 10,
+        "n_items_without_source": 239,
+        "max_items_per_source": 50,
+        "mean_items_per_source": 23.9
+      },
+      "notes": "Answer key only; task metadata lives in per-domain files."
+    }
+  ]
+}

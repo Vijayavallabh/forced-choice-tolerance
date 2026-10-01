@@ -1,0 +1,67 @@
+{
+ "Qwen/Qwen2.5-14B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld_aware",
+  "tools": true,
+  "system": "You are answering a multiple-choice question, but the question text and the data it refers to have been withheld from you: all you are given is the list of options. You must still pick one. Study the options themselves and choose the one that is most likely to be the intended answer. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 15.93647316538883,
+   "chance": 10.0,
+   "margin_over_chance": 5.9364731653888265,
+   "margin_ci95": [
+    4.30379746835443,
+    8.476648966695885
+   ],
+   "used_tool": 21.796276013143483,
+   "unparsed": 0.2738225629791895,
+   "mean_turns": 1.5312157721796276,
+   "second_smallest_rate": 2.5191675794085433,
+   "by_tool": {
+    "used": {
+     "n": 398,
+     "accuracy": 18.090452261306535
+    },
+    "not_used": {
+     "n": 1428,
+     "accuracy": 15.336134453781513
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 10.34103410341034,
+   "chance": 10.0,
+   "margin_over_chance": 0.34103410341034046,
+   "margin_ci95": [
+    -1.1929659508981176,
+    2.06393361005806
+   ],
+   "used_tool": 11.606160616061606,
+   "unparsed": 0.0,
+   "mean_turns": 1.5715071507150715,
+   "second_smallest_rate": 5.390539053905391,
+   "by_tool": {
+    "used": {
+     "n": 211,
+     "accuracy": 10.42654028436019
+    },
+    "not_used": {
+     "n": 1607,
+     "accuracy": 10.329807093963908
+    }
+   }
+  },
+  "margin_over_clean": 5.595439061978486,
+  "margin_over_clean_ci95": [
+   3.1055587830063036,
+   8.580668218566796
+  ]
+ }
+}

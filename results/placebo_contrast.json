@@ -1,0 +1,303 @@
+{
+  "reps": 10000,
+  "panels": {
+    "BixBench v1.5": {
+      "n_options": 4,
+      "n_models": 11,
+      "models": [
+        {
+          "model": "Qwen/Qwen2.5-32B-Instruct",
+          "chance": 0.25,
+          "released": 0.28714285714285714,
+          "placebo_lift": 0.017142857142857126,
+          "repaired_lift": -0.06047619047619049,
+          "rank_effect": -0.07761904761904762
+        },
+        {
+          "model": "Qwen/Qwen2.5-14B-Instruct",
+          "chance": 0.25,
+          "released": 0.2833333333333333,
+          "placebo_lift": 0.020000000000000018,
+          "repaired_lift": -0.010952380952380936,
+          "rank_effect": -0.030952380952380953
+        },
+        {
+          "model": "microsoft/Phi-3.5-mini-instruct",
+          "chance": 0.25,
+          "released": 0.2652380952380952,
+          "placebo_lift": -0.006666666666666654,
+          "repaired_lift": -0.03380952380952379,
+          "rank_effect": -0.027142857142857135
+        },
+        {
+          "model": "Qwen/Qwen2.5-1.5B-Instruct",
+          "chance": 0.25,
+          "released": 0.25666666666666665,
+          "placebo_lift": 0.007142857142857173,
+          "repaired_lift": -0.018571428571428572,
+          "rank_effect": -0.025714285714285745
+        },
+        {
+          "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "chance": 0.25,
+          "released": 0.2538095238095238,
+          "placebo_lift": 0.02857142857142858,
+          "repaired_lift": 0.00952380952380949,
+          "rank_effect": -0.01904761904761909
+        },
+        {
+          "model": "Qwen/Qwen2.5-7B-Instruct",
+          "chance": 0.25,
+          "released": 0.2785714285714286,
+          "placebo_lift": 0.013809523809523827,
+          "repaired_lift": 0.002857142857142836,
+          "rank_effect": -0.010952380952380991
+        },
+        {
+          "model": "meta-llama/Llama-3.2-1B-Instruct",
+          "chance": 0.25,
+          "released": 0.2557142857142857,
+          "placebo_lift": -0.004285714285714282,
+          "repaired_lift": -0.0080952380952381,
+          "rank_effect": -0.003809523809523818
+        },
+        {
+          "model": "Groq/Llama-3-Groq-8B-Tool-Use",
+          "chance": 0.25,
+          "released": 0.29333333333333333,
+          "placebo_lift": -0.06047619047619049,
+          "repaired_lift": -0.06380952380952382,
+          "rank_effect": -0.003333333333333327
+        },
+        {
+          "model": "allenai/OLMo-2-1124-7B-Instruct",
+          "chance": 0.25,
+          "released": 0.24904761904761905,
+          "placebo_lift": 0.020476190476190453,
+          "repaired_lift": 0.0185714285714286,
+          "rank_effect": -0.0019047619047618536
+        },
+        {
+          "model": "meta-llama/Llama-3.2-3B-Instruct",
+          "chance": 0.25,
+          "released": 0.23809523809523808,
+          "placebo_lift": 0.02238095238095239,
+          "repaired_lift": 0.022857142857142854,
+          "rank_effect": 0.0004761904761904634
+        },
+        {
+          "model": "google/gemma-3-4b-it",
+          "chance": 0.25,
+          "released": 0.24476190476190476,
+          "placebo_lift": -0.001904761904761909,
+          "repaired_lift": 0.012380952380952354,
+          "rank_effect": 0.014285714285714263
+        }
+      ],
+      "placebo_lift_median": 0.013809523809523827,
+      "rank_effect_median": -0.010952380952380991,
+      "rank_effect_positive": 2,
+      "released_vs_rank_effect_rho": -0.6636363636363637,
+      "rho_ci95": [
+        -1.0,
+        0.03317535545023697
+      ]
+    },
+    "MMLU-Pro": {
+      "n_options": 10,
+      "n_models": 10,
+      "models": [
+        {
+          "model": "Qwen/Qwen2.5-32B-Instruct",
+          "chance": 0.1,
+          "released": 0.1341053048297704,
+          "placebo_lift": 0.013855898653998416,
+          "repaired_lift": -0.027711797307996847,
+          "rank_effect": -0.04156769596199526
+        },
+        {
+          "model": "google/gemma-3-4b-it",
+          "chance": 0.1,
+          "released": 0.11856690419635788,
+          "placebo_lift": 0.023950910530482983,
+          "repaired_lift": -0.003365003958828189,
+          "rank_effect": -0.02731591448931117
+        },
+        {
+          "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "chance": 0.1,
+          "released": 0.09332937450514647,
+          "placebo_lift": 0.058689627870150446,
+          "repaired_lift": 0.04433887569279493,
+          "rank_effect": -0.014350752177355514
+        },
+        {
+          "model": "microsoft/Phi-3.5-mini-instruct",
+          "chance": 0.1,
+          "released": 0.1325217735550277,
+          "placebo_lift": -0.005839271575613619,
+          "repaired_lift": -0.017814726840855097,
+          "rank_effect": -0.011975455265241478
+        },
+        {
+          "model": "Qwen/Qwen2.5-14B-Instruct",
+          "chance": 0.1,
+          "released": 0.10312747426761679,
+          "placebo_lift": 0.030186064924782263,
+          "repaired_lift": 0.02028899445764054,
+          "rank_effect": -0.009897070467141722
+        },
+        {
+          "model": "Qwen/Qwen2.5-1.5B-Instruct",
+          "chance": 0.1,
+          "released": 0.11381631037212984,
+          "placebo_lift": 0.015835312747426764,
+          "repaired_lift": 0.011084718923198733,
+          "rank_effect": -0.0047505938242280304
+        },
+        {
+          "model": "meta-llama/Llama-3.2-1B-Instruct",
+          "chance": 0.1,
+          "released": 0.10154394299287411,
+          "placebo_lift": 0.011282660332541564,
+          "repaired_lift": 0.008115597783056205,
+          "rank_effect": -0.0031670625494853583
+        },
+        {
+          "model": "allenai/OLMo-2-1124-7B-Instruct",
+          "chance": 0.1,
+          "released": 0.10797703879651623,
+          "placebo_lift": 0.010985748218527325,
+          "repaired_lift": 0.008709422011084725,
+          "rank_effect": -0.0022763262074426
+        },
+        {
+          "model": "meta-llama/Llama-3.2-3B-Instruct",
+          "chance": 0.1,
+          "released": 0.09095407759303246,
+          "placebo_lift": 0.04423990498812351,
+          "repaired_lift": 0.045625494853523366,
+          "rank_effect": 0.0013855898653998555
+        },
+        {
+          "model": "Qwen/Qwen2.5-7B-Instruct",
+          "chance": 0.1,
+          "released": 0.10451306413301663,
+          "placebo_lift": 0.02850356294536817,
+          "repaired_lift": 0.03454077593032463,
+          "rank_effect": 0.006037212984956464
+        }
+      ],
+      "placebo_lift_median": 0.019893111638954873,
+      "rank_effect_median": -0.007323832145684876,
+      "rank_effect_positive": 2,
+      "released_vs_rank_effect_rho": -0.5393939393939394,
+      "rho_ci95": [
+        -0.9607843137254902,
+        0.2229299363057325
+      ]
+    },
+    "MMLU": {
+      "n_options": 4,
+      "n_models": 11,
+      "models": [
+        {
+          "model": "Qwen/Qwen2.5-32B-Instruct",
+          "chance": 0.25,
+          "released": 0.2464447806354009,
+          "placebo_lift": 0.025264750378214823,
+          "repaired_lift": 0.0029500756429652053,
+          "rank_effect": -0.022314674735249618
+        },
+        {
+          "model": "Qwen/Qwen2.5-14B-Instruct",
+          "chance": 0.25,
+          "released": 0.2294251134644478,
+          "placebo_lift": 0.03426626323751894,
+          "repaired_lift": 0.027760968229954636,
+          "rank_effect": -0.0065052950075643046
+        },
+        {
+          "model": "Qwen/Qwen2.5-7B-Instruct",
+          "chance": 0.25,
+          "released": 0.2398638426626324,
+          "placebo_lift": 0.03199697428139181,
+          "repaired_lift": 0.02677760968229953,
+          "rank_effect": -0.00521936459909228
+        },
+        {
+          "model": "google/gemma-3-4b-it",
+          "chance": 0.25,
+          "released": 0.244553706505295,
+          "placebo_lift": 0.013540090771558266,
+          "repaired_lift": 0.016717095310136154,
+          "rank_effect": 0.0031770045385778878
+        },
+        {
+          "model": "allenai/OLMo-2-1124-7B-Instruct",
+          "chance": 0.25,
+          "released": 0.2245839636913767,
+          "placebo_lift": 0.04357034795763995,
+          "repaired_lift": 0.04924357034795765,
+          "rank_effect": 0.0056732223903177
+        },
+        {
+          "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "chance": 0.25,
+          "released": 0.21845688350983358,
+          "placebo_lift": 0.06467473524962178,
+          "repaired_lift": 0.07261724659606658,
+          "rank_effect": 0.007942511346444803
+        },
+        {
+          "model": "meta-llama/Llama-3.2-3B-Instruct",
+          "chance": 0.25,
+          "released": 0.21580937972768532,
+          "placebo_lift": 0.03638426626323754,
+          "repaired_lift": 0.04470499243570347,
+          "rank_effect": 0.008320726172465931
+        },
+        {
+          "model": "meta-llama/Llama-3.2-1B-Instruct",
+          "chance": 0.25,
+          "released": 0.2466717095310136,
+          "placebo_lift": 0.01036308623298035,
+          "repaired_lift": 0.020196671709531017,
+          "rank_effect": 0.009833585476550666
+        },
+        {
+          "model": "Qwen/Qwen2.5-1.5B-Instruct",
+          "chance": 0.25,
+          "released": 0.23078668683812406,
+          "placebo_lift": 0.02276853252647501,
+          "repaired_lift": 0.034947049924357015,
+          "rank_effect": 0.012178517397882005
+        },
+        {
+          "model": "microsoft/Phi-3.5-mini-instruct",
+          "chance": 0.25,
+          "released": 0.22715582450832073,
+          "placebo_lift": 0.013691376701966712,
+          "repaired_lift": 0.03880484114977306,
+          "rank_effect": 0.02511346444780635
+        },
+        {
+          "model": "Groq/Llama-3-Groq-8B-Tool-Use",
+          "chance": 0.25,
+          "released": 0.2401664145234493,
+          "placebo_lift": 0.005597579425113464,
+          "repaired_lift": 0.03547655068078667,
+          "rank_effect": 0.02987897125567321
+        }
+      ],
+      "placebo_lift_median": 0.025264750378214823,
+      "rank_effect_median": 0.007942511346444803,
+      "rank_effect_positive": 8,
+      "released_vs_rank_effect_rho": -0.13636363636363635,
+      "rho_ci95": [
+        -0.7560975609756098,
+        0.48792270531400966
+      ]
+    }
+  }
+}

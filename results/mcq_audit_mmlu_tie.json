@@ -1,0 +1,569 @@
+{
+  "file": "build/mmlu.jsonl",
+  "n_options": 4,
+  "seed": 20260920,
+  "before": {
+    "chance": 0.25,
+    "n_options": 4,
+    "n_items": 14033,
+    "numeric_family": {
+      "n_items": 661,
+      "n_clusters": 39,
+      "n_options": 4,
+      "chance": 0.25,
+      "rank_fractions": {
+        "0": 0.1800302571860817,
+        "1": 0.2723146747352496,
+        "2": 0.3010590015128593,
+        "3": 0.24659606656580937
+      },
+      "interior_rate": 0.573373676248109,
+      "interior_expected": 0.5,
+      "interior_ci95": [
+        0.5197255574614065,
+        0.6282798833819242
+      ],
+      "cv_accuracy": 0.3010590015128593,
+      "cv_ci95": [
+        0.27386934673366836,
+        0.34005037783375314
+      ],
+      "cv_lower_bound": 0.2482337426043174,
+      "cv_alpha": 0.0005,
+      "worst_case_score": 0.3010590015128593,
+      "max_geometry_credit": 0.0510590015128593,
+      "min_geometry_credit": -0.0699697428139183,
+      "rules_in_family": 11,
+      "rule_selected_per_fold": {
+        "always rank 2": 39
+      },
+      "leaks": false
+    },
+    "surface_family": {
+      "n_items": 14033,
+      "n_clusters": 57,
+      "cv_accuracy": 0.2808380246561676,
+      "cv_ci95": [
+        0.2676383740654646,
+        0.29534121669753527
+      ],
+      "cv_lower_bound": 0.25783046147274163,
+      "cv_alpha": 0.0005,
+      "rules_in_family": 18,
+      "rule_selected_per_fold": {
+        "take longest_option": 56,
+        "take most_tokens": 1
+      },
+      "leaks": true
+    },
+    "surface_channels": {
+      "chance": 0.25,
+      "orderings": {
+        "lexical isolation": {
+          "all items": {
+            "n_items": 14033,
+            "key_by_rank_p": {
+              "0": 0.25261882705052374,
+              "1": 0.25247630585049524,
+              "2": 0.2452789852490558,
+              "3": 0.24962588184992518
+            },
+            "top_rank_share": 0.24962588184992518,
+            "max_credit_plug_in": 0.002618827050523742,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.241346230713886,
+                "1": 0.24377098427283972,
+                "2": 0.23712168556378896,
+                "3": 0.24116806207882377
+              },
+              "argmax_rank": 1,
+              "lower_bound_on_worst_case": 0.24377098427283972,
+              "credit_lower_bound": -0.006229015727160281,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 57
+            },
+            "leaks": false
+          },
+          "numeric items": {
+            "n_items": 661,
+            "key_by_rank_p": {
+              "0": 0.23903177004538578,
+              "1": 0.25718608169440244,
+              "2": 0.26021180030257185,
+              "3": 0.24357034795763993
+            },
+            "top_rank_share": 0.24357034795763993,
+            "max_credit_plug_in": 0.01021180030257185,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.19680851063829788,
+                "1": 0.22077922077922077,
+                "2": 0.2111368909512761,
+                "3": 0.183206106870229
+              },
+              "argmax_rank": 1,
+              "lower_bound_on_worst_case": 0.22077922077922077,
+              "credit_lower_bound": -0.02922077922077923,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": false
+          }
+        },
+        "written length": {
+          "all items": {
+            "n_items": 14033,
+            "key_by_rank_p": {
+              "0": 0.21884130264376825,
+              "1": 0.23722653744744532,
+              "2": 0.26202522625240504,
+              "3": 0.28190693365638136
+            },
+            "top_rank_share": 0.28190693365638136,
+            "max_credit_plug_in": 0.031906933656381364,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.2074698992546482,
+                "1": 0.22625721017141928,
+                "2": 0.25299227799227797,
+                "3": 0.26778001727613016
+              },
+              "argmax_rank": 3,
+              "lower_bound_on_worst_case": 0.26778001727613016,
+              "credit_lower_bound": 0.017780017276130156,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 57
+            },
+            "leaks": true
+          },
+          "numeric items": {
+            "n_items": 661,
+            "key_by_rank_p": {
+              "0": 0.19062027231467474,
+              "1": 0.24659606656580937,
+              "2": 0.29954614220877457,
+              "3": 0.2632375189107413
+            },
+            "top_rank_share": 0.2632375189107413,
+            "max_credit_plug_in": 0.04954614220877457,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.15375722543352602,
+                "1": 0.20168067226890757,
+                "2": 0.2630718954248366,
+                "3": 0.17765042979942694
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.2630718954248366,
+              "credit_lower_bound": 0.01307189542483661,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": true
+          }
+        },
+        "significant digits": {
+          "all items": {
+            "n_items": 663,
+            "key_by_rank_p": {
+              "0": 0.18250377073906485,
+              "1": 0.2790346907993967,
+              "2": 0.27450980392156865,
+              "3": 0.26395173453996984
+            },
+            "top_rank_share": 0.26395173453996984,
+            "max_credit_plug_in": 0.02903469079939669,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.15930902111324377,
+                "1": 0.2328767123287671,
+                "2": 0.23949579831932774,
+                "3": 0.1968503937007874
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.23949579831932774,
+              "credit_lower_bound": -0.01050420168067226,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": false
+          },
+          "numeric items": {
+            "n_items": 661,
+            "key_by_rank_p": {
+              "0": 0.18305597579425115,
+              "1": 0.27987897125567324,
+              "2": 0.2723146747352496,
+              "3": 0.264750378214826
+            },
+            "top_rank_share": 0.264750378214826,
+            "max_credit_plug_in": 0.029878971255673237,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.16030534351145037,
+                "1": 0.23408624229979466,
+                "2": 0.23773006134969324,
+                "3": 0.1989389920424403
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.23773006134969324,
+              "credit_lower_bound": -0.012269938650306761,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": false
+          }
+        }
+      }
+    },
+    "coordinates_firing": [
+      "surface rule family",
+      "written length (all items)",
+      "written length (numeric items)"
+    ]
+  },
+  "after_repair": {
+    "chance": 0.25,
+    "n_options": 4,
+    "n_items": 14033,
+    "numeric_family": {
+      "n_items": 661,
+      "n_clusters": 39,
+      "n_options": 4,
+      "chance": 0.25,
+      "rank_fractions": {
+        "0": 0.2481089258698941,
+        "1": 0.22239031770045387,
+        "2": 0.24962178517397882,
+        "3": 0.27987897125567324
+      },
+      "interior_rate": 0.4720121028744327,
+      "interior_expected": 0.5,
+      "interior_ci95": [
+        0.4269102990033223,
+        0.5178571428571429
+      ],
+      "cv_accuracy": 0.27987897125567324,
+      "cv_ci95": [
+        0.216696269982238,
+        0.3141509433962264
+      ],
+      "cv_lower_bound": 0.1940852244960929,
+      "cv_alpha": 0.0005,
+      "worst_case_score": 0.27987897125567324,
+      "max_geometry_credit": 0.029878971255673237,
+      "min_geometry_credit": -0.027609682299546134,
+      "rules_in_family": 11,
+      "rule_selected_per_fold": {
+        "always rank 3": 39
+      },
+      "leaks": false
+    },
+    "surface_family": {
+      "n_items": 14033,
+      "n_clusters": 57,
+      "cv_accuracy": 0.2747808736549562,
+      "cv_ci95": [
+        0.2626460505142377,
+        0.28760282021151584
+      ],
+      "cv_lower_bound": 0.2539357992553529,
+      "cv_alpha": 0.0005,
+      "rules_in_family": 18,
+      "rule_selected_per_fold": {
+        "take longest_option": 13,
+        "take most_tokens": 44
+      },
+      "leaks": true
+    },
+    "surface_channels": {
+      "chance": 0.25,
+      "orderings": {
+        "lexical isolation": {
+          "all items": {
+            "n_items": 14033,
+            "key_by_rank_p": {
+              "0": 0.2525475664505095,
+              "1": 0.25162117865032424,
+              "2": 0.2466329366493266,
+              "3": 0.24919831824983965
+            },
+            "top_rank_share": 0.24919831824983965,
+            "max_credit_plug_in": 0.0025475664505095197,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.2413226160029229,
+                "1": 0.2428254490803693,
+                "2": 0.2393314668702808,
+                "3": 0.24048556430446194
+              },
+              "argmax_rank": 1,
+              "lower_bound_on_worst_case": 0.2428254490803693,
+              "credit_lower_bound": -0.007174550919630707,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 57
+            },
+            "leaks": false
+          },
+          "numeric items": {
+            "n_items": 661,
+            "key_by_rank_p": {
+              "0": 0.23751891074130105,
+              "1": 0.23903177004538578,
+              "2": 0.28895612708018154,
+              "3": 0.2344931921331316
+            },
+            "top_rank_share": 0.2344931921331316,
+            "max_credit_plug_in": 0.038956127080181535,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.18508997429305912,
+                "1": 0.2,
+                "2": 0.2535612535612536,
+                "3": 0.17346938775510204
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.2535612535612536,
+              "credit_lower_bound": 0.0035612535612535856,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": true
+          }
+        },
+        "written length": {
+          "all items": {
+            "n_items": 14033,
+            "key_by_rank_p": {
+              "0": 0.2213354236442671,
+              "1": 0.23594384664718876,
+              "2": 0.26060001425212,
+              "3": 0.28212071545642414
+            },
+            "top_rank_share": 0.28212071545642414,
+            "max_credit_plug_in": 0.03212071545642414,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.2109642682329907,
+                "1": 0.22468741186424743,
+                "2": 0.25151362260343085,
+                "3": 0.2676979989910879
+              },
+              "argmax_rank": 3,
+              "lower_bound_on_worst_case": 0.2676979989910879,
+              "credit_lower_bound": 0.017697998991087927,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 57
+            },
+            "leaks": true
+          },
+          "numeric items": {
+            "n_items": 661,
+            "key_by_rank_p": {
+              "0": 0.24357034795763993,
+              "1": 0.21936459909228442,
+              "2": 0.2692889561270802,
+              "3": 0.26777609682299547
+            },
+            "top_rank_share": 0.26777609682299547,
+            "max_credit_plug_in": 0.019288956127080203,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.2011776251226693,
+                "1": 0.16541353383458646,
+                "2": 0.23774509803921567,
+                "3": 0.1948529411764706
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.23774509803921567,
+              "credit_lower_bound": -0.012254901960784326,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": false
+          }
+        },
+        "significant digits": {
+          "all items": {
+            "n_items": 663,
+            "key_by_rank_p": {
+              "0": 0.22021116138763197,
+              "1": 0.22171945701357465,
+              "2": 0.27149321266968324,
+              "3": 0.2865761689291101
+            },
+            "top_rank_share": 0.2865761689291101,
+            "max_credit_plug_in": 0.03657616892911009,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.1912751677852349,
+                "1": 0.19334389857369255,
+                "2": 0.2324159021406728,
+                "3": 0.2103825136612022
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.2324159021406728,
+              "credit_lower_bound": -0.017584097859327213,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": false
+          },
+          "numeric items": {
+            "n_items": 661,
+            "key_by_rank_p": {
+              "0": 0.22087745839636913,
+              "1": 0.22239031770045387,
+              "2": 0.2692889561270802,
+              "3": 0.2874432677760968
+            },
+            "top_rank_share": 0.2874432677760968,
+            "max_credit_plug_in": 0.0374432677760968,
+            "credit_bound": {
+              "per_rank_lower_bound": {
+                "0": 0.19196428571428573,
+                "1": 0.19334389857369255,
+                "2": 0.22942643391521197,
+                "3": 0.21351351351351353
+              },
+              "argmax_rank": 2,
+              "lower_bound_on_worst_case": 0.22942643391521197,
+              "credit_lower_bound": -0.020573566084788025,
+              "alpha": 0.05,
+              "bonferroni_level": 0.0125,
+              "n_groups": 39
+            },
+            "leaks": false
+          }
+        }
+      }
+    },
+    "coordinates_firing": [
+      "surface rule family",
+      "lexical isolation (numeric items)",
+      "written length (all items)"
+    ]
+  },
+  "n_repaired": 661,
+  "reachability": {
+    "n_items": 661,
+    "reachable_share_by_rank": {
+      "0": 0.9969742813918305,
+      "1": 0.9576399394856279,
+      "2": 0.9167927382753404,
+      "3": 0.848714069591528
+    },
+    "mean_reachable_share": 0.9300302571860817,
+    "note": "share of items whose key can be placed at each rank while keeping every option's sign and written style; a low share at the extremes caps how uniform the repair can make the key-rank distribution"
+  },
+  "n_infeasible": 0,
+  "n_rank_reassigned": 0,
+  "two_channel": true,
+  "search": "construct",
+  "calibrated": true,
+  "tilt_requested": true,
+  "surface_target_hit_rate": {
+    "first_draw": {
+      "lexical isolation": 0.25113464447806355,
+      "written length": 0.2344931921331316,
+      "significant digits": 0.20574886535552195,
+      "length, later ties": 0.2723146747352496
+    },
+    "assigned": {
+      "lexical isolation": 0.9576399394856279,
+      "written length": 1.0,
+      "significant digits": 1.0,
+      "length, later ties": 1.0
+    },
+    "realised_rank_share": {
+      "lexical isolation": [
+        0.23751891074130105,
+        0.23903177004538578,
+        0.28895612708018154,
+        0.2344931921331316
+      ],
+      "written length": [
+        0.24357034795763993,
+        0.21936459909228442,
+        0.2692889561270802,
+        0.26777609682299547
+      ],
+      "significant digits": [
+        0.22087745839636913,
+        0.22239031770045387,
+        0.2692889561270802,
+        0.2874432677760968
+      ],
+      "length, later ties": [
+        0.3086232980332829,
+        0.24205748865355523,
+        0.2178517397881997,
+        0.2314674735249622
+      ]
+    },
+    "hit_rate_by_target_rank": {
+      "lexical isolation": [
+        0.2422360248447205,
+        0.25,
+        0.3092105263157895,
+        0.20833333333333334
+      ],
+      "written length": [
+        0.23353293413173654,
+        0.192090395480226,
+        0.2251655629139073,
+        0.2891566265060241
+      ],
+      "significant digits": [
+        0.20454545454545456,
+        0.23255813953488372,
+        0.1951219512195122,
+        0.18791946308724833
+      ],
+      "length, later ties": [
+        0.34177215189873417,
+        0.27702702702702703,
+        0.26595744680851063,
+        0.20958083832335328
+      ]
+    },
+    "calibrated": true,
+    "n_value_repaired_only": 0,
+    "calibration_worst_rank_share": [
+      {
+        "n_items_fitted": 396,
+        "n_isolation_surveyed": 396,
+        "mean_frontier_size": 12.303030303030303,
+        "mean_placeable_value_ranks": 3.745,
+        "mean_isolation_reach": 2.26010101010101,
+        "widest_attainable_rank_share": {
+          "written length": 0.28282828282828354,
+          "significant digits": 0.25000000000114786,
+          "length, later ties": 0.32323232323232404,
+          "lexical isolation": 0.2500000000000001,
+          "sorted value": 0.25000000000000006
+        }
+      }
+    ]
+  },
+  "infeasible_examples": [],
+  "repaired_orderings": [
+    "sorted value",
+    "lexical isolation",
+    "written length",
+    "significant digits"
+  ],
+  "repair": "the key's rank under sorted value and under lexical isolation, written length, significant digits all redrawn uniformly; keyed answers unchanged; distractor sign, spread and written style preserved"
+}

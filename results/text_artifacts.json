@@ -1,0 +1,213 @@
+{
+  "chance": 0.25,
+  "rules_in_family": [
+    "contains_a_digit",
+    "least_like_other_options",
+    "longest_option",
+    "most_like_other_options",
+    "most_qualified",
+    "most_tokens",
+    "shortest_option",
+    "stem_overlap_count",
+    "stem_overlap_fraction"
+  ],
+  "bootstrap_reps": 10000,
+  "subsets": {
+    "non_numeric": {
+      "n_items": 100,
+      "n_clusters": 34,
+      "in_sample_best": [
+        "longest_option",
+        0.34
+      ],
+      "in_sample_all": {
+        "longest_option": 0.34,
+        "shortest_option": 0.25,
+        "most_tokens": 0.31,
+        "stem_overlap_fraction": 0.22,
+        "stem_overlap_count": 0.22,
+        "least_like_other_options": 0.29,
+        "most_like_other_options": 0.26,
+        "contains_a_digit": 0.28,
+        "most_qualified": 0.28
+      },
+      "cross_validated": {
+        "accuracy": 0.34,
+        "n_scored": 100,
+        "folds": 34,
+        "ci95": [
+          0.24242424242424243,
+          0.45544554455445546
+        ],
+        "rules_in_family": 9,
+        "rule_selected_per_fold": {
+          "longest_option": 34
+        },
+        "above_chance": false
+      }
+    },
+    "numeric": {
+      "n_items": 105,
+      "n_clusters": 46,
+      "in_sample_best": [
+        "least_like_other_options",
+        0.20952380952380953
+      ],
+      "in_sample_all": {
+        "longest_option": 0.10476190476190476,
+        "shortest_option": 0.12380952380952381,
+        "most_tokens": 0.10476190476190476,
+        "stem_overlap_fraction": 0.14285714285714285,
+        "stem_overlap_count": 0.14285714285714285,
+        "least_like_other_options": 0.20952380952380953,
+        "most_like_other_options": 0.1619047619047619,
+        "contains_a_digit": 0.10476190476190476,
+        "most_qualified": 0.10476190476190476
+      },
+      "cross_validated": {
+        "accuracy": 0.20952380952380953,
+        "n_scored": 105,
+        "folds": 46,
+        "ci95": [
+          0.13793103448275862,
+          0.2871287128712871
+        ],
+        "rules_in_family": 9,
+        "rule_selected_per_fold": {
+          "least_like_other_options": 46
+        },
+        "above_chance": false
+      }
+    },
+    "all": {
+      "n_items": 205,
+      "n_clusters": 59,
+      "in_sample_best": [
+        "least_like_other_options",
+        0.24878048780487805
+      ],
+      "in_sample_all": {
+        "longest_option": 0.21951219512195122,
+        "shortest_option": 0.18536585365853658,
+        "most_tokens": 0.2048780487804878,
+        "stem_overlap_fraction": 0.18048780487804877,
+        "stem_overlap_count": 0.18048780487804877,
+        "least_like_other_options": 0.24878048780487805,
+        "most_like_other_options": 0.2097560975609756,
+        "contains_a_digit": 0.1902439024390244,
+        "most_qualified": 0.1902439024390244
+      },
+      "cross_validated": {
+        "accuracy": 0.24878048780487805,
+        "n_scored": 205,
+        "folds": 59,
+        "ci95": [
+          0.18877551020408162,
+          0.3128834355828221
+        ],
+        "rules_in_family": 9,
+        "rule_selected_per_fold": {
+          "least_like_other_options": 59
+        },
+        "above_chance": false
+      }
+    }
+  },
+  "rank_proxy_check": {
+    "note": "share of items on which each surface rule selects the largest-valued option; the key is largest on only a small fraction of items, so a rule concentrated here is a rank proxy rather than a separate channel",
+    "per_rule": {
+      "longest_option": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.05714285714285714,
+          "1": 0.09523809523809523,
+          "2": 0.009523809523809525,
+          "3": 0.8380952380952381
+        },
+        "selects_largest_value": 0.8380952380952381
+      },
+      "shortest_option": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.20952380952380953,
+          "1": 0.10476190476190476,
+          "2": 0.0380952380952381,
+          "3": 0.6476190476190476
+        },
+        "selects_largest_value": 0.6476190476190476
+      },
+      "most_tokens": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.10476190476190476,
+          "1": 0.09523809523809523,
+          "2": 0.0761904761904762,
+          "3": 0.7238095238095238
+        },
+        "selects_largest_value": 0.7238095238095238
+      },
+      "stem_overlap_fraction": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.17142857142857143,
+          "1": 0.10476190476190476,
+          "2": 0.11428571428571428,
+          "3": 0.6095238095238096
+        },
+        "selects_largest_value": 0.6095238095238096
+      },
+      "stem_overlap_count": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.17142857142857143,
+          "1": 0.10476190476190476,
+          "2": 0.11428571428571428,
+          "3": 0.6095238095238096
+        },
+        "selects_largest_value": 0.6095238095238096
+      },
+      "least_like_other_options": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.22857142857142856,
+          "1": 0.12380952380952381,
+          "2": 0.21904761904761905,
+          "3": 0.42857142857142855
+        },
+        "selects_largest_value": 0.42857142857142855
+      },
+      "most_like_other_options": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.14285714285714285,
+          "1": 0.17142857142857143,
+          "2": 0.2,
+          "3": 0.4857142857142857
+        },
+        "selects_largest_value": 0.4857142857142857
+      },
+      "contains_a_digit": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.11428571428571428,
+          "1": 0.10476190476190476,
+          "2": 0.06666666666666667,
+          "3": 0.7142857142857143
+        },
+        "selects_largest_value": 0.7142857142857143
+      },
+      "most_qualified": {
+        "n_scored": 105,
+        "selects_value_rank": {
+          "0": 0.11428571428571428,
+          "1": 0.09523809523809523,
+          "2": 0.06666666666666667,
+          "3": 0.7238095238095238
+        },
+        "selects_largest_value": 0.7238095238095238
+      }
+    },
+    "min_share_selecting_largest": 0.42857142857142855,
+    "max_share_selecting_largest": 0.8380952380952381
+  }
+}

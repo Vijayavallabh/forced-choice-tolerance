@@ -1,0 +1,32 @@
+{
+  "v1_0": {
+    "source": "data/external/zero_shot_v10/bixbench_llm_baseline_refusal_False_mcq_gpt-4o_1.0.csv",
+    "n_items": 159,
+    "key_by_rank": [
+      22.641509433962263,
+      30.18867924528302,
+      30.81761006289308,
+      16.352201257861637
+    ],
+    "max_rank_share": 30.81761006289308,
+    "rank_ceiling_points": 5.817610062893081,
+    "skipped": {
+      "not distinct numbers": 137
+    }
+  },
+  "v1_5": {
+    "source": "build/bixbench_v15.jsonl",
+    "n_items": 105,
+    "key_by_rank": [
+      12.380952380952381,
+      51.42857142857143,
+      29.523809523809526,
+      6.666666666666667
+    ],
+    "max_rank_share": 51.42857142857143,
+    "rank_ceiling_points": 26.42857142857143
+  },
+  "shared_option_sets": 39,
+  "shared_agreeing_on_key_rank": 37,
+  "note": "the releases carry largely different items; where an option set appears in both the key is almost always the same one, so the laws differ because the populations differ and not because a key moved"
+}

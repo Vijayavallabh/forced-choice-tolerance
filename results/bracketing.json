@@ -1,0 +1,2401 @@
+{
+  "share_bracketed": {
+    "released": 80.95238095238095,
+    "placebo": 80.95238095238095,
+    "repaired": 57.14285714285714
+  },
+  "runs": {
+    "qwen72b": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 15.588235294117647
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 13.529411764705882
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 13.333333333333334
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 25.555555555555554
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 10.810811,
+            "lo": 0.0,
+            "hi": 24.137931,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": -2.573529,
+            "lo": -9.426728,
+            "hi": 3.676651,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 18.235294117647058
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 25.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 23.52941176470588
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 22.5
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 40.0
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 24.324324,
+            "lo": 12.162162,
+            "hi": 36.764706,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 2.941176,
+            "lo": -3.521881,
+            "hi": 10.344828,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 8.529411764705882
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 7.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 11.176470588235295
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 7.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 11.25
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 17.77777777777778
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 13.513514,
+            "lo": 2.439024,
+            "hi": 30.769231,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 1.470588,
+            "lo": -3.947368,
+            "hi": 7.462687,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 17.058823529411764
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 15.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 17.647058823529413
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 24.166666666666668
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 27.77777777777778
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 13.513514,
+            "lo": 0.0,
+            "hi": 30.134539,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 6.617647,
+            "lo": -2.586207,
+            "hi": 15.909091,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    },
+    "llama70b": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 10.882352941176471
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 25.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 13.529411764705882
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 30.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 19.166666666666668
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 35.55555555555556
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 32.432432,
+            "lo": 14.945612,
+            "hi": 50.0,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 1.838235,
+            "lo": -3.289474,
+            "hi": 8.333333,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 24.705882352941178
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 32.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 28.823529411764703
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 32.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 32.5
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 40.0
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 20.27027,
+            "lo": 4.545455,
+            "hi": 36.25,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 3.676471,
+            "lo": -3.125744,
+            "hi": 10.135282,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 10.882352941176471
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 33.75
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 13.529411764705882
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 28.749999999999996
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 12.916666666666668
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 45.55555555555556
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 32.432432,
+            "lo": 14.893617,
+            "hi": 52.941176,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 0.367647,
+            "lo": -5.882353,
+            "hi": 7.258065,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 21.764705882352942
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 37.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 27.647058823529413
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 40.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 32.5
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 31.11111111111111
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 2.702703,
+            "lo": -10.526316,
+            "hi": 16.666667,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 9.558824,
+            "lo": 0.757576,
+            "hi": 18.939394,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    },
+    "gemma27b": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 7.941176470588235
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 21.25
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 10.0
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 21.25
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 10.833333333333334
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 31.11111111111111
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 21.621622,
+            "lo": 7.5,
+            "hi": 38.235294,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 2.205882,
+            "lo": -3.125593,
+            "hi": 8.606769,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 20.0
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 30.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 22.941176470588236
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 35.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 23.333333333333332
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 27.77777777777778
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 4.054054,
+            "lo": -5.0,
+            "hi": 15.0,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 2.941176,
+            "lo": -0.714286,
+            "hi": 6.818182,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 6.470588235294119
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 13.750000000000002
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 8.235294117647058
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 13.750000000000002
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 9.583333333333334
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 28.333333333333332
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 24.324324,
+            "lo": 7.317073,
+            "hi": 42.857143,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 1.838235,
+            "lo": -3.521194,
+            "hi": 8.225329,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 20.0
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 32.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 22.35294117647059
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 32.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 25.0
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 25.555555555555554
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 6.756757,
+            "lo": -5.0,
+            "hi": 20.620924,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 0.735294,
+            "lo": -5.333333,
+            "hi": 6.338028,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    },
+    "qwen72b-react": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 12.647058823529411
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 15.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 13.23529411764706
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 15.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 9.583333333333334
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 27.22222222222222
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 13.513514,
+            "lo": 0.0,
+            "hi": 33.333333,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": -1.102941,
+            "lo": -4.72973,
+            "hi": 1.171875,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 15.294117647058824
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 20.0
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 17.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 14.166666666666666
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 38.88888888888889
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 20.27027,
+            "lo": 4.614879,
+            "hi": 35.365854,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 2.205882,
+            "lo": -1.923077,
+            "hi": 6.25,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 4.117647058823529
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 22.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 5.88235294117647
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 22.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 8.333333333333332
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 13.88888888888889
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 8.108108,
+            "lo": -4.878049,
+            "hi": 23.076923,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 0.367647,
+            "lo": -4.435916,
+            "hi": 5.208567,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 14.117647058823529
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 30.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 14.705882352941178
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 27.500000000000004
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 19.166666666666668
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 14.444444444444443
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 0.0,
+            "lo": -10.0,
+            "hi": 9.090909,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 0.0,
+            "lo": -7.333627,
+            "hi": 7.575758,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    },
+    "llama70b-react": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 9.705882352941178
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 12.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 10.0
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 12.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 9.166666666666666
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 32.22222222222222
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 21.621622,
+            "lo": 5.714286,
+            "hi": 38.888889,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 1.838235,
+            "lo": -3.985507,
+            "hi": 7.894737,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 28.235294117647058
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 35.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 34.11764705882353
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 37.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 32.5
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 35.55555555555556
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 2.702703,
+            "lo": -12.095677,
+            "hi": 18.421053,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 5.147059,
+            "lo": -3.676879,
+            "hi": 14.393939,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 8.235294117647058
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 12.352941176470589
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 20.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 10.416666666666668
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 22.22222222222222
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 16.216216,
+            "lo": 3.030303,
+            "hi": 30.0,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": -1.102941,
+            "lo": -8.461538,
+            "hi": 6.153846,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 21.176470588235293
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 22.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 23.52941176470588
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 17.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 25.833333333333336
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 27.77777777777778
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 9.459459,
+            "lo": 2.564103,
+            "hi": 18.75,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 2.941176,
+            "lo": -4.166667,
+            "hi": 10.135282,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    },
+    "glm45air-react": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 13.23529411764706
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 30.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 15.88235294117647
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 35.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 14.583333333333334
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 30.0
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 10.810811,
+            "lo": 2.197524,
+            "hi": 23.809524,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 1.470588,
+            "lo": -5.333333,
+            "hi": 8.955224,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 30.58823529411765
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 47.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 34.705882352941174
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 55.00000000000001
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 28.333333333333332
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 56.666666666666664
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 10.810811,
+            "lo": -3.191489,
+            "hi": 26.353162,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 4.411765,
+            "lo": -3.333333,
+            "hi": 12.931034,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 7.0588235294117645
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 16.25
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 5.88235294117647
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 16.25
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 10.416666666666668
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 22.22222222222222
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 18.918919,
+            "lo": 5.555556,
+            "hi": 39.285714,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 0.0,
+            "lo": -7.017544,
+            "hi": 6.349206,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 21.176470588235293
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 40.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 24.11764705882353
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 37.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 23.333333333333332
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 38.88888888888889
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 10.810811,
+            "lo": -2.470198,
+            "hi": 23.684211,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 2.205882,
+            "lo": -5.333333,
+            "hi": 10.0,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    },
+    "qwen3a3b-react": {
+      "data": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 17.058823529411764
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 25.0
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 18.235294117647058
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 25.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 18.75
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 27.22222222222222
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 13.513514,
+            "lo": 2.564103,
+            "hi": 28.165966,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": -1.470588,
+            "lo": -7.14441,
+            "hi": 4.348785,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 22.941176470588236
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 27.500000000000004
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 27.058823529411764
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 32.5
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 25.833333333333336
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 30.0
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 2.702703,
+            "lo": -4.054054,
+            "hi": 11.428571,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 4.411765,
+            "lo": 0.0,
+            "hi": 10.447761,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      },
+      "nodata": {
+        "nearest": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 8.235294117647058
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 3.75
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 8.235294117647058
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 3.75
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 7.916666666666666
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 15.555555555555555
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 8.108108,
+            "lo": -5.128205,
+            "hi": 23.333333,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 1.470588,
+            "lo": 0.0,
+            "hi": 5.797101,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        },
+        "reader": {
+          "released|bracketed": {
+            "n": 85,
+            "mean": 14.705882352941178
+          },
+          "released|edge": {
+            "n": 20,
+            "mean": 7.5
+          },
+          "placebo|bracketed": {
+            "n": 85,
+            "mean": 17.647058823529413
+          },
+          "placebo|edge": {
+            "n": 20,
+            "mean": 15.0
+          },
+          "repaired|bracketed": {
+            "n": 60,
+            "mean": 15.833333333333332
+          },
+          "repaired|edge": {
+            "n": 45,
+            "mean": 20.0
+          },
+          "repaired-released|moved to an edge": {
+            "mean": 5.405405,
+            "lo": -5.236362,
+            "hi": 16.666667,
+            "n_items": 37,
+            "n_clusters": 21
+          },
+          "repaired-released|not moved": {
+            "mean": 3.676471,
+            "lo": -2.000405,
+            "hi": 9.375,
+            "n_items": 68,
+            "n_clusters": 39
+          }
+        }
+      }
+    }
+  },
+  "credited_but_read_wrong": {
+    "qwen72b": {
+      "n_within_5pct": 15,
+      "nearest_wrong|released": 3,
+      "reader_mean|released": 86.66666666666667,
+      "nearest_wrong|placebo": 3,
+      "reader_mean|placebo": 90.0,
+      "nearest_wrong|repaired": 2,
+      "reader_mean|repaired": 90.0
+    },
+    "llama70b": {
+      "n_within_5pct": 5,
+      "nearest_wrong|released": 0,
+      "reader_mean|released": 100.0,
+      "nearest_wrong|placebo": 0,
+      "reader_mean|placebo": 100.0,
+      "nearest_wrong|repaired": 0,
+      "reader_mean|repaired": 100.0
+    },
+    "gemma27b": {
+      "n_within_5pct": 4,
+      "nearest_wrong|released": 0,
+      "reader_mean|released": 100.0,
+      "nearest_wrong|placebo": 0,
+      "reader_mean|placebo": 100.0,
+      "nearest_wrong|repaired": 0,
+      "reader_mean|repaired": 100.0
+    },
+    "qwen72b-react": {
+      "n_within_5pct": 10,
+      "nearest_wrong|released": 1,
+      "reader_mean|released": 90.0,
+      "nearest_wrong|placebo": 0,
+      "reader_mean|placebo": 100.0,
+      "nearest_wrong|repaired": 0,
+      "reader_mean|repaired": 100.0
+    },
+    "llama70b-react": {
+      "n_within_5pct": 6,
+      "nearest_wrong|released": 2,
+      "reader_mean|released": 91.66666666666666,
+      "nearest_wrong|placebo": 2,
+      "reader_mean|placebo": 91.66666666666666,
+      "nearest_wrong|repaired": 2,
+      "reader_mean|repaired": 91.66666666666666
+    },
+    "glm45air-react": {
+      "n_within_5pct": 17,
+      "nearest_wrong|released": 8,
+      "reader_mean|released": 94.11764705882352,
+      "nearest_wrong|placebo": 7,
+      "reader_mean|placebo": 97.05882352941177,
+      "nearest_wrong|repaired": 7,
+      "reader_mean|repaired": 100.0
+    },
+    "qwen3a3b-react": {
+      "n_within_5pct": 15,
+      "nearest_wrong|released": 3,
+      "reader_mean|released": 90.0,
+      "nearest_wrong|placebo": 2,
+      "reader_mean|placebo": 93.33333333333333,
+      "nearest_wrong|repaired": 1,
+      "reader_mean|repaired": 100.0
+    }
+  },
+  "agent_pairs": {
+    "qwen72b - llama70b": {
+      "within_5pct": {
+        "mean": 9.52381,
+        "lo": 0.925926,
+        "hi": 20.0,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": 2.857143,
+        "lo": -7.258737,
+        "hi": 13.970588,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": 0.0,
+        "lo": -10.648148,
+        "hi": 11.574074,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": -6.666667,
+        "lo": -16.981315,
+        "hi": 4.34837,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -7.619048,
+        "lo": -17.217086,
+        "hi": 2.62149,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": -1.428571,
+        "lo": -12.5,
+        "hi": 10.606061,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": -5.714286,
+        "lo": -16.541026,
+        "hi": 5.600069,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "qwen72b - gemma27b": {
+      "within_5pct": {
+        "mean": 10.47619,
+        "lo": 2.040816,
+        "hi": 21.428571,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": 5.952381,
+        "lo": -3.099206,
+        "hi": 16.581683,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": 0.47619,
+        "lo": -11.15391,
+        "hi": 13.366452,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": -2.380952,
+        "lo": -14.732143,
+        "hi": 10.714286,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -0.952381,
+        "lo": -10.261233,
+        "hi": 9.667083,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": 4.761905,
+        "lo": -6.451891,
+        "hi": 17.256959,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": 4.761905,
+        "lo": -7.692308,
+        "hi": 17.475728,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "llama70b - gemma27b": {
+      "within_5pct": {
+        "mean": 0.952381,
+        "lo": -3.158229,
+        "hi": 6.122449,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": 3.095238,
+        "lo": -3.636452,
+        "hi": 10.112493,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": 0.47619,
+        "lo": -4.6875,
+        "hi": 6.25,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": 4.285714,
+        "lo": -4.464552,
+        "hi": 13.29797,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": 6.666667,
+        "lo": -1.894104,
+        "hi": 15.816667,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": 6.190476,
+        "lo": 0.4424,
+        "hi": 12.5,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": 10.47619,
+        "lo": 0.409639,
+        "hi": 20.918803,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "qwen72b-react - llama70b-react": {
+      "within_5pct": {
+        "mean": 3.809524,
+        "lo": -2.12766,
+        "hi": 10.465116,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": 2.857143,
+        "lo": -4.867369,
+        "hi": 10.50028,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": -6.190476,
+        "lo": -14.352171,
+        "hi": 1.630435,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": -13.333333,
+        "lo": -20.001709,
+        "hi": -5.681584,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -1.904762,
+        "lo": -12.037368,
+        "hi": 8.418421,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": -8.095238,
+        "lo": -16.346154,
+        "hi": -0.490101,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": -9.047619,
+        "lo": -19.318611,
+        "hi": 0.0,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "qwen72b-react - glm45air-react": {
+      "within_5pct": {
+        "mean": -6.666667,
+        "lo": -18.181818,
+        "hi": 2.198291,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": -3.333333,
+        "lo": -9.946237,
+        "hi": 2.800075,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": -16.666667,
+        "lo": -25.862069,
+        "hi": -7.476528,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": -17.619048,
+        "lo": -30.526901,
+        "hi": -4.83871,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -4.047619,
+        "lo": -12.903226,
+        "hi": 4.207973,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": -16.666667,
+        "lo": -25.675924,
+        "hi": -7.271717,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": -15.714286,
+        "lo": -25.233734,
+        "hi": -7.065217,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "qwen72b-react - qwen3a3b-react": {
+      "within_5pct": {
+        "mean": -4.761905,
+        "lo": -12.643678,
+        "hi": 2.5,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": -5.47619,
+        "lo": -13.169643,
+        "hi": 1.750354,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": -3.333333,
+        "lo": -10.759821,
+        "hi": 3.271181,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": -7.619048,
+        "lo": -15.0,
+        "hi": -0.420168,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -5.238095,
+        "lo": -15.278047,
+        "hi": 4.657475,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": -2.857143,
+        "lo": -12.5,
+        "hi": 5.556513,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": -2.857143,
+        "lo": -11.616848,
+        "hi": 4.950495,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "llama70b-react - glm45air-react": {
+      "within_5pct": {
+        "mean": -10.47619,
+        "lo": -22.916667,
+        "hi": -0.909091,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": -6.190476,
+        "lo": -13.738739,
+        "hi": 1.190705,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": -10.47619,
+        "lo": -21.96302,
+        "hi": 1.25021,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": -4.285714,
+        "lo": -17.117117,
+        "hi": 8.427102,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -2.142857,
+        "lo": -12.864078,
+        "hi": 8.806872,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": -8.571429,
+        "lo": -20.0,
+        "hi": 4.455446,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": -6.666667,
+        "lo": -16.806723,
+        "hi": 4.91151,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "llama70b-react - qwen3a3b-react": {
+      "within_5pct": {
+        "mean": -8.571429,
+        "lo": -16.666667,
+        "hi": -1.709112,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": -8.333333,
+        "lo": -16.304348,
+        "hi": -0.242718,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": 2.857143,
+        "lo": -7.142857,
+        "hi": 12.376332,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": 5.714286,
+        "lo": -2.223232,
+        "hi": 12.946759,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -3.333333,
+        "lo": -14.0625,
+        "hi": 6.60393,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": 5.238095,
+        "lo": -6.061133,
+        "hi": 16.176751,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": 6.190476,
+        "lo": -4.938407,
+        "hi": 17.500427,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    },
+    "glm45air-react - qwen3a3b-react": {
+      "within_5pct": {
+        "mean": 1.904762,
+        "lo": -7.54717,
+        "hi": 12.612788,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|released": {
+        "mean": -2.142857,
+        "lo": -9.75,
+        "hi": 5.670337,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|released": {
+        "mean": 13.333333,
+        "lo": 3.478003,
+        "hi": 22.580955,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|released": {
+        "mean": 10.0,
+        "lo": -1.075503,
+        "hi": 20.588751,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "nearest|repaired": {
+        "mean": -1.190476,
+        "lo": -10.585639,
+        "hi": 7.407564,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "gemma27b|repaired": {
+        "mean": 13.809524,
+        "lo": 3.607511,
+        "hi": 23.305148,
+        "n_items": 105,
+        "n_clusters": 46
+      },
+      "own|repaired": {
+        "mean": 12.857143,
+        "lo": 3.190951,
+        "hi": 21.983103,
+        "n_items": 105,
+        "n_clusters": 46
+      }
+    }
+  },
+  "levels": {
+    "whole file": 0.96,
+    "moved to an edge": {
+      "level": 0.9774999999999963,
+      "coverage_of_nominal_95": 0.91425,
+      "n_items": 37,
+      "n_clusters": 21
+    },
+    "not moved": {
+      "level": 0.9699999999999964,
+      "coverage_of_nominal_95": 0.92775,
+      "n_items": 68,
+      "n_clusters": 39
+    },
+    "moved inward": {
+      "level": 0.9799999999999962,
+      "coverage_of_nominal_95": 0.91125,
+      "n_items": 12,
+      "n_clusters": 10
+    },
+    "rank class kept": {
+      "level": 0.9674999999999965,
+      "coverage_of_nominal_95": 0.9245,
+      "n_items": 56,
+      "n_clusters": 37
+    }
+  },
+  "rank_channel_floor_from_bracketing": 15.476190476190476,
+  "miss_distance": {
+    "qwen72b": {
+      "data": {
+        "gained": {
+          "within 5%": 1,
+          "5 to 25%": 0,
+          "25 to 100%": 2,
+          "over 100%": 1
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 4,
+        "n_moved": 37,
+        "n_with_a_number": 15
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 5,
+          "over 100%": 0
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 5,
+        "n_moved": 37,
+        "n_with_a_number": 18
+      }
+    },
+    "llama70b": {
+      "data": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 2,
+          "25 to 100%": 9,
+          "over 100%": 2
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 1,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 13,
+        "n_moved": 37,
+        "n_with_a_number": 29
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 2,
+          "25 to 100%": 8,
+          "over 100%": 2
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 12,
+        "n_moved": 37,
+        "n_with_a_number": 31
+      }
+    },
+    "gemma27b": {
+      "data": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 4,
+          "over 100%": 4
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 8,
+        "n_moved": 37,
+        "n_with_a_number": 27
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 7,
+          "over 100%": 2
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 9,
+        "n_moved": 37,
+        "n_with_a_number": 23
+      }
+    },
+    "qwen72b-react": {
+      "data": {
+        "gained": {
+          "within 5%": 1,
+          "5 to 25%": 0,
+          "25 to 100%": 2,
+          "over 100%": 2
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 5,
+        "n_moved": 37,
+        "n_with_a_number": 20
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 3,
+          "over 100%": 1
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 1,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 4,
+        "n_moved": 37,
+        "n_with_a_number": 18
+      }
+    },
+    "llama70b-react": {
+      "data": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 1,
+          "25 to 100%": 4,
+          "over 100%": 3
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 8,
+        "n_moved": 37,
+        "n_with_a_number": 18
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 1,
+          "25 to 100%": 3,
+          "over 100%": 2
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 5,
+        "n_moved": 37,
+        "n_with_a_number": 18
+      }
+    },
+    "glm45air-react": {
+      "data": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 1,
+          "25 to 100%": 2,
+          "over 100%": 1
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 3,
+        "n_moved": 37,
+        "n_with_a_number": 18
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 5,
+          "over 100%": 2
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 7,
+        "n_moved": 37,
+        "n_with_a_number": 16
+      }
+    },
+    "qwen3a3b-react": {
+      "data": {
+        "gained": {
+          "within 5%": 1,
+          "5 to 25%": 0,
+          "25 to 100%": 1,
+          "over 100%": 3
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 5,
+        "n_moved": 37,
+        "n_with_a_number": 19
+      },
+      "nodata": {
+        "gained": {
+          "within 5%": 0,
+          "5 to 25%": 0,
+          "25 to 100%": 3,
+          "over 100%": 1
+        },
+        "lost": {
+          "within 5%": 0,
+          "5 to 25%": 1,
+          "25 to 100%": 0,
+          "over 100%": 0
+        },
+        "gained_open_side": 4,
+        "n_moved": 37,
+        "n_with_a_number": 20
+      }
+    }
+  },
+  "miss_distance_total": {
+    "data": {
+      "gained": {
+        "within 5%": 3,
+        "5 to 25%": 4,
+        "25 to 100%": 24,
+        "over 100%": 16
+      },
+      "lost": {
+        "within 5%": 0,
+        "5 to 25%": 1,
+        "25 to 100%": 0,
+        "over 100%": 0
+      },
+      "gained_open_side": 46
+    },
+    "nodata": {
+      "gained": {
+        "within 5%": 0,
+        "5 to 25%": 3,
+        "25 to 100%": 34,
+        "over 100%": 10
+      },
+      "lost": {
+        "within 5%": 0,
+        "5 to 25%": 2,
+        "25 to 100%": 0,
+        "over 100%": 0
+      },
+      "gained_open_side": 46
+    }
+  },
+  "placebo_contrast": {
+    "qwen72b": {
+      "data": {
+        "moved to an edge": {
+          "mean": 13.513514,
+          "lo": 0.0,
+          "hi": 28.947368,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -33.333333,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": -5.882353,
+          "hi": 5.769231,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 10.135135,
+          "lo": 0.0,
+          "hi": 26.666667,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -33.333333,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 1.785714,
+          "lo": 0.0,
+          "hi": 6.0,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    },
+    "llama70b": {
+      "data": {
+        "moved to an edge": {
+          "mean": 27.027027,
+          "lo": 9.677419,
+          "hi": 45.454545,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -26.666667,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 1.785714,
+          "lo": 0.0,
+          "hi": 6.557377,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 29.72973,
+          "lo": 12.5,
+          "hi": 50.0,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -26.666667,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 1.785714,
+          "lo": -5.084746,
+          "hi": 8.474576,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    },
+    "gemma27b": {
+      "data": {
+        "moved to an edge": {
+          "mean": 18.243243,
+          "lo": 4.411765,
+          "hi": 34.558824,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 1.785714,
+          "lo": 0.0,
+          "hi": 6.557377,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 23.648649,
+          "lo": 6.172066,
+          "hi": 42.5,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": -5.263158,
+          "hi": 5.943088,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    },
+    "qwen72b-react": {
+      "data": {
+        "moved to an edge": {
+          "mean": 12.837838,
+          "lo": 0.0,
+          "hi": 26.315789,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -26.666667,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 7.432432,
+          "lo": -1.124021,
+          "hi": 20.238596,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -33.333333,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    },
+    "llama70b-react": {
+      "data": {
+        "moved to an edge": {
+          "mean": 21.621622,
+          "lo": 5.714286,
+          "hi": 38.888889,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -8.333333,
+          "lo": -33.333333,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 3.571429,
+          "lo": 0.0,
+          "hi": 9.52381,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 10.135135,
+          "lo": -0.909764,
+          "hi": 24.2747,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -16.666667,
+          "lo": -50.0,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": -5.882353,
+          "hi": 5.769231,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    },
+    "glm45air-react": {
+      "data": {
+        "moved to an edge": {
+          "mean": 10.135135,
+          "lo": 0.0,
+          "hi": 23.026316,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -16.666667,
+          "lo": -41.666667,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 16.216216,
+          "lo": 4.347826,
+          "hi": 36.666667,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 3.571429,
+          "lo": 0.0,
+          "hi": 9.375,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    },
+    "qwen3a3b-react": {
+      "data": {
+        "moved to an edge": {
+          "mean": 13.513514,
+          "lo": 2.564103,
+          "hi": 28.165966,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": -16.666667,
+          "lo": -50.0,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      },
+      "nodata": {
+        "moved to an edge": {
+          "mean": 8.108108,
+          "lo": -5.128205,
+          "hi": 23.333333,
+          "n_items": 37,
+          "n_clusters": 21
+        },
+        "moved inward": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "n_items": 12,
+          "n_clusters": 10
+        },
+        "rank class kept": {
+          "mean": 1.785714,
+          "lo": 0.0,
+          "hi": 6.557377,
+          "n_items": 56,
+          "n_clusters": 37
+        }
+      }
+    }
+  },
+  "proximity": {
+    "released": {
+      "median": 0.1418975650713686,
+      "quartiles": [
+        0.0948905109489051,
+        0.25
+      ]
+    },
+    "placebo": {
+      "median": 0.18518518518518517,
+      "quartiles": [
+        0.12,
+        0.3313644418192558
+      ]
+    },
+    "repaired": {
+      "median": 0.1875,
+      "quartiles": [
+        0.12389430745660769,
+        0.3104238258877434
+      ]
+    }
+  },
+  "format_rule": {
+    "released": 25.0,
+    "placebo": 31.666666666666664,
+    "repaired": 31.9047619047619
+  },
+  "format_rule_over_chance": {
+    "released": {
+      "mean": -0.0,
+      "lo": -5.185223,
+      "hi": 4.957118,
+      "n_items": 105,
+      "n_clusters": 46
+    },
+    "placebo": {
+      "mean": 6.666667,
+      "lo": -0.268817,
+      "hi": 13.754045,
+      "n_items": 105,
+      "n_clusters": 46
+    },
+    "repaired": {
+      "mean": 6.904762,
+      "lo": -1.171988,
+      "hi": 14.89899,
+      "n_items": 105,
+      "n_clusters": 46
+    }
+  },
+  "non_positive_keys": 9
+}

@@ -1,0 +1,72 @@
+{
+ "meta-llama/Meta-Llama-3.1-8B-Instruct|bixbench_v10|withheld|argmax|bixprompt": {
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "items": "build/bixbench_v10.jsonl",
+  "condition": "withheld",
+  "transformers": "4.44.2",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/llama8b_bixv10_bixprompt_argmax.jsonl",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 296,
+  "file": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 29.954954954954953,
+   "chance": 25.0,
+   "margin_over_chance": 4.954954954954955,
+   "margin_ci95": [
+    1.1816551708334289,
+    8.674931760714271
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 28.985507246376812,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 29.954954954954953
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 23.536036036036037,
+   "chance": 25.0,
+   "margin_over_chance": -1.4639639639639639,
+   "margin_ci95": [
+    -4.497047413263928,
+    1.7135602780035082
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 37.5,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 23.536036036036037
+    }
+   }
+  },
+  "margin_over_clean": 6.418918918918919,
+  "margin_over_clean_ci95": [
+   1.616496188426193,
+   11.186703839624911
+  ]
+ }
+}

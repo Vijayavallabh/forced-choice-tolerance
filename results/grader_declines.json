@@ -1,0 +1,80 @@
+{
+ "reader": "gpt-4o",
+ "sample": "chunks 0-4 of 20",
+ "no_pick": {
+  "gpt-4o 2024-11-20": {
+   "correct": {
+    "no_pick": 2.1341463414634148,
+    "n_reads": 328
+   },
+   "miss": {
+    "no_pick": 55.96118299445472,
+    "n_reads": 2164
+   },
+   "miss, nearest the key": {
+    "no_pick": 66.3265306122449,
+    "n_reads": 294
+   },
+   "miss, nearest another option": {
+    "no_pick": 57.082630691399665,
+    "n_reads": 1186
+   },
+   "miss, no number": {
+    "no_pick": 43.523316062176164,
+    "n_reads": 386
+   }
+  },
+  "published, gpt-4o": {
+   "correct": {
+    "no_pick": 0.0,
+    "n_reads": 66
+   },
+   "miss": {
+    "no_pick": 24.399260628465804,
+    "n_reads": 541
+   },
+   "miss, nearest the key": {
+    "no_pick": 36.0655737704918,
+    "n_reads": 61
+   },
+   "miss, nearest another option": {
+    "no_pick": 31.782945736434108,
+    "n_reads": 258
+   },
+   "miss, no number": {
+    "no_pick": 11.320754716981131,
+    "n_reads": 159
+   }
+  },
+  "published, Claude 3.5 Sonnet": {
+   "correct": {
+    "no_pick": 0.0,
+    "n_reads": 98
+   },
+   "miss": {
+    "no_pick": 0.18484288354898337,
+    "n_reads": 541
+   },
+   "miss, nearest the key": {
+    "no_pick": 0.0,
+    "n_reads": 86
+   },
+   "miss, nearest another option": {
+    "no_pick": 0.29850746268656714,
+    "n_reads": 335
+   },
+   "miss, no number": {
+    "no_pick": 0.0,
+    "n_reads": 34
+   }
+  }
+ },
+ "replies": {
+  "n_replies": 13061,
+  "no_letter": 6342,
+  "empty or text": 91.2645853043204,
+  "a number": 8.703878902554399,
+  "no answer tag": 0.0315357931251971,
+  "says no option matches": 92.54178492589088
+ }
+}

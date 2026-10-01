@@ -1,0 +1,172 @@
+{
+  "reps": 4000,
+  "bootstrap": 2000,
+  "arms": [
+    {
+      "arm": "BixBench, 14B agent",
+      "dump": "build/dumps/qwen14b_withheld_aware.jsonl",
+      "k": 4,
+      "observed_clusters": 46,
+      "observed_rate": 0.3333333333333333,
+      "beta_concentration": 8.731075855277712,
+      "clean_rate": 0.2222222222222222,
+      "cells": [
+        {
+          "n_clusters": 46,
+          "as_observed": true,
+          "coverage_margin": 0.93425,
+          "coverage_difference": 0.94075,
+          "level_for_95_margin": 0.9674999999999965,
+          "level_for_95_difference": 0.9599999999999966,
+          "mean_width_margin": 14.170811490596462,
+          "mean_width_difference": 17.888615043288947
+        },
+        {
+          "n_clusters": 20,
+          "as_observed": false,
+          "coverage_margin": 0.92125,
+          "coverage_difference": 0.9305,
+          "level_for_95_margin": 0.9774999999999963,
+          "level_for_95_difference": 0.9699999999999964,
+          "mean_width_margin": 20.76321318013147,
+          "mean_width_difference": 26.44804693271838
+        },
+        {
+          "n_clusters": 30,
+          "as_observed": false,
+          "coverage_margin": 0.92875,
+          "coverage_difference": 0.9335,
+          "level_for_95_margin": 0.9674999999999965,
+          "level_for_95_difference": 0.9674999999999965,
+          "mean_width_margin": 17.27719646374445,
+          "mean_width_difference": 21.944408418187813
+        },
+        {
+          "n_clusters": 37,
+          "as_observed": false,
+          "coverage_margin": 0.93175,
+          "coverage_difference": 0.9345,
+          "level_for_95_margin": 0.9674999999999965,
+          "level_for_95_difference": 0.9624999999999966,
+          "mean_width_margin": 15.726666833285384,
+          "mean_width_difference": 19.896442722975557
+        },
+        {
+          "n_clusters": 46,
+          "as_observed": false,
+          "coverage_margin": 0.9335,
+          "coverage_difference": 0.93825,
+          "level_for_95_margin": 0.9649999999999965,
+          "level_for_95_difference": 0.9599999999999966,
+          "mean_width_margin": 14.191852513409012,
+          "mean_width_difference": 17.90001182956374
+        },
+        {
+          "n_clusters": 60,
+          "as_observed": false,
+          "coverage_margin": 0.9425,
+          "coverage_difference": 0.943,
+          "level_for_95_margin": 0.9574999999999967,
+          "level_for_95_difference": 0.9574999999999967,
+          "mean_width_margin": 12.502726302104337,
+          "mean_width_difference": 15.76128678703755
+        },
+        {
+          "n_clusters": 120,
+          "as_observed": false,
+          "coverage_margin": 0.93825,
+          "coverage_difference": 0.9475,
+          "level_for_95_margin": 0.9599999999999966,
+          "level_for_95_difference": 0.9524999999999968,
+          "mean_width_margin": 8.958528839264549,
+          "mean_width_difference": 11.246049593715453
+        }
+      ],
+      "effective_clusters_file": 29.55764075067024,
+      "effective_clusters_clean": 44.27710843373494
+    },
+    {
+      "arm": "MMLU-Pro, 32B agent",
+      "dump": "build/dumps/qwen32b_mmlupro.jsonl",
+      "k": 10,
+      "observed_clusters": 60,
+      "observed_rate": 0.1746987951807229,
+      "beta_concentration": 5.136113634656026,
+      "clean_rate": 0.11991199119911991,
+      "cells": [
+        {
+          "n_clusters": 60,
+          "as_observed": true,
+          "coverage_margin": 0.89425,
+          "coverage_difference": 0.903,
+          "level_for_95_margin": 0.9849999999999961,
+          "level_for_95_difference": 0.9824999999999962,
+          "mean_width_margin": 14.859512845260927,
+          "mean_width_difference": 15.353910594278391
+        },
+        {
+          "n_clusters": 20,
+          "as_observed": false,
+          "coverage_margin": 0.872,
+          "coverage_difference": 0.88575,
+          "level_for_95_margin": 0.9924999999999959,
+          "level_for_95_difference": 0.987499999999996,
+          "mean_width_margin": 19.8737479958424,
+          "mean_width_difference": 21.086342159024326
+        },
+        {
+          "n_clusters": 30,
+          "as_observed": false,
+          "coverage_margin": 0.89,
+          "coverage_difference": 0.894,
+          "level_for_95_margin": 0.989999999999996,
+          "level_for_95_difference": 0.987499999999996,
+          "mean_width_margin": 18.06059131383455,
+          "mean_width_difference": 18.906279292371085
+        },
+        {
+          "n_clusters": 37,
+          "as_observed": false,
+          "coverage_margin": 0.89225,
+          "coverage_difference": 0.89475,
+          "level_for_95_margin": 0.987499999999996,
+          "level_for_95_difference": 0.9849999999999961,
+          "mean_width_margin": 17.114047808082354,
+          "mean_width_difference": 17.83339105198312
+        },
+        {
+          "n_clusters": 46,
+          "as_observed": false,
+          "coverage_margin": 0.8875,
+          "coverage_difference": 0.88925,
+          "level_for_95_margin": 0.989999999999996,
+          "level_for_95_difference": 0.987499999999996,
+          "mean_width_margin": 16.011076142882878,
+          "mean_width_difference": 16.610422367002172
+        },
+        {
+          "n_clusters": 60,
+          "as_observed": false,
+          "coverage_margin": 0.90125,
+          "coverage_difference": 0.90375,
+          "level_for_95_margin": 0.9849999999999961,
+          "level_for_95_difference": 0.9824999999999962,
+          "mean_width_margin": 14.611526424305591,
+          "mean_width_difference": 15.111749997985015
+        },
+        {
+          "n_clusters": 120,
+          "as_observed": false,
+          "coverage_margin": 0.91375,
+          "coverage_difference": 0.91675,
+          "level_for_95_margin": 0.9774999999999963,
+          "level_for_95_difference": 0.9774999999999963,
+          "mean_width_margin": 11.52866754578609,
+          "mean_width_difference": 11.829668153058137
+        }
+      ],
+      "effective_clusters_file": 10.695969614925641,
+      "effective_clusters_clean": 59.940587595212186
+    }
+  ]
+}

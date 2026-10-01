@@ -1,0 +1,8 @@
+{
+  "n_rows": 14033,
+  "n_matched": 12836,
+  "n_ambiguous": 1197,
+  "n_missing": 0,
+  "source": "https://huggingface.co/api/datasets/cais/mmlu/parquet/all/test",
+  "n_upstream": 14042
+}

@@ -1,0 +1,253 @@
+{
+ "reader": "gpt-4o",
+ "mode": "forced",
+ "seed": 20260925,
+ "not_registered": true,
+ "D1": {
+  "n_runs": 2233,
+  "n_items": {
+   "moved to an edge": 41,
+   "moved inward": 32,
+   "kept": 86,
+   "all": 159
+  },
+  "signflip": {
+   "gpt-4o|repaired-released|moved to an edge": {
+    "mean": 6.10179539295393,
+    "p": 0.010735,
+    "lo": 1.4146825437481976,
+    "hi": 10.843997928225575,
+    "n_items": 41,
+    "n_clusters": 30,
+    "exact": false
+   },
+   "rule|repaired-released|moved to an edge": {
+    "mean": 19.82233594657375,
+    "p": 0.0,
+    "lo": 10.888027455119415,
+    "hi": 28.482246132420265,
+    "n_items": 41,
+    "n_clusters": 30,
+    "exact": false
+   },
+   "gpt-4o|repaired-placebo|moved to an edge": {
+    "mean": 5.913938492063492,
+    "p": 0.01408,
+    "lo": 1.1295056934394536,
+    "hi": 10.800595212254732,
+    "n_items": 40,
+    "n_clusters": 29,
+    "exact": false
+   },
+   "rule|repaired-placebo|moved to an edge": {
+    "mean": 18.57738095238095,
+    "p": 5e-06,
+    "lo": 9.523809586287593,
+    "hi": 27.393925406781598,
+    "n_items": 40,
+    "n_clusters": 29,
+    "exact": false
+   },
+   "gpt-4o|placebo-released|moved to an edge": {
+    "mean": 0.34040178571428564,
+    "p": 0.72255,
+    "lo": -1.524746386068208,
+    "hi": 2.244689533753054,
+    "n_items": 40,
+    "n_clusters": 29,
+    "exact": false
+   },
+   "rule|placebo-released|moved to an edge": {
+    "mean": 1.7405133928571423,
+    "p": 0.127865,
+    "lo": -0.31045747441904903,
+    "hi": 4.044263460806438,
+    "n_items": 40,
+    "n_clusters": 29,
+    "exact": false
+   }
+  },
+  "repaired-released|moved to an edge": {
+   "mean": 6.10179539295393,
+   "lo": 1.4535976827550312,
+   "hi": 11.327943634203333,
+   "level": 0.9724999999999964,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.92575,
+   "n_items": 41,
+   "n_clusters": 30
+  },
+  "repaired-released|moved inward": {
+   "mean": -0.7139756944444451,
+   "lo": -7.705597222222173,
+   "hi": 5.4227083333332216,
+   "level": 0.9699999999999964,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.92825,
+   "n_items": 32,
+   "n_clusters": 25
+  },
+  "repaired-released|kept": {
+   "mean": 3.102941176470588,
+   "lo": -0.5363109419709946,
+   "hi": 6.707444716599661,
+   "level": 0.9624999999999966,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.93575,
+   "n_items": 85,
+   "n_clusters": 41
+  },
+  "repaired-released|all": {
+   "mean": 3.1080784106891697,
+   "lo": 0.23082497154265721,
+   "hi": 5.951962686939664,
+   "level": 0.9624999999999966,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.937,
+   "n_items": 158,
+   "n_clusters": 47
+  },
+  "repaired-placebo|moved to an edge": {
+   "mean": 5.913938492063492,
+   "lo": 1.0399496104336352,
+   "hi": 11.182458298975998,
+   "level": 0.9724999999999964,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.92175,
+   "n_items": 40,
+   "n_clusters": 29
+  },
+  "repaired-placebo|moved inward": {
+   "mean": -7.526041666666666,
+   "lo": -17.6897241512342,
+   "hi": 0.0129503130302525,
+   "level": 0.9824999999999962,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.911,
+   "n_items": 32,
+   "n_clusters": 25
+  },
+  "repaired-placebo|kept": {
+   "mean": 1.4052287581699348,
+   "lo": -1.7452442014434526,
+   "hi": 4.368254118306643,
+   "level": 0.9674999999999965,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.9325,
+   "n_items": 85,
+   "n_clusters": 41
+  },
+  "repaired-placebo|all": {
+   "mean": 0.7335582853098777,
+   "lo": -2.429851119566498,
+   "hi": 3.909096504921373,
+   "level": 0.9674999999999965,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.93275,
+   "n_items": 157,
+   "n_clusters": 47
+  },
+  "placebo-released|moved to an edge": {
+   "mean": 0.34040178571428564,
+   "lo": -1.6027416087962598,
+   "hi": 2.4349285626629347,
+   "level": 0.9724999999999964,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.92275,
+   "n_items": 40,
+   "n_clusters": 29
+  },
+  "placebo-released|moved inward": {
+   "mean": 6.812065972222222,
+   "lo": 2.531720196759358,
+   "hi": 11.94547609508526,
+   "level": 0.9624999999999966,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.93425,
+   "n_items": 32,
+   "n_clusters": 25
+  },
+  "placebo-released|kept": {
+   "mean": 1.6977124183006538,
+   "lo": -0.43607092791092983,
+   "hi": 3.939549014857808,
+   "level": 0.9624999999999966,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.93725,
+   "n_items": 85,
+   "n_clusters": 41
+  },
+  "placebo-released|all": {
+   "mean": 2.394316803154383,
+   "lo": 0.8802888799552923,
+   "hi": 3.990863898308316,
+   "level": 0.9599999999999966,
+   "level_capped": false,
+   "coverage_of_nominal_95": 0.942,
+   "n_items": 157,
+   "n_clusters": 47
+  },
+  "read|released": 23.958799820868787,
+  "read|placebo": 24.637681159420293,
+  "read|repaired": 27.586206896551722,
+  "agreement_sample": "chunks 0-4 of 20",
+  "agreement_with_published_reader": {
+   "4o_open_image": {
+    "n": 289,
+    "published_right": 32.17993079584775,
+    "reader_right": 22.318339100346023,
+    "agree": 79.58477508650519,
+    "kappa": 0.4571301219395715
+   },
+   "4o_open_no_image": {
+    "n": 337,
+    "published_right": 32.34421364985163,
+    "reader_right": 21.958456973293767,
+    "agree": 80.71216617210682,
+    "kappa": 0.4952416065626656
+   },
+   "claude_open_image": {
+    "n": 281,
+    "published_right": 39.50177935943061,
+    "reader_right": 25.444839857651246,
+    "agree": 77.58007117437722,
+    "kappa": 0.48679518770836333
+   },
+   "claude_open_no_image": {
+    "n": 363,
+    "published_right": 33.33333333333333,
+    "reader_right": 23.69146005509642,
+    "agree": 80.16528925619835,
+    "kappa": 0.4953271028037382
+   },
+   "pooled": {
+    "n": 1270,
+    "published_right": 34.17322834645669,
+    "reader_right": 23.30708661417323,
+    "agree": 79.60629921259843,
+    "kappa": 0.486064541531385
+   }
+  },
+  "runs_by_group": {
+   "kept": 654,
+   "moved to an edge": 1316,
+   "moved inward": 263
+  },
+  "pick_is_nearest": {
+   "all": {
+    "share": 72.78250303766707,
+    "n_reads": 823
+   },
+   "miss": {
+    "share": 59.074074074074076,
+    "n_reads": 540
+   }
+  },
+  "groups_read": [
+   "kept",
+   "moved inward",
+   "moved to an edge"
+  ]
+ },
+ "no_pick": 48.431312823636915
+}

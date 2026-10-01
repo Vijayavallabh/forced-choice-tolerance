@@ -1,0 +1,153 @@
+{
+  "url": "https://api.datacite.org/dois/10.17912/micropub.biology.001326",
+  "retrieved_at": "2026-09-16T15:26:21.511504+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.17912/micropub.biology.001326",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.17912/micropub.biology.001326",
+        "prefix": "10.17912",
+        "suffix": "micropub.biology.001326",
+        "identifiers": [],
+        "alternateIdentifiers": [],
+        "creators": [
+          {
+            "givenName": "Farah",
+            "familyName": "Abdul-Rahman",
+            "affiliation": [],
+            "nameIdentifiers": []
+          },
+          {
+            "givenName": "Joao",
+            "familyName": "Xavier",
+            "affiliation": [],
+            "nameIdentifiers": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "Reciprocal signaling between quorum sensing mutants: A model for division of labor."
+          }
+        ],
+        "publisher": "microPublication Biology",
+        "container": {
+          "type": "Series",
+          "title": "microPublication Biology",
+          "volume": 2024
+        },
+        "publicationYear": 2024,
+        "subjects": [],
+        "contributors": [],
+        "dates": [],
+        "language": null,
+        "types": {
+          "ris": "JOUR",
+          "bibtex": "article",
+          "citeproc": "article-journal",
+          "schemaOrg": "ScholarlyArticle",
+          "resourceTypeGeneral": "JournalArticle"
+        },
+        "relatedIdentifiers": [],
+        "relatedItems": [
+          {
+            "titles": [
+              {
+                "title": "microPublication Biology"
+              }
+            ],
+            "volume": 2024,
+            "publisher": "Caltech Library",
+            "relationType": "IsPublishedIn",
+            "publicationYear": 2024,
+            "relatedItemType": "Journal"
+          }
+        ],
+        "sizes": [],
+        "formats": [],
+        "version": null,
+        "rightsList": [],
+        "descriptions": [
+          {
+            "description": "<p>Division of labor, the specialization of subsets of individuals in complementary tasks, increases population efficiency and fitness. We explored swarming motility in <i>Pseudomonas aeruginosa</i> quorum sensing mutants as a model for studying the division of labor. Deletion of the signal synthesis genes <i>lasI</i> or <i>rhlI</i> disrupts swarming, but co-culturing <i>\u0394lasI</i> and <i>\u0394rhlI</i> restores it in a density-dependent manner. This indicates a successful division of labor where <i>\u0394rhlI</i> produces the signal necessary for the <i>\u0394lasI </i>mutant, and the <i>\u0394lasI</i> reciprocates. We used RNA sequencing to identify additional genes potentially involved in division of labor. Our findings underscore <i>P. aeruginosa</i> swarming as a tractable bacterial model for the division of labor among cells\u2014a hallmark of differentiated multicellularity.</p>",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuMTc5MTIvTUlDUk9QVUIuQklPTE9HWS4wMDEzMjY8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5BYmR1bC1SYWhtYW4sIEZhcmFoPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5GYXJhaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5BYmR1bC1SYWhtYW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlhhdmllciwgSm9hbzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Sm9hbzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5YYXZpZXI8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlJlY2lwcm9jYWwgc2lnbmFsaW5nIGJldHdlZW4gcXVvcnVtIHNlbnNpbmcgbXV0YW50czogQSBtb2RlbCBmb3IgZGl2aXNpb24gb2YgbGFib3IuPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPm1pY3JvUHVibGljYXRpb24gQmlvbG9neTwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNDwvcHVibGljYXRpb25ZZWFyPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iSm91cm5hbEFydGljbGUiLz4KICA8cmVsYXRlZEl0ZW1zPgogICAgPHJlbGF0ZWRJdGVtIHJlbGF0ZWRJdGVtVHlwZT0iSm91cm5hbCIgcmVsYXRpb25UeXBlPSJJc1B1Ymxpc2hlZEluIj4KICAgICAgPHRpdGxlcz4KICAgICAgICA8dGl0bGU+bWljcm9QdWJsaWNhdGlvbiBCaW9sb2d5PC90aXRsZT4KICAgICAgPC90aXRsZXM+CiAgICAgIDxwdWJsaWNhdGlvblllYXI+MjAyNDwvcHVibGljYXRpb25ZZWFyPgogICAgICA8dm9sdW1lPjIwMjQ8L3ZvbHVtZT4KICAgICAgPHB1Ymxpc2hlcj5DYWx0ZWNoIExpYnJhcnk8L3B1Ymxpc2hlcj4KICAgIDwvcmVsYXRlZEl0ZW0+CiAgPC9yZWxhdGVkSXRlbXM+CiAgPHNpemVzLz4KICA8Zm9ybWF0cy8+CiAgPHZlcnNpb24vPgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+Jmx0O3AmZ3Q7RGl2aXNpb24gb2YgbGFib3IsIHRoZSBzcGVjaWFsaXphdGlvbiBvZiBzdWJzZXRzIG9mIGluZGl2aWR1YWxzIGluIGNvbXBsZW1lbnRhcnkgdGFza3MsIGluY3JlYXNlcyBwb3B1bGF0aW9uIGVmZmljaWVuY3kgYW5kIGZpdG5lc3MuIFdlIGV4cGxvcmVkIHN3YXJtaW5nIG1vdGlsaXR5IGluICZsdDtpJmd0O1BzZXVkb21vbmFzIGFlcnVnaW5vc2EmbHQ7L2kmZ3Q7IHF1b3J1bSBzZW5zaW5nIG11dGFudHMgYXMgYSBtb2RlbCBmb3Igc3R1ZHlpbmcgdGhlIGRpdmlzaW9uIG9mIGxhYm9yLiBEZWxldGlvbiBvZiB0aGUgc2lnbmFsIHN5bnRoZXNpcyBnZW5lcyAmbHQ7aSZndDtsYXNJJmx0Oy9pJmd0OyBvciAmbHQ7aSZndDtyaGxJJmx0Oy9pJmd0OyBkaXNydXB0cyBzd2FybWluZywgYnV0IGNvLWN1bHR1cmluZyAmbHQ7aSZndDvOlGxhc0kmbHQ7L2kmZ3Q7IGFuZCAmbHQ7aSZndDvOlHJobEkmbHQ7L2kmZ3Q7IHJlc3RvcmVzIGl0IGluIGEgZGVuc2l0eS1kZXBlbmRlbnQgbWFubmVyLiBUaGlzIGluZGljYXRlcyBhIHN1Y2Nlc3NmdWwgZGl2aXNpb24gb2YgbGFib3Igd2hlcmUgJmx0O2kmZ3Q7zpRyaGxJJmx0Oy9pJmd0OyBwcm9kdWNlcyB0aGUgc2lnbmFsIG5lY2Vzc2FyeSBmb3IgdGhlICZsdDtpJmd0O86UbGFzSSAmbHQ7L2kmZ3Q7bXV0YW50LCBhbmQgdGhlICZsdDtpJmd0O86UbGFzSSZsdDsvaSZndDsgcmVjaXByb2NhdGVzLiBXZSB1c2VkIFJOQSBzZXF1ZW5jaW5nIHRvIGlkZW50aWZ5IGFkZGl0aW9uYWwgZ2VuZXMgcG90ZW50aWFsbHkgaW52b2x2ZWQgaW4gZGl2aXNpb24gb2YgbGFib3IuIE91ciBmaW5kaW5ncyB1bmRlcnNjb3JlICZsdDtpJmd0O1AuIGFlcnVnaW5vc2EmbHQ7L2kmZ3Q7IHN3YXJtaW5nIGFzIGEgdHJhY3RhYmxlIGJhY3RlcmlhbCBtb2RlbCBmb3IgdGhlIGRpdmlzaW9uIG9mIGxhYm9yIGFtb25nIGNlbGxz4oCUYSBoYWxsbWFyayBvZiBkaWZmZXJlbnRpYXRlZCBtdWx0aWNlbGx1bGFyaXR5LiZsdDsvcCZndDs8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo=",
+        "url": "https://www.micropublication.org/journals/biology/micropub-biology-001326",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "referenceCount": 0,
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "partCount": 2,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2024-08-16T23:17:14.000Z",
+        "registered": "2024-10-08T01:31:32.000Z",
+        "published": "2024",
+        "updated": "2024-10-08T01:31:33.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "caltech.micropub",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "caltech",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.17912/micropub.biology.001326",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": []
+        },
+        "parts": {
+          "data": [
+            {
+              "id": "10.22002/jq7dr-0yc95",
+              "type": "dois"
+            },
+            {
+              "id": "10.22002/5cz4w-8az98",
+              "type": "dois"
+            }
+          ]
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "n_source_items": 661,
+  "n_kept": 633,
+  "n_dropped": 28,
+  "seed": 20260919,
+  "arms": {
+    "generated": "build/mmlu_aug_generated.jsonl",
+    "borrowed": "build/mmlu_aug_borrowed.jsonl"
+  },
+  "design": "same key, same three human distractors, augmented to ten options; the six added options are model-written in one arm and human-written in the other"
+}

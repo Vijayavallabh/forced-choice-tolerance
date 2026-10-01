@@ -1,0 +1,157 @@
+{
+  "reps": 4000,
+  "panels": {
+    "BixBench v1.5": {
+      "n_options": 4,
+      "models": [
+        {
+          "model": "Qwen/Qwen2.5-32B-Instruct",
+          "rank_effect": -7.76190476190476,
+          "ci95": [
+            -11.083630952380952,
+            -4.090909090909091
+          ],
+          "n_clusters": 46,
+          "clears": true
+        },
+        {
+          "model": "Qwen/Qwen2.5-14B-Instruct",
+          "rank_effect": -3.0952380952380953,
+          "ci95": [
+            -5.0935024477080555,
+            -0.6593045112781952
+          ],
+          "n_clusters": 46,
+          "clears": true
+        },
+        {
+          "model": "microsoft/Phi-3.5-mini-instruct",
+          "rank_effect": -2.7142857142857144,
+          "ci95": [
+            -5.367008691453403,
+            0.059803921568630784
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "Qwen/Qwen2.5-1.5B-Instruct",
+          "rank_effect": -2.571428571428571,
+          "ci95": [
+            -4.602314918991898,
+            -0.31250000000000006
+          ],
+          "n_clusters": 46,
+          "clears": true
+        },
+        {
+          "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank_effect": -1.9047619047619047,
+          "ci95": [
+            -4.755398781134074,
+            0.9677419354838704
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "Qwen/Qwen2.5-7B-Instruct",
+          "rank_effect": -1.0952380952380953,
+          "ci95": [
+            -3.203914612895196,
+            0.8407183028699031
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "meta-llama/Llama-3.2-1B-Instruct",
+          "rank_effect": -0.38095238095238104,
+          "ci95": [
+            -1.7896806623299828,
+            1.0784592245989302
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "Groq/Llama-3-Groq-8B-Tool-Use",
+          "rank_effect": -0.3333333333333338,
+          "ci95": [
+            -3.540112480357291,
+            3.055899339933995
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "allenai/OLMo-2-1124-7B-Instruct",
+          "rank_effect": -0.1904761904761901,
+          "ci95": [
+            -3.191599034876069,
+            3.130434782608696
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "meta-llama/Llama-3.2-3B-Instruct",
+          "rank_effect": 0.04761904761904742,
+          "ci95": [
+            -2.373799879987999,
+            2.612638206388207
+          ],
+          "n_clusters": 46,
+          "clears": false
+        },
+        {
+          "model": "google/gemma-3-4b-it",
+          "rank_effect": 1.4285714285714282,
+          "ci95": [
+            -0.9999999999999999,
+            3.972095369583689
+          ],
+          "n_clusters": 46,
+          "clears": false
+        }
+      ],
+      "n_clearing": 3
+    },
+    "MMLU-Pro": {
+      "n_options": 10,
+      "models": [
+        {
+          "model": "Qwen/Qwen2.5-32B-Instruct",
+          "rank_effect": -4.156769596199525,
+          "ci95": [
+            -6.127458471163526,
+            -1.663926802817005
+          ],
+          "n_clusters": 67,
+          "clears": true
+        },
+        {
+          "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank_effect": -1.4350752177355504,
+          "ci95": [
+            -3.7601578234831203,
+            1.4885496183206106
+          ],
+          "n_clusters": 67,
+          "clears": false
+        },
+        {
+          "model": "Qwen/Qwen2.5-7B-Instruct",
+          "rank_effect": 0.6037212984956453,
+          "ci95": [
+            -0.6404179998298644,
+            1.9857403027436142
+          ],
+          "n_clusters": 67,
+          "clears": false
+        }
+      ],
+      "n_clearing": 1
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{"ideal": "8.1%", "distractors": ["All genes become non-significant", "Downregulation", "12%"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "0.30", "distractors": ["4", "The number of significant miRNAs decreases to 35", "No significant change in either strain"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "3.4", "distractors": ["2.0", "1.7", "35% increase in odds of higher severity"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "2.1", "distractors": ["-27.5000", "0.29%", "Equal between Methylation and Expression"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "15 sites", "distractors": ["5.12%", "Variable expression with both up and downregulation", "4/17"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "Similar to typical fungi due to phylogenetic constraints", "distractors": ["No significant changes in expression", "SRR5566591", "29.744"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"}
+{"ideal": "0.28", "distractors": ["0.045", "0.8489", "10"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"}
+{"ideal": "33% higher in fungi", "distractors": ["Plasmacytoid dendritic cells", "0.813", "24.5% higher odds"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"}
+{"ideal": "472", "distractors": ["p = 0.052", "429", "6948.0"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"}
+{"ideal": "The hypothesis is partially supported with mixed effects across different cell types", "distractors": ["1.2 x 10^-6", "18.93", "Complete overlap between good responders and controls only"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "BLM helicase mutations alter variant effect patterns", "distractors": ["Multiple metabolic pathways including glycolysis and glucose catabolism are among the most significantly enriched downregulated processes", "5000", "No significant changes in inflammatory pathways"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "4x larger in fungi", "distractors": ["2.63", "4.81-fold increase in tumor", "1.29"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "6.50", "distractors": ["30% reduction", "97% in animals vs 49% in fungi", "1.077120e-04"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "0 pathways", "distractors": ["0.48", "2.677958e-11", "36%"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "7,492,955,849.5", "distractors": ["CDKN1A", "562.3", "Integrated Methylation and Expression"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "9.45", "distractors": ["0.052", "CD4", "1620056at2759"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "113,394", "distractors": ["0.7834", "0.907", "1.2 x 10^-6"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "15% decrease in odds of higher severity", "distractors": ["0.85", "Cell adhesion", "1.920290e-06"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "0.0884", "distractors": ["Significant upregulation (log2FC = 0.35)", "1.2", "Between 0.5 and 1.0"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "50-60k", "distractors": ["114,531 mm\u00b2", "0.0", "Decreases severity odds by 34.4%"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "Complete overlap between all groups", "distractors": ["The hypothesis cannot be evaluated due to insufficient data", "mRNA processing", "0.0489"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "4x larger in fungi", "distractors": ["-0.2", "45", "11563"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "35 sites", "distractors": ["39%", "CD16 Monocytes (p < 0.05)", "0.0865"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "70% reduction", "distractors": ["Cellular response to decreased oxygen levels", "36", "65%"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "25-35 variants", "distractors": ["15 sites", "Animals show 1.2x higher standard deviation than fungi", "7.8 x 10^-9"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "0.9882", "distractors": ["415", "Downregulation", "No pathways meet any significance threshold"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "0.032", "distractors": ["157,912 mm\u00b2", "Expected interaction reduces severity odds by 24.5%", "ENO1's expression is too low to calculate meaningful p-values"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "-33.3333", "distractors": ["Symmetrical with no skew", "Left-skewed distribution with median 0.55 pairwise identity", "0.68"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "433.2", "distractors": ["0.8062", "4891.0", "1620056at2759"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "3516.0", "distractors": ["0.0612", "952", "156.42"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "45.5%", "distractors": ["0.0021", "Predominantly downregulated with genes like GPI, PGK1, and ALDOC", "1193442at2759"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "Position 126", "distractors": ["All genes become non-significant", "0.5202", "Metabolic pathway regulation"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": ">15000", "distractors": ["156.42", "Significant upregulation (log2FC = 0.35)", "Nitrogen metabolism"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "0.0865", "distractors": ["0.18", "337 samples", "21 sites"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "167 samples", "distractors": ["312 genes", "0.0855", "50% reduction"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "Remove all membrane-related terms", "distractors": ["0.0865", "p = 0.001", "1.000"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "63% of genes have a higher median evolutionary rate in animals", "distractors": ["12 sites", "0.435670", "4 pathways"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "Significant difference only in the 1-50 patients group", "distractors": ["1035.9", "No variation remains between replicates", "210,831"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "p = 9.92e-35", "distractors": ["0.78", "p < 2.2e-16", "-1.95"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "Longer average branch lengths in fungal trees", "distractors": ["35 sites", "Position 47", "1.58"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "19808", "distractors": ["45", "All miRNAs become significant", "0.031"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "4521.0", "distractors": ["1620056at2759", "-0.62", "Expected interaction has no significant effect on severity"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "Close to 0", "distractors": ["9340", "18 miRNAs", "raw p-value < 0.05 for T cell terms"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "0.020", "distractors": ["CD14 Monocytes", "0.0612", "Approximately normal"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "222.38", "distractors": ["During acute (18-hour) exposure", "0.072", "0.082 (8.2%)"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "-2.27", "distractors": ["6.42e-97", "0.0865", "92,000"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "137,098", "distractors": ["1.23", "1:1", "2 groups"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "Fatty acid metabolism, two-component system", "distractors": ["2757", "0.0855", "1.000"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "Fatty acid metabolism, two-component system", "distractors": ["No significant changes in inflammatory pathways", "10000", "BLM helicase affects variant repair frequency but not variant type selection"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "0.202527", "distractors": ["95% in animals vs 5% in fungi", "3.5%", "35.62%"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "Fungi show 1.5x higher standard deviation than animals", "distractors": ["8:1", "-27.5000", "0.15-0.25"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "511", "distractors": ["At least 10 terms", "5:1", "Inflammatory response pathways and oxidative stress pathways show equal enrichment"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "0.014", "distractors": ["Decreases from 1942 to 1416 significant genes", "512", "15 genes"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "At least 50% of all immune-related terms", "distractors": ["15k-25k", "Strong upregulation in \u0394rhlI (strain #97) and downregulation in \u0394lasI (strain #98)", "901.45"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "During chronic round 3 (day 9)", "distractors": ["92.9%", "0.906", "Selective upregulation in CD14 monocytes only"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "No variation remains between replicates", "distractors": ["4639.0", "0.906", "Cellular response to decreased oxygen levels"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "0.92", "distractors": ["48%", "ARI > 0.20", "Ribosome, riboflavin metabolism"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "8/49", "distractors": ["0.035", "19808", "10 genes"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "55%", "distractors": ["Right-skewed with a long tail", "0.1345", "Left-skewed"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "0.00000470 CpGs per base", "distractors": ["0/4 conditions", "15 sites", "Significant difference only in the 1-50 patients group"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "F = 0.77", "distractors": ["833", "5,492,955,849.5", "p < 2.2e-16"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "Symmetrical with no skew", "distractors": ["0.031", "35.62%", "BLM helicase preferentially repairs certain variant types"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "2.811 x 10^-29", "distractors": ["2/4 conditions", "97% in animals vs 49% in fungi", "2.15E-6"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "1.7", "distractors": ["10", "0.00000470 CpGs per base", "167 samples"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "RNASEK", "distractors": ["0.99", "47 genes", "Neither raw nor adjusted p-values are calculable for ENO1"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "0.216", "distractors": ["5.12%", "0.04", "9/22 genes"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "1.28e-31", "distractors": ["33% of genes have a higher median evolutionary rate in animals", "No significant differences in any patient number group", "11563"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "0.723", "distractors": ["Decreases from 1942 to 1416 significant genes", "3.4", "1620056at2759"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "2.1:1", "distractors": ["2.87", "F = 1.07 (p > 0.05)", "2,500 sites"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "RNASEK", "distractors": ["40-60 variants", "p = 0.001", "3x larger in fungi"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "0.5876", "distractors": ["p < 2.2e-16", "No change in the number of significant genes", "1:9"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "Both conditions show equal variation", "distractors": ["Reduces from 4,550 to 1,234 variants", "156 genes", "2.87"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "Between 1.0 and 2.0", "distractors": ["Dentate gyrus (brain)", "5.2", "7.43"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "147", "distractors": ["15% in animals vs 85% in fungi", "1.67", "6.979e-07"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "Dendrite self-avoidance", "distractors": ["5.3 x 10^-7", "24", "0/4 conditions"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "35% increase in odds of higher severity", "distractors": ["6211.0", "137,098 mm\u00b2", "157,912 mm\u00b2"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "1.2 x 10^-8", "distractors": ["Glycolytic process", "0.013", "3x larger in fungi"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "Complete suppression of inflammatory pathways", "distractors": ["0.0", "4 functional categories", "8 genes"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "2-fold increase", "distractors": ["Genetic background", "3.5", "F = 5.2"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "4.0", "distractors": ["0.55", "24.5% higher odds", "ENO1's raw p-value of 0.031 passes the threshold but adjusted p-value of 0.226 does not"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "0.80", "distractors": ["0.45-0.55", "Remain within 5% of the original value", "2%"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "0.9%", "distractors": ["0.156 (15.6%)", "It is significantly higher in individuals without mutations in the BLM gene", "6,492,955,849.5"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "1106", "distractors": ["57%", "7.56%", "9,980"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "28%", "distractors": ["2.72", "7%", "0.25 in fungi vs 0.45 in animals"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152"}
+{"ideal": "1.55e-79", "distractors": ["3.23E-8", "NaN", "sample name"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152"}
+{"ideal": "Has no significant effect on severity odds", "distractors": ["46 genes", "6.02", "12 sites"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152"}
+{"ideal": "2-fold increase", "distractors": ["40-60 variants", "0.56", "Significant downregulation"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152"}
+{"ideal": "0.7", "distractors": ["312 genes", "38%", "CD14 Monocytes"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "0.1345", "distractors": ["-5.45", "8:1", "0.28 in fungi vs 0.32 in animals"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "45", "distractors": ["0.8", "0.216", "0.67"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "0.047", "distractors": ["0.0234", "6:1", "No overlap between any groups"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "Fungi and animals both have high RCV values, indicating equal compositional biases.", "distractors": ["Only KD samples show remaining variation", "2/4 conditions", "Decreases severity only in those with multiple prior conditions"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "0.02", "distractors": ["Fungi and animals both have high RCV values, indicating equal compositional biases.", "90%", "The hypothesis cannot be evaluated due to insufficient data"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "Strain 1 in MMGluFeMinus", "distractors": ["350,385,456 units", "0.049889", "1.85"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "-0.07951", "distractors": ["4.0", "0.226-fold decrease in tumor", "0.234 (23.4%)"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "0.333", "distractors": ["Reduces from 11,896 to 4,550 variants", "0.26", "0.1"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "7%", "distractors": ["Uniform downregulation across all cell types", "Left-skewed distribution with median 0.55 pairwise identity", "p = 4.26e-6"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "p = 0.052", "distractors": ["Increases severity odds by 34.4%", "1.2%", "No significant changes in expression"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "0.042", "distractors": ["0.73", "0.05", "0.9%"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "p = 0.05", "distractors": ["167 samples", "0.3501", "6.50e-01"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "175 miRNAs show significance", "distractors": ["1 functional category", "1:3", "F = 10.09 (p < 0.0001)"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "0.92", "distractors": ["The number of significant miRNAs decreases to 35", "0.29%", "Axon guidance"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "2 genes", "distractors": ["Chromosome Z", "0.813", "4.81 units"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "0.099", "distractors": ["Reduces from 4,550 to 1,234 variants", "Increases from 1416 to 1942 significant genes", "Natural Killer cells"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "40-60 variants", "distractors": ["Metabolic pathways are equally enriched in up- and down-regulated genes", "Fungal proteins have identical evolutionary rates to animal proteins", "Reduces to 0 categories"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171"}
+{"ideal": "p = 0.024", "distractors": ["15% higher in fungi", "5%", "0.399388"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171"}
+{"ideal": "F = 3.24 (p > 0.05)", "distractors": ["Cell adhesion and matrix organization", "Fungi have lower RCV values compared to animals, indicating lower compositional biases.", "Exclusive enrichment of cyanoamino acid metabolism in downregulated genes"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171"}
+{"ideal": "10:1", "distractors": ["0.103838", "6 functional categories", "The hypothesis is strongly supported with significant downregulation of multiple anti-inflammatory genes"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171"}
+{"ideal": "0.91", "distractors": ["0.723", "6748.0", "0.000000639 CpGs per base"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171"}
+{"ideal": "0.9882", "distractors": ["Amino acid metabolism", "50-60k", "Significantly upregulated in CBD-treated cells"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "41%", "distractors": ["The number of significant miRNAs decreases to 35", "Decrease the number of significant terms", "0.723"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "During chronic round 3 (day 9)", "distractors": ["34.4% lower odds", "24 genes", "4/17"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "5,492,955,849.5", "distractors": ["Increases to 3 categories", "0.014", "114,531 mm\u00b2"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "Immune system response", "distractors": ["2.27-fold increase in tumor", "Ribosome, riboflavin metabolism", "0.956"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "51 variants", "distractors": ["42 variants", "11663", "Upregulation"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "6.42e-97", "distractors": ["0.28 in fungi vs 0.32 in animals", "p = 0.327", "It is significantly higher in individuals with mutations in the BLM gene"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "Significantly upregulated in DMSO-treated cells", "distractors": ["1.90E-5", "1193442at2759", "Leishmaniasis"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822"}
+{"ideal": "10000", "distractors": ["3.4", "F = 10.09 (p < 0.0001)", "7,615"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822"}
+{"ideal": "Left-skewed with a long tail", "distractors": ["0.2624", "0.005", "0.13"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822"}
+{"ideal": "5 clusters (NMI not calculated)", "distractors": ["0.7834", "40k-50k", "200-250 variants"], "question": "", "cluster": "8690e7cb-7405-4d2a-9721-e85824d05822"}
+{"ideal": "Strain 1 in MMGluFePlus", "distractors": ["7,500 sites", "Significantly upregulated in CBD-treated cells", "4 groups"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "2.677958e-11", "distractors": ["Variable expression with both up and downregulation", "5.12%", "Equal branch lengths between fungi and animals"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "-33.3333", "distractors": ["-0.07495", "Left-skewed", "-26.9"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "0.105", "distractors": ["Animals show 2.5x higher standard deviation than fungi", "16032", "95% in animals vs 5% in fungi"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "72% of genes have a higher median evolutionary rate in animals", "distractors": ["4 functional categories", "0.0012", "3.4:1"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "14.25%", "distractors": ["0", "11563", "Animals evolve 2.5x faster than fungi with p < 0.0001"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "p = 0.024", "distractors": ["sex", "3556.0", "The number of significant miRNAs increases to 75"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "50% increase in odds of higher severity", "distractors": ["Neither raw nor adjusted p-values are calculable for ENO1", "2,845", "1"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39"}
+{"ideal": "Carbon metabolism", "distractors": ["39", "Valine, leucine and isoleucine degradation", "0.805"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39"}
+{"ideal": "0.356620", "distractors": ["2553.6", "-0.07495", "ARI > 0.20"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39"}
+{"ideal": "Oxidative stress pathways appear only after the top 10 most enriched pathways", "distractors": ["96", "173", "0.202527"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39"}
+{"ideal": "0.27", "distractors": ["Butanoate metabolism", "1", "9340"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "1.57%", "distractors": ["0.226-fold decrease in tumor", "ARI > 0.60", "Strong upregulation in \u0394rhlI (strain #97) and downregulation in \u0394lasI (strain #98)"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "29.8%", "distractors": ["Starch and sucrose metabolism, two-component system", "0.001", "114.85"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "19:1", "distractors": ["833", "-28.7577", "raw p-value < 0.05 for T cell terms"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "0.399388", "distractors": ["1.7", "1.94", "KLF5"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "15% in animals vs 85% in fungi", "distractors": ["1.000", "Variable expression with both up and downregulation", "F = 8.4"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "0.24", "distractors": ["2.27", "0.52", "1:2"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "2.0", "distractors": ["-4.96", "397", "1193442at2759"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "5", "distractors": ["1.066", "0.52", "6.0 x 10^-8"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "0.031", "distractors": ["Approximately equal (1/1) to wildtype", "0.000428", "6:1"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "0.92", "distractors": ["7,500 sites", "Strongly antagonistic effect decreasing severity", "39"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "0.723", "distractors": ["sample name", "1.920290e-06", "4.2"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "267", "distractors": ["0.92", "42.156", "1193442at2759"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "Metabolic pathway regulation", "distractors": ["2:3", "Increases severity odds by 24.5%", "ENO1 shows no detectable protein levels in either condition"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "8.1%", "distractors": ["0.082 (8.2%)", "2.1", "Fungal proteins evolve more rapidly than animal proteins"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "All miRNAs become significant", "distractors": ["Significantly downregulated in DMSO-treated cells", "1.22", "137,098"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "0.000428", "distractors": ["0.1562", "0.228", "Decreases severity only in those with multiple prior conditions"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "0.6", "distractors": ["20 genes", "CD8", "More than 10% of total genes"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "Low sequencing depth", "distractors": ["4.81-fold increase in tumor", "Strain 1 in MMGluFeMinus", "166"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "4.2", "distractors": ["Remove all membrane-related terms", "pDCs (not significant)", "11563"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "Leishmaniasis", "distractors": ["1.28e-31", "35 variants", "166"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "0.5876", "distractors": ["0.6", "0.001", "Reduces to 0 categories"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "3x larger in fungi", "distractors": ["0.73", "11563", "42%"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "1.29", "distractors": ["175 miRNAs show significance", "1.75", "1:3"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "There are no statistical differences between animals and fungi RCV values, indicating no compositional biases.", "distractors": ["No significant differences in any patient number group", "0 miRNAs show significance", "12.4%"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "0.048", "distractors": ["3245.0", "766", "0.00"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "2.72", "distractors": ["0.31", "3516.0", "1.25"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "0.048", "distractors": ["13:1", "52%", "38.2%"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "Cellular response to hypoxia", "distractors": ["0.33", "0.36 in fungi vs 0.0 in animals", "104.14"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "Fungal proteins evolve more rapidly than animal proteins", "distractors": ["1761", "96", "1.25"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "3 clusters (NMI = 0.868)", "distractors": ["Regulatory T cells (Tregs)", "4.9%", "RNASEK"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "1054", "distractors": ["0.9918", "25 miRNAs show significance", "511"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "70% reduction", "distractors": ["56", "5%", "33% of genes have a higher median evolutionary rate in animals"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "Exclusively upregulated", "distractors": ["2.811 x 10^-29", "45.5%", "Negative regulation of epithelial cell proliferation"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "35", "distractors": ["Fungi evolve 1.5x faster than animals with p < 0.0001", "Significant downregulation", "0.83"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "2.27-fold increase in tumor", "distractors": ["0.045", "156.42", "-0.01"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "680", "distractors": ["p = 4.26e-6", "1.55e-79", "40k-50k"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "1.95", "distractors": ["p = 0.327", "50-60k", "ENO1's raw p-value of 0.031 passes the threshold but adjusted p-value of 0.226 does not"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "Left-skewed", "distractors": ["2.871", "0.703", "2:3"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "18.93", "distractors": ["Close to 0", "429", "15%"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "5 pathways", "distractors": ["BSyn probands show significantly higher CHIP variant frequencies than controls", "0.9882", "1620056at2759"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "Position 126", "distractors": ["Cell cycle regulation", "0.5x larger in fungi", "8:1"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "952", "distractors": ["0/4 conditions", "Close to 0", "0.0865"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "14.25%", "distractors": ["3.333 x 10^-25", "92.9%", "Variable effect depending on number of conditions"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "0.32", "distractors": ["2.87", "0.25-0.35", "NaN"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "No relationship between generation time and saturation rate", "distractors": ["-30.4551", "Greater than 2.0", "2.8"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "0.58", "distractors": ["All miRNAs become significant", "p = 0.0338", "2.15E-6"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "0.31", "distractors": ["223", "Animals have a lower average RCV value compared to fungi, indicating lower compositional biases.", "0.68"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "31%", "distractors": ["0.73", "1.3665", "F = 10.09 (p < 0.0001)"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "6/44", "distractors": ["p = 9.92e-35", "114,531 mm\u00b2", "3.333 x 10^-25"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "2118", "distractors": ["Animals show 2.5x higher standard deviation than fungi", "4.81", "Reduces from 11,896 to 4,550 variants"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "Two-component system, ribosome", "distractors": ["Cell adhesion", "0.226", "2.72"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "0.105", "distractors": ["0.082", "No change in the number of terms", "89.3%"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "2757", "distractors": ["39", "0.04", "2.72"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "25-35 variants", "distractors": ["Animals show 1.2x higher standard deviation than fungi", "0.226", "0.723"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "104.14", "distractors": ["The hypothesis is not supported as no significant downregulation of anti-inflammatory pathways was observed", "35% increase in odds of higher severity", "52%"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "0.082 (8.2%)", "distractors": ["11746", "No significant effect (odds ratio ~1.0)", "0.54"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "3516.0", "distractors": ["1620056at2759", "Chromosome 1", "Has no significant effect on severity odds"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "3.24%", "distractors": ["5,000 sites", "6.17", "1.066"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "0.70", "distractors": ["49 miRNAs show significance", "RNASEK", "41%"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "The hypothesis is strongly supported with significant downregulation of multiple anti-inflammatory genes", "distractors": ["8", "35", "ARI > 0.20"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "ARI > 0.20", "distractors": ["Oxidative phosphorylation", "1014314at2759", "Complete overlap between good responders and controls only"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "Leishmaniasis", "distractors": ["-33.3333", "0.1345", "Both raw and adjusted p-values pass the significance threshold"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "31%", "distractors": ["0.75", "No relationship between generation time and saturation rate", "0.1126"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "0.54", "distractors": ["0.78", "4532.0", "0.21"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "0.5202", "distractors": ["<0.05", "p = 0.052", "1.33"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "0 pathways", "distractors": ["BLM helicase affects variant repair frequency but not variant type selection", "0.000428", "Significant downregulation"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "1.98", "distractors": ["119.8", "p = 3.39e-12", "Uniform downregulation across all cell types"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "20 genes", "distractors": ["1.066", "1.00", "114.85"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "5.12%", "distractors": ["6.0 x 10^-8", "Highly left-skewed", "Left-skewed"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "0.45 in fungi vs 0.25 in animals", "distractors": ["0.26", "105.16", "0.226-fold decrease in tumor"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "Strain 99 in MMGluFePlus", "distractors": ["Decreases severity odds by 24.5%", "210,831", "1035.9"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "-4.01", "distractors": ["1:2", "Both conditions show equal variation", "94.6%"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "5.2", "distractors": ["Greater species diversity", "0.32", "0.92"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "447", "distractors": ["15%", "Leishmaniasis", "2 functional categories"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "12.5", "distractors": ["p = 0.444", "Enrichment of ABC transporters in upregulated genes only", "0.95"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "Skewed", "distractors": ["6948.0", "p = 0.444", "1.23"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "Decrease the number of significant terms", "distractors": ["9 sites", "674 samples", "350,385,456 units"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "168", "distractors": ["Significantly downregulated in DMSO-treated cells", "1.2103", "10k-20k"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4"}
+{"ideal": "1.58", "distractors": ["29.744", "2 clusters (NMI = 0.805)", "BLM helicase preferentially repairs certain variant types"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4"}
+{"ideal": "Protein degradation", "distractors": ["Downregulation", "3.1", "35%"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4"}
+{"ideal": "ENO1's raw p-value of 0.031 passes the threshold but adjusted p-value of 0.226 does not", "distractors": ["5.9:1", "No significant effect (odds ratio ~1.0)", "Fungal proteins evolve more rapidly than animal proteins"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4"}
+{"ideal": "p = 0.0338", "distractors": ["3.4:1", "Strong upregulation in \u0394rhlI (strain #97) and downregulation in \u0394lasI (strain #98)", "680"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5"}
+{"ideal": "0.82", "distractors": ["2.12", "0.0865", "35%"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5"}
+{"ideal": "4.8%", "distractors": ["log2FoldChange > 1.5 for T cell genes", "Expected interaction increases severity odds by 24.5%", "4891.0"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5"}
+{"ideal": "214.93", "distractors": ["0.29%", "0.0025", "-0.22"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5"}
+{"ideal": "137,098", "distractors": ["Expected interaction increases severity odds by 24.5%", "3 groups", "No significant effect on severity"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5"}
+{"ideal": "0.27", "distractors": ["0.04", "4532.0", "79%"], "question": "", "cluster": "d36654ed-2cd6-41c1-84f9-1a3a16be3de5"}
+{"ideal": "Lower than typical fungi due to fewer generations per unit time", "distractors": ["Strong downregulation in \u0394rhlI (strain #97) and no change/upregulaton in \u0394lasI (strain #98)", "137,098", "2,845"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "Variable effect depending on number of conditions", "distractors": ["1.5", "The hypothesis cannot be evaluated due to insufficient data", "Fungi have lower RCV values compared to animals, indicating lower compositional biases."], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "p = 0.57", "distractors": ["168", "166", "3:1"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "0.67", "distractors": ["0.54", "6 functional categories", "Right-skewed"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "0.048", "distractors": ["0.231793", "0.703", "28 variants"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "Sulfur metabolism, phenazine biosynthesis", "distractors": ["1.90E-5", "40-60 variants", "5%"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"}
+{"ideal": "4 groups", "distractors": ["41%", "8 out of 20 pathways", "0.02"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"}
+{"ideal": "5 clusters (NMI not calculated)", "distractors": ["7823.0", "0.045", "0.42"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"}
+{"ideal": "Decreases severity only in those with multiple prior conditions", "distractors": ["0.0012", "0.001", "Multiple metabolic pathways including glycolysis and glucose catabolism are among the most significantly enriched downregulated processes"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "10:1", "distractors": ["0.28", "0.12", "Canonical glycolysis"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "8932.0", "distractors": ["35% increase in odds of higher severity", "50-60k", "29.744"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "3661", "distractors": ["1.42e-05", "0.015", "2:3"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "0.54", "distractors": ["0.805", "Nitrogen metabolism, two-component system", "1.077120e-04"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "Significant downregulation", "distractors": ["Fungal proteins show no consistent pattern of evolution", "No significant interaction effect (OR\u22481.0)", "0.36"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "0:0", "distractors": ["6 functional categories", "846", "Has no significant effect on severity odds"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "Genetic background", "distractors": ["Animals show 2.5x higher standard deviation than fungi", "Predominantly upregulated", "No significant interaction effect (OR\u22481.0)"], "question": "", "cluster": "2ed9023e-75d7-40fe-a425-b6b84ac8329c"}
+{"ideal": "2.27-fold increase in tumor", "distractors": ["Canonical glycolysis", "Variable expression with both up and downregulation", "2.8"], "question": "", "cluster": "2ed9023e-75d7-40fe-a425-b6b84ac8329c"}
+{"ideal": "No change in the number of significant genes", "distractors": ["Cell cycle regulation", "Chromosome 1", "8 genes"], "question": "", "cluster": "2ed9023e-75d7-40fe-a425-b6b84ac8329c"}
+{"ideal": "-0.2", "distractors": ["167 samples", "Control parents show significantly lower CHIP variant frequencies than other groups", "13:1"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "60% reduction", "distractors": ["Approximately 25% (1/4) of wildtype", "175 miRNAs show significance", "BLM helicase preferentially repairs certain variant types"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "Inflammatory response pathways and oxidative stress pathways show equal enrichment", "distractors": ["0.032", "89.3%", "1.000"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "74.3", "distractors": ["Reduces from 57,258 to 11,896 variants", "4.81", "Control parents show significantly lower CHIP variant frequencies than other groups"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "35% increase in odds of higher severity", "distractors": ["6.250315e-07", "1.42e-05", "Significantly downregulated in CBD-treated cells"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "No significant change in severity odds", "distractors": ["0.9882", "166", "49 miRNAs"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "2,023 units", "distractors": ["0.54", "5%", "Biofilm formation"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "Baseline blood", "distractors": ["0.55", "0.8", "0.9588"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "Fungal proteins evolve more rapidly than animal proteins", "distractors": ["No significant difference", "1193442at2759", "TNF signaling pathway"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "11746", "distractors": ["4.81-fold increase in tumor", "Has no significant effect on severity odds", "Variable branch lengths within each group"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "6.250315e-07", "distractors": ["3.82", "2.12", "3.30"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "47 genes", "distractors": ["Plasmacytoid dendritic cells", "0.20", "-0.2"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "1106", "distractors": ["22%", "178", "CD14 Monocytes (p < 0.0001)"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"}
+{"ideal": "-26.9", "distractors": ["Fatty acid metabolism, two-component system", "0.0478", "Inflammatory response pathways and oxidative stress pathways show equal enrichment"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"}
+{"ideal": "1.67e-19", "distractors": ["6.458305e-05", "0.907", "Right-skewed"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"}
+{"ideal": "Decreases from 1942 to 1416 significant genes", "distractors": ["2.87", "4.81-fold increase in tumor", "More than 5% of total genes"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"}
+{"ideal": "Approximately equal (1/1) to wildtype", "distractors": ["15% higher in fungi", "18356", "Nitrogen metabolism, two-component system"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "Exclusively downregulated", "distractors": ["166", "0.805", "15k-25k"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "During chronic round 3 (day 9)", "distractors": ["A single metabolic pathway appears in the top 20 enriched terms", "0.049889", "Uniform"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "Variable branch lengths within each group", "distractors": ["45% of genes have a higher median evolutionary rate in animals", "35 sites", "8.44e-07"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "92.9%", "distractors": ["-0.07495", "24.5% lower odds", "0.71"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "433.2", "distractors": ["p = 0.024", "Fungi and animals both have high RCV values, indicating equal compositional biases.", "CHIP variant frequencies show no statistically significant differences between groups"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "Complete overlap between good responders and controls only", "distractors": ["p = 3.39e-12", "89%", "177"], "question": "", "cluster": "a45810bb-beee-466a-b31f-ba60268afa53"}
+{"ideal": "328", "distractors": ["No significant difference exists between animal and fungal evolutionary rates", "50-60k", "31.8%"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "3.2 x 10^-8", "distractors": ["24%", "0.399388", "Symmetrical with no skew"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "5,230", "distractors": ["0.43", "1.920290e-06", "1.05"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "328", "distractors": ["0.8062", "Fungal proteins have identical evolutionary rates to animal proteins", "0.00000470 CpGs per base"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "11563", "distractors": ["Approximately normal", "F = 3.1", "429"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "38.2%", "distractors": ["Decreases severity odds by 34.4%", "0.703", "0.9588"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "25 miRNAs show significance", "distractors": ["F = 3.1", "0.014", "34.4% higher odds"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c"}
+{"ideal": "0.124", "distractors": ["-4.96", "p = 0.57", "10.6%"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c"}
+{"ideal": "32,000", "distractors": ["Decrease the number of significant terms", "350,385,456 units", "22/9 genes"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c"}
+{"ideal": "0.20", "distractors": ["901.45", "Higher than typical fungi due to increased DNA replication errors", "Significantly upregulated in CBD-treated cells"], "question": "", "cluster": "d49cde68-cc3a-479d-88cb-11302207ac3c"}
+{"ideal": "-0.15", "distractors": ["5.481596e-09", "-40.1645", "Multiple metabolic pathways including glycolysis and glucose catabolism are among the most significantly enriched downregulated processes"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "6.50", "distractors": ["Significant upregulation (log2FC = 0.87)", "Amino acid metabolism", "No significant change in either strain"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "267", "distractors": ["3.2 x 10^-8", "0.0012", "12.4%"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "51 variants", "distractors": ["All immune-related terms", "Increases severity odds by 24.5%", "Animals have a lower average RCV value compared to fungi, indicating lower compositional biases."], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "-0.2", "distractors": ["1.131e-11", "Final blood", "36%"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "30% reduction", "distractors": ["2.1:1", "1.67", "1.2103"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "Inflammatory response pathways and oxidative stress pathways show equal enrichment", "distractors": ["0.1562", "raw p-value < 0.05 for T cell terms", "4891.0"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "2 functional categories", "distractors": ["0.95", "Regulatory T cells (Tregs)", "F = 8.4"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "63% of genes have a higher median evolutionary rate in animals", "distractors": ["0.85", "1.67e-19", "Position 83"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "Predominantly downregulated with genes like GPI, PGK1, and ALDOC", "distractors": ["3245.0", "1 pathway", "0.75"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "12", "distractors": ["0.5x larger in fungi", "1194797at2759", "901.45"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "At least 1 term", "distractors": ["3.1 x 10^-7", "Position 47", "24.5% higher odds"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "0.0012", "distractors": ["1.00", "CD14 Monocytes (p < 0.0001)", "35 sites"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "11746", "distractors": ["0.91", "74.3", "0.226"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "1.67", "distractors": ["92,000", "24 genes", "-26.9"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "0.0", "distractors": ["No significant interaction effect (OR\u22481.0)", "Exclusive enrichment of cyanoamino acid metabolism in downregulated genes", "Significant upregulation (log2FC = 0.87)"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "Fatty acid metabolism, two-component system", "distractors": ["177.0", "3245.0", "Approximately normal"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "3.011783e-06", "distractors": ["0.000000639 CpGs per base", "16032", "Age of the patient"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "All genes become non-significant", "distractors": ["1.077120e-04", "350,385,456 units", "0.09"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "0.27", "distractors": ["-45.2", "15.34", "8 out of 20 pathways"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "0.047", "distractors": ["18 miRNAs", "0.35", "p = 0.0338"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "0.5x larger in fungi", "distractors": ["0.28 in fungi vs 0.32 in animals", "680", "12 out of 20 pathways"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "10:1", "distractors": ["9,980", "0.333", "p > 0.05"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "0.92", "distractors": ["5.481596e-09", "p = 0.57", "8 out of 20 pathways"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "ARI > 0.80", "distractors": ["45% higher in fungi", "48%", "10000"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "(0.4530, 0.4653)", "distractors": ["Lower than typical fungi due to fewer generations per unit time", "Uniform", "22/64 genes"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}

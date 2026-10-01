@@ -1,0 +1,4459 @@
+{
+ "BixBench v1.5": {
+  "a32935af-103a-49d5-bb51-134052afe409": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"
+  },
+  "e40e8b38-81a6-4984-946c-e1a1948188df": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"
+  },
+  "1737de58-68b8-4787-abb4-04b931a6d687": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"
+  },
+  "e9069e14-2636-4588-8945-bc1a1af44591": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"
+  },
+  "a02a5ac5-8fdc-49ea-8414-2854ca60e637": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"
+  },
+  "e5cf25ab-f933-46c3-8531-9557604b49da": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152"
+  },
+  "152661ed-f4c1-47b1-b2de-d1c18fe5f418": {
+   "source": "10.1126/sciadv.adf4950",
+   "date": "2023-05-31",
+   "field": "created",
+   "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"
+  },
+  "98f31a08-9d48-40b0-bec5-e8f8561c880b": {
+   "source": "10.1126/sciadv.adf4950",
+   "date": "2023-05-31",
+   "field": "created",
+   "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"
+  },
+  "fda0333c-97dd-43f7-8477-4cb865e908a9": {
+   "source": "10.1126/sciadv.adf4950",
+   "date": "2023-05-31",
+   "field": "created",
+   "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"
+  },
+  "fc171f87-b3b0-4179-b927-53803e0fd2e2": {
+   "source": "10.1126/sciadv.adf4950",
+   "date": "2023-05-31",
+   "field": "created",
+   "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"
+  },
+  "be0bba71-b6fe-497b-846a-7f89c9f67937": {
+   "source": "10.1126/sciadv.adf4950",
+   "date": "2023-05-31",
+   "field": "created",
+   "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"
+  },
+  "fa0c811e-b57e-48a7-a76b-98b3f17fce0a": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"
+  },
+  "ba0a901e-464b-4e45-9ac6-3b42773dae1a": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"
+  },
+  "b89c1015-9a33-47de-b977-1de6b99d3943": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"
+  },
+  "9b46a2d1-bd85-495e-b83e-95be62a8bbd6": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"
+  },
+  "9afba12d-faa1-4ee9-b61e-713d5542bcd2": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"
+  },
+  "7a3946d1-8180-44ce-84a3-adf3ec9eaed6": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"
+  },
+  "85254e2c-580e-460d-ac69-9457ed46de2b": {
+   "source": "10.1371/journal.pone.0150501",
+   "date": "2016-02-26",
+   "field": "issued",
+   "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"
+  },
+  "71c6f046-560a-4d46-86ed-e2a99995f7d2": {
+   "source": "10.1371/journal.pone.0150501",
+   "date": "2016-02-26",
+   "field": "issued",
+   "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"
+  },
+  "efb3cab0-ea8a-4f69-b9e8-5087c92ff65a": {
+   "source": "10.1371/journal.pone.0150501",
+   "date": "2016-02-26",
+   "field": "issued",
+   "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"
+  },
+  "439ece6b-6204-4e05-ae90-8e4d23c97bb2": {
+   "source": "10.1371/journal.pone.0150501",
+   "date": "2016-02-26",
+   "field": "issued",
+   "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"
+  },
+  "d48b20f8-fed8-4233-a177-f06e6222324d": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4"
+  },
+  "2681df6d-c552-4a1d-88cb-8015d4c77c86": {
+   "source": "10.1371/journal.pone.0305268",
+   "date": "2024-09-03",
+   "field": "issued",
+   "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"
+  },
+  "062f6c5f-69a4-4ddf-a648-47440e6b0776": {
+   "source": "10.1371/journal.pone.0305268",
+   "date": "2024-09-03",
+   "field": "issued",
+   "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"
+  },
+  "3a024f7f-5ed5-4c0f-97c7-01d9d9154cb5": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"
+  },
+  "bb84067d-b749-4a71-b3ce-4caa75a8b0b8": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"
+  },
+  "8e1f85af-983a-4f55-b673-06def610193d": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"
+  },
+  "d2bf849b-e13b-4626-8205-228d2c720b84": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"
+  },
+  "b9866ab3-ec2e-4c81-a951-a381bde47e96": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"
+  },
+  "53f96453-db08-4e7b-87de-8f8c6cbcb8af": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"
+  },
+  "ba9d2458-894e-48b0-8b83-6076f3b3b6df": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"
+  },
+  "328f8970-9963-4d2b-b4ea-e64c6a0885b9": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"
+  },
+  "7233c74c-8898-4e00-bfb9-458d0914aeb6": {
+   "source": "10.1172/jci.insight.167744",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"
+  },
+  "ad3adf38-d633-4074-acbb-704f01b1d618": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"
+  },
+  "edff36ac-9775-4dff-afb3-3c55af836524": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"
+  },
+  "867075ac-9a78-4e2c-80f9-2a7bc74e8c81": {
+   "source": "10.3324/haematol.2024.285239",
+   "date": "2024-07-25",
+   "field": "issued",
+   "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"
+  }
+ },
+ "LAB-Bench LitQA2": {
+  "e3b5a4af-41d9-48db-becf-29a08d0ad28e": {
+   "source": "10.1128/msphere.00109-24",
+   "date": "2024-04-05",
+   "field": "created",
+   "cluster": "10.1128/msphere.00109-24"
+  },
+  "76184ccf-4bf0-469e-a442-11d04b4ff8b0": {
+   "source": "10.1038/s41586-023-06845-4",
+   "date": "2023-12-20",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06845-4"
+  },
+  "39129e1c-096f-4414-bf4f-37fadbbe364c": {
+   "source": "10.1016/j.celrep.2024.113693",
+   "date": "2024-01-23",
+   "field": "created",
+   "cluster": "10.1016/j.celrep.2024.113693"
+  },
+  "27234279-f50c-4cfc-86e2-af68364a8f94": {
+   "source": "10.1101/2022.03.19.484946",
+   "date": "2022-03-21",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2022.03.19.484946"
+  },
+  "517e7cf8-c5d2-4391-9e2a-235b79d93050": {
+   "source": "10.1101/2024.05.03.592390",
+   "date": "2024-05-06",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.03.592390"
+  },
+  "cb710074-73a8-4407-b0c7-7dc868f1bc76": {
+   "source": "10.1186/s12915-024-01840-1",
+   "date": "2024-02-15",
+   "field": "created",
+   "cluster": "10.1186/s12915-024-01840-1"
+  },
+  "2c05315d-6898-4667-b454-d99b7381bedb": {
+   "source": "10.1038/s41586-022-04877-w",
+   "date": "2022-05-20",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-04877-w"
+  },
+  "5c4c602c-9624-4eae-ac44-efe4c0dd10e6": {
+   "source": "10.1073/pnas.2220578120",
+   "date": "2023-01-25",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2220578120"
+  },
+  "c9bdb9b5-28c1-44da-93b6-b1fc9d8bf369": {
+   "source": "10.1016/j.cell.2024.04.015",
+   "date": "2024-05-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.04.015"
+  },
+  "e6b0f9e5-e976-47dc-b839-0b2fca967e9e": {
+   "source": "10.1038/s41586-024-07348-6",
+   "date": "2024-04-22",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07348-6"
+  },
+  "247eeb85-a552-4b87-b83e-327538fcb8a9": {
+   "source": "10.1038/s41467-023-41318-2",
+   "date": "2023-09-11",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-41318-2"
+  },
+  "39c985ce-70e8-48e4-bd76-744cd07cb56a": {
+   "source": "10.1093/nar/gkae252",
+   "date": "2024-03-26",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae252"
+  },
+  "a214f5f8-0de8-43cf-82e0-7930003e4a0c": {
+   "source": "10.1038/s41586-024-07345-9",
+   "date": "2024-05-08",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07345-9"
+  },
+  "a43e5166-d0e8-48f8-a113-648acac7ed59": {
+   "source": "10.1016/j.celrep.2022.111161",
+   "date": "2022-08-01",
+   "field": "issued",
+   "cluster": "10.1016/j.celrep.2022.111161"
+  },
+  "dd29920d-cb70-440f-961c-3e1103776c4f": {
+   "source": "10.1126/science.aba1624",
+   "date": "2022-12-15",
+   "field": "created",
+   "cluster": "10.1126/science.aba1624"
+  },
+  "7d805bb8-4c7c-431f-b068-acf5e5459985": {
+   "source": "10.1016/j.cell.2021.09.018",
+   "date": "2021-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2021.09.018"
+  },
+  "8d7fa642-ee46-4a13-8ea9-61cc2d4f4ddd": {
+   "source": "10.1093/nar/gkae105",
+   "date": "2024-02-26",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae105"
+  },
+  "487539f9-2f17-4009-aa4a-c41322445f11": {
+   "source": "10.1093/nar/gkae130",
+   "date": "2024-02-27",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae130"
+  },
+  "5049c648-b1bb-4624-8824-9d93dfb04e51": {
+   "source": "10.1016/j.cell.2023.11.007",
+   "date": "2023-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2023.11.007"
+  },
+  "a18883e9-218a-4719-8d2c-cf94d740de1a": {
+   "source": "10.1016/j.stem.2021.12.011",
+   "date": "2022-01-24",
+   "field": "created",
+   "cluster": "10.1016/j.stem.2021.12.011"
+  },
+  "d7833c0f-2a16-40d2-b6a0-6764aa3003a6": {
+   "source": "10.1038/s41467-023-40886-7",
+   "date": "2023-08-19",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-40886-7"
+  },
+  "1ccdc348-50e1-4941-9151-5e50411a2b41": {
+   "source": "10.1038/s41592-024-02216-7",
+   "date": "2024-03-19",
+   "field": "issued",
+   "cluster": "10.1038/s41592-024-02216-7"
+  },
+  "1e5f5199-84f4-4133-ab87-2372fa6ca722": {
+   "source": "10.1261/rna.034181.112",
+   "date": "2012-09-20",
+   "field": "issued",
+   "cluster": "10.1261/rna.034181.112"
+  },
+  "d2860d38-dfb9-4b80-905f-812c32573915": {
+   "source": "10.1126/science.abp9563",
+   "date": "2023-04-13",
+   "field": "created",
+   "cluster": "10.1126/science.abp9563"
+  },
+  "77a41274-cd9c-48bc-a347-e0746907840d": {
+   "source": "10.1038/s41467-022-30570-7",
+   "date": "2022-05-24",
+   "field": "issued",
+   "cluster": "10.1038/s41467-022-30570-7"
+  },
+  "5a2128ad-3127-4595-b810-db128d1a2335": {
+   "source": "10.1038/s41467-023-40041-2",
+   "date": "2023-07-20",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-40041-2"
+  },
+  "d65103ae-c881-4116-a0a7-1b233eb6275a": {
+   "source": "10.1016/j.chom.2024.03.010",
+   "date": "2024-04-04",
+   "field": "created",
+   "cluster": "10.1016/j.chom.2024.03.010"
+  },
+  "ab5eb050-d134-4445-9307-6faa08be7474": {
+   "source": "10.1038/s41467-023-42823-0",
+   "date": "2023-11-09",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-42823-0"
+  },
+  "82de3e92-abe2-46ac-ad17-23417b9c4da7": {
+   "source": "10.1038/s41467-024-47207-6",
+   "date": "2024-04-16",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-47207-6"
+  },
+  "7cf0fcde-fea8-420c-8531-2f2fe9e38980": {
+   "source": "10.1101/2021.07.10.451889",
+   "date": "2021-07-11",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2021.07.10.451889"
+  },
+  "da5b2a8f-ba08-4692-851f-2e0bf142a02f": {
+   "source": "10.1016/j.cell.2023.03.035",
+   "date": "2023-05-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2023.03.035"
+  },
+  "e2fb56b7-08cd-4dc0-bc63-b45931a74fc9": {
+   "source": "10.1101/2023.02.18.528865",
+   "date": "2023-02-18",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.02.18.528865"
+  },
+  "eda34fde-798e-43a1-a9d3-a804d3d8ee4e": {
+   "source": "10.1038/s41467-024-48375-1",
+   "date": "2024-05-17",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-48375-1"
+  },
+  "0eede7a8-fe1f-42d3-a2c6-478083648644": {
+   "source": "10.1038/s41586-023-06922-8",
+   "date": "2024-01-17",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06922-8"
+  },
+  "d1307e50-3c03-4c76-81ee-2decb5de5f14": {
+   "source": "10.1126/science.adj4088",
+   "date": "2024-05-02",
+   "field": "created",
+   "cluster": "10.1126/science.adj4088"
+  },
+  "10cece36-a507-4a93-9600-13f3e0e677f8": {
+   "source": "10.1038/s41588-022-01241-6",
+   "date": "2022-12-01",
+   "field": "issued",
+   "cluster": "10.1038/s41588-022-01241-6"
+  },
+  "f5a84803-3917-43eb-801b-8dc0c5400da1": {
+   "source": "10.1101/2024.05.15.594272",
+   "date": "2024-05-15",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.15.594272"
+  },
+  "c47dd378-dde3-4a45-9184-6abfa6163717": {
+   "source": "10.1101/2024.02.02.578660",
+   "date": "2024-02-04",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.02.02.578660"
+  },
+  "0bac8974-554c-439a-a9a2-22fa509c8d5d": {
+   "source": "10.1080/14712598.2019.1685489",
+   "date": "2019-10-25",
+   "field": "created",
+   "cluster": "10.1080/14712598.2019.1685489"
+  },
+  "aaa85379-1e4b-4642-9ec4-e1a6d6c29c3b": {
+   "source": "10.1038/s41587-023-01759-y",
+   "date": "2023-05-04",
+   "field": "issued",
+   "cluster": "10.1038/s41587-023-01759-y"
+  },
+  "aa1835b2-2b1c-4986-b7af-e174da0124b0": {
+   "source": "10.1101/2023.06.13.544831",
+   "date": "2023-06-13",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.06.13.544831"
+  },
+  "5a9c6697-a65c-49c0-9e02-38b2a276fde7": {
+   "source": "10.1038/s41467-023-41066-3",
+   "date": "2023-09-08",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-41066-3"
+  },
+  "37a4d007-793e-4a89-922a-c1b05f4f82c1": {
+   "source": "10.1073/pnas.0403760101",
+   "date": "2004-07-01",
+   "field": "issued",
+   "cluster": "10.1073/pnas.0403760101"
+  },
+  "c9baf8e0-c4c7-4ba3-b5c4-18e9af8b2df1": {
+   "source": "10.1101/2023.05.21.541555",
+   "date": "2023-05-22",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.05.21.541555"
+  },
+  "d0f69626-66ee-4807-937d-c3a024441812": {
+   "source": "10.1016/j.isci.2023.106308",
+   "date": "2023-03-12",
+   "field": "created",
+   "cluster": "10.1016/j.isci.2023.106308"
+  },
+  "462a9f38-7cbe-4e12-a6e2-b1d7028c3a8b": {
+   "source": "10.1038/s41586-023-06793-z",
+   "date": "2023-11-29",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06793-z"
+  },
+  "86f111e5-402b-4ef5-b101-8be1bf5be7c6": {
+   "source": "10.1101/2024.02.01.578450",
+   "date": "2024-02-05",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.02.01.578450"
+  },
+  "cbe93a43-09cd-4cb4-9edd-f22fe8c28415": {
+   "source": "10.1038/s41586-022-05041-0",
+   "date": "2022-07-05",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05041-0"
+  },
+  "7a88e6f7-fb8e-4a24-b08d-9b7a6edafe57": {
+   "source": "10.1186/s12915-023-01805-w",
+   "date": "2024-01-08",
+   "field": "issued",
+   "cluster": "10.1186/s12915-023-01805-w"
+  },
+  "91387526-9268-4a3c-9abe-73819707d0b0": {
+   "source": "10.1128/jb.00479-21",
+   "date": "2022-03-14",
+   "field": "created",
+   "cluster": "10.1128/jb.00479-21"
+  },
+  "7b98796f-25be-4c58-a52a-4e366c0ffd95": {
+   "source": "10.1038/s41467-023-44148-4",
+   "date": "2023-12-19",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-44148-4"
+  },
+  "5e20e26d-6192-4563-abb3-a4857e3dbc7c": {
+   "source": "10.1126/science.add1250",
+   "date": "2023-09-21",
+   "field": "created",
+   "cluster": "10.1126/science.add1250"
+  },
+  "b105af85-833e-48bc-ac78-48f73c9673fd": {
+   "source": "10.7554/elife.76630",
+   "date": "2022-10-18",
+   "field": "issued",
+   "cluster": "10.7554/elife.76630"
+  },
+  "5b6d6f82-a585-4aa8-9fe6-e7d35f7cb2ae": {
+   "source": "10.1126/sciadv.add4623",
+   "date": "2023-01-11",
+   "field": "created",
+   "cluster": "10.1126/sciadv.add4623"
+  },
+  "12321eab-6ad6-4218-8815-18bc51c14544": {
+   "source": "10.1101/2024.02.06.579151",
+   "date": "2024-02-07",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.02.06.579151"
+  },
+  "c33446f6-fbff-4186-8a51-28a17f68bd40": {
+   "source": "10.1021/acs.jctc.2c00401",
+   "date": "2022-06-14",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.2c00401"
+  },
+  "b1d5a5f5-6e89-4dfb-b60d-5a9824b015f3": {
+   "source": "10.1016/j.immuni.2022.03.018",
+   "date": "2022-04-19",
+   "field": "created",
+   "cluster": "10.1016/j.immuni.2022.03.018"
+  },
+  "6aa10957-bdd9-4dab-a4e1-234a17cb87dd": {
+   "source": "10.1016/j.immuni.2022.03.018",
+   "date": "2022-04-19",
+   "field": "created",
+   "cluster": "10.1016/j.immuni.2022.03.018"
+  },
+  "28ebecdf-949e-4d20-aca9-5989b7a9d6e9": {
+   "source": "10.1038/s41467-024-46676-z",
+   "date": "2024-03-16",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-46676-z"
+  },
+  "dbb51a1c-f9a2-4960-a93c-118957659790": {
+   "source": "10.1101/2023.08.22.554289",
+   "date": "2023-08-23",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.08.22.554289"
+  },
+  "3d40f373-59d3-4666-87bd-6db64fd7b4fb": {
+   "source": "10.1016/j.cell.2024.04.029",
+   "date": "2024-05-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.04.029"
+  },
+  "85c67ef3-322c-42b4-b745-c05e07e7b8ac": {
+   "source": "10.1016/j.celrep.2024.114044",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.celrep.2024.114044"
+  },
+  "653635b7-3bc6-4a7b-98c7-c02038c0e928": {
+   "source": "10.1016/j.cell.2024.01.027",
+   "date": "2024-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.01.027"
+  },
+  "100b570f-1c4f-4214-8402-f1b15f9989b4": {
+   "source": "10.1038/s41586-024-07260-z",
+   "date": "2024-04-03",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07260-z"
+  },
+  "0a9d6516-95ef-4d7b-a28d-d7cde27b7b55": {
+   "source": "10.1016/j.celrep.2021.109967",
+   "date": "2021-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.celrep.2021.109967"
+  },
+  "8d61a14b-60ef-43b0-8003-b60cb6657428": {
+   "source": "10.1038/s41587-023-01801-z",
+   "date": "2023-05-22",
+   "field": "issued",
+   "cluster": "10.1038/s41587-023-01801-z"
+  },
+  "4d4cb121-9525-499a-9475-9b212465c72d": {
+   "source": "10.1038/s41586-023-06728-8",
+   "date": "2023-11-15",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06728-8"
+  },
+  "ca4c9d21-b842-4875-9a6a-bcb9f6c55073": {
+   "source": "10.1038/s41467-023-40173-5",
+   "date": "2023-07-29",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-40173-5"
+  },
+  "c3816cb5-8c87-4946-b133-43f415ab6b2a": {
+   "source": "10.2147/cmar.s262421",
+   "date": "2020-11-01",
+   "field": "issued",
+   "cluster": "10.2147/cmar.s262421"
+  },
+  "59745f75-52bf-4815-905c-3dfad1ef8923": {
+   "source": "10.1038/s41586-024-07283-6",
+   "date": "2024-04-03",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07283-6"
+  },
+  "26691c84-514b-4712-a43e-09705d681e45": {
+   "source": "10.1101/2024.03.18.585604",
+   "date": "2024-03-22",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.03.18.585604"
+  },
+  "0e53a08c-4252-4a84-962b-5b396f9740aa": {
+   "source": "10.1038/s41587-024-02157-8",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1038/s41587-024-02157-8"
+  },
+  "8ade3e3a-4792-4965-b9d9-05e528ebbfa0": {
+   "source": "10.1016/j.neuron.2021.10.036",
+   "date": "2021-11-18",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2021.10.036"
+  },
+  "f5a4b449-e647-4ae0-8419-c221792482c9": {
+   "source": "10.1126/science.adk9469",
+   "date": "2024-03-07",
+   "field": "created",
+   "cluster": "10.1126/science.adk9469"
+  },
+  "5806ed2a-1005-44f1-8d70-332048fea8f4": {
+   "source": "10.1016/j.celrep.2022.111161",
+   "date": "2022-08-01",
+   "field": "issued",
+   "cluster": "10.1016/j.celrep.2022.111161"
+  },
+  "6fff0994-6d02-470a-9d61-8e35420412b6": {
+   "source": "10.1101/2024.04.08.588603",
+   "date": "2024-04-10",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.04.08.588603"
+  },
+  "8266ac61-92d6-423d-8e7a-fe47b3a7e885": {
+   "source": "10.1073/pnas.2319641121",
+   "date": "2024-05-06",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2319641121"
+  },
+  "322454df-45a8-41b3-9b0a-4e808144023c": {
+   "source": "10.1038/s44320-024-00015-y",
+   "date": "2024-01-29",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00015-y"
+  },
+  "3c9f23e2-fdd0-431b-aca7-4f9556c78f1f": {
+   "source": "10.1038/s41587-024-02157-8",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1038/s41587-024-02157-8"
+  },
+  "983f1ef5-fc7d-4f4a-8f48-e704641eae12": {
+   "source": "10.1093/g3journal/jkad293",
+   "date": "2023-12-22",
+   "field": "issued",
+   "cluster": "10.1093/g3journal/jkad293"
+  },
+  "7d2c8d44-ecf3-40d2-ab69-b6195c46ffe9": {
+   "source": "10.1242/jcs.259535",
+   "date": "2022-05-09",
+   "field": "created",
+   "cluster": "10.1242/jcs.259535"
+  },
+  "720e20c2-9ad1-4d98-9f01-8b7fb3782a46": {
+   "source": "10.1038/s41467-023-39119-8",
+   "date": "2023-06-13",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-39119-8"
+  },
+  "dbfbae3d-62f6-4710-8d13-8ce4c8485567": {
+   "source": "10.1126/science.abl4896",
+   "date": "2022-05-12",
+   "field": "created",
+   "cluster": "10.1126/science.abl4896"
+  },
+  "7a42c784-7ae0-48fe-a71f-0a547b8fabb3": {
+   "source": "10.1126/sciadv.adk0171",
+   "date": "2023-09-27",
+   "field": "created",
+   "cluster": "10.1126/sciadv.adk0171"
+  },
+  "0708b62f-9652-49eb-8ba6-28878afa7445": {
+   "source": "10.1016/j.neuron.2024.03.007",
+   "date": "2024-04-03",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2024.03.007"
+  },
+  "5b3b7d05-9e54-445c-b374-d4c6b60923b4": {
+   "source": "10.1073/pnas.2317878121",
+   "date": "2024-03-11",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2317878121"
+  },
+  "623a831f-41ee-4e0e-936a-87f93d96369e": {
+   "source": "10.1039/d1sc05088e",
+   "date": "2022-01-01",
+   "field": "issued",
+   "cluster": "10.1039/d1sc05088e"
+  },
+  "99e8fa71-b59c-4aef-8cf6-40102a10622f": {
+   "source": "10.7554/elife.91357.3",
+   "date": "2024-04-05",
+   "field": "issued",
+   "cluster": "10.7554/elife.91357.3"
+  },
+  "0b1d5537-db47-420c-984b-9b56d38e6d98": {
+   "source": "10.1016/j.crmeth.2023.100464",
+   "date": "2023-05-01",
+   "field": "issued",
+   "cluster": "10.1016/j.crmeth.2023.100464"
+  },
+  "ade96656-7ed1-4e21-b009-b7a73e13bff5": {
+   "source": "10.1126/science.aba6500",
+   "date": "2021-01-21",
+   "field": "created",
+   "cluster": "10.1126/science.aba6500"
+  },
+  "78a2c1d2-f035-4c7d-a7ee-40dfd95ca88a": {
+   "source": "10.1016/j.devcel.2023.09.005",
+   "date": "2023-10-16",
+   "field": "created",
+   "cluster": "10.1016/j.devcel.2023.09.005"
+  },
+  "224efcd7-3652-47f8-84dd-15b4c6fafae2": {
+   "source": "10.1101/2024.05.07.593065",
+   "date": "2024-05-10",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.07.593065"
+  },
+  "55187fb4-e7ee-4027-b74f-cab50f328442": {
+   "source": "10.1101/2024.05.13.593822",
+   "date": "2024-05-15",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.13.593822"
+  },
+  "25a9cf59-1c28-4ddf-b797-f43efb9349e6": {
+   "source": "10.1101/2024.04.26.591386",
+   "date": "2024-04-29",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.04.26.591386"
+  },
+  "cdc80639-dc21-4337-bccc-d61d9aec6560": {
+   "source": "10.1093/genetics/iyab101",
+   "date": "2021-07-08",
+   "field": "issued",
+   "cluster": "10.1093/genetics/iyab101"
+  },
+  "12a20d8d-cd49-47eb-9a19-6a38519ee3dc": {
+   "source": "10.1101/2024.01.31.578101",
+   "date": "2024-02-02",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.01.31.578101"
+  },
+  "4bb69c9d-2485-42d2-b8aa-aa647b407ca4": {
+   "source": "10.1101/2023.12.19.572360",
+   "date": "2023-12-20",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.12.19.572360"
+  },
+  "8c833521-56c4-458d-8c65-2bbf66190cae": {
+   "source": "10.1016/j.chom.2022.02.006",
+   "date": "2022-03-04",
+   "field": "created",
+   "cluster": "10.1016/j.chom.2022.02.006"
+  },
+  "255fd5fb-9623-4030-8bf2-253247df7c82": {
+   "source": "10.1016/j.chom.2022.02.006",
+   "date": "2022-03-04",
+   "field": "created",
+   "cluster": "10.1016/j.chom.2022.02.006"
+  },
+  "38ada695-2c79-459b-8e68-dbed734c74f9": {
+   "source": "10.1016/j.chom.2022.02.006",
+   "date": "2022-03-04",
+   "field": "created",
+   "cluster": "10.1016/j.chom.2022.02.006"
+  },
+  "925ffe20-b8a9-4ac4-943c-7a16966f4a4b": {
+   "source": "10.1126/science.abl6618",
+   "date": "2022-03-03",
+   "field": "created",
+   "cluster": "10.1126/science.abl6618"
+  },
+  "e763edaa-b112-460a-a564-d58a6685e639": {
+   "source": "10.1016/j.celrep.2022.111161",
+   "date": "2022-08-01",
+   "field": "issued",
+   "cluster": "10.1016/j.celrep.2022.111161"
+  },
+  "8af900bb-5794-40db-910e-10d5857ce5bd": {
+   "source": "10.1126/science.abo0924",
+   "date": "2022-06-23",
+   "field": "created",
+   "cluster": "10.1126/science.abo0924"
+  },
+  "6194ebfc-2d5c-4ccc-8883-da7c471b61e6": {
+   "source": "10.1126/science.add9330",
+   "date": "2023-03-10",
+   "field": "issued",
+   "cluster": "10.1126/science.add9330"
+  },
+  "1f1b07d7-39ce-4665-9b70-4ab77e3c87aa": {
+   "source": "10.1126/science.add9330",
+   "date": "2023-03-10",
+   "field": "issued",
+   "cluster": "10.1126/science.add9330"
+  },
+  "55668039-396e-488a-b2c3-bbe840550433": {
+   "source": "10.1016/j.cell.2022.11.026",
+   "date": "2023-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2022.11.026"
+  },
+  "4f050bf3-27cd-4a14-8422-45df5e2bb079": {
+   "source": "10.1101/2024.05.07.593022",
+   "date": "2024-05-10",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.07.593022"
+  },
+  "cff00d08-5655-4214-97ac-8fa9504c1165": {
+   "source": "10.1038/s41586-024-07419-8",
+   "date": "2024-05-15",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07419-8"
+  },
+  "0eeb7ea9-fc80-4dee-9418-1c328c3ab653": {
+   "source": "10.1111/nph.19360",
+   "date": "2023-11-01",
+   "field": "issued",
+   "cluster": "10.1111/nph.19360"
+  },
+  "658f7050-d137-477e-8693-26609080cecd": {
+   "source": "10.1038/s41586-024-07298-z",
+   "date": "2024-04-17",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07298-z"
+  },
+  "8696273a-7fea-411a-b6c6-0e826e1e02b5": {
+   "source": "10.1038/s41586-022-04570-y",
+   "date": "2022-04-13",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-04570-y"
+  },
+  "99713efa-d1b1-4fc5-a4b1-cbae2b3a5798": {
+   "source": "10.1126/science.abb3634",
+   "date": "2022-06-23",
+   "field": "created",
+   "cluster": "10.1126/science.abb3634"
+  },
+  "ce6dd5f7-0706-41dd-a383-9b0d22ef00a1": {
+   "source": "10.1091/mbc.e23-03-0084",
+   "date": "2024-01-03",
+   "field": "created",
+   "cluster": "10.1091/mbc.e23-03-0084"
+  },
+  "400786c1-e6c6-4f46-a501-86fdd048ed88": {
+   "source": "10.1111/acel.14128",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1111/acel.14128"
+  },
+  "e820cbcf-6df1-4c1c-b985-c02f39f52781": {
+   "source": "10.1101/2022.12.20.521091",
+   "date": "2022-12-20",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2022.12.20.521091"
+  },
+  "230dec20-cd02-4613-a7b1-e28058ed46fe": {
+   "source": "10.1038/s41586-024-07317-z",
+   "date": "2024-04-17",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07317-z"
+  },
+  "db851865-5cbf-4d55-b6db-34f22ef5e727": {
+   "source": "10.1016/j.jbior.2020.100740",
+   "date": "2020-07-14",
+   "field": "created",
+   "cluster": "10.1016/j.jbior.2020.100740"
+  },
+  "7975ddb0-a784-4f85-a297-c80e1cb5dcf2": {
+   "source": "10.1038/s41586-023-06850-7",
+   "date": "2023-12-20",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06850-7"
+  },
+  "a1d01019-d2b1-4619-92ec-7ea38578819f": {
+   "source": "10.1038/s12276-023-01094-x",
+   "date": "2023-10-01",
+   "field": "created",
+   "cluster": "10.1038/s12276-023-01094-x"
+  },
+  "fe074387-3765-4020-8f5d-e395d1094121": {
+   "source": "10.1016/j.cell.2023.04.016",
+   "date": "2023-05-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2023.04.016"
+  },
+  "f0b6cea0-e005-47bc-be0d-9a10b219cae6": {
+   "source": "10.1038/s41467-024-44806-1",
+   "date": "2024-01-15",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-44806-1"
+  },
+  "ae02d0e9-edf5-4c39-a215-3cbc8f4c565d": {
+   "source": "10.1093/molbev/msad271",
+   "date": "2023-12-01",
+   "field": "issued",
+   "cluster": "10.1093/molbev/msad271"
+  },
+  "fd60a0e7-ba64-49a9-843a-6f5cb17c5fa9": {
+   "source": "10.1016/j.cub.2023.11.057",
+   "date": "2023-12-22",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2023.11.057"
+  },
+  "14fd2b75-76fb-4c29-a21d-c557b2bcf2ff": {
+   "source": "10.1016/j.ccell.2022.07.005",
+   "date": "2022-09-01",
+   "field": "issued",
+   "cluster": "10.1016/j.ccell.2022.07.005"
+  },
+  "e9f142f0-8ef6-47cd-b846-7283a93308d4": {
+   "source": "10.7554/elife.90024",
+   "date": "2023-08-31",
+   "field": "created",
+   "cluster": "10.7554/elife.90024"
+  },
+  "398ebac1-fd2d-45b1-9415-d82db4b4d83c": {
+   "source": "10.1186/s13059-023-02935-8",
+   "date": "2023-04-26",
+   "field": "issued",
+   "cluster": "10.1186/s13059-023-02935-8"
+  },
+  "7e7150d6-bc73-4a29-a5b3-4ef8399ed947": {
+   "source": "10.1101/2023.05.21.541555",
+   "date": "2023-05-22",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.05.21.541555"
+  },
+  "58b39fab-337b-452d-b74f-84f9a188ce88": {
+   "source": "10.1016/j.febslet.2014.11.036",
+   "date": "2014-12-03",
+   "field": "issued",
+   "cluster": "10.1016/j.febslet.2014.11.036"
+  },
+  "80e6571e-8f5d-496a-8ba3-9c9f5b783f5d": {
+   "source": "10.1016/j.immuni.2023.06.005",
+   "date": "2023-06-30",
+   "field": "created",
+   "cluster": "10.1016/j.immuni.2023.06.005"
+  },
+  "154e7b14-4ed5-4cf3-9149-0c4843fc62cc": {
+   "source": "10.1126/science.abf8761",
+   "date": "2021-07-22",
+   "field": "created",
+   "cluster": "10.1126/science.abf8761"
+  },
+  "a71ef7a2-31a2-460d-9ff4-32d7722353c3": {
+   "source": "10.1126/science.add5892",
+   "date": "2023-06-15",
+   "field": "created",
+   "cluster": "10.1126/science.add5892"
+  },
+  "c624ed31-214f-4c80-9544-5514a096b1d3": {
+   "source": "10.1186/s12915-024-01908-y",
+   "date": "2024-05-07",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01908-y"
+  },
+  "bcd2f213-c6c6-4660-af35-a7bd1c6a1170": {
+   "source": "10.1038/s41586-023-05906-y",
+   "date": "2023-04-05",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-05906-y"
+  },
+  "24fae97b-03f3-48b8-b623-abf07faee02e": {
+   "source": "10.1038/s41587-022-01494-w",
+   "date": "2022-10-10",
+   "field": "issued",
+   "cluster": "10.1038/s41587-022-01494-w"
+  },
+  "ce93661b-e3c4-4a7a-96b6-87492259c501": {
+   "source": "10.1038/s41467-023-36334-1",
+   "date": "2023-02-10",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-36334-1"
+  },
+  "941c04dc-c89d-4a90-87b0-930625268a38": {
+   "source": "10.1101/2023.11.15.567300",
+   "date": "2023-11-17",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.11.15.567300"
+  },
+  "ea4ce240-2864-4ee5-9ffc-2dbda0f8f550": {
+   "source": "10.1016/j.chom.2024.03.013",
+   "date": "2024-04-18",
+   "field": "created",
+   "cluster": "10.1016/j.chom.2024.03.013"
+  },
+  "cff68274-4bbe-4fa0-a181-36a9af3cc0f1": {
+   "source": "10.1016/j.bpj.2021.11.1119",
+   "date": "2022-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.bpj.2021.11.1119"
+  },
+  "2c262f91-52b6-421d-8341-8748f923459e": {
+   "source": "10.1016/j.bpj.2021.11.1119",
+   "date": "2022-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.bpj.2021.11.1119"
+  },
+  "6f8a51e2-f7ad-4033-b43d-370348e4809f": {
+   "source": "10.1038/s41589-022-01218-w",
+   "date": "2022-12-28",
+   "field": "issued",
+   "cluster": "10.1038/s41589-022-01218-w"
+  },
+  "9a0b82cb-6a99-4e50-83fc-3ef2ebd277cc": {
+   "source": "10.1101/2023.12.13.571462",
+   "date": "2023-12-14",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.12.13.571462"
+  },
+  "8b665114-7729-4dac-a64f-4862a5397b82": {
+   "source": "10.1038/s41467-024-48588-4",
+   "date": "2024-05-17",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-48588-4"
+  },
+  "5c808548-92c4-4ae7-990c-e2df81e3c2ae": {
+   "source": "10.1242/jcs.115.4.827",
+   "date": "2002-02-15",
+   "field": "issued",
+   "cluster": "10.1242/jcs.115.4.827"
+  },
+  "564e715f-8d30-410b-bdb5-0dc5206589a7": {
+   "source": "10.1016/j.cub.2024.02.062",
+   "date": "2024-03-14",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2024.02.062"
+  },
+  "e90ea0fc-4659-4b20-acae-75dc4b97a101": {
+   "source": "10.1073/pnas.2309656121",
+   "date": "2024-02-26",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2309656121"
+  },
+  "c246753c-27d2-4ae4-8630-b9b4077ba6f6": {
+   "source": "10.1101/2024.02.20.581217",
+   "date": "2024-02-21",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.02.20.581217"
+  },
+  "22306bd7-7e84-415d-aebb-11c6312eb081": {
+   "source": "10.1038/s41467-023-39770-1",
+   "date": "2023-08-08",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-39770-1"
+  },
+  "7d71dffb-b591-4b88-b0c6-e125a1b083b4": {
+   "source": "10.3390/cancers14194849",
+   "date": "2022-10-04",
+   "field": "issued",
+   "cluster": "10.3390/cancers14194849"
+  },
+  "fca26d7c-05cf-40b0-9fd6-a63ed7950909": {
+   "source": "10.1101/2023.11.29.569229",
+   "date": "2023-11-29",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.11.29.569229"
+  },
+  "c6e11fac-8f9c-4cf1-aa6e-4d25731ba74f": {
+   "source": "10.1038/s41586-022-05256-1",
+   "date": "2022-10-19",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05256-1"
+  },
+  "bace5737-ba26-422a-8706-0fb1e92b689f": {
+   "source": "10.1038/s41587-024-02157-8",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1038/s41587-024-02157-8"
+  },
+  "ff7328e2-4954-46a2-8ea3-d40b4df0c0ea": {
+   "source": "10.1093/nar/gkae167",
+   "date": "2024-02-26",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae167"
+  },
+  "76bcaeeb-93bd-4951-99b9-cf4613de1a37": {
+   "source": "10.1128/aem.01486-22",
+   "date": "2022-11-17",
+   "field": "created",
+   "cluster": "10.1128/aem.01486-22"
+  },
+  "850f86d3-0139-43df-89fd-e606c30aaa8b": {
+   "source": "10.1016/j.immuni.2021.12.015",
+   "date": "2022-01-25",
+   "field": "created",
+   "cluster": "10.1016/j.immuni.2021.12.015"
+  },
+  "df061613-2591-4faa-be03-791c76375cb5": {
+   "source": "10.1016/j.chom.2022.07.016",
+   "date": "2022-08-04",
+   "field": "created",
+   "cluster": "10.1016/j.chom.2022.07.016"
+  },
+  "634f6745-f3b3-4cb1-9859-96ffb954b98a": {
+   "source": "10.1093/nar/gkae223",
+   "date": "2024-04-04",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae223"
+  },
+  "d1eabedb-656f-4f89-a65f-4ed89478ba9f": {
+   "source": "10.1016/j.neuron.2021.10.032",
+   "date": "2021-11-17",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2021.10.032"
+  },
+  "58f69c8d-cb94-4021-a84f-c549a7b976e1": {
+   "source": "10.1186/s12915-024-01918-w",
+   "date": "2024-05-20",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01918-w"
+  },
+  "20980744-f9ff-4e39-a08d-106eada6900c": {
+   "source": "10.1038/s41586-022-05570-8",
+   "date": "2022-11-28",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05570-8"
+  },
+  "a6622141-68d6-418f-8e30-7a5eff3d4fa8": {
+   "source": "10.1021/acschembio.3c00138",
+   "date": "2023-05-04",
+   "field": "issued",
+   "cluster": "10.1021/acschembio.3c00138"
+  },
+  "9fe3ff3b-60cf-472d-ab1a-2bda1868f1b4": {
+   "source": "10.1101/2024.05.13.593760",
+   "date": "2024-05-14",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.13.593760"
+  },
+  "9088251a-99fe-4b91-b6a9-375154ec4f58": {
+   "source": "10.7150/ijbs.86869",
+   "date": "2023-01-01",
+   "field": "issued",
+   "cluster": "10.7150/ijbs.86869"
+  },
+  "a45c277e-55d9-4e7f-b1de-37fc2e19daf6": {
+   "source": "10.1126/science.aaw1219",
+   "date": "2019-03-28",
+   "field": "created",
+   "cluster": "10.1126/science.aaw1219"
+  },
+  "a8aa19cc-e4d1-4aa1-8c4e-2a518b4c99d6": {
+   "source": "10.1126/science.aaw1219",
+   "date": "2019-03-28",
+   "field": "created",
+   "cluster": "10.1126/science.aaw1219"
+  },
+  "2c3ba95c-47d5-4798-9911-ffdb11c940e4": {
+   "source": "10.1038/s44320-024-00013-0",
+   "date": "2024-01-25",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00013-0"
+  },
+  "49d2630e-9d26-4e12-89a3-3050a609abf5": {
+   "source": "10.1038/s41586-019-1506-7",
+   "date": "2019-08-21",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1506-7"
+  },
+  "c758f685-ba4a-4bf0-bd85-567c60ff1508": {
+   "source": "10.1073/pnas.2320421121",
+   "date": "2024-04-25",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2320421121"
+  },
+  "5966d3db-5a23-4ea7-a719-2472019d94a6": {
+   "source": "10.1093/nar/gkae088",
+   "date": "2024-02-13",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae088"
+  },
+  "fd54d745-447c-4fcd-80de-463fcd3de6a4": {
+   "source": "10.1038/s44319-023-00030-4",
+   "date": "2024-01-02",
+   "field": "issued",
+   "cluster": "10.1038/s44319-023-00030-4"
+  },
+  "3f5bae15-bd5d-43e3-8e5e-944b1e533529": {
+   "source": "10.1093/nar/gkae069",
+   "date": "2024-02-10",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae069"
+  },
+  "4d11258d-ee8c-4bc7-91a8-613c7a41f139": {
+   "source": "10.1073/pnas.2322520121",
+   "date": "2024-04-24",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2322520121"
+  },
+  "1ff2b2e4-492e-4e35-bf33-f0fb53ab938c": {
+   "source": "10.1038/s41586-024-07385-1",
+   "date": "2024-05-08",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07385-1"
+  },
+  "178a5e56-340f-4ba8-a3e5-f024ca016f40": {
+   "source": "10.1101/2024.05.13.593833",
+   "date": "2024-05-13",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.13.593833"
+  },
+  "c75879f4-9329-4594-8f6a-c4d421f2439f": {
+   "source": "10.1101/2024.05.13.593936",
+   "date": "2024-05-14",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.13.593936"
+  },
+  "b2a0249b-2850-4576-8b78-8408c1e47324": {
+   "source": "10.1093/nar/gkae212",
+   "date": "2024-03-12",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae212"
+  },
+  "f7346ea0-5f1b-45e9-a1d6-493c754159c1": {
+   "source": "10.1007/s00125-024-06103-w",
+   "date": "2024-02-17",
+   "field": "issued",
+   "cluster": "10.1007/s00125-024-06103-w"
+  },
+  "3d3fea17-c8ee-4005-94cb-d8798be696c3": {
+   "source": "10.1016/j.cell.2024.02.016",
+   "date": "2024-03-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.016"
+  },
+  "ab58e166-f0b5-49ae-ac56-c38b5d6e8aad": {
+   "source": "10.1016/j.cell.2022.05.018",
+   "date": "2022-06-16",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2022.05.018"
+  },
+  "a73b2c2d-a3ac-49e6-8e2e-44b4c1e6de94": {
+   "source": "10.1101/2024.05.15.594402",
+   "date": "2024-05-16",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.15.594402"
+  },
+  "04dbe07d-8b2c-4daf-b5b2-ef0e93f1fd2a": {
+   "source": "10.1101/2024.05.14.593970",
+   "date": "2024-05-14",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.14.593970"
+  },
+  "4a6705b5-85e5-44c1-8444-65be30192802": {
+   "source": "10.1093/nar/gkae222",
+   "date": "2024-03-15",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae222"
+  },
+  "08397294-3d99-4790-915c-b8bcb1e9e661": {
+   "source": "10.1101/2024.02.13.580051",
+   "date": "2024-02-13",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.02.13.580051"
+  },
+  "837b2489-723a-4099-9b68-c2a9ea688f4d": {
+   "source": "10.1101/2024.05.14.594155",
+   "date": "2024-05-14",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.14.594155"
+  },
+  "745f5a0d-5f8f-405e-bb46-f37b3d1f0678": {
+   "source": "10.1101/2024.05.01.592108",
+   "date": "2024-05-02",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2024.05.01.592108"
+  },
+  "bca1be77-208b-4d57-ac29-05aa6d58bdbf": {
+   "source": "10.1016/j.ccell.2024.03.013",
+   "date": "2024-04-18",
+   "field": "created",
+   "cluster": "10.1016/j.ccell.2024.03.013"
+  },
+  "2dc20a2f-de54-4bfe-a34f-1ba395f342cf": {
+   "source": "10.1016/j.bpj.2024.03.034",
+   "date": "2024-03-27",
+   "field": "created",
+   "cluster": "10.1016/j.bpj.2024.03.034"
+  },
+  "afb36e40-0836-4810-909e-eabfe17dcd8b": {
+   "source": "10.1093/nar/gkae102",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae102"
+  },
+  "c6f097c9-2216-4e98-af45-8101681b38ec": {
+   "source": "10.1038/s41587-023-01801-z",
+   "date": "2023-05-22",
+   "field": "issued",
+   "cluster": "10.1038/s41587-023-01801-z"
+  },
+  "9f797d29-9f3a-481d-b2fe-326cbc686273": {
+   "source": "10.3390/ijms25031660",
+   "date": "2024-01-29",
+   "field": "issued",
+   "cluster": "10.3390/ijms25031660"
+  },
+  "0d5cf8a7-a240-4a8f-be4e-c16712f90d79": {
+   "source": "10.1038/s41467-024-47449-4",
+   "date": "2024-04-11",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-47449-4"
+  },
+  "40400348-eabb-4b25-90d1-e33589d3e5a4": {
+   "source": "10.1016/j.ccell.2021.11.002",
+   "date": "2021-11-24",
+   "field": "created",
+   "cluster": "10.1016/j.ccell.2021.11.002"
+  },
+  "4949fc05-5f78-4dd0-8d9c-3dbb6004740a": {
+   "source": "10.1038/s41587-024-02174-7",
+   "date": "2024-03-22",
+   "field": "issued",
+   "cluster": "10.1038/s41587-024-02174-7"
+  },
+  "c7b36a1c-ea80-4ae5-b2f1-3932cb16c3cf": {
+   "source": "10.1038/s41587-024-02174-7",
+   "date": "2024-03-22",
+   "field": "issued",
+   "cluster": "10.1038/s41587-024-02174-7"
+  },
+  "ebe57888-662f-488f-ade1-c0aaffe638b1": {
+   "source": "10.1016/j.neuron.2021.08.014",
+   "date": "2021-09-10",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2021.08.014"
+  },
+  "ef07d562-fc18-43c9-8201-7a189d76eeb9": {
+   "source": "10.1126/science.abi9591",
+   "date": "2022-03-08",
+   "field": "created",
+   "cluster": "10.1126/science.abi9591"
+  },
+  "b331480e-dfc7-4e92-931a-c71f491c4795": {
+   "source": "10.1038/s41586-023-06123-3",
+   "date": "2023-05-31",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06123-3"
+  },
+  "58950824-2665-445d-939b-9512d5d01a2b": {
+   "source": "10.1038/s41586-023-06877-w",
+   "date": "2024-05-01",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06877-w"
+  },
+  "8d12cb90-73c6-4cc1-9f83-0fa9fd822e92": {
+   "source": "10.1126/science.abk2432",
+   "date": "2022-03-03",
+   "field": "created",
+   "cluster": "10.1126/science.abk2432"
+  }
+ },
+ "LAB-Bench SuppQA": {
+  "1b0eaf02-0861-40b6-89bf-a267c9c8c206": {
+   "source": "10.1038/nature20098",
+   "date": "2016-10-01",
+   "field": "issued",
+   "cluster": "10.1038/nature20098"
+  },
+  "a49b9aa0-8b29-47ba-a757-9f247b37b47a": {
+   "source": "10.1016/j.cub.2024.02.040",
+   "date": "2024-03-08",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2024.02.040"
+  },
+  "b6b4077d-a0db-4d26-9b3c-57fc469ad431": {
+   "source": "10.1038/s44320-024-00018-9",
+   "date": "2024-02-14",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00018-9"
+  },
+  "58c7753e-549d-4fea-86b2-54fbdbf7ada9": {
+   "source": "10.1038/nmeth.4154",
+   "date": "2017-01-30",
+   "field": "issued",
+   "cluster": "10.1038/nmeth.4154"
+  },
+  "7faf65d7-55c9-4586-9e1e-9d4e39e93601": {
+   "source": "10.1016/j.cell.2024.03.022",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.03.022"
+  },
+  "70be3149-5beb-443f-bfe8-cf14da0dd59c": {
+   "source": "10.1038/s41467-023-44271-2",
+   "date": "2024-01-08",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-44271-2"
+  },
+  "b5dbe6b5-95e5-4c1a-810f-8877c6d46c72": {
+   "source": "10.1016/j.cub.2024.02.036",
+   "date": "2024-03-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cub.2024.02.036"
+  },
+  "ea25f382-3885-4294-875e-10fccf6f4b3c": {
+   "source": "10.1038/s41592-021-01358-2",
+   "date": "2022-01-31",
+   "field": "issued",
+   "cluster": "10.1038/s41592-021-01358-2"
+  },
+  "2af1880c-a4dc-4da2-b4d5-131ef96c6350": {
+   "source": "10.1038/s41586-021-03775-x",
+   "date": "2021-07-28",
+   "field": "issued",
+   "cluster": "10.1038/s41586-021-03775-x"
+  },
+  "2a34cefb-d28e-426e-a925-829bda3435d8": {
+   "source": "10.1038/nmeth.4341",
+   "date": "2017-06-26",
+   "field": "issued",
+   "cluster": "10.1038/nmeth.4341"
+  },
+  "72434cfd-5cda-48e3-942f-12c99104b8a1": {
+   "source": "10.1038/s42256-023-00726-1",
+   "date": "2023-10-19",
+   "field": "issued",
+   "cluster": "10.1038/s42256-023-00726-1"
+  },
+  "a140f0c0-8b5c-4670-8716-22c93ad45c06": {
+   "source": "10.1038/s44320-024-00034-9",
+   "date": "2024-04-25",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00034-9"
+  },
+  "823bc7ee-a275-46a2-8143-7aaf057fe331": {
+   "source": "10.1038/s41589-023-01349-8",
+   "date": "2023-05-25",
+   "field": "issued",
+   "cluster": "10.1038/s41589-023-01349-8"
+  },
+  "05e60207-57a7-4b6b-b294-354893a3d246": {
+   "source": "10.1038/s41586-021-04249-w",
+   "date": "2022-01-05",
+   "field": "issued",
+   "cluster": "10.1038/s41586-021-04249-w"
+  },
+  "37730e76-f5dc-42be-91c1-3f69147b465a": {
+   "source": "10.1016/j.cell.2024.02.025",
+   "date": "2024-03-18",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2024.02.025"
+  },
+  "3041bea7-5161-44e8-abcd-ebfb404a1553": {
+   "source": "10.1186/s12915-024-01866-5",
+   "date": "2024-03-22",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01866-5"
+  },
+  "d454257b-b65f-4ed8-9873-07d0d685fb40": {
+   "source": "10.1038/nature13400",
+   "date": "2014-05-21",
+   "field": "issued",
+   "cluster": "10.1038/nature13400"
+  },
+  "de9956c2-4b42-4529-8926-48848c8237f6": {
+   "source": "10.1038/s41551-022-00912-3",
+   "date": "2022-08-29",
+   "field": "issued",
+   "cluster": "10.1038/s41551-022-00912-3"
+  },
+  "311df379-df7a-4410-a32a-8bbb79376304": {
+   "source": "10.1093/nar/gkae093",
+   "date": "2024-02-05",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae093"
+  },
+  "5a974da2-cca9-49e1-a421-e6d3ad9c17ee": {
+   "source": "10.7554/elife.86933.3",
+   "date": "2024-02-07",
+   "field": "issued",
+   "cluster": "10.7554/elife.86933.3"
+  },
+  "b3d8ddd1-4829-405c-b72b-f5dcf114636f": {
+   "source": "10.1038/nmeth.3441",
+   "date": "2015-06-30",
+   "field": "issued",
+   "cluster": "10.1038/nmeth.3441"
+  },
+  "74884486-15bc-45de-9174-2efe35a2c8fc": {
+   "source": "10.1093/nar/gkae039",
+   "date": "2024-01-11",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae039"
+  },
+  "27685d85-ec01-4ba0-a690-35a89b609105": {
+   "source": "10.1038/nmeth999",
+   "date": "2006-12-10",
+   "field": "issued",
+   "cluster": "10.1038/nmeth999"
+  },
+  "0348e600-f5cc-4fa8-89eb-d2cb3ae18752": {
+   "source": "10.1038/s41592-022-01569-1",
+   "date": "2022-09-01",
+   "field": "issued",
+   "cluster": "10.1038/s41592-022-01569-1"
+  },
+  "e77c9e8d-087c-4be1-90b5-987f36cbc27a": {
+   "source": "10.1371/journal.pbio.3002453",
+   "date": "2024-01-05",
+   "field": "issued",
+   "cluster": "10.1371/journal.pbio.3002453"
+  },
+  "aa904a36-3656-45a8-a0d2-912c04dd2558": {
+   "source": "10.1038/s41586-021-04358-6",
+   "date": "2022-02-02",
+   "field": "issued",
+   "cluster": "10.1038/s41586-021-04358-6"
+  },
+  "966e60e1-6b15-4105-b2a4-b1859e1963fc": {
+   "source": "10.1016/j.cell.2021.04.029",
+   "date": "2021-05-25",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.04.029"
+  },
+  "c81b515b-c24d-4937-b972-67d89fc7a09f": {
+   "source": "10.1038/nature26155",
+   "date": "2018-02-28",
+   "field": "issued",
+   "cluster": "10.1038/nature26155"
+  },
+  "0284e566-0c84-4333-a44d-12bd6c4c9a9c": {
+   "source": "10.1038/nmeth.2589",
+   "date": "2013-08-04",
+   "field": "issued",
+   "cluster": "10.1038/nmeth.2589"
+  },
+  "11c0a95f-70e6-4e5b-9ace-0cf6b97ad83b": {
+   "source": "10.1038/s41586-022-05280-1",
+   "date": "2022-10-05",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05280-1"
+  },
+  "8ba7a888-70c6-404e-949d-60e4145b8eb6": {
+   "source": "10.1126/science.1248882",
+   "date": "2014-06-05",
+   "field": "created",
+   "cluster": "10.1126/science.1248882"
+  },
+  "d540a38e-6247-4a19-8752-873b792ff3d4": {
+   "source": "10.1038/s41592-022-01660-7",
+   "date": "2022-11-07",
+   "field": "issued",
+   "cluster": "10.1038/s41592-022-01660-7"
+  },
+  "38217b58-50a4-4376-b35a-78b8c5c1a980": {
+   "source": "10.1093/nar/gkae130",
+   "date": "2024-02-27",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae130"
+  },
+  "3bee1e75-3b9c-4270-bb9e-e65b1a941b48": {
+   "source": "10.1038/s41551-021-00815-9",
+   "date": "2021-12-20",
+   "field": "issued",
+   "cluster": "10.1038/s41551-021-00815-9"
+  },
+  "02af18a7-aa18-4f4a-bc40-a8e81b4258dc": {
+   "source": "10.1038/nature05498",
+   "date": "2007-02-01",
+   "field": "issued",
+   "cluster": "10.1038/nature05498"
+  },
+  "d57031ac-e7d7-4274-876b-36449ecdd640": {
+   "source": "10.1038/s41589-023-01539-4",
+   "date": "2024-02-06",
+   "field": "issued",
+   "cluster": "10.1038/s41589-023-01539-4"
+  },
+  "5dd6b784-487d-48bd-ac36-9653fc11c0ad": {
+   "source": "10.1038/nature16956",
+   "date": "2016-02-23",
+   "field": "created",
+   "cluster": "10.1038/nature16956"
+  },
+  "9379deb7-21f2-4263-86f8-2d15d1a82160": {
+   "source": "10.1093/nar/gkae069",
+   "date": "2024-02-10",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae069"
+  },
+  "41478c97-f6f8-47f5-818b-1db407be9075": {
+   "source": "10.1093/nar/gkt1101",
+   "date": "2013-11-12",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkt1101"
+  },
+  "a5eff44a-ec71-44a8-bdb6-173fd9ea92ce": {
+   "source": "10.1016/j.cub.2024.04.002",
+   "date": "2024-04-26",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2024.04.002"
+  },
+  "e3857371-2a36-4019-b23e-177b4b5a4be5": {
+   "source": "10.1038/s41586-022-05278-9",
+   "date": "2022-10-05",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05278-9"
+  },
+  "6b6dda99-3651-4bce-86c9-4fc2032479db": {
+   "source": "10.1016/j.cell.2020.09.001",
+   "date": "2020-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2020.09.001"
+  },
+  "3417bcfa-c37a-4e25-8a0c-1fd963741eea": {
+   "source": "10.1016/j.cell.2022.10.021",
+   "date": "2022-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2022.10.021"
+  },
+  "f13fbc77-553f-4a4c-b29b-ca178262eeef": {
+   "source": "10.1073/pnas.2311854121",
+   "date": "2024-02-06",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2311854121"
+  },
+  "93566dc3-5f5c-491e-b723-60712cca625d": {
+   "source": "10.1038/nature20792",
+   "date": "2017-01-01",
+   "field": "issued",
+   "cluster": "10.1038/nature20792"
+  },
+  "e5ed958b-1cc9-4848-8e37-a895beb835e2": {
+   "source": "10.1038/s41586-023-06985-7",
+   "date": "2024-01-31",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-06985-7"
+  },
+  "ebb6a0ef-5421-4392-8717-f574c9600842": {
+   "source": "10.1038/nchem.2307",
+   "date": "2015-08-03",
+   "field": "issued",
+   "cluster": "10.1038/nchem.2307"
+  },
+  "59bf5188-9844-459c-94cf-89ed8cd3287f": {
+   "source": "10.1073/pnas.2405123121",
+   "date": "2024-05-23",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2405123121"
+  },
+  "c8e4f3d2-2fb3-428f-bb02-8593513efc54": {
+   "source": "10.1038/s41592-022-01540-0",
+   "date": "2022-07-11",
+   "field": "issued",
+   "cluster": "10.1038/s41592-022-01540-0"
+  },
+  "ceeac89d-59c1-48a7-93db-46b045391906": {
+   "source": "10.1038/nature05453",
+   "date": "2006-12-06",
+   "field": "issued",
+   "cluster": "10.1038/nature05453"
+  },
+  "8c2e99ce-7af0-4e73-a058-151135647076": {
+   "source": "10.1038/s41586-024-07067-y",
+   "date": "2024-02-21",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07067-y"
+  },
+  "1026513d-a087-427b-ab16-8a7c199e039e": {
+   "source": "10.1038/nature14272",
+   "date": "2015-03-01",
+   "field": "issued",
+   "cluster": "10.1038/nature14272"
+  },
+  "a8b1cd02-4bd9-43ad-927e-c2c4eb7c528b": {
+   "source": "10.1038/s41586-024-07445-6",
+   "date": "2024-05-22",
+   "field": "issued",
+   "cluster": "10.1038/s41586-024-07445-6"
+  },
+  "97e98c7d-105b-4af5-99be-6e1fe4a2cce6": {
+   "source": "10.1016/j.celrep.2024.113827",
+   "date": "2024-02-20",
+   "field": "created",
+   "cluster": "10.1016/j.celrep.2024.113827"
+  },
+  "19b4836a-0635-4aad-9817-8934cbb7ca73": {
+   "source": "10.1038/nbt.4103",
+   "date": "2018-03-28",
+   "field": "issued",
+   "cluster": "10.1038/nbt.4103"
+  },
+  "9b972351-d2f8-4491-8a7c-3fb5a3e429a9": {
+   "source": "10.1038/s41586-022-05258-z",
+   "date": "2022-09-28",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05258-z"
+  },
+  "dce3628e-905d-4b90-a6d0-877a2ccbbc33": {
+   "source": "10.1038/nature21065",
+   "date": "2017-02-03",
+   "field": "created",
+   "cluster": "10.1038/nature21065"
+  },
+  "befeb56e-6f04-4be7-9304-4ede1bdd25bc": {
+   "source": "10.1073/pnas.2400226121",
+   "date": "2024-03-19",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2400226121"
+  },
+  "bd08e5ba-e26b-4258-b3a2-543c842d028a": {
+   "source": "10.1186/s12915-024-01916-y",
+   "date": "2024-05-20",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01916-y"
+  },
+  "c04cc31d-9aee-46bf-9628-e153c72a44e3": {
+   "source": "10.1016/j.celrep.2024.113805",
+   "date": "2024-02-19",
+   "field": "created",
+   "cluster": "10.1016/j.celrep.2024.113805"
+  },
+  "4f3bd821-52d6-4875-b8ec-d92ca0fe644f": {
+   "source": "10.1038/s41587-022-01648-w",
+   "date": "2023-01-26",
+   "field": "issued",
+   "cluster": "10.1038/s41587-022-01648-w"
+  },
+  "8719a6b8-76e9-44ae-b26b-65821de0ac99": {
+   "source": "10.1038/nature25164",
+   "date": "2017-12-18",
+   "field": "created",
+   "cluster": "10.1038/nature25164"
+  },
+  "93099819-56be-40bf-b54d-427b663a2381": {
+   "source": "10.1073/pnas.2314884121",
+   "date": "2024-01-17",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2314884121"
+  },
+  "df1365b0-4731-4f40-8dd7-64f4793a1729": {
+   "source": "10.1038/nature25021",
+   "date": "2018-01-01",
+   "field": "issued",
+   "cluster": "10.1038/nature25021"
+  },
+  "bbc4ff4f-89f6-4f27-99e1-f03482feeffb": {
+   "source": "10.1038/nchem.2850",
+   "date": "2017-09-11",
+   "field": "issued",
+   "cluster": "10.1038/nchem.2850"
+  },
+  "459ee10b-aa46-47ad-af55-8c0e5a0015ef": {
+   "source": "10.1038/s41586-020-2352-3",
+   "date": "2020-06-03",
+   "field": "issued",
+   "cluster": "10.1038/s41586-020-2352-3"
+  },
+  "03f5a91c-f167-475e-8ccb-4c7561c767a9": {
+   "source": "10.1371/journal.pbio.3002468",
+   "date": "2024-01-25",
+   "field": "issued",
+   "cluster": "10.1371/journal.pbio.3002468"
+  },
+  "4b3bbf7d-e352-4ff9-b79a-65d15566de13": {
+   "source": "10.1038/s41587-021-01001-7",
+   "date": "2021-08-30",
+   "field": "issued",
+   "cluster": "10.1038/s41587-021-01001-7"
+  },
+  "cdab2021-feed-497f-992a-a8f73df33957": {
+   "source": "10.1016/j.cell.2019.05.006",
+   "date": "2019-06-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.05.006"
+  },
+  "bc806521-164f-4f66-90e7-9d28f5fc319e": {
+   "source": "10.1038/s41592-022-01672-3",
+   "date": "2022-11-10",
+   "field": "issued",
+   "cluster": "10.1038/s41592-022-01672-3"
+  },
+  "404f6ac4-0605-406b-b32e-0fc14d1600f4": {
+   "source": "10.1038/s41586-021-03251-6",
+   "date": "2021-02-17",
+   "field": "issued",
+   "cluster": "10.1038/s41586-021-03251-6"
+  },
+  "cf4608f5-2241-4c3b-a85a-7d2cda3733ee": {
+   "source": "10.1038/s41467-024-44796-0",
+   "date": "2024-01-13",
+   "field": "issued",
+   "cluster": "10.1038/s41467-024-44796-0"
+  },
+  "20c5295d-7cce-4a70-b950-640ea6e69806": {
+   "source": "10.1186/s12915-024-01816-1",
+   "date": "2024-02-05",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01816-1"
+  },
+  "181019ef-1151-4668-9178-13641d24bd85": {
+   "source": "10.1038/nature22051",
+   "date": "2017-04-01",
+   "field": "issued",
+   "cluster": "10.1038/nature22051"
+  },
+  "9dbf4365-801d-42f9-80a9-357b4d93c793": {
+   "source": "10.1038/nature18930",
+   "date": "2016-07-19",
+   "field": "created",
+   "cluster": "10.1038/nature18930"
+  },
+  "ed0ad27f-c1ed-4796-a8f6-dd49c66b2515": {
+   "source": "10.1038/s41467-023-44647-4",
+   "date": "2024-01-08",
+   "field": "issued",
+   "cluster": "10.1038/s41467-023-44647-4"
+  },
+  "a1cf5586-4afc-48e6-a0d2-9554f9413983": {
+   "source": "10.1093/nar/gkae111",
+   "date": "2024-02-26",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae111"
+  },
+  "b226af16-8f63-4e2d-bf3c-c94a1cc2e32e": {
+   "source": "10.1186/s12915-024-01917-x",
+   "date": "2024-05-15",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01917-x"
+  },
+  "30fce0db-9bb8-4a89-ae5c-78f665da41f6": {
+   "source": "10.1038/s41586-023-05696-3",
+   "date": "2023-02-22",
+   "field": "issued",
+   "cluster": "10.1038/s41586-023-05696-3"
+  },
+  "5d457a9d-4f9b-4ad9-aac3-dd15e60f00cd": {
+   "source": "10.1016/j.cell.2024.03.025",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.03.025"
+  },
+  "10512e71-a619-42ab-8e1a-3b5b4decda5d": {
+   "source": "10.1038/cr.2016.3",
+   "date": "2016-01-15",
+   "field": "issued",
+   "cluster": "10.1038/cr.2016.3"
+  },
+  "bbb9143b-6f7c-4960-bd44-ab8972a1da27": {
+   "source": "10.1038/s44320-024-00017-w",
+   "date": "2024-01-30",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00017-w"
+  }
+ },
+ "LAB-Bench DbQA": {},
+ "LAB-Bench SeqQA": {},
+ "LAB-Bench TableQA": {
+  "4ac65325-510a-4f3d-a770-af7589ff0853": {
+   "source": "10.1111/ner.13099",
+   "date": "2020-02-03",
+   "field": "created",
+   "cluster": "10.1111/ner.13099"
+  },
+  "75147404-3707-4a19-93bb-6745ed00f0d4": {
+   "source": "10.1186/s13059-016-0881-8",
+   "date": "2016-01-26",
+   "field": "issued",
+   "cluster": "10.1186/s13059-016-0881-8"
+  },
+  "307cb0ea-f741-4fa3-84f2-bb0381e1ee5d": {
+   "source": "10.1016/j.jmbbm.2019.07.015",
+   "date": "2019-07-18",
+   "field": "created",
+   "cluster": "10.1016/j.jmbbm.2019.07.015"
+  },
+  "1b3d4b4b-7276-4aae-be29-b2f6a7c70db0": {
+   "source": "10.1055/s-0033-1344213",
+   "date": "2013-07-23",
+   "field": "issued",
+   "cluster": "10.1055/s-0033-1344213"
+  },
+  "06bae489-3e38-4bd9-8872-7170888cdc25": {
+   "source": "10.1007/s00423-003-0396-0",
+   "date": "2003-10-01",
+   "field": "issued",
+   "cluster": "10.1007/s00423-003-0396-0"
+  },
+  "83f20165-771c-447a-b6b6-58a5e215e3a3": {
+   "source": "10.1016/j.jmbbm.2019.07.015",
+   "date": "2019-07-18",
+   "field": "created",
+   "cluster": "10.1016/j.jmbbm.2019.07.015"
+  },
+  "22ace34f-aa6a-450e-86d0-24eb8bf9ac85": {
+   "source": "10.1038/nature18002",
+   "date": "2016-06-14",
+   "field": "created",
+   "cluster": "10.1038/nature18002"
+  },
+  "30d26305-f6de-4636-87a2-0fbaf6e05e66": {
+   "source": "10.1186/s12883-017-0945-8",
+   "date": "2017-08-30",
+   "field": "issued",
+   "cluster": "10.1186/s12883-017-0945-8"
+  },
+  "6910791a-d7cb-4a1c-9abe-63770b67e122": {
+   "source": "10.1038/s41586-018-0509-0",
+   "date": "2018-09-11",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0509-0"
+  },
+  "3f0a1862-2d76-4722-af55-eb2d3fcd4567": {
+   "source": "10.1038/s41586-020-2279-8",
+   "date": "2020-04-29",
+   "field": "issued",
+   "cluster": "10.1038/s41586-020-2279-8"
+  },
+  "fad15414-51d4-4a51-8309-59195df1e3e6": {
+   "source": "10.7150/ijbs.6.756",
+   "date": "2010-01-01",
+   "field": "issued",
+   "cluster": "10.7150/ijbs.6.756"
+  },
+  "a09819e3-0322-43df-9f0e-275a38c59e90": {
+   "source": "10.1038/srep37563",
+   "date": "2016-11-22",
+   "field": "issued",
+   "cluster": "10.1038/srep37563"
+  },
+  "29c8a6ee-88ce-49b7-bfeb-a288c18995ff": {
+   "source": "10.1038/nprot.2015.001",
+   "date": "2014-12-04",
+   "field": "issued",
+   "cluster": "10.1038/nprot.2015.001"
+  },
+  "350cecf7-49c8-4c77-81b7-0c9f5e26b4c5": {
+   "source": "10.1073/pnas.1602413113",
+   "date": "2016-06-28",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1602413113"
+  },
+  "8409cd30-2c9b-40ba-8433-d68cd2adedd0": {
+   "source": "10.1086/595830",
+   "date": "2009-01-09",
+   "field": "created",
+   "cluster": "10.1086/595830"
+  },
+  "59063aa6-a8e0-47c7-8403-ea40e6e3229c": {
+   "source": "10.1021/bi4006539",
+   "date": "2013-10-14",
+   "field": "created",
+   "cluster": "10.1021/bi4006539"
+  },
+  "ac3fcd9f-1e33-4366-a0d2-d4004237c299": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "623ac718-38f5-46f6-a873-a1541b0d496d": {
+   "source": "10.1038/s41586-018-0509-0",
+   "date": "2018-09-11",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0509-0"
+  },
+  "02b37b5e-d572-44f1-8fef-5079f6140448": {
+   "source": "10.1261/rna.1538809",
+   "date": "2009-05-22",
+   "field": "issued",
+   "cluster": "10.1261/rna.1538809"
+  },
+  "67f23fad-c5d3-420e-988c-6fad139ee5ba": {
+   "source": "10.1038/ncomms1324",
+   "date": "2011-05-17",
+   "field": "issued",
+   "cluster": "10.1038/ncomms1324"
+  },
+  "f943c587-a823-49e5-89ca-536125eaa1b8": {
+   "source": "10.1001/jama.2020.12134",
+   "date": "2020-07-28",
+   "field": "created",
+   "cluster": "10.1001/jama.2020.12134"
+  },
+  "9dfee0c1-93f2-457a-92a0-42cb30d86939": {
+   "source": "10.1016/s0014-5793(97)00120-8",
+   "date": "1997-03-10",
+   "field": "issued",
+   "cluster": "10.1016/s0014-5793(97)00120-8"
+  },
+  "52ca5e38-153a-4f06-9eb4-d5c78fe143a2": {
+   "source": "10.1021/ma00084a026",
+   "date": "1994-03-01",
+   "field": "issued",
+   "cluster": "10.1021/ma00084a026"
+  },
+  "bb3d985e-fb74-4f11-a6ce-78c9162eb293": {
+   "source": "10.1038/ncomms8147",
+   "date": "2015-05-12",
+   "field": "issued",
+   "cluster": "10.1038/ncomms8147"
+  },
+  "1fbf9336-f853-4cdd-a1ec-5a757b9b9128": {
+   "source": "10.1038/s41573-021-00162-z",
+   "date": "2021-03-24",
+   "field": "issued",
+   "cluster": "10.1038/s41573-021-00162-z"
+  },
+  "20cbb12a-8412-494e-8229-3d34b3c8f57e": {
+   "source": "10.1038/nature15515",
+   "date": "2015-09-22",
+   "field": "created",
+   "cluster": "10.1038/nature15515"
+  },
+  "c556144c-9a0f-4369-8c8c-dfd3bef45368": {
+   "source": "10.1093/nar/gkae102",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae102"
+  },
+  "fd0d1f42-f5d2-4e22-8dd1-15585959eb0b": {
+   "source": "10.3171/2018.5.focus18163",
+   "date": "2018-08-01",
+   "field": "issued",
+   "cluster": "10.3171/2018.5.focus18163"
+  },
+  "f2e697ae-f337-440a-b816-fb74f495fdcc": {
+   "source": "10.1038/nature18002",
+   "date": "2016-06-14",
+   "field": "created",
+   "cluster": "10.1038/nature18002"
+  },
+  "6036c219-fd8c-408b-b0e5-a2eaaecbc596": {
+   "source": "10.1038/s41576-020-00292-x",
+   "date": "2020-11-09",
+   "field": "issued",
+   "cluster": "10.1038/s41576-020-00292-x"
+  },
+  "1d1523c7-b301-48b4-bc08-7209f61d6388": {
+   "source": "10.7554/elife.10566",
+   "date": "2016-01-20",
+   "field": "issued",
+   "cluster": "10.7554/elife.10566"
+  },
+  "42a8e597-2006-4788-9882-fb8d79179dec": {
+   "source": "10.1038/s44320-024-00034-9",
+   "date": "2024-04-25",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00034-9"
+  },
+  "87f26bd7-fcbd-4a5f-b03b-a5aed6fdb2ee": {
+   "source": "10.1038/nrg2988",
+   "date": "2011-04-18",
+   "field": "issued",
+   "cluster": "10.1038/nrg2988"
+  },
+  "1731d648-37fb-471b-8d16-87793c556cd2": {
+   "source": "10.1007/s00018-021-04077-1",
+   "date": "2022-02-20",
+   "field": "issued",
+   "cluster": "10.1007/s00018-021-04077-1"
+  },
+  "40a85f45-ead6-4a4a-94ae-f72dfc1160b0": {
+   "source": "10.1016/j.biochi.2017.10.026",
+   "date": "2017-11-20",
+   "field": "created",
+   "cluster": "10.1016/j.biochi.2017.10.026"
+  },
+  "e57baa1f-2f04-4bf3-a47c-dc0cfe586b15": {
+   "source": "10.1016/j.cell.2024.03.034",
+   "date": "2024-04-22",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2024.03.034"
+  },
+  "f0048e1c-e782-4714-bd94-bba804105fff": {
+   "source": "10.1016/j.vaccine.2005.01.006",
+   "date": "2005-01-15",
+   "field": "created",
+   "cluster": "10.1016/j.vaccine.2005.01.006"
+  },
+  "78bace9f-4d05-4bc1-9373-627bab23c9df": {
+   "source": "10.1038/s41586-019-1424-8",
+   "date": "2019-07-31",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1424-8"
+  },
+  "9267b714-67f7-406f-8bb2-01fddc6ec64d": {
+   "source": "10.1038/s41573-021-00162-z",
+   "date": "2021-03-24",
+   "field": "issued",
+   "cluster": "10.1038/s41573-021-00162-z"
+  },
+  "6b8c0403-935d-44cd-94f5-77413ff03da9": {
+   "source": "10.1038/nature19802",
+   "date": "2016-09-23",
+   "field": "created",
+   "cluster": "10.1038/nature19802"
+  },
+  "42cbdd47-2a8a-40ab-a3d5-9f53655de68f": {
+   "source": "10.1038/s41573-021-00162-z",
+   "date": "2021-03-24",
+   "field": "issued",
+   "cluster": "10.1038/s41573-021-00162-z"
+  },
+  "11d11d3f-6e6c-4fac-844e-9a861647fe4e": {
+   "source": "10.1038/s44320-024-00018-9",
+   "date": "2024-02-14",
+   "field": "issued",
+   "cluster": "10.1038/s44320-024-00018-9"
+  },
+  "233d4c2a-bdbe-4d98-ba63-1bcd87abf5fa": {
+   "source": "10.1016/s1474-4422(13)70061-9",
+   "date": "2013-03-28",
+   "field": "created",
+   "cluster": "10.1016/s1474-4422(13)70061-9"
+  },
+  "3b0f9f28-c4df-46b5-85bc-ac6865502c46": {
+   "source": "10.1038/s41572-018-0038-z",
+   "date": "2018-11-01",
+   "field": "issued",
+   "cluster": "10.1038/s41572-018-0038-z"
+  },
+  "ba148e71-dd96-40cf-b4c1-2d552904ef73": {
+   "source": "10.1038/nature22067",
+   "date": "2017-04-01",
+   "field": "issued",
+   "cluster": "10.1038/nature22067"
+  },
+  "781c93e7-1218-41a7-969a-b29553d2cdcc": {
+   "source": "10.1038/nature18930",
+   "date": "2016-07-19",
+   "field": "created",
+   "cluster": "10.1038/nature18930"
+  },
+  "8f1f4b32-0611-49e1-86d1-bb3d7a95c7ac": {
+   "source": "10.1016/j.cell.2024.03.022",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.03.022"
+  },
+  "9d550a0d-aaa4-410c-8763-9b165e3f6366": {
+   "source": "10.1038/s41576-020-00292-x",
+   "date": "2020-11-09",
+   "field": "issued",
+   "cluster": "10.1038/s41576-020-00292-x"
+  },
+  "c8a6b081-ad0a-4281-8987-fab4ecbcf079": {
+   "source": "10.1016/j.cell.2024.02.025",
+   "date": "2024-03-18",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2024.02.025"
+  },
+  "e2ea6e12-7c86-4f4d-b65d-38d5b9275fbd": {
+   "source": "10.1080/15368378.2020.1821707",
+   "date": "2020-09-29",
+   "field": "issued",
+   "cluster": "10.1080/15368378.2020.1821707"
+  },
+  "27979332-e6b7-4be5-9efe-d30a14952076": {
+   "source": "10.1073/pnas.1602413113",
+   "date": "2016-06-28",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1602413113"
+  },
+  "0f4e7d3a-abc2-44e0-be2b-3da957135322": {
+   "source": "10.1038/nn.4593",
+   "date": "2017-06-26",
+   "field": "issued",
+   "cluster": "10.1038/nn.4593"
+  },
+  "d8026a02-3d41-4989-845f-5d97b89e54d1": {
+   "source": "10.1073/pnas.1602413113",
+   "date": "2016-06-28",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1602413113"
+  },
+  "8ea92cf1-2290-4764-a586-197fc1a3236e": {
+   "source": "10.1038/nsmb1005",
+   "date": "2005-10-09",
+   "field": "issued",
+   "cluster": "10.1038/nsmb1005"
+  },
+  "d21cbe58-8624-452c-bdca-199544bb1922": {
+   "source": "10.1038/s41572-018-0038-z",
+   "date": "2018-11-01",
+   "field": "issued",
+   "cluster": "10.1038/s41572-018-0038-z"
+  },
+  "4feed865-ff26-4213-8bd7-142dfc3ba21f": {
+   "source": "10.1016/s1474-4422(13)70061-9",
+   "date": "2013-03-28",
+   "field": "created",
+   "cluster": "10.1016/s1474-4422(13)70061-9"
+  },
+  "ccc37ce1-eeca-4faa-94eb-60eb5d12d454": {
+   "source": "10.1016/j.jacbts.2016.03.009",
+   "date": "2016-06-01",
+   "field": "issued",
+   "cluster": "10.1016/j.jacbts.2016.03.009"
+  },
+  "ea5fddcd-e009-4260-8b7d-918f08512383": {
+   "source": "10.1016/j.addr.2021.01.017",
+   "date": "2021-01-21",
+   "field": "created",
+   "cluster": "10.1016/j.addr.2021.01.017"
+  },
+  "379af0c9-63a6-4b0b-a0f2-fe752cd52115": {
+   "source": "10.1038/nprot.2012.116",
+   "date": "2012-09-13",
+   "field": "issued",
+   "cluster": "10.1038/nprot.2012.116"
+  },
+  "14da0936-8eae-45fc-be7a-9586ecaf52e4": {
+   "source": "10.1016/j.jacbts.2016.03.002",
+   "date": "2016-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.jacbts.2016.03.002"
+  },
+  "9ccec627-1411-4cb4-b087-fc6f8433f6df": {
+   "source": "10.1002/0471142301.ns0126s74",
+   "date": "2016-01-01",
+   "field": "issued",
+   "cluster": "10.1002/0471142301.ns0126s74"
+  },
+  "ed8da5e6-7866-4526-925e-f4d2a757edb5": {
+   "source": "10.1073/pnas.1515692112",
+   "date": "2015-08-31",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1515692112"
+  },
+  "a8767548-d29a-47cb-b1d8-0f96a55111c7": {
+   "source": "10.1038/s41572-018-0038-z",
+   "date": "2018-11-01",
+   "field": "issued",
+   "cluster": "10.1038/s41572-018-0038-z"
+  },
+  "ba146a67-9f63-4bf2-b32e-6dd29da52d7c": {
+   "source": "10.1093/nar/gkt1101",
+   "date": "2013-11-12",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkt1101"
+  },
+  "8c7c5f4e-72b3-4259-87dd-e045b2a93110": {
+   "source": "10.1038/nrg3832",
+   "date": "2014-12-02",
+   "field": "issued",
+   "cluster": "10.1038/nrg3832"
+  },
+  "8e48a7f6-cbb6-409d-b009-b18faaedd072": {
+   "source": "10.1086/595830",
+   "date": "2009-01-09",
+   "field": "created",
+   "cluster": "10.1086/595830"
+  },
+  "36e2555f-4b71-4214-9f42-0270cb368685": {
+   "source": "10.1186/s12915-024-01919-9",
+   "date": "2024-05-23",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01919-9"
+  },
+  "cd15a5cc-5904-45be-aa52-bfa7b1a84773": {
+   "source": "10.1186/s12915-024-01915-z",
+   "date": "2024-05-20",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01915-z"
+  },
+  "ec088ca9-34fb-4849-bb71-74f3957fefa5": {
+   "source": "10.1039/d3dd00217a",
+   "date": "2024-01-01",
+   "field": "issued",
+   "cluster": "10.1039/d3dd00217a"
+  },
+  "88ec1ac7-e790-46cb-8da0-d6539ac40682": {
+   "source": "10.1126/scitranslmed.abg9890",
+   "date": "2021-08-25",
+   "field": "issued",
+   "cluster": "10.1126/scitranslmed.abg9890"
+  },
+  "921f45ca-4262-4907-9172-4cf3dcfd5111": {
+   "source": "10.1016/j.febslet.2013.04.031",
+   "date": "2013-05-10",
+   "field": "issued",
+   "cluster": "10.1016/j.febslet.2013.04.031"
+  },
+  "d7a41206-f101-4343-9223-86f62ae86833": {
+   "source": "10.1016/j.neucom.2010.08.012",
+   "date": "2010-09-19",
+   "field": "created",
+   "cluster": "10.1016/j.neucom.2010.08.012"
+  },
+  "dd6dc766-2aae-47ed-a2e2-2b93f47130db": {
+   "source": "10.1021/sb4001323",
+   "date": "2014-01-31",
+   "field": "created",
+   "cluster": "10.1021/sb4001323"
+  },
+  "472f2cd0-f00d-4ab8-9eda-48e9622edd8f": {
+   "source": "10.1038/nsmb1227",
+   "date": "2007-04-01",
+   "field": "issued",
+   "cluster": "10.1038/nsmb1227"
+  },
+  "dfcb03b4-191b-41ea-b46a-7d826ed74561": {
+   "source": "10.1016/j.cell.2024.03.031",
+   "date": "2024-04-23",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2024.03.031"
+  },
+  "b9e4b215-b3fe-4a10-8db8-54d88b315aa9": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "f721e11c-84f9-44e8-aa82-e41a67c3fef3": {
+   "source": "10.7554/elife.44707",
+   "date": "2019-05-22",
+   "field": "issued",
+   "cluster": "10.7554/elife.44707"
+  },
+  "fe0b100b-b7be-479c-86ee-0593758ba97c": {
+   "source": "10.3390/cancers11060824",
+   "date": "2019-06-13",
+   "field": "issued",
+   "cluster": "10.3390/cancers11060824"
+  },
+  "332d26ae-1a65-4b46-89d3-a5f249acac7f": {
+   "source": "10.1038/nprot.2016.105",
+   "date": "2016-08-25",
+   "field": "issued",
+   "cluster": "10.1038/nprot.2016.105"
+  },
+  "364774f2-a940-4a6e-aa16-138f0c868864": {
+   "source": "10.1073/pnas.1515692112",
+   "date": "2015-08-31",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1515692112"
+  },
+  "bd083a6c-b377-4570-aee8-e69fcedfcc50": {
+   "source": "10.1097/ana.0000000000000427",
+   "date": "2017-03-24",
+   "field": "created",
+   "cluster": "10.1097/ana.0000000000000427"
+  },
+  "abf41b06-ff1c-4d60-a597-b4383d3e3e62": {
+   "source": "10.1016/j.celrep.2024.113988",
+   "date": "2024-03-22",
+   "field": "created",
+   "cluster": "10.1016/j.celrep.2024.113988"
+  },
+  "7a0dc959-529a-4195-8a41-5a9e44e1f14b": {
+   "source": "10.1007/s11120-009-9407-5",
+   "date": "2009-02-23",
+   "field": "created",
+   "cluster": "10.1007/s11120-009-9407-5"
+  },
+  "1e3c99fb-ce86-481a-b4e7-e135c870633c": {
+   "source": "10.1016/j.pharmthera.2014.05.009",
+   "date": "2014-05-20",
+   "field": "created",
+   "cluster": "10.1016/j.pharmthera.2014.05.009"
+  },
+  "8ef88a17-3eb1-479e-a38f-1831cd73196b": {
+   "source": "10.1021/ma00084a026",
+   "date": "1994-03-01",
+   "field": "issued",
+   "cluster": "10.1021/ma00084a026"
+  },
+  "2985c6ee-6cb1-41c7-9dc4-c817444c1942": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "b00d1900-5cf6-40f6-8e44-2988e89669ea": {
+   "source": "10.1093/nar/gkae102",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae102"
+  },
+  "b64c76be-012d-440c-b1af-bf745463a43f": {
+   "source": "10.1016/j.drudis.2022.08.001",
+   "date": "2022-08-22",
+   "field": "created",
+   "cluster": "10.1016/j.drudis.2022.08.001"
+  },
+  "fe15b859-168e-4d81-930f-ff684b0c6e07": {
+   "source": "10.1021/acs.accounts.7b00083",
+   "date": "2017-07-05",
+   "field": "issued",
+   "cluster": "10.1021/acs.accounts.7b00083"
+  },
+  "a9b531bf-73a3-4cd5-985a-17136566cd1b": {
+   "source": "10.1093/nar/gkae039",
+   "date": "2024-01-11",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae039"
+  },
+  "d53a2d9a-ed3b-428b-9d46-37f0fc3b695a": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "ab717d10-0549-46d1-8a36-17586f0389f7": {
+   "source": "10.1038/nprot.2016.105",
+   "date": "2016-08-25",
+   "field": "issued",
+   "cluster": "10.1038/nprot.2016.105"
+  },
+  "ca6a0480-c0ee-4021-9787-b1bfe37d10da": {
+   "source": "10.1038/s41586-018-0289-6",
+   "date": "2018-07-01",
+   "field": "issued",
+   "cluster": "10.1038/s41586-018-0289-6"
+  },
+  "a8614b6b-64cd-47fa-9337-67c57cbe4c05": {
+   "source": "10.1039/c6sc02297a",
+   "date": "2016-11-25",
+   "field": "created",
+   "cluster": "10.1039/c6sc02297a"
+  },
+  "f9c99cd1-276c-4472-ba9d-a71075a3c492": {
+   "source": "10.1002/jor.1100150414",
+   "date": "1997-07-01",
+   "field": "issued",
+   "cluster": "10.1002/jor.1100150414"
+  },
+  "04872fa7-0c70-4a03-99c5-a44cbdfcb6a9": {
+   "source": "10.1038/nmeth.1925",
+   "date": "2012-03-11",
+   "field": "issued",
+   "cluster": "10.1038/nmeth.1925"
+  },
+  "e937bbce-fece-4a5c-b6f5-8b43a45267dc": {
+   "source": "10.1038/ncomms1324",
+   "date": "2011-05-17",
+   "field": "issued",
+   "cluster": "10.1038/ncomms1324"
+  },
+  "75f89aeb-e144-4675-ac26-5f11baf7160d": {
+   "source": "10.7554/elife.44707",
+   "date": "2019-05-22",
+   "field": "issued",
+   "cluster": "10.7554/elife.44707"
+  },
+  "e4cdaf90-ce82-4780-96e4-a1aba7b85175": {
+   "source": "10.1111/ner.13099",
+   "date": "2020-02-03",
+   "field": "created",
+   "cluster": "10.1111/ner.13099"
+  },
+  "e66951f7-973d-44c8-aea4-2517d29a5f8d": {
+   "source": "10.1039/c5sc00115c",
+   "date": "2015-01-01",
+   "field": "issued",
+   "cluster": "10.1039/c5sc00115c"
+  },
+  "8a89e31e-0f5f-4066-bfc7-3e57b06cff95": {
+   "source": "10.1016/j.jacbts.2016.03.002",
+   "date": "2016-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.jacbts.2016.03.002"
+  },
+  "5c98aa52-f48d-4e05-ad61-cfef4f0ab4df": {
+   "source": "10.1016/j.neuron.2015.09.003",
+   "date": "2015-09-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.09.003"
+  },
+  "1c390fab-a9da-4222-9b14-9f45bbcb6ff6": {
+   "source": "10.1038/nature25157",
+   "date": "2017-12-01",
+   "field": "issued",
+   "cluster": "10.1038/nature25157"
+  },
+  "e7df7e61-7c50-4acd-ae6e-c4f3aa118aee": {
+   "source": "10.1016/j.neuron.2015.09.003",
+   "date": "2015-09-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.09.003"
+  },
+  "f7e3d56c-b1c3-4aae-a352-fed0d372a3b9": {
+   "source": "10.1016/s0014-5793(97)00120-8",
+   "date": "1997-03-10",
+   "field": "issued",
+   "cluster": "10.1016/s0014-5793(97)00120-8"
+  },
+  "d47e174e-157c-4ffe-99fe-ecd1538a8d98": {
+   "source": "10.1186/s12915-024-01917-x",
+   "date": "2024-05-15",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01917-x"
+  },
+  "027a3b99-4028-49af-9ac0-357201dd6bd9": {
+   "source": "10.1016/s1525-0016(03)00097-2",
+   "date": "2003-05-13",
+   "field": "created",
+   "cluster": "10.1016/s1525-0016(03)00097-2"
+  },
+  "7fd9784e-5915-47d4-9a8b-107023f8eb87": {
+   "source": "10.1073/pnas.2311854121",
+   "date": "2024-02-06",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2311854121"
+  },
+  "3a206f1b-4cab-49be-87c7-f48fa93c6534": {
+   "source": "10.1093/nar/gkae102",
+   "date": "2024-02-28",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkae102"
+  },
+  "feb98cb7-495b-495c-865a-b87fdc88923c": {
+   "source": "10.1016/j.cell.2024.02.035",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.035"
+  },
+  "b994c60c-5fdb-49d6-b9d7-acc13f641ac1": {
+   "source": "10.1016/j.joi.2018.01.007",
+   "date": "2018-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.joi.2018.01.007"
+  },
+  "3193b096-058a-452a-9dcb-6b8507eab661": {
+   "source": "10.1002/psp4.12765",
+   "date": "2022-02-10",
+   "field": "created",
+   "cluster": "10.1002/psp4.12765"
+  },
+  "5a630a6c-82b1-4be0-ad45-02d4ca0dfaf3": {
+   "source": "10.1016/j.biochi.2017.10.026",
+   "date": "2017-11-20",
+   "field": "created",
+   "cluster": "10.1016/j.biochi.2017.10.026"
+  },
+  "17beed67-0807-4429-a02a-4d4f2fa0706b": {
+   "source": "10.7554/elife.31657",
+   "date": "2018-07-11",
+   "field": "issued",
+   "cluster": "10.7554/elife.31657"
+  },
+  "f8f3f6da-5c26-439d-a1cf-0e4d0b49711a": {
+   "source": "10.1016/j.addr.2021.01.017",
+   "date": "2021-01-21",
+   "field": "created",
+   "cluster": "10.1016/j.addr.2021.01.017"
+  },
+  "28e971ca-6182-4b04-bb9c-bc84ddae561c": {
+   "source": "10.1016/j.celrep.2024.113805",
+   "date": "2024-02-19",
+   "field": "created",
+   "cluster": "10.1016/j.celrep.2024.113805"
+  },
+  "208c4af7-e0e9-479a-9a10-6de892a6fd90": {
+   "source": "10.1093/nar/gkad957",
+   "date": "2023-11-11",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkad957"
+  },
+  "515e45ae-4edd-45f9-aee5-b854ae0fdca2": {
+   "source": "10.1186/1471-2164-7-312",
+   "date": "2006-12-01",
+   "field": "issued",
+   "cluster": "10.1186/1471-2164-7-312"
+  },
+  "f3ffc755-748c-43e5-aa63-9b334eda4bd7": {
+   "source": "10.1055/s-0033-1344213",
+   "date": "2013-07-23",
+   "field": "issued",
+   "cluster": "10.1055/s-0033-1344213"
+  },
+  "0be0782d-ab03-429c-81a8-e936c81768db": {
+   "source": "10.1126/scitranslmed.abe1535",
+   "date": "2021-03-17",
+   "field": "issued",
+   "cluster": "10.1126/scitranslmed.abe1535"
+  },
+  "3027a707-f45d-435a-8721-98affb1f8782": {
+   "source": "10.1016/j.cub.2024.02.036",
+   "date": "2024-03-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cub.2024.02.036"
+  },
+  "5fe1e2eb-3262-4447-aa9f-e69a1dc412d6": {
+   "source": "10.1039/c6sc02297a",
+   "date": "2016-11-25",
+   "field": "created",
+   "cluster": "10.1039/c6sc02297a"
+  },
+  "5dd9a06f-f153-42d7-9a89-25b528395cac": {
+   "source": "10.1111/ner.13099",
+   "date": "2020-02-03",
+   "field": "created",
+   "cluster": "10.1111/ner.13099"
+  },
+  "40dd124d-7952-44ff-864a-60ba1b2b065e": {
+   "source": "10.1186/s12883-017-0945-8",
+   "date": "2017-08-30",
+   "field": "issued",
+   "cluster": "10.1186/s12883-017-0945-8"
+  },
+  "3046a362-237f-429f-b586-aa512cdd14a3": {
+   "source": "10.1021/bc2004999",
+   "date": "2011-12-14",
+   "field": "created",
+   "cluster": "10.1021/bc2004999"
+  },
+  "7db1cd7e-ed76-43e2-bb9d-7d7a981f1e7a": {
+   "source": "10.1016/s1474-4422(13)70061-9",
+   "date": "2013-03-28",
+   "field": "created",
+   "cluster": "10.1016/s1474-4422(13)70061-9"
+  },
+  "a6d25aa1-715e-44e5-9d49-21735d2ffc89": {
+   "source": "10.1016/j.biochi.2017.10.026",
+   "date": "2017-11-20",
+   "field": "created",
+   "cluster": "10.1016/j.biochi.2017.10.026"
+  },
+  "e1643a05-df97-4c71-878b-e8842fd225bb": {
+   "source": "10.1016/j.jpeds.2020.11.054",
+   "date": "2020-11-28",
+   "field": "created",
+   "cluster": "10.1016/j.jpeds.2020.11.054"
+  },
+  "2b844e13-06e7-4879-b8df-f3c7429868ef": {
+   "source": "10.1093/nar/gkt1101",
+   "date": "2013-11-12",
+   "field": "issued",
+   "cluster": "10.1093/nar/gkt1101"
+  },
+  "843dd558-8501-4fec-8243-3d87f269a3ac": {
+   "source": "10.1016/j.cell.2024.03.025",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.03.025"
+  },
+  "02779d48-5d92-4ced-ab88-baf98d8c6398": {
+   "source": "10.1021/ma00084a026",
+   "date": "1994-03-01",
+   "field": "issued",
+   "cluster": "10.1021/ma00084a026"
+  },
+  "c1a801d7-66b4-4b10-8d9a-25b4cb4889d9": {
+   "source": "10.1038/nature22067",
+   "date": "2017-04-01",
+   "field": "issued",
+   "cluster": "10.1038/nature22067"
+  },
+  "00686229-916c-4d1a-956e-f9366c14b6fe": {
+   "source": "10.1086/595830",
+   "date": "2009-01-09",
+   "field": "created",
+   "cluster": "10.1086/595830"
+  },
+  "d0f6c951-21cf-42f3-971e-d83fd61b8c93": {
+   "source": "10.1080/15368378.2020.1821707",
+   "date": "2020-09-29",
+   "field": "issued",
+   "cluster": "10.1080/15368378.2020.1821707"
+  },
+  "2108b900-ed15-41de-871a-46c5a194d3fd": {
+   "source": "10.1016/j.pharmthera.2014.05.009",
+   "date": "2014-05-20",
+   "field": "created",
+   "cluster": "10.1016/j.pharmthera.2014.05.009"
+  },
+  "43a449b3-80be-48b4-a2f2-0578c8396995": {
+   "source": "10.1038/s41592-020-00989-1",
+   "date": "2020-11-02",
+   "field": "issued",
+   "cluster": "10.1038/s41592-020-00989-1"
+  },
+  "baed5489-c782-49a7-8248-f13411dc941c": {
+   "source": "10.1109/aero.2017.7943896",
+   "date": "2017-03-01",
+   "field": "issued",
+   "cluster": "10.1109/aero.2017.7943896"
+  },
+  "e91597b2-c764-438b-a948-38085d68c849": {
+   "source": "10.1186/s12883-017-0945-8",
+   "date": "2017-08-30",
+   "field": "issued",
+   "cluster": "10.1186/s12883-017-0945-8"
+  },
+  "e4f787f9-91f2-48dd-8974-cde97b6cb194": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "f0cd12d2-8003-49c4-9dda-944f1ca3de2b": {
+   "source": "10.1080/15368378.2020.1821707",
+   "date": "2020-09-29",
+   "field": "issued",
+   "cluster": "10.1080/15368378.2020.1821707"
+  },
+  "c4ac88a3-5abe-4f9b-b83f-8ba0b69f1f89": {
+   "source": "10.1038/nprot.2012.116",
+   "date": "2012-09-13",
+   "field": "issued",
+   "cluster": "10.1038/nprot.2012.116"
+  },
+  "11c648fb-18b2-47fb-bfdb-6a3fd1006af6": {
+   "source": "10.1016/j.biochi.2017.10.026",
+   "date": "2017-11-20",
+   "field": "created",
+   "cluster": "10.1016/j.biochi.2017.10.026"
+  },
+  "ff711ead-e4d6-4025-8571-e476ea056a01": {
+   "source": "10.1016/j.neuroimage.2009.02.028",
+   "date": "2009-03-03",
+   "field": "created",
+   "cluster": "10.1016/j.neuroimage.2009.02.028"
+  },
+  "0ce0e778-323e-4837-8fb2-b0e83bd279a9": {
+   "source": "10.3390/mi9100480",
+   "date": "2018-09-20",
+   "field": "issued",
+   "cluster": "10.3390/mi9100480"
+  },
+  "8c2ab684-312a-461e-8ebd-e912f1be533d": {
+   "source": "10.1016/j.neuroimage.2013.02.005",
+   "date": "2013-02-14",
+   "field": "created",
+   "cluster": "10.1016/j.neuroimage.2013.02.005"
+  },
+  "cd9f744f-5e95-488c-b38c-58c698c55c52": {
+   "source": "10.1016/j.cell.2024.02.035",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.035"
+  },
+  "bf652cb0-a0e8-4dd2-ae11-62ea0beeeb57": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "ca6ce31b-5ee3-417a-9064-2ee93584b354": {
+   "source": "10.1186/gb-2012-13-4-r26",
+   "date": "2012-04-23",
+   "field": "issued",
+   "cluster": "10.1186/gb-2012-13-4-r26"
+  },
+  "df73b78c-b913-42ef-9e01-cb6a9c425861": {
+   "source": "10.1080/15368378.2020.1821707",
+   "date": "2020-09-29",
+   "field": "issued",
+   "cluster": "10.1080/15368378.2020.1821707"
+  },
+  "24ad7d0e-1b1f-48ec-a51b-9bd5f49efa3c": {
+   "source": "10.1080/15368378.2020.1821707",
+   "date": "2020-09-29",
+   "field": "issued",
+   "cluster": "10.1080/15368378.2020.1821707"
+  },
+  "70390d98-8f50-4d0d-8e3b-ca2c7e198d45": {
+   "source": "10.1016/j.ijpharm.2020.119955",
+   "date": "2020-10-06",
+   "field": "created",
+   "cluster": "10.1016/j.ijpharm.2020.119955"
+  },
+  "ca116fb9-8a71-46cd-961d-2b22f3fac929": {
+   "source": "10.1016/s1097-2765(00)80013-1",
+   "date": "1997-12-01",
+   "field": "issued",
+   "cluster": "10.1016/s1097-2765(00)80013-1"
+  },
+  "6d76ce48-6879-44c6-a83d-4e24fcfcf1e0": {
+   "source": "10.1038/nchembio.1867",
+   "date": "2015-07-21",
+   "field": "issued",
+   "cluster": "10.1038/nchembio.1867"
+  },
+  "e9e63eee-8154-4831-8927-cfa0507f88c8": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "8b0a13be-9076-47e2-aed3-a98ad2a07a44": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "87282515-1d2c-40bb-b229-275a11001bb9": {
+   "source": "10.1016/j.jhep.2020.09.014",
+   "date": "2020-09-22",
+   "field": "created",
+   "cluster": "10.1016/j.jhep.2020.09.014"
+  },
+  "e573e2dd-15f9-4e63-83bb-49bee14a2f16": {
+   "source": "10.1016/j.joi.2018.01.007",
+   "date": "2018-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.joi.2018.01.007"
+  },
+  "c27caa29-db26-411b-8e2c-21f26aaf8f1d": {
+   "source": "10.1016/j.joi.2018.01.007",
+   "date": "2018-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.joi.2018.01.007"
+  },
+  "d1a625d0-39c0-4423-b4f1-a80164e5fe66": {
+   "source": "10.1016/j.joi.2018.01.007",
+   "date": "2018-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.joi.2018.01.007"
+  },
+  "d38551bd-8740-4803-8fc7-27f6e5785acd": {
+   "source": "10.1073/pnas.1602413113",
+   "date": "2016-06-28",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1602413113"
+  },
+  "a33bfe93-6893-45f8-9e5c-a782e0fd8a79": {
+   "source": "10.1016/s1474-4422(13)70061-9",
+   "date": "2013-03-28",
+   "field": "created",
+   "cluster": "10.1016/s1474-4422(13)70061-9"
+  },
+  "b7240847-855e-41a8-8004-c79cb67e6c57": {
+   "source": "10.1038/nrdp.2017.95",
+   "date": "2017-12-14",
+   "field": "issued",
+   "cluster": "10.1038/nrdp.2017.95"
+  },
+  "7e0fa725-c561-4f9d-b353-d099676fc9cc": {
+   "source": "10.1021/acs.accounts.7b00083",
+   "date": "2017-07-05",
+   "field": "issued",
+   "cluster": "10.1021/acs.accounts.7b00083"
+  },
+  "d203bd91-070b-4371-a9c3-0285c8181689": {
+   "source": "10.1126/science.aaa6090",
+   "date": "2015-04-09",
+   "field": "created",
+   "cluster": "10.1126/science.aaa6090"
+  },
+  "8b2e719e-9bd4-4907-b25b-c7ff737a6384": {
+   "source": "10.1186/s12915-024-01915-z",
+   "date": "2024-05-20",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01915-z"
+  },
+  "15b50a3b-c050-4631-a0ee-18dcba7df6c7": {
+   "source": "10.1021/acs.accounts.7b00083",
+   "date": "2017-07-05",
+   "field": "issued",
+   "cluster": "10.1021/acs.accounts.7b00083"
+  },
+  "c5005be9-11d3-4387-80ce-298830ced5ae": {
+   "source": "10.1016/j.jconrel.2020.06.027",
+   "date": "2020-07-01",
+   "field": "created",
+   "cluster": "10.1016/j.jconrel.2020.06.027"
+  },
+  "8ba9471c-933a-4f04-8c2f-4d7db41feff3": {
+   "source": "10.1186/1471-2164-7-312",
+   "date": "2006-12-01",
+   "field": "issued",
+   "cluster": "10.1186/1471-2164-7-312"
+  },
+  "24ce1520-9b3e-4aff-a0e9-d32983132f57": {
+   "source": "10.1073/pnas.2100347118",
+   "date": "2021-08-16",
+   "field": "issued",
+   "cluster": "10.1073/pnas.2100347118"
+  },
+  "d60026d1-f0ce-41e9-9a0d-563a976af475": {
+   "source": "10.1038/s41586-018-0467-6",
+   "date": "2018-08-28",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0467-6"
+  },
+  "e020587c-88aa-4740-9814-c1267520b4f2": {
+   "source": "10.1371/journal.pbio.3002634",
+   "date": "2024-05-07",
+   "field": "issued",
+   "cluster": "10.1371/journal.pbio.3002634"
+  },
+  "c2721634-d43a-416b-9bb5-9058e8c5fad8": {
+   "source": "10.1038/s41576-020-00292-x",
+   "date": "2020-11-09",
+   "field": "issued",
+   "cluster": "10.1038/s41576-020-00292-x"
+  },
+  "3b61eec6-e764-48a1-a153-76ee9cb10bfc": {
+   "source": "10.1002/jor.1100150414",
+   "date": "1997-07-01",
+   "field": "issued",
+   "cluster": "10.1002/jor.1100150414"
+  },
+  "1724e40e-a26f-49e9-a863-097fcb7e7772": {
+   "source": "10.7554/elife.10566",
+   "date": "2016-01-20",
+   "field": "issued",
+   "cluster": "10.7554/elife.10566"
+  },
+  "463925f0-37d5-4f9e-9efd-decae1d9bb9b": {
+   "source": "10.1186/s12915-024-01915-z",
+   "date": "2024-05-20",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01915-z"
+  },
+  "020db003-91f0-4eec-ae00-fb2457ba1345": {
+   "source": "10.1038/srep37563",
+   "date": "2016-11-22",
+   "field": "issued",
+   "cluster": "10.1038/srep37563"
+  },
+  "1c8bb15b-ce43-47af-8e21-adf770619975": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "984b879c-92e5-4732-ba80-7c326916934c": {
+   "source": "10.1016/j.mser.2010.12.001",
+   "date": "2011-01-16",
+   "field": "created",
+   "cluster": "10.1016/j.mser.2010.12.001"
+  },
+  "9dad56cd-89d3-4be1-85a4-41a4b6847139": {
+   "source": "10.1101/2020.02.14.948398",
+   "date": "2020-02-15",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2020.02.14.948398"
+  },
+  "1ae1635e-2781-4b07-b6c3-8c96d43b8a9a": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "52de3e0f-4bdd-4f60-acbd-86d89b1d9f69": {
+   "source": "10.1016/j.mser.2010.12.001",
+   "date": "2011-01-16",
+   "field": "created",
+   "cluster": "10.1016/j.mser.2010.12.001"
+  },
+  "99b8ae12-185b-4cb3-8952-ddf123d157d3": {
+   "source": "10.1038/s41592-019-0615-4",
+   "date": "2019-10-31",
+   "field": "issued",
+   "cluster": "10.1038/s41592-019-0615-4"
+  },
+  "b8638dfb-afd5-4340-a744-32edbf9de057": {
+   "source": "10.1093/nar/gkae039",
+   "date": "2024-01-11",
+   "field": "created",
+   "cluster": "10.1093/nar/gkae039"
+  },
+  "238b370f-9842-46e2-ac29-65ade8ad7582": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "e381d8e6-cc86-4e9a-8ebe-36074fa55bae": {
+   "source": "10.1016/j.joi.2018.01.007",
+   "date": "2018-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.joi.2018.01.007"
+  },
+  "fbbe2ec6-146f-4c46-9a63-e1d15290dbc6": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "5dc23378-5eb9-45d2-9f67-8755d6d9c9ec": {
+   "source": "10.1038/ncomms1324",
+   "date": "2011-05-17",
+   "field": "issued",
+   "cluster": "10.1038/ncomms1324"
+  },
+  "5d3f8067-fe32-4abb-9646-276150413965": {
+   "source": "10.1021/acs.jctc.1c00302",
+   "date": "2021-06-07",
+   "field": "issued",
+   "cluster": "10.1021/acs.jctc.1c00302"
+  },
+  "79fc3b25-5f38-429e-ab28-d8836fe765d2": {
+   "source": "10.1038/srep31899",
+   "date": "2016-08-18",
+   "field": "issued",
+   "cluster": "10.1038/srep31899"
+  },
+  "be18ad88-a82b-4ca4-b28b-edd68f614a8a": {
+   "source": "10.1038/s41586-019-1424-8",
+   "date": "2019-07-31",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1424-8"
+  },
+  "53bed12d-34ca-49c7-82fb-3085ac3124e5": {
+   "source": "10.1016/j.neucom.2010.08.012",
+   "date": "2010-09-19",
+   "field": "created",
+   "cluster": "10.1016/j.neucom.2010.08.012"
+  },
+  "28973681-8abf-4381-8be9-b5d923ce2bdf": {
+   "source": "10.1016/j.febslet.2013.04.031",
+   "date": "2013-05-10",
+   "field": "issued",
+   "cluster": "10.1016/j.febslet.2013.04.031"
+  },
+  "1a1ad5aa-092d-4e2a-bf69-5ff84d2b0a8c": {
+   "source": "10.1055/s-0033-1344213",
+   "date": "2013-07-23",
+   "field": "issued",
+   "cluster": "10.1055/s-0033-1344213"
+  },
+  "f726190b-5a78-428a-a42e-1935a042c55e": {
+   "source": "10.1002/psp4.12765",
+   "date": "2022-02-10",
+   "field": "created",
+   "cluster": "10.1002/psp4.12765"
+  },
+  "f3a8412c-6d48-4f8e-995f-0c637686ceb6": {
+   "source": "10.1111/ner.13099",
+   "date": "2020-02-03",
+   "field": "created",
+   "cluster": "10.1111/ner.13099"
+  },
+  "4d342f56-faed-4f95-9a04-4d78a3277e0a": {
+   "source": "10.1101/2021.08.25.457696",
+   "date": "2021-08-26",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2021.08.25.457696"
+  },
+  "72f23feb-63b7-4a2c-b376-1950e8e5bb0d": {
+   "source": "10.1038/nrm4014",
+   "date": "2015-06-17",
+   "field": "issued",
+   "cluster": "10.1038/nrm4014"
+  },
+  "b5200136-cec9-4171-a13b-dbec32cbf430": {
+   "source": "10.1021/ja210162f",
+   "date": "2012-01-05",
+   "field": "issued",
+   "cluster": "10.1021/ja210162f"
+  },
+  "0bf8ed44-dcf9-44ca-b75b-c429bda5a352": {
+   "source": "10.1016/j.cell.2024.02.016",
+   "date": "2024-03-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.016"
+  },
+  "d5a64d84-f73e-4635-8c81-b7a2ca8e2383": {
+   "source": "10.1073/pnas.1213818110",
+   "date": "2012-12-11",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1213818110"
+  },
+  "7465dcdc-1503-4252-b5ad-600575c8b2a7": {
+   "source": "10.1016/j.neuroimage.2009.02.028",
+   "date": "2009-03-03",
+   "field": "created",
+   "cluster": "10.1016/j.neuroimage.2009.02.028"
+  },
+  "62b142ff-5a44-4314-9b40-c94db6852ad1": {
+   "source": "10.1016/j.neuroimage.2009.02.028",
+   "date": "2009-03-03",
+   "field": "created",
+   "cluster": "10.1016/j.neuroimage.2009.02.028"
+  },
+  "993f2492-010b-4000-a4d7-7851d46a07bb": {
+   "source": "10.1016/j.neuroimage.2009.02.028",
+   "date": "2009-03-03",
+   "field": "created",
+   "cluster": "10.1016/j.neuroimage.2009.02.028"
+  },
+  "78405a89-67d6-4fd0-9a30-6f9949a34b39": {
+   "source": "10.1021/ma00084a026",
+   "date": "1994-03-01",
+   "field": "issued",
+   "cluster": "10.1021/ma00084a026"
+  },
+  "5bbb49f6-6419-4471-aed7-118993a755b9": {
+   "source": "10.1016/0378-1119(91)90041-9",
+   "date": "1991-03-01",
+   "field": "issued",
+   "cluster": "10.1016/0378-1119(91)90041-9"
+  },
+  "c9ee640d-b9d9-42ff-96ed-e498edbf1850": {
+   "source": "10.1038/s41586-019-1424-8",
+   "date": "2019-07-31",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1424-8"
+  },
+  "a9f91b49-7f33-495e-bef2-a2351f9185af": {
+   "source": "10.1021/bc2004999",
+   "date": "2011-12-14",
+   "field": "created",
+   "cluster": "10.1021/bc2004999"
+  },
+  "830e7337-df87-4637-9b8d-d8ba16abfa5f": {
+   "source": "10.1021/bi4006539",
+   "date": "2013-10-14",
+   "field": "created",
+   "cluster": "10.1021/bi4006539"
+  },
+  "93d4e044-c878-4c0e-a36a-3eca4b148a24": {
+   "source": "10.1016/j.jmb.2003.11.039",
+   "date": "2003-12-11",
+   "field": "created",
+   "cluster": "10.1016/j.jmb.2003.11.039"
+  },
+  "913a3174-c85c-41da-8de8-a0507d56b48e": {
+   "source": "10.1186/s12915-024-01915-z",
+   "date": "2024-05-20",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01915-z"
+  },
+  "9a508c0e-ed8a-4a82-997d-c3b1a27e186e": {
+   "source": "10.1021/ja8065896",
+   "date": "2009-02-27",
+   "field": "issued",
+   "cluster": "10.1021/ja8065896"
+  },
+  "458eb2f8-b3f1-45b5-878a-d4b60ddc1fae": {
+   "source": "10.1038/nature21411",
+   "date": "2017-03-01",
+   "field": "issued",
+   "cluster": "10.1038/nature21411"
+  },
+  "9b6f4315-79f3-4823-b06e-0d7bddcdb761": {
+   "source": "10.1038/nmeth.3493",
+   "date": "2015-08-03",
+   "field": "issued",
+   "cluster": "10.1038/nmeth.3493"
+  },
+  "9356fb75-effc-450c-b2d1-27f6f1db867e": {
+   "source": "10.1371/journal.pbio.3002634",
+   "date": "2024-05-07",
+   "field": "issued",
+   "cluster": "10.1371/journal.pbio.3002634"
+  },
+  "42f498dc-e57b-4bd0-ac1f-ec741560ae0c": {
+   "source": "10.1261/rna.1538809",
+   "date": "2009-05-22",
+   "field": "issued",
+   "cluster": "10.1261/rna.1538809"
+  },
+  "3b9c0256-8237-4ec5-a18c-8c85db8c4bda": {
+   "source": "10.1523/jneurosci.21-17-06577.2001",
+   "date": "2001-09-01",
+   "field": "issued",
+   "cluster": "10.1523/jneurosci.21-17-06577.2001"
+  },
+  "2bf671a9-e763-4ce0-80cf-6017526d1a78": {
+   "source": "10.1016/j.cell.2024.03.034",
+   "date": "2024-04-22",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2024.03.034"
+  },
+  "e0eb4552-ce9e-4859-9ab0-9b3a7285c69f": {
+   "source": "10.1186/gb-2012-13-4-r26",
+   "date": "2012-04-23",
+   "field": "issued",
+   "cluster": "10.1186/gb-2012-13-4-r26"
+  },
+  "1a2cd25c-4132-4299-bcac-f8b8424acf9a": {
+   "source": "10.1016/j.cub.2024.02.036",
+   "date": "2024-03-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cub.2024.02.036"
+  },
+  "c7bfab39-bbbc-467f-a5a5-eaf5c0b460ed": {
+   "source": "10.7554/elife.44707",
+   "date": "2019-05-22",
+   "field": "issued",
+   "cluster": "10.7554/elife.44707"
+  },
+  "3a9a4b05-900b-4715-b373-219502de6c57": {
+   "source": "10.1101/2023.08.18.553799",
+   "date": "2023-08-18",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.08.18.553799"
+  },
+  "1a5e7cdb-8ad1-49bc-ad33-b2beeaae62d4": {
+   "source": "10.1016/j.jmb.2003.11.039",
+   "date": "2003-12-11",
+   "field": "created",
+   "cluster": "10.1016/j.jmb.2003.11.039"
+  },
+  "0b6c5223-cd0e-401a-8c2e-4c1b246ea579": {
+   "source": "10.1073/pnas.1515692112",
+   "date": "2015-08-31",
+   "field": "issued",
+   "cluster": "10.1073/pnas.1515692112"
+  },
+  "e32e33e7-13a3-4c8c-90f6-925ac15a3088": {
+   "source": "10.7554/elife.86933.3",
+   "date": "2024-02-07",
+   "field": "issued",
+   "cluster": "10.7554/elife.86933.3"
+  },
+  "abb1180b-8343-4cc2-b3a5-3ba4860c1bb8": {
+   "source": "10.1038/srep14456",
+   "date": "2015-09-24",
+   "field": "issued",
+   "cluster": "10.1038/srep14456"
+  },
+  "a9c3dca8-0155-4d2e-b63b-ca096675db19": {
+   "source": "10.1109/aero.2017.7943896",
+   "date": "2017-03-01",
+   "field": "issued",
+   "cluster": "10.1109/aero.2017.7943896"
+  },
+  "60c43ef9-c5f8-47b4-ad2e-0eaf8e7ea499": {
+   "source": "10.1038/s41586-021-03603-2",
+   "date": "2021-06-30",
+   "field": "issued",
+   "cluster": "10.1038/s41586-021-03603-2"
+  },
+  "85e837e2-e5bf-42fe-b9ae-527832a9b69d": {
+   "source": "10.1111/ner.13099",
+   "date": "2020-02-03",
+   "field": "created",
+   "cluster": "10.1111/ner.13099"
+  },
+  "baa1a06a-890f-459d-93ff-f15a28e3eda6": {
+   "source": "10.3171/2018.5.focus18163",
+   "date": "2018-08-01",
+   "field": "issued",
+   "cluster": "10.3171/2018.5.focus18163"
+  },
+  "e062a2a3-2139-4849-a08a-26f4a9209269": {
+   "source": "10.1016/j.cell.2024.02.035",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.035"
+  },
+  "2e29db35-5d91-4ef2-8747-faa705be12f7": {
+   "source": "10.1080/15368378.2020.1821707",
+   "date": "2020-09-29",
+   "field": "issued",
+   "cluster": "10.1080/15368378.2020.1821707"
+  },
+  "1e1c704d-1373-4cf9-9b7e-127a83d01a25": {
+   "source": "10.1186/s12915-024-01919-9",
+   "date": "2024-05-23",
+   "field": "issued",
+   "cluster": "10.1186/s12915-024-01919-9"
+  },
+  "31a460f4-6e83-424f-9655-6090b5029489": {
+   "source": "10.1016/j.addr.2015.01.008",
+   "date": "2015-02-07",
+   "field": "created",
+   "cluster": "10.1016/j.addr.2015.01.008"
+  },
+  "3aba1e7b-a034-4255-80d2-6428c5d6c598": {
+   "source": "10.1111/ner.13099",
+   "date": "2020-02-03",
+   "field": "created",
+   "cluster": "10.1111/ner.13099"
+  },
+  "741c3e03-4b0b-410e-8266-97c5b7e2ed7d": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "d6578f05-7bb2-41bb-bcea-c36ce16be41a": {
+   "source": "10.1021/acs.jmedchem.9b02052",
+   "date": "2020-04-06",
+   "field": "issued",
+   "cluster": "10.1021/acs.jmedchem.9b02052"
+  },
+  "cc6d1bae-c020-4175-8c31-03fa002d27c2": {
+   "source": "10.1038/nprot.2012.116",
+   "date": "2012-09-13",
+   "field": "issued",
+   "cluster": "10.1038/nprot.2012.116"
+  },
+  "f10dadc3-dfa3-4a1e-849d-0e57ddb78e28": {
+   "source": "10.1016/j.cell.2024.02.035",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.035"
+  },
+  "41ba41e4-0bc8-410d-bc0b-1344150c5c04": {
+   "source": "10.1016/j.joi.2018.01.007",
+   "date": "2018-02-01",
+   "field": "issued",
+   "cluster": "10.1016/j.joi.2018.01.007"
+  },
+  "04c76bad-dd89-4cc6-afd5-be87297eac2b": {
+   "source": "10.1016/j.cell.2024.02.035",
+   "date": "2024-04-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2024.02.035"
+  },
+  "65105988-415c-4cf7-9106-653f9b1f258e": {
+   "source": "10.1007/s00423-003-0396-0",
+   "date": "2003-10-01",
+   "field": "issued",
+   "cluster": "10.1007/s00423-003-0396-0"
+  },
+  "9cf2e37d-bb3f-433e-843c-581779f71af9": {
+   "source": "10.1038/nrg2988",
+   "date": "2011-04-18",
+   "field": "issued",
+   "cluster": "10.1038/nrg2988"
+  },
+  "cb6961ab-3c46-4f23-b831-19d00c9da758": {
+   "source": "10.7554/elife.85812",
+   "date": "2024-01-25",
+   "field": "created",
+   "cluster": "10.7554/elife.85812"
+  }
+ },
+ "LAB-Bench FigQA": {
+  "2eb086de-1a68-4c00-b8a4-84bbbeddeb54": {
+   "source": "10.1016/j.neuron.2016.01.024",
+   "date": "2016-02-13",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2016.01.024"
+  },
+  "7c2af8fc-b8af-46a1-bdca-cbabc5783170": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "1780adbf-0d7c-4952-be10-a3a8ca8be109": {
+   "source": "10.1016/j.cell.2018.06.019",
+   "date": "2018-07-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2018.06.019"
+  },
+  "f5605db6-d208-42fa-85be-8d81369db7eb": {
+   "source": "10.1038/s41586-018-0078-2",
+   "date": "2018-04-26",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0078-2"
+  },
+  "c8b7bc69-de72-49f4-9cf6-1d202f5bb6b1": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "8258cd1a-e724-44c3-94bc-7ada2d114a64": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "f59e3533-300d-4b9e-a6ae-0c7fbdbe7b6a": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "110bf64e-5384-4e59-bb7a-1b7f3300f88f": {
+   "source": "10.1016/j.bpj.2015.08.008",
+   "date": "2015-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.bpj.2015.08.008"
+  },
+  "9187f1ec-dcce-45c4-aecb-ed6cefa4f933": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "d13bfad2-dbe5-477c-8e54-5f14d5adcbe5": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "f4aae8f5-c4d7-4905-8bfc-6be19ec315f4": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "a9fcd49c-ec26-4a98-883a-c0b9629fbdf8": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "19b4b469-547f-4003-a89e-64601bde50e1": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "708fe0f5-7024-486a-b0ca-6d5f1e48e533": {
+   "source": "10.1016/j.cell.2018.05.002",
+   "date": "2018-05-24",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2018.05.002"
+  },
+  "517f6490-47ea-446c-9aa5-bd6fde84401e": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "9d013a7c-f6e9-45de-8cbe-a2976fa557aa": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "3c8060a8-5126-46ff-98f4-2a368ba39db5": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "44bddaeb-04f5-415e-a61b-efe15a0d8751": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "1fd375f1-d119-478b-9779-0ecb24d5ed9b": {
+   "source": "10.1016/j.cell.2016.05.031",
+   "date": "2016-06-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2016.05.031"
+  },
+  "792c87ca-0925-434b-b1e5-d8198ec6bac1": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "3745ef16-70d0-45b8-a927-0cfd6399af52": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "7cbbad8c-20b3-4dbf-b99d-f044b2752719": {
+   "source": "10.1101/2023.10.16.561085",
+   "date": "2023-10-17",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.10.16.561085"
+  },
+  "5d677b12-bcd3-4fb4-b27d-bd2d61cb75b4": {
+   "source": "10.1038/s41586-018-0642-9",
+   "date": "2018-10-25",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0642-9"
+  },
+  "cd05a891-29a6-4008-98eb-a185b84480ec": {
+   "source": "10.1038/s41593-019-0479-z",
+   "date": "2019-09-09",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0479-z"
+  },
+  "65c3aca6-f9a0-4ce3-9cb2-f6fe0f26903f": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "865f9dfe-7b5f-4f54-82e6-867b6320b33a": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "230288db-0874-4363-b597-fe6cdff271e4": {
+   "source": "10.1016/j.neuron.2015.10.037",
+   "date": "2015-11-19",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2015.10.037"
+  },
+  "9c496540-20c9-4099-b290-588581dbe99d": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "a9d3b255-4c2d-491d-af95-57015244d8d4": {
+   "source": "10.1038/s41593-019-0479-z",
+   "date": "2019-09-09",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0479-z"
+  },
+  "7e6bde77-a0bc-4560-9e3f-ca1945f7460b": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "986ea0ee-b690-4412-8968-cd396560bbc6": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "9260cf8d-1fbe-432f-96f8-8b4f5cd38b54": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "a2556f09-ce7c-49e6-befd-72a893a3bd6a": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "18f7e893-6cb0-438e-863b-ae13ba3c6c77": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "cb7ae9bb-81fd-40a2-87f5-1ec3826dd152": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "be4d8965-12f6-4c5c-a5fa-39078a788fe1": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "42b40a8d-4030-42da-9e5b-c95baf299351": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "414fc343-4648-4e70-94a3-6a45cdca1602": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "d2c21e2e-da78-499b-b377-097a67baac1c": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "31fb6139-7b4e-4aa0-b31b-f8c07103c2ca": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "a0e648ad-9a45-423c-83f2-e4a295193208": {
+   "source": "10.1016/j.cell.2019.02.037",
+   "date": "2019-04-25",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2019.02.037"
+  },
+  "a1fc1774-0f3a-423d-9472-773702032e12": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "52b5a279-08b3-43a4-b795-4ac9bab9c597": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "be278e16-deed-4a14-8e49-29e9d36ac0c7": {
+   "source": "10.1126/science.abn5647",
+   "date": "2022-11-10",
+   "field": "created",
+   "cluster": "10.1126/science.abn5647"
+  },
+  "e25d1652-8e3a-4ef1-8369-772af4d542d4": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "d5ae9673-7ea0-47b6-9249-b450a3721a48": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "cf6ac735-33af-4243-bfcf-4c28e3267345": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "df9d4110-a07d-4f92-a79d-f96e119776ed": {
+   "source": "10.1016/j.neuron.2015.07.030",
+   "date": "2015-08-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2015.07.030"
+  },
+  "0463982c-eadc-4792-b89d-db9a1fc70a3b": {
+   "source": "10.1016/j.cell.2015.02.018",
+   "date": "2015-03-12",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2015.02.018"
+  },
+  "e3c5fea7-205c-4bf9-b65a-9c1b3b71aaf5": {
+   "source": "10.1016/j.neuron.2019.02.001",
+   "date": "2019-03-13",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2019.02.001"
+  },
+  "3c91573c-1e4f-49d4-a43d-b707d50a9ccd": {
+   "source": "10.1038/s41593-018-0287-x",
+   "date": "2018-12-07",
+   "field": "created",
+   "cluster": "10.1038/s41593-018-0287-x"
+  },
+  "e95aed27-de33-4036-a589-8e95965f6969": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "314f7aec-a20b-4f53-b441-7783c5a4c788": {
+   "source": "10.1016/j.cell.2019.12.029",
+   "date": "2020-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.12.029"
+  },
+  "f700a88c-143e-4832-b7bc-8bfee48a7392": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "e8156b3a-7338-45ef-bc72-59e4b4a52906": {
+   "source": "10.1016/j.neuron.2016.04.032",
+   "date": "2016-05-21",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2016.04.032"
+  },
+  "11278c73-aea9-4b47-a452-abaa1ffb2697": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "3eaf6442-3af5-40d0-a1e1-63fed8c76605": {
+   "source": "10.1016/j.cell.2018.06.019",
+   "date": "2018-07-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2018.06.019"
+  },
+  "fdfbd371-f00c-4551-ac1b-254d3c3a79bd": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "c430d1b5-649c-46b3-816e-9b8fd30d1910": {
+   "source": "10.1016/j.cell.2019.02.037",
+   "date": "2019-04-25",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2019.02.037"
+  },
+  "cc91ae7c-4560-4e8a-8a5d-1ef18f4e7042": {
+   "source": "10.1016/j.cell.2018.06.019",
+   "date": "2018-07-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2018.06.019"
+  },
+  "82da22b5-532a-46d8-8ede-449452d9aba2": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "1fc0f021-46c3-4b12-a1b1-d0baeaac0667": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "0d160c5a-f224-4abc-87d0-12669c2ba555": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "3e83dc34-1f98-4459-8428-f130c25eea9e": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "cf0c28fc-0fc5-4e5f-b9ef-491f650f7e02": {
+   "source": "10.1016/j.neuron.2015.07.030",
+   "date": "2015-08-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2015.07.030"
+  },
+  "29e050c4-a031-4f73-bb77-d29a920e660a": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "fb447e71-f7f0-46ca-91f9-4f9a33a416f7": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "93cf5192-5b25-4bbc-b1f5-bc9bf9647a03": {
+   "source": "10.1016/j.cell.2015.02.018",
+   "date": "2015-03-12",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2015.02.018"
+  },
+  "409b4019-3dc9-49eb-b7d3-670f641d2736": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "ae3a0d60-8c22-4402-8ab2-43a6e87cde18": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "981cc2d8-0982-406f-8dca-2aa418618514": {
+   "source": "10.1016/j.cell.2015.02.018",
+   "date": "2015-03-12",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2015.02.018"
+  },
+  "7670ff3c-7ec4-4e59-bc71-210482ec91d9": {
+   "source": "10.1016/j.cell.2019.12.029",
+   "date": "2020-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.12.029"
+  },
+  "7d22f5d2-564a-4e93-8835-d1e3e950cf5a": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "64d4b14f-399b-4afc-b54e-b781f5db36cc": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "78eb8fb3-7a96-4c55-ac2a-3db42d9f586e": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "c7dac7b9-dcc2-40a6-ba19-127a8d617034": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "c9836f1b-6fd4-446b-b418-bc0713646dde": {
+   "source": "10.1016/j.cell.2019.02.037",
+   "date": "2019-04-25",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2019.02.037"
+  },
+  "dd971463-7111-4549-bb54-4fe25bca66fc": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "9d5811f6-fb25-4c22-9cb5-4952ed9b2dbe": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "19ea478b-0c9c-477c-a1f7-5069f92b4388": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "0e72bfa4-b27a-4d7a-a456-1aa5a189a350": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "3c6e1804-0dc3-4a37-b37a-1e3f432b8f25": {
+   "source": "10.1038/s41586-018-0425-3",
+   "date": "2018-08-01",
+   "field": "issued",
+   "cluster": "10.1038/s41586-018-0425-3"
+  },
+  "a4d0122e-441a-422d-ac07-a472b4fe78f8": {
+   "source": "10.1038/s41586-018-0102-6",
+   "date": "2018-05-01",
+   "field": "issued",
+   "cluster": "10.1038/s41586-018-0102-6"
+  },
+  "c1c3d26d-acf5-4d8b-9dd4-8817b87608e1": {
+   "source": "10.1038/s41586-018-0425-3",
+   "date": "2018-08-01",
+   "field": "issued",
+   "cluster": "10.1038/s41586-018-0425-3"
+  },
+  "50564d44-40fa-4a24-9f61-9dfaf2c90e33": {
+   "source": "10.1016/j.cub.2015.08.006",
+   "date": "2015-09-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cub.2015.08.006"
+  },
+  "57f6f7ef-51e6-4d78-848b-6d1d5332f59e": {
+   "source": "10.1016/j.cub.2015.08.006",
+   "date": "2015-09-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cub.2015.08.006"
+  },
+  "d6652293-0abc-4be2-9a5b-cd5c6219e1f4": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "c0028d27-8d75-4168-bd71-1309f62e9b8a": {
+   "source": "10.1016/j.cell.2019.12.029",
+   "date": "2020-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.12.029"
+  },
+  "a5d69076-0c30-4d2d-9465-c36992f1ab63": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "41c9a607-1ca9-4fd8-a95d-4c17e023f51a": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "2e89ac4f-1e21-4a78-bf21-591ae0a9d1ae": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "93d94ed4-db8e-41fe-8424-5ebff6415dfb": {
+   "source": "10.1016/j.neuron.2015.12.012",
+   "date": "2016-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.12.012"
+  },
+  "93551a52-6b22-4141-8ec9-c45db17d3e07": {
+   "source": "10.1016/j.bmc.2011.06.031",
+   "date": "2011-06-25",
+   "field": "created",
+   "cluster": "10.1016/j.bmc.2011.06.031"
+  },
+  "0ae64d54-c968-4328-a01f-c8a25587714c": {
+   "source": "10.1016/j.bmc.2011.06.031",
+   "date": "2011-06-25",
+   "field": "created",
+   "cluster": "10.1016/j.bmc.2011.06.031"
+  },
+  "bc29b713-155a-4c36-8b33-dda8108d4bd1": {
+   "source": "10.1016/j.bmc.2011.06.031",
+   "date": "2011-06-25",
+   "field": "created",
+   "cluster": "10.1016/j.bmc.2011.06.031"
+  },
+  "493feff6-32f2-47f4-8c04-c51041bf9613": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "5ba162a3-a81e-4386-9fa7-8dda1b7cb85c": {
+   "source": "10.1016/j.cell.2019.02.037",
+   "date": "2019-04-25",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2019.02.037"
+  },
+  "54304831-6a8f-4b7e-9371-1b6f64a18bf2": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "86270aa4-bed1-40a8-b13f-dd6f9378bd70": {
+   "source": "10.1038/s41586-020-2350-5",
+   "date": "2020-06-03",
+   "field": "issued",
+   "cluster": "10.1038/s41586-020-2350-5"
+  },
+  "98d3e072-0346-4287-8b74-0cd434a2ad28": {
+   "source": "10.1016/j.neuron.2015.09.020",
+   "date": "2015-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.09.020"
+  },
+  "c43d3faa-356e-4394-b715-d09f696f13a2": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "aadc2691-f0c1-4fa6-813a-651904f7fc10": {
+   "source": "10.1016/j.neuron.2015.09.020",
+   "date": "2015-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.09.020"
+  },
+  "a971750d-6a89-4797-857a-9d75942eb9e3": {
+   "source": "10.1016/j.neuron.2015.09.020",
+   "date": "2015-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.09.020"
+  },
+  "a0a5b34c-eca2-4b7e-b0c4-4b1f040919f9": {
+   "source": "10.1016/j.cell.2019.02.037",
+   "date": "2019-04-25",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2019.02.037"
+  },
+  "16b85f21-0794-4624-aed5-c0f48cb7a5d2": {
+   "source": "10.1016/j.neuron.2020.01.032",
+   "date": "2020-02-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2020.01.032"
+  },
+  "69f3cd7e-5e45-4a81-b2df-d2d6e723a850": {
+   "source": "10.1016/j.neuron.2015.08.024",
+   "date": "2015-09-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.08.024"
+  },
+  "580f1c37-a92c-4b38-a439-239bf2e913e0": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "20e1ca2e-9bb4-4c2e-a3e6-895fcedb91f8": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "52ac32f0-43a4-4ae2-8fd4-30de507a1850": {
+   "source": "10.1016/j.cell.2018.05.057",
+   "date": "2018-06-18",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2018.05.057"
+  },
+  "54b0c9cb-711c-47e0-9952-3c159c4ffc47": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "2f8cddfb-f6b5-456c-8093-bf70cc0fc373": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "354642a0-8ebc-4667-9292-f7d288c38224": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "9669925b-5ff3-442c-bfc3-92968d1fcab7": {
+   "source": "10.1016/j.cell.2018.05.057",
+   "date": "2018-06-18",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2018.05.057"
+  },
+  "32de8ebe-dc1c-4af8-aa02-89675e9ba0e6": {
+   "source": "10.1016/j.cell.2018.05.057",
+   "date": "2018-06-18",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2018.05.057"
+  },
+  "85114aa8-e8ee-4794-bac3-105d901cdf72": {
+   "source": "10.1126/science.add5064",
+   "date": "2022-08-25",
+   "field": "created",
+   "cluster": "10.1126/science.add5064"
+  },
+  "ee59724a-a220-45df-94a6-072e7edc776c": {
+   "source": "10.1126/science.add5064",
+   "date": "2022-08-25",
+   "field": "created",
+   "cluster": "10.1126/science.add5064"
+  },
+  "ea1f401a-3f6a-4409-b82b-53eab8bab7b9": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "baca6305-8916-4bf8-90f7-fd790938f37e": {
+   "source": "10.1038/s41586-018-0425-3",
+   "date": "2018-08-01",
+   "field": "issued",
+   "cluster": "10.1038/s41586-018-0425-3"
+  },
+  "8c66c9c2-f45f-4c4b-8101-173511090db9": {
+   "source": "10.1016/j.neuron.2015.12.012",
+   "date": "2016-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.12.012"
+  },
+  "a3e85ee0-873c-4908-ad4d-dc70d2323e90": {
+   "source": "10.1038/s41593-018-0287-x",
+   "date": "2018-12-07",
+   "field": "created",
+   "cluster": "10.1038/s41593-018-0287-x"
+  },
+  "ebd96385-c551-47eb-9314-e2ab540324bc": {
+   "source": "10.1038/s41586-019-1767-1",
+   "date": "2019-11-20",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1767-1"
+  },
+  "6172c260-0951-44bd-a7eb-1b5bd4425506": {
+   "source": "10.1016/j.neuron.2015.07.030",
+   "date": "2015-08-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2015.07.030"
+  },
+  "3d5b84db-c3e2-4c3f-a359-ef502b968f9d": {
+   "source": "10.1016/j.neuron.2015.12.012",
+   "date": "2016-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.12.012"
+  },
+  "d8964309-c0d4-4695-b931-370d58f575ec": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "75a5b5c5-e755-40fa-b7dc-7de4e3ccde62": {
+   "source": "10.1101/2023.10.16.561085",
+   "date": "2023-10-17",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.10.16.561085"
+  },
+  "d8070972-3c9e-441d-942b-ddd053472ab0": {
+   "source": "10.1101/2023.10.16.561085",
+   "date": "2023-10-17",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.10.16.561085"
+  },
+  "c9b7845d-8b80-48cb-88df-b30855488682": {
+   "source": "10.1101/2023.10.16.561085",
+   "date": "2023-10-17",
+   "field": "biorxiv first posting",
+   "cluster": "10.1101/2023.10.16.561085"
+  },
+  "2c4db2eb-fb76-4ea7-944e-fa15269d82f6": {
+   "source": "10.1016/j.cell.2019.12.029",
+   "date": "2020-01-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.12.029"
+  },
+  "872aab39-35ce-4ffc-861c-0967a6b97eb2": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "5e7f5ee7-9469-405a-910d-aecd090ca206": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "f28a0d0f-e528-4528-a318-b0d448ed1cd5": {
+   "source": "10.1016/j.cell.2019.11.025",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.025"
+  },
+  "482f0e88-f875-41ac-95f5-971f22662c36": {
+   "source": "10.1016/j.cell.2018.05.002",
+   "date": "2018-05-24",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2018.05.002"
+  },
+  "69112914-26ca-4430-bd2a-6720d0e03b05": {
+   "source": "10.1126/science.abn5647",
+   "date": "2022-11-10",
+   "field": "created",
+   "cluster": "10.1126/science.abn5647"
+  },
+  "edf05c25-0309-4b96-8233-bb9070dc7659": {
+   "source": "10.1038/s41593-019-0566-1",
+   "date": "2020-01-20",
+   "field": "issued",
+   "cluster": "10.1038/s41593-019-0566-1"
+  },
+  "c1e7ea04-0c6f-4f6a-a827-5cec8be3d9a1": {
+   "source": "10.1038/s41586-022-05256-1",
+   "date": "2022-10-19",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05256-1"
+  },
+  "80b86c3e-bee1-4347-83b5-65064903d7d3": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "0343e10f-b1b1-419d-b9cb-b06c13aeb457": {
+   "source": "10.1016/j.neuron.2020.01.032",
+   "date": "2020-02-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2020.01.032"
+  },
+  "2491a1bd-3b99-4d68-9ae6-482e015bc1cf": {
+   "source": "10.1016/j.neuron.2020.01.032",
+   "date": "2020-02-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2020.01.032"
+  },
+  "f6b475f0-dcfc-4a9c-929d-92c31377bf05": {
+   "source": "10.1016/j.neuron.2020.01.032",
+   "date": "2020-02-20",
+   "field": "created",
+   "cluster": "10.1016/j.neuron.2020.01.032"
+  },
+  "c47ef43f-0954-4725-9da6-a4380fe77602": {
+   "source": "10.1016/j.cell.2015.02.018",
+   "date": "2015-03-12",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2015.02.018"
+  },
+  "175a0e00-78a4-4745-9d03-c62f5f8c01e5": {
+   "source": "10.1016/j.cell.2020.09.011",
+   "date": "2020-09-29",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2020.09.011"
+  },
+  "a19cb5c0-7625-40fd-be7a-2de9a76552a7": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "7aab9be6-5af3-4734-becc-5070276af7bc": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "29f29ae7-ab25-49b0-a4a5-18f7d2701421": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "cdc3466c-27a1-458e-ad5c-3a2774558df3": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "b3ef4448-fd41-4aea-82e3-a19669d1ae56": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "b588f737-2582-4d2b-9b1e-eeaaf2bba803": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "e27a23c1-1bea-4a6e-8f6d-f6532638a0a0": {
+   "source": "10.1016/j.cub.2015.07.056",
+   "date": "2015-08-27",
+   "field": "created",
+   "cluster": "10.1016/j.cub.2015.07.056"
+  },
+  "d5174366-b5f2-45f1-977d-2a652a4e07ea": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "e3aad41f-5697-4e5b-8cd7-45793b38bb11": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "934ff2e6-fd04-4ae3-93a8-8fac7eb6e5a6": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "e71cc10b-8da1-45a7-805a-ad3fb7e19150": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "13a8c96e-cc1c-451e-a608-f2304fa54cea": {
+   "source": "10.1016/j.cell.2016.05.031",
+   "date": "2016-06-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2016.05.031"
+  },
+  "14c5ac89-49f3-43e6-89d1-1be4c2ec35f1": {
+   "source": "10.1016/j.neuron.2015.09.020",
+   "date": "2015-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.09.020"
+  },
+  "90d6a1af-0334-43fe-87b1-cea54dc9aaad": {
+   "source": "10.1038/s41586-020-2350-5",
+   "date": "2020-06-03",
+   "field": "issued",
+   "cluster": "10.1038/s41586-020-2350-5"
+  },
+  "8e16e8ab-d83f-426c-b355-f3ed79eeb575": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "aa25c3eb-b69f-4d05-842d-e5dd1034c596": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "de091807-4838-48bb-8659-543799058701": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "c72d6388-cec3-4907-b176-dccd46d697f7": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "fbca1531-3786-4f05-bb9b-80d005c1a4b7": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "b24f7819-2399-4efe-b9a4-e1ea20d0e4f8": {
+   "source": "10.1038/s41586-022-05256-1",
+   "date": "2022-10-19",
+   "field": "issued",
+   "cluster": "10.1038/s41586-022-05256-1"
+  },
+  "3b6c6a90-547c-4bf8-90f8-90f14600b66d": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "e38b1e07-5d71-4b12-955e-cf054ab5787c": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "89616010-14fe-46f6-a294-97deafe66647": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "ddf5d2ca-9c61-410e-b75e-5ea9806e7772": {
+   "source": "10.1038/s41586-019-1647-8",
+   "date": "2019-10-16",
+   "field": "issued",
+   "cluster": "10.1038/s41586-019-1647-8"
+  },
+  "34ac5717-170a-4c6a-bc03-7ec4223fad1a": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "e10252b7-d0ab-4b17-8cf4-38ab0d36dc7c": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "416263b6-08ce-4575-87bc-8fc60e4f130c": {
+   "source": "10.1016/j.cell.2017.10.015",
+   "date": "2017-10-26",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2017.10.015"
+  },
+  "38376552-5a54-43ff-83a9-7aecbbc67850": {
+   "source": "10.1016/j.cell.2017.10.015",
+   "date": "2017-10-26",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2017.10.015"
+  },
+  "6ea01e8a-9055-453a-8d28-1f4d898592df": {
+   "source": "10.1016/j.cell.2017.10.015",
+   "date": "2017-10-26",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2017.10.015"
+  },
+  "01b01ea9-defd-43d4-bdb9-13bdcb367609": {
+   "source": "10.1038/s41586-018-0077-3",
+   "date": "2018-04-27",
+   "field": "created",
+   "cluster": "10.1038/s41586-018-0077-3"
+  },
+  "e3d08cbf-e55b-4ea0-8a68-f762bb573478": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "37fe7977-c381-4b13-98a8-ea76bbe35e7c": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "f6c3ca2a-e13d-4f26-8bde-c4be8bdaa04b": {
+   "source": "10.1016/j.neuron.2015.10.001",
+   "date": "2015-11-01",
+   "field": "issued",
+   "cluster": "10.1016/j.neuron.2015.10.001"
+  },
+  "9e7fb49d-b852-4574-b098-4925a41d9c91": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "0bbc4070-542c-4e67-9084-451605bde3b3": {
+   "source": "10.1016/j.cell.2019.11.004",
+   "date": "2019-12-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2019.11.004"
+  },
+  "ae9125e5-ce14-46f9-9ff7-d7bda1e101e1": {
+   "source": "10.1016/j.cell.2016.05.031",
+   "date": "2016-06-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2016.05.031"
+  },
+  "1dcc341b-c11c-4d2b-b4e0-b331d98ca6b7": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  },
+  "2d2d4556-b24e-4dfa-b6cf-98aabb84aa19": {
+   "source": "10.1016/j.cell.2016.05.031",
+   "date": "2016-06-01",
+   "field": "issued",
+   "cluster": "10.1016/j.cell.2016.05.031"
+  },
+  "54e4a519-040f-498b-982a-eeddcf0a38a6": {
+   "source": "10.1016/j.bpj.2015.08.008",
+   "date": "2015-10-01",
+   "field": "issued",
+   "cluster": "10.1016/j.bpj.2015.08.008"
+  },
+  "69dd910b-2d6a-45ba-abc6-0ec74f5fec94": {
+   "source": "10.1016/j.cell.2021.03.032",
+   "date": "2021-04-14",
+   "field": "created",
+   "cluster": "10.1016/j.cell.2021.03.032"
+  }
+ },
+ "LAB-Bench ProtocolQA": {},
+ "LAB-Bench CloningScenarios": {},
+ "ScienceAgentBench": {},
+ "CORE-Bench (train split)": {},
+ "DiscoveryBench (real, answer key)": {}
+}

@@ -1,0 +1,1093 @@
+{
+  "url": "https://api.crossref.org/works/10.1172/jci.insight.167744",
+  "retrieved_at": "2026-09-16T15:26:16.795402+00:00",
+  "status": 200,
+  "body": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            21
+          ]
+        ],
+        "date-time": "2026-07-21T05:07:47Z",
+        "timestamp": 1784610467473,
+        "version": "3.55.0"
+      },
+      "reference-count": 102,
+      "publisher": "American Society for Clinical Investigation",
+      "issue": "10",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                22
+              ]
+            ],
+            "date-time": "2023-05-22T00:00:00Z",
+            "timestamp": 1684713600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "name": "NIH",
+          "award": [
+            "DP5OD024579"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "DP5OD024579"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NIH",
+          "award": [
+            "T32 GM008042"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "T32 GM008042"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ASXL Rare Research Endowment",
+          "award": [
+            "ASXL Research Related Endowment Pilot Grant"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "ASXL Research Related Endowment Pilot Grant"
+              ]
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100000024",
+          "name": "Canadian Institutes of Health Research",
+          "doi-asserted-by": "crossref",
+          "award": [
+            "IGH-155182"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "IGH-155182"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100000024",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100000024",
+          "name": "Canadian Institutes of Health Research",
+          "doi-asserted-by": "crossref",
+          "award": [
+            "MOP-126054"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "MOP-126054"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100000024",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100008914",
+          "name": "Ontario Brain Institute",
+          "doi-asserted-by": "crossref",
+          "award": [
+            "IDS11-02"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "IDS11-02"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100008914",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "abstract": "<jats:p>\n                    ASXL1 (additional sex combs\u2013like 1) plays key roles in epigenetic regulation of early developmental gene expression. De novo protein-truncating mutations in\n                    <jats:italic>ASXL1</jats:italic>\n                    cause Bohring-Opitz syndrome (BOS; OMIM #605039), a rare neurodevelopmental condition characterized by severe intellectual disabilities, distinctive facial features, hypertrichosis, increased risk of Wilms tumor, and variable congenital anomalies, including heart defects and severe skeletal defects giving rise to a typical BOS posture. These BOS-causing\n                    <jats:italic>ASXL1</jats:italic>\n                    variants are also high-prevalence somatic driver mutations in acute myeloid leukemia. We used primary cells from individuals with BOS (\n                    <jats:italic>n</jats:italic>\n                    = 18) and controls (\n                    <jats:italic>n</jats:italic>\n                    = 49) to dissect gene regulatory changes caused by\n                    <jats:italic>ASXL1</jats:italic>\n                    mutations using comprehensive multiomics assays for chromatin accessibility (ATAC-seq), DNA methylation, histone methylation binding, and transcriptome in peripheral blood and skin fibroblasts. Our data show that regardless of cell type,\n                    <jats:italic>ASXL1</jats:italic>\n                    mutations drive strong cross-tissue effects that disrupt multiple layers of the epigenome. The data showed a broad activation of canonical Wnt signaling at the transcriptional and protein levels and upregulation of\n                    <jats:italic>VANGL2</jats:italic>\n                    , which encodes a planar cell polarity pathway protein that acts through noncanonical Wnt signaling to direct tissue patterning and cell migration. This multiomics approach identifies the core impact of\n                    <jats:italic>ASXL1</jats:italic>\n                    mutations and therapeutic targets for BOS and myeloid leukemias.\n                  </jats:p>",
+      "DOI": "10.1172/jci.insight.167744",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            13
+          ]
+        ],
+        "date-time": "2023-04-13T12:00:58Z",
+        "timestamp": 1681387258000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 14,
+      "title": [
+        "Multiomics of Bohring-Opitz syndrome truncating ASXL1 mutations identify canonical and noncanonical Wnt signaling dysregulation"
+      ],
+      "prefix": "10.1172",
+      "volume": "8",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7102-6879",
+          "authenticated-orcid": true,
+          "given": "Isabella",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Human Genetics,"
+            },
+            {
+              "name": "Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Department of Computational Medicine, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6847-9423",
+          "authenticated-orcid": true,
+          "given": "Angela",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Human Genetics,"
+            },
+            {
+              "name": "Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Department of Computational Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Interdepartmental BioInformatics Program, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zain",
+          "family": "Awamleh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Genetics and Genome Biology Program, Research Institute, The Hospital for Sick Children, Toronto, Ontario, Canada."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7907-6571",
+          "authenticated-orcid": true,
+          "given": "Meghna",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Human Genetics,"
+            },
+            {
+              "name": "Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Department of Computational Medicine, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aileen",
+          "family": "Ning",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Human Genetics,"
+            },
+            {
+              "name": "Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Department of Computational Medicine, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Analeyla",
+          "family": "Herrera",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Human Genetics,"
+            },
+            {
+              "name": "Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Department of Computational Medicine, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "name": "REACH Biobank and Registry",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bianca E.",
+          "family": "Russell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Division of Genetics, Department of Pediatrics, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rosanna",
+          "family": "Weksberg",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Genetics and Genome Biology Program, Research Institute, The Hospital for Sick Children, Toronto, Ontario, Canada."
+            },
+            {
+              "name": "Division of Clinical & Metabolic Genetics, The Hospital for Sick Children, Toronto, Ontario, Canada."
+            },
+            {
+              "name": "Institute of Medical Sciences and Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9687-9122",
+          "authenticated-orcid": true,
+          "given": "Valerie A.",
+          "family": "Arboleda",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Human Genetics,"
+            },
+            {
+              "name": "Department of Pathology and Laboratory Medicine, David Geffen School of Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Department of Computational Medicine, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Interdepartmental BioInformatics Program, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Molecular Biology Institute, UCLA, Los Angeles, California, USA."
+            },
+            {
+              "name": "Jonsson Comprehensive Cancer Center, UCLA, Los Angeles, California, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "232",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "B1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S0378-1119(03)00430-X"
+        },
+        {
+          "key": "B2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.4161/cc.11.1.18475"
+        },
+        {
+          "key": "B3",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1586/14789450.2015.1033409"
+        },
+        {
+          "key": "B4",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13072-020-0328-z"
+        },
+        {
+          "issue": "7",
+          "key": "B5",
+          "first-page": "364",
+          "article-title": "The PHD finger: a versatile epigenome reader",
+          "volume": "36",
+          "author": "Sanchez",
+          "year": "2011",
+          "journal-title": "Trends Biochem Sci"
+        },
+        {
+          "key": "B6",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cell.2017.08.002"
+        },
+        {
+          "key": "B7",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ydbio.2009.10.004"
+        },
+        {
+          "key": "B8",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/genetics/130.4.817"
+        },
+        {
+          "key": "B9",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.stemcr.2019.03.006"
+        },
+        {
+          "key": "B10",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/dvg.22793"
+        },
+        {
+          "key": "B11",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1084/jem.20131141"
+        },
+        {
+          "key": "B12",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/gcc.22443"
+        },
+        {
+          "key": "B13",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1002530107"
+        },
+        {
+          "key": "B14",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/ncomms10292"
+        },
+        {
+          "key": "B15",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/leu.2015.90"
+        },
+        {
+          "key": "B16",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/s41421-018-0022-5",
+          "article-title": "Mtf2-PRC2 control of canonical Wnt signaling is required for definitive erythropoiesis",
+          "volume": "4",
+          "author": "Rothberg",
+          "year": "2018",
+          "journal-title": "Cell Discov"
+        },
+        {
+          "key": "B17",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1136/gutjnl-2015-310625"
+        },
+        {
+          "issue": "1",
+          "key": "B18",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/s41467-018-05085-9",
+          "article-title": "Mutant ASXL1 cooperates with BAP1 to promote myeloid leukaemogenesis",
+          "volume": "9",
+          "author": "Asada",
+          "year": "2018",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "B19",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s12185-018-2563-7"
+        },
+        {
+          "key": "B20",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.molcel.2019.03.018"
+        },
+        {
+          "key": "B21",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.tig.2017.06.002"
+        },
+        {
+          "issue": "3",
+          "key": "B22",
+          "doi-asserted-by": "crossref",
+          "first-page": "597",
+          "DOI": "10.1093/hmg/ddv499",
+          "article-title": "De novo dominant ASXL3 mutations alter H2A deubiquitination and transcription in Bainbridge-Ropers syndrome",
+          "volume": "25",
+          "author": "Srivastava",
+          "year": "2015",
+          "journal-title": "Hum Mol Genet"
+        },
+        {
+          "key": "B23",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/gm415"
+        },
+        {
+          "key": "B24",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41375-021-01121-8"
+        },
+        {
+          "key": "B25"
+        },
+        {
+          "key": "B26",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/ng.868"
+        },
+        {
+          "key": "B27",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ajhg.2016.08.017"
+        },
+        {
+          "issue": "2",
+          "key": "B28",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1186/gm420",
+          "article-title": "Expanding our knowledge of conditions associated with the ASXL gene family",
+          "volume": "5",
+          "author": "Russell",
+          "year": "2013",
+          "journal-title": "Genome Med"
+        },
+        {
+          "key": "B29",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3324/haematol.2011.051532"
+        },
+        {
+          "key": "B30",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1056/NEJMoa1409405"
+        },
+        {
+          "key": "B31",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/1756-8722-5-12"
+        },
+        {
+          "key": "B32",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1101/cshperspect.a026526"
+        },
+        {
+          "key": "B33",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41375-020-0896-8"
+        },
+        {
+          "key": "B34",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1056/NEJMoa1408617"
+        },
+        {
+          "key": "B35",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1084/jem.20171151"
+        },
+        {
+          "key": "B36",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1182/blood-2013-05-500272"
+        },
+        {
+          "key": "B37",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.exphem.2015.11.011"
+        },
+        {
+          "key": "B38",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1182/blood-2017-06-789669"
+        },
+        {
+          "key": "B39",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s40364-019-0174-y"
+        },
+        {
+          "key": "B40",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.cell.2017.05.016"
+        },
+        {
+          "key": "B41",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.exphem.2008.08.008"
+        },
+        {
+          "key": "B42",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/35035117"
+        },
+        {
+          "key": "B43",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.tibs.2009.10.002"
+        },
+        {
+          "key": "B44",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S1097-2765(01)00224-6"
+        },
+        {
+          "key": "B45",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1232389"
+        },
+        {
+          "key": "B46",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.tips.2018.03.008"
+        },
+        {
+          "key": "B47",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3390/ijms21144852"
+        },
+        {
+          "key": "B48",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1242/dev.033910"
+        },
+        {
+          "key": "B49",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13041-014-0079-5"
+        },
+        {
+          "key": "B50",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/ajmg.a.63125"
+        },
+        {
+          "key": "B51",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41431-022-01083-0"
+        },
+        {
+          "key": "B52",
+          "doi-asserted-by": "crossref",
+          "first-page": "21.29.1",
+          "DOI": "10.1002/0471142727.mb2129s109",
+          "article-title": "ATAC-seq: A Method for Assaying Chromatin Accessibility Genome-Wide",
+          "volume": "109",
+          "author": "Buenrostro",
+          "year": "2015",
+          "journal-title": "Curr Protoc Mol Biol"
+        },
+        {
+          "key": "B53",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nprot.2018.015"
+        },
+        {
+          "issue": "1",
+          "key": "B54",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1038/ncomms8307",
+          "article-title": "Cancer-associated ASXL1 mutations may act as gain-of-function mutations of the ASXL1-BAP1 complex",
+          "volume": "6",
+          "author": "Balasubramani",
+          "year": "2015",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "B55",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ccr.2012.06.032"
+        },
+        {
+          "key": "B56",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/ajmg.a.37131"
+        },
+        {
+          "key": "B57",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.molcel.2010.05.004"
+        },
+        {
+          "key": "B58",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/cr.2016.128"
+        },
+        {
+          "key": "B59",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13059-020-1929-3"
+        },
+        {
+          "key": "B60",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nbt.1630"
+        },
+        {
+          "key": "B61",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1089/omi.2011.0118"
+        },
+        {
+          "key": "B62",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1128/MCB.22.4.1172-1183.2002"
+        },
+        {
+          "key": "B63",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1128/MCB.22.4.1184-1193.2002"
+        },
+        {
+          "key": "B64",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/bies.20526"
+        },
+        {
+          "key": "B65",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1172/JCI70739"
+        },
+        {
+          "key": "B66",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/1741-7007-6-49"
+        },
+        {
+          "key": "B67",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.5808/GI.2017.15.4.156"
+        },
+        {
+          "key": "B68",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1177/1759720X12466608"
+        },
+        {
+          "issue": "35",
+          "key": "B69",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1126/scisignal.135re9",
+          "article-title": "Alternative wnt signaling is initiated by distinct receptors",
+          "volume": "1",
+          "author": "van Amerongen",
+          "year": "2008",
+          "journal-title": "Sci Signal"
+        },
+        {
+          "issue": "11",
+          "key": "B70",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.3390/ijms21113904",
+          "article-title": "Regulation of Wnt Signaling through ubiquitination and deubiquitination in cancers",
+          "volume": "21",
+          "author": "Park",
+          "year": "2020",
+          "journal-title": "Int J Mol Sci"
+        },
+        {
+          "key": "B71"
+        },
+        {
+          "key": "B72",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1161/CIRCRESAHA.110.219840"
+        },
+        {
+          "key": "B73",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S0092-8674(02)01014-0"
+        },
+        {
+          "key": "B74",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pgen.1002565"
+        },
+        {
+          "key": "B75",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1101/gad.1957710"
+        },
+        {
+          "key": "B76",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nature01618"
+        },
+        {
+          "key": "B77",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.ydbio.2017.06.003"
+        },
+        {
+          "issue": "2",
+          "key": "B78",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1042/BSR20191248",
+          "article-title": "Wnt10b promotes hair follicles growth and dermal papilla cells proliferation via Wnt/\u03b2-catenin signaling pathway in Rex rabbits",
+          "volume": "40",
+          "author": "Wu",
+          "year": "2020",
+          "journal-title": "Biosci Rep"
+        },
+        {
+          "key": "B79",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.mcn.2005.08.008"
+        },
+        {
+          "key": "B80",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.stem.2009.03.013"
+        },
+        {
+          "key": "B81",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-021-22393-9"
+        },
+        {
+          "key": "B82",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pgen.1004871"
+        },
+        {
+          "key": "B83",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/hmg/ddq397"
+        },
+        {
+          "key": "B84",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.3389/fcell.2022.760248"
+        },
+        {
+          "key": "B85",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.modgep.2006.07.007"
+        },
+        {
+          "key": "B86",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1002/bdrc.10029"
+        },
+        {
+          "key": "B87",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1242/bio.201511676"
+        },
+        {
+          "key": "B88",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1242/dev.01857"
+        },
+        {
+          "key": "B89",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1074/jbc.M408675200"
+        },
+        {
+          "key": "B90",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1056/NEJMc0910820"
+        },
+        {
+          "key": "B91",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/1050-1738(93)90023-Y"
+        },
+        {
+          "key": "B92",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/oncsis.2017.69"
+        },
+        {
+          "issue": "10",
+          "key": "B93",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1101/cshperspect.a007914",
+          "article-title": "Alternative Wnt pathways and receptors",
+          "volume": "4",
+          "author": "van Amerongen",
+          "year": "2012",
+          "journal-title": "Cold Spring Harb Perspect Biol"
+        },
+        {
+          "issue": "7",
+          "key": "B94",
+          "doi-asserted-by": "crossref",
+          "first-page": "468",
+          "DOI": "10.1038/nrm2717",
+          "article-title": "Proximal events in Wnt signal transduction",
+          "volume": "10",
+          "author": "Angers",
+          "year": "2009",
+          "journal-title": "Nat Rev Mol Cell Biol"
+        },
+        {
+          "key": "B95",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1523/JNEUROSCI.4680-05.2006"
+        },
+        {
+          "issue": "29",
+          "key": "B96",
+          "doi-asserted-by": "crossref",
+          "first-page": "E3005",
+          "DOI": "10.1073/pnas.1406399111",
+          "article-title": "Frizzled3 is required for the development of multiple axon tracts in the mouse central nervous system",
+          "volume": "111",
+          "author": "Hua",
+          "year": "2014",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "B97",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7554/eLife.01482"
+        },
+        {
+          "key": "B98",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7554/eLife.63254"
+        },
+        {
+          "key": "B99",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1074/jbc.M112.362467"
+        },
+        {
+          "key": "B100",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nmeth.4396"
+        },
+        {
+          "key": "B101",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.7554/eLife.46314"
+        },
+        {
+          "key": "B102",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1093/bioinformatics/btu049"
+        }
+      ],
+      "container-title": [
+        "JCI Insight"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://insight.jci.org/articles/view/167744/files/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            18
+          ]
+        ],
+        "date-time": "2026-05-18T21:54:17Z",
+        "timestamp": 1779141257000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://insight.jci.org/articles/view/167744"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "references-count": 102,
+      "journal-issue": {
+        "issue": "10",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              22
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              5,
+              22
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10.1172/jci.insight.167744"
+      ],
+      "URL": "https://doi.org/10.1172/jci.insight.167744",
+      "relation": {},
+      "ISSN": [
+        "2379-3708"
+      ],
+      "issn-type": [
+        {
+          "value": "2379-3708",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            22
+          ]
+        ]
+      },
+      "article-number": "e167744"
+    }
+  }
+}

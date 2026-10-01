@@ -1,0 +1,288 @@
+{
+  "releases": {
+    "v1.5": {
+      "claude-3-5-sonnet-latest": {
+        "arms": {
+          "mcq_forced": {
+            "n": 61,
+            "n_clusters": 20,
+            "accuracy": 22.950819672131146,
+            "chance": 25.0,
+            "margin": -2.0491803278688523,
+            "interval": [
+              -10.417613636363633,
+              5.434782608695652
+            ]
+          },
+          "mcq_decline": {
+            "n": 61,
+            "n_clusters": 20,
+            "accuracy": 6.557377049180328,
+            "chance": 19.999999999999993,
+            "margin": -13.442622950819672,
+            "interval": [
+              -19.999999999999993,
+              -6.440677966101695
+            ]
+          },
+          "open_ended": {
+            "n": 61,
+            "n_clusters": 20,
+            "accuracy": 0.0,
+            "chance": 0.0,
+            "margin": 0.0,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 22.950819672131146
+            }
+          },
+          "mcq_decline": {
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 6.557377049180328
+            }
+          },
+          "open_ended": {
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "mcq_decline": {
+            "rate": 83.60655737704919,
+            "n_answered": 10,
+            "accuracy_when_answered": 40.0
+          },
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "mcq_decline": null,
+          "open_ended": 77.04918032786885
+        },
+        "forced_minus_open": {
+          "n_paired": 61,
+          "n_clusters": 20,
+          "n_effective": 14.478599221789883,
+          "difference": -2.0491803278688523,
+          "interval": [
+            -10.417613636363633,
+            5.434782608695652
+          ]
+        }
+      },
+      "gpt-4o": {
+        "arms": {
+          "mcq_forced": {
+            "n": 61,
+            "n_clusters": 20,
+            "accuracy": 29.508196721311474,
+            "chance": 25.0,
+            "margin": 4.508196721311475,
+            "interval": [
+              -8.60655737704918,
+              17.253521126760564
+            ]
+          },
+          "mcq_decline": {
+            "n": 61,
+            "n_clusters": 20,
+            "accuracy": 0.0,
+            "chance": 19.999999999999993,
+            "margin": -19.999999999999993,
+            "interval": [
+              -20.0,
+              -19.99999999999999
+            ]
+          },
+          "open_ended": {
+            "n": 61,
+            "n_clusters": 20,
+            "accuracy": 0.0,
+            "chance": 0.0,
+            "margin": 0.0,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 29.508196721311474
+            }
+          },
+          "mcq_decline": {
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 0.0
+            }
+          },
+          "open_ended": {
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 0.0
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "mcq_decline": {
+            "rate": 98.36065573770492,
+            "n_answered": 1,
+            "accuracy_when_answered": 0.0
+          },
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "mcq_decline": null,
+          "open_ended": 52.459016393442624
+        },
+        "forced_minus_open": {
+          "n_paired": 61,
+          "n_clusters": 20,
+          "n_effective": 14.478599221789883,
+          "difference": 4.508196721311475,
+          "interval": [
+            -8.60655737704918,
+            17.253521126760564
+          ]
+        }
+      }
+    },
+    "v1.0": {
+      "claude-3-5-sonnet-latest": {
+        "arms": {
+          "mcq_forced": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 33.78378378378378,
+            "chance": 25.0,
+            "margin": 8.783783783783784,
+            "interval": [
+              2.491209804055439,
+              14.735311597894379
+            ]
+          },
+          "open_ended": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 11.486486486486488,
+            "chance": 0.0,
+            "margin": 11.486486486486488,
+            "interval": [
+              7.07070707070707,
+              16.610169491525422
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "": {
+              "n": 296,
+              "accuracy": 33.78378378378378
+            }
+          },
+          "open_ended": {
+            "": {
+              "n": 296,
+              "accuracy": 11.486486486486488
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "open_ended": 48.986486486486484
+        },
+        "forced_minus_open": {
+          "n_paired": 296,
+          "n_clusters": 53,
+          "n_effective": 50.528258362168394,
+          "difference": -2.7027027027027026,
+          "interval": [
+            -9.281421575901467,
+            3.6195576454197145
+          ]
+        }
+      },
+      "gpt-4o": {
+        "arms": {
+          "mcq_forced": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 32.0945945945946,
+            "chance": 25.0,
+            "margin": 7.094594594594595,
+            "interval": [
+              0.8275440418993215,
+              13.851828364909762
+            ]
+          },
+          "open_ended": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 9.121621621621621,
+            "chance": 0.0,
+            "margin": 9.121621621621621,
+            "interval": [
+              5.298013245033113,
+              13.652246871444826
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "": {
+              "n": 296,
+              "accuracy": 32.0945945945946
+            }
+          },
+          "open_ended": {
+            "": {
+              "n": 296,
+              "accuracy": 9.121621621621621
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "open_ended": 27.7027027027027
+        },
+        "forced_minus_open": {
+          "n_paired": 296,
+          "n_clusters": 53,
+          "n_effective": 50.528258362168394,
+          "difference": -2.027027027027027,
+          "interval": [
+            -8.275261324041812,
+            4.49164736007804
+          ]
+        }
+      }
+    }
+  },
+  "bootstrap": 4000,
+  "verifier": "range_verifier"
+}

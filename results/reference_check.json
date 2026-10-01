@@ -1,0 +1,652 @@
+{
+ "tolerance": 0.05,
+ "log_factors": [
+  2.0,
+  10.0
+ ],
+ "not_part_of_the_confirmatory_test": true,
+ "p_value_items": {
+  "v1.0": 19,
+  "v1.5": 8,
+  "v1.0 numeric": 159,
+  "v1.5 numeric": 105
+ },
+ "groups": {
+  "v1.0|gpt-4o": {
+   "published forced": {
+    "n_runs": 2473,
+    "n_items": 158,
+    "n_p_value_items": 19,
+    "score": 30.654097035651485,
+    "tolerance": {
+     "reference": 11.436675987465655,
+     "excess": {
+      "mean": 19.217421048185834,
+      "lo": 15.500998473499472,
+      "hi": 23.362944462152473,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9355,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "any number": {
+     "reference": 11.506999475510664,
+     "excess": {
+      "mean": 19.14709756014083,
+      "lo": 15.385940759903072,
+      "hi": 23.275709553327868,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9305,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "graders": {
+     "reference": 10.228888024230343,
+     "excess": {
+      "mean": 20.425209011421146,
+      "lo": 17.051149532842487,
+      "hi": 23.855290151926052,
+      "level": 0.9499999999999968,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9525,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "p-values within x2": {
+     "reference": 11.949003281252368,
+     "excess": {
+      "mean": 18.70509375439912,
+      "lo": 14.899472867295604,
+      "hi": 22.559314319675753,
+      "level": 0.9549999999999967,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.945,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "p-values within x10": {
+     "reference": 13.139810151312286,
+     "excess": {
+      "mean": 17.514286884339203,
+      "lo": 13.596511457243295,
+      "hi": 21.572961134897845,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.943,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "without p-values": {
+     "reference": 9.82064849940209,
+     "excess": {
+      "mean": 19.462710210894947,
+      "lo": 15.525014505196078,
+      "hi": 23.81936473435959,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9325,
+      "n_items": 139,
+      "n_clusters": 44
+     }
+    }
+   },
+   "published may-decline": {
+    "n_runs": 2473,
+    "n_items": 158,
+    "n_p_value_items": 19,
+    "score": 12.126144800930238,
+    "tolerance": {
+     "reference": 11.436675987465655,
+     "excess": {
+      "mean": 0.689468813464581,
+      "lo": -0.3643598622409714,
+      "hi": 1.9489044942951907,
+      "level": 0.9799999999999962,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.915,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "any number": {
+     "reference": 11.506999475510664,
+     "excess": {
+      "mean": 0.6191453254195739,
+      "lo": -0.4762632773787577,
+      "hi": 1.8764774504142463,
+      "level": 0.9749999999999963,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9195,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "graders": {
+     "reference": 10.228888024230343,
+     "excess": {
+      "mean": 1.8972567766998925,
+      "lo": 0.3555679540500527,
+      "hi": 4.219597625618737,
+      "level": 0.9952499999999994,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.871,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "p-values within x2": {
+     "reference": 11.949003281252368,
+     "excess": {
+      "mean": 0.17714151967786793,
+      "lo": -1.18373962071563,
+      "hi": 1.5147812411842547,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9295,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "p-values within x10": {
+     "reference": 13.139810151312286,
+     "excess": {
+      "mean": -1.0136653503820492,
+      "lo": -3.02990354382466,
+      "hi": 0.8288884964306545,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9285,
+      "n_items": 158,
+      "n_clusters": 47
+     }
+    },
+    "without p-values": {
+     "reference": 9.82064849940209,
+     "excess": {
+      "mean": 0.9911066454933528,
+      "lo": -0.18601008737142682,
+      "hi": 2.4220610984191477,
+      "level": 0.9774999999999963,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9235,
+      "n_items": 139,
+      "n_clusters": 44
+     }
+    }
+   }
+  },
+  "v1.0|Claude 3.5 Sonnet": {
+   "published forced": {
+    "n_runs": 2688,
+    "n_items": 159,
+    "n_p_value_items": 19,
+    "score": 36.60232905917525,
+    "tolerance": {
+     "reference": 15.601746767337628,
+     "excess": {
+      "mean": 21.000582291837624,
+      "lo": 17.287775534878232,
+      "hi": 25.049762595441454,
+      "level": 0.9624999999999966,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9395,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "any number": {
+     "reference": 15.601746767337628,
+     "excess": {
+      "mean": 21.000582291837624,
+      "lo": 17.411917022302,
+      "hi": 24.914368526210577,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9415,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "graders": {
+     "reference": 14.920063523588848,
+     "excess": {
+      "mean": 21.68226553558641,
+      "lo": 18.09541825315438,
+      "hi": 25.451129625978535,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9395,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "p-values within x2": {
+     "reference": 16.111787592671405,
+     "excess": {
+      "mean": 20.490541466503846,
+      "lo": 16.607769126639585,
+      "hi": 24.606812018950794,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.935,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "p-values within x10": {
+     "reference": 17.465985456303233,
+     "excess": {
+      "mean": 19.13634360287202,
+      "lo": 14.925291396106646,
+      "hi": 23.455394843002512,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9425,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "without p-values": {
+     "reference": 13.921507638142977,
+     "excess": {
+      "mean": 21.635719199960686,
+      "lo": 17.24641171506849,
+      "hi": 26.59255735360084,
+      "level": 0.9749999999999963,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.926,
+      "n_items": 140,
+      "n_clusters": 45
+     }
+    }
+   },
+   "published may-decline": {
+    "n_runs": 2688,
+    "n_items": 159,
+    "n_p_value_items": 19,
+    "score": 18.692136680336922,
+    "tolerance": {
+     "reference": 15.601746767337628,
+     "excess": {
+      "mean": 3.0903899129992944,
+      "lo": -0.3158266546464794,
+      "hi": 9.638674894625565,
+      "level": 0.9996499999999989,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.836,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "any number": {
+     "reference": 15.601746767337628,
+     "excess": {
+      "mean": 3.0903899129992944,
+      "lo": -0.3960307920241122,
+      "hi": 9.153783381280688,
+      "level": 0.9996499999999989,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.8165,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "graders": {
+     "reference": 14.920063523588848,
+     "excess": {
+      "mean": 3.77207315674808,
+      "lo": 0.9881831871987508,
+      "hi": 7.80569500775283,
+      "level": 0.9920499999999998,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.886,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "p-values within x2": {
+     "reference": 16.111787592671405,
+     "excess": {
+      "mean": 2.5803490876655197,
+      "lo": -1.0952600589227195,
+      "hi": 7.665188339043327,
+      "level": 0.9984499999999991,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.8515,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "p-values within x10": {
+     "reference": 17.465985456303233,
+     "excess": {
+      "mean": 1.2261512240336943,
+      "lo": -2.6009184588543834,
+      "hi": 5.454444051304581,
+      "level": 0.9774999999999963,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.907,
+      "n_items": 159,
+      "n_clusters": 48
+     }
+    },
+    "without p-values": {
+     "reference": 13.921507638142977,
+     "excess": {
+      "mean": 3.4470538215286117,
+      "lo": -0.5796012702379247,
+      "hi": 11.66942954253084,
+      "level": 0.9999499999999989,
+      "level_capped": true,
+      "coverage_of_nominal_95": 0.8155,
+      "n_items": 140,
+      "n_clusters": 45
+     }
+    }
+   }
+  },
+  "v1.5|seven configurations": {
+   "family forced": {
+    "n_runs": 735,
+    "n_items": 105,
+    "n_p_value_items": 8,
+    "score": 24.421768707482993,
+    "tolerance": {
+     "reference": 9.795918367346939,
+     "excess": {
+      "mean": 14.62585034013605,
+      "lo": 12.01298701298701,
+      "hi": 17.18643641707917,
+      "level": 0.9624999999999966,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9415,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "any number": {
+     "reference": 10.476190476190476,
+     "excess": {
+      "mean": 13.945578231292515,
+      "lo": 11.47420229583159,
+      "hi": 16.289599583069784,
+      "level": 0.9624999999999966,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9355,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "graders": {
+     "reference": 10.34013605442177,
+     "excess": {
+      "mean": 14.081632653061222,
+      "lo": 10.838840191248964,
+      "hi": 17.268077189800476,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.93,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "p-values within x2": {
+     "reference": 9.659863945578232,
+     "excess": {
+      "mean": 14.76190476190476,
+      "lo": 12.10080603670042,
+      "hi": 17.307692307692303,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.941,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "p-values within x10": {
+     "reference": 10.068027210884352,
+     "excess": {
+      "mean": 14.353741496598635,
+      "lo": 11.428350515464178,
+      "hi": 17.06349206349206,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9265,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "without p-values": {
+     "reference": 9.720176730486008,
+     "excess": {
+      "mean": 13.991163475699556,
+      "lo": 11.082113647846462,
+      "hi": 16.718187397708647,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.931,
+      "n_items": 97,
+      "n_clusters": 44
+     }
+    }
+   },
+   "family may-decline": {
+    "n_runs": 735,
+    "n_items": 105,
+    "n_p_value_items": 8,
+    "score": 11.088435374149658,
+    "tolerance": {
+     "reference": 9.795918367346939,
+     "excess": {
+      "mean": 1.2925170068027207,
+      "lo": -0.706436420722135,
+      "hi": 3.3195963580209904,
+      "level": 0.9774999999999963,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9195,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "any number": {
+     "reference": 10.476190476190476,
+     "excess": {
+      "mean": 0.6122448979591837,
+      "lo": -1.092436974789916,
+      "hi": 2.295918367346939,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.941,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "graders": {
+     "reference": 10.34013605442177,
+     "excess": {
+      "mean": 0.7482993197278908,
+      "lo": -2.1577380952380953,
+      "hi": 3.5052910052910056,
+      "level": 0.9724999999999964,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.925,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "p-values within x2": {
+     "reference": 9.659863945578232,
+     "excess": {
+      "mean": 1.4285714285714284,
+      "lo": -0.5291427445682262,
+      "hi": 3.386709029505853,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9265,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "p-values within x10": {
+     "reference": 10.068027210884352,
+     "excess": {
+      "mean": 1.0204081632653061,
+      "lo": -1.0204081632653061,
+      "hi": 3.0612244897959178,
+      "level": 0.9749999999999963,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9245,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "without p-values": {
+     "reference": 9.720176730486008,
+     "excess": {
+      "mean": 1.1045655375552281,
+      "lo": -1.0618315359693618,
+      "hi": 3.2281423473431397,
+      "level": 0.9799999999999962,
+      "level_capped": false,
+      "coverage_of_nominal_95": 0.9195,
+      "n_items": 97,
+      "n_clusters": 44
+     }
+    }
+   }
+  }
+ },
+ "no_number": {
+  "v1.0|gpt-4o": {
+   "n_runs": 658,
+   "key_written": 15.80547112462006,
+   "distractor_written": 13.323201621073963,
+   "accepted": 30.243161094224924,
+   "accepted_if_written": 42.30769230769231,
+   "accepted_if_not": 27.978339350180505,
+   "n_key_written": 104,
+   "graders_accept": 0.1519756838905775
+  },
+  "v1.0|Claude 3.5 Sonnet": {
+   "n_runs": 144,
+   "key_written": 6.944444444444445,
+   "distractor_written": 7.4074074074074066,
+   "accepted": 27.77777777777778,
+   "accepted_if_written": 50.0,
+   "accepted_if_not": 26.119402985074625,
+   "n_key_written": 10,
+   "graders_accept": 0.0
+  },
+  "v1.5|seven configurations": {
+   "n_runs": 81,
+   "key_written": 9.876543209876543,
+   "distractor_written": 8.23045267489712,
+   "accepted": 22.22222222222222,
+   "accepted_if_written": 43.75,
+   "accepted_if_not": 19.863013698630137,
+   "n_key_written": 8,
+   "graders_accept": 1.2345679012345678
+  }
+ },
+ "per_model": {
+  "models": {
+   "Claude 3.5 Sonnet": {
+    "within_5pct": 16.121540880503147,
+    "moved": 24.019551917989418,
+    "all": 3.590120047183487,
+    "moved_per_miss": 29.407903153117328,
+    "n_configurations": 2
+   },
+   "GLM-4.5-Air": {
+    "within_5pct": 16.19047619047619,
+    "moved": 10.135135135135135,
+    "all": 1.6666666666666667,
+    "moved_per_miss": 13.392857142857142,
+    "n_configurations": 1
+   },
+   "Llama-3.3-70B": {
+    "within_5pct": 4.523809523809524,
+    "moved": 22.635135135135133,
+    "all": 8.452380952380953,
+    "moved_per_miss": 23.27630939763293,
+    "n_configurations": 4
+   },
+   "Qwen2.5-72B": {
+    "within_5pct": 11.428571428571429,
+    "moved": 10.97972972972973,
+    "all": 3.630952380952381,
+    "moved_per_miss": 12.6953125,
+    "n_configurations": 4
+   },
+   "Qwen3-235B-A22B": {
+    "within_5pct": 23.809523809523807,
+    "moved": 4.72972972972973,
+    "all": 1.1904761904761905,
+    "moved_per_miss": 6.730769230769232,
+    "n_configurations": 2
+   },
+   "Qwen3-30B-A3B": {
+    "within_5pct": 14.285714285714285,
+    "moved": 13.513513513513514,
+    "all": 2.857142857142857,
+    "moved_per_miss": 16.129032258064516,
+    "n_configurations": 1
+   },
+   "gemma-3-27b": {
+    "within_5pct": 4.126984126984127,
+    "moved": 22.07207207207207,
+    "all": 8.095238095238095,
+    "moved_per_miss": 22.466216216216214,
+    "n_configurations": 3
+   },
+   "gpt-4o": {
+    "within_5pct": 11.547367892304603,
+    "moved": 13.603174603174603,
+    "all": 2.8748988979880696,
+    "moved_per_miss": 15.853697718820662,
+    "n_configurations": 2
+   }
+  },
+  "moved": {
+   "spearman_rho": -0.5476190476190477,
+   "p_value": 0.17098214285714286,
+   "n_models": 8
+  },
+  "all": {
+   "spearman_rho": -0.9047619047619048,
+   "p_value": 0.004563492063492064,
+   "n_models": 8
+  },
+  "moved_per_miss": {
+   "spearman_rho": -0.4285714285714286,
+   "p_value": 0.2992063492063492,
+   "n_models": 8
+  }
+ },
+ "published_rates": {
+  "open_ended": 48.8,
+  "forced_reported": 64.4,
+  "models": {
+   "gpt-4o": {
+    "accept_miss": 22.07135821723912,
+    "reject_correct": 2.8828957301590448,
+    "forced_implied": 58.69368229090881,
+    "gap_implied": 9.893682290908814
+   },
+   "Claude 3.5 Sonnet": {
+    "accept_miss": 25.182760170864928,
+    "reject_correct": 1.6230708773785025,
+    "forced_implied": 60.90151461932213,
+    "gap_implied": 12.101514619322131
+   }
+  },
+  "gap_reported": 15.600000000000009
+ }
+}

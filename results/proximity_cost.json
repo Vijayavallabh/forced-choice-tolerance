@@ -1,0 +1,421 @@
+{
+ "gradings": [
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o",
+   "kind": "notebook",
+   "lambda": 0.1702119883040936,
+   "observed": 6.094742063492063,
+   "rule": 32.14880952380952,
+   "share": 0.18957909029192127
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "lambda": 0.43384502923976603,
+   "observed": 14.815228174603176,
+   "rule": 32.14880952380952,
+   "share": 0.4608328704560885
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "lambda": 0.2891681571433054,
+   "observed": 8.984499007936508,
+   "rule": 32.14880952380952,
+   "share": 0.2794659939517374
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "lambda": 0.22061403508771926,
+   "observed": 9.059895833333334,
+   "rule": 32.14880952380952,
+   "share": 0.2818112386595076
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b, refusal",
+   "kind": "notebook",
+   "lambda": 0.177156432748538,
+   "observed": 3.3511904761904763,
+   "rule": 32.14880952380952,
+   "share": 0.1042399555637845
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "own model",
+   "kind": "notebook",
+   "lambda": 0.24314128943758573,
+   "observed": 5.907335907335908,
+   "rule": 35.53410553410553,
+   "share": 0.1662441144512858
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "lambda": 0.20324645633287608,
+   "observed": 4.903474903474903,
+   "rule": 35.53410553410553,
+   "share": 0.1379934806229627
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "lambda": 0.34408113835906756,
+   "observed": 11.023166023166024,
+   "rule": 35.53410553410553,
+   "share": 0.3102136906917784
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "lambda": 0.1771144278606965,
+   "observed": 0.1544401544401545,
+   "rule": 35.534105534105535,
+   "share": 0.004346251358203551
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "lambda": 0.20276080561212942,
+   "observed": 0.7657657657657657,
+   "rule": 41.17117117117117,
+   "share": 0.018599562363238512
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "lambda": 0.404320987654321,
+   "observed": 7.792792792792793,
+   "rule": 41.17117117117117,
+   "share": 0.1892778993435449
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "lambda": 0.17746913580246915,
+   "observed": 4.977477477477478,
+   "rule": 41.17117117117117,
+   "share": 0.12089715536105036
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b, refusal",
+   "kind": "notebook",
+   "lambda": 0.1186920117673682,
+   "observed": 2.77027027027027,
+   "rule": 41.17117117117117,
+   "share": 0.06728665207877463
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "lambda": 0.2664609053497942,
+   "observed": 1.3888888888888888,
+   "rule": 12.5,
+   "share": 0.1111111111111111
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "lambda": 0.48366013071895425,
+   "observed": 2.7777777777777777,
+   "rule": 12.5,
+   "share": 0.2222222222222222
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "lambda": 0.30392156862745096,
+   "observed": 4.166666666666666,
+   "rule": 12.5,
+   "share": 0.33333333333333326
+  },
+  {
+   "runs": "v1.5, gpt-5.1",
+   "grader": "gpt-4o",
+   "kind": "notebook",
+   "lambda": 0.10767468499427263,
+   "observed": 4.054054054054054,
+   "rule": 17.56756756756757,
+   "share": 0.23076923076923078
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "lambda": 0.6876588534312341,
+   "observed": 27.650049603174605,
+   "rule": 32.14880952380952,
+   "share": 0.8600644942294638
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "lambda": 0.5953360768175583,
+   "observed": 21.216216216216218,
+   "rule": 35.53410553410554,
+   "share": 0.5970662803332125
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "lambda": 0.6456211812627292,
+   "observed": 23.96396396396396,
+   "rule": 41.17117117117117,
+   "share": 0.5820568927789934
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "lambda": 0.6049382716049383,
+   "observed": 4.861111111111112,
+   "rule": 12.5,
+   "share": 0.38888888888888895
+  },
+  {
+   "runs": "v1.5, gpt-5.1",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "lambda": 0.44788087056128295,
+   "observed": 18.243243243243242,
+   "rule": 17.56756756756757,
+   "share": 1.0384615384615383
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "lambda": 0.6224544227933101,
+   "observed": 28.84511408730159,
+   "rule": 32.14880952380952,
+   "share": 0.897237394309696
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "lambda": 0.5427526291723823,
+   "observed": 24.71685971685972,
+   "rule": 35.53410553410554,
+   "share": 0.6955813111191597
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "lambda": 0.595836162027608,
+   "observed": 23.783783783783786,
+   "rule": 41.17117117117117,
+   "share": 0.577680525164114
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "lambda": 0.5514403292181069,
+   "observed": 13.88888888888889,
+   "rule": 12.5,
+   "share": 1.1111111111111112
+  },
+  {
+   "runs": "v1.5, gpt-5.1",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "lambda": 0.43413516609392894,
+   "observed": 14.18918918918919,
+   "rule": 17.56756756756757,
+   "share": 0.8076923076923077
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "lambda": 0.5791364649031975,
+   "observed": 25.32465277777778,
+   "rule": 32.14880952380952,
+   "share": 0.7877322100845524
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "lambda": 0.4901691815272062,
+   "observed": 24.002574002573997,
+   "rule": 35.53410553410554,
+   "share": 0.675479898587468
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "lambda": 0.5483140982122653,
+   "observed": 30.540540540540544,
+   "rule": 41.17117117117117,
+   "share": 0.7417943107221008
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "lambda": 0.507201646090535,
+   "observed": 15.972222222222221,
+   "rule": 12.5,
+   "share": 1.2777777777777777
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "lambda": 0.4826320248517368,
+   "observed": 23.827380952380956,
+   "rule": 32.14880952380952,
+   "share": 0.7411590446213666
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "lambda": 0.424554183813443,
+   "observed": 16.216216216216218,
+   "rule": 35.53410553410554,
+   "share": 0.4563563926113726
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "lambda": 0.46220864448970356,
+   "observed": 22.09459459459459,
+   "rule": 41.17117117117117,
+   "share": 0.536652078774617
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "lambda": 0.397119341563786,
+   "observed": 12.5,
+   "rule": 12.5,
+   "share": 1.0
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o, letter",
+   "kind": "notebook",
+   "lambda": 0.23628871838590512,
+   "observed": 6.621899801587301,
+   "rule": 32.14880952380952,
+   "share": 0.20597651669443934
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.07693997301452819,
+   "observed": -1.1241319444444442,
+   "rule": 32.14880952380952,
+   "share": -0.03496651854594828
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gpt-4o, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.06401463191586647,
+   "observed": -1.4478764478764479,
+   "rule": 35.53410553410554,
+   "share": -0.04074610648315827
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.07758323135335278,
+   "observed": -0.14446924603174602,
+   "rule": 32.14880952380952,
+   "share": -0.0044937665864346115
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.07098765432098765,
+   "observed": -0.22522522522522526,
+   "rule": 35.53410553410554,
+   "share": -0.006338283230713509
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.06042090970807871,
+   "observed": -0.2702702702702703,
+   "rule": 41.17117117117117,
+   "share": -0.0065645514223194755
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.07767489711934152,
+   "observed": -2.7777777777777777,
+   "rule": 12.5,
+   "share": -0.2222222222222222
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.058787536477454605,
+   "observed": -1.105282738095238,
+   "rule": 32.14880952380952,
+   "share": -0.03438020736900574
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.053497942386831254,
+   "observed": -0.546975546975547,
+   "rule": 35.53410553410554,
+   "share": -0.015392973560304234
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.05023761031907667,
+   "observed": -0.7207207207207207,
+   "rule": 41.17117117117117,
+   "share": -0.0175054704595186
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "lambda": 0.06944444444444445,
+   "observed": -0.6944444444444444,
+   "rule": 12.5,
+   "share": -0.05555555555555555
+  }
+ ],
+ "n": 46,
+ "spearman": 0.8767807585568916,
+ "pearson": 0.8333839740269025
+}

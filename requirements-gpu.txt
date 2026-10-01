@@ -1,0 +1,39 @@
+# Optional: regenerating model outputs on a GPU. Nothing else needs this file.
+# Every rollout, probe outcome, membership score and grade that the paper's
+# numbers are computed from ships under results/, so the analyses, the tests and
+# the validator run with requirements.txt alone.
+#
+#   pip install -r requirements.txt -r requirements-gpu.txt
+#
+# The open-weight runs used four environments. Each results file that records
+# its software says which one it used (the "torch", "transformers" and "vllm"
+# fields). The pins below are the main one, the conda environment with
+# CPython 3.12.11. It recorded torch 2.10.0+cu128 with transformers 4.44.2 in
+# 16 results files, among them agentic_bixgrid.json, agentic_bixv10_*.json for
+# the Qwen2.5, Llama-3.x and phi models, agentic_arms_qwen32b.json,
+# agentic_arms_qwen72b.json and prompt_factorial_qwen14b_*.json.
+torch==2.10.0          # the runs used the +cu128 build:
+                       #   pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cu128
+transformers==4.44.2
+accelerate==1.13.0     # device_map="auto" sharding for models larger than one card.
+                       # Installed in that environment; results files do not record it.
+huggingface_hub==0.36.2  # fetch_big_models.py; transformers 4.44.2 needs a version below 1.0
+#
+# The other three environments. Each needs its own virtual environment:
+#
+# 1. transformers 5.17.0 with torch 2.10.0+cu128, for the models 4.44.2 cannot
+#    load (gemma-3-4b-it, OLMo-2-1124-7B) and for Llama-3.3-70B. Recorded in
+#    agentic_grid.json, agentic_arms_llama70b.json, agentic_bixv10_gemma3_4b.json,
+#    agentic_bixv10_llama70b.json and agentic_bixv10_olmo2_7b.json:
+#      transformers==5.17.0     # needs huggingface_hub>=1.5,<2
+#    Some Llama snapshots also need sentencepiece to build a tokenizer. Its
+#    version was not recorded.
+#
+# 2. vllm 0.10.2, for the 70B-class prompt factorial. Recorded with torch
+#    2.8.0+cu128 and transformers 4.56.2 in prompt_factorial_llama70b.json and
+#    prompt_factorial_qwen72b.json. vllm 0.10.2 pins torch==2.8.0, so it cannot
+#    share an environment with the pins above:
+#      vllm==0.10.2 transformers==4.56.2
+#
+# 3. torch 2.7.0+cu126 with transformers 5.3.0, on a second GPU host
+#    (run_bixgrid_remote.sh). Recorded in agentic_bixgrid_remote.json.

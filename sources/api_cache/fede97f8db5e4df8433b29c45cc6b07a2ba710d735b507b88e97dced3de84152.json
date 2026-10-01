@@ -1,0 +1,172 @@
+{
+  "url": "https://api.datacite.org/dois/10.5281/zenodo.14063261",
+  "retrieved_at": "2026-09-16T15:26:31.129613+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.5281/zenodo.14063261",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.5281/zenodo.14063261",
+        "prefix": "10.5281",
+        "suffix": "zenodo.14063261",
+        "identifiers": [
+          {
+            "identifier": "oai:zenodo.org:14063261",
+            "identifierType": "oai"
+          }
+        ],
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifierType": "oai",
+            "alternateIdentifier": "oai:zenodo.org:14063261"
+          }
+        ],
+        "creators": [
+          {
+            "name": "Wen, Xuehuan",
+            "nameType": "Personal",
+            "givenName": "Xuehuan",
+            "familyName": "Wen",
+            "nameIdentifiers": [],
+            "affiliation": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "Inhibition of the neddylation E2 enzyme UBE2M in macrophages protects against E. coli-induced sepsis"
+          }
+        ],
+        "publisher": "Zenodo",
+        "container": {},
+        "publicationYear": 2024,
+        "subjects": [
+          {
+            "subject": "RNA-seq, UBE2M, Macrophages, Inflammation, LPS, Transcriptome, Knockout mice"
+          }
+        ],
+        "contributors": [
+          {
+            "name": "Zhang, Gensheng",
+            "nameType": "Personal",
+            "givenName": "Gensheng",
+            "familyName": "Zhang",
+            "contributorType": "Supervisor",
+            "nameIdentifiers": [],
+            "affiliation": []
+          }
+        ],
+        "dates": [
+          {
+            "date": "2024-11-10",
+            "dateType": "Issued"
+          }
+        ],
+        "language": "en",
+        "types": {
+          "ris": "JOUR",
+          "bibtex": "article",
+          "citeproc": "article-journal",
+          "schemaOrg": "ScholarlyArticle",
+          "resourceType": "",
+          "resourceTypeGeneral": "JournalArticle"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.14063260",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": null,
+        "rightsList": [
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "Title:Transcriptome analysis of LPS-stimulated peritoneal macrophages from UBE2M knockout mice\n\nDescription:This dataset contains RNA-sequencing data from a study investigating the role of UBE2M in macrophage inflammatory responses. The experiment compared transcriptional profiles between wild-type and UBE2M knockout peritoneal macrophages (PMs) following LPS stimulation.\n\nExperimental Design:- Mouse Model: UBE2M conditional knockout using LysM-Cre system- Cell Type: Peritoneal macrophages (PMs)- Treatment: Lipopolysaccharide (LPS)- Groups:\u00a0\u00a0 * Wild-type + LPS (WL1, WL2, WL3; three biological replicates)\u00a0 * UBE2M knockout + LPS (KL1, KL2, KL3; three biological replicates)\n\nData Description:The dataset includes:1. Gene expression matrix containing counts for all detected genes\n\nData Format:- Expression matrix: .csv- Gene IDs: Ensembl gene identifiers with corresponding gene symbols- Expression values: [Counts]\n\n\u00a0",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMTQwNjMyNjE8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPldlbiwgWHVlaHVhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WHVlaHVhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XZW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkluaGliaXRpb24gb2YgdGhlIG5lZGR5bGF0aW9uIEUyIGVuenltZSBVQkUyTSBpbiBtYWNyb3BoYWdlcyBwcm90ZWN0cyBhZ2FpbnN0IEUuIGNvbGktaW5kdWNlZCBzZXBzaXM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJKb3VybmFsQXJ0aWNsZSIvPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0PlJOQS1zZXEsIFVCRTJNLCBNYWNyb3BoYWdlcywgSW5mbGFtbWF0aW9uLCBMUFMsIFRyYW5zY3JpcHRvbWUsIEtub2Nrb3V0IG1pY2U8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8Y29udHJpYnV0b3JzPgogICAgPGNvbnRyaWJ1dG9yIGNvbnRyaWJ1dG9yVHlwZT0iU3VwZXJ2aXNvciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFuZywgR2Vuc2hlbmc8L2NvbnRyaWJ1dG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5HZW5zaGVuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5aaGFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyNC0xMS0xMDwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbmc8L2xhbmd1YWdlPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJvYWkiPm9haTp6ZW5vZG8ub3JnOjE0MDYzMjYxPC9hbHRlcm5hdGVJZGVudGlmaWVyPgogIDwvYWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc1ZlcnNpb25PZiI+MTAuNTI4MS96ZW5vZG8uMTQwNjMyNjA8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxzaXplcy8+CiAgPGZvcm1hdHMvPgogIDx2ZXJzaW9uLz4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wL2xlZ2FsY29kZSIgcmlnaHRzSWRlbnRpZmllcj0iY2MtYnktNC4wIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJzcGR4Ij5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VGl0bGU6VHJhbnNjcmlwdG9tZSBhbmFseXNpcyBvZiBMUFMtc3RpbXVsYXRlZCBwZXJpdG9uZWFsIG1hY3JvcGhhZ2VzIGZyb20gVUJFMk0ga25vY2tvdXQgbWljZQoKRGVzY3JpcHRpb246VGhpcyBkYXRhc2V0IGNvbnRhaW5zIFJOQS1zZXF1ZW5jaW5nIGRhdGEgZnJvbSBhIHN0dWR5IGludmVzdGlnYXRpbmcgdGhlIHJvbGUgb2YgVUJFMk0gaW4gbWFjcm9waGFnZSBpbmZsYW1tYXRvcnkgcmVzcG9uc2VzLiBUaGUgZXhwZXJpbWVudCBjb21wYXJlZCB0cmFuc2NyaXB0aW9uYWwgcHJvZmlsZXMgYmV0d2VlbiB3aWxkLXR5cGUgYW5kIFVCRTJNIGtub2Nrb3V0IHBlcml0b25lYWwgbWFjcm9waGFnZXMgKFBNcykgZm9sbG93aW5nIExQUyBzdGltdWxhdGlvbi4KCkV4cGVyaW1lbnRhbCBEZXNpZ246LSBNb3VzZSBNb2RlbDogVUJFMk0gY29uZGl0aW9uYWwga25vY2tvdXQgdXNpbmcgTHlzTS1DcmUgc3lzdGVtLSBDZWxsIFR5cGU6IFBlcml0b25lYWwgbWFjcm9waGFnZXMgKFBNcyktIFRyZWF0bWVudDogTGlwb3BvbHlzYWNjaGFyaWRlIChMUFMpLSBHcm91cHM6wqDCoCAqIFdpbGQtdHlwZSArIExQUyAoV0wxLCBXTDIsIFdMMzsgdGhyZWUgYmlvbG9naWNhbCByZXBsaWNhdGVzKcKgICogVUJFMk0ga25vY2tvdXQgKyBMUFMgKEtMMSwgS0wyLCBLTDM7IHRocmVlIGJpb2xvZ2ljYWwgcmVwbGljYXRlcykKCkRhdGEgRGVzY3JpcHRpb246VGhlIGRhdGFzZXQgaW5jbHVkZXM6MS4gR2VuZSBleHByZXNzaW9uIG1hdHJpeCBjb250YWluaW5nIGNvdW50cyBmb3IgYWxsIGRldGVjdGVkIGdlbmVzCgpEYXRhIEZvcm1hdDotIEV4cHJlc3Npb24gbWF0cml4OiAuY3N2LSBHZW5lIElEczogRW5zZW1ibCBnZW5lIGlkZW50aWZpZXJzIHdpdGggY29ycmVzcG9uZGluZyBnZW5lIHN5bWJvbHMtIEV4cHJlc3Npb24gdmFsdWVzOiBbQ291bnRzXQoKwqA8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo=",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.14063261",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "referenceCount": 0,
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 1,
+        "created": "2024-11-10T16:58:50.000Z",
+        "registered": "2024-11-10T16:58:50.000Z",
+        "published": "2024",
+        "updated": "2024-11-10T16:58:51.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "cern.zenodo",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "cern",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5281/zenodo.14063261",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": [
+            {
+              "id": "10.5281/zenodo.14063260",
+              "type": "dois"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

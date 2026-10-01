@@ -1,0 +1,151 @@
+{
+ "Qwen/Qwen2.5-7B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "withheld_aware",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 26.666666666666668,
+   "chance": 25.0,
+   "margin_over_chance": 1.6666666666666667,
+   "margin_ci95": [
+    -2.670304100136404,
+    6.251062925170062
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 20.634920634920636
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 27.936507936507937,
+   "chance": 25.0,
+   "margin_over_chance": 2.9365079365079363,
+   "margin_ci95": [
+    -2.1784408170546783,
+    8.333333333333332
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 21.904761904761905
+  },
+  "margin_over_clean": -1.2698412698412695,
+  "margin_over_clean_ci95": [
+   -8.241923935731275,
+   5.699746516147586
+  ]
+ },
+ "Qwen/Qwen2.5-7B-Instruct|question": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "question",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 32.06349206349206,
+   "chance": 25.0,
+   "margin_over_chance": 7.063492063492063,
+   "margin_ci95": [
+    2.1706089843344745,
+    12.234122420292632
+   ],
+   "used_tool": 10.158730158730158,
+   "unparsed": 1.2698412698412698,
+   "mean_turns": 1.2984126984126985,
+   "second_smallest_rate": 24.761904761904763
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 28.888888888888886,
+   "chance": 25.0,
+   "margin_over_chance": 3.888888888888889,
+   "margin_ci95": [
+    -1.544693732193732,
+    10.00378787878786
+   ],
+   "used_tool": 9.523809523809524,
+   "unparsed": 0.6349206349206349,
+   "mean_turns": 1.2,
+   "second_smallest_rate": 25.396825396825395
+  },
+  "margin_over_clean": 3.1746031746031744,
+  "margin_over_clean_ci95": [
+   -4.610480613090006,
+   11.177064765300056
+  ]
+ },
+ "Qwen/Qwen2.5-7B-Instruct|withheld": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "withheld",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 22.857142857142858,
+   "chance": 25.0,
+   "margin_over_chance": -2.142857142857143,
+   "margin_ci95": [
+    -6.481481481481481,
+    2.10352821850322
+   ],
+   "used_tool": 5.396825396825397,
+   "unparsed": 0.9523809523809524,
+   "mean_turns": 1.4126984126984128,
+   "second_smallest_rate": 20.0,
+   "by_tool": {
+    "used": {
+     "n": 17,
+     "accuracy": 17.647058823529413
+    },
+    "not_used": {
+     "n": 298,
+     "accuracy": 23.154362416107382
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 28.57142857142857,
+   "chance": 25.0,
+   "margin_over_chance": 3.571428571428571,
+   "margin_ci95": [
+    -2.0236928832279326,
+    9.276729559748427
+   ],
+   "used_tool": 3.492063492063492,
+   "unparsed": 1.5873015873015872,
+   "mean_turns": 1.6285714285714286,
+   "second_smallest_rate": 22.22222222222222,
+   "by_tool": {
+    "used": {
+     "n": 11,
+     "accuracy": 18.181818181818183
+    },
+    "not_used": {
+     "n": 304,
+     "accuracy": 28.947368421052634
+    }
+   }
+  },
+  "margin_over_clean": -5.7142857142857135,
+  "margin_over_clean_ci95": [
+   -12.890858097625015,
+   1.432471712981545
+  ]
+ }
+}

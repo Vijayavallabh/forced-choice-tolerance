@@ -1,0 +1,223 @@
+{
+  "model": "P(chosen rank r | key rank j) = lambda*1[r=j] + (1-lambda)*b_r; margin over chance = lambda*(1-G) + (G-1/k), G = sum_j p_j b_j",
+  "n_options": 10,
+  "bootstrap_reps": 1000,
+  "geometry_bounds": {
+    "MMLU-Pro (numeric, 10 options)": {
+      "key_by_rank_p": {
+        "0": 0.04275534441805225,
+        "1": 0.07600950118764846,
+        "2": 0.12034837688044339,
+        "3": 0.19635787806809185,
+        "4": 0.21456848772763262,
+        "5": 0.16072842438638163,
+        "6": 0.09897070467141726,
+        "7": 0.04671417260490895,
+        "8": 0.028503562945368172,
+        "9": 0.015043547110055424
+      },
+      "n_options": 10,
+      "chance": 0.1,
+      "max_geometry_credit": 0.11456848772763262,
+      "min_geometry_credit": -0.08495645288994458,
+      "worst_case_score": 0.21456848772763262,
+      "best_case_score": 0.015043547110055424,
+      "uniform_key_ranks_give_chance_for_every_solver": true,
+      "exploitable": true
+    }
+  },
+  "realised_vs_worst_case": {
+    "n_solvers_measured": 2,
+    "min_realised_geometry_credit": 0.005901613279706078,
+    "max_realised_geometry_credit": 0.008245087571092005,
+    "worst_case_available_on_benchmark": 0.11456848772763262,
+    "note": "the channel is open but no measured solver walks through it: exploitability is not exploitation"
+  },
+  "published_runs": [],
+  "open_weight_runs": [
+    {
+      "run": "Qwen/Qwen2.5-7B-Instruct",
+      "n_items": 10104,
+      "n_options": 10,
+      "n_clusters": 67,
+      "accuracy": 0.2093230403800475,
+      "chance": 0.1,
+      "margin": 0.1093230403800475,
+      "lambda": 0.11382465412626873,
+      "rank_preference_b": {
+        "0": 0.0917476081008763,
+        "1": 0.10179536012311352,
+        "2": 0.10354547989417599,
+        "3": 0.11208639919279109,
+        "4": 0.11612148994422201,
+        "5": 0.11237408910847907,
+        "6": 0.11267478130981516,
+        "7": 0.09410790404833676,
+        "8": 0.0927947944427213,
+        "9": 0.06275209383546877
+      },
+      "key_by_rank_p": {
+        "0": 0.04275534441805225,
+        "1": 0.07600950118764846,
+        "2": 0.12034837688044339,
+        "3": 0.19635787806809185,
+        "4": 0.21456848772763262,
+        "5": 0.16072842438638163,
+        "6": 0.09897070467141726,
+        "7": 0.04671417260490895,
+        "8": 0.028503562945368172,
+        "9": 0.015043547110055424
+      },
+      "geometry_only_score_G": 0.10824508757109201,
+      "knowledge_component": 0.10150369447262152,
+      "geometry_component": 0.008245087571092005,
+      "fitted_accuracy": 0.2097487820437135,
+      "bootstrap": {
+        "reps": 1000,
+        "n_clusters": 67,
+        "ci95": {
+          "lambda": [
+            0.09390738784923347,
+            0.14275080934627055
+          ],
+          "knowledge_component": [
+            0.08393544937746662,
+            0.12717312928335395
+          ],
+          "geometry_component": [
+            0.0036739485450638376,
+            0.012543767789545704
+          ],
+          "geometry_only_score_G": [
+            0.10367394854506384,
+            0.11254376778954571
+          ],
+          "accuracy": [
+            0.19137884511602807,
+            0.23493223965763196
+          ]
+        }
+      },
+      "diagnostics_per_draw": {
+        "n_draws": 8,
+        "n_items_per_draw": 1263,
+        "goodness_of_fit_p_median": 0.08107078682705046,
+        "goodness_of_fit_rejected_at_0.05": 3,
+        "lrt_no_knowledge_p_median": 1.2795899935722121e-25,
+        "lrt_rejected_at_0.05": 8,
+        "lambda_median_over_draws": 0.11488852184640169,
+        "lambda_spread_over_draws": 0.033555461265661
+      },
+      "source": "open-weight probe, question shown",
+      "rank_preference_measured_with_question_withheld": {
+        "0": 0.24237925574030086,
+        "1": 0.12490102929532858,
+        "2": 0.09481393507521774,
+        "3": 0.09026128266033254,
+        "4": 0.09352731591448932,
+        "5": 0.08264053840063341,
+        "6": 0.07185273159144893,
+        "7": 0.06165874901029295,
+        "8": 0.06353919239904988,
+        "9": 0.07442596991290577
+      },
+      "b_vs_measured_total_variation": 0.1854111928890766,
+      "realised_geometry_from_measured_b": {
+        "G": 0.09526396576162151,
+        "geometry_credit": -0.004736034238378498
+      }
+    },
+    {
+      "run": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "n_items": 10104,
+      "n_options": 10,
+      "n_clusters": 67,
+      "accuracy": 0.178840063341251,
+      "chance": 0.1,
+      "margin": 0.07884006334125099,
+      "lambda": 0.08144867303953088,
+      "rank_preference_b": {
+        "0": 0.12512652762149876,
+        "1": 0.11703270430254609,
+        "2": 0.10753070114007444,
+        "3": 0.11565888064249152,
+        "4": 0.11775754829052966,
+        "5": 0.09401434374296523,
+        "6": 0.08714850452061547,
+        "7": 0.07573106976113363,
+        "8": 0.07851754517118595,
+        "9": 0.08148217480695921
+      },
+      "key_by_rank_p": {
+        "0": 0.04275534441805225,
+        "1": 0.07600950118764846,
+        "2": 0.12034837688044339,
+        "3": 0.19635787806809185,
+        "4": 0.21456848772763262,
+        "5": 0.16072842438638163,
+        "6": 0.09897070467141726,
+        "7": 0.04671417260490895,
+        "8": 0.028503562945368172,
+        "9": 0.015043547110055424
+      },
+      "geometry_only_score_G": 0.10590161327970608,
+      "knowledge_component": 0.07282312716515325,
+      "geometry_component": 0.005901613279706078,
+      "fitted_accuracy": 0.17872474044485934,
+      "bootstrap": {
+        "reps": 1000,
+        "n_clusters": 67,
+        "ci95": {
+          "lambda": [
+            0.05726597524447055,
+            0.108126752333266
+          ],
+          "knowledge_component": [
+            0.05115815227066645,
+            0.09661932171279297
+          ],
+          "geometry_component": [
+            0.0028656432226628337,
+            0.009975237723539851
+          ],
+          "geometry_only_score_G": [
+            0.10286564322266284,
+            0.10997523772353986
+          ],
+          "accuracy": [
+            0.15607896794370602,
+            0.20265858208955223
+          ]
+        }
+      },
+      "diagnostics_per_draw": {
+        "n_draws": 8,
+        "n_items_per_draw": 1263,
+        "goodness_of_fit_p_median": 0.5171397809139995,
+        "goodness_of_fit_rejected_at_0.05": 0,
+        "lrt_no_knowledge_p_median": 1.181417538528029e-13,
+        "lrt_rejected_at_0.05": 8,
+        "lambda_median_over_draws": 0.07852630306676707,
+        "lambda_spread_over_draws": 0.030369476825381075
+      },
+      "source": "open-weight probe, question shown",
+      "rank_preference_measured_with_question_withheld": {
+        "0": 0.26524148851939827,
+        "1": 0.16755740300870942,
+        "2": 0.12598970704671417,
+        "3": 0.1077790973871734,
+        "4": 0.09273555027711797,
+        "5": 0.08254156769596199,
+        "6": 0.05463182897862233,
+        "7": 0.03790577988915281,
+        "8": 0.028602533650039588,
+        "9": 0.037015043547110056
+      },
+      "b_vs_measured_total_variation": 0.20909866551070255,
+      "realised_geometry_from_measured_b": {
+        "G": 0.10211707975769338,
+        "geometry_credit": 0.002117079757693374
+      }
+    }
+  ]
+}

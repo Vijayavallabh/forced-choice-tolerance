@@ -1,0 +1,131 @@
+{
+ "n_options": 4,
+ "chance": 0.25,
+ "features": [
+  "is integer",
+  "has percent",
+  "has exponent",
+  "has separator",
+  "has minus",
+  "has point",
+  "distinct chars",
+  "trailing zeros",
+  "significant digits",
+  "decimal places",
+  "digit sum",
+  "digit count"
+ ],
+ "roundness_features": [
+  "is integer",
+  "significant digits",
+  "trailing zeros",
+  "decimal places"
+ ],
+ "steps": 400,
+ "l2": 0.001,
+ "files": {
+  "released": {
+   "path": "build/labbench_seqqa.jsonl",
+   "n_items": 160,
+   "n_clusters": 4,
+   "written form": {
+    "cv_accuracy": 0.2,
+    "cv_ci95": [
+     0.125,
+     0.275
+    ],
+    "argmax_ties": 0,
+    "n_scored": 160,
+    "weights": {
+     "is integer": 2.336041826661094e-15,
+     "has percent": 0.0,
+     "has exponent": 0.0,
+     "has separator": 0.0,
+     "has minus": 0.0,
+     "has point": 0.0,
+     "distinct chars": -1.1368065214897936,
+     "trailing zeros": -1.3503020906611374,
+     "significant digits": -0.7789946761215824,
+     "decimal places": 0.0,
+     "digit sum": -0.48900368665165106,
+     "digit count": -2.1292967667827183
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.2625,
+    "cv_ci95": [
+     0.16875,
+     0.35625
+    ],
+    "argmax_ties": 145,
+    "n_scored": 160,
+    "weights": {
+     "is integer": 1.3324310138019556e-15,
+     "significant digits": -1.2494520068467605,
+     "trailing zeros": -1.4911561440458148,
+     "decimal places": 0.0
+    }
+   }
+  }
+ },
+ "clean": {
+  "written form": {
+   "scores": [
+    0.225,
+    0.225,
+    0.21875,
+    0.21875,
+    0.30625,
+    0.225,
+    0.28125,
+    0.33125,
+    0.2,
+    0.3,
+    0.2125,
+    0.21875,
+    0.2875,
+    0.2125,
+    0.225,
+    0.33125,
+    0.25,
+    0.25625,
+    0.2375,
+    0.2625
+   ],
+   "mean": 0.25125000000000003,
+   "max": 0.33125,
+   "replicates": 20,
+   "n_items": 160,
+   "n_clusters": 4
+  },
+  "roundness": {
+   "scores": [
+    0.1375,
+    0.2375,
+    0.1875,
+    0.28125,
+    0.26875,
+    0.31875,
+    0.23125,
+    0.3375,
+    0.24375,
+    0.33125,
+    0.2375,
+    0.24375,
+    0.21875,
+    0.20625,
+    0.3,
+    0.2125,
+    0.2125,
+    0.2125,
+    0.2875,
+    0.19375
+   ],
+   "mean": 0.24500000000000002,
+   "max": 0.3375,
+   "replicates": 20,
+   "n_items": 160,
+   "n_clusters": 4
+  }
+ }
+}

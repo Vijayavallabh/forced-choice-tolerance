@@ -1,0 +1,13 @@
+{
+  "operator": "wrong_step",
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "tag": "wrong_step_llama",
+  "prompt": "Here is a question from a multiple-choice exam. You have not been told the correct answer, and you are not being asked for it.\n\nQuestion: {question}\n\nWork the problem out, then give five values that a student could reach by making a plausible mistake on it: using a wrong but tempting formula, dropping or inverting a factor, confusing two units, or stopping one step early. Write each value the way the answer to this question would be written. Keep your working to at most three short sentences, and end your reply with one line in exactly this form:\n\nANSWERS: <value>; <value>; <value>; <value>; <value>",
+  "n_source_items": 635,
+  "n_kept": 555,
+  "n_dropped_short_generation": 36,
+  "n_dropped_no_answers_line": 44,
+  "n_key_collisions_removed": 204,
+  "arm": "build/mmlu_frontier_wrong_step_llama.jsonl",
+  "conditions_on": "the question alone"
+}

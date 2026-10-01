@@ -1,0 +1,105 @@
+{"ideal": "109.53%", "distractors": ["172.10%", "53.228", "87"], "question": "rate window median counts bound bound decay sample protein ratio bound 466.814 620?", "cluster": "c0"}
+{"ideal": "0.43%", "distractors": ["0.5", "1", "0.4"], "question": "assay bound cells bound rate window signal assay 554.39 966.6 474?", "cluster": "c1"}
+{"ideal": "2.16%", "distractors": ["3", "2.65", "1.75%"], "question": "window reads yield window assay ratio assay fraction decay 143.64 825.7?", "cluster": "c2"}
+{"ideal": "5193", "distractors": ["2397", "3,827", "3,366"], "question": "protein protein counts assay fraction rate buffer slope window signal slope?", "cluster": "c3"}
+{"ideal": "0.8", "distractors": ["0.621", "0.4", "0.2%"], "question": "uptake assay protein rate ratio buffer growth fraction yield slope ratio growth signal reads reads slope reads sample 38.7 492?", "cluster": "c4"}
+{"ideal": "184.0%", "distractors": ["43.76", "31.27", "92.1%"], "question": "sample decay ratio counts fraction signal decay yield yield sample growth signal?", "cluster": "c5"}
+{"ideal": "16", "distractors": ["14", "17.70", "24"], "question": "uptake buffer sample counts bound decay rate reads bound control median window signal?", "cluster": "c6"}
+{"ideal": "0", "distractors": ["1", "0.1", "0.3"], "question": "ratio bound median window counts bound ratio growth rate reads fraction 272.4 923.8 275.05?", "cluster": "c7"}
+{"ideal": "4", "distractors": ["4.4%", "7", "13"], "question": "yield slope uptake signal growth window yield growth rate 901.48 208.487 908.6?", "cluster": "c8"}
+{"ideal": "13.1", "distractors": ["11.8", "6.8", "7.02%"], "question": "buffer reads control protein reads cells signal rate ratio fraction control?", "cluster": "c9"}
+{"ideal": "72", "distractors": ["195.7%", "161", "115.58"], "question": "growth buffer buffer median reads signal yield signal rate sample window yield 995.6?", "cluster": "c10"}
+{"ideal": "0.575", "distractors": ["0.1%", "0.41", "0"], "question": "median slope slope fraction assay yield window slope control reads buffer cells 157.46 127.9?", "cluster": "c11"}
+{"ideal": "16.884", "distractors": ["7", "8.66%", "10"], "question": "reads counts buffer median rate signal ratio assay rate 440.892?", "cluster": "c12"}
+{"ideal": "31.690", "distractors": ["18.9", "74", "23.5"], "question": "growth sample rate reads fraction fraction rate ratio 121?", "cluster": "c13"}
+{"ideal": "1925.0", "distractors": ["3515.6%", "1693.4", "3,685"], "question": "sample rate sample counts protein counts window ratio window decay median reads?", "cluster": "c14"}
+{"ideal": "13.35", "distractors": ["13.37%", "31.69", "12.470"], "question": "decay assay buffer median counts sample bound ratio signal bound?", "cluster": "c15"}
+{"ideal": "28.05%", "distractors": ["73", "27.70%", "48.8%"], "question": "reads uptake cells yield yield decay protein assay slope fraction uptake signal signal decay sample fraction yield bound 153.7 180.82?", "cluster": "c16"}
+{"ideal": "2597", "distractors": ["2062.3%", "4448.2%", "6630"], "question": "fraction reads signal yield protein yield median yield assay bound window uptake slope cells counts median 919.36 427.088 404.645?", "cluster": "c17"}
+{"ideal": "0.565", "distractors": ["0", "0.6", "0.5%"], "question": "sample sample buffer bound protein fraction decay fraction sample window fraction median rate 276.065?", "cluster": "c18"}
+{"ideal": "591", "distractors": ["2902", "1930", "1960.16"], "question": "control median control decay rate rate slope control fraction ratio uptake bound bound 2.58 27.94?", "cluster": "c19"}
+{"ideal": "1269.3%", "distractors": ["2173", "1,141", "3169.81%"], "question": "protein buffer decay cells signal slope rate decay uptake decay signal ratio uptake uptake 476.07 173.46 127.189?", "cluster": "c20"}
+{"ideal": "0", "distractors": ["0.169", "0.2", "0.07"], "question": "window protein control ratio decay median slope counts assay signal window median yield 912.95 593.7?", "cluster": "c21"}
+{"ideal": "6944.5%", "distractors": ["22572.3%", "23402.27", "7563.58%"], "question": "protein slope reads yield growth growth buffer sample signal reads buffer ratio bound median ratio?", "cluster": "c22"}
+{"ideal": "0.1", "distractors": ["0.18%", "0.076", "0.07"], "question": "fraction reads signal counts reads rate growth decay counts protein window assay buffer decay bound 821.825 669 648.4?", "cluster": "c23"}
+{"ideal": "31", "distractors": ["24.545", "92.83", "78.86%"], "question": "sample protein bound rate window median fraction yield buffer rate assay buffer decay ratio growth decay growth counts uptake 685 642.1 205.24?", "cluster": "c24"}
+{"ideal": "1.3", "distractors": ["1", "2.5", "2.40%"], "question": "bound slope slope ratio assay protein assay median ratio fraction 36.829?", "cluster": "c25"}
+{"ideal": "0.37%", "distractors": ["0.3", "0.569", "0"], "question": "growth slope yield rate control growth protein median fraction ratio assay 87.021?", "cluster": "c26"}
+{"ideal": "0.29%", "distractors": ["1.069", "0.907", "0.690"], "question": "decay control sample decay fraction signal ratio decay uptake 217.1?", "cluster": "c27"}
+{"ideal": "0.23", "distractors": ["1.02", "0.10%", "0.125"], "question": "slope counts control protein counts uptake sample protein control window ratio yield growth rate fraction sample 326 739.35?", "cluster": "c28"}
+{"ideal": "12", "distractors": ["45", "24.32%", "37"], "question": "bound slope buffer protein growth protein signal signal 380 948 566.9?", "cluster": "c29"}
+{"ideal": "6", "distractors": ["1.1", "2", "1.1%"], "question": "yield buffer control counts rate ratio counts counts slope bound signal control rate ratio median rate 408.86 709.41?", "cluster": "c30"}
+{"ideal": "155.21%", "distractors": ["247.19%", "158.92%", "126.13"], "question": "yield bound decay protein protein buffer fraction assay window rate sample median reads decay assay cells decay counts slope slope?", "cluster": "c31"}
+{"ideal": "0.119", "distractors": ["0.1%", "0.27%", "0"], "question": "yield ratio reads growth signal ratio yield buffer buffer reads buffer rate slope uptake ratio fraction rate?", "cluster": "c32"}
+{"ideal": "4,625", "distractors": ["2310.433", "2314.08%", "2249"], "question": "assay ratio counts cells median assay ratio fraction cells fraction sample median protein decay buffer 72.6 907?", "cluster": "c33"}
+{"ideal": "2.1", "distractors": ["3.594", "2.75", "11.31%"], "question": "growth rate window counts signal window ratio fraction signal uptake uptake window uptake yield control rate ratio control 785.901 602.662?", "cluster": "c34"}
+{"ideal": "431", "distractors": ["395.5", "207.49", "212.08"], "question": "decay uptake rate ratio bound signal buffer yield buffer buffer control?", "cluster": "c35"}
+{"ideal": "13.15%", "distractors": ["17", "9", "6.6%"], "question": "sample window fraction protein protein buffer counts fraction window assay growth control?", "cluster": "c36"}
+{"ideal": "36.044", "distractors": ["30.12%", "20", "14"], "question": "control bound counts reads cells counts bound fraction uptake 376?", "cluster": "c37"}
+{"ideal": "10.68", "distractors": ["0.5", "2.317", "3.228"], "question": "slope control protein rate reads median assay median yield yield bound signal ratio 560?", "cluster": "c38"}
+{"ideal": "6.06", "distractors": ["6.5", "38.552", "14.56%"], "question": "rate ratio assay buffer ratio ratio assay yield assay ratio ratio assay 775.4 366 654.10?", "cluster": "c39"}
+{"ideal": "18386", "distractors": ["12402.559", "5876.72", "10987.350"], "question": "slope reads ratio bound uptake signal fraction decay window growth 731?", "cluster": "c40"}
+{"ideal": "9.01%", "distractors": ["4.65%", "2.2", "1.881"], "question": "reads signal cells median fraction uptake counts growth yield bound sample window buffer assay reads 638.4?", "cluster": "c41"}
+{"ideal": "348.3", "distractors": ["531.2", "153.80%", "800.7"], "question": "fraction median control reads slope median uptake slope counts ratio ratio median protein reads bound uptake slope signal?", "cluster": "c42"}
+{"ideal": "6,112", "distractors": ["3887", "9,400", "9383.2"], "question": "decay buffer counts decay cells fraction uptake fraction bound uptake rate decay signal fraction median sample assay sample 262.286 630.989 726.613?", "cluster": "c43"}
+{"ideal": "3296.2", "distractors": ["1924.2", "4362", "1,640"], "question": "uptake fraction bound fraction control slope yield ratio window signal protein assay uptake bound 401.561 217?", "cluster": "c44"}
+{"ideal": "1494", "distractors": ["232.58%", "375.27%", "316.10%"], "question": "reads growth signal sample yield counts uptake uptake cells growth slope ratio assay buffer fraction sample ratio cells ratio assay?", "cluster": "c45"}
+{"ideal": "1079.31", "distractors": ["511", "1001", "221"], "question": "protein bound counts protein assay uptake protein rate sample decay cells slope 427.669 86?", "cluster": "c0"}
+{"ideal": "2323.82%", "distractors": ["5007.748", "5306.99", "3592.32%"], "question": "window bound buffer growth signal slope signal rate signal uptake reads sample fraction window median 226.660 530.81 91.560?", "cluster": "c1"}
+{"ideal": "906.325", "distractors": ["216.3%", "550.82", "665.40%"], "question": "cells uptake window yield ratio yield buffer buffer cells ratio uptake protein yield decay fraction buffer buffer signal 251.06?", "cluster": "c2"}
+{"ideal": "3.0", "distractors": ["1", "2.1%", "2.4%"], "question": "rate rate rate counts protein assay yield bound sample cells window window assay reads slope 691.2?", "cluster": "c3"}
+{"ideal": "54.7%", "distractors": ["22", "17.595", "18"], "question": "assay slope reads slope median slope buffer protein counts protein protein assay buffer window control 209.9 551.2 877.849?", "cluster": "c4"}
+{"ideal": "3", "distractors": ["0.91", "1", "3.236"], "question": "growth rate assay uptake cells window reads sample 363 97.4?", "cluster": "c5"}
+{"ideal": "1094.980", "distractors": ["2740.2%", "4647", "1736.2%"], "question": "ratio yield assay yield bound fraction decay sample ratio decay window fraction sample 266.98?", "cluster": "c6"}
+{"ideal": "4.1%", "distractors": ["1", "1.1", "2.68%"], "question": "bound slope fraction fraction decay rate uptake growth reads growth buffer cells fraction reads cells buffer sample 467.7 118.0?", "cluster": "c7"}
+{"ideal": "20.95", "distractors": ["22.77", "6", "70.03"], "question": "window bound signal uptake growth slope ratio uptake uptake bound yield counts window 979.7 943?", "cluster": "c8"}
+{"ideal": "2352.8", "distractors": ["840", "1481.519", "1033.3"], "question": "buffer median reads sample median reads window growth window bound signal sample buffer control buffer decay sample 265.3?", "cluster": "c9"}
+{"ideal": "476.28", "distractors": ["483.82%", "140.654", "336"], "question": "decay growth fraction counts uptake protein sample fraction reads growth counts buffer rate cells growth cells 384.28 233.72 118.03?", "cluster": "c10"}
+{"ideal": "0.6%", "distractors": ["0.33", "1.96", "0.42"], "question": "uptake window assay bound slope reads cells bound reads window ratio reads uptake fraction bound uptake signal sample counts uptake 896.431 814.967?", "cluster": "c11"}
+{"ideal": "0", "distractors": ["0.553", "0.15%", "0.2%"], "question": "ratio sample rate cells slope window uptake protein 411.378?", "cluster": "c12"}
+{"ideal": "0.5%", "distractors": ["0.6", "0.18%", "0.269"], "question": "bound buffer decay cells control control reads yield median window protein uptake uptake assay 340.9?", "cluster": "c13"}
+{"ideal": "3226.62%", "distractors": ["4,887", "5443.79%", "4335.69"], "question": "control fraction buffer cells control bound sample uptake ratio decay buffer bound rate median cells?", "cluster": "c14"}
+{"ideal": "1.418", "distractors": ["0.69%", "1.552", "2.14%"], "question": "signal buffer growth control yield control yield growth bound reads buffer 777.9?", "cluster": "c15"}
+{"ideal": "2726.12%", "distractors": ["1115.530", "921.3%", "1166.64%"], "question": "sample counts bound fraction buffer decay signal yield protein protein yield buffer assay median ratio protein signal?", "cluster": "c16"}
+{"ideal": "9772.6", "distractors": ["11,249", "15415.2", "3,988"], "question": "ratio yield slope assay window reads bound sample growth uptake median bound protein protein bound median?", "cluster": "c17"}
+{"ideal": "193.9", "distractors": ["358", "137", "106.457"], "question": "assay median uptake growth fraction slope assay median bound slope median decay uptake counts reads 770.581 492 211.00?", "cluster": "c18"}
+{"ideal": "3088.76", "distractors": ["3,255", "4489.3%", "8156.9"], "question": "control signal bound slope uptake assay bound rate buffer cells 36.52?", "cluster": "c19"}
+{"ideal": "9.6%", "distractors": ["3.43", "11.8", "7.09%"], "question": "protein control window control control yield growth fraction uptake slope control slope cells yield?", "cluster": "c20"}
+{"ideal": "4,076", "distractors": ["2196", "1900.481", "5,932"], "question": "decay slope cells sample signal slope counts control assay reads median yield growth bound reads sample ratio 168 40.67 112.642?", "cluster": "c21"}
+{"ideal": "102.6", "distractors": ["373.6", "94", "85"], "question": "counts growth uptake bound protein rate protein yield control assay sample signal slope fraction reads protein growth window reads 887.3?", "cluster": "c22"}
+{"ideal": "3552.636", "distractors": ["4533.42", "4151", "9,984"], "question": "sample control fraction decay slope sample buffer window growth sample sample 142.46 609.95 949.370?", "cluster": "c23"}
+{"ideal": "0.2", "distractors": ["0.2%", "0.16", "0.1%"], "question": "assay growth uptake control ratio control yield window decay decay median 323.444?", "cluster": "c24"}
+{"ideal": "100.4", "distractors": ["116.5", "55.4%", "41"], "question": "bound decay reads cells rate control rate buffer growth uptake cells fraction fraction buffer decay uptake?", "cluster": "c25"}
+{"ideal": "3.935", "distractors": ["2.5%", "1.7", "2.7"], "question": "bound decay counts decay control bound cells yield buffer sample protein window assay protein yield reads uptake 386.18 732.1?", "cluster": "c26"}
+{"ideal": "2907.1%", "distractors": ["4717", "3884.55%", "1850"], "question": "median yield uptake sample yield protein decay window window slope assay protein?", "cluster": "c27"}
+{"ideal": "2", "distractors": ["4.216", "5", "0.93%"], "question": "sample window assay protein protein uptake counts decay sample bound window decay ratio bound cells 404.6?", "cluster": "c28"}
+{"ideal": "13095.7%", "distractors": ["19120.3", "5536.352", "1870.3"], "question": "fraction signal ratio buffer bound sample median rate assay signal median buffer control ratio ratio control growth median fraction ratio?", "cluster": "c29"}
+{"ideal": "7466.5%", "distractors": ["4440", "4211.3", "3577"], "question": "median slope cells reads bound buffer growth signal median assay reads counts rate slope fraction assay growth 300 715 950.22?", "cluster": "c30"}
+{"ideal": "0", "distractors": ["1.9%", "4.055", "7.45"], "question": "median decay protein growth growth control protein counts slope control growth signal fraction rate yield control control assay 999.995?", "cluster": "c31"}
+{"ideal": "14315", "distractors": ["14254", "7503.970", "13399.144"], "question": "assay rate slope control fraction cells decay counts assay fraction?", "cluster": "c32"}
+{"ideal": "3", "distractors": ["1.069", "1.82", "1.11%"], "question": "sample reads fraction counts assay counts ratio rate protein growth protein counts window sample 531.140 426.3?", "cluster": "c33"}
+{"ideal": "0.240", "distractors": ["0.19", "0.153", "0"], "question": "rate counts window control signal median decay protein?", "cluster": "c34"}
+{"ideal": "40.07", "distractors": ["61.938", "46.21", "40.0%"], "question": "sample buffer bound bound slope assay sample control ratio window uptake uptake?", "cluster": "c35"}
+{"ideal": "0.22", "distractors": ["0.35", "0.415", "0.138"], "question": "growth protein fraction yield decay uptake reads window control buffer protein reads fraction bound fraction decay growth window yield signal?", "cluster": "c36"}
+{"ideal": "342.0%", "distractors": ["137.07", "135.1", "346.5%"], "question": "decay counts uptake fraction slope growth median cells window bound reads yield sample bound bound growth buffer sample ratio bound 770.083?", "cluster": "c37"}
+{"ideal": "3.5%", "distractors": ["2.78", "10.0", "16.801"], "question": "buffer ratio cells fraction assay window yield yield uptake rate assay fraction counts decay reads 83.562 849?", "cluster": "c38"}
+{"ideal": "0.09", "distractors": ["0.1%", "0.210", "0.2%"], "question": "uptake cells reads median window ratio protein slope fraction sample sample signal 194.328?", "cluster": "c39"}
+{"ideal": "9", "distractors": ["5.9", "5", "13.439"], "question": "reads reads sample window protein window uptake uptake assay reads 49.5 552.610?", "cluster": "c40"}
+{"ideal": "13119.532", "distractors": ["12322.35%", "6899.70%", "17312.322"], "question": "counts uptake bound protein signal uptake buffer yield reads ratio sample buffer uptake signal protein 185.2?", "cluster": "c41"}
+{"ideal": "6.38", "distractors": ["2.91%", "1.2%", "9.02%"], "question": "decay bound cells decay assay assay slope decay buffer control rate window counts protein protein buffer ratio sample?", "cluster": "c42"}
+{"ideal": "2831.451", "distractors": ["995.8", "2316.65", "1044"], "question": "control ratio ratio assay cells sample buffer fraction uptake ratio window 798?", "cluster": "c43"}
+{"ideal": "28", "distractors": ["38", "64", "32.82"], "question": "sample growth uptake slope uptake slope rate growth ratio cells counts assay median uptake bound rate control uptake decay bound 691.64 769.1?", "cluster": "c44"}
+{"ideal": "3.565", "distractors": ["1.228", "2", "1.97"], "question": "protein counts sample ratio growth rate signal control yield 138.08 388.348?", "cluster": "c45"}
+{"ideal": "0.48%", "distractors": ["0.5%", "0.56", "1"], "question": "sample decay decay cells cells uptake counts counts slope bound ratio protein window 349.9 179.74?", "cluster": "c0"}
+{"ideal": "628.9%", "distractors": ["1079.211", "752.9%", "2200.1%"], "question": "signal slope assay ratio buffer assay assay decay protein bound control signal yield slope reads slope 730.13?", "cluster": "c1"}
+{"ideal": "2386.62%", "distractors": ["3,561", "1,096", "1397.8"], "question": "uptake rate cells uptake control cells assay yield control uptake buffer growth yield slope 877 285?", "cluster": "c2"}
+{"ideal": "2244", "distractors": ["336.247", "2497.0", "2157"], "question": "assay uptake control sample control reads signal ratio reads signal growth buffer median protein decay growth median buffer cells 797.4 446 551.964?", "cluster": "c3"}
+{"ideal": "578.022", "distractors": ["2095.3", "1699.82%", "916"], "question": "reads uptake decay assay fraction counts protein protein reads slope yield growth protein fraction buffer growth counts sample rate 991.846?", "cluster": "c4"}
+{"ideal": "665.7", "distractors": ["4,106", "2124.879", "1013"], "question": "bound decay bound rate signal buffer signal assay buffer cells 384?", "cluster": "c5"}
+{"ideal": "26.33", "distractors": ["12.7", "8.3%", "47"], "question": "growth window slope signal cells decay cells control growth window sample rate sample uptake uptake window slope reads uptake?", "cluster": "c6"}
+{"ideal": "0.0%", "distractors": ["0.12%", "0.04%", "0.08%"], "question": "signal window control window ratio sample protein control fraction ratio 855.583?", "cluster": "c7"}
+{"ideal": "1173.7", "distractors": ["322.657", "1573.47", "1034.7%"], "question": "rate decay control buffer control ratio growth counts sample rate 980.3 517.380?", "cluster": "c8"}
+{"ideal": "0.67", "distractors": ["2.42", "1.20%", "3"], "question": "growth counts control ratio window cells control protein growth control control?", "cluster": "c9"}
+{"ideal": "3", "distractors": ["11.921", "6.1%", "3.224"], "question": "reads control rate counts assay bound assay growth uptake sample reads reads cells 719?", "cluster": "c10"}
+{"ideal": "3509.397", "distractors": ["4219", "2,105", "2054.9"], "question": "cells window yield window assay assay slope control buffer signal median slope?", "cluster": "c11"}
+{"ideal": "1100.0%", "distractors": ["2587", "6100.90%", "1,455"], "question": "fraction slope slope ratio median uptake ratio cells reads control bound sample control window assay rate yield bound median 709.338 611.0?", "cluster": "c12"}

@@ -1,0 +1,32 @@
+{
+  "null_lambda0_interior_bias": {
+    "true_lambda": 0.0,
+    "n_items": 296,
+    "replicates": 300,
+    "mean_lambda_hat": 0.0146,
+    "median_lambda_hat": 0.0,
+    "sd_lambda_hat": 0.0237,
+    "mean_knowledge_component": 0.0095,
+    "lrt_rejection_rate_at_0.05": 0.0533
+  },
+  "true_lambda_0.10": {
+    "true_lambda": 0.1,
+    "n_items": 296,
+    "replicates": 300,
+    "mean_lambda_hat": 0.099,
+    "median_lambda_hat": 0.0991,
+    "sd_lambda_hat": 0.0407,
+    "mean_knowledge_component": 0.064,
+    "lrt_rejection_rate_at_0.05": 0.8333
+  },
+  "true_lambda_0.20": {
+    "true_lambda": 0.2,
+    "n_items": 296,
+    "replicates": 300,
+    "mean_lambda_hat": 0.2013,
+    "median_lambda_hat": 0.2011,
+    "sd_lambda_hat": 0.0444,
+    "mean_knowledge_component": 0.1302,
+    "lrt_rejection_rate_at_0.05": 1.0
+  }
+}

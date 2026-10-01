@@ -1,0 +1,17 @@
+# Optional: re-downloading the vendored benchmark files. Nothing else needs this
+# file. The copies under data/ ship with their SHA-256 in PROVENANCE.json, so every
+# analysis and test runs without re-downloading anything.
+#
+#   pip install -r requirements.txt -r requirements-fetch.txt
+#
+# fetch_external.py (the LAB-Bench subsets), fetch_survey.py (the survey's option
+# sets) and fetch_mmlu_questions.py read Hugging Face parquet with pyarrow. Their
+# downloads use the standard library.
+pyarrow==22.0.0       # the version in the Python 3.12 environment above
+#
+# Other re-downloads need no extra package:
+#   replication.py build   BixBench's published eval_df.csv (1.1 GB, md5-checked),
+#                          fetched by hand from storage.googleapis.com/bixbench-results.
+#                          `replication.py items` rebuilds the same item files from
+#                          the extract that ships.
+#   fetch_big_models.py    model weights; needs huggingface_hub (requirements-gpu.txt)

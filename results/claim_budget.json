@@ -1,0 +1,569 @@
+{
+  "family_alpha": 0.05,
+  "k": 10,
+  "target_coverage": 0.995,
+  "reps": 4000,
+  "inner": 20000,
+  "final": 40000,
+  "seed": 20260923,
+  "claims": [
+    {
+      "claim": "rank rule",
+      "what": "BixBench v1.5, 105 numeric items, second-smallest rule vs chance",
+      "parts": [
+        {
+          "part": "rank rule",
+          "calibration": "parametric",
+          "estimate": 26.42857142857143,
+          "n_clusters": 46,
+          "effective_clusters": 29.55764075067024,
+          "coverage_of_nominal_95": 0.947,
+          "level_covering_95": 0.9549999999999967,
+          "level_covering_target": 0.9936499999999996,
+          "ci95_nominal": [
+            14.285714285714285,
+            38.333333333333336
+          ],
+          "ci_covering_95": [
+            14.000000000000002,
+            38.5674770965427
+          ],
+          "ci_family": [
+            9.408602150537634,
+            42.79661016949153
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            14.000000000000002,
+            38.5674770965427
+          ],
+          "ci_quoted_95_source": "results/claim_budget.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "published, gpt-4o",
+      "what": "BixBench v1.5's released forced-choice run vs its own chance",
+      "parts": [
+        {
+          "part": "published, gpt-4o",
+          "calibration": "parametric",
+          "estimate": 11.097560975609756,
+          "n_clusters": 59,
+          "effective_clusters": 45.139634801288935,
+          "coverage_of_nominal_95": 0.9385,
+          "level_covering_95": 0.9624999999999966,
+          "level_covering_target": 0.9980499999999991,
+          "ci95_nominal": [
+            4.186602870813397,
+            18.317972350230416
+          ],
+          "ci_covering_95": [
+            3.787878787878788,
+            18.801721458348318
+          ],
+          "ci_family": [
+            0.40529030755104234,
+            22.849479755898347
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            3.787878787878788,
+            18.801721458348318
+          ],
+          "ci_quoted_95_source": "results/claim_budget.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "published, claude",
+      "what": "BixBench v1.5's released forced-choice run vs its own chance",
+      "parts": [
+        {
+          "part": "published, claude",
+          "calibration": "parametric",
+          "estimate": 9.146341463414634,
+          "n_clusters": 59,
+          "effective_clusters": 45.139634801288935,
+          "coverage_of_nominal_95": 0.94125,
+          "level_covering_95": 0.9599999999999966,
+          "level_covering_target": 0.9975499999999992,
+          "ci95_nominal": [
+            2.8260869565217392,
+            16.08108108108108
+          ],
+          "ci_covering_95": [
+            2.536231884057971,
+            16.41426095272208
+          ],
+          "ci_family": [
+            -0.2427368381540866,
+            20.077720207253886
+          ],
+          "clears_family": false,
+          "ci_quoted_95": [
+            2.536231884057971,
+            16.41426095272208
+          ],
+          "ci_quoted_95_source": "results/claim_budget.json"
+        }
+      ],
+      "survives": false
+    },
+    {
+      "claim": "not the rank",
+      "what": "BixBench v1.5's released forced runs, 105 numeric items: accuracy where the key is second-smallest minus elsewhere, below a rank reader's",
+      "parts": [
+        {
+          "part": "gpt-4o",
+          "calibration": "parametric",
+          "estimate": -7.8431372549019605,
+          "n_clusters": 29,
+          "effective_clusters": 19.44,
+          "coverage_of_nominal_95": 0.9405,
+          "level_covering_95": 0.9574999999999967,
+          "level_covering_target": 0.9965499999999993,
+          "ci95_nominal": [
+            -26.058227395237587,
+            11.17656702025073
+          ],
+          "ci_covering_95": [
+            -26.651000400159003,
+            11.898531003309982
+          ],
+          "ci_family": [
+            -33.98614474611462,
+            20.53602338270223
+          ],
+          "rank_reader_difference": 45.94594594594595,
+          "clears_family": true,
+          "ci_quoted_95": [
+            -27.09,
+            12.88
+          ],
+          "ci_quoted_95_source": "results/rank_attribution.json"
+        },
+        {
+          "part": "claude-3-5-sonnet-latest",
+          "calibration": "parametric",
+          "estimate": -13.398692810457513,
+          "n_clusters": 29,
+          "effective_clusters": 19.44,
+          "coverage_of_nominal_95": 0.931,
+          "level_covering_95": 0.9674999999999965,
+          "level_covering_target": 0.9981499999999991,
+          "ci95_nominal": [
+            -32.738095238095234,
+            7.912478442966251
+          ],
+          "ci_covering_95": [
+            -34.35077049687778,
+            10.000231371617494
+          ],
+          "ci_family": [
+            -43.12170565801433,
+            20.677825641861517
+          ],
+          "rank_reader_difference": 35.135135135135144,
+          "clears_family": true,
+          "ci_quoted_95": [
+            -36.17,
+            11.31
+          ],
+          "ci_quoted_95_source": "results/rank_attribution.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "forced over tolerance",
+      "what": "BixBench v1.0's published runs, 159 numeric questions: the published forced grades through the released options minus the share within 5%",
+      "parts": [
+        {
+          "part": "gpt-4o",
+          "calibration": "double bootstrap",
+          "estimate": 19.217421048185834,
+          "n_clusters": 47,
+          "effective_clusters": 38.643962848297214,
+          "coverage_of_nominal_95": 0.931,
+          "level_covering_95": 0.9674999999999965,
+          "level_covering_target": 0.998549999999999,
+          "ci95_nominal": [
+            15.722400871600733,
+            22.87771515212539
+          ],
+          "ci_covering_95": [
+            15.42399664351862,
+            23.261477538028107
+          ],
+          "ci_family": [
+            13.841718619618279,
+            25.46652381523543
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            15.500998473499472,
+            23.362944462152473
+          ],
+          "ci_quoted_95_source": "results/score_decomposition.json"
+        },
+        {
+          "part": "Claude 3.5 Sonnet",
+          "calibration": "double bootstrap",
+          "estimate": 21.000582291837624,
+          "n_clusters": 48,
+          "effective_clusters": 39.074188562596596,
+          "coverage_of_nominal_95": 0.92975,
+          "level_covering_95": 0.9699999999999964,
+          "level_covering_target": 0.999449999999999,
+          "ci95_nominal": [
+            17.50963503857267,
+            24.724989051275976
+          ],
+          "ci_covering_95": [
+            17.144351660396715,
+            25.12929854670285
+          ],
+          "ci_family": [
+            14.892555740458594,
+            28.139207164266466
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            17.287775534878232,
+            25.049762595441454
+          ],
+          "ci_quoted_95_source": "results/score_decomposition.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "key over other",
+      "what": "BixBench v1.0's published runs: of the misses whose number has one nearest option, the share the published forced grades accept where it is the key minus where it is another",
+      "parts": [
+        {
+          "part": "gpt-4o",
+          "calibration": "double bootstrap",
+          "estimate": 31.24439727689915,
+          "n_clusters": 47,
+          "effective_clusters": 30.874485317083963,
+          "coverage_of_nominal_95": 0.92475,
+          "level_covering_95": 0.9724999999999964,
+          "level_covering_target": 0.999449999999999,
+          "ci95_nominal": [
+            18.50895385061832,
+            42.06812622262056
+          ],
+          "ci_covering_95": [
+            17.11428040328117,
+            43.345768592787046
+          ],
+          "ci_family": [
+            10.39197650594015,
+            48.97919788641034
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            17.11428040328117,
+            43.345768592787046
+          ],
+          "ci_quoted_95_source": "results/claim_budget.json"
+        },
+        {
+          "part": "Claude 3.5 Sonnet",
+          "calibration": "double bootstrap",
+          "estimate": 56.94893501142288,
+          "n_clusters": 48,
+          "effective_clusters": 34.09355901907602,
+          "coverage_of_nominal_95": 0.93225,
+          "level_covering_95": 0.9674999999999965,
+          "level_covering_target": 0.9984499999999991,
+          "ci95_nominal": [
+            47.870750949943556,
+            66.06471663864455
+          ],
+          "ci_covering_95": [
+            46.97201664364199,
+            66.84119205488572
+          ],
+          "ci_family": [
+            42.08917316873062,
+            71.3311425083101
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            46.97201664364199,
+            66.84119205488572
+          ],
+          "ci_quoted_95_source": "results/claim_budget.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "corrected below tolerance",
+      "what": "the seven v1.5 configurations with the data, each graded by its own model forced: the tolerance minus the score corrected for guessing",
+      "parts": [
+        {
+          "part": "corrected below tolerance",
+          "calibration": "double bootstrap",
+          "estimate": 10.566893424036278,
+          "n_clusters": 46,
+          "effective_clusters": 29.55764075067024,
+          "coverage_of_nominal_95": 0.93525,
+          "level_covering_95": 0.9649999999999965,
+          "level_covering_target": 0.999049999999999,
+          "ci95_nominal": [
+            7.248665542913329,
+            13.848407646151518
+          ],
+          "ci_covering_95": [
+            6.999948979592038,
+            14.083080040526847
+          ],
+          "ci_family": [
+            4.820693036697081,
+            15.98640000382151
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            6.796320871684956,
+            14.332637097743378
+          ],
+          "ci_quoted_95_source": "results/formula_scoring.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "current agents",
+      "what": "gpt-5.1, gpt-6-luna and DeepSeek-V4-Pro with the data, graded by gpt-4o forced: the score minus the share within 5%",
+      "parts": [
+        {
+          "part": "gpt-5.1",
+          "calibration": "double bootstrap",
+          "estimate": 10.0,
+          "n_clusters": 46,
+          "effective_clusters": 29.55764075067024,
+          "coverage_of_nominal_95": 0.93125,
+          "level_covering_95": 0.9674999999999965,
+          "level_covering_target": 0.9982499999999991,
+          "ci95_nominal": [
+            4.318181818181818,
+            15.70796460176991
+          ],
+          "ci_covering_95": [
+            3.8461538461538463,
+            16.22340425531915
+          ],
+          "ci_family": [
+            1.2047265987044464,
+            18.805313421828806
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            3.491427544386213,
+            16.58653846153846
+          ],
+          "ci_quoted_95_source": "results/score_decomposition.json"
+        },
+        {
+          "part": "gpt-6-luna",
+          "calibration": "double bootstrap",
+          "estimate": 10.952380952380953,
+          "n_clusters": 46,
+          "effective_clusters": 29.55764075067024,
+          "coverage_of_nominal_95": 0.934,
+          "level_covering_95": 0.9674999999999965,
+          "level_covering_target": 0.9997499999999989,
+          "ci95_nominal": [
+            4.069767441860465,
+            18.269230769230766
+          ],
+          "ci_covering_95": [
+            3.5294117647058822,
+            18.98148148148148
+          ],
+          "ci_family": [
+            -1.1111616161528675,
+            24.347850790509256
+          ],
+          "clears_family": false,
+          "ci_quoted_95": [
+            3.6458333333333335,
+            18.500324074073735
+          ],
+          "ci_quoted_95_source": "results/frontier_agents.json"
+        },
+        {
+          "part": "DeepSeek-V4-Pro",
+          "calibration": "double bootstrap",
+          "estimate": 11.904761904761903,
+          "n_clusters": 46,
+          "effective_clusters": 29.55764075067024,
+          "coverage_of_nominal_95": 0.935,
+          "level_covering_95": 0.9624999999999966,
+          "level_covering_target": 0.998849999999999,
+          "ci95_nominal": [
+            5.154639175257731,
+            18.556701030927837
+          ],
+          "ci_covering_95": [
+            4.736842105263158,
+            18.91891891891892
+          ],
+          "ci_family": [
+            0.5813953488372093,
+            23.364485981308412
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            4.591836734693878,
+            19.419546858701693
+          ],
+          "ci_quoted_95_source": "results/frontier_agents.json"
+        }
+      ],
+      "survives": false
+    },
+    {
+      "claim": "bracketing",
+      "what": "with the data, nearest-option rule, repaired minus placebo, items moved to an edge, mean over seven run sets",
+      "parts": [
+        {
+          "part": "bracketing",
+          "calibration": "double bootstrap",
+          "estimate": 16.698841698841697,
+          "n_clusters": 21,
+          "effective_clusters": 16.105882352941176,
+          "coverage_of_nominal_95": 0.92825,
+          "level_covering_95": 0.9699999999999964,
+          "level_covering_target": 0.999249999999999,
+          "ci95_nominal": [
+            10.902020676691734,
+            22.619047619047617
+          ],
+          "ci_covering_95": [
+            10.289115646258505,
+            23.214285714285715
+          ],
+          "ci_family": [
+            7.539674707602768,
+            26.897321428571423
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            10.244360902255638,
+            23.04147465437788
+          ],
+          "ci_quoted_95_source": "results/reader_split.json"
+        }
+      ],
+      "survives": true
+    },
+    {
+      "claim": "readers of the published runs",
+      "what": "BixBench v1.0's published runs, with the data: repaired minus placebo on the keys moved to an edge, graded forced through MCQ_EVAL_PROMPT by three open models",
+      "parts": [
+        {
+          "part": "Qwen2.5-72B",
+          "calibration": "double bootstrap",
+          "estimate": 14.439732142857142,
+          "n_clusters": 29,
+          "effective_clusters": 25.0,
+          "coverage_of_nominal_95": 0.92125,
+          "level_covering_95": 0.9749999999999963,
+          "level_covering_target": 0.999349999999999,
+          "ci95_nominal": [
+            7.764773675673974,
+            21.45285336356765
+          ],
+          "ci_covering_95": [
+            6.890677045029771,
+            22.545365867701157
+          ],
+          "ci_family": [
+            3.7979308872779907,
+            27.061422258102873
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            7.026827943417163,
+            22.194857992605687
+          ],
+          "ci_quoted_95_source": "results/published_reads_qwen72b_forced.json"
+        },
+        {
+          "part": "gemma-3-27b",
+          "calibration": "double bootstrap",
+          "estimate": 8.697916666666668,
+          "n_clusters": 29,
+          "effective_clusters": 25.0,
+          "coverage_of_nominal_95": 0.93025,
+          "level_covering_95": 0.9674999999999965,
+          "level_covering_target": 0.999249999999999,
+          "ci95_nominal": [
+            4.569246031746034,
+            13.492573483427146
+          ],
+          "ci_covering_95": [
+            4.2272397916093105,
+            13.972936507936296
+          ],
+          "ci_family": [
+            2.0931292479245007,
+            17.67745891129872
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            4.2620450693693375,
+            13.988530977565352
+          ],
+          "ci_quoted_95_source": "results/published_reads.json"
+        },
+        {
+          "part": "Llama-3.3-70B",
+          "calibration": "double bootstrap",
+          "estimate": 8.781125992063492,
+          "n_clusters": 29,
+          "effective_clusters": 25.0,
+          "coverage_of_nominal_95": 0.92725,
+          "level_covering_95": 0.9724999999999964,
+          "level_covering_target": 0.9999499999999989,
+          "ci95_nominal": [
+            4.197415123456791,
+            13.587071726924565
+          ],
+          "ci_covering_95": [
+            3.719509601530973,
+            14.178991284013378
+          ],
+          "ci_family": [
+            0.6653592636505015,
+            18.549295704582118
+          ],
+          "clears_family": true,
+          "ci_quoted_95": [
+            3.7121447689319673,
+            14.091763767149262
+          ],
+          "ci_quoted_95_source": "results/published_reads_llama70b_forced.json"
+        }
+      ],
+      "survives": true
+    }
+  ],
+  "survivors": [
+    "rank rule",
+    "published, gpt-4o",
+    "not the rank",
+    "forced over tolerance",
+    "key over other",
+    "corrected below tolerance",
+    "bracketing",
+    "readers of the published runs"
+  ]
+}

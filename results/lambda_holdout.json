@@ -1,0 +1,3319 @@
+{
+ "seed": 20260927,
+ "draws": 2000,
+ "not_registered": true,
+ "n_gradings": 46,
+ "all_reproduce_figure": true,
+ "common": [
+  "v1.0, published|gpt-4o",
+  "v1.0, published|Qwen2.5-72B",
+  "v1.0, published|gemma-3-27b",
+  "v1.0, published|Llama-3.3-70B",
+  "v1.0, published|gemma-3-27b, refusal",
+  "v1.5, seven configurations|own model",
+  "v1.5, seven configurations|gemma-3-27b",
+  "v1.5, seven configurations|Qwen2.5-72B",
+  "v1.5, seven configurations|Llama-3.3-70B",
+  "v1.5, new seeds|gemma-3-27b",
+  "v1.5, new seeds|gemma-3-27b, refusal",
+  "v1.5, Qwen3-235B-A22B|gemma-3-27b",
+  "v1.5, gpt-5.1|gpt-4o",
+  "v1.0, published|gpt-4o, codefree",
+  "v1.5, seven configurations|gpt-4o, codefree",
+  "v1.5, new seeds|gpt-4o, codefree",
+  "v1.5, Qwen3-235B-A22B|gpt-4o, codefree",
+  "v1.5, gpt-5.1|gpt-4o, codefree",
+  "v1.0, published|gemma-3-27b, codefree",
+  "v1.5, seven configurations|gemma-3-27b, codefree",
+  "v1.5, new seeds|gemma-3-27b, codefree",
+  "v1.5, Qwen3-235B-A22B|gemma-3-27b, codefree",
+  "v1.5, gpt-5.1|gemma-3-27b, codefree",
+  "v1.0, published|Qwen2.5-72B, codefree",
+  "v1.5, seven configurations|Qwen2.5-72B, codefree",
+  "v1.5, new seeds|Qwen2.5-72B, codefree",
+  "v1.5, Qwen3-235B-A22B|Qwen2.5-72B, codefree",
+  "v1.0, published|Llama-3.3-70B, codefree",
+  "v1.5, seven configurations|Llama-3.3-70B, codefree",
+  "v1.5, new seeds|Llama-3.3-70B, codefree",
+  "v1.5, Qwen3-235B-A22B|Llama-3.3-70B, codefree",
+  "v1.0, published|gpt-4o, letter",
+  "v1.0, published|gpt-4o, codefree, withintol",
+  "v1.5, seven configurations|gpt-4o, codefree, withintol",
+  "v1.0, published|gemma-3-27b, codefree, withintol",
+  "v1.5, seven configurations|gemma-3-27b, codefree, withintol",
+  "v1.5, new seeds|gemma-3-27b, codefree, withintol",
+  "v1.5, Qwen3-235B-A22B|gemma-3-27b, codefree, withintol",
+  "v1.0, published|Qwen2.5-72B, codefree, withintol",
+  "v1.5, seven configurations|Qwen2.5-72B, codefree, withintol",
+  "v1.5, new seeds|Qwen2.5-72B, codefree, withintol",
+  "v1.5, Qwen3-235B-A22B|Qwen2.5-72B, codefree, withintol"
+ ],
+ "gradings": [
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o",
+   "kind": "notebook",
+   "n_runs": 2197,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.1702119883040936,
+    "non-moved keys": 0.16717171717171717,
+    "released only": 0.1981359649122807,
+    "both": 0.19292929292929292
+   },
+   "observed": 6.094742063492063,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 9120,
+    "non-moved keys": 3960,
+    "released only": 3040,
+    "both": 1320
+   },
+   "predicted": {
+    "in sample": 5.4721127906571985,
+    "non-moved keys": 5.374371693121692,
+    "released only": 6.369835395781118,
+    "both": 6.202447089947088
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.4593968112786997,
+     7.530887105422561
+    ],
+    "non-moved keys": [
+     3.413022450033779,
+     7.722386491988243
+    ],
+    "released only": [
+     4.188794570497742,
+     8.754994872752922
+    ],
+    "both": [
+     3.988380689731126,
+     9.092796464196521
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.0708055999973727,
+     4.847202301639808
+    ],
+    "non-moved keys": [
+     -3.07123038838213,
+     5.29518436094257
+    ],
+    "released only": [
+     -3.9711046721031824,
+     4.083726729696666
+    ],
+    "both": [
+     -3.981144342213975,
+     4.377583572761894
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "n_runs": 2197,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.43384502923976603,
+    "non-moved keys": 0.428956228956229,
+    "released only": 0.4435307017543859,
+    "both": 0.4292929292929293
+   },
+   "observed": 14.815228174603176,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 9120,
+    "non-moved keys": 3960,
+    "released only": 3040,
+    "both": 1320
+   },
+   "predicted": {
+    "in sample": 13.94760120788081,
+    "non-moved keys": 13.79043209876543,
+    "released only": 14.25898404866332,
+    "both": 13.80125661375661
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     9.12389160443171,
+     18.664887172593623
+    ],
+    "non-moved keys": [
+     8.933101626772839,
+     18.640994964984834
+    ],
+    "released only": [
+     9.371128533091616,
+     19.330715513492922
+    ],
+    "both": [
+     9.10933995776856,
+     18.630936006456903
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.4678845168285646,
+     5.775327541265112
+    ],
+    "non-moved keys": [
+     -3.904927813965282,
+     6.58267501295311
+    ],
+    "released only": [
+     -4.167838309759501,
+     5.6243704645312675
+    ],
+    "both": [
+     -3.9696003556805746,
+     6.413984105245616
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.2891681571433054,
+    "non-moved keys": 0.29120560321604705,
+    "released only": 0.3226019015344065,
+    "both": 0.3158647270918812
+   },
+   "observed": 8.984499007936508,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 9.296412004351144,
+    "non-moved keys": 9.361913470058749,
+    "released only": 10.371267084448387,
+    "both": 10.154674946566963
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     6.198595968900873,
+     12.396297122444869
+    ],
+    "non-moved keys": [
+     6.0593507227583325,
+     12.764425314889069
+    ],
+    "released only": [
+     6.8734249069076245,
+     14.069534191636308
+    ],
+    "both": [
+     6.646859935036587,
+     13.904112565406109
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -4.039016761727758,
+     4.25383058386568
+    ],
+    "non-moved keys": [
+     -4.419809522970935,
+     4.408450163929803
+    ],
+    "released only": [
+     -5.549123450891522,
+     3.449759211985337
+    ],
+    "both": [
+     -5.420237876186705,
+     3.8684284486790737
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "n_runs": 2197,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.22061403508771926,
+    "non-moved keys": 0.2238215488215488,
+    "released only": 0.2232456140350877,
+    "both": 0.21338383838383837
+   },
+   "observed": 9.059895833333334,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 9120,
+    "non-moved keys": 3960,
+    "released only": 3040,
+    "both": 1320
+   },
+   "predicted": {
+    "in sample": 7.092478592314117,
+    "non-moved keys": 7.195596340388006,
+    "released only": 7.177080722639931,
+    "both": 6.860036375661374
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     4.609780855237729,
+     10.006521056135433
+    ],
+    "non-moved keys": [
+     4.392455522610868,
+     10.372134254186971
+    ],
+    "released only": [
+     4.239376137015343,
+     10.932487443519118
+    ],
+    "both": [
+     3.817913854935193,
+     10.51247384244564
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -1.3136364796241882,
+     5.329802230785159
+    ],
+    "non-moved keys": [
+     -1.9693984562744902,
+     5.747232185886168
+    ],
+    "released only": [
+     -2.0700752430126528,
+     5.8680024119363665
+    ],
+    "both": [
+     -2.2194980192117306,
+     6.7719563509638006
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b, refusal",
+   "kind": "notebook",
+   "n_runs": 2197,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.177156432748538,
+    "non-moved keys": 0.1874579124579124,
+    "released only": 0.21436403508771928,
+    "both": 0.22196969696969696
+   },
+   "observed": 3.3511904761904763,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 9120,
+    "non-moved keys": 3960,
+    "released only": 3040,
+    "both": 1320
+   },
+   "predicted": {
+    "in sample": 5.695368412350319,
+    "non-moved keys": 6.026548721340386,
+    "released only": 6.891548532790307,
+    "both": 7.136061507936506
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.5756192036183183,
+     7.8377900689417315
+    ],
+    "non-moved keys": [
+     3.7367272597674708,
+     8.665102593031538
+    ],
+    "released only": [
+     4.24195704057883,
+     9.718160971652996
+    ],
+    "both": [
+     4.496483087092322,
+     10.14256396022181
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -4.685017782888358,
+     0.39033204523682324
+    ],
+    "non-moved keys": [
+     -5.665351985620522,
+     0.43620547747228633
+    ],
+    "released only": [
+     -6.571322114752027,
+     -0.43707597612221405
+    ],
+    "both": [
+     -6.99588790389535,
+     -0.4622943981477977
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "own model",
+   "kind": "notebook",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.24314128943758573,
+    "non-moved keys": 0.23721340388007053,
+    "released only": 0.25411522633744854,
+    "both": 0.2523809523809524
+   },
+   "observed": 5.907335907335908,
+   "rule": 35.53410553410553,
+   "indicator": 34.76190476190476,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 8.452054347116075,
+    "non-moved keys": 8.24598975392626,
+    "released only": 8.833529296492259,
+    "both": 8.773242630385486
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     5.495400667915562,
+     11.906580371502901
+    ],
+    "non-moved keys": [
+     5.33653975458584,
+     11.592069381923732
+    ],
+    "released only": [
+     5.681394588301601,
+     12.502041018442677
+    ],
+    "both": [
+     5.393007749339281,
+     12.848057865299241
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -6.765256748586033,
+     1.6232331183504822
+    ],
+    "non-moved keys": [
+     -7.109978322378382,
+     2.436187500507416
+    ],
+    "released only": [
+     -7.257159838916589,
+     1.204901437769832
+    ],
+    "both": [
+     -7.630834250076337,
+     1.607128350640027
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.20324645633287608,
+    "non-moved keys": 0.19911816578483246,
+    "released only": 0.19650205761316875,
+    "both": 0.20529100529100527
+   },
+   "observed": 4.903474903474903,
+   "rule": 35.53410553410553,
+   "indicator": 34.76190476190476,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 7.065233958238073,
+    "non-moved keys": 6.921726715377509,
+    "released only": 6.830785812267294,
+    "both": 7.136306374401611
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     4.2828308144097615,
+     10.464896312722614
+    ],
+    "non-moved keys": [
+     4.058562135132528,
+     10.221796021235736
+    ],
+    "released only": [
+     3.643744662681607,
+     10.817045191952179
+    ],
+    "both": [
+     3.7568068862499215,
+     11.336493541991018
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -7.9647514118583,
+     3.437806860790745
+    ],
+    "non-moved keys": [
+     -8.19833301839254,
+     3.9575821514009166
+    ],
+    "released only": [
+     -7.857155849282139,
+     3.6743379000153604
+    ],
+    "both": [
+     -8.579866965409922,
+     3.670019245426079
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "n_runs": 497,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.34408113835906756,
+    "non-moved keys": 0.31050818260120583,
+    "released only": 0.3374205267938238,
+    "both": 0.3268733850129199
+   },
+   "observed": 11.023166023166024,
+   "rule": 35.53410553410553,
+   "indicator": 34.76190476190476,
+   "n_miss_reads": {
+    "in sample": 2202,
+    "non-moved keys": 774,
+    "released only": 734,
+    "both": 258
+   },
+   "predicted": {
+    "in sample": 11.960915762005682,
+    "non-moved keys": 10.79385587137525,
+    "released only": 11.729380217118635,
+    "both": 11.362741479020547
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     7.525876699269996,
+     17.180374598050147
+    ],
+    "non-moved keys": [
+     6.228888335324773,
+     16.35284762714609
+    ],
+    "released only": [
+     7.568402418785371,
+     16.423025880929103
+    ],
+    "both": [
+     6.555623505769032,
+     17.538367255504337
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -5.115593335262834,
+     3.435543519031203
+    ],
+    "non-moved keys": [
+     -5.109552971221547,
+     5.4471163257890325
+    ],
+    "released only": [
+     -4.971537746787263,
+     3.436860533837979
+    ],
+    "both": [
+     -5.507556061958547,
+     4.568346538335975
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "n_runs": 445,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.1771144278606965,
+    "non-moved keys": 0.1558641975308642,
+    "released only": 0.20497512437810947,
+    "both": 0.16358024691358022
+   },
+   "observed": 0.1544401544401545,
+   "rule": 35.534105534105535,
+   "indicator": 34.76190476190476,
+   "n_miss_reads": {
+    "in sample": 2010,
+    "non-moved keys": 648,
+    "released only": 670,
+    "both": 216
+   },
+   "predicted": {
+    "in sample": 6.156834873252783,
+    "non-moved keys": 5.418136390358612,
+    "released only": 7.125325752191424,
+    "both": 5.686360964138741
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.5577395231606164,
+     9.214629588866877
+    ],
+    "non-moved keys": [
+     2.5299371243508775,
+     8.39113548645264
+    ],
+    "released only": [
+     4.171225658274177,
+     10.575038606747974
+    ],
+    "both": [
+     2.159656400206046,
+     9.766009286785744
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -10.260393287391574,
+     -2.2363786583489627
+    ],
+    "non-moved keys": [
+     -9.94632006952979,
+     -0.46473382037853106
+    ],
+    "released only": [
+     -11.195268429408385,
+     -3.3885847702337073
+    ],
+    "both": [
+     -10.61952351225818,
+     -0.5094829557984928
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.20276080561212942,
+    "non-moved keys": 0.19846373704894607,
+    "released only": 0.23387644263408006,
+    "both": 0.23472668810289388
+   },
+   "observed": 0.7657657657657657,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 8.347899834661543,
+    "non-moved keys": 8.170984489312463,
+    "released only": 9.628967052592303,
+    "both": 9.66397265432635
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     5.5033822491336775,
+     11.24021849274283
+    ],
+    "non-moved keys": [
+     4.666537552847157,
+     12.063553063447529
+    ],
+    "released only": [
+     6.201467509590437,
+     13.147972636815918
+    ],
+    "both": [
+     5.365215657610328,
+     14.48429144567334
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -12.62814697809672,
+     -3.087726959054571
+    ],
+    "non-moved keys": [
+     -12.901645527904355,
+     -2.278098477542168
+    ],
+    "released only": [
+     -14.610833745126481,
+     -3.581079207549799
+    ],
+    "both": [
+     -15.177818260814838,
+     -2.911410747442524
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "n_runs": 211,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.404320987654321,
+    "non-moved keys": null,
+    "released only": 0.4472222222222222,
+    "both": null
+   },
+   "observed": 7.792792792792793,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 1080,
+    "non-moved keys": 0,
+    "released only": 360,
+    "both": 0
+   },
+   "predicted": {
+    "in sample": 16.646368590813033,
+    "non-moved keys": null,
+    "released only": 18.412662662662658,
+    "both": null
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     12.581590592845863,
+     20.63850773726061
+    ],
+    "released only": [
+     13.961638470032153,
+     22.83560189960038
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -13.786659648203527,
+     -3.949658135092884
+    ],
+    "released only": [
+     -16.209282507331494,
+     -5.6710858585858555
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "n_runs": 211,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.17746913580246915,
+    "non-moved keys": null,
+    "released only": 0.20185185185185184,
+    "both": null
+   },
+   "observed": 4.977477477477478,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 1080,
+    "non-moved keys": 0,
+    "released only": 360,
+    "both": 0
+   },
+   "predicted": {
+    "in sample": 7.306612167723278,
+    "non-moved keys": null,
+    "released only": 8.310477143810475,
+    "both": null
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.4967655155155164,
+     10.825281979224778
+    ],
+    "released only": [
+     4.3537213109137545,
+     12.362088196415982
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -9.435980647289805,
+     5.177638115714091
+    ],
+    "released only": [
+     -10.494558747182989,
+     4.4097556605296475
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b, refusal",
+   "kind": "notebook",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.1186920117673682,
+    "non-moved keys": 0.10039299749910684,
+    "released only": 0.14120841819416158,
+    "both": 0.14040728831725616
+   },
+   "observed": 2.77027027027027,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 4.886689133124978,
+    "non-moved keys": 4.133297284422686,
+    "released only": 5.813715956282147,
+    "both": 5.780732500989735
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.1546450737549883,
+     6.686357179394771
+    ],
+    "non-moved keys": [
+     2.397282699699015,
+     6.135131941658337
+    ],
+    "released only": [
+     3.6269811952211364,
+     8.207223947330895
+    ],
+    "both": [
+     3.235650826800972,
+     8.655099955920122
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -4.666526478066899,
+     0.7973815627870543
+    ],
+    "non-moved keys": [
+     -4.407295145436488,
+     1.8700318333481953
+    ],
+    "released only": [
+     -5.880646233506822,
+     -0.1598311185753556
+    ],
+    "both": [
+     -6.439797258170504,
+     0.2365645154274799
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gemma-3-27b",
+   "kind": "notebook",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.2664609053497942,
+    "non-moved keys": 0.22672672672672675,
+    "released only": 0.28703703703703703,
+    "both": 0.22972972972972971
+   },
+   "observed": 1.3888888888888888,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 3.3307613168724277,
+    "non-moved keys": 2.8340840840840844,
+    "released only": 3.587962962962963,
+    "both": 2.8716216216216215
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.0620654915713055,
+     5.314172860502226
+    ],
+    "non-moved keys": [
+     0.7884761095298335,
+     5.198470821631622
+    ],
+    "released only": [
+     1.1034865563851073,
+     5.828259738328872
+    ],
+    "both": [
+     0.6469233317824868,
+     5.635574753319112
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -7.116919976446269,
+     3.005138774666547
+    ],
+    "non-moved keys": [
+     -6.659754467960722,
+     3.5904673283705506
+    ],
+    "released only": [
+     -7.53599183372661,
+     3.2041813727744417
+    ],
+    "both": [
+     -6.948527748955756,
+     4.003811113791729
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Qwen2.5-72B",
+   "kind": "notebook",
+   "n_runs": 68,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.48366013071895425,
+    "non-moved keys": null,
+    "released only": 0.5147058823529412,
+    "both": null
+   },
+   "observed": 2.7777777777777777,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 204,
+    "non-moved keys": 0,
+    "released only": 68,
+    "both": 0
+   },
+   "predicted": {
+    "in sample": 6.045751633986928,
+    "non-moved keys": null,
+    "released only": 6.433823529411765,
+    "both": null
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     2.000887919527079,
+     9.332710369944412
+    ],
+    "released only": [
+     2.1155427631578942,
+     10.590937499999995
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -10.972233297891192,
+     4.564072130601362
+    ],
+    "released only": [
+     -12.616605294995125,
+     4.545552829802959
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Llama-3.3-70B",
+   "kind": "notebook",
+   "n_runs": 68,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.30392156862745096,
+    "non-moved keys": null,
+    "released only": 0.37254901960784315,
+    "both": null
+   },
+   "observed": 4.166666666666666,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 204,
+    "non-moved keys": 0,
+    "released only": 68,
+    "both": 0
+   },
+   "predicted": {
+    "in sample": 3.799019607843137,
+    "non-moved keys": null,
+    "released only": 4.6568627450980395,
+    "both": null
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.081598647600803,
+     5.807456333626478
+    ],
+    "released only": [
+     1.5151515151515154,
+     6.8925758337523
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -6.5497681666159915,
+     8.554015200155922
+    ],
+    "released only": [
+     -8.042862555650279,
+     8.541847436021037
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, gpt-5.1",
+   "grader": "gpt-4o",
+   "kind": "notebook",
+   "n_runs": 210,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.10767468499427263,
+    "non-moved keys": 0.07725694444444443,
+    "released only": 0.1048109965635739,
+    "both": 0.09114583333333331
+   },
+   "observed": 4.054054054054054,
+   "rule": 17.56756756756757,
+   "indicator": 17.56756756756757,
+   "n_miss_reads": {
+    "in sample": 582,
+    "non-moved keys": 384,
+    "released only": 194,
+    "both": 128
+   },
+   "predicted": {
+    "in sample": 1.891582303953438,
+    "non-moved keys": 1.3572165915915915,
+    "released only": 1.8412742639546766,
+    "both": 1.6012105855855854
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     0.7384671739041581,
+     3.1201856606680507
+    ],
+    "non-moved keys": [
+     0.37719277094162895,
+     2.61176429645183
+    ],
+    "released only": [
+     0.15380958249213397,
+     3.677843880455098
+    ],
+    "both": [
+     -0.14894374146513362,
+     3.910477543290038
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -1.605623756697193,
+     7.426860125465329
+    ],
+    "non-moved keys": [
+     -1.0234912146676851,
+     7.7485592368455
+    ],
+    "released only": [
+     -1.8977144798136645,
+     7.89171513969901
+    ],
+    "both": [
+     -2.029797601199401,
+     8.078985602268355
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.6876588534312341,
+    "non-moved keys": 0.6861867462389656,
+    "released only": 0.6829520850983714,
+    "both": 0.6817108044262091
+   },
+   "observed": 27.650049603174605,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 22.107413496321993,
+    "non-moved keys": 22.060087002599122,
+    "released only": 21.95609649771609,
+    "both": 21.91619080182116
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     14.707073711254822,
+     29.830083271199385
+    ],
+    "non-moved keys": [
+     14.810172470544389,
+     29.628650625536885
+    ],
+    "released only": [
+     14.627695667072684,
+     29.35417992588312
+    ],
+    "both": [
+     14.906618974002289,
+     29.280465792900934
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -2.3679083794400606,
+     12.693364234366976
+    ],
+    "non-moved keys": [
+     -2.6308486127829456,
+     12.889309076502759
+    ],
+    "released only": [
+     -2.6139892209965563,
+     12.848196082319728
+    ],
+    "both": [
+     -2.888675403307091,
+     13.323867085259193
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.5953360768175583,
+    "non-moved keys": 0.5753086419753086,
+    "released only": 0.569272976680384,
+    "both": 0.5322751322751323
+   },
+   "observed": 21.216216216216218,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 20.69501600365798,
+    "non-moved keys": 19.998824221046444,
+    "released only": 19.789012998889543,
+    "both": 18.50289745527841
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     14.174000609993419,
+     26.823342148733644
+    ],
+    "non-moved keys": [
+     13.590399346608555,
+     26.458463119742213
+    ],
+    "released only": [
+     13.645930150116046,
+     26.012169856545736
+    ],
+    "both": [
+     12.536823308036157,
+     24.89882558994083
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.6532584378002335,
+     4.786850100926775
+    ],
+    "non-moved keys": [
+     -3.5212479216782864,
+     6.334487603769684
+    ],
+    "released only": [
+     -3.0818941034852623,
+     5.871340853817597
+    ],
+    "both": [
+     -2.2564749801376736,
+     7.54279494425623
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.6456211812627292,
+    "non-moved keys": 0.6355841371918541,
+    "released only": 0.6551255940257977,
+    "both": 0.6377277599142551
+   },
+   "observed": 23.96396396396396,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 26.58098016550155,
+    "non-moved keys": 26.167743306006965,
+    "released only": 26.97228797025131,
+    "both": 26.255998764037347
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     19.27389116019215,
+     33.49153261639337
+    ],
+    "non-moved keys": [
+     19.071363761516604,
+     33.09572272856253
+    ],
+    "released only": [
+     19.87667583278112,
+     33.81303706708737
+    ],
+    "both": [
+     19.052085415327774,
+     33.25069100348167
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -11.032159524639951,
+     5.679955751397943
+    ],
+    "non-moved keys": [
+     -11.345552142772483,
+     6.925954661054374
+    ],
+    "released only": [
+     -11.302215905256762,
+     5.676269649888084
+    ],
+    "both": [
+     -11.14264318970416,
+     6.481418765673003
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.6049382716049383,
+    "non-moved keys": 0.5615615615615616,
+    "released only": 0.5740740740740741,
+    "both": 0.5045045045045046
+   },
+   "observed": 4.861111111111112,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 7.561728395061729,
+    "non-moved keys": 7.01951951951952,
+    "released only": 7.175925925925926,
+    "both": 6.306306306306307
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     2.4334243487894818,
+     14.028981673184564
+    ],
+    "non-moved keys": [
+     2.181994439378405,
+     14.01941320585004
+    ],
+    "released only": [
+     2.288932980599647,
+     13.313453453453452
+    ],
+    "both": [
+     1.858742557007925,
+     13.042945439045164
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -8.554822484715576,
+     4.651745129870129
+    ],
+    "non-moved keys": [
+     -8.24460156857722,
+     5.0927980495288185
+    ],
+    "released only": [
+     -8.245412450972216,
+     5.067776213926899
+    ],
+    "both": [
+     -7.700875702786878,
+     5.664231304341467
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, gpt-5.1",
+   "grader": "gpt-4o, codefree",
+   "kind": "code-free",
+   "n_runs": 210,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.44788087056128295,
+    "non-moved keys": 0.3645833333333333,
+    "released only": 0.3883161512027491,
+    "both": 0.34375
+   },
+   "observed": 18.243243243243242,
+   "rule": 17.56756756756757,
+   "indicator": 17.56756756756757,
+   "n_miss_reads": {
+    "in sample": 582,
+    "non-moved keys": 384,
+    "released only": 194,
+    "both": 128
+   },
+   "predicted": {
+    "in sample": 7.868177455806323,
+    "non-moved keys": 6.404842342342342,
+    "released only": 6.821770223832079,
+    "both": 6.038851351351352
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.4411334709322325,
+     13.188462629590285
+    ],
+    "non-moved keys": [
+     2.700026769967246,
+     10.93773674242424
+    ],
+    "released only": [
+     2.7978847208986686,
+     11.891621205677096
+    ],
+    "both": [
+     2.222187412976887,
+     10.969982078853041
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     2.570407330131366,
+     19.345121519034556
+    ],
+    "non-moved keys": [
+     3.8879029492455404,
+     20.448716723163745
+    ],
+    "released only": [
+     3.488380002592274,
+     20.63650371496115
+    ],
+    "both": [
+     3.666035487288136,
+     22.146745263947118
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.6224544227933101,
+    "non-moved keys": 0.6199593849724399,
+    "released only": 0.6067024381059963,
+    "both": 0.5879646897923659
+   },
+   "observed": 28.84511408730159,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 20.011168675634924,
+    "non-moved keys": 19.930956179977066,
+    "released only": 19.50476112030051,
+    "both": 18.902364818860523
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     13.354588752262364,
+     26.830264251089964
+    ],
+    "non-moved keys": [
+     13.352646888390096,
+     26.654672589793314
+    ],
+    "released only": [
+     12.609839713266917,
+     26.52100603445811
+    ],
+    "both": [
+     12.248466855890355,
+     25.783328298086413
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     1.6462392237150634,
+     16.328510322761282
+    ],
+    "non-moved keys": [
+     1.5487685616261375,
+     16.451363269507876
+    ],
+    "released only": [
+     1.769729715797193,
+     17.046967743895365
+    ],
+    "both": [
+     2.086799683511865,
+     17.967010275124082
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.5427526291723823,
+    "non-moved keys": 0.5421516754850089,
+    "released only": 0.5541838134430727,
+    "both": 0.5555555555555555
+   },
+   "observed": 24.71685971685972,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 18.867115204563767,
+    "non-moved keys": 18.846224909716977,
+    "released only": 19.26448494349729,
+    "both": 19.31216931216931
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     12.81603918130888,
+     25.137406027239386
+    ],
+    "non-moved keys": [
+     12.721466801797044,
+     25.181573973527243
+    ],
+    "released only": [
+     13.279574921145775,
+     25.805837448884557
+    ],
+    "both": [
+     13.29681691031791,
+     26.11276340303327
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     1.1835447940482355,
+     10.303670090492577
+    ],
+    "non-moved keys": [
+     0.13381539088541314,
+     11.051571529542558
+    ],
+    "released only": [
+     0.7243471345188001,
+     10.040655170925831
+    ],
+    "both": [
+     -0.495643567692829,
+     10.597064686589174
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.595836162027608,
+    "non-moved keys": 0.594855305466238,
+    "released only": 0.6564833672776645,
+    "both": 0.6741693461950696
+   },
+   "observed": 23.783783783783786,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 24.531272616812327,
+    "non-moved keys": 24.490889603429796,
+    "released only": 27.028189085215555,
+    "both": 27.756341550553763
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     18.078443916527696,
+     30.941058813210578
+    ],
+    "non-moved keys": [
+     17.33835888799026,
+     31.56908885339331
+    ],
+    "released only": [
+     20.146593408787645,
+     33.86150182625448
+    ],
+    "both": [
+     20.270558037757002,
+     35.13219515232583
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -5.323714311049129,
+     3.939016942651497
+    ],
+    "non-moved keys": [
+     -6.726986254398742,
+     4.670678617771017
+    ],
+    "released only": [
+     -8.38164244788322,
+     1.918896947518546
+    ],
+    "both": [
+     -9.870817963178997,
+     1.5035569603422037
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.5514403292181069,
+    "non-moved keys": 0.5105105105105104,
+    "released only": 0.5617283950617283,
+    "both": 0.4954954954954955
+   },
+   "observed": 13.88888888888889,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 6.893004115226336,
+    "non-moved keys": 6.381381381381381,
+    "released only": 7.021604938271604,
+    "both": 6.193693693693693
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     2.3270481112462247,
+     11.874094599525627
+    ],
+    "non-moved keys": [
+     1.9864791081007296,
+     12.523092590660154
+    ],
+    "released only": [
+     2.391608756740336,
+     11.961426926978106
+    ],
+    "both": [
+     1.9074617139133265,
+     12.45050324218163
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -2.0075433600919013,
+     16.820978300151125
+    ],
+    "non-moved keys": [
+     -2.580832455832455,
+     17.21009574915822
+    ],
+    "released only": [
+     -2.1319464737969973,
+     16.69232288263302
+    ],
+    "both": [
+     -2.6965395564185894,
+     17.575997349023666
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, gpt-5.1",
+   "grader": "gemma-3-27b, codefree",
+   "kind": "code-free",
+   "n_runs": 210,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.43413516609392894,
+    "non-moved keys": 0.3819444444444445,
+    "released only": 0.45017182130584193,
+    "both": 0.4166666666666667
+   },
+   "observed": 14.18918918918919,
+   "rule": 17.56756756756757,
+   "indicator": 17.56756756756757,
+   "n_miss_reads": {
+    "in sample": 582,
+    "non-moved keys": 384,
+    "released only": 194,
+    "both": 128
+   },
+   "predicted": {
+    "in sample": 7.6266988638122655,
+    "non-moved keys": 6.709834834834836,
+    "released only": 7.9084238878053315,
+    "both": 7.319819819819821
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     3.6609106712076054,
+     12.162431179068143
+    ],
+    "non-moved keys": [
+     2.846748737373737,
+     11.732898623930447
+    ],
+    "released only": [
+     3.5959168559438788,
+     12.689641478747431
+    ],
+    "both": [
+     2.767283168021478,
+     13.31381381381381
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -0.04811728756638671,
+     13.568533809094454
+    ],
+    "non-moved keys": [
+     -0.25569789650614705,
+     14.854645593869733
+    ],
+    "released only": [
+     -1.2039016122245145,
+     13.842369691984533
+    ],
+    "both": [
+     -2.110880691814985,
+     15.215895229059361
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.5791364649031975,
+    "non-moved keys": 0.5728376642214762,
+    "released only": 0.5561988138943802,
+    "both": 0.5657714783041154
+   },
+   "observed": 25.32465277777778,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 18.61854789846529,
+    "non-moved keys": 18.416048955120193,
+    "released only": 17.881129725259207,
+    "both": 18.18887949000314
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     12.36797059665661,
+     24.757820199916782
+    ],
+    "non-moved keys": [
+     12.449355941009564,
+     24.229371342583462
+    ],
+    "released only": [
+     11.711631445317588,
+     24.297969376446712
+    ],
+    "both": [
+     12.141266215288306,
+     24.530837884205305
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -4.170313625552508,
+     17.050774547358486
+    ],
+    "non-moved keys": [
+     -4.696057275357136,
+     17.786072097862956
+    ],
+    "released only": [
+     -3.5977572002260714,
+     17.676220177887718
+    ],
+    "both": [
+     -4.482441128451967,
+     17.79119259010478
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.4901691815272062,
+    "non-moved keys": 0.48359788359788364,
+    "released only": 0.5116598079561042,
+    "both": 0.4962962962962963
+   },
+   "observed": 24.002574002573997,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 17.03921440546955,
+    "non-moved keys": 16.810783572688337,
+    "released only": 17.78626951466458,
+    "both": 17.25220458553792
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     11.417240158595295,
+     22.546825396825398
+    ],
+    "non-moved keys": [
+     11.170113815072542,
+     22.50214002850931
+    ],
+    "released only": [
+     12.121234164362903,
+     23.556379499145454
+    ],
+    "both": [
+     11.385604571158227,
+     23.28793016588918
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     0.6473396286787569,
+     13.1495295800667
+    ],
+    "non-moved keys": [
+     1.173589407057143,
+     13.28857039699741
+    ],
+    "released only": [
+     -0.1545816696024766,
+     12.167766457077397
+    ],
+    "both": [
+     0.174850513266194,
+     12.998009558250715
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.5483140982122653,
+    "non-moved keys": 0.53340478742408,
+    "released only": 0.5627970128988459,
+    "both": 0.547695605573419
+   },
+   "observed": 30.540540540540544,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 22.574733593063534,
+    "non-moved keys": 21.96089980655897,
+    "released only": 23.17101215268221,
+    "both": 22.549269526761485
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     16.228503126503128,
+     28.44299089194078
+    ],
+    "non-moved keys": [
+     15.924233363133888,
+     27.9229111425339
+    ],
+    "released only": [
+     16.95407127057808,
+     29.466313024310892
+    ],
+    "both": [
+     15.992587495732673,
+     29.336700175299455
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     0.8607895018586827,
+     14.926862745826174
+    ],
+    "non-moved keys": [
+     1.18540765187301,
+     16.22164082773651
+    ],
+    "released only": [
+     -0.10608431388139088,
+     14.501757453223226
+    ],
+    "both": [
+     0.21541853082637089,
+     15.41515009145543
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Qwen2.5-72B, codefree",
+   "kind": "code-free",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.507201646090535,
+    "non-moved keys": 0.44894894894894904,
+    "released only": 0.5694444444444444,
+    "both": 0.5337837837837837
+   },
+   "observed": 15.972222222222221,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 6.340020576131687,
+    "non-moved keys": 5.611861861861863,
+    "released only": 7.118055555555555,
+    "both": 6.672297297297296
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.9854462265985295,
+     12.247862461929609
+    ],
+    "non-moved keys": [
+     1.7418135435992579,
+     10.77151118845471
+    ],
+    "released only": [
+     2.353111710947131,
+     13.292779873530362
+    ],
+    "both": [
+     2.156671949082664,
+     12.586380385487521
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     1.3261102193686467,
+     19.332241907292612
+    ],
+    "non-moved keys": [
+     2.2800070185127645,
+     19.821677817436406
+    ],
+    "released only": [
+     0.4179695559682114,
+     18.580904741191823
+    ],
+    "both": [
+     1.1006733774590916,
+     18.662158205151453
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.4826320248517368,
+    "non-moved keys": 0.48064569605039575,
+    "released only": 0.46258119175374196,
+    "both": 0.478863608106428
+   },
+   "observed": 23.827380952380956,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 15.516045037048988,
+    "non-moved keys": 15.452186930763018,
+    "released only": 14.871434622987856,
+    "both": 15.39489492489772
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     10.262722269249467,
+     20.63360188248783
+    ],
+    "non-moved keys": [
+     10.332547316757122,
+     20.439197692988028
+    ],
+    "released only": [
+     9.969805602140303,
+     19.922984605248292
+    ],
+    "both": [
+     10.394693218297594,
+     20.645802197449417
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     1.6747867945594892,
+     15.675432486778494
+    ],
+    "non-moved keys": [
+     1.39576409095632,
+     15.996553963366875
+    ],
+    "released only": [
+     2.1096938007779107,
+     16.528195596342364
+    ],
+    "both": [
+     1.604176197962533,
+     16.133879595224442
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.424554183813443,
+    "non-moved keys": 0.4393298059964727,
+    "released only": 0.4204389574759945,
+    "both": 0.42857142857142855
+   },
+   "observed": 16.216216216216218,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 14.758312103991116,
+    "non-moved keys": 15.271940875115481,
+    "released only": 14.61525899797505,
+    "both": 14.897959183673471
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     9.845565459700481,
+     19.971700427059798
+    ],
+    "non-moved keys": [
+     10.180051947925104,
+     20.488712931647164
+    ],
+    "released only": [
+     9.96998304372254,
+     19.267806479897313
+    ],
+    "both": [
+     9.881408405660718,
+     20.126879239782323
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -4.41461402509579,
+     7.4841742945304155
+    ],
+    "non-moved keys": [
+     -5.769297599104956,
+     7.814488226040903
+    ],
+    "released only": [
+     -4.463451766695342,
+     7.952947051969437
+    ],
+    "both": [
+     -5.638446885902254,
+     8.739194105708338
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.46220864448970356,
+    "non-moved keys": 0.492497320471597,
+    "released only": 0.4938900203665988,
+    "both": 0.5289389067524115
+   },
+   "observed": 22.09459459459459,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 19.029671219080587,
+    "non-moved keys": 20.27669148247926,
+    "released only": 20.33403056824645,
+    "both": 21.777034268995678
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     13.768841714428913,
+     24.523439674775005
+    ],
+    "non-moved keys": [
+     14.43758343021035,
+     26.38346172392295
+    ],
+    "released only": [
+     14.920795290665012,
+     25.65316522366522
+    ],
+    "both": [
+     15.292280086297575,
+     28.509825632155515
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -5.057796317470432,
+     11.180134174380518
+    ],
+    "non-moved keys": [
+     -7.526989878930951,
+     10.41856679110781
+    ],
+    "released only": [
+     -6.875779988438045,
+     10.192911406576815
+    ],
+    "both": [
+     -9.587674735857075,
+     9.494124716683457
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Llama-3.3-70B, codefree",
+   "kind": "code-free",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.397119341563786,
+    "non-moved keys": 0.3596096096096096,
+    "released only": 0.4151234567901234,
+    "both": 0.36261261261261263
+   },
+   "observed": 12.5,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 4.963991769547325,
+    "non-moved keys": 4.49512012012012,
+    "released only": 5.189043209876543,
+    "both": 4.532657657657658
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.7061682088277836,
+     7.978298611111104
+    ],
+    "non-moved keys": [
+     1.4193185939141664,
+     8.174428899066578
+    ],
+    "released only": [
+     1.7710805539493972,
+     8.106871882909374
+    ],
+    "both": [
+     1.3120349702380953,
+     8.432228446934323
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -2.525157698278106,
+     18.130736714975843
+    ],
+    "non-moved keys": [
+     -2.915786996297048,
+     18.46243044210741
+    ],
+    "released only": [
+     -2.736409443837506,
+     18.133581871345026
+    ],
+    "both": [
+     -2.937499999999999,
+     18.88437125111277
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o, letter",
+   "kind": "notebook",
+   "n_runs": 2290,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.23628871838590512,
+    "non-moved keys": 0.23390151515151514,
+    "released only": 0.289002557544757,
+    "both": 0.26704545454545453
+   },
+   "observed": 6.621899801587301,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 9384,
+    "non-moved keys": 4224,
+    "released only": 3128,
+    "both": 1408
+   },
+   "predicted": {
+    "in sample": 7.596401000013532,
+    "non-moved keys": 7.519655257936506,
+    "released only": 9.291088174400192,
+    "both": 8.58519345238095
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     4.880145458996493,
+     10.281045092120602
+    ],
+    "non-moved keys": [
+     4.780119593773754,
+     10.711581172704282
+    ],
+    "released only": [
+     5.905465109586242,
+     12.903302147268924
+    ],
+    "both": [
+     5.365338081698488,
+     12.347243048533242
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.7267479087426483,
+     2.368314058897623
+    ],
+    "non-moved keys": [
+     -4.509374096104165,
+     2.9959033966489117
+    ],
+    "released only": [
+     -6.022910779783918,
+     0.8720788173989924
+    ],
+    "both": [
+     -5.895876033011466,
+     2.148265579765327
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gpt-4o, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.07693997301452819,
+    "non-moved keys": 0.07654689377926976,
+    "released only": 0.09841852584015813,
+    "both": 0.09660574412532635
+   },
+   "observed": -1.1241319444444442,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 2.473528537211111,
+    "non-moved keys": 2.4608915077490234,
+    "released only": 3.1640384408493687,
+    "both": 3.1057596667909975
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.611961804329224,
+     3.5047272252038093
+    ],
+    "non-moved keys": [
+     1.5512165789338215,
+     3.633082892278375
+    ],
+    "released only": [
+     2.1059501168055714,
+     4.389798865617619
+    ],
+    "both": [
+     2.0247196876416256,
+     4.4284557537580085
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -7.808978515075426,
+     0.30623237660296376
+    ],
+    "non-moved keys": [
+     -7.825414155645204,
+     0.34399681584942016
+    ],
+    "released only": [
+     -8.478711035937991,
+     -0.3634589574088764
+    ],
+    "both": [
+     -8.41570354308715,
+     -0.27170192358189393
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gpt-4o, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.06401463191586647,
+    "non-moved keys": 0.06049382716049385,
+    "released only": 0.0805898491083676,
+    "both": 0.08783068783068781
+   },
+   "observed": -1.4478764478764479,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 2.2252705380277393,
+    "non-moved keys": 2.1028806584362147,
+    "released only": 2.8014566594813504,
+    "both": 3.0531620055429576
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.2638486127613673,
+     3.410607637742919
+    ],
+    "non-moved keys": [
+     1.134338550039669,
+     3.3715666933494375
+    ],
+    "released only": [
+     1.5663769801834544,
+     4.409994926967503
+    ],
+    "both": [
+     1.4992061361540636,
+     5.147226989113033
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -5.66334497037608,
+     -1.7084271769793942
+    ],
+    "non-moved keys": [
+     -5.502968922894985,
+     -1.6142907908050281
+    ],
+    "released only": [
+     -6.415680500702407,
+     -2.168348704132281
+    ],
+    "both": [
+     -6.804723174314263,
+     -2.236244488557549
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.07758323135335278,
+    "non-moved keys": 0.0785569232044428,
+    "released only": 0.09427656970723897,
+    "both": 0.09387044635086407
+   },
+   "observed": -0.14446924603174602,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 2.494208527020585,
+    "non-moved keys": 2.5255115608761636,
+    "released only": 3.030879482076176,
+    "both": 3.0178230996489095
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.538966231995051,
+     3.610538908341225
+    ],
+    "non-moved keys": [
+     1.4961910318933067,
+     3.7671890413028355
+    ],
+    "released only": [
+     1.7910650430353814,
+     4.446619671189824
+    ],
+    "both": [
+     1.786095441113648,
+     4.448042956289541
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.7729988811676702,
+     -1.621088787771348
+    ],
+    "non-moved keys": [
+     -3.9146111045386958,
+     -1.625175199944154
+    ],
+    "released only": [
+     -4.588941643690698,
+     -1.9600816665856313
+    ],
+    "both": [
+     -4.563649058038014,
+     -1.9221397183399198
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.07098765432098765,
+    "non-moved keys": 0.06913580246913582,
+    "released only": 0.09567901234567901,
+    "both": 0.09735449735449732
+   },
+   "observed": -0.22522522522522526,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 2.46766607877719,
+    "non-moved keys": 2.40329218106996,
+    "released only": 3.325984714873604,
+    "both": 3.384227765180145
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.4335181343036143,
+     3.7230409830431026
+    ],
+    "non-moved keys": [
+     1.2774858894233607,
+     3.839893357135277
+    ],
+    "released only": [
+     1.957941136625348,
+     4.973168231188541
+    ],
+    "both": [
+     1.7846431873995505,
+     5.482887613934898
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.9625543950789517,
+     -1.5469543758081827
+    ],
+    "non-moved keys": [
+     -4.042900768893414,
+     -1.4467174513005316
+    ],
+    "released only": [
+     -5.265362959998817,
+     -2.116972909539753
+    ],
+    "both": [
+     -5.618143395072069,
+     -1.9412544674890995
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.06042090970807871,
+    "non-moved keys": 0.056806002143622664,
+    "released only": 0.09742023082145283,
+    "both": 0.10503751339764204
+   },
+   "observed": -0.2702702702702703,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 2.487599615909186,
+    "non-moved keys": 2.338769637805005,
+    "released only": 4.01090499868504,
+    "both": 4.324517443488506
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.5147634389439164,
+     3.692675056722736
+    ],
+    "non-moved keys": [
+     1.27918838274778,
+     3.522406994602937
+    ],
+    "released only": [
+     2.323664573664572,
+     6.063007927734399
+    ],
+    "both": [
+     2.142290509272502,
+     7.182529809475125
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.9759966548095624,
+     -1.7471101519066632
+    ],
+    "non-moved keys": [
+     -3.8142280250871807,
+     -1.5253653304847952
+    ],
+    "released only": [
+     -6.379330321202942,
+     -2.6387400458267596
+    ],
+    "both": [
+     -7.382821946515338,
+     -2.3901191005565936
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "gemma-3-27b, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.07767489711934152,
+    "non-moved keys": 0.05480480480480477,
+    "released only": 0.1157407407407407,
+    "both": 0.09459459459459463
+   },
+   "observed": -2.7777777777777777,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 0.970936213991769,
+    "non-moved keys": 0.6850600600600596,
+    "released only": 1.4467592592592586,
+    "both": 1.182432432432433
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     0.3017299392875427,
+     1.7598137215361218
+    ],
+    "non-moved keys": [
+     0.1673828743664871,
+     1.5021860182261388
+    ],
+    "released only": [
+     0.4437729324284834,
+     2.619059613220631
+    ],
+    "both": [
+     0.2989718614718612,
+     2.4234849073211135
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -7.821542472364549,
+     -0.6106404058879916
+    ],
+    "non-moved keys": [
+     -7.6996255329441015,
+     -0.34811999551401424
+    ],
+    "released only": [
+     -8.368213631606487,
+     -0.8361929969834985
+    ],
+    "both": [
+     -8.146932971518824,
+     -0.5375384024577575
+    ]
+   }
+  },
+  {
+   "runs": "v1.0, published",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 5096,
+   "n_moved_items": 40,
+   "lambda": {
+    "in sample": 0.058787536477454605,
+    "non-moved keys": 0.057980024037465244,
+    "released only": 0.07154287865951241,
+    "both": 0.06999875668282975
+   },
+   "observed": -1.105282738095238,
+   "rule": 32.14880952380952,
+   "indicator": 32.14880952380952,
+   "n_miss_reads": {
+    "in sample": 21246,
+    "non-moved keys": 16086,
+    "released only": 7082,
+    "both": 5362
+   },
+   "predicted": {
+    "in sample": 1.889949312587692,
+    "non-moved keys": 1.8639887489663673,
+    "released only": 2.300018378809681,
+    "both": 2.250376695499782
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.1746931534152227,
+     2.722414621030917
+    ],
+    "non-moved keys": [
+     1.158200326872007,
+     2.7019796509925427
+    ],
+    "released only": [
+     1.3604958337103763,
+     3.3933573019988166
+    ],
+    "both": [
+     1.3222745548825419,
+     3.356121562295303
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -5.398865137742565,
+     -1.4092141009230104
+    ],
+    "non-moved keys": [
+     -5.427399876275746,
+     -1.4044378125678636
+    ],
+    "released only": [
+     -5.835490830246379,
+     -1.6721453529873358
+    ],
+    "both": [
+     -5.889984283539526,
+     -1.6233371232264853
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, seven configurations",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 639,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.053497942386831254,
+    "non-moved keys": 0.05537918871252206,
+    "released only": 0.0730452674897119,
+    "both": 0.0814814814814815
+   },
+   "observed": -0.546975546975547,
+   "rule": 35.53410553410554,
+   "indicator": 34.761904761904766,
+   "n_miss_reads": {
+    "in sample": 2916,
+    "non-moved keys": 1890,
+    "released only": 972,
+    "both": 630
+   },
+   "predicted": {
+    "in sample": 1.8596903782088963,
+    "non-moved keys": 1.9250860838162431,
+    "released only": 2.539192631785223,
+    "both": 2.832451499118167
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.0404649711968164,
+     2.9501562511019808
+    ],
+    "non-moved keys": [
+     0.8908993964489303,
+     3.3066268437315545
+    ],
+    "released only": [
+     1.401155304668092,
+     4.042645618780076
+    ],
+    "both": [
+     1.3762746484006165,
+     4.833787656438106
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.949864638881094,
+     -0.9674182204407922
+    ],
+    "non-moved keys": [
+     -4.0681245078796024,
+     -0.9650089075646211
+    ],
+    "released only": [
+     -4.926031375966115,
+     -1.4402655927010113
+    ],
+    "both": [
+     -5.550097865722866,
+     -1.5351667262735922
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, new seeds",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 580,
+   "n_moved_items": 37,
+   "lambda": {
+    "in sample": 0.05023761031907667,
+    "non-moved keys": 0.048946052161486224,
+    "released only": 0.07399864222674811,
+    "both": 0.07395498392282962
+   },
+   "observed": -0.7207207207207207,
+   "rule": 41.17117117117117,
+   "indicator": 41.17117117117117,
+   "n_miss_reads": {
+    "in sample": 2946,
+    "non-moved keys": 1866,
+    "released only": 982,
+    "both": 622
+   },
+   "predicted": {
+    "in sample": 2.0683412536773007,
+    "non-moved keys": 2.015166291693622,
+    "released only": 3.046610765551701,
+    "both": 3.04481330204803
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     1.2243506221151355,
+     3.165070667923586
+    ],
+    "non-moved keys": [
+     1.147818402169162,
+     3.1429744429568967
+    ],
+    "released only": [
+     1.7006031102216566,
+     4.8186847682053315
+    ],
+    "both": [
+     1.4168399572441928,
+     5.283705385540433
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.8344468349916885,
+     -1.8177793110729052
+    ],
+    "non-moved keys": [
+     -3.9057843547733353,
+     -1.690645246726742
+    ],
+    "released only": [
+     -5.438680831395724,
+     -2.379218153032753
+    ],
+    "both": [
+     -5.902168050209817,
+     -2.0894387320314287
+    ]
+   }
+  },
+  {
+   "runs": "v1.5, Qwen3-235B-A22B",
+   "grader": "Qwen2.5-72B, codefree, withintol",
+   "kind": "none within 5%",
+   "n_runs": 190,
+   "n_moved_items": 36,
+   "lambda": {
+    "in sample": 0.06944444444444445,
+    "non-moved keys": 0.04729729729729728,
+    "released only": 0.11265432098765432,
+    "both": 0.0900900900900901
+   },
+   "observed": -0.6944444444444444,
+   "rule": 12.5,
+   "indicator": 12.5,
+   "n_miss_reads": {
+    "in sample": 648,
+    "non-moved keys": 444,
+    "released only": 216,
+    "both": 148
+   },
+   "predicted": {
+    "in sample": 0.8680555555555556,
+    "non-moved keys": 0.591216216216216,
+    "released only": 1.408179012345679,
+    "both": 1.1261261261261262
+   },
+   "reproduces_figure": true,
+   "prediction_interval": {
+    "in sample": [
+     0.2489582555789965,
+     1.6280450278103782
+    ],
+    "non-moved keys": [
+     0.13772396584896587,
+     1.2374016029633665
+    ],
+    "released only": [
+     0.4175595238095242,
+     2.5825125761113803
+    ],
+    "both": [
+     0.22832513912469377,
+     2.4063261763038555
+    ]
+   },
+   "error_interval": {
+    "in sample": [
+     -3.174207145995801,
+     -0.27680022746358757
+    ],
+    "non-moved keys": [
+     -2.806126605089738,
+     -0.15895540986120735
+    ],
+    "released only": [
+     -3.764496382149668,
+     -0.5113197900672422
+    ],
+    "both": [
+     -3.5707746655099917,
+     -0.30956168014991653
+    ]
+   }
+  }
+ ],
+ "summary": {
+  "common": {
+   "in sample": {
+    "n": 42,
+    "bias": 0.9546089268990275,
+    "mae": 3.899617599959789,
+    "rmse": 4.785896646729121,
+    "spearman_pred_obs": 0.9024390243902438,
+    "spearman_lambda_share": 0.8755368284579857
+   },
+   "non-moved keys": {
+    "n": 42,
+    "bias": 1.1979230823429947,
+    "mae": 3.903775552322768,
+    "rmse": 4.944478375685121,
+    "spearman_pred_obs": 0.8841260837857547,
+    "spearman_lambda_share": 0.8692164330281177
+   },
+   "released only": {
+    "n": 42,
+    "bias": 0.5104932504157346,
+    "mae": 4.282230193410574,
+    "rmse": 5.068525907379789,
+    "spearman_pred_obs": 0.875374767036707,
+    "spearman_lambda_share": 0.8624098533344139
+   },
+   "both": {
+    "n": 42,
+    "bias": 0.7134975817001025,
+    "mae": 4.307608730221236,
+    "rmse": 5.196135847409268,
+    "spearman_pred_obs": 0.871971477189855,
+    "spearman_lambda_share": 0.8620857304918564
+   },
+   "constant share": {
+    "n": 42,
+    "bias": -1.0092385832388555,
+    "mae": 9.661655256413768,
+    "rmse": 10.718181108680833,
+    "spearman_pred_obs": -0.14658455554655217
+   },
+   "kind share": {
+    "n": 42,
+    "bias": -0.6032615734832714,
+    "mae": 3.441333448716657,
+    "rmse": 4.5740208907739435,
+    "spearman_pred_obs": 0.8654890203387084
+   }
+  },
+  "defined|non-moved keys": {
+   "in sample": {
+    "n": 42,
+    "bias": 0.9546089268990275,
+    "mae": 3.899617599959789,
+    "rmse": 4.785896646729121,
+    "spearman_pred_obs": 0.9024390243902438,
+    "spearman_lambda_share": 0.8755368284579857
+   },
+   "non-moved keys": {
+    "n": 42,
+    "bias": 1.1979230823429947,
+    "mae": 3.903775552322768,
+    "rmse": 4.944478375685121,
+    "spearman_pred_obs": 0.8841260837857547,
+    "spearman_lambda_share": 0.8692164330281177
+   },
+   "released only": {
+    "n": 42,
+    "bias": 0.5104932504157346,
+    "mae": 4.282230193410574,
+    "rmse": 5.068525907379789,
+    "spearman_pred_obs": 0.875374767036707,
+    "spearman_lambda_share": 0.8624098533344139
+   },
+   "both": {
+    "n": 42,
+    "bias": 0.7134975817001025,
+    "mae": 4.307608730221236,
+    "rmse": 5.196135847409268,
+    "spearman_pred_obs": 0.871971477189855,
+    "spearman_lambda_share": 0.8620857304918564
+   },
+   "constant share": {
+    "n": 42,
+    "bias": -1.0092385832388555,
+    "mae": 9.661655256413768,
+    "rmse": 10.718181108680833,
+    "spearman_pred_obs": -0.14658455554655217
+   },
+   "kind share": {
+    "n": 42,
+    "bias": -0.6032615734832714,
+    "mae": 3.441333448716657,
+    "rmse": 4.5740208907739435,
+    "spearman_pred_obs": 0.8654890203387084
+   }
+  },
+  "defined|released only": {
+   "in sample": {
+    "n": 46,
+    "bias": 0.565446470524076,
+    "mae": 3.882658056556736,
+    "rmse": 4.792719506335017,
+    "spearman_pred_obs": 0.8941720629047178,
+    "spearman_lambda_share": 0.8767807585568916
+   },
+   "non-moved keys": {
+    "n": 42,
+    "bias": 1.1979230823429947,
+    "mae": 3.903775552322768,
+    "rmse": 4.944478375685121,
+    "spearman_pred_obs": 0.8841260837857547,
+    "spearman_lambda_share": 0.8692164330281177
+   },
+   "released only": {
+    "n": 46,
+    "bias": 0.072643590243318,
+    "mae": 4.303321293250269,
+    "rmse": 5.142482039580696,
+    "spearman_pred_obs": 0.8634597594819611,
+    "spearman_lambda_share": 0.8576626580326858
+   },
+   "both": {
+    "n": 42,
+    "bias": 0.7134975817001025,
+    "mae": 4.307608730221236,
+    "rmse": 5.196135847409268,
+    "spearman_pred_obs": 0.871971477189855,
+    "spearman_lambda_share": 0.8620857304918564
+   },
+   "constant share": {
+    "n": 46,
+    "bias": -0.9502774185883689,
+    "mae": 9.180082745890001,
+    "rmse": 10.334830274944837,
+    "spearman_pred_obs": -0.13105149552883133
+   },
+   "kind share": {
+    "n": 46,
+    "bias": -0.6430094298318646,
+    "mae": 3.2472121863633894,
+    "rmse": 4.389604195331757,
+    "spearman_pred_obs": 0.8635831020659883
+   }
+  },
+  "defined|both": {
+   "in sample": {
+    "n": 42,
+    "bias": 0.9546089268990275,
+    "mae": 3.899617599959789,
+    "rmse": 4.785896646729121,
+    "spearman_pred_obs": 0.9024390243902438,
+    "spearman_lambda_share": 0.8755368284579857
+   },
+   "non-moved keys": {
+    "n": 42,
+    "bias": 1.1979230823429947,
+    "mae": 3.903775552322768,
+    "rmse": 4.944478375685121,
+    "spearman_pred_obs": 0.8841260837857547,
+    "spearman_lambda_share": 0.8692164330281177
+   },
+   "released only": {
+    "n": 42,
+    "bias": 0.5104932504157346,
+    "mae": 4.282230193410574,
+    "rmse": 5.068525907379789,
+    "spearman_pred_obs": 0.875374767036707,
+    "spearman_lambda_share": 0.8624098533344139
+   },
+   "both": {
+    "n": 42,
+    "bias": 0.7134975817001025,
+    "mae": 4.307608730221236,
+    "rmse": 5.196135847409268,
+    "spearman_pred_obs": 0.871971477189855,
+    "spearman_lambda_share": 0.8620857304918564
+   },
+   "constant share": {
+    "n": 42,
+    "bias": -1.0092385832388555,
+    "mae": 9.661655256413768,
+    "rmse": 10.718181108680833,
+    "spearman_pred_obs": -0.14658455554655217
+   },
+   "kind share": {
+    "n": 42,
+    "bias": -0.6032615734832714,
+    "mae": 3.441333448716657,
+    "rmse": 4.5740208907739435,
+    "spearman_pred_obs": 0.8654890203387084
+   }
+  }
+ },
+ "summary_intervals": {
+  "common": {
+   "in sample": {
+    "bias": [
+     -0.9350539540365912,
+     2.7871578275754567
+    ],
+    "mae": [
+     3.122367287219834,
+     5.649725713041189
+    ],
+    "rmse": [
+     3.9115529401214513,
+     7.438011089705412
+    ],
+    "spearman_pred_obs": [
+     0.7520419739081112,
+     0.939559192934122
+    ]
+   },
+   "non-moved keys": {
+    "bias": [
+     -0.9197916431153881,
+     3.1361318869669272
+    ],
+    "mae": [
+     3.270431433874327,
+     5.794286307339891
+    ],
+    "rmse": [
+     4.172476668218266,
+     7.693636649740011
+    ],
+    "spearman_pred_obs": [
+     0.7372943845717528,
+     0.924155254841585
+    ]
+   },
+   "released only": {
+    "bias": [
+     -1.4971735415235914,
+     2.517213750133633
+    ],
+    "mae": [
+     3.5085312983019827,
+     6.022759882158203
+    ],
+    "rmse": [
+     4.255573750560021,
+     7.711389753517238
+    ],
+    "spearman_pred_obs": [
+     0.7163763066202092,
+     0.9270764119601329
+    ]
+   },
+   "both": {
+    "bias": [
+     -1.413881631076818,
+     2.7102175726138213
+    ],
+    "mae": [
+     3.5912907506187124,
+     6.238664390957889
+    ],
+    "rmse": [
+     4.380384552019311,
+     8.042584593084136
+    ],
+    "spearman_pred_obs": [
+     0.6867312211328095,
+     0.9144518272425248
+    ]
+   },
+   "constant share": {
+    "bias": [
+     -5.65985122557148,
+     -0.028456847793644532
+    ],
+    "mae": [
+     7.788171065482202,
+     12.469209797048313
+    ],
+    "rmse": [
+     9.025035610735888,
+     14.54124289795629
+    ],
+    "spearman_pred_obs": [
+     -0.3151567944250871,
+     0.012567863220160399
+    ]
+   },
+   "kind share": {
+    "bias": [
+     -4.771946944381312,
+     0.31291368029695305
+    ],
+    "mae": [
+     2.7422125348194393,
+     9.061455975010146
+    ],
+    "rmse": [
+     3.6820463323995405,
+     12.439446356239618
+    ],
+    "spearman_pred_obs": [
+     0.7450652297220647,
+     0.8949882505469573
+    ]
+   },
+   "mae difference, constant share minus non-moved keys": [
+    3.975993077849193,
+    7.144857478384375
+   ],
+   "mae difference, kind share minus non-moved keys": [
+    -1.2584950005206468,
+    4.206000444562859
+   ],
+   "mae difference, released only minus non-moved keys": [
+    -0.10098273196494806,
+    0.5534022246996114
+   ]
+  }
+ },
+ "within": {
+  "in sample": {
+   "n": 46,
+   "observed_inside_prediction_interval": 20,
+   "error_interval_contains_zero": 27
+  },
+  "non-moved keys": {
+   "n": 42,
+   "observed_inside_prediction_interval": 18,
+   "error_interval_contains_zero": 24
+  },
+  "released only": {
+   "n": 46,
+   "observed_inside_prediction_interval": 20,
+   "error_interval_contains_zero": 26
+  },
+  "both": {
+   "n": 42,
+   "observed_inside_prediction_interval": 17,
+   "error_interval_contains_zero": 23
+  }
+ }
+}

@@ -1,0 +1,35 @@
+# Python 3.12 or later is required. extraction_verdicts.py puts a backslash
+# inside an f-string expression, which Python 3.11 and earlier reject, and the
+# validator and a test import it; numpy 2.4 and scipy 1.16 need 3.11 or later.
+# The pins below are the CPython 3.12.11 environment in which the GPU and API
+# runs and the with-data analyses ran.
+#
+#   python3.12 -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements.txt
+#   python restore_build_inputs.py    # put the derived inputs back under build/
+#   python -m pytest tests
+#   python validate_artifact.py
+#
+# That is everything the analyses, the tests and the validator need; none of
+# them needs a GPU. Two optional sets:
+#   requirements-gpu.txt    regenerate model outputs (rollouts, probe outcomes,
+#                           membership scores) on a GPU
+#   requirements-fetch.txt  re-download the vendored benchmark files
+#
+# Some earlier CPU analyses were computed with the host's system CPython 3.10.12
+# instead, with its numpy 1.21.5, scipy 1.8.0 and matplotlib 3.5.1 (the pins this
+# file used to list). Rerun with the pins below, some of their outputs differ in
+# the last digits: results/no_data_baseline.json by at most 2e-14 relative,
+# because Python 3.12 sums floats with compensation. power_analysis.py now brackets
+# each root only as far as it lies (scipy 1.16's noncentral t is NaN far past it), and
+# results/power.json, rewritten under these pins, differs from the 3.10 run by at most
+# 1.5e-8 relative.
+numpy==2.4.6          # nearly every analysis
+scipy==1.16.2         # noncentral-t power, rank_dependent_fit.py, the membership AUC
+matplotlib==3.10.7    # make_figures.py
+jsonschema==4.26.0    # temporal-manifest validation in validate_artifact.py
+httpx==0.28.1         # imported at module level by bixbench_withdata.py and
+                      # bixbench_agent.py, which the with-data analyses, the tests
+                      # and the validator import. Re-deriving sends no request.
+pypdf==6.1.3          # page_budget.py reads the built PDF's page layout
+pytest==9.0.3         # the test suite

@@ -1,0 +1,252 @@
+{
+  "url": "https://zenodo.org/api/records/8036465",
+  "retrieved_at": "2026-09-16T15:28:01.562920+00:00",
+  "status": 200,
+  "body": {
+    "created": "2023-06-14T07:24:28.822889+00:00",
+    "modified": "2023-06-14T14:27:06.579738+00:00",
+    "id": 8036465,
+    "conceptrecid": "8036464",
+    "doi": "10.5061/dryad.9zw3r22jn",
+    "doi_url": "https://doi.org/10.5061/dryad.9zw3r22jn",
+    "metadata": {
+      "title": "Data for: An AAV-CRISPR/Cas9-strategy for gene editing across divergent rodent species: Targeting neural oxytocin receptors as a proof of concept",
+      "doi": "10.5061/dryad.9zw3r22jn",
+      "publication_date": "2023-06-14",
+      "description": "<p>A major issue in neuroscience is the poor translatability of research results from preclinical studies in animals to clinical outcomes. Comparative neuroscience can overcome this barrier by studying multiple species to differentiate between species-specific and general mechanisms of neural circuit functioning. Targeted manipulation of neural circuits often depends on genetic dissection, and use of this technique has been restricted to only a few model species, limiting its application in comparative research. However, ongoing advances in genomics make genetic dissection attainable in a growing number of species. To demonstrate the potential of comparative gene editing approaches, we developed a viral-mediated CRISPR/Cas9 strategy that is predicted to target the oxytocin receptor (<em>Oxtr</em>) gene\u00a0in &gt;80 rodent species. This strategy specifically reduced OXTR levels in all evaluated species (n=6), without causing gross neuronal toxicity. Thus, we show that CRISPR/Cas9-based tools can function in multiple species simultaneously. Thereby, we hope to encourage comparative gene editing and improve the translatability of neuroscientific research.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Boender, Arjen",
+          "affiliation": "Emory University",
+          "orcid": "0000-0002-6018-3588"
+        },
+        {
+          "name": "Young, Larry",
+          "affiliation": "Emory University"
+        }
+      ],
+      "keywords": [
+        "Raw data autorad",
+        "Raw data immunohistochemisty",
+        "BLAST output",
+        "R/R-studio code"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "10.5281/zenodo.7706422",
+          "relation": "isDerivedFrom",
+          "scheme": "doi"
+        }
+      ],
+      "resource_type": {
+        "title": "Dataset",
+        "type": "dataset"
+      },
+      "license": {
+        "id": "cc-zero"
+      },
+      "communities": [
+        {
+          "id": "dryad"
+        }
+      ],
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "8036464"
+            }
+          }
+        ]
+      },
+      "notes": "<p>Tables (.csv) can be opened with any standard software, such as excel.\u00a0Code is written for R/R-studo</p><p>Funding provided by: National Institute of Mental Health<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000025<br>Award Number: </p><p>Funding provided by: Brain and Behavior Research Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000874<br>Award Number: 29058</p><p>Funding provided by: National Science Foundation<br>Crossref Funder Registry ID: http://dx.doi.org/10.13039/100000001<br>Award Number: </p><p>Funding provided by: Fulbright Brazil*<br>Crossref Funder Registry ID: <br>Award Number: </p><p>Funding provided by: Klingenstein-Simons*<br>Crossref Funder Registry ID: <br>Award Number: </p>"
+    },
+    "title": "Data for: An AAV-CRISPR/Cas9-strategy for gene editing across divergent rodent species: Targeting neural oxytocin receptors as a proof of concept",
+    "links": {
+      "self": "https://zenodo.org/api/records/8036465",
+      "self_html": "https://zenodo.org/records/8036465",
+      "preview_html": "https://zenodo.org/records/8036465?preview=1",
+      "doi": "https://doi.org/10.5061/dryad.9zw3r22jn",
+      "self_doi": "https://doi.org/10.5061/dryad.9zw3r22jn",
+      "self_doi_html": "https://zenodo.org/doi/10.5061/dryad.9zw3r22jn",
+      "reserve_doi": "https://zenodo.org/api/records/8036465/draft/pids/doi",
+      "parent": "https://zenodo.org/api/records/8036464",
+      "parent_html": "https://zenodo.org/records/8036464",
+      "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8036465/manifest",
+      "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8036465/sequence/default",
+      "files": "https://zenodo.org/api/records/8036465/files",
+      "media_files": "https://zenodo.org/api/records/8036465/media-files",
+      "archive": "https://zenodo.org/api/records/8036465/files-archive",
+      "archive_media": "https://zenodo.org/api/records/8036465/media-files-archive",
+      "latest": "https://zenodo.org/api/records/8036465/versions/latest",
+      "latest_html": "https://zenodo.org/records/8036465/latest",
+      "versions": "https://zenodo.org/api/records/8036465/versions",
+      "draft": "https://zenodo.org/api/records/8036465/draft",
+      "access_links": "https://zenodo.org/api/records/8036465/access/links",
+      "access_grants": "https://zenodo.org/api/records/8036465/access/grants",
+      "access_users": "https://zenodo.org/api/records/8036465/access/users",
+      "access_request": "https://zenodo.org/api/records/8036465/access/request",
+      "access": "https://zenodo.org/api/records/8036465/access",
+      "communities": "https://zenodo.org/api/records/8036465/communities",
+      "communities-suggestions": "https://zenodo.org/api/records/8036465/communities-suggestions",
+      "request_deletion": "https://zenodo.org/api/records/8036465/request-deletion",
+      "file_modification": "https://zenodo.org/api/records/8036465/file-modification",
+      "quota_increase": "https://zenodo.org/api/records/8036465/quota-increase",
+      "requests": "https://zenodo.org/api/records/8036465/requests"
+    },
+    "updated": "2023-06-14T14:27:06.579738+00:00",
+    "recid": "8036465",
+    "revision": 2,
+    "files": [
+      {
+        "id": "a8116a63-09e0-4f0c-b3fd-f6b5e422f449",
+        "key": "sgRNA_OXTR.1.AGG.BLAST.mammal.csv",
+        "size": 754437,
+        "checksum": "md5:ed6de51c153d75207789d516388b63ac",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.1.AGG.BLAST.mammal.csv/content"
+        }
+      },
+      {
+        "id": "7e43aa67-1908-4987-88e4-56eb210021c2",
+        "key": "sgRNA_OXTR.2.CGG.BLAST.csv",
+        "size": 30334,
+        "checksum": "md5:b668aee92250197944ca49eba4e55048",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.2.CGG.BLAST.csv/content"
+        }
+      },
+      {
+        "id": "d6097fab-3d04-4aea-9e06-a65a5c5bf4e2",
+        "key": "sgRNA_OXTR.2.TGG.BLAST.mammal.csv",
+        "size": 812270,
+        "checksum": "md5:a0e974bc9cb8b79db22a84add22ef8ba",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.2.TGG.BLAST.mammal.csv/content"
+        }
+      },
+      {
+        "id": "4b070ccd-e755-4d1d-901e-8f205b027bb1",
+        "key": "sgRNA_OXTR.2.TGG.BLAST.csv",
+        "size": 27992,
+        "checksum": "md5:96b4dbee888d017a5370ebd090629473",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.2.TGG.BLAST.csv/content"
+        }
+      },
+      {
+        "id": "8ad5fa9b-4684-458d-a226-2557e09aea70",
+        "key": "rodent_oxtr_CDS_seq.fasta",
+        "size": 45037,
+        "checksum": "md5:d0747f4c10d2049ff2d8cd7fd3ad356c",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/rodent_oxtr_CDS_seq.fasta/content"
+        }
+      },
+      {
+        "id": "0ef1663c-d5f2-4dca-9ee5-f8d9e0d8ddf8",
+        "key": "rodent_oxtr_mRNA_seq1.fasta",
+        "size": 19840,
+        "checksum": "md5:44d83c12859f7db71749043386b232f4",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/rodent_oxtr_mRNA_seq1.fasta/content"
+        }
+      },
+      {
+        "id": "696b99d0-4e99-425a-b574-c9c416495082",
+        "key": "sgRNA_OXTR.1.AGG.BLAST.csv",
+        "size": 12091,
+        "checksum": "md5:3ffd83a793e79a18c7df2a445ece2465",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.1.AGG.BLAST.csv/content"
+        }
+      },
+      {
+        "id": "84f23238-f627-4dbc-bbd0-1da438fa1352",
+        "key": "sgRNA_OXTR.2.GGG.BLAST.mammal.csv",
+        "size": 796602,
+        "checksum": "md5:9d0cc2427086bf7081ec28b0c6370dd6",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.2.GGG.BLAST.mammal.csv/content"
+        }
+      },
+      {
+        "id": "56387666-998e-4986-847b-39eb9f07e0bc",
+        "key": "README.md",
+        "size": 3620,
+        "checksum": "md5:26983f873284bda58c9d894043ff5f3d",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/README.md/content"
+        }
+      },
+      {
+        "id": "34c08cda-31ac-412e-99be-c9b36131ff40",
+        "key": "NeuN_quantification.csv",
+        "size": 218,
+        "checksum": "md5:c4526d8ee750e963bb6537f7845a6b26",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/NeuN_quantification.csv/content"
+        }
+      },
+      {
+        "id": "204544f1-a2a9-41f9-b60c-4e8fe562f405",
+        "key": "Autoradiography_results_OXTR.csv",
+        "size": 7036,
+        "checksum": "md5:fef16a117b9f991fb8461fb77c499b3e",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/Autoradiography_results_OXTR.csv/content"
+        }
+      },
+      {
+        "id": "5d4ec5ab-f28b-4b7d-b403-45e71059586d",
+        "key": "Autoradiography_results_AVPR1A.csv",
+        "size": 1039,
+        "checksum": "md5:799d7dd79f2d0a8e71d6a15d716e78d6",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/Autoradiography_results_AVPR1A.csv/content"
+        }
+      },
+      {
+        "id": "53d47942-1bb2-46e1-8ae6-2fe2dd5a1e6d",
+        "key": "sgRNA_OXTR.2.GGG.BLAST.csv",
+        "size": 34188,
+        "checksum": "md5:9fc5bcadc8fac93407447933f168b318",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.2.GGG.BLAST.csv/content"
+        }
+      },
+      {
+        "id": "e7fcd99a-effb-4ae8-8b34-fdf43181ad67",
+        "key": "sgRNA_OXTR.2.CGG.BLAST.mammal.csv",
+        "size": 803520,
+        "checksum": "md5:bdf40116c9a6326b92024a3157a3534d",
+        "links": {
+          "self": "https://zenodo.org/api/records/8036465/files/sgRNA_OXTR.2.CGG.BLAST.mammal.csv/content"
+        }
+      }
+    ],
+    "swh": {},
+    "owners": [
+      {
+        "id": "90070"
+      }
+    ],
+    "status": "published",
+    "stats": {
+      "downloads": 402,
+      "unique_downloads": 346,
+      "views": 236,
+      "unique_views": 233,
+      "version_downloads": 402,
+      "version_unique_downloads": 346,
+      "version_unique_views": 232,
+      "version_views": 235
+    },
+    "state": "done",
+    "submitted": true
+  }
+}

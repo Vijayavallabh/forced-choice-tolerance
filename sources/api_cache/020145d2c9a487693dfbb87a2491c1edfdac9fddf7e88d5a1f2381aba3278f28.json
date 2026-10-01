@@ -1,0 +1,178 @@
+{
+  "url": "https://api.datacite.org/dois/10.5281/zenodo.8353706",
+  "retrieved_at": "2026-09-16T15:26:35.286934+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.5281/zenodo.8353706",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.5281/zenodo.8353706",
+        "prefix": "10.5281",
+        "suffix": "zenodo.8353706",
+        "identifiers": [],
+        "alternateIdentifiers": [],
+        "creators": [
+          {
+            "name": "Cherkasova, Viktoriia",
+            "givenName": "Viktoriia",
+            "familyName": "Cherkasova",
+            "affiliation": [
+              "University of Lethbridge"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Ilnytskyy, Yaroslav",
+            "givenName": "Yaroslav",
+            "familyName": "Ilnytskyy",
+            "affiliation": [
+              "University of Lethbridge"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Kovalchuk, Olga",
+            "givenName": "Olga",
+            "familyName": "Kovalchuk",
+            "affiliation": [
+              "University of Lethbridge"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Kovalchuk, Igor",
+            "givenName": "Igor",
+            "familyName": "Kovalchuk",
+            "affiliation": [
+              "University of Lethbridge"
+            ],
+            "nameIdentifiers": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "Transcriptome Analysis of Cisplatin, Cannabidiol, and Intermittent Serum Starvation Alone and in Various Combinations on Colorectal Cancer Cells"
+          }
+        ],
+        "publisher": "Zenodo",
+        "container": {},
+        "publicationYear": 2023,
+        "subjects": [
+          {
+            "subject": "cisplatin, cannabidiol, intermittent fasting, serum starvation, colorectal cancer"
+          }
+        ],
+        "contributors": [],
+        "dates": [
+          {
+            "date": "2023-09-17",
+            "dateType": "Issued"
+          }
+        ],
+        "language": "en",
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceTypeGeneral": "Dataset"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.8353705",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": null,
+        "rightsList": [
+          {
+            "rights": "Creative Commons Attribution 1.0 Generic",
+            "rightsUri": "https://creativecommons.org/licenses/by/1.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc-by-1.0",
+            "rightsIdentifierScheme": "SPDX"
+          },
+          {
+            "rights": "Open Access",
+            "rightsUri": "info:eu-repo/semantics/openAccess"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "* See README file for the description of data files available in this repository 1. Study Description: Platinum-derived chemotherapy medications are often combined with other conventional therapies for treating different tumours, including colorectal cancer. However, the development of drug resistance and multiple adverse effects remain common in clinical settings. Thus, there is a necessity to find novel treatments and drug combinations that could effectively target colorectal cancer cells and lower the probability of disease relapse. To find potential synergistic interaction, we designed multiple different combinations between cisplatin, cannabidiol, and intermittent serum starvation on colorectal cancer cell lines. Based on the cell viability assay, we found that combinations between cannabidiol and intermittent serum starvation, cisplatin, and intermittent serum starvation, as well as cisplatin, cannabidiol and intermittent serum starvation can work in a synergistic fashion on different colorectal cancer cell lines. Furthermore, we analyzed differentially expressed genes and affected pathways in colorectal cancer cell lines to understand further the potential molecular mechanisms behind the treatments and their interactions. We found that synergistic interaction between cannabidiol and intermittent serum starvation can be related to changes in the transcription of genes responsible for cell metabolism and cancer\u2019s stress pathways. Moreover, when we added cisplatin to the treatments, there was a strong enrichment of genes taking part in G2/M cell cycle arrest and apoptosis. 2. Bioinformatics workflow: Initial quality control was conducted using FastQC v0.11.9 https://www.bioinformatics.babraham.ac.uk/projects/fastqc/. Sequencing reads were trimmed of adapter sequences and low-quality bases using Trimmomatic. Trimmed sequence files were examined with FastQC to verify the trimming results. Trimmed sequencing reads were mapped to Human genome (GRCh37, Ensembl) downloaded from Illumina iGenome website (https://support.illumina.com/sequencing/sequencing_software/igenome.html). Mapping was done using splice aware aligner HISAT2 2.1.0. Alignment files in SAM format were converted to BAM, sorted and indexed with samtools v.1.3.1. Mapping quality and statistics were collected with QualiMap software package v.2.2.2 http://qualimap.conesalab.org/ The counts if reads mapping to features (genes) were counted using FeatureCounts v.2.0.1 software. Data exploration, visualization and statistical comparisons were conducted using R language version 4.2.2. Pair-wise comparisons between experimental groups were done with DESeq2 v.2.1.36 as described in the package manual. To decrease computational time, only the genes with at least 5 reads across 3 samples were kept in the analysis. In addition to hard threshold filtering mentioned above, DESeq2 implements independent filtering based on mean of normalized count as a filter statistic. We used hierarchical clustering (HC) and principal components analysis (PCA) to investigate the relationship between samples and detect potential outliers. Prior to HC and PCA analysis, DESeq2 normalized values underwent variance stabilizing transformation with using vst() function from DESeq2. HC was done using hclust() function implemented in R, with the clustering method set as \u201ccomplete\u201d for the matrices of sample-to-sample distances, and \u201cWard.D2\u201d in case of the sample and gene clustering based on top 500 most variable genes. The distance measure in HC analysis was set to \u201ceuclidean\u201d. Principal components analysis (PCA), applied to top 500 highly variable genes, was conducted using prcomp() function implemented in R with default options. Differentially expressed genes (DEGs) were detected with DESeq2 function results() with default options. DESeq2 uses Wald test to determine significantly changed genes between groups. The independent filtering option was set to TRUE with alpha threshold (adjusted p-value) kept at 0.1. Multiple comparison adjustment was done using Bejamini-Hochberg procedure.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjEvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC41MjgxL1pFTk9ETy44MzUzNzA2PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Q2hlcmthc292YSwgVmlrdG9yaWlhPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5WaWt0b3JpaWE8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Q2hlcmthc292YTwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uPlVuaXZlcnNpdHkgb2YgTGV0aGJyaWRnZTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPklsbnl0c2t5eSwgWWFyb3NsYXY8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPllhcm9zbGF2PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPklsbnl0c2t5eTwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uPlVuaXZlcnNpdHkgb2YgTGV0aGJyaWRnZTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPktvdmFsY2h1aywgT2xnYTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+T2xnYTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Lb3ZhbGNodWs8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbj5Vbml2ZXJzaXR5IG9mIExldGhicmlkZ2U8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5Lb3ZhbGNodWssIElnb3I8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPklnb3I8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+S292YWxjaHVrPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+VW5pdmVyc2l0eSBvZiBMZXRoYnJpZGdlPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+VHJhbnNjcmlwdG9tZSBBbmFseXNpcyBvZiBDaXNwbGF0aW4sIENhbm5hYmlkaW9sLCBhbmQgSW50ZXJtaXR0ZW50IFNlcnVtIFN0YXJ2YXRpb24gQWxvbmUgYW5kIGluIFZhcmlvdXMgQ29tYmluYXRpb25zIG9uIENvbG9yZWN0YWwgQ2FuY2VyIENlbGxzPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlplbm9kbzwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0PmNpc3BsYXRpbiwgY2FubmFiaWRpb2wsIGludGVybWl0dGVudCBmYXN0aW5nLCBzZXJ1bSBzdGFydmF0aW9uLCBjb2xvcmVjdGFsIGNhbmNlcjwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjMtMDktMTc8L2RhdGU+CiAgPC9kYXRlcz4KICA8bGFuZ3VhZ2U+ZW48L2xhbmd1YWdlPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCIvPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJ1cmwiPmh0dHBzOi8vemVub2RvLm9yZy9yZWNvcmQvODM1MzcwNjwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNWZXJzaW9uT2YiPjEwLjUyODEvemVub2RvLjgzNTM3MDU8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS8xLjAvbGVnYWxjb2RlIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDEuMCBHZW5lcmljPC9yaWdodHM+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9vcGVuQWNjZXNzIj5PcGVuIEFjY2VzczwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPiZsdDtwJmd0OyogU2VlIFJFQURNRSBmaWxlIGZvciB0aGUgZGVzY3JpcHRpb24gb2YgZGF0YSBmaWxlcyBhdmFpbGFibGUgaW4gdGhpcyByZXBvc2l0b3J5Jmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7MS4gU3R1ZHkgRGVzY3JpcHRpb246Jmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7UGxhdGludW0tZGVyaXZlZCBjaGVtb3RoZXJhcHkgbWVkaWNhdGlvbnMgYXJlIG9mdGVuIGNvbWJpbmVkIHdpdGggb3RoZXIgY29udmVudGlvbmFsIHRoZXJhcGllcyBmb3IgdHJlYXRpbmcgZGlmZmVyZW50IHR1bW91cnMsIGluY2x1ZGluZyBjb2xvcmVjdGFsIGNhbmNlci4gSG93ZXZlciwgdGhlIGRldmVsb3BtZW50IG9mIGRydWcgcmVzaXN0YW5jZSBhbmQgbXVsdGlwbGUgYWR2ZXJzZSBlZmZlY3RzIHJlbWFpbiBjb21tb24gaW4gY2xpbmljYWwgc2V0dGluZ3MuIFRodXMsIHRoZXJlIGlzIGEgbmVjZXNzaXR5IHRvIGZpbmQgbm92ZWwgdHJlYXRtZW50cyBhbmQgZHJ1ZyBjb21iaW5hdGlvbnMgdGhhdCBjb3VsZCBlZmZlY3RpdmVseSB0YXJnZXQgY29sb3JlY3RhbCBjYW5jZXIgY2VsbHMgYW5kIGxvd2VyIHRoZSBwcm9iYWJpbGl0eSBvZiBkaXNlYXNlIHJlbGFwc2UuIFRvIGZpbmQgcG90ZW50aWFsIHN5bmVyZ2lzdGljIGludGVyYWN0aW9uLCB3ZSBkZXNpZ25lZCBtdWx0aXBsZSBkaWZmZXJlbnQgY29tYmluYXRpb25zIGJldHdlZW4gY2lzcGxhdGluLCBjYW5uYWJpZGlvbCwgYW5kIGludGVybWl0dGVudCBzZXJ1bSBzdGFydmF0aW9uIG9uIGNvbG9yZWN0YWwgY2FuY2VyIGNlbGwgbGluZXMuIEJhc2VkIG9uIHRoZSBjZWxsIHZpYWJpbGl0eSBhc3NheSwgd2UgZm91bmQgdGhhdCBjb21iaW5hdGlvbnMgYmV0d2VlbiBjYW5uYWJpZGlvbCBhbmQgaW50ZXJtaXR0ZW50IHNlcnVtIHN0YXJ2YXRpb24sIGNpc3BsYXRpbiwgYW5kIGludGVybWl0dGVudCBzZXJ1bSBzdGFydmF0aW9uLCBhcyB3ZWxsIGFzIGNpc3BsYXRpbiwgY2FubmFiaWRpb2wgYW5kIGludGVybWl0dGVudCBzZXJ1bSBzdGFydmF0aW9uIGNhbiB3b3JrIGluIGEgc3luZXJnaXN0aWMgZmFzaGlvbiBvbiBkaWZmZXJlbnQgY29sb3JlY3RhbCBjYW5jZXIgY2VsbCBsaW5lcy4gRnVydGhlcm1vcmUsIHdlIGFuYWx5emVkIGRpZmZlcmVudGlhbGx5IGV4cHJlc3NlZCBnZW5lcyBhbmQgYWZmZWN0ZWQgcGF0aHdheXMgaW4gY29sb3JlY3RhbCBjYW5jZXIgY2VsbCBsaW5lcyB0byB1bmRlcnN0YW5kIGZ1cnRoZXIgdGhlIHBvdGVudGlhbCBtb2xlY3VsYXIgbWVjaGFuaXNtcyBiZWhpbmQgdGhlIHRyZWF0bWVudHMgYW5kIHRoZWlyIGludGVyYWN0aW9ucy4gV2UgZm91bmQgdGhhdCBzeW5lcmdpc3RpYyBpbnRlcmFjdGlvbiBiZXR3ZWVuIGNhbm5hYmlkaW9sIGFuZCBpbnRlcm1pdHRlbnQgc2VydW0gc3RhcnZhdGlvbiBjYW4gYmUgcmVsYXRlZCB0byBjaGFuZ2VzIGluIHRoZSB0cmFuc2NyaXB0aW9uIG9mIGdlbmVzIHJlc3BvbnNpYmxlIGZvciBjZWxsIG1ldGFib2xpc20gYW5kIGNhbmNlciZhbXA7cnNxdW87cyBzdHJlc3MgcGF0aHdheXMuIE1vcmVvdmVyLCB3aGVuIHdlIGFkZGVkIGNpc3BsYXRpbiB0byB0aGUgdHJlYXRtZW50cywgdGhlcmUgd2FzIGEgc3Ryb25nIGVucmljaG1lbnQgb2YgZ2VuZXMgdGFraW5nIHBhcnQgaW4gRzIvTSBjZWxsIGN5Y2xlIGFycmVzdCBhbmQgYXBvcHRvc2lzLiZsdDsvcCZndDsKCiZsdDtwJmd0OyZhbXA7bmJzcDsmbHQ7L3AmZ3Q7CgombHQ7cCZndDsyLiBCaW9pbmZvcm1hdGljcyB3b3JrZmxvdzombHQ7L3AmZ3Q7CgombHQ7cCZndDtJbml0aWFsIHF1YWxpdHkgY29udHJvbCB3YXMgY29uZHVjdGVkIHVzaW5nIEZhc3RRQyB2MC4xMS45IGh0dHBzOi8vd3d3LmJpb2luZm9ybWF0aWNzLmJhYnJhaGFtLmFjLnVrL3Byb2plY3RzL2Zhc3RxYy8uIFNlcXVlbmNpbmcgcmVhZHMgd2VyZSB0cmltbWVkIG9mIGFkYXB0ZXIgc2VxdWVuY2VzIGFuZCBsb3ctcXVhbGl0eSBiYXNlcyB1c2luZyBUcmltbW9tYXRpYy4gVHJpbW1lZCBzZXF1ZW5jZSBmaWxlcyB3ZXJlIGV4YW1pbmVkIHdpdGggRmFzdFFDIHRvIHZlcmlmeSB0aGUgdHJpbW1pbmcgcmVzdWx0cy4gVHJpbW1lZCBzZXF1ZW5jaW5nIHJlYWRzIHdlcmUgbWFwcGVkIHRvIEh1bWFuIGdlbm9tZSAoR1JDaDM3LCBFbnNlbWJsKSBkb3dubG9hZGVkIGZyb20gSWxsdW1pbmEgaUdlbm9tZSB3ZWJzaXRlICgmbHQ7YSBocmVmPSJodHRwczovL3N1cHBvcnQuaWxsdW1pbmEuY29tL3NlcXVlbmNpbmcvc2VxdWVuY2luZ19zb2Z0d2FyZS9pZ2Vub21lLmh0bWwiJmd0O2h0dHBzOi8vc3VwcG9ydC5pbGx1bWluYS5jb20vc2VxdWVuY2luZy9zZXF1ZW5jaW5nX3NvZnR3YXJlL2lnZW5vbWUuaHRtbCZsdDsvYSZndDspLiBNYXBwaW5nIHdhcyBkb25lIHVzaW5nIHNwbGljZSBhd2FyZSBhbGlnbmVyIEhJU0FUMiAyLjEuMC4gQWxpZ25tZW50IGZpbGVzIGluIFNBTSBmb3JtYXQgd2VyZSBjb252ZXJ0ZWQgdG8gQkFNLCBzb3J0ZWQgYW5kIGluZGV4ZWQgd2l0aCBzYW10b29scyB2LjEuMy4xLiBNYXBwaW5nIHF1YWxpdHkgYW5kIHN0YXRpc3RpY3Mgd2VyZSBjb2xsZWN0ZWQgd2l0aCBRdWFsaU1hcCBzb2Z0d2FyZSBwYWNrYWdlIHYuMi4yLjIgJmx0O2EgaHJlZj0iaHR0cDovL3F1YWxpbWFwLmNvbmVzYWxhYi5vcmcvIiZndDtodHRwOi8vcXVhbGltYXAuY29uZXNhbGFiLm9yZy8mbHQ7L2EmZ3Q7JmFtcDtuYnNwO1RoZSBjb3VudHMgaWYgcmVhZHMgbWFwcGluZyB0byBmZWF0dXJlcyAoZ2VuZXMpIHdlcmUgY291bnRlZCB1c2luZyBGZWF0dXJlQ291bnRzIHYuMi4wLjEgc29mdHdhcmUuJmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7RGF0YSBleHBsb3JhdGlvbiwgdmlzdWFsaXphdGlvbiBhbmQgc3RhdGlzdGljYWwgY29tcGFyaXNvbnMgd2VyZSBjb25kdWN0ZWQgdXNpbmcgUiBsYW5ndWFnZSB2ZXJzaW9uIDQuMi4yLiBQYWlyLXdpc2UgY29tcGFyaXNvbnMgYmV0d2VlbiBleHBlcmltZW50YWwgZ3JvdXBzIHdlcmUgZG9uZSB3aXRoIERFU2VxMiB2LjIuMS4zNiZhbXA7bmJzcDthcyBkZXNjcmliZWQgaW4gdGhlIHBhY2thZ2UgbWFudWFsLiBUbyBkZWNyZWFzZSBjb21wdXRhdGlvbmFsIHRpbWUsIG9ubHkgdGhlIGdlbmVzIHdpdGggYXQgbGVhc3QgNSByZWFkcyBhY3Jvc3MgMyBzYW1wbGVzIHdlcmUga2VwdCBpbiB0aGUgYW5hbHlzaXMuIEluIGFkZGl0aW9uIHRvIGhhcmQgdGhyZXNob2xkIGZpbHRlcmluZyBtZW50aW9uZWQgYWJvdmUsIERFU2VxMiBpbXBsZW1lbnRzIGluZGVwZW5kZW50IGZpbHRlcmluZyBiYXNlZCBvbiBtZWFuIG9mIG5vcm1hbGl6ZWQgY291bnQgYXMgYSBmaWx0ZXIgc3RhdGlzdGljLiZsdDsvcCZndDsKCiZsdDtwJmd0O1dlIHVzZWQgaGllcmFyY2hpY2FsIGNsdXN0ZXJpbmcgKEhDKSBhbmQgcHJpbmNpcGFsIGNvbXBvbmVudHMgYW5hbHlzaXMgKFBDQSkgdG8gaW52ZXN0aWdhdGUgdGhlIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIHNhbXBsZXMgYW5kIGRldGVjdCBwb3RlbnRpYWwgb3V0bGllcnMuIFByaW9yIHRvIEhDIGFuZCBQQ0EgYW5hbHlzaXMsIERFU2VxMiBub3JtYWxpemVkIHZhbHVlcyB1bmRlcndlbnQgdmFyaWFuY2Ugc3RhYmlsaXppbmcgdHJhbnNmb3JtYXRpb24gd2l0aCB1c2luZyB2c3QoKSBmdW5jdGlvbiBmcm9tIERFU2VxMi4gSEMgd2FzIGRvbmUgdXNpbmcgaGNsdXN0KCkgZnVuY3Rpb24gaW1wbGVtZW50ZWQgaW4gUiwgd2l0aCB0aGUgY2x1c3RlcmluZyBtZXRob2Qgc2V0IGFzICZhbXA7bGRxdW87Y29tcGxldGUmYW1wO3JkcXVvOyBmb3IgdGhlIG1hdHJpY2VzIG9mIHNhbXBsZS10by1zYW1wbGUgZGlzdGFuY2VzLCBhbmQgJmFtcDtsZHF1bztXYXJkLkQyJmFtcDtyZHF1bzsgaW4gY2FzZSBvZiB0aGUgc2FtcGxlIGFuZCBnZW5lIGNsdXN0ZXJpbmcgYmFzZWQgb24gdG9wIDUwMCBtb3N0IHZhcmlhYmxlIGdlbmVzLiBUaGUgZGlzdGFuY2UgbWVhc3VyZSBpbiBIQyBhbmFseXNpcyB3YXMgc2V0IHRvICZhbXA7bGRxdW87ZXVjbGlkZWFuJmFtcDtyZHF1bzsuIFByaW5jaXBhbCBjb21wb25lbnRzIGFuYWx5c2lzIChQQ0EpLCBhcHBsaWVkIHRvIHRvcCA1MDAgaGlnaGx5IHZhcmlhYmxlIGdlbmVzLCB3YXMgY29uZHVjdGVkIHVzaW5nIHByY29tcCgpIGZ1bmN0aW9uIGltcGxlbWVudGVkIGluIFIgd2l0aCBkZWZhdWx0IG9wdGlvbnMuJmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7RGlmZmVyZW50aWFsbHkgZXhwcmVzc2VkIGdlbmVzIChERUdzKSB3ZXJlIGRldGVjdGVkIHdpdGggREVTZXEyIGZ1bmN0aW9uIHJlc3VsdHMoKSB3aXRoIGRlZmF1bHQgb3B0aW9ucy4gREVTZXEyIHVzZXMgV2FsZCB0ZXN0IHRvIGRldGVybWluZSBzaWduaWZpY2FudGx5IGNoYW5nZWQgZ2VuZXMgYmV0d2VlbiBncm91cHMuIFRoZSBpbmRlcGVuZGVudCBmaWx0ZXJpbmcgb3B0aW9uIHdhcyBzZXQgdG8gVFJVRSB3aXRoIGFscGhhIHRocmVzaG9sZCAoYWRqdXN0ZWQgcC12YWx1ZSkga2VwdCBhdCAwLjEuIE11bHRpcGxlIGNvbXBhcmlzb24gYWRqdXN0bWVudCB3YXMgZG9uZSB1c2luZyBCZWphbWluaS1Ib2NoYmVyZyBwcm9jZWR1cmUuJmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7JmFtcDtuYnNwOyZsdDsvcCZndDsKCiZsdDtwJmd0OyZhbXA7bmJzcDsmbHQ7L3AmZ3Q7CgombHQ7cCZndDsmYW1wO25ic3A7Jmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7JmFtcDtuYnNwOyZsdDsvcCZndDsKCiZsdDtwJmd0OyZhbXA7bmJzcDsmbHQ7L3AmZ3Q7PC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+        "url": "https://zenodo.org/record/8353706",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "mds",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "referenceCount": 0,
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2023-09-17T22:49:19.000Z",
+        "registered": "2023-09-17T22:49:20.000Z",
+        "published": "2023",
+        "updated": "2023-09-17T22:49:20.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "cern.zenodo",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "cern",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5281/zenodo.8353706",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        }
+      }
+    }
+  }
+}

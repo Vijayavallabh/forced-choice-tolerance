@@ -1,0 +1,205 @@
+{"ideal": "Axon guidance", "distractors": ["Left-skewed with a long tail", "0.55", "(10,30)"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "30000", "distractors": ["2.91", "11563", "0.075"], "question": "", "cluster": "33b801bb-9b47-4a0a-9314-05325c82fde7"}
+{"ideal": "3.1415e-9", "distractors": ["1166", "(0.015,0.025)", "(10,15)"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "0.95", "distractors": ["5", "3516.0", "2.15E-06"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "(1.50,1.54)", "distractors": ["(0.4,0.5)", "(58,62)", "0.1205"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "2847", "distractors": ["(50000,60000)", "177", "4.86"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "39", "distractors": ["8.9 x 10^-23", "-33.1", "1.847038E-05"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "Partial overlap between good and bad responders only", "distractors": ["5192", "45%", "137"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "348695", "distractors": ["0.0", "7.04E-26", "23.3"], "question": "", "cluster": "fbe0e950-76f2-4eb7-a216-a2d377970922"}
+{"ideal": "Equal numbers across all tissues", "distractors": ["-26.9", "(0.052,0.054)", "(157500,158000)"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "13809", "distractors": ["3.41", "86%", "Uniform"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "6.02", "distractors": ["Chemokine signaling pathway", "(0.5,1)", "The retail meat strain accumulates mutations at a higher rate than the MDR strain."], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "1.2345", "distractors": ["0.31", "(5.23E-07,5.43E-07)", "(70,90)"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "-33.1", "distractors": ["0.9876", "(6.0e-5, 6.2e-5)", "cGMP effects"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "0.09", "distractors": ["(0.62,0.63)", "-31.2", "Regulatory T cells (Tregs)"], "question": "", "cluster": "cd811ead-7887-4369-b175-05aff4223765"}
+{"ideal": "512", "distractors": ["0.32", "(0.053,0.073) ", "(0.444,0.446)"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "45%", "distractors": ["(-1.5, -1.4)", "4", "0.34"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "3", "distractors": ["3.5%", "The MDR strain accumulates mutations at a rate of 101,817 SNPs which is higher than the retail meat strain (94,440 SNPs).", "(0.60, 0.79)"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "9/22", "distractors": ["chronic round 3", "3.39E-12", "79%"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "190", "distractors": ["0.95", "Natural Killer cells", "9.92E-35"], "question": "", "cluster": "d38392ec-84b8-485d-ab02-b8788e6f1f43"}
+{"ideal": "(91,92)", "distractors": ["36", "(0.32,0.35)", "1.08E-04"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "(0.025,0.035)", "distractors": ["(40,60)", "397", "(50,70)"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "415", "distractors": ["1.2345", "3.30", "(0.50,0.56)"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "Dentate gyrus vs Baseline blood", "distractors": ["1.07E-16", "4.25E-04", "(0.1362,0.1364)"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "0.42", "distractors": ["Left-skewed with a long tail", "(2.1e-7,2.3e-7)", "Final blood"], "question": "", "cluster": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c"}
+{"ideal": "1.07E-16", "distractors": ["(0.60, 0.79)", "(0.88,1.0)", "29.8%"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "156", "distractors": ["1.24", "25", "(0.6,1)"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "511", "distractors": ["(0.60, 0.79)", "-2.85", "7823.0"], "question": "", "cluster": "7718a922-ce2c-4e59-900b-84fe06050ce6"}
+{"ideal": "0.54", "distractors": ["(137000,137500)", "32000", "0.226-fold decrease in tumor"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "16", "distractors": ["(5.1,5.3)", "(0.001,0.09)", "3"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "0.05", "distractors": ["1.9E-05", "4", "Metabolic pathway regulation"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "(0.3,0.5)", "distractors": ["4.26E-06", "1.2345", "(0.001,0.01)"], "question": "", "cluster": "bda54b38-9b49-4009-aad6-d5f52675438a"}
+{"ideal": "potassium ion transmembrane transport", "distractors": ["DNMT3A", "1.67E-19", "(0.215,0.217)"], "question": "", "cluster": "1cf79c8c-fb8c-453c-8788-c8958ab6f152"}
+{"ideal": "TP53-mediated cell cycle regulation", "distractors": ["(0.50,0.56)", "No significant change in severity odds", "168"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "(0.50,0.59)", "distractors": ["(0.6 , 0.7)", "(0.0024,0.0026)", "6948.0"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "(0.60, 0.79)", "distractors": ["Complete overlap between good responders and controls only", "0.73", "-5.45"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "10.3421", "distractors": ["105432", "1:3", "(0.6,1)"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "-2.85", "distractors": ["0.21", "Oxidative phosphorylation", "(0.95,1.05)"], "question": "", "cluster": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"}
+{"ideal": "Dentate gyrus (brain)", "distractors": ["22/9", "3.2", "Canonical glycolysis"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "(0.015,0.025)", "distractors": ["(0.80,0.81)", "5623.0", "No significant effect on severity (OR\u22481.02)"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "6.46E-05", "distractors": ["(0.2,0.25)", "569", "0.91"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "No significant interaction effect (OR\u22481.0)", "distractors": ["1.2%", "Complete overlap between all groups", "Cytokine-cytokine receptor interaction"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "(70,80)", "distractors": ["4.80", "chronic round 3", "(7000,10000)"], "question": "", "cluster": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"}
+{"ideal": "4/17", "distractors": ["Highly left-skewed", "Biosynthesis of secondary metabolites, nitrogen cycle", "(0.35,0.36)"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"}
+{"ideal": "1.9E-05", "distractors": ["0.1345", "5:1", "(0.78,0.79)"], "question": "", "cluster": "30b33e47-92d8-4372-a9f6-da32896493d0"}
+{"ideal": "(0.081,0.082)", "distractors": ["-1.95", "0.95", "CD14 Monocytes"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "48", "distractors": ["(0.3,0.5)", "3.2", "Plasmacytoid dendritic cells"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "145", "distractors": ["15.34", "Equal numbers across all tissues", "12.1283"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "0.075", "distractors": ["0.1205", "(0.081,0.082)", "1.24"], "question": "", "cluster": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799"}
+{"ideal": "-0.45", "distractors": ["4.81-fold increase in tumor", "(0.955,0.957)", "5"], "question": "", "cluster": "e3bde22d-915c-409b-8646-039e0215b171"}
+{"ideal": "(0.366,0.368)", "distractors": ["Chromosome 1", "0%", "29"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "0.34", "distractors": ["(433.1,435.1)", "2.91", "1.2345"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "12.4%", "distractors": ["147", "11.0198", "352495"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "3/9", "distractors": ["(24,26)", "101", "Strongly antagonistic effect decreasing severity"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "1.05", "distractors": ["147", "Ribosome, riboflavin metabolism", "5%"], "question": "", "cluster": "34a4ea96-c800-4c11-959e-57cdc4932c52"}
+{"ideal": "9.45", "distractors": ["0.89", "0:0", "0.0501"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "7.6968e-54", "distractors": ["5.107 x 10^-47", "175", "-1.95"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "3.1415e-9", "distractors": ["78%", "0.75", "1.08E-04"], "question": "", "cluster": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"}
+{"ideal": "-38.789", "distractors": ["(0.2, 0.3)", "3/9", "(0.053,0.073) "], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39"}
+{"ideal": "3173", "distractors": ["Aerobic respiration and respiratory electron transport", "11245", "22/64"], "question": "", "cluster": "964b67db-88d8-4286-9995-10ccc6ba4c39"}
+{"ideal": "3245.0", "distractors": ["(2000,4000)", "177", "(50,51)"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "(14.7,16.7)", "distractors": ["10:1", "(70,75)", "(0.80,0.89)"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "674", "distractors": ["0.3", "6.1", "9.8765e-23"], "question": "", "cluster": "0923d260-fe1b-4fb4-4398-79edf546e584"}
+{"ideal": "Cellular response to decreased oxygen levels", "distractors": ["2%", "14-16% decrease", "82000"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "(1.20, 1.30)", "distractors": ["0.0341", "2.8", "4.8%"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "6748.0", "distractors": ["0.54", "11245", "352495"], "question": "", "cluster": "0f14ffa7-f02a-4d20-8142-dfc404195e56"}
+{"ideal": "(20000,25000)", "distractors": ["(40-50)", "25", "3.46"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "TP53-mediated cell cycle regulation", "distractors": ["(0.78,0.79)", "(0.047,0.049)", "Canonical glycolysis"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "(1.62,1.65)", "distractors": ["4", "(5.23E-08,5.43E-08)", "(0.955,0.957)"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "4", "distractors": ["(36,37)", "(0.40, 0.59)", "(0.2624,0.2626)"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "8.93E-10", "distractors": ["15.34", "(0.20,0.39)", "Chromosome W"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "3.23E-08", "distractors": ["(0.45,0.55)", "0.0823", "(-0.45, -0.35)"], "question": "", "cluster": "c66d3ed9-0a95-46be-a237-ed68498ea7f6"}
+{"ideal": "3245.0", "distractors": ["(0.9e-7,1.1e-7)", "(1.03E-08,1.23E-08)", "(103.1,105.1)"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "(1.310,1.312)", "distractors": ["(0.667,0.669)", "82000", "-4.01"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "(0.38,0.40)", "distractors": ["(44,46)", "(0.47,0.67)", "(70,75)"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "1.24", "distractors": ["(106.6,108.6)", "7.29E+07", "1.5"], "question": "", "cluster": "b8c485ff-d146-4162-9403-9593c8847cfe"}
+{"ideal": "-15.6789", "distractors": ["1003258", "(7000,10000)", "(10,15)"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "Normal", "distractors": ["1054", "p53-Dependent G1 DNA Damage Response", "(50000,60000)"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "344895", "distractors": ["(0.66,0.70)", "352495", "0.99"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "4639.0", "distractors": ["(114500,115000)", "chronic round 1", "0.27"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "(0.70,0.79)", "distractors": ["6.5E-01", "(700,800)", "(433.1,435.1)"], "question": "", "cluster": "94bcdbc9-c729-4661-9bc1-0057bbea39c4"}
+{"ideal": "8.2%", "distractors": ["(0.07,0.08)", "(91,92)", "Minimally left-skewed"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "512", "distractors": ["3573", "(433.1,435.1)", "2:3"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "1761", "distractors": ["3516.0", "48", "(0.2,0.25)"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "0.32", "distractors": ["12890", "(900,1000)", "562"], "question": "", "cluster": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"}
+{"ideal": "36.3", "distractors": ["0.35", "6948.0", "(1.62,1.65)"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "0.0884", "distractors": ["0.42", "0.21", "2.91"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "0.21", "distractors": ["8932.0", "(1.47,1.67)", "(0.14,0.16)"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "(0.773,0.775)", "distractors": ["4521.0", "(5.23E-07,5.43E-07)", "3556.0"], "question": "", "cluster": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"}
+{"ideal": "15.7%", "distractors": ["89", "32.7%", "13809"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "5", "distractors": ["(0.025,0.035)", "(-0.25,0.25)", "(0.011,0.012)"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "(0.72,0.73)", "distractors": ["Negative regulation of epithelial cell proliferation", "1.23", "Dentate gyrus (brain)"], "question": "", "cluster": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5"}
+{"ideal": "92000", "distractors": ["3173", "(0.123,0.125)", "2118"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "0.82", "distractors": ["(0.05,0.07)", "0.34", "Muscle contraction"], "question": "", "cluster": "a5fba1a0-ad42-41da-a299-201655a5ffe8"}
+{"ideal": "3.38", "distractors": ["51-100", "11.6", "-14.7"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "acute T cells", "distractors": ["3.5", "(50,60)", "(111.2,113.2)"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "197", "distractors": ["(-0.25,0.25)", "Highly left-skewed", "Downregulation"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "1.33", "distractors": ["(0.95,1.05)", "(1.5,2)", "Sulfur metabolism, quorum sensing"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "-14.7", "distractors": ["DNMT3A", "0.0478", "(0.9e-7,1.1e-7)"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "Immune system activation", "distractors": ["2.178", "(0.10,0.19)", "0.33"], "question": "", "cluster": "17baa727-5eb7-4544-a466-3148a48b3cde"}
+{"ideal": "10%", "distractors": ["CD14 Monocytes", "(0.02,0.03)", "(114500,115000)"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "0.075", "distractors": ["0.1", "0:0", "-2.85"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "(1.065,1.067)", "distractors": ["1247.5", "(184000,185000)", "10.6%"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "11563", "distractors": ["(0.031,0.032)", "3.82", "0.42"], "question": "", "cluster": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73"}
+{"ideal": "450", "distractors": ["-25.0", "(184000,185000)", "674 samples"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "(0.3,0.5)", "distractors": ["No significant change in expression", "(0.10, 0.20)", "8.93E-10"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "(7000,10000)", "distractors": ["89", "3.5", "(433.1,435.1)"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "0.09", "distractors": ["33", "1:1", "(7000,10000)"], "question": "", "cluster": "48181cce-3928-4491-94b4-c23504a6aaa1"}
+{"ideal": "383", "distractors": ["0.42", "2.27-fold increase in tumor", "Axon guidance"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "(0.6 , 0.7)", "distractors": ["1166", "Metabolic pathway regulation", "-4.96"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "0.73", "distractors": ["(0.10, 0.20)", "(0.804,0.806)", "(1.00,1.01)"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "(25,35)", "distractors": ["15.6%", "Two-component system, ribosome", "348695"], "question": "", "cluster": "40cbef03-b5c3-4448-b00f-0ba2965dea9b"}
+{"ideal": "1.2345e-12", "distractors": ["33", "0.34", "0%"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "3.0", "distractors": ["1.2345e-12", "(24,26)", "(25,35)"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "(0.10,0.19)", "distractors": ["3/9", "(44,46)", "0.34"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "3661", "distractors": ["0.0", "1.5", "0.08"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "1003258", "distractors": ["(0.051,0.052)", "0.56", "(0.43,0.45)"], "question": "", "cluster": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0"}
+{"ideal": "267", "distractors": ["955", "(0.06,0.08)", "14-16% decrease"], "question": "", "cluster": "28a5984e-9061-4d6f-99a1-40f8753bc9f4"}
+{"ideal": "(100,200)", "distractors": ["3.30", "0", "(0.43,0.45)"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "0.8", "distractors": ["57%", "3.463", "mRNA processing"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "(10000,20000)", "distractors": ["(113000,114000)", "0.23", "1.524"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "Downregulation", "distractors": ["0", "2.34", "350385456"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "0.26", "distractors": ["-0.62", "19", "5623.0"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "9/22", "distractors": ["6", "4639.0", "29"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "145", "distractors": ["4.25E-04", "2x larger in fungi", "(561.2,563.2)"], "question": "", "cluster": "ec9eb551-feee-48f6-8494-fd85e1521881"}
+{"ideal": "12890", "distractors": ["(0.4,0.5)", "1.07E-16", "(-0.154,-0.174) "], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "8.44E-07", "distractors": ["0.0341", "3556.0", "0.105"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "512", "distractors": ["15%", "(40000,50000)", "2.27-fold increase in tumor"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "1.847038E-05", "distractors": ["potassium ion transmembrane transport", "39", "0.98"], "question": "", "cluster": "8b462015-86ab-434f-29e1-04dda1588031"}
+{"ideal": "458", "distractors": ["Potassium ion transmembrane transport", "(91,92)", "1.2345"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"}
+{"ideal": "chronic round 2", "distractors": ["(25,30)", "Canonical glycolysis", "Dentate gyrus vs Baseline blood"], "question": "", "cluster": "27821d45-94e6-4f4e-a914-e66ffaefdd3f"}
+{"ideal": "-1.95", "distractors": ["potassium ion transmembrane transport", "(0.60, 0.79)", "0.82"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "2.892", "distractors": ["Cytokine-cytokine receptor interaction", "(100,300)", "147"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "(1.24,1.28)", "distractors": ["(0.023,0.025)", "14.2156", "(230,260)"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "Metabolic pathway regulation", "distractors": ["12.1283", "(100,200)", "17.0"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "NOTCH1", "distractors": ["(40,60)", "24", "(44,46)"], "question": "", "cluster": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821"}
+{"ideal": "0.015", "distractors": ["7.820659E-05", "0.32", "2.892"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "16 samples", "distractors": ["Negative regulation of epithelial cell proliferation", "341095", "cGMP effects"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "(0.9e-6,1.1e-6)", "distractors": ["14-16% decrease", "(0.72,0.73)", "(0.58,0.59)"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "CDKN1A", "distractors": ["1:3", "3.5", "(0.366,0.368)"], "question": "", "cluster": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9"}
+{"ideal": "14-16% decrease", "distractors": ["190", "Natural Killer cells", "(0.9e-6,1.1e-6)"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "(433.1,435.1)", "distractors": ["0.23", "3.1415e-9", "57%"], "question": "", "cluster": "d37acffb-d802-4ce0-8caa-66f50667367a"}
+{"ideal": "(0.6 , 0.7)", "distractors": ["0.38", "(20,25)", "3.30"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"}
+{"ideal": "1.2345", "distractors": ["p = 0.001", "2.87", "464"], "question": "", "cluster": "4a336d0c-3d6b-440a-bfb0-437b26a00af3"}
+{"ideal": "680", "distractors": ["-25.0", "(400,500)", "447"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "3573", "distractors": ["ABC transporter disorders", "2x larger in fungi", "Highly left-skewed"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "Highly left-skewed", "distractors": ["0.22", "(0.025,0.035)", "(0.78,0.79)"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "Strongly synergistic effect increasing severity", "distractors": ["24", "(45,50)", "(0.722,0.724)"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "(20,25)", "distractors": ["(5.1,5.3)", "4.56E-04", "(0.950,0.952)"], "question": "", "cluster": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760"}
+{"ideal": "(2.1e-7,2.3e-7)", "distractors": ["Fatty acid metabolism", "0.0098", "(0.052,0.054)"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "Oxidative phosphorylation", "distractors": ["(0.10, 0.20)", "0.1126", "0.397"], "question": "", "cluster": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d"}
+{"ideal": "15.6%", "distractors": ["-25.0", "-2.27", "0.33"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "5", "distractors": ["674 samples", "(14,16)", "(1.310,1.312)"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "0.25", "distractors": ["(0.9e-7,1.1e-7)", "16", "0.226-fold decrease in tumor"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "(0.03,0.04)", "distractors": ["10.6%", "Strongly antagonistic effect decreasing severity", "Dendrite self-avoidance"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "5%", "distractors": ["(100,300)", "(7000,10000)", "3x larger in fungi"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "0.98", "distractors": ["1018517", "0.57", "(88,89)"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "8.9 x 10^-23", "distractors": ["-5.45", "Cell adhesion and matrix organization", "8.1%"], "question": "", "cluster": "93f63fb8-b56c-4ad1-8d3b-d651e2107423"}
+{"ideal": "3.23E-08", "distractors": ["1.28", "-4.10", "0.28"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "0.05", "distractors": ["2.15E-06", "101817", "Plasmacytoid dendritic cells"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "2.63", "distractors": ["3.01", "5.5", "2118"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "8.44E-07", "distractors": ["(55,57)", "12", "(0.60, 0.79)"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "3.01", "distractors": ["337 samples", "415", "16032"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "(10,15)", "distractors": ["(0.1363,0.1365)", "(0,0.09)", "0.73"], "question": "", "cluster": "4dceea58-7d66-4576-bfc6-88c026d5b7a9"}
+{"ideal": "2.3456", "distractors": ["(1.5,2)", "(0.366,0.368)", "4.56E-04"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "99%", "distractors": ["0.73", "11.6", "0.031"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "1.28", "distractors": ["1.2345e-12", "3.83", "(36,37)"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "(20,25)", "distractors": ["6.5E-01", "(0.43,0.45)", "(1.03E-07,1.23E-07)"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "(40000,50000)", "distractors": ["2", "0.0884", "352495"], "question": "", "cluster": "308d53bf-1513-4a09-913b-3a1112f94e7b"}
+{"ideal": "4639.0", "distractors": ["32.7%", "3573", "All genes become non-significant"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "(0.20,0.39)", "distractors": ["4521.0", "98234", "(0.4,0.5)"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "(119.7,121.7)", "distractors": ["(0.123,0.125)", "(0.10,0.19)", "0.27"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "(1.50,1.54)", "distractors": ["(0.73,0.75)", "Variable effect depending on vaccination status", "CUX1"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "3.1415e-9", "distractors": ["512", "2.15E-06", "3.42"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "0.0234", "distractors": ["(0.2,0.3)", "2.27-fold increase in tumor", "(20,25)"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "(50,60)", "distractors": ["-26.9", "(111.80,111.82)", "-12.3"], "question": "", "cluster": "9e52daf6-ca58-43e8-e732-fbac3459d295"}
+{"ideal": "6.5E-01", "distractors": ["CD19", "Negative regulation of epithelial cell proliferation", "12890"], "question": "", "cluster": "451a5322-db12-4026-8d8d-24647a85c4b1"}
+{"ideal": "Variable effect depending on vaccination status", "distractors": ["14.2156", "chronic round 2", "p = 0.001"], "question": "", "cluster": "302f0f4f-a9d7-460d-9488-d7cc7832bdf9"}
+{"ideal": "Aerobic respiration and respiratory electron transport", "distractors": ["(-1.5, -1.4)", "1.24", "0.8"], "question": "", "cluster": "ff43cd5b-6f9e-410b-8d53-a5bb11b5b531"}
+{"ideal": "75%", "distractors": ["No change in the number of significant genes", "1.5", "Plasmacytoid dendritic cells"], "question": "", "cluster": "cdb0c58b-c9e1-47a7-9ad1-6abc48335c3f"}
+{"ideal": "(0.32,0.35)", "distractors": ["CDKN1A", "-2.85", "94%"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "341095", "distractors": ["3.1415e-9", "6932.0", "0.0234"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "(91,92)", "distractors": ["1.2345e-12", "42%", "11"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "(20,25)", "distractors": ["4639.0", "Starch and sucrose metabolism, two-component system", "RNASEK"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "(2000,4000)", "distractors": ["(5.23E-08,5.43E-08)", "(900.5,902.5)", "0.42"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "0.38", "distractors": ["348695", "6932.0", "223"], "question": "", "cluster": "f4dcda89-678d-403d-b155-1483d0071765"}
+{"ideal": "12", "distractors": ["2.88", "4.81-fold increase in tumor", "(0.90,0.99)"], "question": "", "cluster": "1aea473d-db97-4c12-9a1e-6c850ddc9110"}
+{"ideal": "(-1.5, -1.4)", "distractors": ["0.3", "166", "1.65"], "question": "", "cluster": "dcee15c0-5840-5f48-884f-6ca747506277"}
+{"ideal": "The MDR strain accumulates mutation at a lower rate than the retail meat strain", "distractors": ["(0.011,0.012)", "(0.42,0.43)", "0.0612"], "question": "", "cluster": "37829656-f147-5fd2-8f10-40fa15cfdf03"}
+{"ideal": "7", "distractors": ["(70,90)", "147", "348695"], "question": "", "cluster": "53a80e13-d0cc-5ece-a246-9832910842f5"}
+{"ideal": "No significant change in expression", "distractors": ["0.99", "1.85", "1.2345e-12"], "question": "", "cluster": "fb42b6d8-8a62-538b-a647-d4b9b6f33abf"}
+{"ideal": "(50,60)", "distractors": ["1.2%", "Glycolytic process", "(0.45,0.55)"], "question": "", "cluster": "5ddf0a38-bc41-5ebb-93af-88c62ca29be7"}
+{"ideal": "4.15", "distractors": ["3", "Baseline blood", "Cytokine-cytokine receptor interaction"], "question": "", "cluster": "2e6ab559-e6ef-5d65-8949-f9c23c8bc561"}
+{"ideal": "(-0.25,0.25)", "distractors": ["18", "(42,44)", "397"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "Upregulation", "distractors": ["CD8", "1.58", "2757"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "512", "distractors": ["24,527", "2.68", "1766"], "question": "", "cluster": "a02b761a-02b6-46b5-9d5e-2964d5a74960"}
+{"ideal": "(114500,115000)", "distractors": ["472", "(120,150)", "0.09"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "-22.1234", "distractors": ["2757", "(50,70)", "(0.081,0.082)"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "0.34", "distractors": ["No significant change in severity odds", "39", "3.463"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "(40000,50000)", "distractors": ["(900.5,902.5)", "19", "(0.2,0.25)"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "2973", "distractors": ["(0.76,0.78)", "(0.031,0.032)", "0.1562"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "2584.0", "distractors": ["3.23E-08", "167 samples", "(0.90,0.99)"], "question": "", "cluster": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"}
+{"ideal": "Complete overlap between all groups", "distractors": ["(-0.6132, -0.6128)", "5.2", "(0.035,0.045)"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "7.04E-26", "distractors": ["Minimally left-skewed", "1:1", "2.68"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}
+{"ideal": "(0.123,0.125)", "distractors": ["0.56", "562", "Leishmaniasis"], "question": "", "cluster": "873bada5-b1f3-423a-87dc-9ddd486c4843"}

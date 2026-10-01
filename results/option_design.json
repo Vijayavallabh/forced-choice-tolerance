@@ -1,0 +1,7635 @@
+{
+ "graders": {
+  "gemma27b": {
+   "v1.0": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 93.32725572697522,
+      "misses_accepted": 27.3118382950112,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 19.345603553042757
+     },
+     "errors-uniform": {
+      "correct_accepted": 91.55072463768117,
+      "misses_accepted": 29.83774437396297,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 26.140605836564077
+     },
+     "k4-middle": {
+      "correct_accepted": 97.72252090800477,
+      "misses_accepted": 21.52020463726119,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 14.699363144095766
+     },
+     "k4-released": {
+      "correct_accepted": 95.60185185185186,
+      "misses_accepted": 30.860497432425323,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 21.491774902633676
+     },
+     "k4-uniform": {
+      "correct_accepted": 96.43817204301077,
+      "misses_accepted": 36.825890042668334,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 27.979876855733504
+     },
+     "k8-middle": {
+      "correct_accepted": 96.1021505376344,
+      "misses_accepted": 20.617321115511935,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 14.640051302709114
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 93.99485741000467,
+      "misses_accepted": 11.099872864779238,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 5.75998267123488
+     },
+     "k8-uniform": {
+      "correct_accepted": 95.37037037037037,
+      "misses_accepted": 29.515225593497398,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 22.62434358255914
+     }
+    },
+    "n_runs": 4867,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.929,
+       "hi": 5.146546184617644,
+       "level": 0.9699999999999964,
+       "level_capped": false,
+       "lo": -2.990827853865727,
+       "mean": 1.1318718703332808,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.944,
+       "hi": 6.947042101559249,
+       "level": 0.9524999999999968,
+       "level_capped": false,
+       "lo": -1.8786857480272823,
+       "mean": 2.525906078951767,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.928,
+       "hi": 25.60970699065,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 10.890352236889331,
+       "mean": 17.74330822614966,
+       "n_clusters": 27,
+       "n_items": 47
+      },
+      "n_moved": 47
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9445,
+       "hi": 17.818783464069604,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 9.153320291419146,
+       "mean": 13.3539367123984,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.944,
+       "hi": 20.17096477561991,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": 10.568700388870669,
+       "mean": 15.305685405407143,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.935,
+       "hi": 32.02448341789825,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 19.427159585980284,
+       "mean": 25.56533666711761,
+       "n_clusters": 40,
+       "n_items": 86
+      },
+      "n_moved": 88
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.942,
+       "hi": 9.907607044219034,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": -0.09633695340502846,
+       "mean": 4.788040111316504,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9365,
+       "hi": 11.750854386090186,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 0.20863939447616392,
+       "mean": 5.965392610243018,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.942,
+       "hi": 35.2309418149285,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 19.4898813633613,
+       "mean": 27.41825140598937,
+       "n_clusters": 34,
+       "n_items": 55
+      },
+      "n_moved": 56
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9435,
+       "hi": 11.1946734509914,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 3.9303647923643603,
+       "mean": 7.489466927444675,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9425,
+       "hi": 13.133358256306035,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 5.032967338025433,
+       "mean": 8.897904477985465,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9295,
+       "hi": 38.50385994091107,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 20.178540292795937,
+       "mean": 28.7706429653114,
+       "n_clusters": 26,
+       "n_items": 41
+      },
+      "n_moved": 41
+     }
+    }
+   },
+   "v1.5": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 99.41666666666666,
+      "misses_accepted": 19.028509665429173,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 15.409504137503365
+     },
+     "errors-uniform": {
+      "correct_accepted": 98.41666666666666,
+      "misses_accepted": 26.430907035860603,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 25.222596136663466
+     },
+     "k4-middle": {
+      "correct_accepted": 98.33333333333333,
+      "misses_accepted": 19.800125313283207,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 12.399441530691531
+     },
+     "k4-released": {
+      "correct_accepted": 99.83333333333333,
+      "misses_accepted": 21.204336375698606,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 14.78393278333294
+     },
+     "k4-uniform": {
+      "correct_accepted": 99.66666666666666,
+      "misses_accepted": 28.376543060482696,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 23.448861366102076
+     },
+     "k8-middle": {
+      "correct_accepted": 98.75,
+      "misses_accepted": 14.918578720900703,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 12.342922352200603
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 98.5,
+      "misses_accepted": 11.532564350424257,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 6.154363946382135
+     },
+     "k8-uniform": {
+      "correct_accepted": 98.21825396825398,
+      "misses_accepted": 24.15985802982707,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 19.085444404881326
+     }
+    },
+    "n_runs": 1876,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9415,
+       "hi": 10.891588788518897,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 1.9078176973311183,
+       "mean": 6.393804670991203,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9335,
+       "hi": 12.538912868173046,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 2.28227003966328,
+       "mean": 7.402397370431426,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.931,
+       "hi": 28.170432540014524,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 11.35865568678131,
+       "mean": 19.602137552647477,
+       "n_clusters": 26,
+       "n_items": 34
+      },
+      "n_moved": 34
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9345,
+       "hi": 12.732929857424127,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 3.8355637064040637,
+       "mean": 7.7857695709862895,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9335,
+       "hi": 13.939143592155375,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 3.8188979093901003,
+       "mean": 8.57641774719948,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.933,
+       "hi": 24.093994876528622,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 10.74664825034227,
+       "mean": 16.911709902399213,
+       "n_clusters": 31,
+       "n_items": 51
+      },
+      "n_moved": 53
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9365,
+       "hi": 10.218240100864813,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 0.8581771682710676,
+       "mean": 5.410123654725046,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.939,
+       "hi": 12.931142568006582,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 1.714416903950702,
+       "mean": 7.172206684784084,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9185,
+       "hi": 25.40157468815685,
+       "level": 0.9749999999999963,
+       "level_capped": false,
+       "lo": 11.305591212004334,
+       "mean": 17.59220913245681,
+       "n_clusters": 28,
+       "n_items": 44
+      },
+      "n_moved": 44
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.945,
+       "hi": 11.989869350450858,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": 4.194428547946443,
+       "mean": 7.828324180549413,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.938,
+       "hi": 13.886681553126278,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 5.051066719250445,
+       "mean": 9.241279308926368,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9375,
+       "hi": 34.771459970950026,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 19.008116527113337,
+       "mean": 26.9657840252806,
+       "n_clusters": 20,
+       "n_items": 23
+      },
+      "n_moved": 23
+     }
+    }
+   }
+  },
+  "gpt-4o": {
+   "v1.0": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 95.45454545454545,
+      "misses_accepted": 24.516435141435142,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 18.33842911967912
+     },
+     "errors-uniform": {
+      "correct_accepted": 97.72727272727273,
+      "misses_accepted": 30.60136372636373,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 24.601164132414137
+     },
+     "k4-middle": {
+      "correct_accepted": 95.45454545454545,
+      "misses_accepted": 20.795162982662983,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 14.937274156024156
+     },
+     "k4-released": {
+      "correct_accepted": 97.72727272727273,
+      "misses_accepted": 28.54044791544792,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 20.479825636075635
+     },
+     "k4-uniform": {
+      "correct_accepted": 97.72727272727273,
+      "misses_accepted": 34.13490507240507,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 27.94704872829873
+     },
+     "k8-middle": {
+      "correct_accepted": 97.72727272727273,
+      "misses_accepted": 16.832941832941835,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 14.166367838242836
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 92.04545454545455,
+      "misses_accepted": 11.045514170514172,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 5.074803902928903
+     },
+     "k8-uniform": {
+      "correct_accepted": 97.72727272727273,
+      "misses_accepted": 27.84624722124722,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 20.81575964388464
+     }
+    },
+    "n_runs": 1280,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9395,
+       "hi": 11.99622383812266,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 1.873939014364999,
+       "mean": 6.803912177288803,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.939,
+       "hi": 11.851643755790302,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": -0.2739104844653665,
+       "mean": 6.084928584928586,
+       "n_clusters": 47,
+       "n_items": 148
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.931,
+       "hi": 33.77815817780088,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 16.985217307774725,
+       "mean": 25.077664652132732,
+       "n_clusters": 27,
+       "n_items": 47
+      },
+      "n_moved": 47
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9385,
+       "hi": 17.023165763213292,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 8.822656253895618,
+       "mean": 12.84617799228189,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.942,
+       "hi": 18.034033286546382,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 8.727728296525852,
+       "mean": 13.33974208974209,
+       "n_clusters": 47,
+       "n_items": 148
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9405,
+       "hi": 30.07016854673102,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 17.688216155256548,
+       "mean": 23.66522366522366,
+       "n_clusters": 40,
+       "n_items": 86
+      },
+      "n_moved": 88
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.943,
+       "hi": 10.032637385809181,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": 0.7169955750772202,
+       "mean": 5.3103381106627845,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9385,
+       "hi": 10.999614192189528,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 0.5388888163480519,
+       "mean": 5.594457156957156,
+       "n_clusters": 47,
+       "n_items": 148
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.938,
+       "hi": 40.470248953543205,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 21.050807246138294,
+       "mean": 30.475862521317065,
+       "n_clusters": 34,
+       "n_items": 55
+      },
+      "n_moved": 56
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9375,
+       "hi": 14.546816060475676,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 5.698604079772894,
+       "mean": 9.80830497064263,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9425,
+       "hi": 15.824081274670807,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 6.6198734561758314,
+       "mean": 11.01330538830539,
+       "n_clusters": 47,
+       "n_items": 148
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9405,
+       "hi": 41.24800725410081,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 17.215220441998103,
+       "mean": 28.525126634882735,
+       "n_clusters": 26,
+       "n_items": 41
+      },
+      "n_moved": 41
+     }
+    }
+   },
+   "v1.5": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 99.16666666666667,
+      "misses_accepted": 19.54408631014668,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 15.409504137503365
+     },
+     "errors-uniform": {
+      "correct_accepted": 96.66666666666667,
+      "misses_accepted": 28.4288208179849,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 25.222596136663466
+     },
+     "k4-middle": {
+      "correct_accepted": 98.33333333333333,
+      "misses_accepted": 18.97403986622253,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 12.399441530691531
+     },
+     "k4-released": {
+      "correct_accepted": 100.0,
+      "misses_accepted": 22.35813382094342,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 14.78393278333294
+     },
+     "k4-uniform": {
+      "correct_accepted": 99.66666666666666,
+      "misses_accepted": 31.046678523574812,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 23.448861366102076
+     },
+     "k8-middle": {
+      "correct_accepted": 100.0,
+      "misses_accepted": 15.737760343371795,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 12.342922352200603
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 100.0,
+      "misses_accepted": 12.9935258927519,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 6.154363946382135
+     },
+     "k8-uniform": {
+      "correct_accepted": 100.0,
+      "misses_accepted": 23.369596493977298,
+      "no_pick": 0.0,
+      "rule_misses_accepted": 19.085444404881326
+     }
+    },
+    "n_runs": 1876,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9385,
+       "hi": 12.917330000779245,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 2.795826803843531,
+       "mean": 7.792268661850706,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9365,
+       "hi": 14.298769433282008,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 3.543870406236686,
+       "mean": 8.884734507838225,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9265,
+       "hi": 38.44092112098528,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 17.762109053932914,
+       "mean": 27.243837679550666,
+       "n_clusters": 26,
+       "n_items": 34
+      },
+      "n_moved": 34
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9405,
+       "hi": 16.40147367363982,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 6.021213597895461,
+       "mean": 10.792006363949088,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.933,
+       "hi": 19.182483832047755,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 5.745615269405566,
+       "mean": 12.072638657352279,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.946,
+       "hi": 30.641367598942537,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": 13.523070623206902,
+       "mean": 21.491649635430363,
+       "n_clusters": 31,
+       "n_items": 51
+      },
+      "n_moved": 53
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9365,
+       "hi": 12.143424075291204,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 2.0110481940502014,
+       "mean": 6.884157698166986,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.933,
+       "hi": 15.313310964684474,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 2.6899499777960334,
+       "mean": 8.688544702631388,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.934,
+       "hi": 28.819154360492032,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 11.611750288712186,
+       "mean": 19.31792772930544,
+       "n_clusters": 28,
+       "n_items": 44
+      },
+      "n_moved": 44
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9255,
+       "hi": 11.641148424337787,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 1.6840131843820907,
+       "mean": 6.48251695415008,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.935,
+       "hi": 13.085640990528269,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 2.611553043743887,
+       "mean": 7.6318361506055,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9235,
+       "hi": 37.44356874964356,
+       "level": 0.9774999999999963,
+       "level_capped": false,
+       "lo": 10.44015470223265,
+       "mean": 23.981284733573066,
+       "n_clusters": 20,
+       "n_items": 23
+      },
+      "n_moved": 23
+     }
+    }
+   }
+  },
+  "llama70b": {
+   "v1.0": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 92.90683229813665,
+      "misses_accepted": 27.528273151248584,
+      "no_pick": 0.5147977170917473,
+      "rule_misses_accepted": 19.345603553042757
+     },
+     "errors-uniform": {
+      "correct_accepted": 92.14662207789837,
+      "misses_accepted": 30.25245053209537,
+      "no_pick": 0.6141438773297552,
+      "rule_misses_accepted": 26.140605836564077
+     },
+     "k4-middle": {
+      "correct_accepted": 95.1015531660693,
+      "misses_accepted": 26.96914113632467,
+      "no_pick": 0.5520455771840417,
+      "rule_misses_accepted": 14.699363144095766
+     },
+     "k4-released": {
+      "correct_accepted": 92.90607427704202,
+      "misses_accepted": 33.55821439340711,
+      "no_pick": 0.6486608494330842,
+      "rule_misses_accepted": 21.491774902633676
+     },
+     "k4-uniform": {
+      "correct_accepted": 95.09301928656767,
+      "misses_accepted": 37.9965408929161,
+      "no_pick": 0.5685877132592183,
+      "rule_misses_accepted": 27.979876855733504
+     },
+     "k8-middle": {
+      "correct_accepted": 95.62879850397381,
+      "misses_accepted": 20.26837407854162,
+      "no_pick": 0.4876386329848276,
+      "rule_misses_accepted": 14.640051302709114
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 93.65048077530545,
+      "misses_accepted": 12.789534868849884,
+      "no_pick": 0.7831655976561275,
+      "rule_misses_accepted": 5.75998267123488
+     },
+     "k8-uniform": {
+      "correct_accepted": 96.70926185652694,
+      "misses_accepted": 30.642096937150864,
+      "no_pick": 0.45370643008198763,
+      "rule_misses_accepted": 22.62434358255914
+     }
+    },
+    "n_runs": 4867,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9315,
+       "hi": 6.094600211705881,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": -2.330135386050145,
+       "mean": 1.9045031193272726,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9375,
+       "hi": 7.580170445858114,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": -1.9790151008568833,
+       "mean": 2.724177380846789,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.933,
+       "hi": 27.124786523098287,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 11.49110069600461,
+       "mean": 18.65145940333129,
+       "n_clusters": 27,
+       "n_items": 47
+      },
+      "n_moved": 47
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9285,
+       "hi": 13.704736741522222,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 4.488398795764381,
+       "mean": 9.046116743302496,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.947,
+       "hi": 15.495113184454778,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": 6.637239174875133,
+       "mean": 11.027399756591429,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9425,
+       "hi": 23.154551160862567,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 9.68347199244826,
+       "mean": 16.312215996498473,
+       "n_clusters": 40,
+       "n_items": 86
+      },
+      "n_moved": 88
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9435,
+       "hi": 7.565540463781753,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": -2.0941893047987525,
+       "mean": 2.7675886784226136,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9295,
+       "hi": 10.250650909333173,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": -1.2651700393648353,
+       "mean": 4.438326499508989,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.937,
+       "hi": 30.0800124075633,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 12.256078441094969,
+       "mean": 20.985540448023485,
+       "n_clusters": 34,
+       "n_items": 55
+      },
+      "n_moved": 56
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.94,
+       "hi": 13.034893919545434,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 4.7720968812716995,
+       "mean": 8.699247413456424,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.942,
+       "hi": 15.174049899335568,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 6.124216318368632,
+       "mean": 10.373722858609243,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.937,
+       "hi": 38.629299434583515,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 20.39125009656642,
+       "mean": 29.257677280187405,
+       "n_clusters": 26,
+       "n_items": 41
+      },
+      "n_moved": 41
+     }
+    }
+   },
+   "v1.5": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 95.68055555555557,
+      "misses_accepted": 19.143803921396795,
+      "no_pick": 1.4644472701361244,
+      "rule_misses_accepted": 15.409504137503365
+     },
+     "errors-uniform": {
+      "correct_accepted": 97.375,
+      "misses_accepted": 26.03308386874563,
+      "no_pick": 1.7065835544744212,
+      "rule_misses_accepted": 25.222596136663466
+     },
+     "k4-middle": {
+      "correct_accepted": 93.33333333333333,
+      "misses_accepted": 19.701105780614295,
+      "no_pick": 2.136512236473537,
+      "rule_misses_accepted": 12.399441530691531
+     },
+     "k4-released": {
+      "correct_accepted": 96.88888888888889,
+      "misses_accepted": 20.19824417068999,
+      "no_pick": 1.382825937392501,
+      "rule_misses_accepted": 14.78393278333294
+     },
+     "k4-uniform": {
+      "correct_accepted": 95.16666666666666,
+      "misses_accepted": 26.936387730776275,
+      "no_pick": 1.7908874514718165,
+      "rule_misses_accepted": 23.448861366102076
+     },
+     "k8-middle": {
+      "correct_accepted": 97.16666666666666,
+      "misses_accepted": 15.11159530613865,
+      "no_pick": 0.6741436925647452,
+      "rule_misses_accepted": 12.342922352200603
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 93.61111111111111,
+      "misses_accepted": 10.497046780618762,
+      "no_pick": 0.9471592584402182,
+      "rule_misses_accepted": 6.154363946382135
+     },
+     "k8-uniform": {
+      "correct_accepted": 93.68154761904762,
+      "misses_accepted": 21.70446441888005,
+      "no_pick": 1.3349611774534376,
+      "rule_misses_accepted": 19.085444404881326
+     }
+    },
+    "n_runs": 1876,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.938,
+       "hi": 11.10945999706249,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 1.6682339706948226,
+       "mean": 6.407253120546465,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9305,
+       "hi": 12.05268198821385,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 1.7748202530854784,
+       "mean": 6.889279947348832,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.93,
+       "hi": 32.388853023414,
+       "level": 0.9699999999999964,
+       "level_capped": false,
+       "lo": 11.327496601954635,
+       "mean": 21.375378324704496,
+       "n_clusters": 26,
+       "n_items": 34
+      },
+      "n_moved": 34
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.931,
+       "hi": 12.12437254519111,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 0.6033163916556661,
+       "mean": 6.1616553638999445,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9335,
+       "hi": 13.736651777429469,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 0.9235319223854618,
+       "mean": 7.235281950161982,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9455,
+       "hi": 21.869203792460528,
+       "level": 0.9524999999999968,
+       "level_capped": false,
+       "lo": 6.6754585187968685,
+       "mean": 14.08061014223371,
+       "n_clusters": 31,
+       "n_items": 51
+      },
+      "n_moved": 53
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.932,
+       "hi": 10.570484247233416,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 0.9994275401150443,
+       "mean": 5.595961103739741,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.943,
+       "hi": 12.844788142572206,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 1.2119519637884273,
+       "mean": 6.738143560086285,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.927,
+       "hi": 26.688525187121172,
+       "level": 0.9699999999999964,
+       "level_capped": false,
+       "lo": 11.51525600509486,
+       "mean": 18.159838097918595,
+       "n_clusters": 28,
+       "n_items": 44
+      },
+      "n_moved": 44
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9095,
+       "hi": 10.740647821751073,
+       "level": 0.9799999999999962,
+       "level_capped": false,
+       "lo": 0.16506115641979774,
+       "mean": 4.940040051108164,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.926,
+       "hi": 12.634911997040282,
+       "level": 0.9699999999999964,
+       "level_capped": false,
+       "lo": 1.4185131485786544,
+       "mean": 6.592869112741403,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9,
+       "hi": 37.998040886678254,
+       "level": 0.9824999999999962,
+       "level_capped": false,
+       "lo": 11.837686198382984,
+       "mean": 25.00701481965784,
+       "n_clusters": 20,
+       "n_items": 23
+      },
+      "n_moved": 23
+     }
+    }
+   }
+  },
+  "qwen72b": {
+   "v1.0": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 93.20406732117812,
+      "misses_accepted": 26.010795228086113,
+      "no_pick": 0.6095927131438906,
+      "rule_misses_accepted": 19.345603553042757
+     },
+     "errors-uniform": {
+      "correct_accepted": 92.89605135397562,
+      "misses_accepted": 30.076123913117108,
+      "no_pick": 0.45453643511024777,
+      "rule_misses_accepted": 26.140605836564077
+     },
+     "k4-middle": {
+      "correct_accepted": 97.75238948626045,
+      "misses_accepted": 21.575022071301213,
+      "no_pick": 0.3697716001914719,
+      "rule_misses_accepted": 14.699363144095766
+     },
+     "k4-released": {
+      "correct_accepted": 94.95967741935483,
+      "misses_accepted": 30.93950050763607,
+      "no_pick": 0.3005163745537089,
+      "rule_misses_accepted": 21.491774902633676
+     },
+     "k4-uniform": {
+      "correct_accepted": 96.534178187404,
+      "misses_accepted": 38.03735483163032,
+      "no_pick": 0.3715291819892594,
+      "rule_misses_accepted": 27.979876855733504
+     },
+     "k8-middle": {
+      "correct_accepted": 95.29569892473117,
+      "misses_accepted": 17.660699079982734,
+      "no_pick": 0.24326771842890357,
+      "rule_misses_accepted": 14.640051302709114
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 93.45722300140254,
+      "misses_accepted": 11.944578955135432,
+      "no_pick": 0.18193743919077157,
+      "rule_misses_accepted": 5.75998267123488
+     },
+     "k8-uniform": {
+      "correct_accepted": 95.96774193548387,
+      "misses_accepted": 28.412794510741225,
+      "no_pick": 0.26269026017287395,
+      "rule_misses_accepted": 22.62434358255914
+     }
+    },
+    "n_runs": 4867,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.939,
+       "hi": 6.978185887286322,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": -1.3089610353490297,
+       "mean": 2.6799028408740355,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.944,
+       "hi": 8.714479326510515,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": -0.6054452521133156,
+       "mean": 4.065328685030989,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9315,
+       "hi": 31.14704300521479,
+       "level": 0.9674999999999965,
+       "level_capped": false,
+       "lo": 13.81253271022865,
+       "mean": 21.63728324931933,
+       "n_clusters": 27,
+       "n_items": 47
+      },
+      "n_moved": 47
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9435,
+       "hi": 19.339521728549354,
+       "level": 0.9549999999999967,
+       "level_capped": false,
+       "lo": 9.610523242390263,
+       "mean": 14.265330997232098,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9455,
+       "hi": 21.550433335100745,
+       "level": 0.9524999999999968,
+       "level_capped": false,
+       "lo": 11.50067290722938,
+       "mean": 16.462332760329097,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.939,
+       "hi": 33.6212821534773,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 18.526720543512,
+       "mean": 26.19571522077471,
+       "n_clusters": 40,
+       "n_items": 86
+      },
+      "n_moved": 88
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9445,
+       "hi": 11.037074435411471,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": -0.3091646511147918,
+       "mean": 5.219970155565128,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9395,
+       "hi": 13.560587452232479,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 1.0376470676839218,
+       "mean": 7.097854323994247,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.938,
+       "hi": 41.0974264078865,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 20.606108868749605,
+       "mean": 30.480396381945084,
+       "n_clusters": 34,
+       "n_items": 55
+      },
+      "n_moved": 56
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9395,
+       "hi": 14.194166124050827,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 5.311953179414948,
+       "mean": 9.527193764729725,
+       "n_clusters": 47,
+       "n_items": 154
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9375,
+       "hi": 16.00099188001644,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 5.858805044250725,
+       "mean": 10.752095430758487,
+       "n_clusters": 47,
+       "n_items": 150
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.937,
+       "hi": 42.17777627239468,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 19.251223728056047,
+       "mean": 30.228114055307397,
+       "n_clusters": 26,
+       "n_items": 41
+      },
+      "n_moved": 41
+     }
+    }
+   },
+   "v1.5": {
+    "designs": {
+     "errors-released": {
+      "correct_accepted": 99.66666666666666,
+      "misses_accepted": 19.39272433148207,
+      "no_pick": 0.37817460317460316,
+      "rule_misses_accepted": 15.409504137503365
+     },
+     "errors-uniform": {
+      "correct_accepted": 98.16666666666667,
+      "misses_accepted": 28.552975969249196,
+      "no_pick": 0.4767126148705096,
+      "rule_misses_accepted": 25.222596136663466
+     },
+     "k4-middle": {
+      "correct_accepted": 97.66666666666667,
+      "misses_accepted": 21.332305536310955,
+      "no_pick": 0.21136173767752714,
+      "rule_misses_accepted": 12.399441530691531
+     },
+     "k4-released": {
+      "correct_accepted": 97.35897435897435,
+      "misses_accepted": 24.49957931860021,
+      "no_pick": 0.49563492063492054,
+      "rule_misses_accepted": 14.78393278333294
+     },
+     "k4-uniform": {
+      "correct_accepted": 98.92857142857142,
+      "misses_accepted": 31.043087910541473,
+      "no_pick": 0.10555555555555554,
+      "rule_misses_accepted": 23.448861366102076
+     },
+     "k8-middle": {
+      "correct_accepted": 97.83333333333334,
+      "misses_accepted": 15.616528060432861,
+      "no_pick": 0.2125522138680033,
+      "rule_misses_accepted": 12.342922352200603
+     },
+     "k8-middle-s0.2": {
+      "correct_accepted": 98.33333333333333,
+      "misses_accepted": 11.698086800969925,
+      "no_pick": 0.3165204678362573,
+      "rule_misses_accepted": 6.154363946382135
+     },
+     "k8-uniform": {
+      "correct_accepted": 97.91941391941393,
+      "misses_accepted": 23.749391746024873,
+      "no_pick": 0.38953634085213035,
+      "rule_misses_accepted": 19.085444404881326
+     }
+    },
+    "n_runs": 1876,
+    "pairs": {
+     "errors-uniform - errors-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.932,
+       "hi": 13.396690686113983,
+       "level": 0.9699999999999964,
+       "level_capped": false,
+       "lo": 2.311934964044405,
+       "mean": 7.916378261831047,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9385,
+       "hi": 14.443879448070659,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 3.695101289326859,
+       "mean": 9.16025163776712,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.928,
+       "hi": 34.88115256572974,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 16.27878697567088,
+       "mean": 25.224266693261416,
+       "n_clusters": 26,
+       "n_items": 34
+      },
+      "n_moved": 34
+     },
+     "k4-uniform - k4-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.9415,
+       "hi": 14.499752051767537,
+       "level": 0.9574999999999967,
+       "level_capped": false,
+       "lo": 3.9034931753565196,
+       "mean": 8.789136136910905,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.935,
+       "hi": 16.3027460826251,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 3.8415032454277687,
+       "mean": 9.710782374230519,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9425,
+       "hi": 30.037811778669443,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 13.718407222398424,
+       "mean": 21.236163626097156,
+       "n_clusters": 31,
+       "n_items": 51
+      },
+      "n_moved": 53
+     },
+     "k4-uniform - k4-released": {
+      "all": {
+       "coverage_of_nominal_95": 0.9335,
+       "hi": 9.955667578954479,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 1.1495524342980943,
+       "mean": 5.409326625386997,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.9365,
+       "hi": 12.189933467049444,
+       "level": 0.9649999999999965,
+       "level_capped": false,
+       "lo": 1.4604238826517666,
+       "mean": 6.543508591941255,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.937,
+       "hi": 24.849231183124175,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 10.312378766159583,
+       "mean": 16.90005637422433,
+       "n_clusters": 28,
+       "n_items": 44
+      },
+      "n_moved": 44
+     },
+     "k8-uniform - k8-middle": {
+      "all": {
+       "coverage_of_nominal_95": 0.941,
+       "hi": 12.01275112171383,
+       "level": 0.9599999999999966,
+       "level_capped": false,
+       "lo": 3.0661403593085335,
+       "mean": 7.198275713794288,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "misses": {
+       "coverage_of_nominal_95": 0.934,
+       "hi": 13.59611958564035,
+       "level": 0.9624999999999966,
+       "level_capped": false,
+       "lo": 3.212670643571459,
+       "mean": 8.132863685592014,
+       "n_clusters": 44,
+       "n_items": 100
+      },
+      "moved": {
+       "coverage_of_nominal_95": 0.9175,
+       "hi": 35.72981874591659,
+       "level": 0.9724999999999964,
+       "level_capped": false,
+       "lo": 13.922396252909488,
+       "mean": 24.992190621481235,
+       "n_clusters": 20,
+       "n_items": 23
+      },
+      "n_moved": 23
+     }
+    }
+   }
+  }
+ },
+ "not_registered": true,
+ "releases": {
+  "v1.0": {
+   "designs": {
+    "errors-middle": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 31.774193548387096,
+      "held_out_ci95": [
+       23.322147651006713,
+       39.189189189189186
+      ],
+      "in_sample": 31.774193548387096,
+      "median_nearest_d": 0.15048770500855463,
+      "n_items": 155,
+      "rank_shares": [
+       0.0,
+       0.567741935483871,
+       0.432258064516129,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 16.09120721512445,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 17.472610060701292,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 13.151592445069388,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 16.01789851523122,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 9.569266438165315,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 14.205427935938934,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "errors-released": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.37662337662337664,
+      "held_out": -0.3246753246753248,
+      "held_out_ci95": [
+       -5.794701986754966,
+       5.48780487804878
+      ],
+      "in_sample": 6.8181818181818175,
+      "median_nearest_d": 0.19999999999999998,
+      "n_items": 154,
+      "rank_shares": [
+       0.22077922077922077,
+       0.3051948051948052,
+       0.3181818181818182,
+       0.15584415584415584
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.31972789115646,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 22.73616515475171,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 24.627310406318223,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.16666666666667,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 19.091930710158092,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 23.148857853862744,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 97.43589743589743,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 14.836728657000187,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 21.81077200012879,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "errors-uniform": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.5256410256410257,
+      "held_out": -7.6923076923076925,
+      "held_out_ci95": [
+       -14.02439024390244,
+       -0.49668874172185407
+      ],
+      "in_sample": 1.9230769230769218,
+      "median_nearest_d": 0.18414046653144017,
+      "n_items": 156,
+      "rank_shares": [
+       0.2564102564102564,
+       0.25,
+       0.22435897435897437,
+       0.2692307692307692
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 31.69509779801839,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 34.583539950353696,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 26.19619954783536,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 33.56506086387864,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 19.977413159297754,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 30.976547686007105,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k10-middle": {
+     "k": 10,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 5.189873417721519,
+      "held_out_ci95": [
+       -0.32258064516129115,
+       10.805369127516778
+      ],
+      "in_sample": 7.721518987341772,
+      "median_nearest_d": 0.32117031003241625,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.17721518987341772,
+       0.15822784810126583,
+       0.13291139240506328,
+       0.10759493670886076,
+       0.10126582278481013,
+       0.10126582278481013,
+       0.10126582278481013,
+       0.12025316455696203,
+       0.0
+      ]
+     },
+     "leak_theory": 2.4999999999999996,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 17.52832974333534,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 19.09944652920518,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 14.394009426503157,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 17.689358349211716,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 11.421612215935207,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 16.207952206491694,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k10-uniform": {
+     "k": 10,
+     "leak": {
+      "extreme": 0.22641509433962265,
+      "held_out": -2.452830188679246,
+      "held_out_ci95": [
+       -6.216216216216217,
+       2.0805369127516777
+      ],
+      "in_sample": 3.836477987421383,
+      "median_nearest_d": 0.3220338983050847,
+      "n_items": 159,
+      "rank_shares": [
+       0.13836477987421383,
+       0.09433962264150944,
+       0.11320754716981132,
+       0.1320754716981132,
+       0.06289308176100629,
+       0.08176100628930817,
+       0.1320754716981132,
+       0.09433962264150944,
+       0.06289308176100629,
+       0.0880503144654088
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 25.415599172581587,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 27.860366431017376,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 20.784621213027172,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 25.53208405060769,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 17.2155473960854,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 23.84499491353843,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-middle": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 30.063291139240512,
+      "held_out_ci95": [
+       22.4025974025974,
+       37.893081761006286
+      ],
+      "in_sample": 30.063291139240512,
+      "median_nearest_d": 0.2163876456418046,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.5506329113924051,
+       0.44936708860759494,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.87995198079231,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 16.555525190043667,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 17.82437535678988,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.93827160493827,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 14.750077949473205,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 17.49892517297004,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 12.94033632959993,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 17.690234232012667,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-middle-s0.1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 29.14012738853503,
+      "held_out_ci95": [
+       22.368421052631575,
+       35.86956521739131
+      ],
+      "in_sample": 29.14012738853503,
+      "median_nearest_d": 0.0488128594602566,
+      "n_items": 157,
+      "rank_shares": [
+       0.0,
+       0.4585987261146497,
+       0.5414012738853503,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 96.93877551020408,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 4.090573959344956,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 4.422658774099984,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 94.52777777777777,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 4.216611833337265,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 5.233199930432734,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 92.3076923076923,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 4.32238360799917,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 6.2272312847970746,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-middle-s0.2": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 30.063291139240512,
+      "held_out_ci95": [
+       23.484848484848484,
+       36.71428571428571
+      ],
+      "in_sample": 30.063291139240512,
+      "median_nearest_d": 0.09090909090909091,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.5506329113924051,
+       0.44936708860759494,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 6.723312198350899,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 7.290400303171203,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 6.422966811960965,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 7.871411636624565,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 6.086802620692492,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 8.471364624820826,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-middle-s0.5": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 21.20253164556962,
+      "held_out_ci95": [
+       13.554216867469881,
+       29.216867469879514
+      ],
+      "in_sample": 26.89873417721519,
+      "median_nearest_d": 0.18704840916278237,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.5189873417721519,
+       0.4810126582278481,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 14.899710649187792,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 16.08968438631893,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 12.228463719517494,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 14.638894984712847,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 9.598163609959117,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 13.25257044076624,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-middle-s1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 18.670886075949365,
+      "held_out_ci95": [
+       10.555555555555557,
+       26.973684210526315
+      ],
+      "in_sample": 25.632911392405067,
+      "median_nearest_d": 0.3141447368421053,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.5063291139240507,
+       0.4936708860759494,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 21.232884972510163,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 22.921498669800965,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 18.563003411388003,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 22.377537510767098,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 15.027293267997443,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 20.845979701018877,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-released": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.389937106918239,
+      "held_out": -2.3584905660377355,
+      "held_out_ci95": [
+       -7.191780821917809,
+       3.0254777070063685
+      ],
+      "in_sample": 5.81761006289308,
+      "median_nearest_d": 0.226314309811639,
+      "n_items": 159,
+      "rank_shares": [
+       0.22641509433962265,
+       0.3018867924528302,
+       0.3081761006289308,
+       0.16352201257861634
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.31972789115646,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 24.731616381664132,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 26.611973860044525,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.16666666666667,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 21.252505894310026,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 25.32931721251076,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 97.43589743589743,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 17.48289855592645,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 24.589108579835234,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-uniform": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.559748427672956,
+      "held_out": 0.1572327044025157,
+      "held_out_ci95": [
+       -7.312925170068027,
+       7.413793103448274
+      ],
+      "in_sample": 5.1886792452830175,
+      "median_nearest_d": 0.23880597014925373,
+      "n_items": 159,
+      "rank_shares": [
+       0.3018867924528302,
+       0.22641509433962265,
+       0.2138364779874214,
+       0.2578616352201258
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 32.74293738274207,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 35.469893546137584,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 28.143691944889916,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 34.122868213485106,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 24.33892334135984,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 34.105333542299434,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-uniform-s0.1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.5605095541401274,
+      "held_out": 8.121019108280253,
+      "held_out_ci95": [
+       0.7861635220125784,
+       15.645161290322578
+      ],
+      "in_sample": 8.121019108280253,
+      "median_nearest_d": 0.05555555555555555,
+      "n_items": 157,
+      "rank_shares": [
+       0.33121019108280253,
+       0.2356687898089172,
+       0.20382165605095542,
+       0.22929936305732485
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 98.29931972789116,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 24.57474398669396,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 26.188942644149872,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.25,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 20.29189338908964,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 25.7652641912008,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 17.31874234364046,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 26.22267180777269,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-uniform-s0.2": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.5345911949685535,
+      "held_out": -2.3584905660377355,
+      "held_out_ci95": [
+       -8.734939759036145,
+       4.931972789115646
+      ],
+      "in_sample": 3.930817610062892,
+      "median_nearest_d": 0.09126026074360215,
+      "n_items": 159,
+      "rank_shares": [
+       0.2893081761006289,
+       0.2389937106918239,
+       0.22641509433962265,
+       0.24528301886792453
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 22.69201448465413,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 25.107551031386084,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 20.303275786129166,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 25.998625741155486,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 17.652137052015426,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 25.96771318769044,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-uniform-s0.5": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.4779874213836478,
+      "held_out": -4.245283018867924,
+      "held_out_ci95": [
+       -9.276729559748428,
+       1.1146496815286622
+      ],
+      "in_sample": 3.3018867924528292,
+      "median_nearest_d": 0.2080536912751678,
+      "n_items": 159,
+      "rank_shares": [
+       0.25157232704402516,
+       0.2830188679245283,
+       0.2389937106918239,
+       0.22641509433962265
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 26.056662969971544,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 28.008861436848935,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 22.66221279124637,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 27.90936872054049,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 19.58681390281662,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 27.857971474954546,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k4-uniform-s1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.49056603773584906,
+      "held_out": -5.503144654088049,
+      "held_out_ci95": [
+       -11.52482269503546,
+       1.0273972602739712
+      ],
+      "in_sample": 2.0440251572327037,
+      "median_nearest_d": 0.33333333333333337,
+      "n_items": 159,
+      "rank_shares": [
+       0.27044025157232704,
+       0.24528301886792453,
+       0.2641509433962264,
+       0.22012578616352202
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 34.79937804920514,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 37.523350206637026,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 29.458063588060508,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 37.1156681030409,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 24.266044672450658,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 34.852061279834665,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k6-middle": {
+     "k": 6,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 18.776371308016877,
+      "held_out_ci95": [
+       10.21505376344086,
+       27.083333333333336
+      ],
+      "in_sample": 18.776371308016877,
+      "median_nearest_d": 0.22900891491663247,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.35443037974683544,
+       0.21518987341772153,
+       0.22784810126582278,
+       0.20253164556962025,
+       0.0
+      ]
+     },
+     "leak_theory": 8.333333333333334,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.87995198079231,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 16.37591474503843,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 17.573870445104998,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.93827160493827,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 13.724803089355891,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 16.801247916373082,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 11.42044551139768,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 16.074532040447153,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k6-uniform": {
+     "k": 6,
+     "leak": {
+      "extreme": 0.3836477987421384,
+      "held_out": 5.974842767295599,
+      "held_out_ci95": [
+       -0.11037527593818763,
+       12.619047619047622
+      ],
+      "in_sample": 5.974842767295599,
+      "median_nearest_d": 0.2621359223300971,
+      "n_items": 159,
+      "rank_shares": [
+       0.22641509433962265,
+       0.16352201257861634,
+       0.1509433962264151,
+       0.15723270440251572,
+       0.14465408805031446,
+       0.15723270440251572
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 28.343690268684234,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 30.64222965093849,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 24.23200235184885,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 29.143146834614996,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 19.980441009734307,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 26.914850721535167,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-middle": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 9.018987341772153,
+      "held_out_ci95": [
+       2.338709677419354,
+       15.789473684210526
+      ],
+      "in_sample": 13.449367088607595,
+      "median_nearest_d": 0.28367992766726946,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.22151898734177214,
+       0.25949367088607594,
+       0.15822784810126583,
+       0.12658227848101267,
+       0.13924050632911392,
+       0.0949367088607595,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 17.99937281375839,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 19.520160373368494,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 14.546552126408981,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 17.847041680971902,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 11.986162004791167,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 16.82753981191879,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-middle-s0.1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 7.882165605095542,
+      "held_out_ci95": [
+       2.2651006711409405,
+       14.311594202898553
+      ],
+      "in_sample": 7.882165605095542,
+      "median_nearest_d": 0.06468090344021166,
+      "n_items": 157,
+      "rank_shares": [
+       0.0,
+       0.20382165605095542,
+       0.1464968152866242,
+       0.1464968152866242,
+       0.17197452229299362,
+       0.18471337579617833,
+       0.1464968152866242,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 98.29931972789116,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 4.492775976600329,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 4.888738045185074,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 97.11111111111111,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 3.6214069994015197,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 4.337536972210885,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 97.43589743589743,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 3.173599625380996,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 4.370974151469374,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-middle-s0.2": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 13.449367088607595,
+      "held_out_ci95": [
+       6.754658385093168,
+       21.250000000000004
+      ],
+      "in_sample": 13.449367088607595,
+      "median_nearest_d": 0.11035007610350075,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.22784810126582278,
+       0.13924050632911392,
+       0.11392405063291139,
+       0.25949367088607594,
+       0.14556962025316456,
+       0.11392405063291139,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 5.892744891061043,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 6.39398510002423,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 5.798640273055248,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 6.9031241974336925,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 5.09733935936983,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 6.623503831476896,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-middle-s0.5": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 10.284810126582277,
+      "held_out_ci95": [
+       3.4763313609467468,
+       17.22972972972973
+      ],
+      "in_sample": 10.284810126582277,
+      "median_nearest_d": 0.2234935249855079,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.189873417721519,
+       0.17721518987341772,
+       0.22784810126582278,
+       0.1518987341772152,
+       0.12658227848101267,
+       0.12658227848101267,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 13.636584882406138,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 14.793540179993311,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 11.617488176651614,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 14.577371716516382,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 9.748895730614075,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 13.856889011074806,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-middle-s1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 4.5886075949367084,
+      "held_out_ci95": [
+       -1.2323943661971828,
+       10.472972972972974
+      ],
+      "in_sample": 9.651898734177214,
+      "median_nearest_d": 0.37491884954145327,
+      "n_items": 158,
+      "rank_shares": [
+       0.0,
+       0.22151898734177214,
+       0.22151898734177214,
+       0.12658227848101267,
+       0.12025316455696203,
+       0.17721518987341772,
+       0.13291139240506328,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 23.50922896701749,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 25.472905565636523,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 19.531581594821944,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 23.557363486471623,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 14.817581052377605,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 20.417411736272665,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-uniform": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.2641509433962264,
+      "held_out": 1.3364779874213832,
+      "held_out_ci95": [
+       -4.5,
+       8.02980132450331
+      ],
+      "in_sample": 5.7389937106918225,
+      "median_nearest_d": 0.2962962962962963,
+      "n_items": 159,
+      "rank_shares": [
+       0.18238993710691823,
+       0.14465408805031446,
+       0.11320754716981132,
+       0.11949685534591195,
+       0.07547169811320754,
+       0.11949685534591195,
+       0.16352201257861634,
+       0.08176100628930817
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.31972789115646,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 25.533080195384223,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 27.49783721249762,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.16666666666667,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 22.39267570631553,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 28.14654713935914,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 97.43589743589743,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 19.218408821894954,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 27.198037594997682,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-uniform-s0.1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.3248407643312102,
+      "held_out": 7.882165605095542,
+      "held_out_ci95": [
+       3.125,
+       12.943786982248524
+      ],
+      "in_sample": 7.882165605095542,
+      "median_nearest_d": 0.06648936170212766,
+      "n_items": 157,
+      "rank_shares": [
+       0.20382165605095542,
+       0.10828025477707007,
+       0.14012738853503184,
+       0.11464968152866242,
+       0.10191082802547771,
+       0.09554140127388536,
+       0.11464968152866242,
+       0.12101910828025478
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.31972789115646,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 15.830087605868185,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 17.420631514670347,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.44444444444446,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 13.541914442859607,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 16.97446206512656,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 11.02771937010896,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 15.773648692529768,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-uniform-s0.2": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.2389937106918239,
+      "held_out": 0.07861635220125784,
+      "held_out_ci95": [
+       -4.166666666666667,
+       4.642857142857143
+      ],
+      "in_sample": 3.8522012578616343,
+      "median_nearest_d": 0.12066899544829049,
+      "n_items": 159,
+      "rank_shares": [
+       0.13836477987421383,
+       0.1509433962264151,
+       0.1069182389937107,
+       0.16352201257861634,
+       0.1320754716981132,
+       0.1320754716981132,
+       0.07547169811320754,
+       0.10062893081761007
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 15.49890854361698,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 16.647288099268,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 13.286379903608085,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 16.402328795986445,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 10.835495254150873,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 15.52964831467087,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-uniform-s0.5": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.2389937106918239,
+      "held_out": -4.952830188679245,
+      "held_out_ci95": [
+       -8.406432748538013,
+       -1.107594936708861
+      ],
+      "in_sample": 2.5943396226415087,
+      "median_nearest_d": 0.24137931034482757,
+      "n_items": 159,
+      "rank_shares": [
+       0.1509433962264151,
+       0.1320754716981132,
+       0.1320754716981132,
+       0.11949685534591195,
+       0.1509433962264151,
+       0.11949685534591195,
+       0.1069182389937107,
+       0.0880503144654088
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 19.529014048582095,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 21.192635408182795,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 16.939183532801096,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 21.05301673344428,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 14.020138968753281,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 20.58849327006042,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "k8-uniform-s1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.32075471698113206,
+      "held_out": 6.996855345911951,
+      "held_out_ci95": [
+       1.0802469135802462,
+       13.643790849673204
+      ],
+      "in_sample": 6.996855345911951,
+      "median_nearest_d": 0.38814016172506743,
+      "n_items": 159,
+      "rank_shares": [
+       0.1949685534591195,
+       0.1069182389937107,
+       0.10062893081761007,
+       0.1069182389937107,
+       0.12578616352201258,
+       0.1069182389937107,
+       0.1320754716981132,
+       0.12578616352201258
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 27.17450059446222,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 29.331722391420197,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 24.805225928040567,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 30.64503948805947,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 21.27777963134474,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 29.46174649708183,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "placebo": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.3924050632911392,
+      "held_out": -2.848101265822786,
+      "held_out_ci95": [
+       -7.6923076923076925,
+       2.777777777777779
+      ],
+      "in_sample": 5.379746835443039,
+      "median_nearest_d": 0.2,
+      "n_items": 158,
+      "rank_shares": [
+       0.22784810126582278,
+       0.3037974683544304,
+       0.3037974683544304,
+       0.16455696202531644
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.87995198079231,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 23.54074120570893,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 25.308444858582142,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.93827160493827,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 20.387872875977024,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 24.228511414966082,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 16.826593549361608,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 23.356956155705838,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "released": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.389937106918239,
+      "held_out": -2.3584905660377355,
+      "held_out_ci95": [
+       -7.191780821917809,
+       3.0254777070063685
+      ],
+      "in_sample": 5.81761006289308,
+      "median_nearest_d": 0.15804427607434593,
+      "n_items": 159,
+      "rank_shares": [
+       0.22641509433962265,
+       0.3018867924528302,
+       0.3081761006289308,
+       0.16352201257861634
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.31972789115646,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 21.55515293825517,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 23.197660623495633,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.16666666666667,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 18.604100528941522,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 22.263050352843127,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 97.43589743589743,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 15.221268036018937,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 21.697616260170598,
+        "n_runs": 1421
+       }
+      }
+     }
+    },
+    "repaired": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.44654088050314467,
+      "held_out": 0.1572327044025157,
+      "held_out_ci95": [
+       -6.764705882352942,
+       7.258064516129031
+      ],
+      "in_sample": 4.559748427672955,
+      "median_nearest_d": 0.2011541913276608,
+      "n_items": 159,
+      "rank_shares": [
+       0.27672955974842767,
+       0.29559748427672955,
+       0.2578616352201258,
+       0.16981132075471697
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Claude 3.5 Sonnet": {
+       "correct": {
+        "accepted": 99.87995198079231,
+        "n_runs": 412
+       },
+       "misses": {
+        "accepted": 27.950683822456106,
+        "n_runs": 2104
+       },
+       "misses with a number": {
+        "accepted": 30.076452936543667,
+        "n_runs": 1967
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.93827160493827,
+        "n_runs": 668
+       },
+       "misses": {
+        "accepted": 25.445826586727886,
+        "n_runs": 4145
+       },
+       "misses with a number": {
+        "accepted": 30.216073847671222,
+        "n_runs": 3388
+       }
+      },
+      "gpt-4o": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 256
+       },
+       "misses": {
+        "accepted": 22.26766481329491,
+        "n_runs": 2041
+       },
+       "misses with a number": {
+        "accepted": 30.233713390700274,
+        "n_runs": 1421
+       }
+      }
+     }
+    }
+   },
+   "n_common_runs": 4877,
+   "n_items": 152,
+   "n_runs": 5161,
+   "pairs": {
+    "errors-uniform - errors-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.9425,
+      "hi": 15.704349126146663,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "lo": 7.774517929395897,
+      "mean": 11.624271480947094,
+      "n_clusters": 47,
+      "n_items": 155
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9345,
+      "hi": 17.798025953059035,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 8.298236833920694,
+      "mean": 12.891780666704495,
+      "n_clusters": 47,
+      "n_items": 151
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9355,
+      "hi": 27.9828202212343,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 16.712808774774714,
+      "mean": 22.267147350909323,
+      "n_clusters": 39,
+      "n_items": 81
+     },
+     "n_moved": 81
+    },
+    "errors-uniform - errors-released": {
+     "all": {
+      "coverage_of_nominal_95": 0.941,
+      "hi": 10.967253987459035,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 0.7416387630533298,
+      "mean": 5.883407612544104,
+      "n_clusters": 48,
+      "n_items": 155
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.935,
+      "hi": 12.39573860431882,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 0.9863811668191015,
+      "mean": 6.750002268398668,
+      "n_clusters": 48,
+      "n_items": 151
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.925,
+      "hi": 33.77419721119366,
+      "level": 0.9774999999999963,
+      "level_capped": false,
+      "lo": 16.273513953702704,
+      "mean": 24.146680863315012,
+      "n_clusters": 27,
+      "n_items": 47
+     },
+     "n_moved": 47
+    },
+    "k10-uniform - k10-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.9215,
+      "hi": 9.831995034021949,
+      "level": 0.9724999999999964,
+      "level_capped": false,
+      "lo": 2.0578758513218323,
+      "mean": 5.6336782739065265,
+      "n_clusters": 47,
+      "n_items": 158
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.927,
+      "hi": 10.37910520770339,
+      "level": 0.9724999999999964,
+      "level_capped": false,
+      "lo": 1.9956044398741637,
+      "mean": 5.9231534423632715,
+      "n_clusters": 47,
+      "n_items": 154
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.927,
+      "hi": 36.31498964990881,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "lo": 15.730848576918067,
+      "mean": 25.175428728460947,
+      "n_clusters": 27,
+      "n_items": 35
+     },
+     "n_moved": 35
+    },
+    "k4-uniform - k4-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.937,
+      "hi": 14.697640528698166,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 7.691099084900917,
+      "mean": 11.110833225485436,
+      "n_clusters": 47,
+      "n_items": 158
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9405,
+      "hi": 16.976315150250866,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "lo": 9.070101707407419,
+      "mean": 13.03122856884937,
+      "n_clusters": 47,
+      "n_items": 154
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9465,
+      "hi": 26.295437816502943,
+      "level": 0.9524999999999968,
+      "level_capped": false,
+      "lo": 16.14421347867116,
+      "mean": 21.166503299279594,
+      "n_clusters": 41,
+      "n_items": 88
+     },
+     "n_moved": 88
+    },
+    "k4-uniform - k4-released": {
+     "all": {
+      "coverage_of_nominal_95": 0.9305,
+      "hi": 9.774657893488346,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 1.0694405946770882,
+      "mean": 5.364694556180873,
+      "n_clusters": 48,
+      "n_items": 159
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9415,
+      "hi": 11.49097137161278,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "lo": 2.4420938649502952,
+      "mean": 6.9044625495867225,
+      "n_clusters": 48,
+      "n_items": 155
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9325,
+      "hi": 32.43948843792522,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 18.34403084865001,
+      "mean": 24.94375790265706,
+      "n_clusters": 35,
+      "n_items": 56
+     },
+     "n_moved": 56
+    },
+    "k6-uniform - k6-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.9275,
+      "hi": 12.861578108770019,
+      "level": 0.9724999999999964,
+      "level_capped": false,
+      "lo": 5.671522177484307,
+      "mean": 9.03950195900753,
+      "n_clusters": 47,
+      "n_items": 158
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.935,
+      "hi": 14.363410441956953,
+      "level": 0.9624999999999966,
+      "level_capped": false,
+      "lo": 7.067322746678621,
+      "mean": 10.511974470724187,
+      "n_clusters": 47,
+      "n_items": 154
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.93,
+      "hi": 27.650461765896782,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 16.250539356498585,
+      "mean": 21.93191276847716,
+      "n_clusters": 33,
+      "n_items": 60
+     },
+     "n_moved": 60
+    },
+    "k8-uniform - k8-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.9375,
+      "hi": 9.450906792024186,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 2.9156408113999137,
+      "mean": 6.096633860039994,
+      "n_clusters": 47,
+      "n_items": 158
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.941,
+      "hi": 11.49842630994412,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 4.187090721262772,
+      "mean": 7.700507310452037,
+      "n_clusters": 47,
+      "n_items": 154
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9415,
+      "hi": 29.99374343406554,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "lo": 17.901375482240024,
+      "mean": 23.770294685471622,
+      "n_clusters": 26,
+      "n_items": 41
+     },
+     "n_moved": 41
+    },
+    "k8-uniform-s0.1 - k8-middle-s0.1": {
+     "all": {
+      "coverage_of_nominal_95": 0.935,
+      "hi": 11.797399151525635,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 5.264404087352599,
+      "mean": 8.357695496650233,
+      "n_clusters": 47,
+      "n_items": 157
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9395,
+      "hi": 13.328396279722307,
+      "level": 0.9624999999999966,
+      "level_capped": false,
+      "lo": 5.98271678005619,
+      "mean": 9.464811002506897,
+      "n_clusters": 47,
+      "n_items": 153
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.931,
+      "hi": 33.46214350322636,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 17.174048368273105,
+      "mean": 25.456908130345983,
+      "n_clusters": 33,
+      "n_items": 51
+     },
+     "n_moved": 51
+    },
+    "k8-uniform-s0.2 - k8-middle-s0.2": {
+     "all": {
+      "coverage_of_nominal_95": 0.9425,
+      "hi": 8.252940563215319,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "lo": 3.2993849363552514,
+      "mean": 5.693539640371249,
+      "n_clusters": 47,
+      "n_items": 158
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9435,
+      "hi": 10.962724170878243,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 4.65331304207117,
+      "mean": 7.616084399588314,
+      "n_clusters": 47,
+      "n_items": 154
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9285,
+      "hi": 32.050245649740596,
+      "level": 0.9724999999999964,
+      "level_capped": false,
+      "lo": 15.60667019594402,
+      "mean": 23.411537605779127,
+      "n_clusters": 26,
+      "n_items": 37
+     },
+     "n_moved": 37
+    },
+    "repaired - placebo": {
+     "all": {
+      "coverage_of_nominal_95": 0.9275,
+      "hi": 9.016771673434393,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 1.033490690000308,
+      "mean": 4.7308915987635665,
+      "n_clusters": 48,
+      "n_items": 158
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.942,
+      "hi": 9.728008955102963,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 0.925895386995667,
+      "mean": 5.082085847516659,
+      "n_clusters": 48,
+      "n_items": 155
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.915,
+      "hi": 35.05903778645998,
+      "level": 0.987499999999996,
+      "level_capped": false,
+      "lo": 11.507833708125347,
+      "mean": 22.17277259378462,
+      "n_clusters": 29,
+      "n_items": 40
+     },
+     "n_moved": 40
+    }
+   }
+  },
+  "v1.5": {
+   "designs": {
+    "errors-middle": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 21.999999999999996,
+      "held_out_ci95": [
+       11.458333333333332,
+       31.989247311827963
+      ],
+      "in_sample": 28.000000000000004,
+      "median_nearest_d": 0.16891891891891891,
+      "n_items": 100,
+      "rank_shares": [
+       0.0,
+       0.47,
+       0.53,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 14.457831325301203,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 20.3125,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 18.398876404494384,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 22.303921568627448,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 14.367750540644339,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 17.278834172433722,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 16.97530864197531,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 26.492537313432834,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 12.024410774410775,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 13.269557823129253,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 13.662818662818662,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 16.43403790087464,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "errors-released": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.16161616161616163,
+      "held_out": 28.535353535353536,
+      "held_out_ci95": [
+       16.249999999999996,
+       40.90909090909091
+      ],
+      "in_sample": 28.535353535353536,
+      "median_nearest_d": 0.19402985074626866,
+      "n_items": 99,
+      "rank_shares": [
+       0.09090909090909091,
+       0.5353535353535354,
+       0.30303030303030304,
+       0.0707070707070707
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 17.46987951807229,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 24.479166666666664,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 21.48876404494382,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 25.931372549019606,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 15.413640542932692,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 18.709761771578606,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 16.97530864197531,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 27.238805970149254,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 13.287037037037036,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 14.698129251700681,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 14.492544492544493,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 17.908770651117592,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "errors-uniform": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.42574257425742573,
+      "held_out": 1.7326732673267342,
+      "held_out_ci95": [
+       -6.415929203539822,
+       10.483870967741938
+      ],
+      "in_sample": 5.693069306930693,
+      "median_nearest_d": 0.19565217391304351,
+      "n_items": 101,
+      "rank_shares": [
+       0.25742574257425743,
+       0.26732673267326734,
+       0.3069306930693069,
+       0.16831683168316833
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 25.903614457831324,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 34.89583333333333,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 30.383895131086142,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 36.22549019607843,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 25.325854683498456,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 30.695859574002938,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 22.530864197530864,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 33.95522388059701,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 25.223063973063976,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 27.84438775510204,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 24.14862914862915,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 30.146379980563655,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k10-middle": {
+     "k": 10,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 11.153846153846153,
+      "held_out_ci95": [
+       3.888888888888889,
+       19.29292929292929
+      ],
+      "in_sample": 11.153846153846153,
+      "median_nearest_d": 0.27230695923345116,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.21153846153846154,
+       0.125,
+       0.14423076923076922,
+       0.09615384615384616,
+       0.07692307692307693,
+       0.10576923076923077,
+       0.125,
+       0.11538461538461539,
+       0.0
+      ]
+     },
+     "leak_theory": 2.4999999999999996,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 19.096385542168672,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 25.555555555555554,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 16.741573033707866,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 21.137254901960787,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 12.11227981103204,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 14.436602246626254,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 19.197530864197528,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 29.40298507462687,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 8.297979797979798,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 8.930272108843539,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 9.407407407407408,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 11.711613216715259,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k10-uniform": {
+     "k": 10,
+     "leak": {
+      "extreme": 0.22857142857142856,
+      "held_out": -4.2857142857142865,
+      "held_out_ci95": [
+       -8.130841121495328,
+       0.3092783505154628
+      ],
+      "in_sample": 2.380952380952381,
+      "median_nearest_d": 0.25744276536060084,
+      "n_items": 105,
+      "rank_shares": [
+       0.12380952380952381,
+       0.09523809523809523,
+       0.09523809523809523,
+       0.09523809523809523,
+       0.12380952380952381,
+       0.09523809523809523,
+       0.0761904761904762,
+       0.08571428571428572,
+       0.10476190476190476,
+       0.10476190476190476
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 26.32530120481928,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 33.888888888888886,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 26.479400749063675,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 31.627450980392158,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 19.73021681716212,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 22.72999941603436,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 28.456790123456795,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 41.343283582089555,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 15.537037037037038,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 16.753401360544217,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 17.851370851370852,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 21.72376093294461,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-middle": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 20.192307692307693,
+      "held_out_ci95": [
+       9.375,
+       31.70103092783505
+      ],
+      "in_sample": 28.846153846153843,
+      "median_nearest_d": 0.1988679005278891,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.5384615384615384,
+       0.46153846153846156,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 18.22289156626506,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 23.26388888888889,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 16.549625468164795,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 21.053921568627448,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 12.171153061304578,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 14.464867632911165,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 15.895061728395063,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 25.0,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 10.063131313131311,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 10.795068027210885,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 9.727032227032227,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 12.447157434402332,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-middle-s0.1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 12.864077669902912,
+      "held_out_ci95": [
+       4.292929292929292,
+       21.875
+      ],
+      "in_sample": 26.45631067961165,
+      "median_nearest_d": 0.047961630695443645,
+      "n_items": 103,
+      "rank_shares": [
+       0.0,
+       0.4854368932038835,
+       0.5145631067961165,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 3.91566265060241,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 4.6875,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 4.751872659176031,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 5.269607843137254,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 98.30508474576271,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 4.894839719928847,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 5.741160477370752,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 6.172839506172839,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 8.955223880597014,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 93.75,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 5.298821548821549,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 5.676020408163265,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 5.073352573352572,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 6.216593780369291,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-middle-s0.2": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 33.65384615384615,
+      "held_out_ci95": [
+       26.923076923076927,
+       41.29213483146067
+      ],
+      "in_sample": 33.65384615384615,
+      "median_nearest_d": 0.08784259195812433,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.41346153846153844,
+       0.5865384615384616,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 9.939759036144578,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 12.32638888888889,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 6.156367041198501,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 7.5245098039215685,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 6.739105175696319,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 7.9692648393286545,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 8.024691358024691,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 13.432835820895523,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 7.302188552188552,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 7.818877551020408,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 5.590428090428091,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 6.821550048590866,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-middle-s0.5": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 23.076923076923077,
+      "held_out_ci95": [
+       14.77272727272727,
+       31.17977528089888
+      ],
+      "in_sample": 26.923076923076927,
+      "median_nearest_d": 0.19013490280458606,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.4807692307692308,
+       0.5192307692307693,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 12.801204819277109,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 17.01388888888889,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 12.991573033707866,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 16.34803921568627,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 10.380053580576613,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 12.181996964094012,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 15.277777777777779,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 23.507462686567166,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 9.381313131313133,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 10.106292517006803,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 8.573232323232324,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 10.59402332361516,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-middle-s1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 23.076923076923077,
+      "held_out_ci95": [
+       12.5,
+       32.84313725490197
+      ],
+      "in_sample": 25.96153846153846,
+      "median_nearest_d": 0.3214865558453529,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.5096153846153846,
+       0.49038461538461536,
+       0.0
+      ]
+     },
+     "leak_theory": 25.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 17.018072289156628,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 21.875,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 19.358614232209735,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 23.112745098039213,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 14.931284834476976,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 17.358011723889653,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 18.98148148148148,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 28.73134328358209,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 12.899831649831647,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 13.796768707482993,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 13.161976911976915,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 15.878279883381927,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-released": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.19047619047619047,
+      "held_out": 26.428571428571423,
+      "held_out_ci95": [
+       14.02439024390244,
+       38.39285714285714
+      ],
+      "in_sample": 26.428571428571423,
+      "median_nearest_d": 0.2,
+      "n_items": 105,
+      "rank_shares": [
+       0.12380952380952381,
+       0.5142857142857142,
+       0.29523809523809524,
+       0.06666666666666667
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 21.837349397590362,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 27.430555555555557,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 21.418539325842698,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 26.348039215686274,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 14.579730084174683,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 17.372567478715204,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 20.833333333333336,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 30.970149253731343,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 11.645622895622894,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 12.767857142857142,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 11.465848965848965,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 14.395651117589894,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-uniform": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.5142857142857142,
+      "held_out": 0.7142857142857117,
+      "held_out_ci95": [
+       -7.608695652173914,
+       8.333333333333332
+      ],
+      "in_sample": 6.428571428571428,
+      "median_nearest_d": 0.2029941914216671,
+      "n_items": 105,
+      "rank_shares": [
+       0.2571428571428571,
+       0.17142857142857143,
+       0.3142857142857143,
+       0.2571428571428571
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 24.84939759036145,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 31.59722222222222,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 28.698501872659175,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 33.77450980392157,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 23.332183198082905,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 27.764524619108556,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 26.38888888888889,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 39.92537313432835,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 20.702861952861955,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 22.325680272108848,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 21.855459355459356,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 26.118197278911566,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-uniform-s0.1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.5673076923076923,
+      "held_out": 10.576923076923078,
+      "held_out_ci95": [
+       2.192982456140352,
+       19.554455445544555
+      ],
+      "in_sample": 10.576923076923078,
+      "median_nearest_d": 0.05247563352826508,
+      "n_items": 104,
+      "rank_shares": [
+       0.21153846153846154,
+       0.22115384615384615,
+       0.21153846153846154,
+       0.3557692307692308
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 15.963855421686745,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 18.57638888888889,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 21.48876404494382,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 24.95098039215686,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 18.04382738517038,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 21.47277424035496,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 16.666666666666664,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 26.865671641791046,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 18.615319865319865,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 20.676020408163268,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 17.293169793169792,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 19.938654033041786,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-uniform-s0.2": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.5333333333333333,
+      "held_out": -11.666666666666666,
+      "held_out_ci95": [
+       -16.666666666666668,
+       -7.051282051282051
+      ],
+      "in_sample": 3.57142857142857,
+      "median_nearest_d": 0.10217935241253721,
+      "n_items": 105,
+      "rank_shares": [
+       0.24761904761904763,
+       0.26666666666666666,
+       0.2,
+       0.2857142857142857
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 21.385542168674696,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 26.21527777777778,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 26.84925093632959,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 32.13235294117647,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 23.297214383796145,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 27.379232039662,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 22.839506172839506,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 33.582089552238806,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 22.638888888888886,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 25.556972789115644,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 22.995430495430497,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 26.423104956268222,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-uniform-s0.5": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.4857142857142857,
+      "held_out": -3.0952380952380953,
+      "held_out_ci95": [
+       -10.85858585858586,
+       4.914529914529914
+      ],
+      "in_sample": 3.57142857142857,
+      "median_nearest_d": 0.2,
+      "n_items": 105,
+      "rank_shares": [
+       0.26666666666666666,
+       0.2857142857142857,
+       0.22857142857142856,
+       0.21904761904761905
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 23.042168674698797,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 30.90277777777778,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 23.19756554307116,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 27.0343137254902,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 23.829647740955085,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 28.15421774419848,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 23.14814814814815,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 38.24626865671642,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 23.884680134680135,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 25.369897959183675,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 23.733766233766232,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 28.72266763848397,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k4-uniform-s1": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.45714285714285713,
+      "held_out": 8.333333333333332,
+      "held_out_ci95": [
+       0.25252525252525415,
+       16.176470588235293
+      ],
+      "in_sample": 8.333333333333332,
+      "median_nearest_d": 0.3333333333333333,
+      "n_items": 105,
+      "rank_shares": [
+       0.26666666666666666,
+       0.3333333333333333,
+       0.20952380952380953,
+       0.19047619047619047
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 31.024096385542173,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 38.71527777777778,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 37.687265917603,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 44.26470588235294,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 31.206960839020603,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 36.807038179732,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 30.864197530864196,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 44.776119402985074,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 30.2483164983165,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 33.805272108843525,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 29.286916786916787,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 35.10143343051506,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k6-middle": {
+     "k": 6,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 15.064102564102564,
+      "held_out_ci95": [
+       7.8616352201257875,
+       22.98850574712644
+      ],
+      "in_sample": 15.064102564102564,
+      "median_nearest_d": 0.21763594073159775,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.21153846153846154,
+       0.20192307692307693,
+       0.3173076923076923,
+       0.2692307692307692,
+       0.0
+      ]
+     },
+     "leak_theory": 8.333333333333334,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 16.365461847389554,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 21.064814814814817,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 16.370162297128587,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 20.31045751633987,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 12.116474559910467,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 14.39366406779688,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 17.386831275720166,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 27.363184079601986,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 9.469696969696969,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 10.05952380952381,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 10.081770081770081,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 12.934483317136378,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k6-uniform": {
+     "k": 6,
+     "leak": {
+      "extreme": 0.3523809523809524,
+      "held_out": -0.4761904761904745,
+      "held_out_ci95": [
+       -7.657657657657657,
+       7.801418439716312
+      ],
+      "in_sample": 5.238095238095239,
+      "median_nearest_d": 0.2222222222222222,
+      "n_items": 105,
+      "rank_shares": [
+       0.21904761904761905,
+       0.19047619047619047,
+       0.13333333333333333,
+       0.1523809523809524,
+       0.17142857142857143,
+       0.13333333333333333
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 26.30522088353414,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 33.91203703703704,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 28.121098626716606,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 33.79084967320261,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 22.025601966575163,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 26.142171145409282,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 20.781893004115226,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 33.08457711442785,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 19.25645342312009,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 21.48809523809524,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 20.928330928330926,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 25.449060576611597,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-middle": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 9.615384615384615,
+      "held_out_ci95": [
+       2.453271028037382,
+       16.792929292929294
+      ],
+      "in_sample": 9.615384615384615,
+      "median_nearest_d": 0.23613468869021914,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.17307692307692307,
+       0.15384615384615385,
+       0.14423076923076922,
+       0.22115384615384615,
+       0.16346153846153846,
+       0.14423076923076922,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 19.352409638554217,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 25.17361111111111,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 20.11938202247191,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 24.00735294117647,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 12.189820557778386,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 14.485315418471579,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 17.515432098765434,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 27.425373134328357,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 8.499579124579123,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 9.232568027210885,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 9.437830687830687,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 11.974307580174928,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-middle-s0.1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 14.684466019417474,
+      "held_out_ci95": [
+       5.946601941747573,
+       24.133663366336634
+      ],
+      "in_sample": 14.684466019417474,
+      "median_nearest_d": 0.06040268456375844,
+      "n_items": 103,
+      "rank_shares": [
+       0.0,
+       0.18446601941747573,
+       0.27184466019417475,
+       0.1553398058252427,
+       0.08737864077669903,
+       0.1553398058252427,
+       0.14563106796116504,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 3.91566265060241,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 5.295138888888888,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 4.283707865168539,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 5.465686274509805,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 98.30508474576271,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 3.6970919332949075,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 4.369534132597252,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 5.401234567901234,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 8.395522388059701,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 93.75,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 3.613215488215488,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 3.8116496598639458,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 3.429533429533429,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 4.2289237123420795,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-middle-s0.2": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 10.576923076923078,
+      "held_out_ci95": [
+       3.601694915254236,
+       17.597087378640776
+      ],
+      "in_sample": 10.576923076923078,
+      "median_nearest_d": 0.11596266413542158,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.1346153846153846,
+       0.17307692307692307,
+       0.23076923076923078,
+       0.1346153846153846,
+       0.1346153846153846,
+       0.19230769230769232,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 8.509036144578314,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 11.284722222222223,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 7.947097378277153,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 9.595588235294118,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 6.140771663012257,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 7.362482352511258,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 7.021604938271605,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 12.5,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 5.5197811447811445,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 6.052295918367347,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 5.661976911976912,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 7.161382410106901,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-middle-s0.5": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 1.9230769230769218,
+      "held_out_ci95": [
+       -4.038461538461538,
+       9.121621621621623
+      ],
+      "in_sample": 8.653846153846153,
+      "median_nearest_d": 0.2196088445902722,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.15384615384615385,
+       0.20192307692307693,
+       0.21153846153846154,
+       0.16346153846153846,
+       0.10576923076923077,
+       0.16346153846153846,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 11.069277108433734,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 14.23611111111111,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 14.08005617977528,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 17.193627450980394,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 10.203748407525733,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 11.935521450373443,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 15.817901234567902,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 23.88059701492537,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 8.369107744107744,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 8.930697278911564,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 8.466810966810966,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 10.271805150631682,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-middle-s1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.0,
+      "held_out": 12.5,
+      "held_out_ci95": [
+       4.342105263157895,
+       20.833333333333332
+      ],
+      "in_sample": 12.5,
+      "median_nearest_d": 0.3442689672839232,
+      "n_items": 104,
+      "rank_shares": [
+       0.0,
+       0.21153846153846154,
+       0.25,
+       0.1346153846153846,
+       0.20192307692307693,
+       0.11538461538461539,
+       0.08653846153846154,
+       0.0
+      ]
+     },
+     "leak_theory": 4.166666666666666,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 16.94277108433735,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 22.395833333333336,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 17.532771535580522,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 21.299019607843135,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 14.107203889283587,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 16.548090308910428,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 17.515432098765434,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 27.425373134328357,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 11.630892255892256,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 12.718962585034014,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 12.863756613756614,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 15.595541788143827,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-uniform": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.22857142857142856,
+      "held_out": 0.8333333333333331,
+      "held_out_ci95": [
+       -5.2272727272727275,
+       6.969026548672566
+      ],
+      "in_sample": 5.595238095238095,
+      "median_nearest_d": 0.25574272588055125,
+      "n_items": 105,
+      "rank_shares": [
+       0.11428571428571428,
+       0.1523809523809524,
+       0.17142857142857143,
+       0.08571428571428572,
+       0.18095238095238095,
+       0.0761904761904762,
+       0.10476190476190476,
+       0.11428571428571428
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 24.17168674698795,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 31.42361111111111,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 25.678838951310855,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 30.808823529411768,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 19.00044889381952,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 23.076979626349374,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 19.367283950617285,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 30.410447761194032,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 16.32786195286195,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 18.38222789115646,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 16.954665704665707,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 22.20389941690962,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-uniform-s0.1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.3076923076923077,
+      "held_out": -6.730769230769231,
+      "held_out_ci95": [
+       -10.630841121495326,
+       -1.5109890109890112
+      ],
+      "in_sample": 5.769230769230768,
+      "median_nearest_d": 0.06486676016830295,
+      "n_items": 104,
+      "rank_shares": [
+       0.1346153846153846,
+       0.16346153846153846,
+       0.08653846153846154,
+       0.11538461538461539,
+       0.07692307692307693,
+       0.0673076923076923,
+       0.18269230769230768,
+       0.17307692307692307
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 13.403614457831326,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 16.927083333333336,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 16.280430711610485,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 18.811274509803923,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 99.66101694915254,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 12.958407071978936,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 15.433371845416929,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 12.037037037037036,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 20.149253731343283,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 12.699915824915822,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 14.555697278911566,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 98.88888888888889,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 12.855339105339105,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 14.824769193391644,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-uniform-s0.2": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.27884615384615385,
+      "held_out": 7.6923076923076925,
+      "held_out_ci95": [
+       0.2450980392156854,
+       15.059055118110237
+      ],
+      "in_sample": 7.6923076923076925,
+      "median_nearest_d": 0.0957457793381176,
+      "n_items": 104,
+      "rank_shares": [
+       0.15384615384615385,
+       0.11538461538461539,
+       0.04807692307692308,
+       0.20192307692307693,
+       0.14423076923076922,
+       0.125,
+       0.08653846153846154,
+       0.125
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 13.55421686746988,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 17.100694444444446,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 14.64185393258427,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 16.801470588235297,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 14.60465770816765,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 16.887819320114613,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 15.277777777777779,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 25.55970149253731,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 12.939814814814818,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 13.964710884353742,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 16.16041366041366,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 19.06492954324587,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-uniform-s0.5": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.20952380952380953,
+      "held_out": 0.8333333333333331,
+      "held_out_ci95": [
+       -4.634831460674158,
+       6.056701030927836
+      ],
+      "in_sample": 4.642857142857143,
+      "median_nearest_d": 0.24014336917562723,
+      "n_items": 105,
+      "rank_shares": [
+       0.12380952380952381,
+       0.10476190476190476,
+       0.10476190476190476,
+       0.12380952380952381,
+       0.17142857142857143,
+       0.14285714285714285,
+       0.14285714285714285,
+       0.08571428571428572
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 23.64457831325301,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 30.12152777777778,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 25.77247191011236,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 30.61274509803922,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 19.64544706192023,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 22.706638555662376,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 22.530864197530864,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 34.32835820895522,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 17.598905723905723,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 19.011479591836732,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 17.784391534391535,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 20.941144314868804,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "k8-uniform-s1": {
+     "k": 8,
+     "leak": {
+      "extreme": 0.23809523809523808,
+      "held_out": 0.8333333333333331,
+      "held_out_ci95": [
+       -4.936974789915967,
+       7.500000000000001
+      ],
+      "in_sample": 5.595238095238095,
+      "median_nearest_d": 0.3496554757366955,
+      "n_items": 105,
+      "rank_shares": [
+       0.18095238095238095,
+       0.17142857142857143,
+       0.17142857142857143,
+       0.06666666666666667,
+       0.12380952380952381,
+       0.10476190476190476,
+       0.12380952380952381,
+       0.05714285714285714
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 21.159638554216865,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 27.256944444444443,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 26.147003745318354,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 31.495098039215684,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 19.690535272643114,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 23.411595779977347,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 19.367283950617285,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 31.156716417910445,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 17.102272727272727,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 18.85841836734694,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 19.03499278499278,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 23.293549562682216,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "placebo": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.19047619047619047,
+      "held_out": 26.428571428571423,
+      "held_out_ci95": [
+       14.02439024390244,
+       38.39285714285714
+      ],
+      "in_sample": 26.428571428571423,
+      "median_nearest_d": 0.18518518518518517,
+      "n_items": 105,
+      "rank_shares": [
+       0.12380952380952381,
+       0.5142857142857142,
+       0.29523809523809524,
+       0.06666666666666667
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 20.33132530120482,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 25.694444444444443,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 18.96067415730337,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 23.774509803921568,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 13.737422046304212,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 16.460431592760845,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 17.438271604938272,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 26.865671641791046,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 11.51936026936027,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 12.640306122448978,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 11.101491101491101,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 14.438168124392615,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "released": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.19047619047619047,
+      "held_out": 26.428571428571423,
+      "held_out_ci95": [
+       14.02439024390244,
+       38.39285714285714
+      ],
+      "in_sample": 26.428571428571423,
+      "median_nearest_d": 0.1418975650713686,
+      "n_items": 105,
+      "rank_shares": [
+       0.12380952380952381,
+       0.5142857142857142,
+       0.29523809523809524,
+       0.06666666666666667
+      ]
+     },
+     "leak_theory": null,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 96.875,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 14.006024096385541,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 17.01388888888889,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 97.72727272727273,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 14.864232209737827,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 17.034313725490197,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 97.96610169491525,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 12.527932257444876,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 14.882701354197847,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 96.96969696969697,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 16.97530864197531,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 25.55970149253731,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 12.142255892255891,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 13.16751700680272,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 95.55555555555554,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 10.79064454064454,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 13.543488824101072,
+        "n_runs": 459
+       }
+      }
+     }
+    },
+    "repaired": {
+     "k": 4,
+     "leak": {
+      "extreme": 0.42857142857142855,
+      "held_out": -6.904761904761905,
+      "held_out_ci95": [
+       -13.541666666666668,
+       -0.6097560975609762
+      ],
+      "in_sample": 4.523809523809525,
+      "median_nearest_d": 0.1875,
+      "n_items": 105,
+      "rank_shares": [
+       0.23809523809523808,
+       0.29523809523809524,
+       0.2761904761904762,
+       0.19047619047619047
+      ]
+     },
+     "leak_theory": 0.0,
+     "rule": {
+      "Qwen3-235B-A22B": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 42
+       },
+       "misses": {
+        "accepted": 23.042168674698797,
+        "n_runs": 137
+       },
+       "misses with a number": {
+        "accepted": 30.208333333333332,
+        "n_runs": 107
+       }
+      },
+      "Qwen3-235B-A22B, four more runs": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 90
+       },
+       "misses": {
+        "accepted": 22.331460674157302,
+        "n_runs": 254
+       },
+       "misses with a number": {
+        "accepted": 28.08823529411765,
+        "n_runs": 215
+       }
+      },
+      "all": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 266
+       },
+       "misses": {
+        "accepted": 23.012163997774753,
+        "n_runs": 1591
+       },
+       "misses with a number": {
+        "accepted": 27.648155632987724,
+        "n_runs": 1347
+       }
+      },
+      "gpt-5.1": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 50
+       },
+       "misses": {
+        "accepted": 25.154320987654323,
+        "n_runs": 146
+       },
+       "misses with a number": {
+        "accepted": 38.43283582089552,
+        "n_runs": 95
+       }
+      },
+      "new seeds": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 27
+       },
+       "misses": {
+        "accepted": 21.864478114478114,
+        "n_runs": 516
+       },
+       "misses with a number": {
+        "accepted": 23.958333333333336,
+        "n_runs": 471
+       }
+      },
+      "seven configurations": {
+       "correct": {
+        "accepted": 100.0,
+        "n_runs": 57
+       },
+       "misses": {
+        "accepted": 22.201779701779696,
+        "n_runs": 538
+       },
+       "misses with a number": {
+        "accepted": 27.308673469387756,
+        "n_runs": 459
+       }
+      }
+     }
+    }
+   },
+   "n_common_runs": 2070,
+   "n_items": 99,
+   "n_runs": 2205,
+   "pairs": {
+    "errors-uniform - errors-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.9285,
+      "hi": 12.545263055717214,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 5.547530833081317,
+      "mean": 8.80952380952381,
+      "n_clusters": 44,
+      "n_items": 100
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.932,
+      "hi": 15.08238823839519,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "lo": 7.114466456595422,
+      "mean": 10.848523101425577,
+      "n_clusters": 44,
+      "n_items": 100
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.929,
+      "hi": 26.436417173252043,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 12.155388471177945,
+      "mean": 18.820861678004537,
+      "n_clusters": 30,
+      "n_items": 42
+     },
+     "n_moved": 42
+    },
+    "errors-uniform - errors-released": {
+     "all": {
+      "coverage_of_nominal_95": 0.9285,
+      "hi": 12.297234203614222,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "lo": 3.401360544217687,
+      "mean": 7.732201791607732,
+      "n_clusters": 45,
+      "n_items": 101
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.934,
+      "hi": 14.81421095070385,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 4.763932383149546,
+      "mean": 9.715932672435754,
+      "n_clusters": 45,
+      "n_items": 101
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.905,
+      "hi": 28.078849311607847,
+      "level": 0.9849999999999961,
+      "level_capped": false,
+      "lo": 11.255411255411254,
+      "mean": 18.76750700280112,
+      "n_clusters": 26,
+      "n_items": 34
+     },
+     "n_moved": 34
+    },
+    "k10-uniform - k10-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.939,
+      "hi": 9.576781823840598,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 2.531102531102531,
+      "mean": 5.769230769230768,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9425,
+      "hi": 11.743740456315766,
+      "level": 0.9574999999999967,
+      "level_capped": false,
+      "lo": 3.3671375472194947,
+      "mean": 7.242532525524012,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9195,
+      "hi": 39.6103896103896,
+      "level": 0.9749999999999963,
+      "level_capped": false,
+      "lo": 14.906832298136646,
+      "mean": 26.293995859213247,
+      "n_clusters": 19,
+      "n_items": 23
+     },
+     "n_moved": 23
+    },
+    "k4-uniform - k4-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.9385,
+      "hi": 12.399843695549645,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 5.138757183908176,
+      "mean": 8.367673992673993,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9425,
+      "hi": 15.757735016954191,
+      "level": 0.9549999999999967,
+      "level_capped": false,
+      "lo": 6.91075774005626,
+      "mean": 10.864826764817836,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9365,
+      "hi": 22.50349859495076,
+      "level": 0.9624999999999966,
+      "level_capped": false,
+      "lo": 10.949752408085974,
+      "mean": 16.23989218328841,
+      "n_clusters": 32,
+      "n_items": 53
+     },
+     "n_moved": 53
+    },
+    "k4-uniform - k4-released": {
+     "all": {
+      "coverage_of_nominal_95": 0.941,
+      "hi": 10.35061177248671,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 2.3015564801972825,
+      "mean": 6.13378684807256,
+      "n_clusters": 46,
+      "n_items": 105
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9265,
+      "hi": 14.070110069332625,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "lo": 3.699697315934184,
+      "mean": 8.53369821735589,
+      "n_clusters": 46,
+      "n_items": 105
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9315,
+      "hi": 24.967879900806675,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 12.231182216476705,
+      "mean": 18.07359307359307,
+      "n_clusters": 28,
+      "n_items": 44
+     },
+     "n_moved": 44
+    },
+    "k6-uniform - k6-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.943,
+      "hi": 10.013562141168489,
+      "level": 0.9549999999999967,
+      "level_capped": false,
+      "lo": 4.079580896686206,
+      "mean": 7.066544566544566,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.931,
+      "hi": 14.472440544306785,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 5.064654158203847,
+      "mean": 9.629613497461499,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9375,
+      "hi": 29.01785714285714,
+      "level": 0.9599999999999966,
+      "level_capped": false,
+      "lo": 17.142857142857142,
+      "mean": 23.015873015873012,
+      "n_clusters": 25,
+      "n_items": 36
+     },
+     "n_moved": 36
+    },
+    "k8-uniform - k8-middle": {
+     "all": {
+      "coverage_of_nominal_95": 0.929,
+      "hi": 7.68354027114296,
+      "level": 0.9724999999999964,
+      "level_capped": false,
+      "lo": 1.5043909592823888,
+      "mean": 4.51007326007326,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.9375,
+      "hi": 10.930729127916262,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 2.518554300832326,
+      "mean": 6.536613084842574,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.917,
+      "hi": 30.39058355437618,
+      "level": 0.9774999999999963,
+      "level_capped": false,
+      "lo": 11.337868480725625,
+      "mean": 21.73913043478261,
+      "n_clusters": 20,
+      "n_items": 23
+     },
+     "n_moved": 23
+    },
+    "k8-uniform-s0.1 - k8-middle-s0.1": {
+     "all": {
+      "coverage_of_nominal_95": 0.93,
+      "hi": 11.408817693744053,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "lo": 3.21002014936411,
+      "mean": 6.848127600554784,
+      "n_clusters": 45,
+      "n_items": 103
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.936,
+      "hi": 14.520271060319226,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 4.328795453356141,
+      "mean": 8.956815698170265,
+      "n_clusters": 45,
+      "n_items": 103
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.925,
+      "hi": 32.05143467643444,
+      "level": 0.9749999999999963,
+      "level_capped": false,
+      "lo": 12.442230588472194,
+      "mean": 21.81919642857143,
+      "n_clusters": 21,
+      "n_items": 32
+     },
+     "n_moved": 32
+    },
+    "k8-uniform-s0.2 - k8-middle-s0.2": {
+     "all": {
+      "coverage_of_nominal_95": 0.933,
+      "hi": 8.96361825980388,
+      "level": 0.9699999999999964,
+      "level_capped": false,
+      "lo": 2.887200300193601,
+      "mean": 5.757783882783881,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.918,
+      "hi": 12.865320539361393,
+      "level": 0.9799999999999962,
+      "level_capped": false,
+      "lo": 3.7852679193428975,
+      "mean": 8.052389692251861,
+      "n_clusters": 45,
+      "n_items": 104
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.9175,
+      "hi": 27.381313131312414,
+      "level": 0.9799999999999962,
+      "level_capped": false,
+      "lo": 12.761904761904763,
+      "mean": 19.86863711001642,
+      "n_clusters": 19,
+      "n_items": 29
+     },
+     "n_moved": 29
+    },
+    "repaired - placebo": {
+     "all": {
+      "coverage_of_nominal_95": 0.9345,
+      "hi": 10.114369047618961,
+      "level": 0.9649999999999965,
+      "level_capped": false,
+      "lo": 2.093543493932528,
+      "mean": 6.145124716553287,
+      "n_clusters": 46,
+      "n_items": 105
+     },
+     "misses": {
+      "coverage_of_nominal_95": 0.929,
+      "hi": 14.091893102661187,
+      "level": 0.9674999999999965,
+      "level_capped": false,
+      "lo": 3.200994397246943,
+      "mean": 8.744756697100794,
+      "n_clusters": 46,
+      "n_items": 105
+     },
+     "moved": {
+      "coverage_of_nominal_95": 0.921,
+      "hi": 25.353925353925348,
+      "level": 0.9749999999999963,
+      "level_capped": false,
+      "lo": 11.11111111111111,
+      "mean": 18.661518661518663,
+      "n_clusters": 21,
+      "n_items": 37
+     },
+     "n_moved": 37
+    }
+   }
+  }
+ },
+ "seed": 20260930,
+ "tolerance": 0.05
+}

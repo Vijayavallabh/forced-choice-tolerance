@@ -1,0 +1,49 @@
+{
+ "settings": {
+  "extractor": "chars",
+  "scorer": "mlp",
+  "dim": 2048
+ },
+ "set|groups ignored": {
+  "LAB-Bench DbQA": {
+   "n_items": 520,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "item id in 20 folds (no field groups this file)",
+   "n_folds": 20,
+   "distinct_in_field": 0,
+   "accuracy": 34.80769230769231,
+   "accuracy_ci95": [
+    32.0,
+    37.616431339831664
+   ],
+   "clean_worst": 29.230769230769234,
+   "clean_mean": 25.72115384615385,
+   "margin_over_clean": 5.576923076923074,
+   "margin_ci95": [
+    2.7692307692307683,
+    8.38566210906243
+   ]
+  },
+  "LAB-Bench SeqQA": {
+   "n_items": 559,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "item id in 20 folds (no field groups this file)",
+   "n_folds": 20,
+   "distinct_in_field": 0,
+   "accuracy": 48.1216457960644,
+   "accuracy_ci95": [
+    44.385917238749045,
+    51.75930810636814
+   ],
+   "clean_worst": 26.654740608228984,
+   "clean_mean": 23.166368515205725,
+   "margin_over_clean": 21.466905187835415,
+   "margin_ci95": [
+    17.73117663052006,
+    25.104567498139158
+   ]
+  }
+ }
+}

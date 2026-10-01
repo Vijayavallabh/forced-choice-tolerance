@@ -1,0 +1,250 @@
+{
+  "url": "https://api.datacite.org/dois/10.5281/zenodo.10000430",
+  "retrieved_at": "2026-09-16T15:26:26.917840+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.5281/zenodo.10000430",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.5281/zenodo.10000430",
+        "prefix": "10.5281",
+        "suffix": "zenodo.10000430",
+        "identifiers": [
+          {
+            "identifier": "oai:zenodo.org:10000430",
+            "identifierType": "oai"
+          }
+        ],
+        "alternateIdentifiers": [
+          {
+            "alternateIdentifierType": "oai",
+            "alternateIdentifier": "oai:zenodo.org:10000430"
+          }
+        ],
+        "creators": [
+          {
+            "name": "Lin, Wei-Yu",
+            "nameType": "Personal",
+            "givenName": "Wei-Yu",
+            "familyName": "Lin",
+            "affiliation": [
+              "University of Cambridge"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-9267-7988",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Wallace, Chris",
+            "nameType": "Personal",
+            "givenName": "Chris",
+            "familyName": "Wallace",
+            "affiliation": [
+              "University of Cambridge"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0001-9755-1703",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Barnes, Michael",
+            "nameType": "Personal",
+            "givenName": "Michael",
+            "familyName": "Barnes",
+            "affiliation": [
+              "Queen Mary University of London"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0001-9097-7381",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Wedderburn, Lucy",
+            "nameType": "Personal",
+            "givenName": "Lucy",
+            "familyName": "Wedderburn",
+            "affiliation": [
+              "University College London"
+            ],
+            "nameIdentifiers": [
+              {
+                "nameIdentifier": "0000-0002-7495-1429",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "CLUSTER consortium: Childhood arthritis and its associated uveitis: stratification through endotypes and mechanism to deliver benefit",
+            "nameType": "Organizational",
+            "nameIdentifiers": [],
+            "affiliation": []
+          }
+        ],
+        "titles": [
+          {
+            "title": "RNAseq of PBMC and sorted subpopulations (CD4, CD8, CD14, CD19) from children"
+          }
+        ],
+        "publisher": "Zenodo",
+        "container": {},
+        "publicationYear": 2023,
+        "subjects": [
+          {
+            "subject": "sorted cell RNAseq"
+          },
+          {
+            "subject": "Deconvolution"
+          },
+          {
+            "subject": "cell-type expression imputation"
+          }
+        ],
+        "contributors": [
+          {
+            "name": "CLUSTER consortium: Childhood arthritis and its associated uveitis: stratification through endotypes and mechanism to deliver benefit",
+            "nameType": "Organizational",
+            "contributorType": "ResearchGroup",
+            "nameIdentifiers": [],
+            "affiliation": []
+          }
+        ],
+        "dates": [
+          {
+            "date": "2023",
+            "dateType": "Issued"
+          }
+        ],
+        "language": "en",
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceType": "",
+          "resourceTypeGeneral": "Dataset"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsPartOf",
+            "relatedIdentifier": "10.1101/2023.09.11.556650",
+            "resourceTypeGeneral": "Preprint",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.10000429",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": null,
+        "rightsList": [
+          {
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc-by-4.0",
+            "rightsIdentifierScheme": "SPDX"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "The CLUSTER consortium (https://www.clusterconsortium.org.uk/) performed RNA sequencing on bulk and sorted CD4, CD8, CD14 and CD19 cells from the peripheral blood of patients with juvenile idiopathic arthritis and healthy controls. These data were used to examine performance of algorithms to impute cell subset specific expression from the mixed cell population (PBMC). Information and processed read counts are provided here for reproducibility purposes. Raw data (FASTQ) and clinical characteristics will be released when the primary outcome paper from the study is published.",
+            "descriptionType": "Abstract"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [
+          {
+            "awardTitle": "MICA: Childhood arthritis and its associated uveitis: stratification through endotypes and mechanism to deliver benefit; the CLUSTER Consortium.",
+            "funderName": "UK Research and Innovation",
+            "awardNumber": "MR/R013926/1",
+            "funderIdentifier": "001aqnf71",
+            "funderIdentifierType": "ROR"
+          },
+          {
+            "awardTitle": "Childhood arthritis and its associated uveitis: stratification through endotypes and mechanism to deliver benefit; the CLUSTER Consortium: Study coordinator",
+            "funderName": "Great Ormond Street Hospital Children's Charity",
+            "awardNumber": "Ref VS0518",
+            "funderIdentifier": "03vjq7x94",
+            "funderIdentifierType": "ROR"
+          }
+        ],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMTAwMDA0MzA8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpbiwgV2VpLVl1PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5XZWktWXU8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGluPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAyLTkyNjctNzk4ODwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMTNtZWg3MjIiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5Vbml2ZXJzaXR5IG9mIENhbWJyaWRnZTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+V2FsbGFjZSwgQ2hyaXM8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkNocmlzPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPldhbGxhY2U8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDEtOTc1NS0xNzAzPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAxM21laDcyMiIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPlVuaXZlcnNpdHkgb2YgQ2FtYnJpZGdlPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5CYXJuZXMsIE1pY2hhZWw8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk1pY2hhZWw8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+QmFybmVzPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAxLTkwOTctNzM4MTwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMjZ6em44NDYiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIj5RdWVlbiBNYXJ5IFVuaXZlcnNpdHkgb2YgTG9uZG9uPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5XZWRkZXJidXJuLCBMdWN5PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5MdWN5PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPldlZGRlcmJ1cm48L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItNzQ5NS0xNDI5PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAyangzeDg5NSIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiPlVuaXZlcnNpdHkgQ29sbGVnZSBMb25kb248L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iT3JnYW5pemF0aW9uYWwiPkNMVVNURVIgY29uc29ydGl1bTogQ2hpbGRob29kIGFydGhyaXRpcyBhbmQgaXRzIGFzc29jaWF0ZWQgdXZlaXRpczogc3RyYXRpZmljYXRpb24gdGhyb3VnaCBlbmRvdHlwZXMgYW5kIG1lY2hhbmlzbSB0byBkZWxpdmVyIGJlbmVmaXQ8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5STkFzZXEgb2YgUEJNQyBhbmQgc29ydGVkIHN1YnBvcHVsYXRpb25zIChDRDQsIENEOCwgQ0QxNCwgQ0QxOSkgZnJvbSBjaGlsZHJlbjwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5aZW5vZG88L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjM8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiLz4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5zb3J0ZWQgY2VsbCBSTkFzZXE8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5EZWNvbnZvbHV0aW9uPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Y2VsbC10eXBlIGV4cHJlc3Npb24gaW1wdXRhdGlvbjwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJSZXNlYXJjaEdyb3VwIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iT3JnYW5pemF0aW9uYWwiPkNMVVNURVIgY29uc29ydGl1bTogQ2hpbGRob29kIGFydGhyaXRpcyBhbmQgaXRzIGFzc29jaWF0ZWQgdXZlaXRpczogc3RyYXRpZmljYXRpb24gdGhyb3VnaCBlbmRvdHlwZXMgYW5kIG1lY2hhbmlzbSB0byBkZWxpdmVyIGJlbmVmaXQ8L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgPC9jb250cmlidXRvcnM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyMzwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbmc8L2xhbmd1YWdlPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJvYWkiPm9haTp6ZW5vZG8ub3JnOjEwMDAwNDMwPC9hbHRlcm5hdGVJZGVudGlmaWVyPgogIDwvYWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc1BhcnRPZiIgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPjEwLjExMDEvMjAyMy4wOS4xMS41NTY2NTA8L3JlbGF0ZWRJZGVudGlmaWVyPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IklzVmVyc2lvbk9mIj4xMC41MjgxL3plbm9kby4xMDAwMDQyOTwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CiAgPHNpemVzLz4KICA8Zm9ybWF0cy8+CiAgPHZlcnNpb24vPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvbGVnYWxjb2RlIiByaWdodHNJZGVudGlmaWVyPSJjYy1ieS00LjAiIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9InNwZHgiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgQ0xVU1RFUiBjb25zb3J0aXVtIChodHRwczovL3d3dy5jbHVzdGVyY29uc29ydGl1bS5vcmcudWsvKSBwZXJmb3JtZWQgUk5BIHNlcXVlbmNpbmcgb24gYnVsayBhbmQgc29ydGVkIENENCwgQ0Q4LCBDRDE0IGFuZCBDRDE5IGNlbGxzIGZyb20gdGhlIHBlcmlwaGVyYWwgYmxvb2Qgb2YgcGF0aWVudHMgd2l0aCBqdXZlbmlsZSBpZGlvcGF0aGljIGFydGhyaXRpcyBhbmQgaGVhbHRoeSBjb250cm9scy4gVGhlc2UgZGF0YSB3ZXJlIHVzZWQgdG8gZXhhbWluZSBwZXJmb3JtYW5jZSBvZiBhbGdvcml0aG1zIHRvIGltcHV0ZSBjZWxsIHN1YnNldCBzcGVjaWZpYyBleHByZXNzaW9uIGZyb20gdGhlIG1peGVkIGNlbGwgcG9wdWxhdGlvbiAoUEJNQykuIEluZm9ybWF0aW9uIGFuZCBwcm9jZXNzZWQgcmVhZCBjb3VudHMgYXJlIHByb3ZpZGVkIGhlcmUgZm9yIHJlcHJvZHVjaWJpbGl0eSBwdXJwb3Nlcy4gUmF3IGRhdGEgKEZBU1RRKSBhbmQgY2xpbmljYWwgY2hhcmFjdGVyaXN0aWNzIHdpbGwgYmUgcmVsZWFzZWQgd2hlbiB0aGUgcHJpbWFyeSBvdXRjb21lIHBhcGVyIGZyb20gdGhlIHN0dWR5IGlzIHB1Ymxpc2hlZC48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgogIDxmdW5kaW5nUmVmZXJlbmNlcz4KICAgIDxmdW5kaW5nUmVmZXJlbmNlPgogICAgICA8ZnVuZGVyTmFtZT5VSyBSZXNlYXJjaCBhbmQgSW5ub3ZhdGlvbjwvZnVuZGVyTmFtZT4KICAgICAgPGZ1bmRlcklkZW50aWZpZXIgZnVuZGVySWRlbnRpZmllclR5cGU9IlJPUiI+MDAxYXFuZjcxPC9mdW5kZXJJZGVudGlmaWVyPgogICAgICA8YXdhcmROdW1iZXI+TVIvUjAxMzkyNi8xPC9hd2FyZE51bWJlcj4KICAgICAgPGF3YXJkVGl0bGU+TUlDQTogQ2hpbGRob29kIGFydGhyaXRpcyBhbmQgaXRzIGFzc29jaWF0ZWQgdXZlaXRpczogc3RyYXRpZmljYXRpb24gdGhyb3VnaCBlbmRvdHlwZXMgYW5kIG1lY2hhbmlzbSB0byBkZWxpdmVyIGJlbmVmaXQ7IHRoZSBDTFVTVEVSIENvbnNvcnRpdW0uPC9hd2FyZFRpdGxlPgogICAgPC9mdW5kaW5nUmVmZXJlbmNlPgogICAgPGZ1bmRpbmdSZWZlcmVuY2U+CiAgICAgIDxmdW5kZXJOYW1lPkdyZWF0IE9ybW9uZCBTdHJlZXQgSG9zcGl0YWwgQ2hpbGRyZW4ncyBDaGFyaXR5PC9mdW5kZXJOYW1lPgogICAgICA8ZnVuZGVySWRlbnRpZmllciBmdW5kZXJJZGVudGlmaWVyVHlwZT0iUk9SIj4wM3ZqcTd4OTQ8L2Z1bmRlcklkZW50aWZpZXI+CiAgICAgIDxhd2FyZE51bWJlcj5SZWYgVlMwNTE4PC9hd2FyZE51bWJlcj4KICAgICAgPGF3YXJkVGl0bGU+Q2hpbGRob29kIGFydGhyaXRpcyBhbmQgaXRzIGFzc29jaWF0ZWQgdXZlaXRpczogc3RyYXRpZmljYXRpb24gdGhyb3VnaCBlbmRvdHlwZXMgYW5kIG1lY2hhbmlzbSB0byBkZWxpdmVyIGJlbmVmaXQ7IHRoZSBDTFVTVEVSIENvbnNvcnRpdW06IFN0dWR5IGNvb3JkaW5hdG9yPC9hd2FyZFRpdGxlPgogICAgPC9mdW5kaW5nUmVmZXJlbmNlPgogIDwvZnVuZGluZ1JlZmVyZW5jZXM+CjwvcmVzb3VyY2U+Cg==",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.10000430",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "viewsOverTime": [],
+        "downloadCount": 0,
+        "downloadsOverTime": [],
+        "referenceCount": 0,
+        "citationCount": 0,
+        "citationsOverTime": [],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2023-10-30T16:04:10.000Z",
+        "registered": "2023-10-30T16:04:11.000Z",
+        "published": "2023",
+        "updated": "2023-10-30T16:04:11.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "cern.zenodo",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "cern",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5281/zenodo.10000430",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": []
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        }
+      }
+    }
+  }
+}

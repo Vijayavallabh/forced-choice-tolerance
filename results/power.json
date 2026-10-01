@@ -1,0 +1,182 @@
+{
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "test": "two-sided paired t; independent normally distributed differences",
+  "assumed_sd_rows": [
+    {
+      "sd_difference": 0.2,
+      "implied_rho_at_sigma_0_45": 0.9012345679012346,
+      "pairs_for_10pp": 34,
+      "power_n3": 0.08410705589824512,
+      "power_n8": 0.23207700463899147,
+      "mde": {
+        "8": 0.23120693559894626,
+        "10": 0.19920027429470802,
+        "30": 0.10584712302259071,
+        "75": 0.06555466192024105
+      }
+    },
+    {
+      "sd_difference": 0.32,
+      "implied_rho_at_sigma_0_45": 0.7471604938271605,
+      "pairs_for_10pp": 83,
+      "power_n3": 0.06347168342079189,
+      "power_n8": 0.11986400054461567,
+      "mde": {
+        "8": 0.36993109695833293,
+        "10": 0.3187204388717493,
+        "30": 0.16935539683614534,
+        "75": 0.10488745907273506
+      }
+    },
+    {
+      "sd_difference": 0.53,
+      "implied_rho_at_sigma_0_45": 0.30641975308641967,
+      "pairs_for_10pp": 223,
+      "power_n3": 0.05493330150677031,
+      "power_n8": 0.0750639880347888,
+      "mde": {
+        "8": 0.6126983793372089,
+        "10": 0.5278807268813346,
+        "30": 0.2804948760099645,
+        "75": 0.1737198540892169
+      }
+    }
+  ],
+  "measured_inputs": {
+    "per_run_study_level_sd": {
+      "claude-3-5-sonnet-latest-grader-mcq-refusal-False": {
+        "n_studies": 59,
+        "mean": 0.4130347054075868,
+        "sd_of_study_means": 0.34054546929495827
+      },
+      "claude-3-5-sonnet-latest-grader-mcq-refusal-True": {
+        "n_studies": 59,
+        "mean": 0.08765133171912834,
+        "sd_of_study_means": 0.20460454992516755
+      },
+      "claude-3-5-sonnet-latest-grader-openended": {
+        "n_studies": 59,
+        "mean": 0.04067796610169491,
+        "sd_of_study_means": 0.1529803278628769
+      },
+      "gpt-4o-grader-mcq-refusal-False": {
+        "n_studies": 59,
+        "mean": 0.360411622276029,
+        "sd_of_study_means": 0.35219364899168515
+      },
+      "gpt-4o-grader-mcq-refusal-True": {
+        "n_studies": 59,
+        "mean": 0.05185633575464083,
+        "sd_of_study_means": 0.1794962737963913
+      },
+      "gpt-4o-grader-openended": {
+        "n_studies": 59,
+        "mean": 0.04011299435028249,
+        "sd_of_study_means": 0.1524423967607152
+      }
+    },
+    "sigma_hat_note": "SD across capsule-level mean scores, averaged over the six published zero-shot baseline runs. These are no-data runs, not agent trajectories; the value anchors planning and does not replace a pilot.",
+    "clustering": {
+      "claude-3-5-sonnet-latest-grader-mcq-refusal-False": {
+        "accuracy": 0.34146341463414637,
+        "icc_questions_within_study": 0.02711626507959853,
+        "design_effect": 1.067101266129176,
+        "effective_n_questions": 192.10922759338575,
+        "nominal_n_questions": 205
+      },
+      "claude-3-5-sonnet-latest-grader-mcq-refusal-True": {
+        "accuracy": 0.08292682926829269,
+        "icc_questions_within_study": 0.01047476222763212,
+        "design_effect": 1.0259205980548185,
+        "effective_n_questions": 199.82053229917327,
+        "nominal_n_questions": 205
+      },
+      "claude-3-5-sonnet-latest-grader-openended": {
+        "accuracy": 0.02926829268292683,
+        "icc_questions_within_study": 0.13844240069326033,
+        "design_effect": 1.3425862796816272,
+        "effective_n_questions": 152.69037312716503,
+        "nominal_n_questions": 205
+      },
+      "gpt-4o-grader-mcq-refusal-False": {
+        "accuracy": 0.36097560975609755,
+        "icc_questions_within_study": 0.06444647594108338,
+        "design_effect": 1.1594777201253927,
+        "effective_n_questions": 176.8037422727106,
+        "nominal_n_questions": 205
+      },
+      "gpt-4o-grader-mcq-refusal-True": {
+        "accuracy": 0.03902439024390244,
+        "icc_questions_within_study": 0.31789448087598215,
+        "design_effect": 1.7866541391168371,
+        "effective_n_questions": 114.73961048853796,
+        "nominal_n_questions": 205
+      },
+      "gpt-4o-grader-openended": {
+        "accuracy": 0.02926829268292683,
+        "icc_questions_within_study": 0.13034245035419265,
+        "design_effect": 1.3225423347747818,
+        "effective_n_questions": 155.00448992047566,
+        "nominal_n_questions": 205
+      }
+    }
+  },
+  "grounded_rows": [
+    {
+      "rho": 0.0,
+      "sigma_hat": 0.23037711110529904,
+      "sd_difference": 0.32580243498544725,
+      "pairs_for_10pp": 86,
+      "mde": {
+        "10": 0.3244996720751447,
+        "30": 0.17242625208482104,
+        "75": 0.10678934239166676
+      }
+    },
+    {
+      "rho": 0.3,
+      "sigma_hat": 0.23037711110529904,
+      "sd_difference": 0.2725858738997907,
+      "pairs_for_10pp": 61,
+      "mde": {
+        "10": 0.27149590424867814,
+        "30": 0.14426215264446146,
+        "75": 0.08934637403896314
+      }
+    },
+    {
+      "rho": 0.5,
+      "sigma_hat": 0.23037711110529904,
+      "sd_difference": 0.23037711110529904,
+      "pairs_for_10pp": 44,
+      "mde": {
+        "10": 0.2294559186171444,
+        "30": 0.12192377210414121,
+        "75": 0.07551146816359962
+      }
+    },
+    {
+      "rho": 0.7,
+      "sigma_hat": 0.23037711110529904,
+      "sd_difference": 0.1784493429316398,
+      "pairs_for_10pp": 27,
+      "mde": {
+        "10": 0.17773579029856268,
+        "30": 0.09444174777292884,
+        "75": 0.05849093172905856
+      }
+    },
+    {
+      "rho": 0.9,
+      "sigma_hat": 0.23037711110529904,
+      "sd_difference": 0.10302777617829406,
+      "pairs_for_10pp": 11,
+      "mde": {
+        "10": 0.10261580637353136,
+        "30": 0.05452596849912491,
+        "75": 0.03376975517892055
+      }
+    }
+  ]
+}

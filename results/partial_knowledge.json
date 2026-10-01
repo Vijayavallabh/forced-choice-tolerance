@@ -1,0 +1,187 @@
+{
+ "level": 0.95,
+ "chance": 0.25,
+ "not_registered": true,
+ "v1.5|gpt-4o": {
+  "n_items": 105,
+  "n_clusters": 46,
+  "stated_share": 33.333333333333336,
+  "nearest_is_key_when_stated": {
+   "mean": 19.285714,
+   "lo": 7.142857,
+   "hi": 33.333333,
+   "n_items": 35,
+   "n_clusters": 24
+  },
+  "within_5pct_when_stated": 5.714285714285714,
+  "forced": {
+   "mean": 37.142857,
+   "lo": 27.906977,
+   "hi": 46.017699,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "forced_when_stated": {
+   "mean": 37.142857,
+   "lo": 21.621622,
+   "hi": 53.125,
+   "n_items": 35,
+   "n_clusters": 24
+  },
+  "forced_when_not": {
+   "mean": 37.142857,
+   "lo": 25.0,
+   "hi": 48.571429,
+   "n_items": 70,
+   "n_clusters": 36
+  },
+  "predicted_forced": 23.095238095238095,
+  "forced_minus_predicted": {
+   "mean": 14.047619,
+   "lo": 4.166667,
+   "hi": 23.598131,
+   "n_items": 105,
+   "n_clusters": 46
+  }
+ },
+ "v1.0|gpt-4o": {
+  "n_items": 159,
+  "n_clusters": 48,
+  "stated_share": 33.9622641509434,
+  "nearest_is_key_when_stated": {
+   "mean": 20.37037,
+   "lo": 10.869565,
+   "hi": 31.481481,
+   "n_items": 54,
+   "n_clusters": 34
+  },
+  "within_5pct_when_stated": 11.11111111111111,
+  "forced": {
+   "mean": 30.188679,
+   "lo": 22.941176,
+   "hi": 37.837838,
+   "n_items": 159,
+   "n_clusters": 48
+  },
+  "forced_when_stated": {
+   "mean": 33.333333,
+   "lo": 21.153169,
+   "hi": 46.296296,
+   "n_items": 54,
+   "n_clusters": 34
+  },
+  "forced_when_not": {
+   "mean": 28.571429,
+   "lo": 19.626168,
+   "hi": 38.53211,
+   "n_items": 105,
+   "n_clusters": 44
+  },
+  "predicted_forced": 23.427672955974842,
+  "forced_minus_predicted": {
+   "mean": 6.761006,
+   "lo": -0.92607,
+   "hi": 14.904119,
+   "n_items": 159,
+   "n_clusters": 48
+  },
+  "pick_is_nearest_when_stated": {
+   "mean": 35.185185,
+   "lo": 23.214286,
+   "hi": 47.169811,
+   "n_items": 54,
+   "n_clusters": 34
+  }
+ },
+ "v1.5|Claude 3.5 Sonnet": {
+  "n_items": 105,
+  "n_clusters": 46,
+  "stated_share": 39.04761904761905,
+  "nearest_is_key_when_stated": {
+   "mean": 10.97561,
+   "lo": 2.941176,
+   "hi": 19.444444,
+   "n_items": 41,
+   "n_clusters": 23
+  },
+  "within_5pct_when_stated": 2.4390243902439024,
+  "forced": {
+   "mean": 34.285714,
+   "lo": 24.689459,
+   "hi": 45.0,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "forced_when_stated": {
+   "mean": 36.585366,
+   "lo": 22.727273,
+   "hi": 52.941176,
+   "n_items": 41,
+   "n_clusters": 23
+  },
+  "forced_when_not": {
+   "mean": 32.8125,
+   "lo": 22.033898,
+   "hi": 43.75214,
+   "n_items": 64,
+   "n_clusters": 36
+  },
+  "predicted_forced": 19.523809523809526,
+  "forced_minus_predicted": {
+   "mean": 14.761905,
+   "lo": 4.83854,
+   "hi": 25.757576,
+   "n_items": 105,
+   "n_clusters": 46
+  }
+ },
+ "v1.0|Claude 3.5 Sonnet": {
+  "n_items": 159,
+  "n_clusters": 48,
+  "stated_share": 31.446540880503143,
+  "nearest_is_key_when_stated": {
+   "mean": 17.0,
+   "lo": 7.0,
+   "hi": 29.166667,
+   "n_items": 50,
+   "n_clusters": 31
+  },
+  "within_5pct_when_stated": 10.0,
+  "forced": {
+   "mean": 27.672956,
+   "lo": 21.301775,
+   "hi": 34.146341,
+   "n_items": 159,
+   "n_clusters": 48
+  },
+  "forced_when_stated": {
+   "mean": 38.0,
+   "lo": 25.489305,
+   "hi": 52.272727,
+   "n_items": 50,
+   "n_clusters": 31
+  },
+  "forced_when_not": {
+   "mean": 22.93578,
+   "lo": 15.253834,
+   "hi": 31.192661,
+   "n_items": 109,
+   "n_clusters": 44
+  },
+  "predicted_forced": 22.48427672955975,
+  "forced_minus_predicted": {
+   "mean": 5.188679,
+   "lo": -1.687168,
+   "hi": 12.324064,
+   "n_items": 159,
+   "n_clusters": 48
+  },
+  "pick_is_nearest_when_stated": {
+   "mean": 27.0,
+   "lo": 15.565776,
+   "hi": 38.461538,
+   "n_items": 50,
+   "n_clusters": 31
+  }
+ }
+}

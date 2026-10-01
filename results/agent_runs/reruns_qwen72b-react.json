@@ -1,0 +1,64 @@
+{
+ "wallclock": [
+  {
+   "question_id": "bix-13-q1",
+   "condition": "data",
+   "steps": 13,
+   "seconds": 4120.9
+  },
+  {
+   "question_id": "bix-20-q4",
+   "condition": "data",
+   "steps": 32,
+   "seconds": 3687.2
+  },
+  {
+   "question_id": "bix-3-q5",
+   "condition": "data",
+   "steps": 16,
+   "seconds": 4256.4
+  },
+  {
+   "question_id": "bix-31-q2",
+   "condition": "data",
+   "steps": 30,
+   "seconds": 3637.6
+  },
+  {
+   "question_id": "bix-43-q4",
+   "condition": "data",
+   "steps": 38,
+   "seconds": 3718.8
+  },
+  {
+   "question_id": "bix-49-q3",
+   "condition": "data",
+   "steps": 11,
+   "seconds": 4177.5
+  },
+  {
+   "question_id": "bix-49-q5",
+   "condition": "data",
+   "steps": 18,
+   "seconds": 3863.5
+  },
+  {
+   "question_id": "bix-13-q4",
+   "condition": "nodata",
+   "steps": 11,
+   "seconds": 4083.4
+  },
+  {
+   "question_id": "bix-24-q2",
+   "condition": "nodata",
+   "steps": 26,
+   "seconds": 4741.1
+  },
+  {
+   "question_id": "bix-53-q2",
+   "condition": "nodata",
+   "steps": 27,
+   "seconds": 3608.7
+  }
+ ]
+}

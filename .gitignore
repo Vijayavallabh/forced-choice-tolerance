@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Inputs restored by restore_build_inputs.py, analysis scratch and LaTeX output
+build/
+
+# Per-host run logs
+logs/
+
+# Submission bundles, rebuilt by package_submission.py
+submission/*.zip

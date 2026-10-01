@@ -1,0 +1,13 @@
+Weidener et al., Rethinking the AI Scientist: Interactive Multi-Agent Workflows for Scientific Discovery.
+arXiv:2601.12542 (https://arxiv.org/abs/2601.12542), abstract from the arXiv API and passages from the
+paper's PDF, retrieved 25 Sep 2026. Verbatim excerpts; the PDF's line breaks are joined.
+
+[abstract] Evaluation on the BixBench computational biology benchmark demonstrated state-of-the-art performance, achieving 48.8% accuracy on open response and 64.4% on multiple-choice evaluation, exceeding existing baselines by 14 to 26 percentage points.
+
+[3.2.5 Benchmarking] The agent achieved state-of-the-art performance, with 48.8% accuracy on Open Response, 55.1% on MCQ with Refusal, and 64.4% on MCQ without Refusal.
+
+[2.1] BixBench version v1.5 consists of 54 capsules containing real-world analytical scenarios spanning genomics, transcriptomics, differential expression analysis, RNA sequencing, phylogenetics and evolutionary analysis, whole genome sequencing, genomic variant analysis, and other bioinformatics categories (Mitchener et al., 2025a).
+
+[Figure 1, B2] (B2) Simplified multiple-choice evaluation used in this study: the second-stage LLM receives only the agent's open-response answer and the answer options, excluding the analysis notebook.
+
+[Appendix A1] In the MCQ without Refusal setting (Figure 8), BioAgent Deep Research achieved an accuracy of 64.4%, outperforming GPT-4o (33%), Claude (40%), and Edison (46%).

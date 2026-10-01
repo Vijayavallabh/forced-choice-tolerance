@@ -1,0 +1,158 @@
+{
+  "levels": {
+    "mmlupro": 0.985,
+    "bixall": 0.9675
+  },
+  "cells": [
+    {
+      "file": "mmlupro",
+      "framing": "BixBench's template",
+      "readout": "letter",
+      "dump": "qwen14b_mmlupro_bixprompt_argmax",
+      "accuracy": 11.007667031763416,
+      "over_chance": 1.0076670317634164,
+      "interval": [
+        -2.070343457206022,
+        3.915116636277152
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": -0.26402640264026367,
+      "control_null_percentile": 38.68
+    },
+    {
+      "file": "mmlupro",
+      "framing": "BixBench's template",
+      "readout": "generated",
+      "dump": "qwen14b_mmlupro_bixprompt_generated",
+      "accuracy": 10.131434830230011,
+      "over_chance": 0.13143483023001146,
+      "interval": [
+        -2.7049664245089136,
+        2.7669854685646516
+      ],
+      "unparsed": 3.669222343921139,
+      "control_minus_chance": -0.3190319031903197,
+      "control_null_percentile": 39.519999999999996
+    },
+    {
+      "file": "mmlupro",
+      "framing": "``withheld, read the options''",
+      "readout": "letter",
+      "dump": "qwen14b_mmlupro_argmax_withheld_aware",
+      "accuracy": 16.97699890470975,
+      "over_chance": 6.976998904709749,
+      "interval": [
+        4.343100541946176,
+        10.885136273837448
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": 1.7711771177117708,
+      "control_null_percentile": 99.17
+    },
+    {
+      "file": "mmlupro",
+      "framing": "``withheld, read the options''",
+      "readout": "generated",
+      "dump": "qwen14b_mmlupro_steered_notools",
+      "accuracy": 14.786418400876233,
+      "over_chance": 4.786418400876233,
+      "interval": [
+        2.8887386156648462,
+        7.021374374217774
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": 0.7260726072607255,
+      "control_null_percentile": 84.24000000000001
+    },
+    {
+      "file": "mmlupro",
+      "framing": "chat framing",
+      "readout": "letter",
+      "dump": "qwen14b_mmlupro_argmax_withheld",
+      "accuracy": 19.441401971522453,
+      "over_chance": 9.441401971522453,
+      "interval": [
+        5.768601087399538,
+        14.733096438622374
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": 1.1111111111111107,
+      "control_null_percentile": 93.715
+    },
+    {
+      "file": "mmlupro",
+      "framing": "chat framing",
+      "readout": "generated",
+      "dump": "qwen14b_mmlupro_neutral_notools",
+      "accuracy": 20.755750273822564,
+      "over_chance": 10.755750273822564,
+      "interval": [
+        7.61967264448724,
+        15.632486505424785
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": 0.3960396039603964,
+      "control_null_percentile": 71.49
+    },
+    {
+      "file": "bixall",
+      "framing": "BixBench's template",
+      "readout": "letter",
+      "dump": "qwen14b_bixall_bixprompt_argmax",
+      "accuracy": 30.081300813008134,
+      "over_chance": 5.081300813008134,
+      "interval": [
+        1.3300520630193013,
+        9.16258810116086
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": -3.3739837398373993,
+      "control_null_percentile": 6.1
+    },
+    {
+      "file": "bixall",
+      "framing": "BixBench's template",
+      "readout": "generated",
+      "dump": "qwen14b_bixall_bixprompt_generated",
+      "accuracy": 27.967479674796746,
+      "over_chance": 2.9674796747967456,
+      "interval": [
+        -0.8734518220433732,
+        7.072072072072075
+      ],
+      "unparsed": 8.780487804878048,
+      "control_minus_chance": -5.1626016260162615,
+      "control_null_percentile": 6.38
+    },
+    {
+      "file": "bixall",
+      "framing": "chat framing",
+      "readout": "letter",
+      "dump": "qwen14b_bixall_neutral_argmax",
+      "accuracy": 37.886178861788615,
+      "over_chance": 12.886178861788615,
+      "interval": [
+        8.17059620596206,
+        17.76469182597231
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": -1.2601626016260177,
+      "control_null_percentile": 30.599999999999998
+    },
+    {
+      "file": "bixall",
+      "framing": "chat framing",
+      "readout": "generated",
+      "dump": "qwen14b_bixall_neutral_notools",
+      "accuracy": 38.3739837398374,
+      "over_chance": 13.3739837398374,
+      "interval": [
+        8.481711915535431,
+        18.478367918313573
+      ],
+      "unparsed": 0.0,
+      "control_minus_chance": -1.5853658536585336,
+      "control_null_percentile": 25.775
+    }
+  ]
+}

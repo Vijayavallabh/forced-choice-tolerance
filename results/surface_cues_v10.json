@@ -1,0 +1,32 @@
+{
+  "items": "build/bixbench_v10.jsonl",
+  "n_other": 137,
+  "n_clusters": 46,
+  "level": 0.96,
+  "rules": {
+    "longest": {
+      "accuracy": 28.710462287104622,
+      "over_chance": 3.7104622871046224,
+      "interval": [
+        -2.7581669529125494,
+        10.038179413179414
+      ]
+    },
+    "shortest": {
+      "accuracy": 26.520681265206807,
+      "over_chance": 1.5206812652068074,
+      "interval": [
+        -3.6644814607440535,
+        6.535119995606566
+      ]
+    },
+    "most shared words": {
+      "accuracy": 28.406326034063255,
+      "over_chance": 3.4063260340632553,
+      "interval": [
+        -1.0266014179057688,
+        8.022654584221748
+      ]
+    }
+  }
+}

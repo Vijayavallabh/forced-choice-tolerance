@@ -1,0 +1,17 @@
+{
+ "meta-llama/Meta-Llama-3.1-8B-Instruct": {
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "n_items": 464,
+  "k": 4,
+  "pool_draws_per_item": 48,
+  "collision_rate_rho": 0.21258115897468777,
+  "union_bound_accuracy": 0.3622565230759367,
+  "predicted_accuracy": 61.11875261420183,
+  "predicted_ci95": [
+   43.504750838384545,
+   72.05740293286105
+  ],
+  "separable_solver_on_arm": 65.30172413793103,
+  "n_clusters": 20
+ }
+}

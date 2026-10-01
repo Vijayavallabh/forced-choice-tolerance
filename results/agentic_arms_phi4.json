@@ -1,0 +1,136 @@
+{
+ "microsoft/phi-4|withheld|argmax|bixprompt": {
+  "model": "microsoft/phi-4",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 12.26725082146769,
+   "chance": 10.0,
+   "margin_over_chance": 2.2672508214676883,
+   "margin_ci95": [
+    -0.4375398371104816,
+    4.3971462274851385
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 11.281489594742606,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 12.26725082146769
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.68096809680968,
+   "chance": 10.0,
+   "margin_over_chance": -0.31903190319031915,
+   "margin_ci95": [
+    -1.6389857424280636,
+    1.0318331503841929
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 11.716171617161717,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 9.68096809680968
+    }
+   }
+  },
+  "margin_over_clean": 2.5862827246580076,
+  "margin_over_clean_ci95": [
+   -0.3525309257828181,
+   5.099112553126937
+  ]
+ },
+ "microsoft/phi-4|withheld|notools": {
+  "model": "microsoft/phi-4",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld",
+  "readout": "generated",
+  "prompt": "agent",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. Think it through, then reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 5.093099671412924,
+   "chance": 10.0,
+   "margin_over_chance": -4.906900328587076,
+   "margin_ci95": [
+    -6.283211800948413,
+    -3.8148525743575687
+   ],
+   "used_tool": 0.0,
+   "unparsed": 64.67688937568455,
+   "mean_turns": 3.1341730558598027,
+   "second_smallest_rate": 2.3001095290251916,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1826,
+     "accuracy": 5.093099671412924
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 7.205720572057206,
+   "chance": 10.0,
+   "margin_over_chance": -2.794279427942795,
+   "margin_ci95": [
+    -4.004400440044005,
+    -1.5291529152915297
+   ],
+   "used_tool": 0.0,
+   "unparsed": 38.778877887788774,
+   "mean_turns": 2.3987898789878987,
+   "second_smallest_rate": 3.3553355335533555,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 1818,
+     "accuracy": 7.205720572057206
+    }
+   }
+  },
+  "margin_over_clean": -2.112620900644281,
+  "margin_over_clean_ci95": [
+   -3.9233180460737564,
+   -0.4421324936865061
+  ]
+ }
+}

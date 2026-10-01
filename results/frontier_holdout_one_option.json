@@ -1,0 +1,389 @@
+{
+ "n_options": 4,
+ "chance": 0.25,
+ "features": [
+  "is integer",
+  "has percent",
+  "has exponent",
+  "has separator",
+  "has minus",
+  "has point",
+  "distinct chars",
+  "trailing zeros",
+  "significant digits",
+  "decimal places",
+  "digit sum",
+  "digit count"
+ ],
+ "roundness_features": [
+  "is integer",
+  "significant digits",
+  "trailing zeros",
+  "decimal places"
+ ],
+ "steps": 400,
+ "l2": 0.001,
+ "files": {
+  "released_matched": {
+   "path": "build/mmlu_frontier_released_matched_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.17582417582417584,
+    "cv_ci95": [
+     0.11219512195121951,
+     0.25
+    ],
+    "argmax_ties": 5,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.12536794267034218,
+     "has percent": 0.14828297433359422,
+     "has exponent": 0.0,
+     "has separator": 4.671286857889296e-17,
+     "has minus": -0.4301975532221405,
+     "has point": -0.7315323136422179,
+     "distinct chars": 1.604701448043212,
+     "trailing zeros": -0.5866904323608434,
+     "significant digits": 1.1074418852080277,
+     "decimal places": 0.5287815901734223,
+     "digit sum": -0.557956123039894,
+     "digit count": 0.0185780332518845
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.27472527472527475,
+    "cv_ci95": [
+     0.22746781115879827,
+     0.3316582914572864
+    ],
+    "argmax_ties": 137,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.2922749873893469,
+     "significant digits": 0.49400655061965243,
+     "trailing zeros": -0.17454039228322052,
+     "decimal places": 0.21925688851474598
+    }
+   }
+  },
+  "key_marginal": {
+   "path": "build/mmlu_frontier_key_marginal_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.17582417582417584,
+    "cv_ci95": [
+     0.11764705882352941,
+     0.22916666666666666
+    ],
+    "argmax_ties": 2,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.7624851794479968,
+     "has percent": 0.9916560758459179,
+     "has exponent": 0.0,
+     "has separator": -0.8281149154580281,
+     "has minus": -0.6009508516630228,
+     "has point": -0.7624851794479961,
+     "distinct chars": 0.47531934624267363,
+     "trailing zeros": -0.08723269603969565,
+     "significant digits": -0.009762216090816761,
+     "decimal places": 0.3780547746589446,
+     "digit sum": -0.43397697586875505,
+     "digit count": 0.020246500918896126
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.25274725274725274,
+    "cv_ci95": [
+     0.189873417721519,
+     0.3
+    ],
+    "argmax_ties": 90,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.04254655190478187,
+     "significant digits": 0.1314845211316586,
+     "trailing zeros": -0.1235938396071704,
+     "decimal places": -0.006729575568015024
+    }
+   }
+  },
+  "key_marginal_near": {
+   "path": "build/mmlu_frontier_key_marginal_near_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.25824175824175827,
+    "cv_ci95": [
+     0.21839080459770116,
+     0.3055555555555556
+    ],
+    "argmax_ties": 0,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.817171089728999,
+     "has percent": -0.009062584638114431,
+     "has exponent": 0.0,
+     "has separator": -0.7257940893312981,
+     "has minus": -0.31272059904777766,
+     "has point": -0.8171710897289983,
+     "distinct chars": 1.0989678077820797,
+     "trailing zeros": 0.6939427031734271,
+     "significant digits": 0.1558409916775068,
+     "decimal places": -0.3250489791582819,
+     "digit sum": -0.7450974764479752,
+     "digit count": 0.2245417603143173
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.2967032967032967,
+    "cv_ci95": [
+     0.2605042016806723,
+     0.32748538011695905
+    ],
+    "argmax_ties": 56,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.0007235411306764417,
+     "significant digits": 0.3180228268578687,
+     "trailing zeros": 0.5745897039105883,
+     "decimal places": -0.23134154777774438
+    }
+   }
+  },
+  "wrong_step": {
+   "path": "build/mmlu_frontier_wrong_step_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.29120879120879123,
+    "cv_ci95": [
+     0.164021164021164,
+     0.38513513513513514
+    ],
+    "argmax_ties": 6,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 1.412428730328227,
+     "has percent": 1.4725365863507534,
+     "has exponent": 0.0,
+     "has separator": 1.7179166768406744,
+     "has minus": -0.19672183731492107,
+     "has point": -1.7451850587114008,
+     "distinct chars": -0.37986795733615697,
+     "trailing zeros": -0.3218523157595979,
+     "significant digits": 0.9336117571830778,
+     "decimal places": 0.22907726636611597,
+     "digit sum": -0.6519410647318821,
+     "digit count": -0.04025163824924384
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.34615384615384615,
+    "cv_ci95": [
+     0.2804878048780488,
+     0.41904761904761906
+    ],
+    "argmax_ties": 99,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 1.7064083798621452,
+     "significant digits": 0.4947262844972742,
+     "trailing zeros": 0.08435086158646513,
+     "decimal places": 0.08245372423126718
+    }
+   }
+  },
+  "rank_uniform": {
+   "path": "build/mmlu_frontier_rank_uniform_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.2967032967032967,
+    "cv_ci95": [
+     0.1935483870967742,
+     0.43790849673202614
+    ],
+    "argmax_ties": 5,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 1.860577513893309,
+     "has percent": 0.2993680290741677,
+     "has exponent": 0.0,
+     "has separator": 2.019389843174485,
+     "has minus": -2.692010409792921,
+     "has point": -3.451639238271641,
+     "distinct chars": 4.284724760858281,
+     "trailing zeros": -1.0492566872869256,
+     "significant digits": -0.40330618867323276,
+     "decimal places": 3.8286871562146336,
+     "digit sum": -0.8990390062625577,
+     "digit count": -1.5380124889733744
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.29120879120879123,
+    "cv_ci95": [
+     0.22580645161290322,
+     0.39849624060150374
+    ],
+    "argmax_ties": 113,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.617654506580213,
+     "significant digits": -0.4725476934521861,
+     "trailing zeros": -0.6571021635213004,
+     "decimal places": 0.6602716469777573
+    }
+   }
+  },
+  "exchangeable": {
+   "path": "build/mmlu_frontier_exchangeable_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.23626373626373626,
+    "cv_ci95": [
+     0.1559633027522936,
+     0.28104575163398693
+    ],
+    "argmax_ties": 3,
+    "n_scored": 182,
+    "weights": {
+     "is integer": -0.9178202407126083,
+     "has percent": 8.562070391433553e-16,
+     "has exponent": 0.0,
+     "has separator": 2.3795433512026123,
+     "has minus": -1.384135959639925,
+     "has point": 4.121237377382972e-16,
+     "distinct chars": 2.168120125701451,
+     "trailing zeros": 1.2547886967984478,
+     "significant digits": -0.7084663601092616,
+     "decimal places": 8.038694655765603e-16,
+     "digit sum": 0.5657402896278794,
+     "digit count": 0.08225746948544618
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.36813186813186816,
+    "cv_ci95": [
+     0.3007518796992481,
+     0.45038167938931295
+    ],
+    "argmax_ties": 90,
+    "n_scored": 182,
+    "weights": {
+     "is integer": -0.8699883449926173,
+     "significant digits": -0.19100353256160382,
+     "trailing zeros": 0.8158256784509228,
+     "decimal places": 1.0207341663148796e-15
+    }
+   }
+  },
+  "imitation": {
+   "path": "build/mmlu_frontier_imitation_holdout.jsonl",
+   "n_items": 182,
+   "n_clusters": 18,
+   "written form": {
+    "cv_accuracy": 0.3076923076923077,
+    "cv_ci95": [
+     0.255,
+     0.37593984962406013
+    ],
+    "argmax_ties": 3,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.6592944441325191,
+     "has percent": 9.47533368788235e-16,
+     "has exponent": 0.0,
+     "has separator": 5.662847596330466e-17,
+     "has minus": -0.9453366302065478,
+     "has point": -1.8871652148536149,
+     "distinct chars": 0.7709665099177733,
+     "trailing zeros": -0.4819277571156619,
+     "significant digits": 0.669444618278056,
+     "decimal places": 1.5004473561474032,
+     "digit sum": -0.6321932460999353,
+     "digit count": 0.5581780352901291
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.25824175824175827,
+    "cv_ci95": [
+     0.21081081081081082,
+     0.29906542056074764
+    ],
+    "argmax_ties": 145,
+    "n_scored": 182,
+    "weights": {
+     "is integer": 0.8303721636573805,
+     "significant digits": 0.5022127193830851,
+     "trailing zeros": 0.3359549178236086,
+     "decimal places": 0.418883497577196
+    }
+   }
+  }
+ },
+ "clean": {
+  "written form": {
+   "scores": [
+    0.22527472527472528,
+    0.2087912087912088,
+    0.23626373626373626,
+    0.3021978021978022,
+    0.34065934065934067,
+    0.2087912087912088,
+    0.24175824175824176,
+    0.24725274725274726,
+    0.23076923076923078,
+    0.17032967032967034,
+    0.1813186813186813,
+    0.26373626373626374,
+    0.21428571428571427,
+    0.17032967032967034,
+    0.2032967032967033,
+    0.23626373626373626,
+    0.22527472527472528,
+    0.35714285714285715,
+    0.21978021978021978,
+    0.19230769230769232
+   ],
+   "mean": 0.2337912087912088,
+   "max": 0.35714285714285715,
+   "replicates": 20,
+   "n_items": 182,
+   "n_clusters": 18
+  },
+  "roundness": {
+   "scores": [
+    0.18681318681318682,
+    0.26373626373626374,
+    0.1813186813186813,
+    0.3131868131868132,
+    0.25824175824175827,
+    0.2857142857142857,
+    0.18681318681318682,
+    0.3076923076923077,
+    0.24725274725274726,
+    0.3516483516483517,
+    0.25824175824175827,
+    0.25824175824175827,
+    0.21428571428571427,
+    0.11538461538461539,
+    0.27472527472527475,
+    0.25274725274725274,
+    0.21978021978021978,
+    0.25824175824175827,
+    0.3021978021978022,
+    0.25824175824175827
+   ],
+   "mean": 0.24972527472527473,
+   "max": 0.3516483516483517,
+   "replicates": 20,
+   "n_items": 182,
+   "n_clusters": 18
+  }
+ }
+}

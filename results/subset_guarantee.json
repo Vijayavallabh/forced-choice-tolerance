@@ -1,0 +1,173 @@
+{
+  "MMLU": {
+    "k": 4,
+    "files": {
+      "released, whole": {
+        "path": "build/mmlu.jsonl",
+        "n_items": 661,
+        "histogram": [
+          18.003025718608168,
+          27.23146747352496,
+          30.10590015128593,
+          24.659606656580937
+        ],
+        "plug_in_credit": 5.10590015128593
+      },
+      "released, feasible": {
+        "path": "build/mmlu_matched_released.jsonl",
+        "n_items": 594,
+        "histogram": [
+          15.656565656565656,
+          26.5993265993266,
+          31.48148148148148,
+          26.262626262626263
+        ],
+        "plug_in_credit": 6.481481481481481
+      },
+      "rank uniform, whole": {
+        "path": "results/repaired/mmlu_repaired_multi.jsonl.gz",
+        "n_items": 661,
+        "histogram": [
+          24.81089258698941,
+          22.239031770045386,
+          24.96217851739788,
+          27.987897125567322
+        ],
+        "plug_in_credit": 2.987897125567322
+      },
+      "rank uniform, feasible": {
+        "path": "build/mmlu_matched_repaired.jsonl",
+        "n_items": 594,
+        "histogram": [
+          21.043771043771045,
+          21.717171717171716,
+          26.430976430976433,
+          30.80808080808081
+        ],
+        "plug_in_credit": 5.80808080808081
+      }
+    }
+  },
+  "MedMCQA": {
+    "k": 4,
+    "files": {
+      "released, whole": {
+        "path": "build/medmcqa.jsonl",
+        "n_items": 454,
+        "histogram": [
+          24.669603524229075,
+          28.19383259911894,
+          28.41409691629956,
+          18.722466960352424
+        ],
+        "plug_in_credit": 3.4140969162995596
+      },
+      "released, feasible": {
+        "path": "build/medmcqa_matched_released.jsonl",
+        "n_items": 368,
+        "histogram": [
+          21.195652173913043,
+          25.543478260869566,
+          31.25,
+          22.01086956521739
+        ],
+        "plug_in_credit": 6.25
+      },
+      "rank uniform, whole": {
+        "path": "build/medmcqa_repaired.jsonl",
+        "n_items": 454,
+        "histogram": [
+          20.484581497797357,
+          26.211453744493394,
+          26.87224669603524,
+          26.431718061674008
+        ],
+        "plug_in_credit": 1.8722466960352406
+      },
+      "rank uniform, feasible": {
+        "path": "build/medmcqa_matched_repaired.jsonl",
+        "n_items": 368,
+        "histogram": [
+          15.76086956521739,
+          23.097826086956523,
+          29.891304347826086,
+          31.25
+        ],
+        "plug_in_credit": 6.25
+      }
+    }
+  },
+  "MMLU-Pro": {
+    "k": 10,
+    "files": {
+      "released, whole": {
+        "path": "build/mmlu_pro_numeric.jsonl",
+        "n_items": 1263,
+        "histogram": [
+          4.275534441805226,
+          7.600950118764845,
+          12.03483768804434,
+          19.635787806809184,
+          21.456848772763262,
+          16.072842438638162,
+          9.897070467141726,
+          4.671417260490895,
+          2.8503562945368173,
+          1.5043547110055424
+        ],
+        "plug_in_credit": 11.456848772763262
+      },
+      "released, feasible": {
+        "path": "build/mmlu_pro_matched_released.jsonl",
+        "n_items": 913,
+        "histogram": [
+          2.8477546549835706,
+          4.709748083242059,
+          9.967141292442497,
+          18.948521358159912,
+          24.53450164293538,
+          18.51040525739321,
+          11.171960569550931,
+          5.147864184008762,
+          2.8477546549835706,
+          1.3143483023001095
+        ],
+        "plug_in_credit": 14.534501642935378
+      },
+      "rank uniform, whole": {
+        "path": "build/mmlu_pro_repaired.jsonl",
+        "n_items": 1263,
+        "histogram": [
+          10.60965954077593,
+          10.055423594615993,
+          9.422011084718923,
+          10.768012668250197,
+          9.501187648456057,
+          9.501187648456057,
+          9.501187648456057,
+          11.163895486935868,
+          9.97624703087886,
+          9.501187648456057
+        ],
+        "plug_in_credit": 1.1638954869358678
+      },
+      "rank uniform, feasible": {
+        "path": "build/mmlu_pro_matched_repaired.jsonl",
+        "n_items": 913,
+        "histogram": [
+          5.695509309967141,
+          6.24315443592552,
+          8.105147864184008,
+          9.200438116100766,
+          8.981380065717415,
+          10.295728368017524,
+          12.048192771084338,
+          13.691128148959475,
+          13.143483023001096,
+          12.595837897042717
+        ],
+        "plug_in_credit": 3.691128148959475
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+ "floor": 100,
+ "shown": [
+  {
+   "file": "MMLU-Pro",
+   "n_items": 913,
+   "n_clusters": 60,
+   "margin": 5.463841009972906,
+   "control_over_chance": 1.5131578947368425
+  },
+  {
+   "file": "MMLU",
+   "n_items": 594,
+   "n_clusters": 37,
+   "margin": -2.525252525252525,
+   "control_over_chance": 5.976430976430976
+  },
+  {
+   "file": "MedMCQA",
+   "n_items": 368,
+   "n_clusters": 20,
+   "margin": -4.891304347826086,
+   "control_over_chance": 6.521739130434785
+  },
+  {
+   "file": "LAB-Bench SeqQA",
+   "n_items": 160,
+   "n_clusters": 4,
+   "margin": -7.500000000000001,
+   "control_over_chance": 8.75
+  },
+  {
+   "file": "AQuA-RAT",
+   "n_items": 141,
+   "n_clusters": 141,
+   "margin": -2.8368794326241122,
+   "control_over_chance": 9.078014184397162
+  },
+  {
+   "file": "BixBench v1.5",
+   "n_items": 105,
+   "n_clusters": 46,
+   "margin": 1.904761904761909,
+   "control_over_chance": 13.095238095238095
+  }
+ ],
+ "withheld": [
+  {
+   "file": "MedQA-USMLE",
+   "n_items": 77,
+   "n_clusters": 77,
+   "margin": -12.987012987012985,
+   "control_over_chance": 7.467532467532465
+  },
+  {
+   "file": "SciQ",
+   "n_items": 51,
+   "n_clusters": 51,
+   "margin": -13.725490196078432,
+   "control_over_chance": 12.254901960784316
+  },
+  {
+   "file": "ARC-Challenge",
+   "n_items": 17,
+   "n_clusters": 17,
+   "margin": -11.764705882352938,
+   "control_over_chance": 16.17647058823529
+  },
+  {
+   "file": "OpenBookQA",
+   "n_items": 7,
+   "n_clusters": 7,
+   "margin": -57.14285714285714,
+   "control_over_chance": 46.42857142857143
+  }
+ ]
+}

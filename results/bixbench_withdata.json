@@ -1,0 +1,6450 @@
+{
+ "gemma27b|data": {
+  "n": 205,
+  "submitted": 202,
+  "open": {
+   "mean": 4.390244,
+   "lo": 1.578782,
+   "hi": 7.729469,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 3.809524,
+    "lo": 0.819672,
+    "hi": 7.954545,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 1.904762,
+    "lo": 0.0,
+    "hi": 5.333333,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 3.809524,
+    "lo": 0.833333,
+    "hi": 7.865169,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 10.47619,
+    "lo": 5.607396,
+    "hi": 15.909091,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 12.142857,
+    "lo": 6.553171,
+    "hi": 18.632075,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 19.52381,
+    "lo": 13.736264,
+    "hi": 25.610381,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -9.047619,
+    "lo": -15.652262,
+    "hi": -2.525253,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 21.707317,
+     "lo": 16.326425,
+     "hi": 27.336518,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 21.904762,
+      "lo": 15.533646,
+      "hi": 28.788208,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 25.238095,
+      "lo": 18.023151,
+      "hi": 32.524272,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 25.238095,
+      "lo": 18.518148,
+      "hi": 32.106015,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -3.333333,
+      "lo": -7.142857,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.333333,
+      "lo": -5.607477,
+      "hi": -1.190476,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 0.0,
+      "lo": -3.889033,
+      "hi": 3.465347,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 20.792079,
+      "lo": 14.077367,
+      "hi": 27.777778,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "placebo": {
+      "mean": 24.257426,
+      "lo": 16.831683,
+      "hi": 31.547735,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 24.257426,
+      "lo": 17.619048,
+      "hi": 31.13309,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": -3.465347,
+      "lo": -7.5,
+      "hi": 0.0,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 28.4,
+       "1": 24.9,
+       "2": 23.4,
+       "3": 23.4
+      },
+      "repaired": {
+       "0": 34.7,
+       "1": 19.4,
+       "2": 26.5,
+       "3": 19.4
+      }
+     },
+     "rank_model": {
+      "released": 24.72,
+      "placebo": 24.72,
+      "repaired": 25.03,
+      "released-repaired": -0.32
+     }
+    },
+    "no_pick": 0.0297029702970297
+   },
+   "refusal": {
+    "all": {
+     "mean": 9.02439,
+     "lo": 5.450237,
+     "hi": 13.333333,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 8.571429,
+      "lo": 4.444444,
+      "hi": 13.440951,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 8.571429,
+      "lo": 3.809524,
+      "hi": 14.077935,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -3.157895,
+      "hi": 3.125,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 6.930693,
+      "lo": 3.333333,
+      "hi": 11.194287,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 6.930693,
+      "lo": 2.631031,
+      "hi": 11.979167,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -3.371167,
+      "hi": 3.240741,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 35.4,
+       "1": 27.7,
+       "2": 18.5,
+       "3": 18.5
+      },
+      "repaired": {
+       "0": 32.8,
+       "1": 20.3,
+       "2": 26.6,
+       "3": 20.3
+      }
+     }
+    },
+    "refused": 0.6212871287128713,
+    "no_pick": 0.01485148514851485
+   }
+  }
+ },
+ "gemma27b|nodata": {
+  "n": 205,
+  "submitted": 201,
+  "open": {
+   "mean": 5.853659,
+   "lo": 2.604031,
+   "hi": 9.803922,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 4.761905,
+    "lo": 0.980392,
+    "hi": 9.638554,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 2.857143,
+    "lo": 0.0,
+    "hi": 6.363636,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 3.809524,
+    "lo": 0.892857,
+    "hi": 7.368421,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 7.857143,
+    "lo": 4.012287,
+    "hi": 12.376238,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 9.285714,
+    "lo": 4.656863,
+    "hi": 15.126161,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 17.619048,
+    "lo": 10.30676,
+    "hi": 25.735294,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -9.761905,
+    "lo": -17.276423,
+    "hi": -2.438788,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 23.414634,
+     "lo": 18.202745,
+     "hi": 29.090909,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 22.380952,
+      "lo": 16.875,
+      "hi": 28.061224,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 24.285714,
+      "lo": 18.023256,
+      "hi": 30.319149,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 25.238095,
+      "lo": 18.421053,
+      "hi": 31.915251,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -2.857143,
+      "lo": -8.482311,
+      "hi": 2.525253,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -1.904762,
+      "lo": -5.319149,
+      "hi": 1.704545,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -0.952381,
+      "lo": -5.454545,
+      "hi": 3.26087,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 20.29703,
+      "lo": 14.666263,
+      "hi": 26.237871,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 22.277228,
+      "lo": 15.740533,
+      "hi": 28.640878,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 23.267327,
+      "lo": 16.666667,
+      "hi": 29.79798,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -2.970297,
+      "lo": -8.823529,
+      "hi": 2.631579,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 29.5,
+       "1": 22.0,
+       "2": 21.0,
+       "3": 27.5
+      },
+      "repaired": {
+       "0": 29.9,
+       "1": 21.8,
+       "2": 24.4,
+       "3": 23.9
+      }
+     },
+     "rank_model": {
+      "released": 22.82,
+      "placebo": 22.82,
+      "repaired": 24.68,
+      "released-repaired": -1.86
+     }
+    },
+    "no_pick": 0.014925373134328358
+   },
+   "refusal": {
+    "all": {
+     "mean": 8.292683,
+     "lo": 4.822219,
+     "hi": 12.299549,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 7.619048,
+      "lo": 3.703314,
+      "hi": 11.979583,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 8.571429,
+      "lo": 4.508123,
+      "hi": 12.871287,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.952381,
+      "lo": -4.201759,
+      "hi": 2.564103,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 5.940594,
+      "lo": 2.427184,
+      "hi": 9.90566,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 6.435644,
+      "lo": 2.777778,
+      "hi": 10.434878,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.49505,
+      "lo": -4.123711,
+      "hi": 3.240861,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 35.9,
+       "1": 15.6,
+       "2": 25.0,
+       "3": 23.4
+      },
+      "repaired": {
+       "0": 38.1,
+       "1": 25.4,
+       "2": 22.2,
+       "3": 14.3
+      }
+     }
+    },
+    "refused": 0.599502487562189,
+    "no_pick": 0.014925373134328358
+   }
+  }
+ },
+ "glm45air-react|data": {
+  "n": 205,
+  "submitted": 204,
+  "open": {
+   "mean": 27.317073,
+   "lo": 18.378158,
+   "hi": 36.771626,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 19.047619,
+    "lo": 9.183673,
+    "hi": 30.84132,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 10.47619,
+    "lo": 4.201681,
+    "hi": 18.085309,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 16.190476,
+    "lo": 6.603566,
+    "hi": 28.828829,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 16.428571,
+    "lo": 9.65868,
+    "hi": 24.184783,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 19.52381,
+    "lo": 12.398374,
+    "hi": 27.631579,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 21.190476,
+    "lo": 14.254386,
+    "hi": 28.787879,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -4.761905,
+    "lo": -10.156515,
+    "hi": 0.934579,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 44.146341,
+     "lo": 35.820214,
+     "hi": 52.5,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 37.142857,
+      "lo": 26.923077,
+      "hi": 47.777974,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 35.238095,
+      "lo": 24.257126,
+      "hi": 46.70381,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 41.428571,
+      "lo": 30.769231,
+      "hi": 52.155172,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -4.285714,
+      "lo": -9.545455,
+      "hi": 0.847602,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": 1.904762,
+      "lo": -3.158028,
+      "hi": 6.756757,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -6.190476,
+      "lo": -10.683826,
+      "hi": -1.515152,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 29.787234,
+      "lo": 20.091589,
+      "hi": 39.351852,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "placebo": {
+      "mean": 27.659574,
+      "lo": 17.977528,
+      "hi": 38.202247,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 34.574468,
+      "lo": 25.0,
+      "hi": 44.59486,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -4.787234,
+      "lo": -10.714286,
+      "hi": 0.595238,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 25.9,
+       "1": 28.6,
+       "2": 23.8,
+       "3": 21.6
+      },
+      "repaired": {
+       "0": 33.5,
+       "1": 22.7,
+       "2": 18.4,
+       "3": 25.4
+      }
+     },
+     "rank_model": {
+      "released": 26.41,
+      "placebo": 26.41,
+      "repaired": 25.41,
+      "released-repaired": 1.0
+     }
+    },
+    "no_pick": 0.007352941176470588
+   },
+   "refusal": {
+    "all": {
+     "mean": 32.682927,
+     "lo": 23.976528,
+     "hi": 41.534473,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 27.142857,
+      "lo": 16.860212,
+      "hi": 38.362269,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 25.238095,
+      "lo": 14.705882,
+      "hi": 36.979583,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 1.904762,
+      "lo": -1.785714,
+      "hi": 5.803571,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 18.617021,
+      "lo": 10.293843,
+      "hi": 27.659574,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 16.489362,
+      "lo": 8.227848,
+      "hi": 25.532146,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": 2.12766,
+      "lo": -2.083772,
+      "hi": 6.315789,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 23.3,
+       "1": 32.9,
+       "2": 21.9,
+       "3": 21.9
+      },
+      "repaired": {
+       "0": 39.7,
+       "1": 22.2,
+       "2": 15.9,
+       "3": 22.2
+      }
+     }
+    },
+    "refused": 0.4583333333333333,
+    "no_pick": 0.012254901960784314
+   }
+  },
+  "reader:glm45air": {
+   "forced": {
+    "all": {
+     "mean": 42.926829,
+     "lo": 33.902275,
+     "hi": 51.843489,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 33.809524,
+      "lo": 22.115182,
+      "hi": 45.834098,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 38.571429,
+      "lo": 27.721508,
+      "hi": 50.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 40.47619,
+      "lo": 30.681818,
+      "hi": 50.747091,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -6.666667,
+      "lo": -13.861469,
+      "hi": 0.60241,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -4.761905,
+      "lo": -10.776031,
+      "hi": 1.369989,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -1.904762,
+      "lo": -7.894737,
+      "hi": 3.365493,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 26.06383,
+      "lo": 15.555556,
+      "hi": 37.037037,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "placebo": {
+      "mean": 31.382979,
+      "lo": 21.084337,
+      "hi": 41.892149,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 33.510638,
+      "lo": 24.705882,
+      "hi": 42.381159,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -7.446809,
+      "lo": -15.306122,
+      "hi": 0.617284,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 32.4,
+       "1": 25.1,
+       "2": 19.6,
+       "3": 22.9
+      },
+      "repaired": {
+       "0": 33.0,
+       "1": 20.1,
+       "2": 22.3,
+       "3": 24.6
+      }
+     },
+     "rank_model": {
+      "released": 24.13,
+      "placebo": 24.13,
+      "repaired": 25.03,
+      "released-repaired": -0.9
+     }
+    },
+    "no_pick": 0.03431372549019608
+   },
+   "refusal": {
+    "all": {
+     "mean": 28.292683,
+     "lo": 19.117647,
+     "hi": 38.02098,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 19.52381,
+      "lo": 10.245803,
+      "hi": 30.555556,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 22.857143,
+      "lo": 12.735849,
+      "hi": 34.736842,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -3.333333,
+      "lo": -6.818182,
+      "hi": -0.43852,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 10.638298,
+      "lo": 3.408477,
+      "hi": 19.191919,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 13.829787,
+      "lo": 6.470588,
+      "hi": 22.222222,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -3.191489,
+      "lo": -7.142857,
+      "hi": 0.0,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 32.6,
+       "1": 32.6,
+       "2": 23.9,
+       "3": 10.9
+      },
+      "repaired": {
+       "0": 31.2,
+       "1": 22.9,
+       "2": 22.9,
+       "3": 22.9
+      }
+     }
+    },
+    "refused": 0.5514705882352942,
+    "no_pick": 0.00980392156862745
+   }
+  },
+  "reader:qwen72b": {
+   "forced": {
+    "all": {
+     "mean": 39.268293,
+     "lo": 30.71066,
+     "hi": 47.727273,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 28.571429,
+      "lo": 17.699115,
+      "hi": 39.682703,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 30.0,
+      "lo": 18.5,
+      "hi": 41.797144,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 32.380952,
+      "lo": 21.052269,
+      "hi": 43.534483,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -3.809524,
+      "lo": -9.090909,
+      "hi": 1.136625,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -1.428571,
+      "lo": -7.291901,
+      "hi": 3.773585,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -2.380952,
+      "lo": -6.967213,
+      "hi": 2.325581,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 22.340426,
+      "lo": 12.06855,
+      "hi": 33.152174,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "placebo": {
+      "mean": 23.93617,
+      "lo": 12.6757,
+      "hi": 36.036246,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 26.595745,
+      "lo": 15.294118,
+      "hi": 38.272528,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -4.255319,
+      "lo": -10.194175,
+      "hi": 1.530612,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 24.4,
+       "1": 29.8,
+       "2": 22.1,
+       "3": 23.7
+      },
+      "repaired": {
+       "0": 35.3,
+       "1": 14.4,
+       "2": 19.4,
+       "3": 30.9
+      }
+     },
+     "rank_model": {
+      "released": 26.56,
+      "placebo": 26.56,
+      "repaired": 25.24,
+      "released-repaired": 1.32
+     }
+    },
+    "no_pick": 0.16176470588235295
+   },
+   "refusal": {
+    "all": {
+     "mean": 27.073171,
+     "lo": 18.652766,
+     "hi": 35.6199,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 19.52381,
+      "lo": 10.087646,
+      "hi": 30.578593,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 19.52381,
+      "lo": 10.126432,
+      "hi": 30.392157,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -2.380952,
+      "hi": 2.409639,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 12.234043,
+      "lo": 4.210526,
+      "hi": 21.195652,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 11.702128,
+      "lo": 3.703314,
+      "hi": 20.731707,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": 0.531915,
+      "lo": -1.898855,
+      "hi": 3.012048,
+      "n_items": 94,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 26.7,
+       "1": 26.7,
+       "2": 33.3,
+       "3": 13.3
+      },
+      "repaired": {
+       "0": 30.6,
+       "1": 26.5,
+       "2": 16.3,
+       "3": 26.5
+      }
+     }
+    },
+    "refused": 0.4362745098039216,
+    "no_pick": 0.15441176470588236
+   }
+  }
+ },
+ "glm45air-react|nodata": {
+  "n": 205,
+  "submitted": 205,
+  "open": {
+   "mean": 6.341463,
+   "lo": 3.030303,
+   "hi": 10.152284,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 6.666667,
+    "lo": 1.960784,
+    "hi": 12.149533,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 3.809524,
+    "lo": 0.884956,
+    "hi": 7.446809,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 4.761905,
+    "lo": 0.980392,
+    "hi": 9.473684,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 8.809524,
+    "lo": 4.022989,
+    "hi": 14.6913,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 7.857143,
+    "lo": 3.431373,
+    "hi": 13.02098,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 15.47619,
+    "lo": 8.730084,
+    "hi": 23.469512,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -6.666667,
+    "lo": -13.158473,
+    "hi": -0.869565,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 24.146341,
+     "lo": 19.174595,
+     "hi": 29.395632,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 25.714286,
+      "lo": 19.071674,
+      "hi": 31.553478,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 23.333333,
+      "lo": 16.666667,
+      "hi": 29.716981,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 28.095238,
+      "lo": 21.195652,
+      "hi": 34.482759,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -2.380952,
+      "lo": -7.070802,
+      "hi": 2.55102,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": 2.380952,
+      "lo": -1.546392,
+      "hi": 6.593614,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -4.761905,
+      "lo": -9.090909,
+      "hi": -0.430961,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 23.762376,
+      "lo": 17.391304,
+      "hi": 29.77552,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 21.287129,
+      "lo": 14.736842,
+      "hi": 27.840909,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 26.237624,
+      "lo": 19.69697,
+      "hi": 32.589286,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -2.475248,
+      "lo": -7.33945,
+      "hi": 2.609153,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 27.3,
+       "1": 27.3,
+       "2": 19.7,
+       "3": 25.8
+      },
+      "repaired": {
+       "0": 27.6,
+       "1": 22.1,
+       "2": 22.1,
+       "3": 28.1
+      }
+     },
+     "rank_model": {
+      "released": 24.94,
+      "placebo": 24.94,
+      "repaired": 24.91,
+      "released-repaired": 0.03
+     }
+    },
+    "no_pick": 0.01951219512195122
+   },
+   "refusal": {
+    "all": {
+     "mean": 11.463415,
+     "lo": 7.397783,
+     "hi": 15.706829,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 10.47619,
+      "lo": 5.208333,
+      "hi": 15.816667,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 12.380952,
+      "lo": 6.565657,
+      "hi": 18.316832,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.904762,
+      "lo": -6.185567,
+      "hi": 2.020202,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 7.920792,
+      "lo": 3.26087,
+      "hi": 13.302752,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 9.405941,
+      "lo": 4.255319,
+      "hi": 15.104167,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.485149,
+      "lo": -5.555556,
+      "hi": 2.247292,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 22.0,
+       "1": 23.2,
+       "2": 20.7,
+       "3": 34.1
+      },
+      "repaired": {
+       "0": 35.3,
+       "1": 25.0,
+       "2": 22.1,
+       "3": 17.6
+      }
+     }
+    },
+    "refused": 0.5292682926829269,
+    "no_pick": 0.0024390243902439024
+   }
+  },
+  "reader:glm45air": {
+   "forced": {
+    "all": {
+     "mean": 24.146341,
+     "lo": 19.289268,
+     "hi": 29.395928,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 24.761905,
+      "lo": 18.681319,
+      "hi": 30.693069,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 26.666667,
+      "lo": 19.625802,
+      "hi": 33.708126,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 30.0,
+      "lo": 22.169714,
+      "hi": 37.712013,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -5.238095,
+      "lo": -10.891089,
+      "hi": 0.901065,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -1.904762,
+      "lo": -5.940594,
+      "hi": 1.739232,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -3.333333,
+      "lo": -9.259259,
+      "hi": 3.536075,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 22.772277,
+      "lo": 16.831683,
+      "hi": 28.94786,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 24.752475,
+      "lo": 17.821782,
+      "hi": 32.222222,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 28.217822,
+      "lo": 20.29703,
+      "hi": 36.320755,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -5.445545,
+      "lo": -11.27451,
+      "hi": 0.934579,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 39.5,
+       "1": 22.1,
+       "2": 15.8,
+       "3": 22.6
+      },
+      "repaired": {
+       "0": 35.1,
+       "1": 22.5,
+       "2": 17.3,
+       "3": 25.1
+      }
+     },
+     "rank_model": {
+      "released": 21.99,
+      "placebo": 21.99,
+      "repaired": 24.75,
+      "released-repaired": -2.77
+     }
+    },
+    "no_pick": 0.06829268292682927
+   },
+   "refusal": {
+    "all": {
+     "mean": 11.219512,
+     "lo": 7.44671,
+     "hi": 15.07177,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 11.904762,
+      "lo": 6.185567,
+      "hi": 17.391304,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 12.380952,
+      "lo": 6.796117,
+      "hi": 18.518519,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -4.444444,
+      "hi": 3.153248,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 9.405941,
+      "lo": 4.395412,
+      "hi": 14.705882,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 9.90099,
+      "lo": 4.326923,
+      "hi": 16.470847,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.49505,
+      "lo": -4.597701,
+      "hi": 3.279049,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 23.8,
+       "1": 25.4,
+       "2": 23.8,
+       "3": 27.0
+      },
+      "repaired": {
+       "0": 34.5,
+       "1": 25.5,
+       "2": 10.9,
+       "3": 29.1
+      }
+     }
+    },
+    "refused": 0.6268292682926829,
+    "no_pick": 0.01951219512195122
+   }
+  },
+  "reader:qwen72b": {
+   "forced": {
+    "all": {
+     "mean": 18.04878,
+     "lo": 14.186047,
+     "hi": 21.965406,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 16.190476,
+      "lo": 11.008991,
+      "hi": 21.666962,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 18.571429,
+      "lo": 12.745098,
+      "hi": 24.479167,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 22.857143,
+      "lo": 15.740741,
+      "hi": 29.885182,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -6.666667,
+      "lo": -13.566002,
+      "hi": 0.47619,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -2.380952,
+      "lo": -7.281756,
+      "hi": 2.702996,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -4.285714,
+      "lo": -11.364086,
+      "hi": 2.873563,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 15.841584,
+      "lo": 10.308975,
+      "hi": 21.795145,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 18.316832,
+      "lo": 12.036803,
+      "hi": 24.747671,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 21.287129,
+      "lo": 13.861386,
+      "hi": 28.87931,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -5.445545,
+      "lo": -12.857426,
+      "hi": 2.083772,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.2,
+       "1": 18.8,
+       "2": 20.8,
+       "3": 29.2
+      },
+      "repaired": {
+       "0": 37.4,
+       "1": 27.9,
+       "2": 12.9,
+       "3": 21.8
+      }
+     },
+     "rank_model": {
+      "released": 21.34,
+      "placebo": 21.34,
+      "repaired": 24.38,
+      "released-repaired": -3.04
+     }
+    },
+    "no_pick": 0.13658536585365855
+   },
+   "refusal": {
+    "all": {
+     "mean": 7.804878,
+     "lo": 4.54508,
+     "hi": 11.320835,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 10.0,
+      "lo": 5.056066,
+      "hi": 15.59633,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 8.095238,
+      "lo": 2.941176,
+      "hi": 13.963964,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 1.904762,
+      "lo": -1.980198,
+      "hi": 6.770833,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 8.415842,
+      "lo": 3.773585,
+      "hi": 14.0,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 6.930693,
+      "lo": 1.801802,
+      "hi": 13.157895,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 1.485149,
+      "lo": -2.0,
+      "hi": 5.670103,
+      "n_items": 101,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 28.8,
+       "1": 25.0,
+       "2": 23.1,
+       "3": 23.1
+      },
+      "repaired": {
+       "0": 41.2,
+       "1": 26.5,
+       "2": 11.8,
+       "3": 20.6
+      }
+     }
+    },
+    "refused": 0.5487804878048781,
+    "no_pick": 0.14634146341463414
+   }
+  }
+ },
+ "llama70b|data": {
+  "n": 205,
+  "submitted": 205,
+  "open": {
+   "mean": 6.341463,
+   "lo": 2.978723,
+   "hi": 10.344828,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 6.666667,
+    "lo": 2.105263,
+    "hi": 12.5,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 3.809524,
+    "lo": 0.769231,
+    "hi": 8.602947,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 4.761905,
+    "lo": 0.909091,
+    "hi": 10.185185,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 13.571429,
+    "lo": 7.142857,
+    "hi": 21.0,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 16.666667,
+    "lo": 10.038583,
+    "hi": 24.0,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 26.190476,
+    "lo": 18.548387,
+    "hi": 34.536082,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -12.619048,
+    "lo": -20.614035,
+    "hi": -5.101942,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 22.439024,
+     "lo": 17.53535,
+     "hi": 27.644231,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 22.380952,
+      "lo": 16.345963,
+      "hi": 29.166667,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 28.571429,
+      "lo": 22.0,
+      "hi": 35.577249,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 31.428571,
+      "lo": 25.0,
+      "hi": 38.5,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -9.047619,
+      "lo": -14.285714,
+      "hi": -3.960396,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -6.190476,
+      "lo": -11.000183,
+      "hi": -1.5,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -2.857143,
+      "lo": -8.252516,
+      "hi": 2.427421,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 19.306931,
+      "lo": 13.559164,
+      "hi": 25.480769,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "placebo": {
+      "mean": 25.742574,
+      "lo": 19.469027,
+      "hi": 32.222406,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 28.712871,
+      "lo": 22.448718,
+      "hi": 35.217805,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -9.405941,
+      "lo": -14.881206,
+      "hi": -4.117112,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 34.0,
+       "1": 22.5,
+       "2": 21.5,
+       "3": 22.0
+      },
+      "repaired": {
+       "0": 35.5,
+       "1": 22.8,
+       "2": 21.8,
+       "3": 19.8
+      }
+     },
+     "rank_model": {
+      "released": 23.41,
+      "placebo": 23.41,
+      "repaired": 24.98,
+      "released-repaired": -1.57
+     }
+    },
+    "no_pick": 0.01707317073170732
+   },
+   "refusal": {
+    "all": {
+     "mean": 10.0,
+     "lo": 6.167401,
+     "hi": 14.545551,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 9.52381,
+      "lo": 4.910714,
+      "hi": 15.060241,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 13.809524,
+      "lo": 8.411132,
+      "hi": 19.724771,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -4.285714,
+      "lo": -8.911245,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 5.940594,
+      "lo": 2.631579,
+      "hi": 9.895936,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 10.39604,
+      "lo": 5.681818,
+      "hi": 15.384615,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -4.455446,
+      "lo": -9.195705,
+      "hi": 0.0,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 39.7,
+       "1": 34.5,
+       "2": 19.0,
+       "3": 6.9
+      },
+      "repaired": {
+       "0": 26.0,
+       "1": 30.0,
+       "2": 18.0,
+       "3": 26.0
+      }
+     }
+    },
+    "refused": 0.624390243902439,
+    "no_pick": 0.0024390243902439024
+   }
+  },
+  "reader:llama70b": {
+   "forced": {
+    "all": {
+     "mean": 25.853659,
+     "lo": 21.236559,
+     "hi": 30.660696,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 26.190476,
+      "lo": 19.834413,
+      "hi": 33.018868,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 29.52381,
+      "lo": 22.767785,
+      "hi": 37.209561,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 35.714286,
+      "lo": 27.083333,
+      "hi": 44.382137,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -9.52381,
+      "lo": -15.741241,
+      "hi": -3.060976,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.333333,
+      "lo": -8.510638,
+      "hi": 1.492687,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -6.190476,
+      "lo": -13.566313,
+      "hi": 1.612903,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 23.267327,
+      "lo": 17.10493,
+      "hi": 29.775281,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "placebo": {
+      "mean": 26.732673,
+      "lo": 20.587761,
+      "hi": 34.020762,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 33.168317,
+      "lo": 24.444192,
+      "hi": 41.891892,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -9.90099,
+      "lo": -16.517935,
+      "hi": -3.092784,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 34.1,
+       "1": 31.3,
+       "2": 18.1,
+       "3": 16.5
+      },
+      "repaired": {
+       "0": 33.3,
+       "1": 24.7,
+       "2": 19.9,
+       "3": 22.0
+      }
+     },
+     "rank_model": {
+      "released": 26.53,
+      "placebo": 26.53,
+      "repaired": 25.53,
+      "released-repaired": 0.99
+     }
+    },
+    "no_pick": 0.05609756097560976
+   },
+   "refusal": {
+    "all": {
+     "mean": 8.04878,
+     "lo": 4.326923,
+     "hi": 12.368421,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 8.095238,
+      "lo": 3.389831,
+      "hi": 13.77551,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 9.047619,
+      "lo": 4.724261,
+      "hi": 14.458148,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.952381,
+      "lo": -4.508197,
+      "hi": 3.252209,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 4.455446,
+      "lo": 1.111111,
+      "hi": 8.421053,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "repaired": {
+      "mean": 5.445545,
+      "lo": 2.439024,
+      "hi": 8.928571,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "released-repaired": {
+      "mean": -0.990099,
+      "lo": -4.716981,
+      "hi": 3.289618,
+      "n_items": 101,
+      "n_clusters": 43
+     },
+     "pick_rank": {
+      "released": {
+       "0": 43.2,
+       "1": 38.6,
+       "2": 11.4,
+       "3": 6.8
+      },
+      "repaired": {
+       "0": 30.8,
+       "1": 15.4,
+       "2": 26.9,
+       "3": 26.9
+      }
+     }
+    },
+    "refused": 0.7,
+    "no_pick": 0.01707317073170732
+   }
+  }
+ },
+ "llama70b|nodata": {
+  "n": 205,
+  "submitted": 205,
+  "open": {
+   "mean": 9.756098,
+   "lo": 5.116279,
+   "hi": 15.277899,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 8.571429,
+    "lo": 3.076609,
+    "hi": 15.789474,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 3.809524,
+    "lo": 0.806323,
+    "hi": 8.045977,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 4.761905,
+    "lo": 0.970874,
+    "hi": 9.677419,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 15.238095,
+    "lo": 10.148375,
+    "hi": 21.023569,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 16.428571,
+    "lo": 11.170213,
+    "hi": 22.252747,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 26.904762,
+    "lo": 19.347233,
+    "hi": 34.574568,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -11.666667,
+    "lo": -19.444979,
+    "hi": -3.899083,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 27.317073,
+     "lo": 21.393035,
+     "hi": 33.611205,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 21.428571,
+      "lo": 15.753171,
+      "hi": 27.184466,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 25.238095,
+      "lo": 18.395649,
+      "hi": 32.631579,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 27.142857,
+      "lo": 20.873786,
+      "hi": 33.628479,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -5.714286,
+      "lo": -10.975878,
+      "hi": -1.363391,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.809524,
+      "lo": -9.575286,
+      "hi": 1.415364,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -1.904762,
+      "lo": -6.190476,
+      "hi": 2.252252,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 18.316832,
+      "lo": 12.5,
+      "hi": 24.090909,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "placebo": {
+      "mean": 22.277228,
+      "lo": 16.304348,
+      "hi": 28.508772,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 24.257426,
+      "lo": 18.260358,
+      "hi": 30.488218,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": -5.940594,
+      "lo": -11.309524,
+      "hi": -1.415094,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 29.2,
+       "1": 20.5,
+       "2": 20.5,
+       "3": 29.7
+      },
+      "repaired": {
+       "0": 26.9,
+       "1": 19.2,
+       "2": 28.5,
+       "3": 25.4
+      }
+     },
+     "rank_model": {
+      "released": 21.91,
+      "placebo": 21.91,
+      "repaired": 24.39,
+      "released-repaired": -2.48
+     }
+    },
+    "no_pick": 0.026829268292682926
+   },
+   "refusal": {
+    "all": {
+     "mean": 11.95122,
+     "lo": 7.76699,
+     "hi": 16.666667,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 7.619048,
+      "lo": 3.305785,
+      "hi": 12.711864,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 9.047619,
+      "lo": 4.629474,
+      "hi": 14.356436,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.428571,
+      "lo": -4.545455,
+      "hi": 1.415094,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 3.960396,
+      "lo": 1.111111,
+      "hi": 7.647179,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 5.940594,
+      "lo": 2.912621,
+      "hi": 9.615385,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": -1.980198,
+      "lo": -5.714583,
+      "hi": 1.376147,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 35.2,
+       "1": 29.6,
+       "2": 5.6,
+       "3": 29.6
+      },
+      "repaired": {
+       "0": 25.0,
+       "1": 13.5,
+       "2": 32.7,
+       "3": 28.8
+      }
+     }
+    },
+    "refused": 0.6365853658536585,
+    "no_pick": 0.00975609756097561
+   }
+  },
+  "reader:llama70b": {
+   "forced": {
+    "all": {
+     "mean": 27.073171,
+     "lo": 21.621481,
+     "hi": 32.452007,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 24.761905,
+      "lo": 17.499515,
+      "hi": 31.415929,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 30.0,
+      "lo": 23.529412,
+      "hi": 36.633663,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 31.904762,
+      "lo": 24.808845,
+      "hi": 39.215686,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -7.142857,
+      "lo": -15.0,
+      "hi": -0.399937,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -5.238095,
+      "lo": -11.5,
+      "hi": 0.431109,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -1.904762,
+      "lo": -8.823529,
+      "hi": 4.824844,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 21.782178,
+      "lo": 14.736223,
+      "hi": 28.571429,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "placebo": {
+      "mean": 27.227723,
+      "lo": 20.967435,
+      "hi": 33.333333,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 29.207921,
+      "lo": 22.277228,
+      "hi": 36.448598,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": -7.425743,
+      "lo": -15.59207,
+      "hi": 0.0,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.9,
+       "1": 27.6,
+       "2": 20.0,
+       "3": 20.5
+      },
+      "repaired": {
+       "0": 31.0,
+       "1": 26.7,
+       "2": 23.5,
+       "3": 18.7
+      }
+     },
+     "rank_model": {
+      "released": 25.16,
+      "placebo": 25.16,
+      "repaired": 25.18,
+      "released-repaired": -0.03
+     }
+    },
+    "no_pick": 0.04390243902439024
+   },
+   "refusal": {
+    "all": {
+     "mean": 10.97561,
+     "lo": 6.647194,
+     "hi": 15.841584,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 6.666667,
+      "lo": 2.343604,
+      "hi": 11.956522,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 6.190476,
+      "lo": 2.173913,
+      "hi": 10.9375,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.47619,
+      "lo": -1.612903,
+      "hi": 2.941176,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 2.970297,
+      "lo": 0.543478,
+      "hi": 6.329114,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 2.475248,
+      "lo": 0.543478,
+      "hi": 4.65136,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": 0.49505,
+      "lo": -1.685393,
+      "hi": 3.092875,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 46.9,
+       "1": 34.4,
+       "2": 6.2,
+       "3": 12.5
+      },
+      "repaired": {
+       "0": 21.7,
+       "1": 17.4,
+       "2": 39.1,
+       "3": 21.7
+      }
+     }
+    },
+    "refused": 0.7219512195121951,
+    "no_pick": 0.00975609756097561
+   }
+  }
+ },
+ "llama70b-react|data": {
+  "n": 205,
+  "submitted": 205,
+  "open": {
+   "mean": 9.756098,
+   "lo": 4.954866,
+   "hi": 15.346535,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 6.666667,
+    "lo": 1.010101,
+    "hi": 14.423077,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 4.761905,
+    "lo": 0.869565,
+    "hi": 10.091743,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 5.714286,
+    "lo": 1.111111,
+    "hi": 10.92437,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 10.238095,
+    "lo": 4.861111,
+    "hi": 16.666667,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 10.47619,
+    "lo": 5.041952,
+    "hi": 17.391304,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 19.047619,
+    "lo": 12.128563,
+    "hi": 26.48536,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -8.809524,
+    "lo": -15.765984,
+    "hi": -2.352757,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 30.97561,
+     "lo": 25.66367,
+     "hi": 36.124427,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 26.666667,
+      "lo": 20.083761,
+      "hi": 33.333333,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 30.0,
+      "lo": 23.333333,
+      "hi": 36.81866,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 32.857143,
+      "lo": 26.041667,
+      "hi": 40.350877,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -6.190476,
+      "lo": -12.280702,
+      "hi": -0.434634,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.333333,
+      "lo": -7.407407,
+      "hi": 0.555556,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -2.857143,
+      "lo": -9.140475,
+      "hi": 3.070175,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 24.0,
+      "lo": 17.857143,
+      "hi": 30.0,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 27.5,
+      "lo": 20.929995,
+      "hi": 33.766348,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 30.0,
+      "lo": 23.557127,
+      "hi": 36.864492,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -6.0,
+      "lo": -12.245098,
+      "hi": 0.0,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.5,
+       "1": 25.9,
+       "2": 21.8,
+       "3": 20.8
+      },
+      "repaired": {
+       "0": 29.0,
+       "1": 25.5,
+       "2": 22.5,
+       "3": 23.0
+      }
+     },
+     "rank_model": {
+      "released": 25.03,
+      "placebo": 25.03,
+      "repaired": 25.23,
+      "released-repaired": -0.21
+     }
+    },
+    "no_pick": 0.00975609756097561
+   },
+   "refusal": {
+    "all": {
+     "mean": 8.536585,
+     "lo": 4.232418,
+     "hi": 13.51363,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 4.285714,
+      "lo": 0.47619,
+      "hi": 9.292035,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 5.238095,
+      "lo": 1.020408,
+      "hi": 10.454545,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.952381,
+      "lo": -2.5,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 1.5,
+      "lo": 0.0,
+      "hi": 3.846817,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 2.5,
+      "lo": 0.0,
+      "hi": 5.500092,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.0,
+      "lo": -2.604167,
+      "hi": 0.0,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 42.1,
+       "1": 15.8,
+       "2": 26.3,
+       "3": 15.8
+      },
+      "repaired": {
+       "0": 41.2,
+       "1": 35.3,
+       "2": 11.8,
+       "3": 11.8
+      }
+     }
+    },
+    "refused": 0.802439024390244,
+    "no_pick": 0.0024390243902439024
+   }
+  },
+  "reader:llama70b": {
+   "forced": {
+    "all": {
+     "mean": 30.487805,
+     "lo": 25.136612,
+     "hi": 35.922476,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 29.52381,
+      "lo": 22.151718,
+      "hi": 37.244898,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 34.761905,
+      "lo": 26.956522,
+      "hi": 43.010753,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 33.809524,
+      "lo": 25.700677,
+      "hi": 42.735897,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -4.285714,
+      "lo": -10.9375,
+      "hi": 1.818515,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -5.238095,
+      "lo": -10.177335,
+      "hi": -0.510101,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 0.952381,
+      "lo": -5.102041,
+      "hi": 6.465517,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 26.5,
+      "lo": 20.0,
+      "hi": 33.177812,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 32.0,
+      "lo": 25.229358,
+      "hi": 39.320497,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 31.0,
+      "lo": 23.469136,
+      "hi": 39.473684,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -4.5,
+      "lo": -11.468417,
+      "hi": 1.923077,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 34.9,
+       "1": 29.1,
+       "2": 24.0,
+       "3": 12.0
+      },
+      "repaired": {
+       "0": 31.3,
+       "1": 31.3,
+       "2": 21.4,
+       "3": 15.9
+      }
+     },
+     "rank_model": {
+      "released": 27.12,
+      "placebo": 27.12,
+      "repaired": 26.04,
+      "released-repaired": 1.08
+     }
+    },
+    "no_pick": 0.07804878048780488
+   },
+   "refusal": {
+    "all": {
+     "mean": 6.585366,
+     "lo": 2.369643,
+     "hi": 11.73713,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 3.809524,
+      "lo": 0.0,
+      "hi": 8.860759,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 4.285714,
+      "lo": 0.442478,
+      "hi": 9.350102,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -1.685393,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 1.0,
+      "lo": 0.0,
+      "hi": 3.157895,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 1.5,
+      "lo": 0.0,
+      "hi": 3.883495,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.5,
+      "lo": -1.764706,
+      "hi": 0.0,
+      "n_items": 100,
+      "n_clusters": 46
+     },
+     "pick_rank": {
+      "released": {
+       "0": 66.7,
+       "1": 33.3
+      },
+      "repaired": {
+       "0": 66.7,
+       "1": 33.3
+      }
+     }
+    },
+    "refused": 0.8707317073170732,
+    "no_pick": 0.0024390243902439024
+   }
+  }
+ },
+ "llama70b-react|nodata": {
+  "n": 205,
+  "submitted": 204,
+  "open": {
+   "mean": 4.878049,
+   "lo": 1.99005,
+   "hi": 8.290155,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 6.666667,
+    "lo": 2.197802,
+    "hi": 12.5,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 2.857143,
+    "lo": 0.0,
+    "hi": 6.603774,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 1.904762,
+    "lo": 0.0,
+    "hi": 4.950495,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 10.47619,
+    "lo": 6.074766,
+    "hi": 15.584555,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 13.809524,
+    "lo": 8.403294,
+    "hi": 19.902913,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 15.47619,
+    "lo": 10.15625,
+    "hi": 20.522388,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -5.0,
+    "lo": -11.023738,
+    "hi": 1.801848,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 25.365854,
+     "lo": 19.956056,
+     "hi": 31.052632,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 24.285714,
+      "lo": 17.1875,
+      "hi": 31.25,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 29.047619,
+      "lo": 21.978022,
+      "hi": 35.714286,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 28.095238,
+      "lo": 20.706992,
+      "hi": 35.555785,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -3.809524,
+      "lo": -8.523004,
+      "hi": 0.500101,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -4.761905,
+      "lo": -9.633138,
+      "hi": 0.431109,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 0.952381,
+      "lo": -4.629821,
+      "hi": 6.098059,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 23.267327,
+      "lo": 16.176471,
+      "hi": 30.188679,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "placebo": {
+      "mean": 27.227723,
+      "lo": 19.886364,
+      "hi": 34.146583,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 27.227723,
+      "lo": 20.475269,
+      "hi": 34.000412,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": -3.960396,
+      "lo": -8.974359,
+      "hi": 0.520943,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 30.0,
+       "1": 22.0,
+       "2": 21.0,
+       "3": 27.0
+      },
+      "repaired": {
+       "0": 28.0,
+       "1": 24.0,
+       "2": 25.5,
+       "3": 22.5
+      }
+     },
+     "rank_model": {
+      "released": 22.91,
+      "placebo": 22.91,
+      "repaired": 24.64,
+      "released-repaired": -1.73
+     }
+    },
+    "no_pick": 0.007352941176470588
+   },
+   "refusal": {
+    "all": {
+     "mean": 1.463415,
+     "lo": 0.454504,
+     "hi": 2.763819,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 2.380952,
+      "lo": 0.505051,
+      "hi": 4.651163,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 2.380952,
+      "lo": 0.480769,
+      "hi": 4.854369,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -1.5,
+      "hi": 1.376147,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 1.980198,
+      "lo": 0.438596,
+      "hi": 4.132294,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 1.980198,
+      "lo": 0.423729,
+      "hi": 4.320988,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -1.579114,
+      "hi": 1.456311,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 50.0,
+       "1": 21.4,
+       "2": 14.3,
+       "3": 14.3
+      },
+      "repaired": {
+       "0": 21.4,
+       "1": 28.6,
+       "2": 21.4,
+       "3": 28.6
+      }
+     }
+    },
+    "refused": 0.9093137254901961,
+    "no_pick": 0.0
+   }
+  },
+  "reader:llama70b": {
+   "forced": {
+    "all": {
+     "mean": 21.95122,
+     "lo": 16.59477,
+     "hi": 27.669903,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 21.428571,
+      "lo": 15.864909,
+      "hi": 26.818182,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 22.380952,
+      "lo": 15.0,
+      "hi": 29.687809,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 26.666667,
+      "lo": 19.166511,
+      "hi": 34.210526,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -5.238095,
+      "lo": -10.309278,
+      "hi": -0.434708,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -0.952381,
+      "lo": -5.652174,
+      "hi": 3.889033,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -4.285714,
+      "lo": -9.090909,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 20.29703,
+      "lo": 14.85133,
+      "hi": 25.521055,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "placebo": {
+      "mean": 20.792079,
+      "lo": 13.678388,
+      "hi": 28.037383,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 24.752475,
+      "lo": 17.885598,
+      "hi": 31.579444,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": -4.455446,
+      "lo": -10.106383,
+      "hi": 0.926275,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 34.3,
+       "1": 29.0,
+       "2": 22.5,
+       "3": 14.2
+      },
+      "repaired": {
+       "0": 33.3,
+       "1": 31.6,
+       "2": 18.7,
+       "3": 16.4
+      }
+     },
+     "rank_model": {
+      "released": 26.56,
+      "placebo": 26.56,
+      "repaired": 25.73,
+      "released-repaired": 0.83
+     }
+    },
+    "no_pick": 0.10294117647058823
+   },
+   "refusal": {
+    "all": {
+     "mean": 0.487805,
+     "lo": 0.0,
+     "hi": 1.288749,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 0.952381,
+      "lo": 0.0,
+      "hi": 2.45098,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 1.428571,
+      "lo": 0.0,
+      "hi": 3.225806,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -2.314815,
+      "hi": 1.176471,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 0.990099,
+      "lo": 0.0,
+      "hi": 2.5,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "repaired": {
+      "mean": 0.990099,
+      "lo": 0.0,
+      "hi": 2.451344,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -1.5,
+      "hi": 1.5625,
+      "n_items": 101,
+      "n_clusters": 45
+     },
+     "pick_rank": {
+      "released": {
+       "0": 81.8,
+       "3": 18.2
+      },
+      "repaired": {
+       "0": 33.3,
+       "1": 33.3,
+       "2": 16.7,
+       "3": 16.7
+      }
+     }
+    },
+    "refused": 0.9436274509803921,
+    "no_pick": 0.0024509803921568627
+   }
+  }
+ },
+ "qwen3a3b-react|data": {
+  "n": 205,
+  "submitted": 150,
+  "open": {
+   "mean": 18.04878,
+   "lo": 10.769231,
+   "hi": 26.0,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 13.333333,
+    "lo": 5.825243,
+    "hi": 23.333333,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 11.428571,
+    "lo": 4.081633,
+    "hi": 21.359223,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 14.285714,
+    "lo": 6.363636,
+    "hi": 24.561404,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 18.571429,
+    "lo": 10.215054,
+    "hi": 28.846154,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 19.52381,
+    "lo": 11.052509,
+    "hi": 30.045916,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 22.380952,
+    "lo": 12.389341,
+    "hi": 34.167007,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -3.809524,
+    "lo": -9.615385,
+    "hi": 1.575565,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 32.682927,
+     "lo": 24.407354,
+     "hi": 41.379681,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 23.809524,
+      "lo": 15.419842,
+      "hi": 33.72093,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 28.095238,
+      "lo": 19.545455,
+      "hi": 38.235294,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 27.619048,
+      "lo": 18.084749,
+      "hi": 38.83603,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -3.809524,
+      "lo": -8.152174,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -4.285714,
+      "lo": -7.352941,
+      "hi": -1.612903,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 0.47619,
+      "lo": -3.389995,
+      "hi": 3.977273,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 25.0,
+      "lo": 15.116279,
+      "hi": 34.7465,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "placebo": {
+      "mean": 33.653846,
+      "lo": 23.404255,
+      "hi": 43.636364,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "repaired": {
+      "mean": 32.692308,
+      "lo": 21.153846,
+      "hi": 44.444444,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "released-repaired": {
+      "mean": -7.692308,
+      "lo": -16.363636,
+      "hi": 0.0,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.1,
+       "1": 26.2,
+       "2": 19.4,
+       "3": 23.3
+      },
+      "repaired": {
+       "0": 29.8,
+       "1": 34.6,
+       "2": 16.3,
+       "3": 19.2
+      }
+     },
+     "rank_model": {
+      "released": 24.51,
+      "placebo": 24.51,
+      "repaired": 25.62,
+      "released-repaired": -1.11
+     }
+    },
+    "no_pick": 0.01
+   },
+   "refusal": {
+    "all": {
+     "mean": 21.707317,
+     "lo": 13.032316,
+     "hi": 31.025641,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 15.238095,
+      "lo": 6.896235,
+      "hi": 25.700935,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 15.238095,
+      "lo": 7.352671,
+      "hi": 25.824546,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -2.941759,
+      "hi": 2.727273,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 9.615385,
+      "lo": 3.388701,
+      "hi": 17.307692,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "repaired": {
+      "mean": 10.576923,
+      "lo": 4.347826,
+      "hi": 18.085106,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "released-repaired": {
+      "mean": -0.961538,
+      "lo": -5.882353,
+      "hi": 3.26087,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "pick_rank": {
+      "released": {
+       "0": 21.2,
+       "1": 24.2,
+       "2": 30.3,
+       "3": 24.2
+      },
+      "repaired": {
+       "0": 15.4,
+       "1": 53.8,
+       "2": 23.1,
+       "3": 7.7
+      }
+     }
+    },
+    "refused": 0.5033333333333333,
+    "no_pick": 0.0
+   }
+  },
+  "reader:qwen3a3b": {
+   "forced": {
+    "all": {
+     "mean": 23.170732,
+     "lo": 14.814635,
+     "hi": 32.323534,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 17.619048,
+      "lo": 9.459459,
+      "hi": 27.619512,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 15.714286,
+      "lo": 7.653061,
+      "hi": 25.909428,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 17.142857,
+      "lo": 8.415749,
+      "hi": 27.927928,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.47619,
+      "lo": -4.210526,
+      "hi": 4.80803,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": 1.904762,
+      "lo": -2.293578,
+      "hi": 6.382979,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -1.428571,
+      "lo": -5.681818,
+      "hi": 2.941176,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 12.5,
+      "lo": 5.356383,
+      "hi": 19.82786,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "placebo": {
+      "mean": 8.653846,
+      "lo": 2.884615,
+      "hi": 15.454545,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "repaired": {
+      "mean": 11.538462,
+      "lo": 5.172414,
+      "hi": 19.230769,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "released-repaired": {
+      "mean": 0.961538,
+      "lo": -8.181818,
+      "hi": 9.649689,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "pick_rank": {
+      "released": {
+       "0": 17.9,
+       "1": 25.0,
+       "2": 32.1,
+       "3": 25.0
+      },
+      "repaired": {
+       "0": 16.7,
+       "1": 43.3,
+       "2": 23.3,
+       "3": 16.7
+      }
+     },
+     "rank_model": {
+      "released": 26.37,
+      "placebo": 26.37,
+      "repaired": 24.45,
+      "released-repaired": 1.91
+     }
+    },
+    "no_pick": 0.5166666666666667
+   },
+   "refusal": {
+    "all": {
+     "mean": 18.04878,
+     "lo": 9.677108,
+     "hi": 27.226445,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 11.428571,
+      "lo": 4.411529,
+      "hi": 21.052632,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 11.904762,
+      "lo": 4.672897,
+      "hi": 21.634913,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -2.747253,
+      "hi": 1.666667,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 2.884615,
+      "lo": 0.0,
+      "hi": 6.862745,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "repaired": {
+      "mean": 3.846154,
+      "lo": 0.877193,
+      "hi": 7.843137,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "released-repaired": {
+      "mean": -0.961538,
+      "lo": -5.208333,
+      "hi": 3.571429,
+      "n_items": 52,
+      "n_clusters": 38
+     },
+     "pick_rank": {
+      "released": {
+       "0": 7.1,
+       "1": 28.6,
+       "2": 28.6,
+       "3": 35.7
+      },
+      "repaired": {
+       "0": 20.0,
+       "1": 40.0,
+       "2": 30.0,
+       "3": 10.0
+      }
+     }
+    },
+    "refused": 0.3933333333333333,
+    "no_pick": 0.26666666666666666
+   }
+  }
+ },
+ "qwen3a3b-react|nodata": {
+  "n": 205,
+  "submitted": 150,
+  "open": {
+   "mean": 3.414634,
+   "lo": 1.058201,
+   "hi": 6.0,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 1.904762,
+    "lo": 0.0,
+    "hi": 5.319149,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 1.904762,
+    "lo": 0.0,
+    "hi": 5.050505,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 1.904762,
+    "lo": 0.0,
+    "hi": 5.050505,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 7.380952,
+    "lo": 3.009074,
+    "hi": 12.612654,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 7.380952,
+    "lo": 3.009074,
+    "hi": 12.612654,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 11.190476,
+    "lo": 5.172414,
+    "hi": 18.932039,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -3.809524,
+    "lo": -8.510638,
+    "hi": 0.0,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 14.878049,
+     "lo": 11.137441,
+     "hi": 18.779366,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 13.333333,
+      "lo": 8.673469,
+      "hi": 17.619126,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 17.142857,
+      "lo": 12.886292,
+      "hi": 21.428571,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 17.619048,
+      "lo": 12.5,
+      "hi": 22.93578,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -4.285714,
+      "lo": -9.545557,
+      "hi": 0.526316,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.809524,
+      "lo": -8.256881,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -0.47619,
+      "lo": -5.555556,
+      "hi": 4.310345,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 15.384615,
+      "lo": 9.333333,
+      "hi": 20.945946,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "placebo": {
+      "mean": 20.512821,
+      "lo": 14.615385,
+      "hi": 26.0,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "repaired": {
+      "mean": 21.153846,
+      "lo": 14.375,
+      "hi": 28.378378,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "released-repaired": {
+      "mean": -5.769231,
+      "lo": -12.903226,
+      "hi": 0.625158,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "pick_rank": {
+      "released": {
+       "0": 30.1,
+       "1": 20.9,
+       "2": 22.9,
+       "3": 26.1
+      },
+      "repaired": {
+       "0": 26.6,
+       "1": 24.0,
+       "2": 26.6,
+       "3": 22.7
+      }
+     },
+     "rank_model": {
+      "released": 22.62,
+      "placebo": 22.62,
+      "repaired": 24.75,
+      "released-repaired": -2.12
+     }
+    },
+    "no_pick": 0.016666666666666666
+   },
+   "refusal": {
+    "all": {
+     "mean": 7.804878,
+     "lo": 4.860976,
+     "hi": 11.025641,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 5.238095,
+      "lo": 2.252252,
+      "hi": 8.586016,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 6.666667,
+      "lo": 3.365385,
+      "hi": 10.365854,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.428571,
+      "lo": -4.0,
+      "hi": 1.052632,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 5.128205,
+      "lo": 1.898259,
+      "hi": 8.72093,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "repaired": {
+      "mean": 7.692308,
+      "lo": 3.723404,
+      "hi": 11.971831,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "released-repaired": {
+      "mean": -2.564103,
+      "lo": -5.747126,
+      "hi": 0.561925,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.1,
+       "1": 17.8,
+       "2": 26.7,
+       "3": 24.4
+      },
+      "repaired": {
+       "0": 16.7,
+       "1": 25.0,
+       "2": 36.1,
+       "3": 22.2
+      }
+     }
+    },
+    "refused": 0.61,
+    "no_pick": 0.006666666666666667
+   }
+  },
+  "reader:qwen3a3b": {
+   "forced": {
+    "all": {
+     "mean": 6.585366,
+     "lo": 3.71285,
+     "hi": 9.793918,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 4.761905,
+      "lo": 1.304348,
+      "hi": 8.695652,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 4.761905,
+      "lo": 1.818182,
+      "hi": 8.333333,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 3.333333,
+      "lo": 0.549451,
+      "hi": 7.407407,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 1.428571,
+      "lo": -2.941176,
+      "hi": 5.357143,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": 0.0,
+      "lo": -3.030303,
+      "hi": 2.604167,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 1.428571,
+      "lo": -1.786036,
+      "hi": 4.545455,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 3.846154,
+      "lo": 0.595238,
+      "hi": 8.421306,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "placebo": {
+      "mean": 4.487179,
+      "lo": 1.265823,
+      "hi": 8.450704,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "repaired": {
+      "mean": 2.564103,
+      "lo": 0.0,
+      "hi": 6.756757,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "released-repaired": {
+      "mean": 1.282051,
+      "lo": -4.545455,
+      "hi": 6.707317,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "pick_rank": {
+      "released": {
+       "0": 37.7,
+       "1": 17.0,
+       "2": 26.4,
+       "3": 18.9
+      },
+      "repaired": {
+       "0": 28.6,
+       "1": 31.4,
+       "2": 20.0,
+       "3": 20.0
+      }
+     },
+     "rank_model": {
+      "released": 21.63,
+      "placebo": 21.63,
+      "repaired": 24.96,
+      "released-repaired": -3.33
+     }
+    },
+    "no_pick": 0.6333333333333333
+   },
+   "refusal": {
+    "all": {
+     "mean": 3.658537,
+     "lo": 1.44217,
+     "hi": 6.221219,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 1.904762,
+      "lo": 0.0,
+      "hi": 4.597701,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 3.333333,
+      "lo": 0.0,
+      "hi": 7.964602,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.428571,
+      "lo": -5.813953,
+      "hi": 1.388889,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 1.282051,
+      "lo": 0.0,
+      "hi": 3.164557,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "repaired": {
+      "mean": 1.923077,
+      "lo": 0.0,
+      "hi": 5.0,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "released-repaired": {
+      "mean": -0.641026,
+      "lo": -3.896104,
+      "hi": 1.923077,
+      "n_items": 78,
+      "n_clusters": 37
+     },
+     "pick_rank": {
+      "released": {
+       "0": 42.1,
+       "1": 10.5,
+       "2": 36.8,
+       "3": 10.5
+      },
+      "repaired": {
+       "0": 15.4,
+       "1": 30.8,
+       "2": 46.2,
+       "3": 7.7
+      }
+     }
+    },
+    "refused": 0.38666666666666666,
+    "no_pick": 0.4266666666666667
+   }
+  }
+ },
+ "qwen72b|data": {
+  "n": 205,
+  "submitted": 163,
+  "open": {
+   "mean": 18.04878,
+   "lo": 9.499573,
+   "hi": 27.853881,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 15.238095,
+    "lo": 5.882353,
+    "hi": 27.927928,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 13.333333,
+    "lo": 5.644408,
+    "hi": 23.595506,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 14.285714,
+    "lo": 6.39966,
+    "hi": 24.705882,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 16.428571,
+    "lo": 9.054785,
+    "hi": 25.852469,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 14.761905,
+    "lo": 7.5,
+    "hi": 24.50495,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 18.571429,
+    "lo": 10.869565,
+    "hi": 27.907348,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -2.142857,
+    "lo": -7.5,
+    "hi": 3.488372,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 30.487805,
+     "lo": 21.674877,
+     "hi": 39.800995,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 22.380952,
+      "lo": 13.953265,
+      "hi": 32.653061,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 25.714286,
+      "lo": 17.12963,
+      "hi": 36.111111,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 30.0,
+      "lo": 21.170825,
+      "hi": 40.322581,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -7.619048,
+      "lo": -12.244898,
+      "hi": -3.535354,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.333333,
+      "lo": -7.522219,
+      "hi": 0.46729,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -4.285714,
+      "lo": -8.333333,
+      "hi": -0.505051,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 13.970588,
+      "lo": 7.692308,
+      "hi": 20.31303,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "placebo": {
+      "mean": 19.117647,
+      "lo": 12.068966,
+      "hi": 26.415364,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "repaired": {
+      "mean": 25.735294,
+      "lo": 17.857143,
+      "hi": 34.042862,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "released-repaired": {
+      "mean": -11.764706,
+      "lo": -18.518519,
+      "hi": -5.714286,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "pick_rank": {
+      "released": {
+       "0": 35.4,
+       "1": 20.5,
+       "2": 24.4,
+       "3": 19.7
+      },
+      "repaired": {
+       "0": 30.6,
+       "1": 26.9,
+       "2": 19.4,
+       "3": 23.1
+      }
+     },
+     "rank_model": {
+      "released": 22.68,
+      "placebo": 22.68,
+      "repaired": 25.37,
+      "released-repaired": -2.69
+     }
+    },
+    "no_pick": 0.027607361963190184
+   },
+   "refusal": {
+    "all": {
+     "mean": 23.902439,
+     "lo": 14.871389,
+     "hi": 33.756432,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 19.047619,
+      "lo": 10.483717,
+      "hi": 29.646121,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 19.52381,
+      "lo": 11.240223,
+      "hi": 30.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -2.136752,
+      "hi": 1.075269,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 8.823529,
+      "lo": 3.636364,
+      "hi": 14.706637,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "repaired": {
+      "mean": 9.558824,
+      "lo": 4.861111,
+      "hi": 14.893617,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "released-repaired": {
+      "mean": -0.735294,
+      "lo": -3.174941,
+      "hi": 1.818182,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "pick_rank": {
+      "released": {
+       "0": 29.5,
+       "1": 34.1,
+       "2": 25.0,
+       "3": 11.4
+      },
+      "repaired": {
+       "0": 20.0,
+       "1": 30.0,
+       "2": 25.0,
+       "3": 25.0
+      }
+     }
+    },
+    "refused": 0.4570552147239264,
+    "no_pick": 0.0
+   }
+  },
+  "reader:qwen72b": {
+   "forced": {
+    "all": {
+     "mean": 27.560976,
+     "lo": 18.689271,
+     "hi": 36.986575,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 19.52381,
+      "lo": 11.57885,
+      "hi": 29.167492,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 22.857143,
+      "lo": 14.432791,
+      "hi": 32.467666,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 30.0,
+      "lo": 20.869497,
+      "hi": 39.831651,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -10.47619,
+      "lo": -16.346154,
+      "hi": -5.154639,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.333333,
+      "lo": -6.315789,
+      "hi": -0.934579,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -7.142857,
+      "lo": -12.068966,
+      "hi": -2.752193,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 11.029412,
+      "lo": 6.034483,
+      "hi": 15.341783,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "placebo": {
+      "mean": 16.176471,
+      "lo": 10.344828,
+      "hi": 21.711098,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "repaired": {
+      "mean": 27.205882,
+      "lo": 18.644068,
+      "hi": 35.15625,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "released-repaired": {
+      "mean": -16.176471,
+      "lo": -24.590164,
+      "hi": -8.450704,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "pick_rank": {
+      "released": {
+       "0": 41.0,
+       "1": 17.1,
+       "2": 17.1,
+       "3": 24.8
+      },
+      "repaired": {
+       "0": 42.6,
+       "1": 18.8,
+       "2": 9.9,
+       "3": 28.7
+      }
+     },
+     "rank_model": {
+      "released": 19.42,
+      "placebo": 19.42,
+      "repaired": 25.25,
+      "released-repaired": -5.83
+     }
+    },
+    "no_pick": 0.10736196319018405
+   },
+   "refusal": {
+    "all": {
+     "mean": 20.0,
+     "lo": 11.290323,
+     "hi": 29.648414,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 13.809524,
+      "lo": 5.555556,
+      "hi": 24.468085,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 14.285714,
+      "lo": 5.977962,
+      "hi": 25.004202,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -1.724138,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 2.205882,
+      "lo": 0.0,
+      "hi": 6.363636,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "repaired": {
+      "mean": 2.941176,
+      "lo": 0.0,
+      "hi": 7.5,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "released-repaired": {
+      "mean": -0.735294,
+      "lo": -2.727273,
+      "hi": 0.0,
+      "n_items": 68,
+      "n_clusters": 35
+     },
+     "pick_rank": {
+      "released": {
+       "0": 47.6,
+       "1": 23.8,
+       "2": 19.0,
+       "3": 9.5
+      },
+      "repaired": {
+       "0": 25.0,
+       "1": 33.3,
+       "2": 16.7,
+       "3": 25.0
+      }
+     }
+    },
+    "refused": 0.46932515337423314,
+    "no_pick": 0.11349693251533742
+   }
+  }
+ },
+ "qwen72b|nodata": {
+  "n": 205,
+  "submitted": 184,
+  "open": {
+   "mean": 6.829268,
+   "lo": 3.286385,
+   "hi": 10.952511,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 3.809524,
+    "lo": 0.819672,
+    "hi": 8.163265,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 0.952381,
+    "lo": 0.0,
+    "hi": 3.488372,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 0.952381,
+    "lo": 0.0,
+    "hi": 3.488372,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 8.333333,
+    "lo": 3.571429,
+    "hi": 14.130435,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 10.47619,
+    "lo": 4.79996,
+    "hi": 17.268135,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 14.047619,
+    "lo": 6.25,
+    "hi": 23.464912,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -5.714286,
+    "lo": -12.359551,
+    "hi": 0.0,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 22.682927,
+     "lo": 17.004876,
+     "hi": 28.863683,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 20.47619,
+      "lo": 14.07767,
+      "hi": 26.923077,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 20.952381,
+      "lo": 14.43299,
+      "hi": 27.500459,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 24.285714,
+      "lo": 17.676616,
+      "hi": 30.909091,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -3.809524,
+      "lo": -9.313892,
+      "hi": 1.579283,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -0.47619,
+      "lo": -4.955029,
+      "hi": 3.723404,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -3.333333,
+      "lo": -8.988764,
+      "hi": 2.358491,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 22.527473,
+      "lo": 15.752963,
+      "hi": 28.813759,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "placebo": {
+      "mean": 23.076923,
+      "lo": 16.049383,
+      "hi": 29.897008,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 26.923077,
+      "lo": 19.851487,
+      "hi": 33.75,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": -4.395604,
+      "lo": -10.795455,
+      "hi": 1.785714,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 28.2,
+       "1": 21.8,
+       "2": 21.8,
+       "3": 28.2
+      },
+      "repaired": {
+       "0": 28.7,
+       "1": 25.3,
+       "2": 21.9,
+       "3": 24.2
+      }
+     },
+     "rank_model": {
+      "released": 22.85,
+      "placebo": 22.85,
+      "repaired": 24.61,
+      "released-repaired": -1.76
+     }
+    },
+    "no_pick": 0.02717391304347826
+   },
+   "refusal": {
+    "all": {
+     "mean": 10.97561,
+     "lo": 6.091371,
+     "hi": 16.666667,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 6.666667,
+      "lo": 2.57732,
+      "hi": 11.27451,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 6.666667,
+      "lo": 3.0,
+      "hi": 10.824742,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -2.427184,
+      "hi": 2.427184,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 6.593407,
+      "lo": 2.439024,
+      "hi": 11.111111,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 6.593407,
+      "lo": 2.856818,
+      "hi": 10.396452,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -2.631579,
+      "hi": 2.873563,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 28.6,
+       "1": 21.4,
+       "2": 21.4,
+       "3": 28.6
+      },
+      "repaired": {
+       "0": 17.3,
+       "1": 25.0,
+       "2": 40.4,
+       "3": 17.3
+      }
+     }
+    },
+    "refused": 0.5081521739130435,
+    "no_pick": 0.005434782608695652
+   }
+  },
+  "reader:qwen72b": {
+   "forced": {
+    "all": {
+     "mean": 17.804878,
+     "lo": 12.801818,
+     "hi": 23.15804,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 16.666667,
+      "lo": 10.775862,
+      "hi": 22.778222,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 18.095238,
+      "lo": 10.714286,
+      "hi": 26.219874,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 25.714286,
+      "lo": 16.882955,
+      "hi": 34.375573,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -9.047619,
+      "lo": -17.619126,
+      "hi": -1.010101,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -1.428571,
+      "lo": -7.978723,
+      "hi": 4.210526,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -7.619048,
+      "lo": -16.086957,
+      "hi": 0.520833,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 18.131868,
+      "lo": 11.842105,
+      "hi": 24.358974,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "placebo": {
+      "mean": 19.78022,
+      "lo": 11.702128,
+      "hi": 28.289949,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 28.571429,
+      "lo": 19.285714,
+      "hi": 37.113402,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": -10.43956,
+      "lo": -19.66328,
+      "hi": -1.333333,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 38.7,
+       "1": 24.1,
+       "2": 17.5,
+       "3": 19.7
+      },
+      "repaired": {
+       "0": 33.6,
+       "1": 26.1,
+       "2": 19.4,
+       "3": 20.9
+      }
+     },
+     "rank_model": {
+      "released": 22.87,
+      "placebo": 22.87,
+      "repaired": 25.23,
+      "released-repaired": -2.36
+     }
+    },
+    "no_pick": 0.06793478260869565
+   },
+   "refusal": {
+    "all": {
+     "mean": 8.04878,
+     "lo": 3.749766,
+     "hi": 13.144601,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 3.809524,
+      "lo": 0.430961,
+      "hi": 8.108108,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 3.333333,
+      "lo": 0.543478,
+      "hi": 6.914894,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.47619,
+      "lo": -1.456311,
+      "hi": 2.830189,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 3.296703,
+      "lo": 0.0,
+      "hi": 7.608696,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 2.747253,
+      "lo": 0.49505,
+      "hi": 5.882353,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": 0.549451,
+      "lo": -1.724138,
+      "hi": 3.26087,
+      "n_items": 91,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 44.0,
+       "1": 12.0,
+       "2": 24.0,
+       "3": 20.0
+      },
+      "repaired": {
+       "0": 7.1,
+       "1": 35.7,
+       "2": 35.7,
+       "3": 21.4
+      }
+     }
+    },
+    "refused": 0.6739130434782609,
+    "no_pick": 0.051630434782608696
+   }
+  }
+ },
+ "qwen72b-react|data": {
+  "n": 205,
+  "submitted": 140,
+  "open": {
+   "mean": 10.731707,
+   "lo": 4.950386,
+   "hi": 17.333699,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 7.619048,
+    "lo": 1.980198,
+    "hi": 15.054058,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 8.571429,
+    "lo": 2.777778,
+    "hi": 16.129032,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 9.52381,
+    "lo": 3.571429,
+    "hi": 16.853933,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 13.095238,
+    "lo": 6.651327,
+    "hi": 20.283019,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 13.571429,
+    "lo": 7.178218,
+    "hi": 20.744787,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 17.142857,
+    "lo": 9.840246,
+    "hi": 24.761994,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -4.047619,
+    "lo": -8.400033,
+    "hi": -0.252525,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 24.634146,
+     "lo": 18.181818,
+     "hi": 31.818182,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 20.47619,
+      "lo": 13.392857,
+      "hi": 28.022286,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 22.380952,
+      "lo": 14.795918,
+      "hi": 30.435178,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 24.761905,
+      "lo": 16.981132,
+      "hi": 32.778136,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -4.285714,
+      "lo": -7.647271,
+      "hi": -0.980392,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -1.904762,
+      "lo": -5.0,
+      "hi": 0.961538,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -2.380952,
+      "lo": -7.5,
+      "hi": 2.941176,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 19.69697,
+      "lo": 11.864407,
+      "hi": 28.0311,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "placebo": {
+      "mean": 22.727273,
+      "lo": 13.999412,
+      "hi": 31.967213,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "repaired": {
+      "mean": 26.515152,
+      "lo": 16.666667,
+      "hi": 36.441031,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "released-repaired": {
+      "mean": -6.818182,
+      "lo": -11.971831,
+      "hi": -1.639344,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.8,
+       "1": 19.7,
+       "2": 22.0,
+       "3": 26.5
+      },
+      "repaired": {
+       "0": 32.1,
+       "1": 26.0,
+       "2": 20.6,
+       "3": 21.4
+      }
+     },
+     "rank_model": {
+      "released": 21.75,
+      "placebo": 21.75,
+      "repaired": 24.91,
+      "released-repaired": -3.16
+     }
+    },
+    "no_pick": 0.0
+   },
+   "refusal": {
+    "all": {
+     "mean": 14.878049,
+     "lo": 8.780019,
+     "hi": 22.064796,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 11.428571,
+      "lo": 5.445545,
+      "hi": 18.817204,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 12.857143,
+      "lo": 7.142857,
+      "hi": 19.56558,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.428571,
+      "lo": -4.128516,
+      "hi": 1.470588,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 6.060606,
+      "lo": 2.083333,
+      "hi": 10.909091,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "repaired": {
+      "mean": 8.333333,
+      "lo": 4.166667,
+      "hi": 12.03726,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "released-repaired": {
+      "mean": -2.272727,
+      "lo": -6.25,
+      "hi": 2.5,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "pick_rank": {
+      "released": {
+       "0": 32.5,
+       "1": 25.0,
+       "2": 17.5,
+       "3": 25.0
+      },
+      "repaired": {
+       "0": 37.0,
+       "1": 19.6,
+       "2": 19.6,
+       "3": 23.9
+      }
+     }
+    },
+    "refused": 0.49642857142857144,
+    "no_pick": 0.0
+   }
+  },
+  "reader:qwen72b": {
+   "forced": {
+    "all": {
+     "mean": 19.268293,
+     "lo": 12.921295,
+     "hi": 26.485175,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 16.190476,
+      "lo": 9.638444,
+      "hi": 23.832204,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 19.52381,
+      "lo": 12.365471,
+      "hi": 27.528548,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 24.761905,
+      "lo": 16.055046,
+      "hi": 33.490755,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -8.571429,
+      "lo": -15.08637,
+      "hi": -1.818182,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -3.333333,
+      "lo": -7.207207,
+      "hi": 0.549451,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": -5.238095,
+      "lo": -10.504644,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 13.636364,
+      "lo": 7.258065,
+      "hi": 21.0,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "placebo": {
+      "mean": 18.939394,
+      "lo": 11.764706,
+      "hi": 26.316501,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "repaired": {
+      "mean": 27.272727,
+      "lo": 15.873016,
+      "hi": 37.931034,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "released-repaired": {
+      "mean": -13.636364,
+      "lo": -22.727273,
+      "hi": -3.125,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "pick_rank": {
+      "released": {
+       "0": 47.7,
+       "1": 14.0,
+       "2": 18.6,
+       "3": 19.8
+      },
+      "repaired": {
+       "0": 40.8,
+       "1": 15.5,
+       "2": 12.6,
+       "3": 31.1
+      }
+     },
+     "rank_model": {
+      "released": 18.87,
+      "placebo": 18.87,
+      "repaired": 25.73,
+      "released-repaired": -6.87
+     }
+    },
+    "no_pick": 0.10714285714285714
+   },
+   "refusal": {
+    "all": {
+     "mean": 12.439024,
+     "lo": 6.249424,
+     "hi": 19.703411,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 8.571429,
+      "lo": 2.830189,
+      "hi": 15.929768,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 9.047619,
+      "lo": 3.370787,
+      "hi": 16.346334,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.47619,
+      "lo": -2.336778,
+      "hi": 1.052632,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 1.515152,
+      "lo": 0.0,
+      "hi": 4.761905,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "repaired": {
+      "mean": 2.272727,
+      "lo": 0.0,
+      "hi": 5.102941,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "released-repaired": {
+      "mean": -0.757576,
+      "lo": -3.846154,
+      "hi": 1.666667,
+      "n_items": 66,
+      "n_clusters": 32
+     },
+     "pick_rank": {
+      "released": {
+       "0": 40.0,
+       "1": 20.0,
+       "2": 26.7,
+       "3": 13.3
+      },
+      "repaired": {
+       "0": 41.7,
+       "1": 25.0,
+       "2": 16.7,
+       "3": 16.7
+      }
+     }
+    },
+    "refused": 0.5642857142857143,
+    "no_pick": 0.060714285714285714
+   }
+  }
+ },
+ "qwen72b-react|nodata": {
+  "n": 205,
+  "submitted": 176,
+  "open": {
+   "mean": 5.365854,
+   "lo": 1.941748,
+   "hi": 9.691675,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric": {
+   "n": 105,
+   "open": {
+    "mean": 2.857143,
+    "lo": 0.0,
+    "hi": 7.0,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "strict": {
+    "mean": 2.857143,
+    "lo": 0.0,
+    "hi": 7.0,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "within_5pct": {
+    "mean": 2.857143,
+    "lo": 0.0,
+    "hi": 7.0,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "nearest": {
+   "released": {
+    "mean": 7.619048,
+    "lo": 2.965919,
+    "hi": 13.613861,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "placebo": {
+    "mean": 9.047619,
+    "lo": 3.865979,
+    "hi": 15.697674,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "repaired": {
+    "mean": 10.714286,
+    "lo": 5.162957,
+    "hi": 17.368879,
+    "n_items": 105,
+    "n_clusters": 46
+   },
+   "released-repaired": {
+    "mean": -3.095238,
+    "lo": -9.565402,
+    "hi": 2.459016,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:gemma27b": {
+   "forced": {
+    "all": {
+     "mean": 23.902439,
+     "lo": 18.434343,
+     "hi": 30.056212,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 21.904762,
+      "lo": 15.47619,
+      "hi": 28.5,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 22.857143,
+      "lo": 17.592389,
+      "hi": 28.703704,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 22.857143,
+      "lo": 17.326733,
+      "hi": 28.788121,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -0.952381,
+      "lo": -5.555556,
+      "hi": 4.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": -0.952381,
+      "lo": -5.319149,
+      "hi": 3.539823,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 0.0,
+      "lo": -4.054274,
+      "hi": 3.932584,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 23.255814,
+      "lo": 15.463918,
+      "hi": 31.443646,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "placebo": {
+      "mean": 24.418605,
+      "lo": 18.748626,
+      "hi": 30.337079,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 24.418605,
+      "lo": 18.243243,
+      "hi": 30.357595,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": -1.162791,
+      "lo": -6.666667,
+      "hi": 5.0,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 26.2,
+       "1": 26.7,
+       "2": 23.8,
+       "3": 23.3
+      },
+      "repaired": {
+       "0": 25.1,
+       "1": 22.2,
+       "2": 29.2,
+       "3": 23.4
+      }
+     },
+     "rank_model": {
+      "released": 25.57,
+      "placebo": 25.57,
+      "repaired": 25.16,
+      "released-repaired": 0.42
+     }
+    },
+    "no_pick": 0.008522727272727272
+   },
+   "refusal": {
+    "all": {
+     "mean": 9.512195,
+     "lo": 5.399061,
+     "hi": 14.321608,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 5.714286,
+      "lo": 1.923077,
+      "hi": 10.784314,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 7.142857,
+      "lo": 3.030303,
+      "hi": 12.359551,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": -1.428571,
+      "lo": -3.763441,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 3.488372,
+      "lo": 0.588235,
+      "hi": 7.894737,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 5.232558,
+      "lo": 1.724138,
+      "hi": 10.0,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": -1.744186,
+      "lo": -4.545455,
+      "hi": 0.0,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.0,
+       "1": 26.2,
+       "2": 14.3,
+       "3": 28.6
+      },
+      "repaired": {
+       "0": 20.5,
+       "1": 22.7,
+       "2": 36.4,
+       "3": 20.5
+      }
+     }
+    },
+    "refused": 0.6420454545454546,
+    "no_pick": 0.017045454545454544
+   }
+  },
+  "reader:qwen72b": {
+   "forced": {
+    "all": {
+     "mean": 19.512195,
+     "lo": 14.317532,
+     "hi": 24.891812,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 17.142857,
+      "lo": 11.681931,
+      "hi": 22.430288,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo": {
+      "mean": 17.142857,
+      "lo": 10.869565,
+      "hi": 23.913774,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 17.142857,
+      "lo": 10.0,
+      "hi": 25.0,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -6.5,
+      "hi": 6.147667,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-placebo": {
+      "mean": 0.0,
+      "lo": -6.018519,
+      "hi": 5.405631,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "placebo-repaired": {
+      "mean": 0.0,
+      "lo": -6.522145,
+      "hi": 5.952599,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 17.44186,
+      "lo": 11.627672,
+      "hi": 23.158151,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "placebo": {
+      "mean": 17.44186,
+      "lo": 10.625,
+      "hi": 24.432071,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 17.44186,
+      "lo": 9.858942,
+      "hi": 25.595238,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": -7.608696,
+      "hi": 7.216495,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 36.8,
+       "1": 24.3,
+       "2": 17.6,
+       "3": 21.3
+      },
+      "repaired": {
+       "0": 30.3,
+       "1": 23.0,
+       "2": 25.4,
+       "3": 21.3
+      }
+     },
+     "rank_model": {
+      "released": 23.2,
+      "placebo": 23.2,
+      "repaired": 25.19,
+      "released-repaired": -1.99
+     }
+    },
+    "no_pick": 0.07954545454545454
+   },
+   "refusal": {
+    "all": {
+     "mean": 6.829268,
+     "lo": 3.521127,
+     "hi": 10.682112,
+     "n_items": 205,
+     "n_clusters": 59
+    },
+    "numeric": {
+     "released": {
+      "mean": 3.809524,
+      "lo": 0.806452,
+      "hi": 8.247423,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "repaired": {
+      "mean": 3.809524,
+      "lo": 0.806452,
+      "hi": 8.247423,
+      "n_items": 105,
+      "n_clusters": 46
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n_items": 105,
+      "n_clusters": 46
+     }
+    },
+    "rescue": {
+     "released": {
+      "mean": 1.162791,
+      "lo": 0.0,
+      "hi": 4.225951,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "repaired": {
+      "mean": 1.162791,
+      "lo": 0.0,
+      "hi": 4.225951,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "released-repaired": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n_items": 86,
+      "n_clusters": 42
+     },
+     "pick_rank": {
+      "released": {
+       "0": 31.8,
+       "1": 50.0,
+       "2": 4.5,
+       "3": 13.6
+      },
+      "repaired": {
+       "0": 14.3,
+       "1": 35.7,
+       "2": 35.7,
+       "3": 14.3
+      }
+     }
+    },
+    "refused": 0.7272727272727273,
+    "no_pick": 0.048295454545454544
+   }
+  }
+ },
+ "gemma27b|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": -1.463415,
+   "lo": -4.787234,
+   "hi": 1.860465,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": -0.952381,
+   "lo": -4.273504,
+   "hi": 2.409639,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 0.0,
+   "lo": -3.87612,
+   "hi": 4.237649,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": -1.707317,
+    "lo": -6.068097,
+    "hi": 2.57732,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": -0.47619,
+    "lo": -6.422018,
+    "hi": 5.555556,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "glm45air-react|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": 20.97561,
+   "lo": 10.900474,
+   "hi": 31.52762,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": 6.666667,
+   "lo": 0.0,
+   "hi": 15.054058,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 11.428571,
+   "lo": 1.680672,
+   "hi": 24.107759,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 20.0,
+    "lo": 9.808519,
+    "hi": 30.19802,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 11.428571,
+    "lo": 0.0,
+    "hi": 24.123109,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:glm45air": {
+   "forced_all": {
+    "mean": 18.780488,
+    "lo": 8.571296,
+    "hi": 29.005725,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 9.047619,
+    "lo": -2.717391,
+    "hi": 20.833333,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:qwen72b": {
+   "forced_all": {
+    "mean": 21.219512,
+    "lo": 11.950774,
+    "hi": 30.309875,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 12.380952,
+    "lo": 0.462878,
+    "hi": 24.603299,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "llama70b|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": -3.414634,
+   "lo": -8.695652,
+   "hi": 1.327552,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": 0.0,
+   "lo": -4.672897,
+   "hi": 5.102041,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 0.0,
+   "lo": -4.672897,
+   "hi": 5.102041,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": -4.878049,
+    "lo": -10.32877,
+    "hi": 0.549094,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 0.952381,
+    "lo": -4.954955,
+    "hi": 7.692308,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:llama70b": {
+   "forced_all": {
+    "mean": -1.219512,
+    "lo": -7.106599,
+    "hi": 4.444561,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 1.428571,
+    "lo": -7.265113,
+    "hi": 10.101118,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "llama70b-react|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": 4.878049,
+   "lo": 0.0,
+   "hi": 9.895833,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": 1.904762,
+   "lo": -3.448276,
+   "hi": 7.843137,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 3.809524,
+   "lo": -1.087195,
+   "hi": 9.433962,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 5.609756,
+    "lo": -0.46729,
+    "hi": 11.734742,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 2.380952,
+    "lo": -4.62963,
+    "hi": 10.185365,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:llama70b": {
+   "forced_all": {
+    "mean": 8.536585,
+    "lo": 2.116402,
+    "hi": 14.766957,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 8.095238,
+    "lo": 0.47619,
+    "hi": 16.489471,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "qwen3a3b-react|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": 14.634146,
+   "lo": 6.532663,
+   "hi": 23.287671,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": 9.52381,
+   "lo": 1.851852,
+   "hi": 19.626168,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 12.380952,
+   "lo": 4.064548,
+   "hi": 22.936834,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 17.804878,
+    "lo": 8.686421,
+    "hi": 27.461213,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 10.47619,
+    "lo": 2.343604,
+    "hi": 20.0,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:qwen3a3b": {
+   "forced_all": {
+    "mean": 16.585366,
+    "lo": 7.208733,
+    "hi": 26.684157,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 12.857143,
+    "lo": 4.03197,
+    "hi": 23.529898,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "qwen72b|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": 11.219512,
+   "lo": 1.470303,
+   "hi": 22.034081,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": 12.380952,
+   "lo": 4.878049,
+   "hi": 22.222222,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 13.333333,
+   "lo": 5.555556,
+   "hi": 23.529412,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 7.804878,
+    "lo": -2.601489,
+    "hi": 18.593303,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 1.904762,
+    "lo": -6.504065,
+    "hi": 12.026189,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:qwen72b": {
+   "forced_all": {
+    "mean": 9.756098,
+    "lo": -0.765464,
+    "hi": 20.967899,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": 2.857143,
+    "lo": -5.803571,
+    "hi": 12.5,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "qwen72b-react|data-nodata": {
+  "n": 205,
+  "open": {
+   "mean": 5.365854,
+   "lo": -1.970835,
+   "hi": 13.145787,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_strict": {
+   "mean": 5.714286,
+   "lo": -1.0,
+   "hi": 13.392857,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "numeric_within_5pct": {
+   "mean": 6.666667,
+   "lo": 0.0,
+   "hi": 14.285714,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 0.731707,
+    "lo": -6.842193,
+    "hi": 8.772628,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": -1.428571,
+    "lo": -9.223618,
+    "hi": 6.881417,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:qwen72b": {
+   "forced_all": {
+    "mean": -0.243902,
+    "lo": -8.409091,
+    "hi": 8.837233,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "forced_numeric": {
+    "mean": -0.952381,
+    "lo": -8.823529,
+    "hi": 8.333333,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "llama70b-react|data|vs-llama70b": {
+  "n": 205,
+  "open": {
+   "mean": 3.414634,
+   "lo": -2.817061,
+   "hi": 9.90099,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_within_5pct": {
+   "mean": 0.952381,
+   "lo": -6.521739,
+   "hi": 7.8125,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 8.536585,
+    "lo": 1.530612,
+    "hi": 15.38498,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 2.857143,
+    "lo": -4.211221,
+    "hi": 9.545455,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:llama70b": {
+   "forced_all": {
+    "mean": 4.634146,
+    "lo": -1.904918,
+    "hi": 11.320941,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 5.238095,
+    "lo": -4.375,
+    "hi": 13.77551,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "llama70b-react|nodata|vs-llama70b": {
+  "n": 205,
+  "open": {
+   "mean": -4.878049,
+   "lo": -10.526316,
+   "hi": 0.0,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_within_5pct": {
+   "mean": -2.857143,
+   "lo": -7.000351,
+   "hi": 0.0,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": -1.95122,
+    "lo": -7.920792,
+    "hi": 3.743449,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 1.904762,
+    "lo": -4.090909,
+    "hi": 8.621003,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:llama70b": {
+   "forced_all": {
+    "mean": -5.121951,
+    "lo": -10.930378,
+    "hi": 0.728226,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 1.904762,
+    "lo": -5.645302,
+    "hi": 10.674266,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "qwen72b-react|data|vs-qwen72b": {
+  "n": 205,
+  "open": {
+   "mean": -7.317073,
+   "lo": -12.785605,
+   "hi": -2.314601,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_within_5pct": {
+   "mean": -4.761905,
+   "lo": -11.827957,
+   "hi": 0.854701,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": -5.853659,
+    "lo": -12.834371,
+    "hi": 0.742648,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 3.333333,
+    "lo": -0.892857,
+    "hi": 8.0,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:qwen72b": {
+   "forced_all": {
+    "mean": -8.292683,
+    "lo": -14.634146,
+    "hi": -2.011465,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 1.904762,
+    "lo": -5.263158,
+    "hi": 9.473684,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ },
+ "qwen72b-react|nodata|vs-qwen72b": {
+  "n": 205,
+  "open": {
+   "mean": -1.463415,
+   "lo": -5.140187,
+   "hi": 2.127841,
+   "n_items": 205,
+   "n_clusters": 59
+  },
+  "numeric_within_5pct": {
+   "mean": 1.904762,
+   "lo": 0.0,
+   "hi": 5.208333,
+   "n_items": 105,
+   "n_clusters": 46
+  },
+  "reader:gemma27b": {
+   "forced_all": {
+    "mean": 1.219512,
+    "lo": -3.954914,
+    "hi": 6.25,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 2.857143,
+    "lo": -3.157895,
+    "hi": 9.174312,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  },
+  "reader:qwen72b": {
+   "forced_all": {
+    "mean": 1.707317,
+    "lo": -3.826531,
+    "hi": 6.830601,
+    "n_items": 205,
+    "n_clusters": 59
+   },
+   "released-repaired": {
+    "mean": 9.047619,
+    "lo": -1.111111,
+    "hi": 18.317162,
+    "n_items": 105,
+    "n_clusters": 46
+   }
+  }
+ }
+}

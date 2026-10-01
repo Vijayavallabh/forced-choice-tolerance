@@ -1,0 +1,719 @@
+{
+  "design": "options drawn i.i.d. and rendered in i.i.d. styles, key chosen uniformly among them: every ordering's rank distribution is uniform by construction",
+  "n_items": 1263,
+  "n_clusters": 67,
+  "n_options": 10,
+  "replicates": 30,
+  "reps": 4000,
+  "false_positive_rate": {
+    "numeric rule family": 0.0,
+    "surface rule family": 0.0,
+    "lexical isolation (all items)": 0.03333333333333333,
+    "lexical isolation (numeric items)": 0.03333333333333333,
+    "written length (all items)": 0.03333333333333333,
+    "written length (numeric items)": 0.0,
+    "significant digits (all items)": 0.1,
+    "significant digits (numeric items)": 0.03333333333333333,
+    "any coordinate": 0.13333333333333333
+  },
+  "widest_bound_on_a_clean_file": {
+    "lexical isolation (all items)": 0.0042502004811547645,
+    "lexical isolation (numeric items)": 0.010401459854014597,
+    "written length (all items)": 0.002073365231259963,
+    "written length (numeric items)": -0.0010270774976657432,
+    "significant digits (all items)": 0.0042502004811547645,
+    "significant digits (numeric items)": 0.0016791044776119368
+  },
+  "runs": [
+    {
+      "seed": 20260919,
+      "n_items": 1254,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": true,
+        "significant digits (numeric items)": true,
+        "any coordinate": true
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.004306220095693786,
+        "lexical isolation (numeric items)": -0.004936014625228524,
+        "written length (all items)": -0.012490055688146387,
+        "written length (numeric items)": -0.012639405204460968,
+        "significant digits (all items)": 0.00023866348448686736,
+        "significant digits (numeric items)": 0.0016791044776119368
+      }
+    },
+    {
+      "seed": 20260920,
+      "n_items": 1256,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.012114014251781477,
+        "lexical isolation (numeric items)": -0.013204062788550325,
+        "written length (all items)": -0.002555910543130993,
+        "written length (numeric items)": -0.006740535549399823,
+        "significant digits (all items)": -0.007863383637807794,
+        "significant digits (numeric items)": -0.005695611577964527
+      }
+    },
+    {
+      "seed": 20260921,
+      "n_items": 1254,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.006921241050119334,
+        "lexical isolation (numeric items)": -0.009172661870503598,
+        "written length (all items)": -0.008009516256938937,
+        "written length (numeric items)": -0.011710037174721188,
+        "significant digits (all items)": -0.006921241050119334,
+        "significant digits (numeric items)": -0.0061075660893345485
+      }
+    },
+    {
+      "seed": 20260922,
+      "n_items": 1258,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.014489311163895499,
+        "lexical isolation (numeric items)": -0.013003663003663013,
+        "written length (all items)": -0.009090909090909094,
+        "written length (numeric items)": -0.01320072332730561,
+        "significant digits (all items)": -0.002555910543130993,
+        "significant digits (numeric items)": -0.008181818181818193
+      }
+    },
+    {
+      "seed": 20260923,
+      "n_items": 1255,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": true,
+        "lexical isolation (numeric items)": true,
+        "written length (all items)": true,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": true
+      },
+      "bounds": {
+        "lexical isolation (all items)": 0.0042502004811547645,
+        "lexical isolation (numeric items)": 0.010401459854014597,
+        "written length (all items)": 0.002073365231259963,
+        "written length (numeric items)": -0.0010270774976657432,
+        "significant digits (all items)": -0.012420382165605107,
+        "significant digits (numeric items)": -0.010665451230628994
+      }
+    },
+    {
+      "seed": 20260924,
+      "n_items": 1257,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.00865766481334393,
+        "lexical isolation (numeric items)": -0.011577028258887886,
+        "written length (all items)": -0.012490055688146387,
+        "written length (numeric items)": -0.018123275068997247,
+        "significant digits (all items)": -0.010543130990415345,
+        "significant digits (numeric items)": -0.016071428571428584
+      }
+    },
+    {
+      "seed": 20260925,
+      "n_items": 1259,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.004534606205250605,
+        "lexical isolation (numeric items)": -0.004284412032816778,
+        "written length (all items)": -0.008009516256938937,
+        "written length (numeric items)": -0.003970452446906747,
+        "significant digits (all items)": -0.008872901678657077,
+        "significant digits (numeric items)": -0.0056429232192414525
+      }
+    },
+    {
+      "seed": 20260926,
+      "n_items": 1259,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.013216560509554151,
+        "lexical isolation (numeric items)": -0.00816326530612245,
+        "written length (all items)": -0.011111111111111113,
+        "written length (numeric items)": -0.013968547641073081,
+        "significant digits (all items)": -0.00873015873015874,
+        "significant digits (numeric items)": -0.009177820267686432
+      }
+    },
+    {
+      "seed": 20260927,
+      "n_items": 1256,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.011200000000000002,
+        "lexical isolation (numeric items)": -0.013123844731977821,
+        "written length (all items)": -0.006847133757961796,
+        "written length (numeric items)": -0.009767441860465118,
+        "significant digits (all items)": -0.007496012759170653,
+        "significant digits (numeric items)": -0.0033457249070631967
+      }
+    },
+    {
+      "seed": 20260928,
+      "n_items": 1255,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.006921241050119334,
+        "lexical isolation (numeric items)": -0.008839779005524864,
+        "written length (all items)": -0.015939730372720062,
+        "written length (numeric items)": -0.015596330275229359,
+        "significant digits (all items)": -0.007069102462271645,
+        "significant digits (numeric items)": -0.004332129963898923
+      }
+    },
+    {
+      "seed": 20260929,
+      "n_items": 1258,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.006200317965023849,
+        "lexical isolation (numeric items)": -0.006103286384976536,
+        "written length (all items)": -0.001509134233518672,
+        "written length (numeric items)": -0.007869481765834935,
+        "significant digits (all items)": -0.002612826603325416,
+        "significant digits (numeric items)": -0.007721280602636535
+      }
+    },
+    {
+      "seed": 20260930,
+      "n_items": 1258,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.015605095541401284,
+        "lexical isolation (numeric items)": -0.0168241965973535,
+        "written length (all items)": -0.009738717339667469,
+        "written length (numeric items)": -0.013364055299539171,
+        "significant digits (all items)": -0.006847133757961796,
+        "significant digits (numeric items)": -0.009426987060998163
+      }
+    },
+    {
+      "seed": 20260931,
+      "n_items": 1259,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.007407407407407418,
+        "lexical isolation (numeric items)": -0.011496350364963506,
+        "written length (all items)": -0.010459587955626001,
+        "written length (numeric items)": -0.012888888888888894,
+        "significant digits (all items)": -0.008945686900958469,
+        "significant digits (numeric items)": -0.014027149321266974
+      }
+    },
+    {
+      "seed": 20260932,
+      "n_items": 1260,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.005330151153540186,
+        "lexical isolation (numeric items)": -0.008088235294117646,
+        "written length (all items)": -0.011904761904761904,
+        "written length (numeric items)": -0.009671532846715333,
+        "significant digits (all items)": -0.014217633042096903,
+        "significant digits (numeric items)": -0.01590493601462524
+      }
+    },
+    {
+      "seed": 20260933,
+      "n_items": 1256,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.0048374306106264975,
+        "lexical isolation (numeric items)": -0.009175162187210387,
+        "written length (all items)": -0.011764705882352941,
+        "written length (numeric items)": -0.011737089201877937,
+        "significant digits (all items)": -0.006125696101829753,
+        "significant digits (numeric items)": -0.008920187793427237
+      }
+    },
+    {
+      "seed": 20260934,
+      "n_items": 1252,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.008146964856230038,
+        "lexical isolation (numeric items)": -0.004981549815498157,
+        "written length (all items)": -0.010756972111553784,
+        "written length (numeric items)": -0.00841813135985199,
+        "significant digits (all items)": -0.004458598726114649,
+        "significant digits (numeric items)": -0.0012915129151291616
+      }
+    },
+    {
+      "seed": 20260935,
+      "n_items": 1260,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.009307875894988077,
+        "lexical isolation (numeric items)": -0.009753874202370102,
+        "written length (all items)": -0.014149443561208272,
+        "written length (numeric items)": -0.01441441441441442,
+        "significant digits (all items)": -0.012140575079872207,
+        "significant digits (numeric items)": -0.012647861692447679
+      }
+    },
+    {
+      "seed": 20260936,
+      "n_items": 1258,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": true,
+        "significant digits (numeric items)": false,
+        "any coordinate": true
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.010174880763116068,
+        "lexical isolation (numeric items)": -0.005292479108635104,
+        "written length (all items)": -0.005854430379746839,
+        "written length (numeric items)": -0.006787330316742085,
+        "significant digits (all items)": 0.00015898251192368595,
+        "significant digits (numeric items)": -0.0011299435028248594
+      }
+    },
+    {
+      "seed": 20260937,
+      "n_items": 1259,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.011412609736632093,
+        "lexical isolation (numeric items)": -0.01267605633802818,
+        "written length (all items)": -0.01640127388535033,
+        "written length (numeric items)": -0.013415794481446253,
+        "significant digits (all items)": -0.016467780429594278,
+        "significant digits (numeric items)": -0.014855072463768118
+      }
+    },
+    {
+      "seed": 20260938,
+      "n_items": 1256,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.014149443561208272,
+        "lexical isolation (numeric items)": -0.012523020257826895,
+        "written length (all items)": -0.010103420843277644,
+        "written length (numeric items)": -0.011070780399274047,
+        "significant digits (all items)": -0.003557312252964434,
+        "significant digits (numeric items)": -0.0024163568773234306
+      }
+    },
+    {
+      "seed": 20260939,
+      "n_items": 1256,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.00959555908009517,
+        "lexical isolation (numeric items)": -0.013513513513513514,
+        "written length (all items)": -0.005254777070063693,
+        "written length (numeric items)": -0.0025974025974025983,
+        "significant digits (all items)": -0.007790143084260737,
+        "significant digits (numeric items)": -0.003881700554528661
+      }
+    },
+    {
+      "seed": 20260940,
+      "n_items": 1257,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.00657165479018211,
+        "lexical isolation (numeric items)": -0.009430438842203556,
+        "written length (all items)": -0.003891977760127091,
+        "written length (numeric items)": -0.006654343807763405,
+        "significant digits (all items)": -0.013806863527533922,
+        "significant digits (numeric items)": -0.014209115281501344
+      }
+    },
+    {
+      "seed": 20260941,
+      "n_items": 1260,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.0075697211155378585,
+        "lexical isolation (numeric items)": -0.00613718411552347,
+        "written length (all items)": -0.0075697211155378585,
+        "written length (numeric items)": -0.011764705882352941,
+        "significant digits (all items)": -0.015348101265822797,
+        "significant digits (numeric items)": -0.012296564195298385
+      }
+    },
+    {
+      "seed": 20260942,
+      "n_items": 1257,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.013560666137985733,
+        "lexical isolation (numeric items)": -0.012523020257826895,
+        "written length (all items)": -0.0033280507131537296,
+        "written length (numeric items)": -0.00471785383903793,
+        "significant digits (all items)": -0.013147410358565745,
+        "significant digits (numeric items)": -0.014600550964187331
+      }
+    },
+    {
+      "seed": 20260943,
+      "n_items": 1254,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.010614525139664807,
+        "lexical isolation (numeric items)": -0.011275415896487992,
+        "written length (all items)": -0.010328262610088082,
+        "written length (numeric items)": -0.00817263544536273,
+        "significant digits (all items)": -0.011341853035143776,
+        "significant digits (numeric items)": -0.006779661016949157
+      }
+    },
+    {
+      "seed": 20260944,
+      "n_items": 1256,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": true,
+        "significant digits (numeric items)": false,
+        "any coordinate": true
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.0060509554140127375,
+        "lexical isolation (numeric items)": -0.008839779005524864,
+        "written length (all items)": -0.005254777070063693,
+        "written length (numeric items)": -0.00581717451523546,
+        "significant digits (all items)": 0.0042502004811547645,
+        "significant digits (numeric items)": -0.001960784313725497
+      }
+    },
+    {
+      "seed": 20260945,
+      "n_items": 1254,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.006549520766773162,
+        "lexical isolation (numeric items)": -0.008834586466165417,
+        "written length (all items)": -0.003431763766959306,
+        "written length (numeric items)": -0.001924839596700284,
+        "significant digits (all items)": -0.012350597609561753,
+        "significant digits (numeric items)": -0.015518824609733708
+      }
+    },
+    {
+      "seed": 20260946,
+      "n_items": 1255,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.0119746233148295,
+        "lexical isolation (numeric items)": -0.012603495860165598,
+        "written length (all items)": -0.00858505564387918,
+        "written length (numeric items)": -0.005069124423963137,
+        "significant digits (all items)": -0.011483253588516748,
+        "significant digits (numeric items)": -0.012476722532588455
+      }
+    },
+    {
+      "seed": 20260947,
+      "n_items": 1263,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.0038155802861685323,
+        "lexical isolation (numeric items)": -0.00489381348107111,
+        "written length (all items)": -0.009952606635071096,
+        "written length (numeric items)": -0.009859154929577466,
+        "significant digits (all items)": -0.00873015873015874,
+        "significant digits (numeric items)": -0.009345794392523366
+      }
+    },
+    {
+      "seed": 20260948,
+      "n_items": 1255,
+      "fired": {
+        "numeric rule family": false,
+        "surface rule family": false,
+        "lexical isolation (all items)": false,
+        "lexical isolation (numeric items)": false,
+        "written length (all items)": false,
+        "written length (numeric items)": false,
+        "significant digits (all items)": false,
+        "significant digits (numeric items)": false,
+        "any coordinate": false
+      },
+      "bounds": {
+        "lexical isolation (all items)": -0.0037390612569610238,
+        "lexical isolation (numeric items)": -0.007457322551662177,
+        "written length (all items)": -0.008000000000000007,
+        "written length (numeric items)": -0.006422018348623854,
+        "significant digits (all items)": -0.009816440542697535,
+        "significant digits (numeric items)": -0.009417040358744397
+      }
+    }
+  ]
+}

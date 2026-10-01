@@ -1,0 +1,173 @@
+{
+  "orderings": [
+    "decimal places",
+    "digit sum",
+    "leading digit",
+    "length, later ties",
+    "string order"
+  ],
+  "reps": 2000,
+  "replicates": 20,
+  "files": {
+    "4": {
+      "released": {
+        "leading digit": {
+          "n_items": 661,
+          "top_rank_share": 0.2556732223903177,
+          "plug_in": 0.0374432677760968,
+          "bound": -0.0018684603886397477,
+          "leaks": false
+        },
+        "decimal places": {
+          "n_items": 661,
+          "top_rank_share": 0.25113464447806355,
+          "plug_in": 0.05408472012102872,
+          "bound": 0.027192982456140324,
+          "leaks": true
+        },
+        "digit sum": {
+          "n_items": 661,
+          "top_rank_share": 0.264750378214826,
+          "plug_in": 0.022314674735249618,
+          "bound": -0.025618374558303875,
+          "leaks": false
+        },
+        "string order": {
+          "n_items": 661,
+          "top_rank_share": 0.24962178517397882,
+          "plug_in": 0.04954614220877457,
+          "bound": 0.025100401606425682,
+          "leaks": true
+        },
+        "length, later ties": {
+          "n_items": 661,
+          "top_rank_share": 0.1875945537065053,
+          "plug_in": 0.04803328290468989,
+          "bound": 0.018376068376068366,
+          "leaks": true
+        },
+        "_coupling": {
+          "n_items": 661,
+          "lexicographic_is_value_order": 0.5279878971255674,
+          "leading digit": {
+            "key_rank_agrees_with_value": 0.5703479576399395,
+            "mean_distinct_scores": 3.0680786686838126
+          },
+          "decimal places": {
+            "key_rank_agrees_with_value": 0.5506807866868382,
+            "mean_distinct_scores": 1.1664145234493193
+          },
+          "digit sum": {
+            "key_rank_agrees_with_value": 0.4826021180030257,
+            "mean_distinct_scores": 3.5219364599092287
+          },
+          "string order": {
+            "key_rank_agrees_with_value": 0.5975794251134644,
+            "mean_distinct_scores": 1.0
+          },
+          "length, later ties": {
+            "key_rank_agrees_with_value": 0.16036308623298035,
+            "mean_distinct_scores": 1.7806354009077157
+          }
+        }
+      },
+      "repaired": {
+        "leading digit": {
+          "n_items": 661,
+          "top_rank_share": 0.3040847201210287,
+          "plug_in": 0.05408472012102872,
+          "bound": -0.0297029702970297,
+          "leaks": false
+        },
+        "decimal places": {
+          "n_items": 661,
+          "top_rank_share": 0.27685325264750377,
+          "plug_in": 0.05559757942511345,
+          "bound": 0.012337662337662314,
+          "leaks": true
+        },
+        "digit sum": {
+          "n_items": 661,
+          "top_rank_share": 0.2526475037821483,
+          "plug_in": 0.031391830559757916,
+          "bound": -0.025132275132275145,
+          "leaks": false
+        },
+        "string order": {
+          "n_items": 661,
+          "top_rank_share": 0.3237518910741301,
+          "plug_in": 0.0737518910741301,
+          "bound": -0.02121771217712176,
+          "leaks": false
+        },
+        "length, later ties": {
+          "n_items": 661,
+          "top_rank_share": 0.2314674735249622,
+          "plug_in": 0.05862329803328292,
+          "bound": -0.028911564625850344,
+          "leaks": false
+        },
+        "_coupling": {
+          "n_items": 661,
+          "lexicographic_is_value_order": 0.491679273827534,
+          "leading digit": {
+            "key_rank_agrees_with_value": 0.46747352496217853,
+            "mean_distinct_scores": 3.307110438729198
+          },
+          "decimal places": {
+            "key_rank_agrees_with_value": 0.4205748865355522,
+            "mean_distinct_scores": 1.4432677760968229
+          },
+          "digit sum": {
+            "key_rank_agrees_with_value": 0.329803328290469,
+            "mean_distinct_scores": 3.7155824508320725
+          },
+          "string order": {
+            "key_rank_agrees_with_value": 0.5506807866868382,
+            "mean_distinct_scores": 1.0
+          },
+          "length, later ties": {
+            "key_rank_agrees_with_value": 0.2254160363086233,
+            "mean_distinct_scores": 2.0196671709531016
+          }
+        }
+      },
+      "transfer": {
+        "leading digit": 0.027834509908389954,
+        "decimal places": 0.01485532011847801,
+        "digit sum": -0.0004860994260287299,
+        "string order": 0.04631811378354744,
+        "length, later ties": 0.04728763300191871
+      }
+    }
+  },
+  "clean": {
+    "4": {
+      "leading digit": {
+        "widest": 0.005451713395638602,
+        "median": -0.017096923566694636,
+        "fire_rate": 0.1
+      },
+      "decimal places": {
+        "widest": 0.0035211267605633756,
+        "median": -0.01851922417406547,
+        "fire_rate": 0.1
+      },
+      "digit sum": {
+        "widest": -0.0026717557251908497,
+        "median": -0.017141661276207143,
+        "fire_rate": 0.0
+      },
+      "string order": {
+        "widest": 0.012166405023547877,
+        "median": -0.015842984367236176,
+        "fire_rate": 0.05
+      },
+      "length, later ties": {
+        "widest": 0.0058502340093603555,
+        "median": -0.02314814814814814,
+        "fire_rate": 0.05
+      }
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "orderings": [
+    "decimal places",
+    "digit sum",
+    "leading digit",
+    "length, later ties",
+    "string order"
+  ],
+  "reps": 2000,
+  "files": {
+    "aqua_rat:5": {
+      "leading digit": {
+        "n_items": 141,
+        "top_rank_share": 0.1773049645390071,
+        "plug_in": 0.06950354609929077,
+        "bound": -0.015602836879432647,
+        "leaks": false
+      },
+      "decimal places": {
+        "n_items": 141,
+        "top_rank_share": 0.1702127659574468,
+        "plug_in": 0.07659574468085106,
+        "bound": -0.008510638297872353,
+        "leaks": false
+      },
+      "digit sum": {
+        "n_items": 141,
+        "top_rank_share": 0.1702127659574468,
+        "plug_in": 0.06950354609929077,
+        "bound": -0.015602836879432647,
+        "leaks": false
+      },
+      "string order": {
+        "n_items": 141,
+        "top_rank_share": 0.1773049645390071,
+        "plug_in": 0.06950354609929077,
+        "bound": -0.015602836879432647,
+        "leaks": false
+      },
+      "length, later ties": {
+        "n_items": 141,
+        "top_rank_share": 0.2553191489361702,
+        "plug_in": 0.0907801418439716,
+        "bound": -0.0014184397163120588,
+        "leaks": false
+      },
+      "_coupling": {
+        "n_items": 141,
+        "lexicographic_is_value_order": 0.6524822695035462,
+        "leading digit": {
+          "key_rank_agrees_with_value": 0.6312056737588653,
+          "mean_distinct_scores": 3.3191489361702127
+        },
+        "decimal places": {
+          "key_rank_agrees_with_value": 0.6170212765957447,
+          "mean_distinct_scores": 1.0780141843971631
+        },
+        "digit sum": {
+          "key_rank_agrees_with_value": 0.3829787234042553,
+          "mean_distinct_scores": 4.546099290780142
+        },
+        "string order": {
+          "key_rank_agrees_with_value": 0.6595744680851063,
+          "mean_distinct_scores": 1.0
+        },
+        "length, later ties": {
+          "key_rank_agrees_with_value": 0.1773049645390071,
+          "mean_distinct_scores": 1.4609929078014185
+        }
+      }
+    },
+    "medmcqa:4": {
+      "leading digit": {
+        "n_items": 454,
+        "top_rank_share": 0.20704845814977973,
+        "plug_in": 0.03634361233480177,
+        "bound": -0.028774289985052326,
+        "leaks": false
+      },
+      "decimal places": {
+        "n_items": 454,
+        "top_rank_share": 0.21145374449339208,
+        "plug_in": 0.04735682819383258,
+        "bound": -0.028920308483290497,
+        "leaks": false
+      },
+      "digit sum": {
+        "n_items": 454,
+        "top_rank_share": 0.22026431718061673,
+        "plug_in": 0.04074889867841408,
+        "bound": -0.031321184510250566,
+        "leaks": false
+      },
+      "string order": {
+        "n_items": 454,
+        "top_rank_share": 0.1960352422907489,
+        "plug_in": 0.0253303964757709,
+        "bound": -0.023722627737226276,
+        "leaks": false
+      },
+      "length, later ties": {
+        "n_items": 454,
+        "top_rank_share": 0.2599118942731278,
+        "plug_in": 0.02312775330396477,
+        "bound": -0.012773722627737238,
+        "leaks": false
+      },
+      "_coupling": {
+        "n_items": 454,
+        "lexicographic_is_value_order": 0.6629955947136564,
+        "leading digit": {
+          "key_rank_agrees_with_value": 0.6431718061674009,
+          "mean_distinct_scores": 3.1101321585903086
+        },
+        "decimal places": {
+          "key_rank_agrees_with_value": 0.5969162995594713,
+          "mean_distinct_scores": 1.1541850220264318
+        },
+        "digit sum": {
+          "key_rank_agrees_with_value": 0.4933920704845815,
+          "mean_distinct_scores": 3.7290748898678414
+        },
+        "string order": {
+          "key_rank_agrees_with_value": 0.7048458149779736,
+          "mean_distinct_scores": 1.0
+        },
+        "length, later ties": {
+          "key_rank_agrees_with_value": 0.12555066079295155,
+          "mean_distinct_scores": 1.52863436123348
+        }
+      }
+    },
+    "medqa_usmle:4": {
+      "leading digit": {
+        "n_items": 77,
+        "top_rank_share": 0.2077922077922078,
+        "plug_in": 0.07467532467532467,
+        "bound": -0.042207792207792194,
+        "leaks": false
+      },
+      "decimal places": {
+        "n_items": 77,
+        "top_rank_share": 0.22077922077922077,
+        "plug_in": 0.08766233766233766,
+        "bound": -0.02922077922077923,
+        "leaks": false
+      },
+      "digit sum": {
+        "n_items": 77,
+        "top_rank_share": 0.2597402597402597,
+        "plug_in": 0.08766233766233766,
+        "bound": -0.02922077922077923,
+        "leaks": false
+      },
+      "string order": {
+        "n_items": 77,
+        "top_rank_share": 0.24675324675324675,
+        "plug_in": 0.022727272727272707,
+        "bound": -0.09415584415584416,
+        "leaks": false
+      },
+      "length, later ties": {
+        "n_items": 77,
+        "top_rank_share": 0.19480519480519481,
+        "plug_in": 0.07467532467532467,
+        "bound": -0.042207792207792194,
+        "leaks": false
+      },
+      "_coupling": {
+        "n_items": 77,
+        "lexicographic_is_value_order": 0.7012987012987013,
+        "leading digit": {
+          "key_rank_agrees_with_value": 0.5454545454545454,
+          "mean_distinct_scores": 3.2467532467532467
+        },
+        "decimal places": {
+          "key_rank_agrees_with_value": 0.4935064935064935,
+          "mean_distinct_scores": 1.3766233766233766
+        },
+        "digit sum": {
+          "key_rank_agrees_with_value": 0.42857142857142855,
+          "mean_distinct_scores": 3.6103896103896105
+        },
+        "string order": {
+          "key_rank_agrees_with_value": 0.7272727272727273,
+          "mean_distinct_scores": 1.0
+        },
+        "length, later ties": {
+          "key_rank_agrees_with_value": 0.14285714285714285,
+          "mean_distinct_scores": 1.7922077922077921
+        }
+      }
+    },
+    "mmlu:4": {
+      "leading digit": {
+        "n_items": 661,
+        "top_rank_share": 0.2556732223903177,
+        "plug_in": 0.0374432677760968,
+        "bound": -0.0018684603886397477,
+        "leaks": false
+      },
+      "decimal places": {
+        "n_items": 661,
+        "top_rank_share": 0.25113464447806355,
+        "plug_in": 0.05408472012102872,
+        "bound": 0.027192982456140324,
+        "leaks": true
+      },
+      "digit sum": {
+        "n_items": 661,
+        "top_rank_share": 0.264750378214826,
+        "plug_in": 0.022314674735249618,
+        "bound": -0.025618374558303875,
+        "leaks": false
+      },
+      "string order": {
+        "n_items": 661,
+        "top_rank_share": 0.24962178517397882,
+        "plug_in": 0.04954614220877457,
+        "bound": 0.025100401606425682,
+        "leaks": true
+      },
+      "length, later ties": {
+        "n_items": 661,
+        "top_rank_share": 0.1875945537065053,
+        "plug_in": 0.04803328290468989,
+        "bound": 0.018376068376068366,
+        "leaks": true
+      },
+      "_coupling": {
+        "n_items": 661,
+        "lexicographic_is_value_order": 0.5279878971255674,
+        "leading digit": {
+          "key_rank_agrees_with_value": 0.5703479576399395,
+          "mean_distinct_scores": 3.0680786686838126
+        },
+        "decimal places": {
+          "key_rank_agrees_with_value": 0.5506807866868382,
+          "mean_distinct_scores": 1.1664145234493193
+        },
+        "digit sum": {
+          "key_rank_agrees_with_value": 0.4826021180030257,
+          "mean_distinct_scores": 3.5219364599092287
+        },
+        "string order": {
+          "key_rank_agrees_with_value": 0.5975794251134644,
+          "mean_distinct_scores": 1.0
+        },
+        "length, later ties": {
+          "key_rank_agrees_with_value": 0.16036308623298035,
+          "mean_distinct_scores": 1.7806354009077157
+        }
+      }
+    },
+    "mmlu_pro:10": {
+      "leading digit": {
+        "n_items": 1263,
+        "top_rank_share": 0.06175771971496437,
+        "plug_in": 0.05518606492478226,
+        "bound": 0.023479318734793184,
+        "leaks": true
+      },
+      "decimal places": {
+        "n_items": 1263,
+        "top_rank_share": 0.08076009501187649,
+        "plug_in": 0.059936658749010274,
+        "bound": 0.013907284768211917,
+        "leaks": true
+      },
+      "digit sum": {
+        "n_items": 1263,
+        "top_rank_share": 0.11797307996832937,
+        "plug_in": 0.020348376880443386,
+        "bound": -0.0050576752440106565,
+        "leaks": false
+      },
+      "string order": {
+        "n_items": 1263,
+        "top_rank_share": 0.04829770387965162,
+        "plug_in": 0.08685669041963578,
+        "bound": 0.03655462184873948,
+        "leaks": true
+      },
+      "length, later ties": {
+        "n_items": 1263,
+        "top_rank_share": 0.0831353919239905,
+        "plug_in": 0.07022961203483769,
+        "bound": 0.025078566939032043,
+        "leaks": true
+      },
+      "_coupling": {
+        "n_items": 1263,
+        "lexicographic_is_value_order": 0.48772763262074426,
+        "leading digit": {
+          "key_rank_agrees_with_value": 0.39825811559778307,
+          "mean_distinct_scores": 5.5669041963578785
+        },
+        "decimal places": {
+          "key_rank_agrees_with_value": 0.44813935075217737,
+          "mean_distinct_scores": 1.299287410926366
+        },
+        "digit sum": {
+          "key_rank_agrees_with_value": 0.14647664291369755,
+          "mean_distinct_scores": 7.919239904988124
+        },
+        "string order": {
+          "key_rank_agrees_with_value": 0.5558194774346793,
+          "mean_distinct_scores": 1.0
+        },
+        "length, later ties": {
+          "key_rank_agrees_with_value": 0.06334125098970704,
+          "mean_distinct_scores": 1.9358669833729216
+        }
+      }
+    }
+  }
+}

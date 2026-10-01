@@ -1,0 +1,1337 @@
+{
+  "schema_version": "1.0",
+  "benchmark": {
+    "name": "BixBench public v1.5",
+    "revision": "f8cc3bdcc6357c88b8c3648306522b9c422dc95a",
+    "sha256": "0d1204dcdae7193a9132ced5a3502008f6b3b163debc1b65b2aa2d86cb132dc9",
+    "source_url": "https://huggingface.co/datasets/futurehouse/BixBench/resolve/f8cc3bdcc6357c88b8c3648306522b9c422dc95a/BixBench.jsonl"
+  },
+  "tasks": [
+    {
+      "task_id": "0923d260-fe1b-4fb4-4398-79edf546e584",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "0f14ffa7-f02a-4d20-8142-dfc404195e56",
+      "source_group": "7a28bec86055",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+      "source_group": "a5ef9c2304aa",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "1aea473d-db97-4c12-9a1e-6c850ddc9110",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "1cf79c8c-fb8c-453c-8788-c8958ab6f152",
+      "source_group": "4703b786fda4",
+      "analysis": {
+        "public_by": "2024-07-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "27821d45-94e6-4f4e-a914-e66ffaefdd3f",
+      "source_group": "705623d10cb0",
+      "analysis": {
+        "public_by": "2024-09-03",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1371/journal.pone.0305268"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "28a5984e-9061-4d6f-99a1-40f8753bc9f4",
+      "source_group": "4703b786fda4",
+      "analysis": {
+        "public_by": "2024-07-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d",
+      "source_group": "d4a2b0e3340f",
+      "analysis": {
+        "public_by": "2023-05-22",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1172/jci.insight.167744"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799",
+      "source_group": "4703b786fda4",
+      "analysis": {
+        "public_by": "2024-07-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "2e6ab559-e6ef-5d65-8949-f9c23c8bc561",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "302f0f4f-a9d7-460d-9488-d7cc7832bdf9",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "308d53bf-1513-4a09-913b-3a1112f94e7b",
+      "source_group": "31965b88231b",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "30b33e47-92d8-4372-a9f6-da32896493d0",
+      "source_group": "4703b786fda4",
+      "analysis": {
+        "public_by": "2024-07-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "33b801bb-9b47-4a0a-9314-05325c82fde7",
+      "source_group": "d4a2b0e3340f",
+      "analysis": {
+        "public_by": "2023-05-22",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1172/jci.insight.167744"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "34a4ea96-c800-4c11-959e-57cdc4932c52",
+      "source_group": "09063556a3c5",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "37829656-f147-5fd2-8f10-40fa15cfdf03",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc",
+      "source_group": "a3cc7fcef880",
+      "analysis": {
+        "public_by": "2016-02-26",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1371/journal.pone.0150501"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "40cbef03-b5c3-4448-b00f-0ba2965dea9b",
+      "source_group": "f47d50316721",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "451a5322-db12-4026-8d8d-24647a85c4b1",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "48181cce-3928-4491-94b4-c23504a6aaa1",
+      "source_group": "09063556a3c5",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "source_group": "f47d50316721",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "4a336d0c-3d6b-440a-bfb0-437b26a00af3",
+      "source_group": "4703b786fda4",
+      "analysis": {
+        "public_by": "2024-07-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "source_group": "487b21038ea3",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+      "source_group": "d4a2b0e3340f",
+      "analysis": {
+        "public_by": "2023-05-22",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1172/jci.insight.167744"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "53a80e13-d0cc-5ece-a246-9832910842f5",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "5ddf0a38-bc41-5ebb-93af-88c62ca29be7",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "7718a922-ce2c-4e59-900b-84fe06050ce6",
+      "source_group": "d4a2b0e3340f",
+      "analysis": {
+        "public_by": "2023-05-22",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1172/jci.insight.167744"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "873bada5-b1f3-423a-87dc-9ddd486c4843",
+      "source_group": "d733edc2e7f2",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "8b462015-86ab-434f-29e1-04dda1588031",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1",
+      "source_group": "973211809bcf",
+      "analysis": {
+        "public_by": "2023-06-02",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1126/sciadv.adf4950"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "94bcdbc9-c729-4661-9bc1-0057bbea39c4",
+      "source_group": "d733edc2e7f2",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "964b67db-88d8-4286-9995-10ccc6ba4c39",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "a02b761a-02b6-46b5-9d5e-2964d5a74960",
+      "source_group": "4703b786fda4",
+      "analysis": {
+        "public_by": "2024-07-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "a5fba1a0-ad42-41da-a299-201655a5ffe8",
+      "source_group": "8d9b3b9f8691",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5",
+      "source_group": "a5ef9c2304aa",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27",
+      "source_group": "09063556a3c5",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "b8c485ff-d146-4162-9403-9593c8847cfe",
+      "source_group": "8350e774d2f5",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "bda54b38-9b49-4009-aad6-d5f52675438a",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "cd811ead-7887-4369-b175-05aff4223765",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "cdb0c58b-c9e1-47a7-9ad1-6abc48335c3f",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "d37acffb-d802-4ce0-8caa-66f50667367a",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "d38392ec-84b8-485d-ab02-b8788e6f1f43",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8",
+      "source_group": "4b95bde50bae",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "dcee15c0-5840-5f48-884f-6ca747506277",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "e3bde22d-915c-409b-8646-039e0215b171",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "f4dcda89-678d-403d-b155-1483d0071765",
+      "source_group": "a9fc61134aaf",
+      "analysis": {
+        "public_by": "2022-03-25",
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1038/s41467-022-29205-8"
+        ]
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "fb42b6d8-8a62-538b-a647-d4b9b6f33abf",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "source_group": "8350e774d2f5",
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    },
+    {
+      "task_id": "ff43cd5b-6f9e-410b-8d53-a5bb11b5b531",
+      "source_group": null,
+      "analysis": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "data": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      },
+      "artifact": {
+        "public_by": null,
+        "first_public": null,
+        "first_appearance_verified": false,
+        "evidence_urls": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "Qwen/Qwen2.5-1.5B-Instruct|bixbench_numeric_placebo": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "items": "build/bixbench_numeric_placebo.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 26.190476190476193,
+        "chance": 25.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 1.1904761904761934,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -5.0,
+          7.547710749523971
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.3333333333333335
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.3333333333333335
+            ]
+          },
+          "0.1": {
+            "accuracy": 1.9047619047619049,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              5.1033557752998036
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 0.2380952380952409,
+      "0.05": 0.2380952380952409,
+      "0.1": -0.7142857142857115
+    }
+  },
+  "meta-llama/Llama-3.2-3B-Instruct|bixbench_numeric_placebo": {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "items": "build/bixbench_numeric_placebo.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 22.857142857142858,
+        "chance": 25.0,
+        "unparsed": 0.9523809523809524,
+        "declined": 0.0,
+        "margin": -2.1428571428571423,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -9.02061855670103,
+          5.188679245283019
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 3.8095238095238098,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9174311926605505,
+              7.447554185722804
+            ]
+          },
+          "0.05": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9174311926605505,
+              7.447554185722804
+            ]
+          },
+          "0.1": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9174311926605505,
+              7.447554185722804
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": -5.9523809523809526,
+      "0.05": -5.9523809523809526,
+      "0.1": -5.9523809523809526
+    }
+  },
+  "Qwen/Qwen2.5-7B-Instruct|bixbench_numeric_placebo": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "items": "build/bixbench_numeric_placebo.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 25.71428571428571,
+        "chance": 25.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 0.7142857142857117,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -5.885294117647053,
+          8.18560606060604
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.8928571428571428,
+              7.563025210084033
+            ]
+          },
+          "0.1": {
+            "accuracy": 4.761904761904762,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              1.0523574561403513,
+              8.663328491705517
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 0.7142857142857117,
+      "0.05": -3.095238095238098,
+      "0.1": -4.04761904761905
+    }
+  },
+  "meta-llama/Meta-Llama-3.1-8B-Instruct|bixbench_numeric_placebo": {
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "items": "build/bixbench_numeric_placebo.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 24.285714285714285,
+        "chance": 25.0,
+        "unparsed": 3.3333333333333335,
+        "declined": 0.4761904761904762,
+        "margin": -0.7142857142857153,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -7.857142857142857,
+          6.364429175475682
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 8.571428571428571,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.261765408504534
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.261765408504534
+            ]
+          },
+          "0.1": {
+            "accuracy": 1.9047619047619049,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              4.9504950495049505
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": -1.6666666666666679,
+      "0.05": -1.6666666666666679,
+      "0.1": -2.6190476190476204
+    }
+  },
+  "microsoft/phi-4|bixbench_numeric_placebo": {
+    "model": "microsoft/phi-4",
+    "items": "build/bixbench_numeric_placebo.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 22.380952380952383,
+        "chance": 25.0,
+        "unparsed": 30.0,
+        "declined": 22.380952380952383,
+        "margin": -2.619047619047617,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          -8.51063829787234,
+          3.4981671554252003
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 58.0952380952381,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.0935889175257687
+            ]
+          },
+          "0.1": {
+            "accuracy": 0.9523809523809524,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              3.0935889175257687
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": -2.619047619047617,
+      "0.05": -3.5714285714285694,
+      "0.1": -3.5714285714285694
+    }
+  },
+  "Qwen/Qwen2.5-14B-Instruct|bixbench_numeric_placebo": {
+    "model": "Qwen/Qwen2.5-14B-Instruct",
+    "items": "build/bixbench_numeric_placebo.jsonl",
+    "n_items": 105,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 38.57142857142858,
+        "chance": 25.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 13.571428571428577,
+        "n_clusters": 46,
+        "n_effective": 29.55764075067024,
+        "interval": [
+          5.587418300653597,
+          21.18869455463396
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 26.666666666666668,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 1.9047619047619049,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.0,
+              4.673999294657021
+            ]
+          },
+          "0.1": {
+            "accuracy": 3.8095238095238098,
+            "n_clusters": 46,
+            "n_effective": 29.55764075067024,
+            "interval": [
+              0.9088861588861592,
+              7.408392434988174
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 13.571428571428577,
+      "0.05": 11.666666666666671,
+      "0.1": 9.761904761904766
+    }
+  }
+}

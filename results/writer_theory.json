@@ -1,0 +1,258 @@
+{
+ "sorted_distractors": {
+  "gamma": 1.0547118733938987e-15,
+  "tuple_exchangeable": false,
+  "note": "key uniform on the set, distractors listed in increasing order"
+ },
+ "item_independent": [
+  {
+   "nu": "nu = kappa",
+   "k": 2,
+   "gamma": 0.0
+  },
+  {
+   "nu": "nu = kappa",
+   "k": 3,
+   "gamma": 1.1102230246251565e-16
+  },
+  {
+   "nu": "nu = kappa",
+   "k": 4,
+   "gamma": 5.551115123125783e-17
+  },
+  {
+   "nu": "nu uniform",
+   "k": 2,
+   "gamma": 0.16666666666666674
+  },
+  {
+   "nu": "nu uniform",
+   "k": 3,
+   "gamma": 0.1666666666666668
+  },
+  {
+   "nu": "nu uniform",
+   "k": 4,
+   "gamma": 0.15000000000000002
+  },
+  {
+   "nu": "nu reversed",
+   "k": 2,
+   "gamma": 0.3124999999999998
+  },
+  {
+   "nu": "nu reversed",
+   "k": 3,
+   "gamma": 0.36666666666666664
+  },
+  {
+   "nu": "nu reversed",
+   "k": 4,
+   "gamma": 0.3733766233766235
+  }
+ ],
+ "reversibility_k2": [
+  {
+   "kernel": "kappa-reversible",
+   "detailed_balance_residual": 0.0,
+   "gamma": 0.0
+  },
+  {
+   "kernel": "not reversible",
+   "detailed_balance_residual": 0.42000000000000004,
+   "gamma": 0.4
+  }
+ ],
+ "distinctness_trap": [
+  {
+   "key_marginal": "uniform",
+   "k": 4,
+   "gamma_symmetric": -3.3306690738754696e-16,
+   "gamma_reject_against_key": -3.3306690738754696e-16
+  },
+  {
+   "key_marginal": "mild skew",
+   "k": 4,
+   "gamma_symmetric": -5.551115123125783e-17,
+   "gamma_reject_against_key": 0.048219266473872535
+  },
+  {
+   "key_marginal": "heavy skew",
+   "k": 4,
+   "gamma_symmetric": 5.551115123125783e-17,
+   "gamma_reject_against_key": 0.20578333769602458
+  }
+ ],
+ "distinctness_sweep": [
+  {
+   "s": 0.0,
+   "kappa": [
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666
+   ],
+   "largest_share": 0.16666666666666666,
+   "gamma_symmetric": -3.3306690738754696e-16,
+   "gamma_reject_against_key": -3.3306690738754696e-16
+  },
+  {
+   "s": 0.25,
+   "kappa": [
+    0.28473137401093823,
+    0.22174901704471575,
+    0.17269830811973894,
+    0.13449757759875944,
+    0.10474681875512089,
+    0.08157690447072666
+   ],
+   "largest_share": 0.28473137401093823,
+   "gamma_symmetric": 5.551115123125783e-17,
+   "gamma_reject_against_key": 0.07307355773594654
+  },
+  {
+   "s": 0.5,
+   "kappa": [
+    0.41408544041967815,
+    0.25115551535514374,
+    0.15233352041882178,
+    0.09239495063597589,
+    0.05604037036335466,
+    0.03399020280702581
+   ],
+   "largest_share": 0.41408544041967815,
+   "gamma_symmetric": -5.551115123125783e-17,
+   "gamma_reject_against_key": 0.17391783424624596
+  },
+  {
+   "s": 0.75,
+   "kappa": [
+    0.5335607720283906,
+    0.2520362625608853,
+    0.11905350051161465,
+    0.05623689162842204,
+    0.026564426635387748,
+    0.012548146635299701
+   ],
+   "largest_share": 0.5335607720283906,
+   "gamma_symmetric": 2.220446049250313e-16,
+   "gamma_reject_against_key": 0.28511346102093615
+  },
+  {
+   "s": 1.0,
+   "kappa": [
+    0.6336913225737218,
+    0.233122009623613,
+    0.08576079462509835,
+    0.03154963320110002,
+    0.011606461431184656,
+    0.00426977854528211
+   ],
+   "largest_share": 0.6336913225737218,
+   "gamma_symmetric": 5.551115123125783e-17,
+   "gamma_reject_against_key": 0.3838721517446272
+  },
+  {
+   "s": 1.25,
+   "kappa": [
+    0.7138900445654632,
+    0.20453292219874009,
+    0.0585996633257711,
+    0.01678908463722558,
+    0.004810153283456853,
+    0.0013781319893431821
+   ],
+   "largest_share": 0.7138900445654632,
+   "gamma_symmetric": 2.7755575615628914e-16,
+   "gamma_reject_against_key": 0.4639078936097397
+  },
+  {
+   "s": 1.5,
+   "kappa": [
+    0.7769657250394795,
+    0.17336448665789994,
+    0.038682845672027545,
+    0.0086313095497965,
+    0.001925905482136765,
+    0.0004297275986599154
+   ],
+   "largest_share": 0.7769657250394795,
+   "gamma_symmetric": 1.6653345369377348e-16,
+   "gamma_reject_against_key": 0.5269673421440727
+  },
+  {
+   "s": 2.0,
+   "kappa": [
+    0.864670029479664,
+    0.11702036334584058,
+    0.015836984017860663,
+    0.0021433027176708816,
+    0.00029006448035779047,
+    3.925595860610245e-05
+   ],
+   "largest_share": 0.864670029479664,
+   "gamma_symmetric": 0.0,
+   "gamma_reject_against_key": 0.6146700413364277
+  }
+ ],
+ "item_blind_joint_laws": [
+  {
+   "n_values": 4,
+   "k": 3,
+   "n_free_entries": 6,
+   "solution_space_dimension": 1,
+   "product_law_residual": 2.7904806498100895e-18
+  },
+  {
+   "n_values": 5,
+   "k": 3,
+   "n_free_entries": 10,
+   "solution_space_dimension": 1,
+   "product_law_residual": 1.734723475976807e-18
+  },
+  {
+   "n_values": 6,
+   "k": 3,
+   "n_free_entries": 15,
+   "solution_space_dimension": 1,
+   "product_law_residual": 3.469446951953614e-18
+  },
+  {
+   "n_values": 5,
+   "k": 4,
+   "n_free_entries": 10,
+   "solution_space_dimension": 1,
+   "product_law_residual": 6.938893903907228e-18
+  },
+  {
+   "n_values": 6,
+   "k": 4,
+   "n_free_entries": 20,
+   "solution_space_dimension": 1,
+   "product_law_residual": 6.938893903907228e-18
+  },
+  {
+   "n_values": 7,
+   "k": 4,
+   "n_free_entries": 35,
+   "solution_space_dimension": 1,
+   "product_law_residual": 2.4466287651144043e-18
+  },
+  {
+   "n_values": 6,
+   "k": 5,
+   "n_free_entries": 15,
+   "solution_space_dimension": 1,
+   "product_law_residual": 3.469446951953614e-18
+  },
+  {
+   "n_values": 8,
+   "k": 3,
+   "n_free_entries": 28,
+   "solution_space_dimension": 1,
+   "product_law_residual": 3.469446951953614e-18
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+  "benchmark": "LAB-Bench TableQA",
+  "jsonl": "data/external/labbench/TableQA.jsonl",
+  "n_items": 243,
+  "draws": 6,
+  "date_range": [
+    "1991-03-01",
+    "2024-05-23"
+  ],
+  "models": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct": {
+      "question": {
+        "n_items": 243,
+        "accuracy": 0.2997256515775034,
+        "margin_over_chance": 9.345483049186754,
+        "spearman_date_vs_margin": 0.04430751661533883,
+        "spearman_ci95": [
+          -0.07972679317888763,
+          0.18042929865747395
+        ],
+        "spearman_p_two_sided": 0.488,
+        "stated_cutoff": "2023-12-31",
+        "n_before": 207,
+        "n_after": 36,
+        "margin_before": 8.910743041177824,
+        "margin_after": 11.845238095238095,
+        "before_minus_after": -2.934495054060271,
+        "before_minus_after_ci95": [
+          -17.075345622119816,
+          9.20927510789262
+        ],
+        "before_minus_after_p_two_sided": 0.6495
+      },
+      "withheld": {
+        "n_items": 243,
+        "accuracy": 0.2091906721536351,
+        "margin_over_chance": 0.29198510679992196,
+        "spearman_date_vs_margin": 0.15720290021224195,
+        "spearman_ci95": [
+          0.027935411444471335,
+          0.28417252631541
+        ],
+        "spearman_p_two_sided": 0.0175,
+        "stated_cutoff": "2023-12-31",
+        "n_before": 207,
+        "n_after": 36,
+        "margin_before": -0.5900621118012419,
+        "margin_after": 5.363756613756614,
+        "before_minus_after": -5.953818725557856,
+        "before_minus_after_ci95": [
+          -16.085865316275765,
+          2.2360093863329307
+        ],
+        "before_minus_after_p_two_sided": 0.1725
+      }
+    }
+  }
+}

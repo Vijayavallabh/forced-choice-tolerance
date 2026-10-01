@@ -1,0 +1,94 @@
+{
+ "wallclock": [
+  {
+   "question_id": "bix-1-q1",
+   "condition": "data",
+   "steps": 31,
+   "seconds": 3800.2
+  },
+  {
+   "question_id": "bix-11-q3",
+   "condition": "data",
+   "steps": 25,
+   "seconds": 3686.2
+  },
+  {
+   "question_id": "bix-30-q5",
+   "condition": "data",
+   "steps": 24,
+   "seconds": 3662.9
+  },
+  {
+   "question_id": "bix-43-q4",
+   "condition": "data",
+   "steps": 27,
+   "seconds": 3769.9
+  },
+  {
+   "question_id": "bix-45-q1",
+   "condition": "data",
+   "steps": 28,
+   "seconds": 3808.8
+  },
+  {
+   "question_id": "bix-46-q4",
+   "condition": "data",
+   "steps": 29,
+   "seconds": 3678.6
+  },
+  {
+   "question_id": "bix-5-q4",
+   "condition": "data",
+   "steps": 28,
+   "seconds": 3791.4
+  },
+  {
+   "question_id": "bix-7-q3",
+   "condition": "data",
+   "steps": 23,
+   "seconds": 3692.4
+  },
+  {
+   "question_id": "bix-11-q5",
+   "condition": "nodata",
+   "steps": 24,
+   "seconds": 3732.3
+  },
+  {
+   "question_id": "bix-19-q2",
+   "condition": "nodata",
+   "steps": 21,
+   "seconds": 3682.1
+  },
+  {
+   "question_id": "bix-20-q1",
+   "condition": "nodata",
+   "steps": 20,
+   "seconds": 3658.4
+  },
+  {
+   "question_id": "bix-22-q3",
+   "condition": "nodata",
+   "steps": 26,
+   "seconds": 3794.5
+  },
+  {
+   "question_id": "bix-28-q2",
+   "condition": "nodata",
+   "steps": 26,
+   "seconds": 3960.3
+  },
+  {
+   "question_id": "bix-43-q3",
+   "condition": "nodata",
+   "steps": 27,
+   "seconds": 3663.5
+  },
+  {
+   "question_id": "bix-54-q2",
+   "condition": "nodata",
+   "steps": 11,
+   "seconds": 3847.8
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+  "benchmark": "LAB-Bench LitQA2",
+  "jsonl": "data/external/labbench/LitQA2.jsonl",
+  "n_items": 198,
+  "draws": 6,
+  "date_range": [
+    "2002-02-15",
+    "2024-05-20"
+  ],
+  "models": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct": {
+      "question": {
+        "n_items": 198,
+        "accuracy": 0.36026936026936024,
+        "margin_over_chance": 11.599727433060766,
+        "spearman_date_vs_margin": -0.07680189490469216,
+        "spearman_ci95": [
+          -0.21737573622551767,
+          0.05684894732084799
+        ],
+        "spearman_p_two_sided": 0.255,
+        "stated_cutoff": "2023-12-31",
+        "n_before": 113,
+        "n_after": 85,
+        "margin_before": 14.516083719623543,
+        "margin_after": 7.722689075630253,
+        "before_minus_after": 6.79339464399329,
+        "before_minus_after_ci95": [
+          -2.4738327177351556,
+          16.479414413015803
+        ],
+        "before_minus_after_p_two_sided": 0.1605
+      },
+      "withheld": {
+        "n_items": 198,
+        "accuracy": 0.2382154882154882,
+        "margin_over_chance": -0.6056597723264386,
+        "spearman_date_vs_margin": -0.1479861363300216,
+        "spearman_ci95": [
+          -0.28833481529295213,
+          -0.0006631228364969523
+        ],
+        "spearman_p_two_sided": 0.0495,
+        "stated_cutoff": "2023-12-31",
+        "n_before": 113,
+        "n_after": 85,
+        "margin_before": 1.3892400618064342,
+        "margin_after": -3.257703081232493,
+        "before_minus_after": 4.646943143038927,
+        "before_minus_after_ci95": [
+          -1.6688192572626537,
+          11.006087207450694
+        ],
+        "before_minus_after_p_two_sided": 0.145
+      }
+    },
+    "meta-llama/Llama-3.2-3B-Instruct": {
+      "question": {
+        "n_items": 198,
+        "accuracy": 0.3122895622895623,
+        "margin_over_chance": 6.80174763508097,
+        "spearman_date_vs_margin": -0.008928665249520563,
+        "spearman_ci95": [
+          -0.14279489032246628,
+          0.12656223963030216
+        ],
+        "spearman_p_two_sided": 0.911,
+        "stated_cutoff": "2023-12-31",
+        "n_before": 113,
+        "n_after": 85,
+        "margin_before": 8.321393454136818,
+        "margin_after": 4.781512605042018,
+        "before_minus_after": 3.5398808490948,
+        "before_minus_after_ci95": [
+          -4.441675320179995,
+          11.495511158258683
+        ],
+        "before_minus_after_p_two_sided": 0.381
+      },
+      "withheld": {
+        "n_items": 198,
+        "accuracy": 0.2516835016835017,
+        "margin_over_chance": 0.7411415744749085,
+        "spearman_date_vs_margin": -0.008734873286216267,
+        "spearman_ci95": [
+          -0.14634911478561927,
+          0.12914062199280532
+        ],
+        "spearman_p_two_sided": 0.858,
+        "stated_cutoff": "2023-12-31",
+        "n_before": 113,
+        "n_after": 85,
+        "margin_before": 0.3567916842253135,
+        "margin_after": 1.252100840336135,
+        "before_minus_after": -0.8953091561108214,
+        "before_minus_after_ci95": [
+          -7.566371215288919,
+          5.795610958270083
+        ],
+        "before_minus_after_p_two_sided": 0.8425
+      }
+    },
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "question": {
+        "n_items": 198,
+        "accuracy": 0.3265993265993266,
+        "margin_over_chance": 8.232724066057399,
+        "spearman_date_vs_margin": 0.0194932289577592,
+        "spearman_ci95": [
+          -0.12224413705961241,
+          0.1489177757197269
+        ],
+        "spearman_p_two_sided": 0.7875
+      },
+      "withheld": {
+        "n_items": 198,
+        "accuracy": 0.2398989898989899,
+        "margin_over_chance": -0.43730960397627033,
+        "spearman_date_vs_margin": -0.031208536790614968,
+        "spearman_ci95": [
+          -0.1861748389342907,
+          0.11203014894001644
+        ],
+        "spearman_p_two_sided": 0.6465
+      }
+    },
+    "Qwen/Qwen2.5-14B-Instruct": {
+      "question": {
+        "n_items": 198,
+        "accuracy": 0.3821548821548822,
+        "margin_over_chance": 13.788279621612956,
+        "spearman_date_vs_margin": -0.057062036630626506,
+        "spearman_ci95": [
+          -0.19115943320270973,
+          0.08317420177948288
+        ],
+        "spearman_p_two_sided": 0.4065
+      },
+      "withheld": {
+        "n_items": 198,
+        "accuracy": 0.2803030303030303,
+        "margin_over_chance": 3.603094436427771,
+        "spearman_date_vs_margin": -0.014091755754924183,
+        "spearman_ci95": [
+          -0.1581302290792399,
+          0.12524375661358722
+        ],
+        "spearman_p_two_sided": 0.7865
+      }
+    }
+  }
+}

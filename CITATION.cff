@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper as below."
+title: "Forced Choice Is Not a Tolerance: What Multiple-Choice Grading Accepts on BixBench's Numeric Questions"
+type: software
+authors:
+  - given-names: Vijayavallabh
+    family-names: Jayamanikandan
+    affiliation: "Indian Institute of Technology Madras"
+repository-code: "https://github.com/Vijayavallabh/forced-choice-tolerance"
+license: Apache-2.0
+keywords:
+  - BixBench
+  - multiple-choice grading
+  - numeric answers
+  - benchmark evaluation
+  - LLM agents
+preferred-citation:
+  type: conference-paper
+  title: "Forced Choice Is Not a Tolerance: What Multiple-Choice Grading Accepts on BixBench's Numeric Questions"
+  authors:
+    - given-names: Vijayavallabh
+      family-names: Jayamanikandan
+      affiliation: "Indian Institute of Technology Madras"
+  year: 2026
+  collection-title: "Agentic AI for Biological Discovery (AgenticLS), NeurIPS 2026 Workshop"
+  conference:
+    name: "Agentic AI for Biological Discovery (AgenticLS), a workshop at NeurIPS 2026"
+    city: Sydney
+    country: AU
+    date-start: 2026-12-11
+    date-end: 2026-12-11
+  repository-code: "https://github.com/Vijayavallabh/forced-choice-tolerance"

@@ -1,0 +1,17 @@
+{
+ "Qwen/Qwen2.5-7B-Instruct": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "n_items": 464,
+  "k": 4,
+  "pool_draws_per_item": 48,
+  "collision_rate_rho": 0.21485437528657916,
+  "union_bound_accuracy": 0.3554368741402625,
+  "predicted_accuracy": 60.791076433169025,
+  "predicted_ci95": [
+   46.33132830807566,
+   69.58593958683552
+  ],
+  "separable_solver_on_arm": 66.37931034482759,
+  "n_clusters": 20
+ }
+}

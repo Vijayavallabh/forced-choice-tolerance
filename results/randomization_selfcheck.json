@@ -1,0 +1,8 @@
+{
+ "reps": 200,
+ "covered": 197,
+ "n_items": 37,
+ "n_clusters": 21,
+ "true_contrast": 15.0,
+ "seed": 1
+}

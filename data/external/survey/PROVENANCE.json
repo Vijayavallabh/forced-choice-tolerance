@@ -1,0 +1,144 @@
+{
+  "_comment": "Option sets only, vendored from public multiple-choice benchmarks so the option-geometry survey replays offline. Questions, rationales and explanations are deliberately not retained. The SHA-256 is of the gzipped file as written here, not of the upstream parquet.",
+  "retrieved_at": "2026-09-18T15:49:52Z",
+  "note": "Idavidrein/gpqa is gated and returns HTTP 401 without credentials, so it is absent. SciBench and TheoremQA are open-answer and carry no distractors.",
+  "license": "Per file: each entry's license field, with details in THIRD_PARTY_NOTICES.md. sciq is CC BY-NC 3.0 (non-commercial only) and arc_challenge CC BY-SA 4.0 (share-alike); the other six are permissive.",
+  "files": [
+    {
+      "name": "aqua_rat",
+      "local_path": "data/external/survey/aqua_rat.jsonl.gz",
+      "dataset": "deepmind/aqua_rat",
+      "config": "raw",
+      "split": "test",
+      "license": "Apache-2.0 (the deepmind/aqua_rat dataset card; google-deepmind/AQuA's LICENSE reads Copyright 2017 Google Inc., Apache-2.0)",
+      "listing_url": "https://huggingface.co/api/datasets/deepmind/aqua_rat/parquet/raw/test",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/deepmind/aqua_rat/parquet/raw/test/0.parquet"
+      ],
+      "n_items": 247,
+      "n_rows_read": 254,
+      "row_cap": null,
+      "sha256": "42e86a12f33eadef03e809caf477413d3665fefeb0d81eea7c3c6a7a62552b80",
+      "bytes": 3725
+    },
+    {
+      "name": "arc_challenge",
+      "local_path": "data/external/survey/arc_challenge.jsonl.gz",
+      "dataset": "allenai/ai2_arc",
+      "config": "ARC-Challenge",
+      "split": "test",
+      "license": "CC BY-SA 4.0 (the allenai/ai2_arc dataset card). These option sets are adapted from it, so ShareAlike applies: they are CC BY-SA 4.0 too.",
+      "listing_url": "https://huggingface.co/api/datasets/allenai/ai2_arc/parquet/ARC-Challenge/test",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/allenai/ai2_arc/parquet/ARC-Challenge/test/0.parquet"
+      ],
+      "n_items": 1172,
+      "n_rows_read": 1172,
+      "row_cap": null,
+      "sha256": "7b1432abf0d056e232b0963ce366b7bb4d448a793c2e123616485dd04621ba93",
+      "bytes": 53906
+    },
+    {
+      "name": "medmcqa",
+      "local_path": "data/external/survey/medmcqa.jsonl.gz",
+      "dataset": "openlifescienceai/medmcqa",
+      "config": "default",
+      "split": "train",
+      "license": "Apache-2.0 (the openlifescienceai/medmcqa dataset card; the medmcqa/medmcqa GitHub repository is MIT, Copyright (c) 2022 MedMCQA)",
+      "listing_url": "https://huggingface.co/api/datasets/openlifescienceai/medmcqa/parquet/default/train",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/openlifescienceai/medmcqa/parquet/default/train/0.parquet"
+      ],
+      "n_items": 29878,
+      "n_rows_read": 30000,
+      "row_cap": 30000,
+      "sha256": "59b6147e15cbe9062b7b024ef3b33f4336987f8a9e2efc6ea65dedecead3c1d6",
+      "bytes": 1109936
+    },
+    {
+      "name": "medqa_usmle",
+      "local_path": "data/external/survey/medqa_usmle.jsonl.gz",
+      "dataset": "GBaker/MedQA-USMLE-4-options",
+      "config": "default",
+      "split": "train",
+      "license": "CC BY 4.0 (the GBaker/MedQA-USMLE-4-options dataset card; the original jind11/MedQA repository is MIT, Copyright (c) 2022 Di Jin)",
+      "listing_url": "https://huggingface.co/api/datasets/GBaker/MedQA-USMLE-4-options/parquet/default/train",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/GBaker/MedQA-USMLE-4-options/parquet/default/train/0.parquet"
+      ],
+      "n_items": 10176,
+      "n_rows_read": 10178,
+      "row_cap": null,
+      "sha256": "6414bbaf763c49554ff6bbe0e8d117940ddd8878aec14fda0dc25f13e62a0eb4",
+      "bytes": 466946
+    },
+    {
+      "name": "mmlu",
+      "local_path": "data/external/survey/mmlu.jsonl.gz",
+      "dataset": "cais/mmlu",
+      "config": "all",
+      "split": "test",
+      "license": "MIT (the cais/mmlu dataset card; hendrycks/test's LICENSE reads Copyright (c) 2020 Dan Hendrycks)",
+      "listing_url": "https://huggingface.co/api/datasets/cais/mmlu/parquet/all/test",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/cais/mmlu/parquet/all/test/0.parquet"
+      ],
+      "n_items": 14033,
+      "n_rows_read": 14042,
+      "row_cap": null,
+      "sha256": "6ca6569aa739ce4b642e5ffa1888a34b6d3c4dd4d72752048158e659ea7ca39e",
+      "bytes": 815429
+    },
+    {
+      "name": "mmlu_pro",
+      "local_path": "data/external/survey/mmlu_pro.jsonl.gz",
+      "dataset": "TIGER-Lab/MMLU-Pro",
+      "config": "default",
+      "split": "test",
+      "license": "MIT (the TIGER-Lab/MMLU-Pro dataset card; the TIGER-AI-Lab/MMLU-Pro GitHub repository is Apache-2.0)",
+      "listing_url": "https://huggingface.co/api/datasets/TIGER-Lab/MMLU-Pro/parquet/default/test",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/TIGER-Lab/MMLU-Pro/parquet/default/test/0.parquet"
+      ],
+      "n_items": 12031,
+      "n_rows_read": 12032,
+      "row_cap": null,
+      "sha256": "94e0a39417c407e055c6b3492c58d33ca3110e87165721e151fcae12c43753ff",
+      "bytes": 1263362
+    },
+    {
+      "name": "openbookqa",
+      "local_path": "data/external/survey/openbookqa.jsonl.gz",
+      "dataset": "allenai/openbookqa",
+      "config": "main",
+      "split": "train",
+      "license": "Apache-2.0 (the allenai/OpenBookQA GitHub repository's LICENSE; the allenai/openbookqa dataset card says 'unknown')",
+      "listing_url": "https://huggingface.co/api/datasets/allenai/openbookqa/parquet/main/train",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/allenai/openbookqa/parquet/main/train/0.parquet"
+      ],
+      "n_items": 4954,
+      "n_rows_read": 4957,
+      "row_cap": null,
+      "sha256": "85e1010f71634553b5ac0fa406b22115afb44740a3bee9ebdce1d9a7d289d467",
+      "bytes": 151144
+    },
+    {
+      "name": "sciq",
+      "local_path": "data/external/survey/sciq.jsonl.gz",
+      "dataset": "allenai/sciq",
+      "config": "default",
+      "split": "train",
+      "license": "CC BY-NC 3.0 (the allenai/sciq dataset card): non-commercial use only",
+      "listing_url": "https://huggingface.co/api/datasets/allenai/sciq/parquet/default/train",
+      "parquet_urls": [
+        "https://huggingface.co/api/datasets/allenai/sciq/parquet/default/train/0.parquet"
+      ],
+      "n_items": 11646,
+      "n_rows_read": 11679,
+      "row_cap": null,
+      "sha256": "2c8c7439947014a2de41833eb4ce796ebbde6b463988858f27a1d697df5b197e",
+      "bytes": 235375
+    }
+  ]
+}

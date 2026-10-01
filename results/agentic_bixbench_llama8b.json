@@ -1,0 +1,171 @@
+{
+ "meta-llama/Meta-Llama-3.1-8B-Instruct|withheld_aware": {
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "withheld_aware",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 25.396825396825395,
+   "chance": 25.0,
+   "margin_over_chance": 0.3968253968253968,
+   "margin_ci95": [
+    -5.278409090909091,
+    6.298600508905847
+   ],
+   "used_tool": 17.46031746031746,
+   "unparsed": 1.2698412698412698,
+   "mean_turns": 2.015873015873016,
+   "second_smallest_rate": 26.666666666666668
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 23.49206349206349,
+   "chance": 25.0,
+   "margin_over_chance": -1.507936507936508,
+   "margin_ci95": [
+    -6.667483660130719,
+    4.085115864527628
+   ],
+   "used_tool": 25.71428571428571,
+   "unparsed": 0.6349206349206349,
+   "mean_turns": 1.9238095238095239,
+   "second_smallest_rate": 21.26984126984127
+  },
+  "margin_over_clean": 1.9047619047619047,
+  "margin_over_clean_ci95": [
+   -5.809596181603956,
+   9.949426088436837
+  ]
+ },
+ "meta-llama/Meta-Llama-3.1-8B-Instruct|question": {
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "question",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 20.634920634920633,
+   "chance": 25.0,
+   "margin_over_chance": -4.365079365079365,
+   "margin_ci95": [
+    -9.98536036036036,
+    1.191742654508605
+   ],
+   "used_tool": 66.03174603174602,
+   "unparsed": 23.49206349206349,
+   "mean_turns": 3.380952380952381,
+   "second_smallest_rate": 17.142857142857142,
+   "by_tool": {
+    "used": {
+     "n": 208,
+     "accuracy": 17.307692307692307
+    },
+    "not_used": {
+     "n": 107,
+     "accuracy": 27.102803738317753
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 16.825396825396826,
+   "chance": 25.0,
+   "margin_over_chance": -8.174603174603174,
+   "margin_ci95": [
+    -12.543077837195485,
+    -3.084097446961537
+   ],
+   "used_tool": 88.57142857142857,
+   "unparsed": 32.38095238095238,
+   "mean_turns": 3.933333333333333,
+   "second_smallest_rate": 17.46031746031746,
+   "by_tool": {
+    "used": {
+     "n": 279,
+     "accuracy": 15.412186379928317
+    },
+    "not_used": {
+     "n": 36,
+     "accuracy": 27.77777777777778
+    }
+   }
+  },
+  "margin_over_clean": 3.8095238095238093,
+  "margin_over_clean_ci95": [
+   -3.8868425048946227,
+   10.502710343396606
+  ]
+ },
+ "meta-llama/Meta-Llama-3.1-8B-Instruct|withheld": {
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "withheld",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 5.396825396825397,
+   "chance": 25.0,
+   "margin_over_chance": -19.603174603174605,
+   "margin_ci95": [
+    -22.19298245614035,
+    -16.42833569071193
+   ],
+   "used_tool": 2.857142857142857,
+   "unparsed": 69.2063492063492,
+   "mean_turns": 3.4285714285714284,
+   "second_smallest_rate": 6.031746031746032,
+   "by_tool": {
+    "used": {
+     "n": 9,
+     "accuracy": 11.11111111111111
+    },
+    "not_used": {
+     "n": 306,
+     "accuracy": 5.228758169934641
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 5.079365079365079,
+   "chance": 25.0,
+   "margin_over_chance": -19.92063492063492,
+   "margin_ci95": [
+    -22.435897435897438,
+    -17.063128003494977
+   ],
+   "used_tool": 5.396825396825397,
+   "unparsed": 81.26984126984127,
+   "mean_turns": 3.6857142857142855,
+   "second_smallest_rate": 4.444444444444445,
+   "by_tool": {
+    "used": {
+     "n": 17,
+     "accuracy": 11.76470588235294
+    },
+    "not_used": {
+     "n": 298,
+     "accuracy": 4.697986577181208
+    }
+   }
+  },
+  "margin_over_clean": 0.31746031746031633,
+  "margin_over_clean_ci95": [
+   -3.567179903232398,
+   4.377807031136263
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "Qwen/Qwen2.5-14B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "withheld_aware",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 33.33333333333333,
+   "chance": 25.0,
+   "margin_over_chance": 8.333333333333332,
+   "margin_ci95": [
+    2.240143369175627,
+    14.94841269841269
+   ],
+   "used_tool": 19.682539682539684,
+   "unparsed": 0.0,
+   "mean_turns": 1.403174603174603,
+   "second_smallest_rate": 29.841269841269842
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 22.22222222222222,
+   "chance": 25.0,
+   "margin_over_chance": -2.7777777777777777,
+   "margin_ci95": [
+    -8.012971698113208,
+    2.7804487179487034
+   ],
+   "used_tool": 18.095238095238095,
+   "unparsed": 0.0,
+   "mean_turns": 1.3492063492063493,
+   "second_smallest_rate": 26.03174603174603
+  },
+  "margin_over_clean": 11.11111111111111,
+  "margin_over_clean_ci95": [
+   2.9580351986176283,
+   19.58896271686968
+  ]
+ },
+ "Qwen/Qwen2.5-14B-Instruct|question": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "question",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 32.38095238095238,
+   "chance": 25.0,
+   "margin_over_chance": 7.380952380952381,
+   "margin_ci95": [
+    1.7240785598936068,
+    13.739262518332286
+   ],
+   "used_tool": 40.317460317460316,
+   "unparsed": 1.5873015873015872,
+   "mean_turns": 1.9047619047619047,
+   "second_smallest_rate": 30.158730158730158,
+   "by_tool": {
+    "used": {
+     "n": 127,
+     "accuracy": 32.28346456692913
+    },
+    "not_used": {
+     "n": 188,
+     "accuracy": 32.4468085106383
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 29.523809523809526,
+   "chance": 25.0,
+   "margin_over_chance": 4.523809523809524,
+   "margin_ci95": [
+    -1.544044044044044,
+    11.419753086419753
+   ],
+   "used_tool": 49.2063492063492,
+   "unparsed": 0.6349206349206349,
+   "mean_turns": 1.926984126984127,
+   "second_smallest_rate": 25.396825396825395,
+   "by_tool": {
+    "used": {
+     "n": 155,
+     "accuracy": 30.32258064516129
+    },
+    "not_used": {
+     "n": 160,
+     "accuracy": 28.749999999999996
+    }
+   }
+  },
+  "margin_over_clean": 2.8571428571428577,
+  "margin_over_clean_ci95": [
+   -5.901979483662651,
+   11.676355014562478
+  ]
+ },
+ "Qwen/Qwen2.5-14B-Instruct|withheld": {
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "items": "build/bixbench_numeric_q.jsonl",
+  "condition": "withheld",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 105,
+  "file": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 30.793650793650794,
+   "chance": 25.0,
+   "margin_over_chance": 5.7936507936507935,
+   "margin_ci95": [
+    0.6093931475029036,
+    11.337018837018833
+   ],
+   "used_tool": 40.95238095238095,
+   "unparsed": 1.2698412698412698,
+   "mean_turns": 1.7968253968253969,
+   "second_smallest_rate": 32.38095238095238,
+   "by_tool": {
+    "used": {
+     "n": 129,
+     "accuracy": 34.883720930232556
+    },
+    "not_used": {
+     "n": 186,
+     "accuracy": 27.956989247311824
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 315,
+   "n_clusters": 46,
+   "accuracy": 30.476190476190478,
+   "chance": 25.0,
+   "margin_over_chance": 5.476190476190476,
+   "margin_ci95": [
+    -0.641025641025641,
+    12.037037037037036
+   ],
+   "used_tool": 46.666666666666664,
+   "unparsed": 0.6349206349206349,
+   "mean_turns": 1.838095238095238,
+   "second_smallest_rate": 29.841269841269842,
+   "by_tool": {
+    "used": {
+     "n": 147,
+     "accuracy": 29.931972789115648
+    },
+    "not_used": {
+     "n": 168,
+     "accuracy": 30.952380952380953
+    }
+   }
+  },
+  "margin_over_clean": 0.3174603174603172,
+  "margin_over_clean_ci95": [
+   -8.145223823643533,
+   8.529761780388618
+  ]
+ }
+}

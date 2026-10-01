@@ -1,0 +1,174 @@
+{
+ "n_options": 4,
+ "chance": 0.25,
+ "features": [
+  "is integer",
+  "has percent",
+  "has exponent",
+  "has separator",
+  "has minus",
+  "has point",
+  "distinct chars",
+  "trailing zeros",
+  "significant digits",
+  "decimal places",
+  "digit sum",
+  "digit count"
+ ],
+ "roundness_features": [
+  "is integer",
+  "significant digits",
+  "trailing zeros",
+  "decimal places"
+ ],
+ "steps": 400,
+ "l2": 0.001,
+ "files": {
+  "wrong_step": {
+   "path": "build/mmlu_frontier_wrong_step_clean.jsonl",
+   "n_items": 383,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.2402088772845953,
+    "cv_ci95": [
+     0.2064516129032258,
+     0.32340425531914896
+    ],
+    "argmax_ties": 11,
+    "n_scored": 383,
+    "weights": {
+     "is integer": 0.7019639994496195,
+     "has percent": 1.1412278779213563,
+     "has exponent": 0.0,
+     "has separator": 2.671624711341535,
+     "has minus": -0.2694576606898903,
+     "has point": -1.2238135647184765,
+     "distinct chars": -0.24830601831545984,
+     "trailing zeros": 0.21350699655133187,
+     "significant digits": 0.8245120564336188,
+     "decimal places": -0.30398456868093315,
+     "digit sum": -0.3509379633923857,
+     "digit count": -0.2154223918568037
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.32114882506527415,
+    "cv_ci95": [
+     0.276,
+     0.372
+    ],
+    "argmax_ties": 202,
+    "n_scored": 383,
+    "weights": {
+     "is integer": 0.8083127965931407,
+     "significant digits": 0.45079306079928927,
+     "trailing zeros": 0.12009684995290869,
+     "decimal places": -0.10691409065238877
+    }
+   }
+  },
+  "released": {
+   "path": "build/mmlu_frontier_released_clean.jsonl",
+   "n_items": 383,
+   "n_clusters": 20,
+   "written form": {
+    "cv_accuracy": 0.16971279373368145,
+    "cv_ci95": [
+     0.13402061855670103,
+     0.22395833333333334
+    ],
+    "argmax_ties": 8,
+    "n_scored": 383,
+    "weights": {
+     "is integer": -0.21547673982109264,
+     "has percent": 0.08271522876509076,
+     "has exponent": 0.0,
+     "has separator": -0.17837268121395916,
+     "has minus": 0.13479285764935695,
+     "has point": -0.21840383384129272,
+     "distinct chars": 1.8520746309448495,
+     "trailing zeros": 0.34973207669317535,
+     "significant digits": 0.5018811479169775,
+     "decimal places": -0.3442996697620971,
+     "digit sum": -0.2917302119122347,
+     "digit count": 0.06254863977315064
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.2584856396866841,
+    "cv_ci95": [
+     0.21328671328671328,
+     0.3008849557522124
+    ],
+    "argmax_ties": 259,
+    "n_scored": 383,
+    "weights": {
+     "is integer": -0.08206564029500382,
+     "significant digits": 0.32964806411849124,
+     "trailing zeros": 0.15801666408132786,
+     "decimal places": -0.12205249204954279
+    }
+   }
+  }
+ },
+ "clean": {
+  "written form": {
+   "scores": [
+    0.23237597911227154,
+    0.27154046997389036,
+    0.2402088772845953,
+    0.22193211488250653,
+    0.23237597911227154,
+    0.2349869451697128,
+    0.2193211488250653,
+    0.26109660574412535,
+    0.2010443864229765,
+    0.27154046997389036,
+    0.22715404699738903,
+    0.2297650130548303,
+    0.3002610966057441,
+    0.23237597911227154,
+    0.25326370757180156,
+    0.21148825065274152,
+    0.24804177545691905,
+    0.2845953002610966,
+    0.21409921671018275,
+    0.24804177545691905
+   ],
+   "mean": 0.24177545691906005,
+   "max": 0.3002610966057441,
+   "replicates": 20,
+   "n_items": 383,
+   "n_clusters": 20
+  },
+  "roundness": {
+   "scores": [
+    0.2245430809399478,
+    0.25326370757180156,
+    0.23237597911227154,
+    0.31592689295039167,
+    0.22193211488250653,
+    0.2741514360313316,
+    0.26109660574412535,
+    0.31592689295039167,
+    0.2349869451697128,
+    0.30548302872062666,
+    0.2584856396866841,
+    0.26370757180156656,
+    0.195822454308094,
+    0.2689295039164491,
+    0.2819843342036554,
+    0.26109660574412535,
+    0.22193211488250653,
+    0.26370757180156656,
+    0.26109660574412535,
+    0.26631853785900783
+   ],
+   "mean": 0.2591383812010444,
+   "max": 0.31592689295039167,
+   "replicates": 20,
+   "n_items": 383,
+   "n_clusters": 20
+  }
+ }
+}

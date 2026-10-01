@@ -1,0 +1,45 @@
+{
+ "Qwen/Qwen2.5-7B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld_aware",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 9.200438116100766,
+   "chance": 10.0,
+   "margin_over_chance": -0.7995618838992335,
+   "margin_ci95": [
+    -3.3969262078043903,
+    2.1659453457808384
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 6.407447973713034
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.900990099009901,
+   "chance": 10.0,
+   "margin_over_chance": -0.09900990099009944,
+   "margin_ci95": [
+    -1.5753527859805396,
+    1.403628476212364
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 11.056105610561056
+  },
+  "margin_over_clean": -0.7005519829091341,
+  "margin_over_clean_ci95": [
+   -3.740150371009475,
+   2.7341715389284365
+  ]
+ }
+}

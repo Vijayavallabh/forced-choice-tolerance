@@ -1,0 +1,21 @@
+{
+  "n_common": 323,
+  "arms": {
+    "released_matched": "build/mmlu_frontier_released_matched_rob.jsonl",
+    "imitation": "build/mmlu_frontier_imitation_rob.jsonl",
+    "imitation_llama": "build/mmlu_frontier_imitation_llama_rob.jsonl",
+    "imitation_phi": "build/mmlu_frontier_imitation_phi_rob.jsonl",
+    "wrong_step": "build/mmlu_frontier_wrong_step_rob.jsonl",
+    "wrong_step_strict": "build/mmlu_frontier_wrong_step_strict_rob.jsonl",
+    "wrong_step_llama": "build/mmlu_frontier_wrong_step_llama_rob.jsonl"
+  },
+  "n_before": {
+    "released_matched": 520,
+    "imitation": 520,
+    "imitation_llama": 558,
+    "imitation_phi": 612,
+    "wrong_step": 629,
+    "wrong_step_strict": 519,
+    "wrong_step_llama": 555
+  }
+}

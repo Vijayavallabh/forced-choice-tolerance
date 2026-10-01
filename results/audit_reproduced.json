@@ -1,0 +1,2850 @@
+{
+  "dataset_sha256": "0d1204dcdae7193a9132ced5a3502008f6b3b163debc1b65b2aa2d86cb132dc9",
+  "n_questions": 205,
+  "n_capsules": 59,
+  "versions": {
+    "1.5": 205
+  },
+  "eval_modes": {
+    "str_verifier": 61,
+    "range_verifier": 61,
+    "llm_verifier": 83
+  },
+  "top_level_fields": [
+    "answer",
+    "canary",
+    "capsule_uuid",
+    "categories",
+    "data_folder",
+    "distractors",
+    "eval_mode",
+    "hypothesis",
+    "id",
+    "ideal",
+    "paper",
+    "question",
+    "question_id",
+    "result",
+    "short_id",
+    "tag",
+    "version"
+  ],
+  "date_like_top_level_fields": [],
+  "classes": {
+    "doi": {
+      "capsules": 25,
+      "questions": 86
+    },
+    "repository_url": {
+      "capsules": 11,
+      "questions": 51
+    },
+    "other": {
+      "capsules": 0,
+      "questions": 0
+    },
+    "missing": {
+      "capsules": 23,
+      "questions": 68
+    }
+  },
+  "identifiers": [
+    "10.1038/s41467-022-29205-8",
+    "10.1126/sciadv.adf4950",
+    "10.1172/jci.insight.167744",
+    "10.1371/journal.pone.0150501",
+    "10.1371/journal.pone.0305268",
+    "10.17632/dj4sb8h3c3.1",
+    "10.17912/micropub.biology.001326",
+    "10.3324/haematol.2024.285239",
+    "10.5061/dryad.ttdz08kxq",
+    "10.5061/dryad.wm37pvmw8",
+    "10.5281/zenodo.10000430",
+    "10.5281/zenodo.12737228",
+    "10.5281/zenodo.13935259",
+    "10.5281/zenodo.14063261",
+    "10.5281/zenodo.4287588",
+    "10.5281/zenodo.8036465",
+    "10.5281/zenodo.8353706",
+    "https://www.jbc.org/article/S0021-9258(24)02587-0/fulltext",
+    "https://www.mdpi.com/1422-0067/24/19/14743"
+  ],
+  "explicit_source_groups": [
+    {
+      "identifiers": [
+        "10.1126/sciadv.adf4950",
+        "10.5281/zenodo.8036465"
+      ],
+      "capsules": [
+        "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5061/dryad.ttdz08kxq"
+      ],
+      "capsules": [
+        "0f14ffa7-f02a-4d20-8142-dfc404195e56"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5281/zenodo.12737228"
+      ],
+      "capsules": [
+        "b8c485ff-d146-4162-9403-9593c8847cfe",
+        "fbe0e950-76f2-4eb7-a216-a2d377970922"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.1371/journal.pone.0150501"
+      ],
+      "capsules": [
+        "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5281/zenodo.13935259"
+      ],
+      "capsules": [
+        "a5fba1a0-ad42-41da-a299-201655a5ffe8"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5281/zenodo.10000430"
+      ],
+      "capsules": [
+        "34a4ea96-c800-4c11-959e-57cdc4932c52",
+        "48181cce-3928-4491-94b4-c23504a6aaa1",
+        "b1dbace7-f6e9-42ec-81e1-bcc24161cc27"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.1371/journal.pone.0305268"
+      ],
+      "capsules": [
+        "27821d45-94e6-4f4e-a914-e66ffaefdd3f"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5281/zenodo.8353706",
+        "https://www.mdpi.com/1422-0067/24/19/14743"
+      ],
+      "capsules": [
+        "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+        "b1b0ef00-cb15-4375-9aac-e1e53a7250c5"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.1172/jci.insight.167744"
+      ],
+      "capsules": [
+        "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d",
+        "33b801bb-9b47-4a0a-9314-05325c82fde7",
+        "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+        "7718a922-ce2c-4e59-900b-84fe06050ce6"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5061/dryad.wm37pvmw8"
+      ],
+      "capsules": [
+        "4dceea58-7d66-4576-bfc6-88c026d5b7a9"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5281/zenodo.14063261",
+        "https://www.jbc.org/article/S0021-9258(24)02587-0/fulltext"
+      ],
+      "capsules": [
+        "308d53bf-1513-4a09-913b-3a1112f94e7b"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ],
+      "capsules": [
+        "0923d260-fe1b-4fb4-4398-79edf546e584",
+        "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+        "8b462015-86ab-434f-29e1-04dda1588031",
+        "9e52daf6-ca58-43e8-e732-fbac3459d295",
+        "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5",
+        "d37acffb-d802-4ce0-8caa-66f50667367a",
+        "d59734d2-a3e0-462a-a5fd-c8ddc11392b8"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.1038/s41467-022-29205-8"
+      ],
+      "capsules": [
+        "f4dcda89-678d-403d-b155-1483d0071765"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ],
+      "capsules": [
+        "1cf79c8c-fb8c-453c-8788-c8958ab6f152",
+        "28a5984e-9061-4d6f-99a1-40f8753bc9f4",
+        "2ccdbe37-0a92-47b5-9bab-fa8a8c470799",
+        "30b33e47-92d8-4372-a9f6-da32896493d0",
+        "4a336d0c-3d6b-440a-bfb0-437b26a00af3",
+        "a02b761a-02b6-46b5-9d5e-2964d5a74960"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.17632/dj4sb8h3c3.1"
+      ],
+      "capsules": [
+        "40cbef03-b5c3-4448-b00f-0ba2965dea9b",
+        "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046"
+      ]
+    },
+    {
+      "identifiers": [
+        "10.5281/zenodo.4287588"
+      ],
+      "capsules": [
+        "873bada5-b1f3-423a-87dc-9ddd486c4843",
+        "94bcdbc9-c729-4661-9bc1-0057bbea39c4"
+      ]
+    }
+  ],
+  "capsules": {
+    "33b801bb-9b47-4a0a-9314-05325c82fde7": {
+      "n_questions": 2,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "D",
+        "i",
+        "f",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "o",
+        "y",
+        "T",
+        "c",
+        "m",
+        "w",
+        "k",
+        "B",
+        "g"
+      ],
+      "paper": "https://doi.org/10.1172/jci.insight.167744",
+      "class": "doi",
+      "identifiers": [
+        "10.1172/jci.insight.167744"
+      ]
+    },
+    "fbe0e950-76f2-4eb7-a216-a2d377970922": {
+      "n_questions": 7,
+      "categories": [
+        "O",
+        "t",
+        "h",
+        "e",
+        "r"
+      ],
+      "paper": "https://zenodo.org/records/12737228",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.12737228"
+      ]
+    },
+    "cd811ead-7887-4369-b175-05aff4223765": {
+      "n_questions": 6,
+      "categories": [
+        "[",
+        "'",
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "P",
+        "h",
+        "y",
+        "l",
+        "g",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "u",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "d38392ec-84b8-485d-ab02-b8788e6f1f43": {
+      "n_questions": 5,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "1d54e4a7-8b0f-4224-bd31-efcfded0d46c": {
+      "n_questions": 5,
+      "categories": [
+        "S",
+        "e",
+        "q",
+        "u",
+        "n",
+        "c",
+        " ",
+        "A",
+        "a",
+        "l",
+        "y",
+        "s",
+        "i",
+        ",",
+        "R",
+        "N",
+        "-",
+        "D",
+        "f",
+        "r",
+        "t",
+        "E",
+        "x",
+        "p",
+        "o",
+        "T",
+        "m"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "7718a922-ce2c-4e59-900b-84fe06050ce6": {
+      "n_questions": 3,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "https://doi.org/10.1172/jci.insight.167744",
+      "class": "doi",
+      "identifiers": [
+        "10.1172/jci.insight.167744"
+      ]
+    },
+    "bda54b38-9b49-4009-aad6-d5f52675438a": {
+      "n_questions": 4,
+      "categories": [
+        "T",
+        "r",
+        "a",
+        "n",
+        "s",
+        "c",
+        "i",
+        "p",
+        "t",
+        "o",
+        "m",
+        ",",
+        "F",
+        "u",
+        "l",
+        " ",
+        "G",
+        "e"
+      ],
+      "paper": "",
+      "class": "missing",
+      "identifiers": []
+    },
+    "1cf79c8c-fb8c-453c-8788-c8958ab6f152": {
+      "n_questions": 1,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "https://doi.org/10.3324/haematol.2024.285239",
+      "class": "doi",
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ]
+    },
+    "d59734d2-a3e0-462a-a5fd-c8ddc11392b8": {
+      "n_questions": 5,
+      "categories": [
+        "I",
+        "m",
+        "a",
+        "g",
+        "i",
+        "n"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1": {
+      "n_questions": 5,
+      "categories": [
+        "I",
+        "m",
+        "a",
+        "g",
+        "i",
+        "n",
+        ",",
+        "O",
+        "t",
+        "h",
+        "e",
+        "r"
+      ],
+      "paper": "https://zenodo.org/records/8036465, https://www.science.org/doi/10.1126/sciadv.adf4950",
+      "class": "doi",
+      "identifiers": [
+        "10.1126/sciadv.adf4950",
+        "10.5281/zenodo.8036465"
+      ]
+    },
+    "30b33e47-92d8-4372-a9f6-da32896493d0": {
+      "n_questions": 2,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "doi.org/10.3324/haematol.2024.285239",
+      "class": "doi",
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ]
+    },
+    "2ccdbe37-0a92-47b5-9bab-fa8a8c470799": {
+      "n_questions": 4,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "doi.org/10.3324/haematol.2024.285239",
+      "class": "doi",
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ]
+    },
+    "e3bde22d-915c-409b-8646-039e0215b171": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "P",
+        "y",
+        "t",
+        "s",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "34a4ea96-c800-4c11-959e-57cdc4932c52": {
+      "n_questions": 5,
+      "categories": [
+        "S",
+        "e",
+        "q",
+        "u",
+        "n",
+        "c",
+        " ",
+        "A",
+        "a",
+        "l",
+        "y",
+        "s",
+        "i",
+        ",",
+        "R",
+        "N",
+        "-",
+        "T",
+        "r",
+        "p",
+        "t",
+        "o",
+        "m"
+      ],
+      "paper": "https://zenodo.org/records/10000430",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.10000430"
+      ]
+    },
+    "b1b0ef00-cb15-4375-9aac-e1e53a7250c5": {
+      "n_questions": 3,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "D",
+        "i",
+        "f",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "o",
+        "y",
+        "T",
+        "c",
+        "m",
+        "S",
+        "u"
+      ],
+      "paper": "https://zenodo.org/records/8353706, https://www.mdpi.com/1422-0067/24/19/14743",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.8353706",
+        "https://www.mdpi.com/1422-0067/24/19/14743"
+      ]
+    },
+    "964b67db-88d8-4286-9995-10ccc6ba4c39": {
+      "n_questions": 2,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "0923d260-fe1b-4fb4-4398-79edf546e584": {
+      "n_questions": 3,
+      "categories": [
+        "S",
+        "e",
+        "q",
+        "u",
+        "n",
+        "c",
+        " ",
+        "A",
+        "a",
+        "l",
+        "y",
+        "s",
+        "i",
+        ",",
+        "R",
+        "N",
+        "-",
+        "T",
+        "r",
+        "p",
+        "t",
+        "o",
+        "m",
+        "D",
+        "f",
+        "E",
+        "x"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "0f14ffa7-f02a-4d20-8142-dfc404195e56": {
+      "n_questions": 3,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "T",
+        "r",
+        "a",
+        "n",
+        "c",
+        "i",
+        "p",
+        "t",
+        "o",
+        "m",
+        "M",
+        "h",
+        " ",
+        "L",
+        "g",
+        "d",
+        "f",
+        "l",
+        "I"
+      ],
+      "paper": "https://doi.org/10.5061/dryad.ttdz08kxq",
+      "class": "doi",
+      "identifiers": [
+        "10.5061/dryad.ttdz08kxq"
+      ]
+    },
+    "c66d3ed9-0a95-46be-a237-ed68498ea7f6": {
+      "n_questions": 6,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "b8c485ff-d146-4162-9403-9593c8847cfe": {
+      "n_questions": 4,
+      "categories": [
+        "O",
+        "t",
+        "h",
+        "e",
+        "r"
+      ],
+      "paper": "https://zenodo.org/records/12737228",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.12737228"
+      ]
+    },
+    "94bcdbc9-c729-4661-9bc1-0057bbea39c4": {
+      "n_questions": 5,
+      "categories": [
+        "D",
+        "i",
+        "f",
+        "e",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "s",
+        "o",
+        "A",
+        "y",
+        ",",
+        "T",
+        "c",
+        "m",
+        "R",
+        "N",
+        "-",
+        "q"
+      ],
+      "paper": "https://zenodo.org/records/4287588",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.4287588"
+      ]
+    },
+    "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc": {
+      "n_questions": 4,
+      "categories": [
+        "T",
+        "r",
+        "a",
+        "n",
+        "s",
+        "c",
+        "i",
+        "p",
+        "t",
+        "o",
+        "m",
+        ",",
+        "D",
+        "f",
+        "e",
+        "l",
+        " ",
+        "E",
+        "x",
+        "A",
+        "y"
+      ],
+      "paper": "10.1371/journal.pone.0150501",
+      "class": "doi",
+      "identifiers": [
+        "10.1371/journal.pone.0150501"
+      ]
+    },
+    "b1dbace7-f6e9-42ec-81e1-bcc24161cc27": {
+      "n_questions": 4,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "D",
+        "i",
+        "f",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "o",
+        "y",
+        "T",
+        "c",
+        "m"
+      ],
+      "paper": "https://zenodo.org/records/10000430",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.10000430"
+      ]
+    },
+    "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5": {
+      "n_questions": 3,
+      "categories": [
+        "S",
+        "e",
+        "q",
+        "u",
+        "n",
+        "c",
+        " ",
+        "A",
+        "a",
+        "l",
+        "y",
+        "s",
+        "i",
+        ",",
+        "R",
+        "N",
+        "-",
+        "T",
+        "r",
+        "p",
+        "t",
+        "o",
+        "m",
+        "D",
+        "f",
+        "E",
+        "x"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "a5fba1a0-ad42-41da-a299-201655a5ffe8": {
+      "n_questions": 2,
+      "categories": [
+        "S",
+        "i",
+        "n",
+        "g",
+        "l",
+        "e",
+        "-",
+        "C",
+        " ",
+        "A",
+        "a",
+        "y",
+        "s",
+        ",",
+        "D",
+        "f",
+        "r",
+        "t",
+        "E",
+        "x",
+        "p",
+        "o"
+      ],
+      "paper": "https://doi.org/10.5281/zenodo.13935259",
+      "class": "doi",
+      "identifiers": [
+        "10.5281/zenodo.13935259"
+      ]
+    },
+    "17baa727-5eb7-4544-a466-3148a48b3cde": {
+      "n_questions": 6,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "4cb6f8ce-4d81-40b2-8d9c-85868796ee73": {
+      "n_questions": 4,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "48181cce-3928-4491-94b4-c23504a6aaa1": {
+      "n_questions": 4,
+      "categories": [
+        "S",
+        "e",
+        "q",
+        "u",
+        "n",
+        "c",
+        " ",
+        "A",
+        "a",
+        "l",
+        "y",
+        "s",
+        "i",
+        ",",
+        "D",
+        "f",
+        "r",
+        "t",
+        "E",
+        "x",
+        "p",
+        "o",
+        "T",
+        "m",
+        "R",
+        "N",
+        "-"
+      ],
+      "paper": "https://zenodo.org/records/10000430",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.10000430"
+      ]
+    },
+    "40cbef03-b5c3-4448-b00f-0ba2965dea9b": {
+      "n_questions": 4,
+      "categories": [
+        "D",
+        "i",
+        "f",
+        "e",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "s",
+        "o",
+        "A",
+        "y",
+        ",",
+        "R",
+        "N",
+        "-",
+        "q",
+        "P",
+        "m",
+        "c"
+      ],
+      "paper": "10.17632/dj4sb8h3c3.1",
+      "class": "doi",
+      "identifiers": [
+        "10.17632/dj4sb8h3c3.1"
+      ]
+    },
+    "975f3e91-53b0-44b1-ac9f-20023d9c8cd0": {
+      "n_questions": 5,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "28a5984e-9061-4d6f-99a1-40f8753bc9f4": {
+      "n_questions": 1,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "https://doi.org/10.3324/haematol.2024.285239",
+      "class": "doi",
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ]
+    },
+    "ec9eb551-feee-48f6-8494-fd85e1521881": {
+      "n_questions": 7,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "8b462015-86ab-434f-29e1-04dda1588031": {
+      "n_questions": 4,
+      "categories": [
+        "I",
+        "m",
+        "a",
+        "g",
+        "i",
+        "n"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "27821d45-94e6-4f4e-a914-e66ffaefdd3f": {
+      "n_questions": 2,
+      "categories": [
+        "M",
+        "a",
+        "c",
+        "h",
+        "i",
+        "n",
+        "e",
+        " ",
+        "L",
+        "r",
+        "g",
+        "d",
+        "A",
+        "t",
+        "f",
+        "l",
+        "I",
+        ",",
+        "v",
+        "O",
+        "m",
+        "s",
+        "T",
+        "p",
+        "o",
+        "G"
+      ],
+      "paper": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0305268",
+      "class": "doi",
+      "identifiers": [
+        "10.1371/journal.pone.0305268"
+      ]
+    },
+    "15ff11e5-2db1-45b6-b3a3-46bc2a74b821": {
+      "n_questions": 5,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "D",
+        "i",
+        "f",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "o",
+        "y",
+        "T",
+        "c",
+        "m"
+      ],
+      "paper": "https://zenodo.org/records/8353706, https://www.mdpi.com/1422-0067/24/19/14743",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.8353706",
+        "https://www.mdpi.com/1422-0067/24/19/14743"
+      ]
+    },
+    "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9": {
+      "n_questions": 4,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "d37acffb-d802-4ce0-8caa-66f50667367a": {
+      "n_questions": 2,
+      "categories": [
+        "S",
+        "e",
+        "q",
+        "u",
+        "n",
+        "c",
+        " ",
+        "A",
+        "a",
+        "l",
+        "y",
+        "s",
+        "i",
+        ",",
+        "R",
+        "N",
+        "-",
+        "D",
+        "f",
+        "r",
+        "t",
+        "E",
+        "x",
+        "p",
+        "o",
+        "T",
+        "m"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "4a336d0c-3d6b-440a-bfb0-437b26a00af3": {
+      "n_questions": 2,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "https://doi.org/10.3324/haematol.2024.285239",
+      "class": "doi",
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ]
+    },
+    "4ef3fcd8-1c35-466f-9d93-49b92f4ea760": {
+      "n_questions": 5,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "D",
+        "i",
+        "f",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "o",
+        "y",
+        "T",
+        "c",
+        "m"
+      ],
+      "paper": "https://doi.org/10.1172/jci.insight.167744",
+      "class": "doi",
+      "identifiers": [
+        "10.1172/jci.insight.167744"
+      ]
+    },
+    "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d": {
+      "n_questions": 2,
+      "categories": [
+        "R",
+        "N",
+        "A",
+        "-",
+        "s",
+        "e",
+        "q",
+        ",",
+        "D",
+        "i",
+        "f",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "o",
+        "y",
+        "T",
+        "c",
+        "m",
+        "w",
+        "k",
+        "B",
+        "g"
+      ],
+      "paper": "https://doi.org/10.1172/jci.insight.167744",
+      "class": "doi",
+      "identifiers": [
+        "10.1172/jci.insight.167744"
+      ]
+    },
+    "93f63fb8-b56c-4ad1-8d3b-d651e2107423": {
+      "n_questions": 7,
+      "categories": [
+        "O",
+        "t",
+        "h",
+        "e",
+        "r"
+      ],
+      "paper": "",
+      "class": "missing",
+      "identifiers": []
+    },
+    "4dceea58-7d66-4576-bfc6-88c026d5b7a9": {
+      "n_questions": 6,
+      "categories": [
+        "E",
+        "p",
+        "i",
+        "g",
+        "e",
+        "n",
+        "o",
+        "m",
+        "c",
+        "s"
+      ],
+      "paper": "https://doi.org/10.5061/dryad.wm37pvmw8",
+      "class": "doi",
+      "identifiers": [
+        "10.5061/dryad.wm37pvmw8"
+      ]
+    },
+    "308d53bf-1513-4a09-913b-3a1112f94e7b": {
+      "n_questions": 5,
+      "categories": [
+        "D",
+        "i",
+        "f",
+        "e",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "s",
+        "o",
+        "A",
+        "y",
+        ",",
+        "R",
+        "N",
+        "-",
+        "q",
+        "T",
+        "c",
+        "m",
+        "S",
+        "u"
+      ],
+      "paper": "https://zenodo.org/records/14063261, https://www.jbc.org/article/S0021-9258(24)02587-0/fulltext",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.14063261",
+        "https://www.jbc.org/article/S0021-9258(24)02587-0/fulltext"
+      ]
+    },
+    "9e52daf6-ca58-43e8-e732-fbac3459d295": {
+      "n_questions": 7,
+      "categories": [
+        "I",
+        "m",
+        "a",
+        "g",
+        "i",
+        "n"
+      ],
+      "paper": "https://doi.org/10.17912/micropub.biology.001326",
+      "class": "doi",
+      "identifiers": [
+        "10.17912/micropub.biology.001326"
+      ]
+    },
+    "451a5322-db12-4026-8d8d-24647a85c4b1": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "302f0f4f-a9d7-460d-9488-d7cc7832bdf9": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "s",
+        "P",
+        "y",
+        "t",
+        "a",
+        "d",
+        "E",
+        "v",
+        "r",
+        "A",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "ff43cd5b-6f9e-410b-8d53-a5bb11b5b531": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "P",
+        "h",
+        "y",
+        "l",
+        "o",
+        "g",
+        "e",
+        "n",
+        "t",
+        "i",
+        "c",
+        "s",
+        " ",
+        "a",
+        "d",
+        "E",
+        "v",
+        "u",
+        "r",
+        "A",
+        ",",
+        "G",
+        "m",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "cdb0c58b-c9e1-47a7-9ad1-6abc48335c3f": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "P",
+        "h",
+        "y",
+        "l",
+        "o",
+        "g",
+        "e",
+        "n",
+        "t",
+        "i",
+        "c",
+        "s",
+        " ",
+        "a",
+        "d",
+        "E",
+        "v",
+        "u",
+        "r",
+        "A",
+        ",",
+        "G",
+        "m",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "f4dcda89-678d-403d-b155-1483d0071765": {
+      "n_questions": 6,
+      "categories": [
+        "F",
+        "u",
+        "n",
+        "c",
+        "t",
+        "i",
+        "o",
+        "a",
+        "l",
+        " ",
+        "G",
+        "e",
+        "m",
+        "s"
+      ],
+      "paper": "https://www.nature.com/articles/s41467-022-29205-8#Abs1",
+      "class": "repository_url",
+      "identifiers": [
+        "10.1038/s41467-022-29205-8"
+      ]
+    },
+    "1aea473d-db97-4c12-9a1e-6c850ddc9110": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "P",
+        "h",
+        "y",
+        "l",
+        "o",
+        "g",
+        "e",
+        "n",
+        "t",
+        "i",
+        "c",
+        "s",
+        " ",
+        "a",
+        "d",
+        "E",
+        "v",
+        "u",
+        "r",
+        "A",
+        ",",
+        "G",
+        "m",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "dcee15c0-5840-5f48-884f-6ca747506277": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "N",
+        "P",
+        "A",
+        "a",
+        "y",
+        "s",
+        "t",
+        "r",
+        "b",
+        "R",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "37829656-f147-5fd2-8f10-40fa15cfdf03": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "N",
+        "P",
+        "A",
+        "a",
+        "y",
+        "s",
+        "t",
+        "r",
+        "b",
+        "R",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "53a80e13-d0cc-5ece-a246-9832910842f5": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "N",
+        "P",
+        "A",
+        "a",
+        "y",
+        "s",
+        "t",
+        "r",
+        "b",
+        "R",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "fb42b6d8-8a62-538b-a647-d4b9b6f33abf": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "N",
+        "P",
+        "A",
+        "a",
+        "y",
+        "s",
+        "t",
+        "r",
+        "b",
+        "R",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "5ddf0a38-bc41-5ebb-93af-88c62ca29be7": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "N",
+        "P",
+        "A",
+        "a",
+        "y",
+        "s",
+        "t",
+        "r",
+        "b",
+        "R",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "2e6ab559-e6ef-5d65-8949-f9c23c8bc561": {
+      "n_questions": 1,
+      "categories": [
+        "[",
+        "'",
+        "W",
+        "h",
+        "o",
+        "l",
+        "e",
+        " ",
+        "G",
+        "n",
+        "m",
+        "S",
+        "q",
+        "u",
+        "c",
+        "i",
+        "g",
+        "(",
+        ")",
+        ",",
+        "N",
+        "P",
+        "A",
+        "a",
+        "y",
+        "s",
+        "t",
+        "r",
+        "b",
+        "R",
+        "]"
+      ],
+      "paper": "Not Available",
+      "class": "missing",
+      "identifiers": []
+    },
+    "a02b761a-02b6-46b5-9d5e-2964d5a74960": {
+      "n_questions": 3,
+      "categories": [
+        "G",
+        "e",
+        "n",
+        "o",
+        "m",
+        "i",
+        "c",
+        "s",
+        ",",
+        " ",
+        "V",
+        "a",
+        "r",
+        "t",
+        "A",
+        "l",
+        "y"
+      ],
+      "paper": "https://doi.org/10.3324/haematol.2024.285239",
+      "class": "doi",
+      "identifiers": [
+        "10.3324/haematol.2024.285239"
+      ]
+    },
+    "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046": {
+      "n_questions": 6,
+      "categories": [
+        "E",
+        "p",
+        "i",
+        "g",
+        "e",
+        "n",
+        "o",
+        "m",
+        "c",
+        "s",
+        ",",
+        "D",
+        "f",
+        "r",
+        "t",
+        "a",
+        "l",
+        " ",
+        "x",
+        "A",
+        "y",
+        "R",
+        "N",
+        "-",
+        "q"
+      ],
+      "paper": "10.17632/dj4sb8h3c3.1",
+      "class": "doi",
+      "identifiers": [
+        "10.17632/dj4sb8h3c3.1"
+      ]
+    },
+    "873bada5-b1f3-423a-87dc-9ddd486c4843": {
+      "n_questions": 3,
+      "categories": [
+        "D",
+        "i",
+        "f",
+        "e",
+        "r",
+        "n",
+        "t",
+        "a",
+        "l",
+        " ",
+        "E",
+        "x",
+        "p",
+        "s",
+        "o",
+        "A",
+        "y",
+        ",",
+        "T",
+        "c",
+        "m",
+        "R",
+        "N",
+        "-",
+        "q"
+      ],
+      "paper": "https://zenodo.org/records/4287588",
+      "class": "repository_url",
+      "identifiers": [
+        "10.5281/zenodo.4287588"
+      ]
+    }
+  },
+  "date_resolution": {
+    "records": {
+      "10.1038/s41467-022-29205-8": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "published-online",
+            "value": "2022-03-25",
+            "kind": "publication",
+            "lower": "2022-03-25",
+            "upper": "2022-03-25",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1038/s41467-022-29205-8"
+          },
+          {
+            "field": "published",
+            "value": "2022-03-25",
+            "kind": "publication",
+            "lower": "2022-03-25",
+            "upper": "2022-03-25",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1038/s41467-022-29205-8"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.1038/s41467-022-29205-8",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2022-03-25",
+        "first_public_appearance_verified": false
+      },
+      "10.1126/sciadv.adf4950": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "published-print",
+            "value": "2023-06-02",
+            "kind": "publication",
+            "lower": "2023-06-02",
+            "upper": "2023-06-02",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1126/sciadv.adf4950"
+          },
+          {
+            "field": "published",
+            "value": "2023-06-02",
+            "kind": "publication",
+            "lower": "2023-06-02",
+            "upper": "2023-06-02",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1126/sciadv.adf4950"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.1126/sciadv.adf4950",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2023-06-02",
+        "first_public_appearance_verified": false
+      },
+      "10.1172/jci.insight.167744": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "published-online",
+            "value": "2023-05-22",
+            "kind": "publication",
+            "lower": "2023-05-22",
+            "upper": "2023-05-22",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1172/jci.insight.167744"
+          },
+          {
+            "field": "published-print",
+            "value": "2023-05-22",
+            "kind": "publication",
+            "lower": "2023-05-22",
+            "upper": "2023-05-22",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1172/jci.insight.167744"
+          },
+          {
+            "field": "published",
+            "value": "2023-05-22",
+            "kind": "publication",
+            "lower": "2023-05-22",
+            "upper": "2023-05-22",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1172/jci.insight.167744"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.1172/jci.insight.167744",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2023-05-22",
+        "first_public_appearance_verified": false
+      },
+      "10.1371/journal.pone.0150501": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "published-online",
+            "value": "2016-02-26",
+            "kind": "publication",
+            "lower": "2016-02-26",
+            "upper": "2016-02-26",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1371/journal.pone.0150501"
+          },
+          {
+            "field": "published",
+            "value": "2016-02-26",
+            "kind": "publication",
+            "lower": "2016-02-26",
+            "upper": "2016-02-26",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1371/journal.pone.0150501"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.1371/journal.pone.0150501",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2016-02-26",
+        "first_public_appearance_verified": false
+      },
+      "10.1371/journal.pone.0305268": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "published-online",
+            "value": "2024-09-03",
+            "kind": "publication",
+            "lower": "2024-09-03",
+            "upper": "2024-09-03",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1371/journal.pone.0305268"
+          },
+          {
+            "field": "published",
+            "value": "2024-09-03",
+            "kind": "publication",
+            "lower": "2024-09-03",
+            "upper": "2024-09-03",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.1371/journal.pone.0305268"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.1371/journal.pone.0305268",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-09-03",
+        "first_public_appearance_verified": false
+      },
+      "10.17632/dj4sb8h3c3.1": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2024",
+            "kind": "publication",
+            "lower": "2024-01-01",
+            "upper": "2024-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.17632/dj4sb8h3c3.1"
+          },
+          {
+            "field": "Issued",
+            "value": "2024-05-21T12:26:09Z",
+            "kind": "publication",
+            "lower": "2024-05-21",
+            "upper": "2024-05-21",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.17632/dj4sb8h3c3.1"
+          },
+          {
+            "field": "created",
+            "value": "2024-05-21",
+            "kind": "registration_only",
+            "lower": "2024-05-21",
+            "upper": "2024-05-21",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.17632/dj4sb8h3c3.1"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.17632/dj4sb8h3c3.1",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.17632/dj4sb8h3c3.1",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-05-21",
+        "first_public_appearance_verified": false
+      },
+      "10.17912/micropub.biology.001326": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2024",
+            "kind": "publication",
+            "lower": "2024-01-01",
+            "upper": "2024-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.17912/micropub.biology.001326"
+          },
+          {
+            "field": "created",
+            "value": "2024-08-16",
+            "kind": "registration_only",
+            "lower": "2024-08-16",
+            "upper": "2024-08-16",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.17912/micropub.biology.001326"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.17912/micropub.biology.001326",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.17912/micropub.biology.001326",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-12-31",
+        "first_public_appearance_verified": false
+      },
+      "10.3324/haematol.2024.285239": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "published-online",
+            "value": "2024-07-25",
+            "kind": "publication",
+            "lower": "2024-07-25",
+            "upper": "2024-07-25",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+          },
+          {
+            "field": "published",
+            "value": "2024-07-25",
+            "kind": "publication",
+            "lower": "2024-07-25",
+            "upper": "2024-07-25",
+            "precision": "day",
+            "provider": "crossref",
+            "evidence_url": "https://api.crossref.org/works/10.3324/haematol.2024.285239"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.3324/haematol.2024.285239",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-07-25",
+        "first_public_appearance_verified": false
+      },
+      "10.5061/dryad.ttdz08kxq": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2021",
+            "kind": "publication",
+            "lower": "2021-01-01",
+            "upper": "2021-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.ttdz08kxq"
+          },
+          {
+            "field": "Issued",
+            "value": "2021-04-22T00:00:00Z",
+            "kind": "publication",
+            "lower": "2021-04-22",
+            "upper": "2021-04-22",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.ttdz08kxq"
+          },
+          {
+            "field": "Available",
+            "value": "2021-04-22T00:00:00Z",
+            "kind": "publication",
+            "lower": "2021-04-22",
+            "upper": "2021-04-22",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.ttdz08kxq"
+          },
+          {
+            "field": "created",
+            "value": "2021-04-22",
+            "kind": "registration_only",
+            "lower": "2021-04-22",
+            "upper": "2021-04-22",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.ttdz08kxq"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5061/dryad.ttdz08kxq",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5061/dryad.ttdz08kxq",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2021-04-22",
+        "first_public_appearance_verified": false
+      },
+      "10.5061/dryad.wm37pvmw8": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2025",
+            "kind": "publication",
+            "lower": "2025-01-01",
+            "upper": "2025-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.wm37pvmw8"
+          },
+          {
+            "field": "Issued",
+            "value": "2024-06-21T00:00:00Z",
+            "kind": "publication",
+            "lower": "2024-06-21",
+            "upper": "2024-06-21",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.wm37pvmw8"
+          },
+          {
+            "field": "Available",
+            "value": "2024-06-21T00:00:00Z",
+            "kind": "publication",
+            "lower": "2024-06-21",
+            "upper": "2024-06-21",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.wm37pvmw8"
+          },
+          {
+            "field": "created",
+            "value": "2024-06-21",
+            "kind": "registration_only",
+            "lower": "2024-06-21",
+            "upper": "2024-06-21",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5061/dryad.wm37pvmw8"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5061/dryad.wm37pvmw8",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5061/dryad.wm37pvmw8",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-06-21",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.10000430": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2023",
+            "kind": "publication",
+            "lower": "2023-01-01",
+            "upper": "2023-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.10000430"
+          },
+          {
+            "field": "Issued",
+            "value": "2023",
+            "kind": "publication",
+            "lower": "2023-01-01",
+            "upper": "2023-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.10000430"
+          },
+          {
+            "field": "created",
+            "value": "2023-10-30",
+            "kind": "registration_only",
+            "lower": "2023-10-30",
+            "upper": "2023-10-30",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.10000430"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.10000430",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.10000430",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2023-12-31",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.12737228": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publication_date",
+            "value": "2024-07-13",
+            "kind": "publication",
+            "provider": "zenodo",
+            "evidence_url": "https://zenodo.org/api/records/12737228",
+            "lower": "2024-07-13",
+            "upper": "2024-07-13",
+            "precision": "day"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.12737228",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.12737228",
+            "status": 404
+          },
+          {
+            "url": "https://zenodo.org/api/records/12737228",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-07-13",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.13935259": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2024",
+            "kind": "publication",
+            "lower": "2024-01-01",
+            "upper": "2024-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.13935259"
+          },
+          {
+            "field": "Issued",
+            "value": "2024-10-15",
+            "kind": "publication",
+            "lower": "2024-10-15",
+            "upper": "2024-10-15",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.13935259"
+          },
+          {
+            "field": "created",
+            "value": "2024-10-15",
+            "kind": "registration_only",
+            "lower": "2024-10-15",
+            "upper": "2024-10-15",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.13935259"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.13935259",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.13935259",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-10-15",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.14063261": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2024",
+            "kind": "publication",
+            "lower": "2024-01-01",
+            "upper": "2024-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.14063261"
+          },
+          {
+            "field": "Issued",
+            "value": "2024-11-10",
+            "kind": "publication",
+            "lower": "2024-11-10",
+            "upper": "2024-11-10",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.14063261"
+          },
+          {
+            "field": "created",
+            "value": "2024-11-10",
+            "kind": "registration_only",
+            "lower": "2024-11-10",
+            "upper": "2024-11-10",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.14063261"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.14063261",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.14063261",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2024-11-10",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.4287588": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publication_date",
+            "value": "2020-11-23",
+            "kind": "publication",
+            "provider": "zenodo",
+            "evidence_url": "https://zenodo.org/api/records/4287588",
+            "lower": "2020-11-23",
+            "upper": "2020-11-23",
+            "precision": "day"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.4287588",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.4287588",
+            "status": 404
+          },
+          {
+            "url": "https://zenodo.org/api/records/4287588",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2020-11-23",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.8036465": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publication_date",
+            "value": "2023-06-14",
+            "kind": "publication",
+            "provider": "zenodo",
+            "evidence_url": "https://zenodo.org/api/records/8036465",
+            "lower": "2023-06-14",
+            "upper": "2023-06-14",
+            "precision": "day"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.8036465",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.8036465",
+            "status": 404
+          },
+          {
+            "url": "https://zenodo.org/api/records/8036465",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2023-06-14",
+        "first_public_appearance_verified": false
+      },
+      "10.5281/zenodo.8353706": {
+        "status": "dated",
+        "evidence": [
+          {
+            "field": "publicationYear",
+            "value": "2023",
+            "kind": "publication",
+            "lower": "2023-01-01",
+            "upper": "2023-12-31",
+            "precision": "year",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.8353706"
+          },
+          {
+            "field": "Issued",
+            "value": "2023-09-17",
+            "kind": "publication",
+            "lower": "2023-09-17",
+            "upper": "2023-09-17",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.8353706"
+          },
+          {
+            "field": "created",
+            "value": "2023-09-17",
+            "kind": "registration_only",
+            "lower": "2023-09-17",
+            "upper": "2023-09-17",
+            "precision": "day",
+            "provider": "datacite",
+            "evidence_url": "https://api.datacite.org/dois/10.5281/zenodo.8353706"
+          }
+        ],
+        "attempts": [
+          {
+            "url": "https://api.crossref.org/works/10.5281/zenodo.8353706",
+            "status": 404
+          },
+          {
+            "url": "https://api.datacite.org/dois/10.5281/zenodo.8353706",
+            "status": 200
+          }
+        ],
+        "earliest_publication_upper": "2023-09-17",
+        "first_public_appearance_verified": false
+      },
+      "https://www.jbc.org/article/S0021-9258(24)02587-0/fulltext": {
+        "status": "unsupported_url",
+        "evidence": []
+      },
+      "https://www.mdpi.com/1422-0067/24/19/14743": {
+        "status": "unsupported_url",
+        "evidence": []
+      }
+    },
+    "dated_capsules": 36,
+    "dated_questions": 137,
+    "publication_by_end_2024_capsules": 36,
+    "publication_by_end_2024_questions": 137
+  }
+}

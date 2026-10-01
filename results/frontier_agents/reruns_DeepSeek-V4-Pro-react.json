@@ -1,0 +1,88 @@
+{
+ "note": "DeepSeek-V4-Pro run again from the start with one driver, and why. Its first with-data run (27 Sep 2026) had two drivers at once on one --out: the second (--only-file logs/rest_DeepSeek-V4-Pro.txt, --work bixbench-work-b, concurrency 12) was started on the 66 questions the first had not finished while the first still had them queued, and a driver wrote each episode it finished over the other's, so each of the 103 kept runs is whichever finished last. Azure AI Foundry's content filter refused three of the first driver's requests in a form openai_api.py did not recognise, so those episodes ended without a record and the second driver ran them again. The rerun is the first driver's command with its settings, the harness fixed (a filter refusal ends the episode, recorded with no answer; one live driver per run; each output claimed before its episode runs; no result replaced), writing to new directories; it was graded as the first runs were. trajectories_DeepSeek-V4-Pro-react.jsonl.gz holds the rerun; the first runs ship in superseded/trajectories_DeepSeek-V4-Pro-react_two_drivers.jsonl.gz.",
+ "superseded": {
+  "file": "superseded/trajectories_DeepSeek-V4-Pro-react_two_drivers.jsonl.gz",
+  "md5": "dd9bd827475ab0e8aa529177519f4eac",
+  "episodes": 103,
+  "episodes_by_driver": {
+   "build/openai/v15_numeric_question_ids.txt": 71,
+   "logs/rest_DeepSeek-V4-Pro.txt": 32
+  },
+  "terminations": {
+   "submitted": 100,
+   "max_steps": 3
+  },
+  "content_filter_refusals_not_recorded": [
+   "bix-1-q2",
+   "bix-49-q5",
+   "bix-30-q5"
+  ]
+ },
+ "rerun": {
+  "started": "2026-10-01T00:49:47+0530",
+  "finished": "2026-10-01T02:36:56+0530",
+  "command": "rerun1_launch.sh (as run, from logs/launch_frontier_rerun1.sh)",
+  "grading": "rerun1_grade.sh (as run, from logs/grade_frontier_rerun1.sh)",
+  "settings_as_the_first_driver": true,
+  "settings": {
+   "model": "DeepSeek-V4-Pro",
+   "served_as": null,
+   "base": "azure-openai",
+   "items": "data/bixbench.jsonl",
+   "only": null,
+   "only_file": "build/openai/v15_numeric_question_ids.txt",
+   "dry_run": false,
+   "limit": 0,
+   "rollouts": 1,
+   "first_rollout": 0,
+   "max_steps": 40,
+   "temperature": 1.0,
+   "max_tokens": 32768,
+   "max_model_len": 128000,
+   "chars_per_token": 3.0,
+   "view_budget": 200000,
+   "reasoning_effort": null,
+   "protocol": "react",
+   "tool_format": null,
+   "extra_body": null,
+   "cell_timeout": 600,
+   "wallclock": 3600,
+   "concurrency": 20,
+   "cpus": "4",
+   "memory": "24g",
+   "seed": 20260923,
+   "keep_workdirs": false
+  },
+  "episodes": 105,
+  "questions": 105,
+  "terminations": {
+   "submitted": 96,
+   "wallclock": 2,
+   "max_steps": 6,
+   "content_filter": 1
+  },
+  "content_filter": [
+   "bix-49-q4"
+  ],
+  "ledger": {
+   "agent": {
+    "calls": 3701,
+    "prompt_tokens": 55299948,
+    "cached_tokens": 14009344,
+    "completion_tokens": 1587157,
+    "content_filter_rows": 1,
+    "cost_usd": 98.07,
+    "last_call": "2026-10-01T02:25:44+0530"
+   },
+   "grading": {
+    "calls": 1014,
+    "prompt_tokens": 8165633,
+    "cached_tokens": 5818368,
+    "completion_tokens": 478048,
+    "content_filter_rows": 0,
+    "cost_usd": 17.92,
+    "last_call": "2026-10-01T04:24:13+0530"
+   }
+  }
+ }
+}

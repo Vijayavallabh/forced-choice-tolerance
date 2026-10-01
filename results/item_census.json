@@ -1,0 +1,55 @@
+{
+  "files": [
+    {
+      "benchmark": "MMLU",
+      "path": "build/mmlu.jsonl",
+      "k": 4,
+      "n_released_rows": 14033,
+      "n_modal_k": 14033,
+      "n_numeric": 661,
+      "n_numeric_clusters": 39,
+      "n_feasible": 594,
+      "n_feasible_clusters": 37
+    },
+    {
+      "benchmark": "MedMCQA",
+      "path": "build/medmcqa.jsonl",
+      "k": 4,
+      "n_released_rows": 29878,
+      "n_modal_k": 29878,
+      "n_numeric": 454,
+      "n_numeric_clusters": 21,
+      "n_feasible": 368,
+      "n_feasible_clusters": 20
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "path": "build/mmlu_pro.jsonl",
+      "k": 10,
+      "n_released_rows": 12031,
+      "n_modal_k": 9980,
+      "n_numeric": 1263,
+      "n_numeric_clusters": 67,
+      "n_feasible": 913,
+      "n_feasible_clusters": 60
+    },
+    {
+      "benchmark": "BixBench v1.5",
+      "path": "build/bixbench_v15.jsonl",
+      "k": 4,
+      "n_released_rows": 205,
+      "n_modal_k": 205,
+      "n_numeric": 105,
+      "n_numeric_clusters": 46
+    },
+    {
+      "benchmark": "AQuA-RAT",
+      "path": "build/aqua_rat.jsonl",
+      "k": 5,
+      "n_released_rows": 247,
+      "n_modal_k": 247,
+      "n_numeric": 141,
+      "n_numeric_clusters": 141
+    }
+  ]
+}

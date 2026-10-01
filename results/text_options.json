@@ -1,0 +1,303 @@
+{
+ "settings": {
+  "extractor": "chars",
+  "scorer": "mlp",
+  "dim": 2048
+ },
+ "set": {
+  "BixBench": {
+   "n_items": 205,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "capsule_uuid in at most 20 folds",
+   "n_folds": 17,
+   "distinct_in_field": 59,
+   "accuracy": 25.853658536585368,
+   "accuracy_ci95": [
+    22.47191011235955,
+    29.7036392828472
+   ],
+   "clean_worst": 29.268292682926827,
+   "clean_mean": 24.878048780487806,
+   "margin_over_clean": -3.414634146341461,
+   "margin_ci95": [
+    -6.796382570567277,
+    0.43534659992037206
+   ]
+  },
+  "LAB-Bench LitQA2": {
+   "n_items": 105,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "sources in at most 20 folds",
+   "n_folds": 20,
+   "distinct_in_field": 103,
+   "accuracy": 37.142857142857146,
+   "accuracy_ci95": [
+    27.183148942575446,
+    49.00049019607843
+   ],
+   "clean_worst": 32.38095238095238,
+   "clean_mean": 26.547619047619047,
+   "margin_over_clean": 4.761904761904762,
+   "margin_ci95": [
+    -5.197803438376935,
+    16.619537815126044
+   ]
+  },
+  "LAB-Bench TableQA": {
+   "n_items": 107,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "source in at most 20 folds",
+   "n_folds": 17,
+   "distinct_in_field": 74,
+   "accuracy": 26.168224299065418,
+   "accuracy_ci95": [
+    19.416732712502476,
+    32.038834951456316
+   ],
+   "clean_worst": 33.64485981308411,
+   "clean_mean": 24.41588785046729,
+   "margin_over_clean": -7.476635514018692,
+   "margin_ci95": [
+    -14.228127100581634,
+    -1.6060248616277972
+   ]
+  },
+  "LAB-Bench FigQA": {
+   "n_items": 89,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "source in at most 20 folds",
+   "n_folds": 17,
+   "distinct_in_field": 32,
+   "accuracy": 20.224719101123593,
+   "accuracy_ci95": [
+    11.760443307757885,
+    32.501453488372086
+   ],
+   "clean_worst": 25.842696629213485,
+   "clean_mean": 20.92696629213483,
+   "margin_over_clean": -5.61797752808989,
+   "margin_ci95": [
+    -14.082253321455601,
+    6.658756859158599
+   ]
+  },
+  "LAB-Bench SuppQA": {
+   "skipped": "only 34 items at the modal k"
+  },
+  "LAB-Bench DbQA": {
+   "n_items": 520,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "subtask in at most 20 folds",
+   "n_folds": 9,
+   "distinct_in_field": 10,
+   "accuracy": 21.153846153846153,
+   "accuracy_ci95": [
+    16.964285714285715,
+    27.500000000000004
+   ],
+   "clean_worst": 29.807692307692307,
+   "clean_mean": 25.624999999999996,
+   "margin_over_clean": -8.653846153846153,
+   "margin_ci95": [
+    -12.843406593406591,
+    -2.307692307692305
+   ]
+  },
+  "LAB-Bench SeqQA": {
+   "n_items": 559,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "subtask in at most 20 folds",
+   "n_folds": 12,
+   "distinct_in_field": 14,
+   "accuracy": 20.75134168157424,
+   "accuracy_ci95": [
+    12.106346346206797,
+    29.382303839732888
+   ],
+   "clean_worst": 27.906976744186046,
+   "clean_mean": 23.971377459749554,
+   "margin_over_clean": -7.155635062611807,
+   "margin_ci95": [
+    -15.800630397979248,
+    1.4753270955468412
+   ]
+  },
+  "LAB-Bench ProtocolQA": {
+   "n_items": 77,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "item id in 20 folds (no field groups this file)",
+   "n_folds": 20,
+   "distinct_in_field": 0,
+   "accuracy": 42.857142857142854,
+   "accuracy_ci95": [
+    30.486479321314953,
+    53.84615384615385
+   ],
+   "clean_worst": 33.76623376623377,
+   "clean_mean": 26.623376623376622,
+   "margin_over_clean": 9.090909090909088,
+   "margin_ci95": [
+    -3.2797544449188143,
+    20.07992007992008
+   ]
+  },
+  "LAB-Bench CloningScenarios": {
+   "skipped": "only 24 items at the modal k"
+  }
+ },
+ "option": {
+  "BixBench": {
+   "n_items": 205,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "capsule_uuid in at most 20 folds",
+   "n_folds": 17,
+   "distinct_in_field": 59,
+   "accuracy": 25.365853658536587,
+   "accuracy_ci95": [
+    21.237918518820603,
+    30.15193541967261
+   ],
+   "clean_worst": 32.19512195121951,
+   "clean_mean": 23.78048780487805,
+   "margin_over_clean": -6.829268292682928,
+   "margin_ci95": [
+    -10.95720343239891,
+    -2.0431865315469033
+   ]
+  },
+  "LAB-Bench LitQA2": {
+   "n_items": 105,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "sources in at most 20 folds",
+   "n_folds": 20,
+   "distinct_in_field": 103,
+   "accuracy": 30.476190476190478,
+   "accuracy_ci95": [
+    20.43671603713415,
+    42.721914008321754
+   ],
+   "clean_worst": 31.428571428571427,
+   "clean_mean": 26.547619047619047,
+   "margin_over_clean": -0.952380952380949,
+   "margin_ci95": [
+    -10.991855391437277,
+    11.293342579750327
+   ]
+  },
+  "LAB-Bench TableQA": {
+   "n_items": 107,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "source in at most 20 folds",
+   "n_folds": 17,
+   "distinct_in_field": 74,
+   "accuracy": 28.037383177570092,
+   "accuracy_ci95": [
+    20.0,
+    35.7159239842726
+   ],
+   "clean_worst": 30.8411214953271,
+   "clean_mean": 23.598130841121492,
+   "margin_over_clean": -2.8037383177570097,
+   "margin_ci95": [
+    -10.8411214953271,
+    4.874802488945501
+   ]
+  },
+  "LAB-Bench FigQA": {
+   "n_items": 89,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "source in at most 20 folds",
+   "n_folds": 17,
+   "distinct_in_field": 32,
+   "accuracy": 17.97752808988764,
+   "accuracy_ci95": [
+    10.957658779576587,
+    24.050632911392405
+   ],
+   "clean_worst": 24.719101123595504,
+   "clean_mean": 20.786516853932586,
+   "margin_over_clean": -6.741573033707865,
+   "margin_ci95": [
+    -13.761442344018917,
+    -0.6684682122030994
+   ]
+  },
+  "LAB-Bench SuppQA": {
+   "skipped": "only 34 items at the modal k"
+  },
+  "LAB-Bench DbQA": {
+   "n_items": 520,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "subtask in at most 20 folds",
+   "n_folds": 9,
+   "distinct_in_field": 10,
+   "accuracy": 25.384615384615383,
+   "accuracy_ci95": [
+    19.84375,
+    31.5
+   ],
+   "clean_worst": 30.57692307692308,
+   "clean_mean": 25.769230769230774,
+   "margin_over_clean": -5.192307692307696,
+   "margin_ci95": [
+    -10.73317307692308,
+    0.9230769230769209
+   ]
+  },
+  "LAB-Bench SeqQA": {
+   "n_items": 559,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "subtask in at most 20 folds",
+   "n_folds": 12,
+   "distinct_in_field": 14,
+   "accuracy": 22.54025044722719,
+   "accuracy_ci95": [
+    14.258128234025277,
+    28.90488246184919
+   ],
+   "clean_worst": 28.80143112701252,
+   "clean_mean": 25.02236135957066,
+   "margin_over_clean": -6.261180679785331,
+   "margin_ci95": [
+    -14.543302892987246,
+    0.10345133483666835
+   ]
+  },
+  "LAB-Bench ProtocolQA": {
+   "n_items": 77,
+   "k": 4,
+   "chance": 25.0,
+   "fold_field": "item id in 20 folds (no field groups this file)",
+   "n_folds": 20,
+   "distinct_in_field": 0,
+   "accuracy": 41.55844155844156,
+   "accuracy_ci95": [
+    29.06766093697338,
+    53.08738425925925
+   ],
+   "clean_worst": 32.467532467532465,
+   "clean_mean": 26.948051948051948,
+   "margin_over_clean": 9.090909090909093,
+   "margin_ci95": [
+    -3.39987153055909,
+    20.619851791726784
+   ]
+  },
+  "LAB-Bench CloningScenarios": {
+   "skipped": "only 24 items at the modal k"
+  }
+ }
+}

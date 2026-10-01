@@ -1,0 +1,36 @@
+{
+  "benchmark": "LAB-Bench FigQA",
+  "jsonl": "data/external/labbench/FigQA.jsonl",
+  "n_items": 181,
+  "draws": 6,
+  "date_range": [
+    "2011-06-25",
+    "2023-10-17"
+  ],
+  "models": {
+    "meta-llama/Meta-Llama-3.1-8B-Instruct": {
+      "question": {
+        "n_items": 181,
+        "accuracy": 0.23941068139963168,
+        "margin_over_chance": 1.6429886871875827,
+        "spearman_date_vs_margin": 0.0692017629106049,
+        "spearman_ci95": [
+          -0.07319688987972657,
+          0.23959531124377056
+        ],
+        "spearman_p_two_sided": 0.37
+      },
+      "withheld": {
+        "n_items": 181,
+        "accuracy": 0.212707182320442,
+        "margin_over_chance": -1.0273612207313865,
+        "spearman_date_vs_margin": 0.0004278956561705948,
+        "spearman_ci95": [
+          -0.13380423387692045,
+          0.18152171245733156
+        ],
+        "spearman_p_two_sided": 0.879
+      }
+    }
+  }
+}

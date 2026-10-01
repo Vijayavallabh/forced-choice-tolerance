@@ -1,0 +1,36 @@
+{
+  "n_items": 633,
+  "reps": 4000,
+  "seed": 11,
+  "families": {
+    "written form": {
+      "generated": 0.10742496050552923,
+      "borrowed": 0.08214849921011058,
+      "difference": 0.025276461295418648,
+      "ci95": [
+        -0.0024154589371980645,
+        0.059701492537313425
+      ],
+      "p_one_sided": 0.04475,
+      "p_two_sided": 0.0895,
+      "n_clusters": 28,
+      "p_two_sided_bonferroni": 0.179
+    },
+    "roundness": {
+      "generated": 0.07740916271721959,
+      "borrowed": 0.061611374407582936,
+      "difference": 0.015797788309636657,
+      "ci95": [
+        -0.002739726027397249,
+        0.027586206896551724
+      ],
+      "p_one_sided": 0.0465,
+      "p_two_sided": 0.093,
+      "n_clusters": 28,
+      "p_two_sided_bonferroni": 0.186
+    }
+  },
+  "design": "same items, same key, same three human distractors; the six added options are model-written in one arm and human-written in the other",
+  "n_families": 2,
+  "multiplicity": "Bonferroni over the 2 feature families tested; the reported family-wise value is the two-sided bootstrap p times the family count"
+}

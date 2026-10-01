@@ -1,0 +1,368 @@
+{"ideal": "0.8", "distractors": ["0.7", "0.6", "1"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "68%", "distractors": ["52%", "37%", "28%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "37%", "distractors": ["26%", "53%", "60%"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "70%", "distractors": ["40%", "20%", "100%"], "question": "", "cluster": "Dental"}
+{"ideal": "24", "distractors": ["15", "12", "36"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "7.35", "distractors": ["6.11", "8", "10.6"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2006", "distractors": ["1877", "2071", "2148.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2500", "distractors": ["2000", "1100", "4000"], "question": "", "cluster": "Medicine"}
+{"ideal": "11", "distractors": ["19", "20", "30"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "0.44", "distractors": ["1", "0.9", "1.1"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "25", "distractors": ["18", "15", "10"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "6.50%", "distractors": ["5.42%", "4.71%", "4%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "10%", "distractors": ["7%", "5%", "14%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2015", "distractors": ["2155", "2276", "2199"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "191", "distractors": ["180", "177", "165"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "625", "distractors": ["513", "454", "400"], "question": "", "cluster": "Physiology"}
+{"ideal": "20000", "distractors": ["12347", "11079", "6300"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "70%", "distractors": ["59%", "50%", "40%"], "question": "", "cluster": "Dental"}
+{"ideal": "12", "distractors": ["10", "7", "6"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "6", "distractors": ["4.06", "4", "3"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "35%", "distractors": ["17%", "11%", "56%"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "10", "distractors": ["7", "5", "4"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "30%", "distractors": ["10%", "78%", "100%"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "600", "distractors": ["417", "300", "270"], "question": "", "cluster": "Dental"}
+{"ideal": "0.6", "distractors": ["2", "3", "4"], "question": "", "cluster": "Physiology"}
+{"ideal": "11", "distractors": ["10", "9", "11.8"], "question": "", "cluster": "Medicine"}
+{"ideal": "2.5", "distractors": ["1.5", "1", "4"], "question": "", "cluster": "Surgery"}
+{"ideal": "72", "distractors": ["39", "100", "200"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "0.05", "distractors": ["0.03", "0.02", "0.01"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "25%", "distractors": ["10%", "7%", "70%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "22%", "distractors": ["9%", "5%", "4%"], "question": "", "cluster": "Skin"}
+{"ideal": "39", "distractors": ["10", "6", "5"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "200", "distractors": ["100", "290", "321"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "150", "distractors": ["100", "200", "300"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "45", "distractors": ["4", "2", "600"], "question": "", "cluster": "Physiology"}
+{"ideal": "60%", "distractors": ["50%", "40%", "78%"], "question": "", "cluster": "Dental"}
+{"ideal": "160", "distractors": ["179", "200", "238.00"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "60%", "distractors": ["35%", "108%", "137%"], "question": "", "cluster": "Microbiology"}
+{"ideal": "16.6", "distractors": ["11.6", "10", "9"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "3.5", "distractors": ["3", "4", "5"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "25%", "distractors": ["14%", "11%", "50%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "70", "distractors": ["57", "54", "50.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "90%", "distractors": ["70%", "60%", "40%"], "question": "", "cluster": "Surgery"}
+{"ideal": "29%", "distractors": ["19%", "13%", "50%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "90%", "distractors": ["100%", "205%", "227.92%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "18%", "distractors": ["13%", "9%", "30%"], "question": "", "cluster": "Surgery"}
+{"ideal": "10%", "distractors": ["3%", "2%", "28%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "30", "distractors": ["19", "13", "10"], "question": "", "cluster": "Psychiatry"}
+{"ideal": "150", "distractors": ["113", "70", "200"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "4.75%", "distractors": ["3.76%", "2.72%", "5.59%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2580", "distractors": ["2731", "2900.00", "2980.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "4.5", "distractors": ["2", "1.8", "8"], "question": "", "cluster": "Unknown"}
+{"ideal": "1981", "distractors": ["1900", "1793", "2000"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "300", "distractors": ["100", "67", "49"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "60%", "distractors": ["40%", "88%", "100%"], "question": "", "cluster": "Physiology"}
+{"ideal": "95%", "distractors": ["75%", "59%", "52.0%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1971", "distractors": ["1910", "1790", "1727.8"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "40", "distractors": ["28", "20", "48"], "question": "", "cluster": "Surgery"}
+{"ideal": "100%", "distractors": ["57%", "197.0%", "264%"], "question": "", "cluster": "Pathology"}
+{"ideal": "20%", "distractors": ["10%", "9%", "29%"], "question": "", "cluster": "Anatomy"}
+{"ideal": "9,10", "distractors": ["563", "300", "2,000"], "question": "", "cluster": "Anatomy"}
+{"ideal": "30%", "distractors": ["20%", "55%", "91%"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "50%", "distractors": ["39%", "66%", "82.0%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20%", "distractors": ["10%", "7%", "39%"], "question": "", "cluster": "Surgery"}
+{"ideal": "22", "distractors": ["15", "30", "38.27"], "question": "", "cluster": "Pathology"}
+{"ideal": "1.37", "distractors": ["1.0", "1.26", "1.46"], "question": "", "cluster": "Anatomy"}
+{"ideal": "85", "distractors": ["89", "92", "90"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "6", "distractors": ["8", "9", "12"], "question": "", "cluster": "Medicine"}
+{"ideal": "30", "distractors": ["23", "20", "41"], "question": "", "cluster": "Medicine"}
+{"ideal": "100%", "distractors": ["150%", "228.35%", "249%"], "question": "", "cluster": "Dental"}
+{"ideal": "9%", "distractors": ["6%", "16.42%", "20%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "3.5", "distractors": ["4", "4.7", "5.04"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "1.50%", "distractors": ["0.3%", "0.15%", "10%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1.50%", "distractors": ["0.2%", "11%", "34%"], "question": "", "cluster": "Dental"}
+{"ideal": "2015", "distractors": ["2139", "2271", "2374"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "10", "distractors": ["8", "6", "5"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "4.5", "distractors": ["3.3", "2.2", "2"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "25%", "distractors": ["40%", "48.9%", "80%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "8", "distractors": ["5", "4", "3"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "23", "distractors": ["30", "33", "35.60"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "100", "distractors": ["59", "183", "219"], "question": "", "cluster": "Microbiology"}
+{"ideal": "9", "distractors": ["7", "4", "10"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "4", "distractors": ["3", "2", "5"], "question": "", "cluster": "Anatomy"}
+{"ideal": "7", "distractors": ["4", "3", "2"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "60", "distractors": ["35", "108", "100"], "question": "", "cluster": "Anatomy"}
+{"ideal": "50%", "distractors": ["23%", "-50%", "77%"], "question": "", "cluster": "Pathology"}
+{"ideal": "324", "distractors": ["307", "304", "287.0"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "95.40%", "distractors": ["82%", "77%", "65.5%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "100%", "distractors": ["71%", "55%", "129%"], "question": "", "cluster": "Dental"}
+{"ideal": "20%", "distractors": ["7%", "5%", "3%"], "question": "", "cluster": "Medicine"}
+{"ideal": "20", "distractors": ["13", "10", "29"], "question": "", "cluster": "Medicine"}
+{"ideal": "12", "distractors": ["20", "24.76", "50"], "question": "", "cluster": "Skin"}
+{"ideal": "1823", "distractors": ["1734", "1702", "2000"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0.25", "distractors": ["200", "310", "300"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "24", "distractors": ["9", "5", "76"], "question": "", "cluster": "Dental"}
+{"ideal": "10", "distractors": ["7", "4", "3.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1000", "distractors": ["2353", "3000.00", "4000"], "question": "", "cluster": "Radiology"}
+{"ideal": "2.00%", "distractors": ["3%", "5%", "6%"], "question": "", "cluster": "Dental"}
+{"ideal": "197", "distractors": ["163", "135", "300"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "65%", "distractors": ["48%", "30%", "90%"], "question": "", "cluster": "Physiology"}
+{"ideal": "4", "distractors": ["3", "2", "6"], "question": "", "cluster": "Anatomy"}
+{"ideal": "317", "distractors": ["300", "217", "398.71"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "80%", "distractors": ["60%", "50%", "38%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "75", "distractors": ["64", "62", "92"], "question": "", "cluster": "Dental"}
+{"ideal": "3000", "distractors": ["5214", "6655", "9589"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "200", "distractors": ["135", "100", "66"], "question": "", "cluster": "Unknown"}
+{"ideal": "61", "distractors": ["-69.2", "140.00", "271"], "question": "", "cluster": "Physiology"}
+{"ideal": "0.5", "distractors": ["1", "3", "4"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "90%", "distractors": ["50%", "40%", "200%"], "question": "", "cluster": "Surgery"}
+{"ideal": "11", "distractors": ["9", "7", "15"], "question": "", "cluster": "Medicine"}
+{"ideal": "16", "distractors": ["13", "11", "10"], "question": "", "cluster": "Medicine"}
+{"ideal": "15%", "distractors": ["10%", "7%", "6%"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "85", "distractors": ["101", "117", "100"], "question": "", "cluster": "ENT"}
+{"ideal": "60%", "distractors": ["50%", "75%", "91.5%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2015", "distractors": ["1927", "2000.00", "1836"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1948", "distractors": ["1835", "1797", "2058"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "8,0,4,0,1,1", "distractors": ["651,864", "653,573", "457,869"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20", "distractors": ["14", "10", "26.4"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "60%", "distractors": ["37%", "29%", "20%"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "10%", "distractors": ["7%", "15%", "21%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0.25%", "distractors": ["4%", "5.0%", "6.6%"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "87", "distractors": ["82", "94.1", "93"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "4", "distractors": ["1", "-1.97", "6"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "10", "distractors": ["5", "4", "3"], "question": "", "cluster": "Dental"}
+{"ideal": "98%", "distractors": ["69%", "100%", "200%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "6", "distractors": ["4", "2", "9"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "0%", "distractors": ["37%", "70.55%", "121%"], "question": "", "cluster": "Pathology"}
+{"ideal": "16", "distractors": ["300", "800", "1000"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "8", "distractors": ["5", "2.05", "20"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "10", "distractors": ["7", "5", "4"], "question": "", "cluster": "Anatomy"}
+{"ideal": "50", "distractors": ["34", "30", "20"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "22", "distractors": ["20", "23.2", "24"], "question": "", "cluster": "Radiology"}
+{"ideal": "60%", "distractors": ["40%", "84%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1.01", "distractors": ["0.7632", "1.2", "2"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "90", "distractors": ["70", "50", "100"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "12", "distractors": ["10", "14", "20"], "question": "", "cluster": "Dental"}
+{"ideal": "130", "distractors": ["100", "107", "200"], "question": "", "cluster": "Surgery"}
+{"ideal": "93.75%", "distractors": ["81.33%", "56.48%", "49.00%"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "190", "distractors": ["138", "100", "118"], "question": "", "cluster": "Microbiology"}
+{"ideal": "7", "distractors": ["4", "3", "2"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "5", "distractors": ["4", "6", "8"], "question": "", "cluster": "Dental"}
+{"ideal": "70", "distractors": ["60", "50", "40"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "700", "distractors": ["992", "1228", "1995"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "50", "distractors": ["20", "10", "100.0"], "question": "", "cluster": "Microbiology"}
+{"ideal": "0.75", "distractors": ["0.17", "0.1", "0.08"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "256", "distractors": ["169", "83", "400"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "0", "distractors": ["-2", "-3.57", "-3.2"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "193", "distractors": ["61", "26", "22"], "question": "", "cluster": "Ophthalmology"}
+{"ideal": "0.70%", "distractors": ["0.22%", "0.18%", "2.0%"], "question": "", "cluster": "Dental"}
+{"ideal": "512", "distractors": ["980", "1097.38", "1730"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "55", "distractors": ["80.0", "77.6", "99.99"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1937", "distractors": ["1836", "1758", "1768"], "question": "", "cluster": "Dental"}
+{"ideal": "48", "distractors": ["36", "71", "72.04"], "question": "", "cluster": "Dental"}
+{"ideal": "2.30%", "distractors": ["1.78%", "1.36%", "1%"], "question": "", "cluster": "Dental"}
+{"ideal": "15", "distractors": ["11", "20", "30"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "50%", "distractors": ["30%", "60.0%", "100%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "10", "distractors": ["3", "1", "55"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "45", "distractors": ["30", "22", "70"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1053", "distractors": ["747", "673", "1469.2"], "question": "", "cluster": "Ophthalmology"}
+{"ideal": "155", "distractors": ["132", "119", "116"], "question": "", "cluster": "Unknown"}
+{"ideal": "20%", "distractors": ["10%", "36%", "53%"], "question": "", "cluster": "Physiology"}
+{"ideal": "0.50%", "distractors": ["24%", "27%", "74%"], "question": "", "cluster": "Dental"}
+{"ideal": "2005", "distractors": ["1940", "1802", "1683.9"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "3", "distractors": ["0", "-2.04", "-5.9"], "question": "", "cluster": "Medicine"}
+{"ideal": "8", "distractors": ["10", "12", "20"], "question": "", "cluster": "Ophthalmology"}
+{"ideal": "3,5", "distractors": ["30", "21", "18"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "20%", "distractors": ["49%", "96%", "100%"], "question": "", "cluster": "Radiology"}
+{"ideal": "24", "distractors": ["21", "26", "32"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "50", "distractors": ["27", "19", "20"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "50%", "distractors": ["40%", "66%", "84%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "7.5", "distractors": ["5", "4", "12"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "7.2", "distractors": ["6.2", "5.1", "9"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "25", "distractors": ["17", "32.99", "36"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "70%", "distractors": ["51%", "29%", "30%"], "question": "", "cluster": "Physiology"}
+{"ideal": "35", "distractors": ["27", "42.80", "60"], "question": "", "cluster": "Medicine"}
+{"ideal": "82", "distractors": ["38", "34", "26"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "12", "distractors": ["9", "6", "20"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "90", "distractors": ["139", "173.02", "200"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "55%", "distractors": ["39%", "24%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20%", "distractors": ["10%", "30%", "59%"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "1949", "distractors": ["1838", "1826", "2000"], "question": "", "cluster": "Dental"}
+{"ideal": "5", "distractors": ["3.15", "2", "1"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2008", "distractors": ["2000", "2108", "2272"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "31", "distractors": ["30", "28", "33"], "question": "", "cluster": "Anatomy"}
+{"ideal": "4", "distractors": ["3", "2", "1"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "50,000", "distractors": ["7,811", "2,752", "3,000"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2005", "distractors": ["1900", "1799", "2138"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "30", "distractors": ["27", "33", "38.13"], "question": "", "cluster": "Psychiatry"}
+{"ideal": "19%", "distractors": ["26%", "30%", "31.6%"], "question": "", "cluster": "Dental"}
+{"ideal": "1967", "distractors": ["1900", "1738", "2104"], "question": "", "cluster": "Surgery"}
+{"ideal": "4", "distractors": ["2", "6", "9"], "question": "", "cluster": "Pathology"}
+{"ideal": "25%", "distractors": ["-27", "-69%", "80%"], "question": "", "cluster": "Medicine"}
+{"ideal": "4", "distractors": ["3", "2", "1"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "106", "distractors": ["100", "115", "123"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "11", "distractors": ["13.98", "20", "22.0"], "question": "", "cluster": "Dental"}
+{"ideal": "20", "distractors": ["10", "9", "7"], "question": "", "cluster": "Surgery"}
+{"ideal": "914", "distractors": ["900", "940.0", "997.00"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "5", "distractors": ["3", "2", "1"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "0.30%", "distractors": ["0.16%", "0.08%", "0.6%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0.95", "distractors": ["0.57", "0.5", "0.298"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "9", "distractors": ["7", "5", "4"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "65%", "distractors": ["58%", "56%", "48.6%"], "question": "", "cluster": "Surgery"}
+{"ideal": "4000", "distractors": ["2366", "1500", "1629"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0.5", "distractors": ["1", "3", "2"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "70%", "distractors": ["59%", "40%", "42%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2045", "distractors": ["1971", "1799", "2152"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2640", "distractors": ["2232", "1600", "3000"], "question": "", "cluster": "Physiology"}
+{"ideal": "25%", "distractors": ["20%", "11%", "5%"], "question": "", "cluster": "Anatomy"}
+{"ideal": "75", "distractors": ["61", "47", "90"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "16", "distractors": ["8", "40.0", "56.22"], "question": "", "cluster": "Anatomy"}
+{"ideal": "11", "distractors": ["13", "20", "18.30"], "question": "", "cluster": "Medicine"}
+{"ideal": "90", "distractors": ["114", "128", "194"], "question": "", "cluster": "Psychiatry"}
+{"ideal": "1986", "distractors": ["1918", "2098", "2100.00"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0.50%", "distractors": ["5%", "10%", "20%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "1.777777778", "distractors": ["1.080689667", "0.691530422", "0.73508416148"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "3.2", "distractors": ["2.4", "2", "1.7"], "question": "", "cluster": "Physiology"}
+{"ideal": "62.5", "distractors": ["46.5", "31.9", "80"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20%", "distractors": ["10%", "9%", "31%"], "question": "", "cluster": "Surgery"}
+{"ideal": "1969", "distractors": ["1900", "1813", "1744"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20", "distractors": ["7", "3", "2"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "70%", "distractors": ["50%", "40%", "92%"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "1981", "distractors": ["1900", "1778", "2046"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "15", "distractors": ["26", "30.0", "47.58"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "30%", "distractors": ["20%", "10%", "8%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "64", "distractors": ["62", "58", "70"], "question": "", "cluster": "Unknown"}
+{"ideal": "2,7,9,10", "distractors": ["3,910", "3,870.6", "1,938"], "question": "", "cluster": "Physiology"}
+{"ideal": "0.4", "distractors": ["1", "3", "2"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "400", "distractors": ["100", "30", "20"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "21", "distractors": ["14", "11", "30"], "question": "", "cluster": "Medicine"}
+{"ideal": "2.8", "distractors": ["3.24", "4", "4.40"], "question": "", "cluster": "Dental"}
+{"ideal": "50%", "distractors": ["40%", "20%", "74%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "20", "distractors": ["10", "46", "58"], "question": "", "cluster": "Anatomy"}
+{"ideal": "34", "distractors": ["13", "86", "90"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "33%", "distractors": ["75%", "126%", "138%"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "22", "distractors": ["13", "40", "50"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "70", "distractors": ["60", "50.0", "88.8"], "question": "", "cluster": "Psychiatry"}
+{"ideal": "100", "distractors": ["171", "309", "269"], "question": "", "cluster": "Pathology"}
+{"ideal": "2,2", "distractors": ["10", "8", "6"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "60%", "distractors": ["42%", "100%", "140.00%"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "0.50%", "distractors": ["5%", "6.0%", "11%"], "question": "", "cluster": "Surgery"}
+{"ideal": "6", "distractors": ["4", "9.7", "10"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "40", "distractors": ["34", "23", "20"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "25%", "distractors": ["14%", "6%", "60%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "-5", "distractors": ["-8.9", "-3", "-2.7"], "question": "", "cluster": "Physiology"}
+{"ideal": "1.33", "distractors": ["0.96", "1", "2"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2015", "distractors": ["1928", "1854", "1665"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "50%", "distractors": ["30%", "20%", "85%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "63%", "distractors": ["49%", "28%", "90%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "60%", "distractors": ["40%", "30%", "100%"], "question": "", "cluster": "Unknown"}
+{"ideal": "950", "distractors": ["900", "893", "1000"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "10%", "distractors": ["7%", "14%", "20%"], "question": "", "cluster": "Ophthalmology"}
+{"ideal": "1981", "distractors": ["1853", "1807", "1672.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1000", "distractors": ["430", "216", "2656"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "18", "distractors": ["13", "11", "7"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "80%", "distractors": ["60%", "40%", "100%"], "question": "", "cluster": "Medicine"}
+{"ideal": "300", "distractors": ["215", "163", "100"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "25%", "distractors": ["7%", "4%", "3%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "6", "distractors": ["3", "2", "9.7"], "question": "", "cluster": "Anatomy"}
+{"ideal": "3.5", "distractors": ["2", "1.6", "1.1"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "245", "distractors": ["195", "280.0", "331.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "75", "distractors": ["138", "150.0", "277"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "24", "distractors": ["21.00", "20", "29"], "question": "", "cluster": "Dental"}
+{"ideal": "5000", "distractors": ["2375", "2000", "1000"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20", "distractors": ["12", "9", "35"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0.35", "distractors": ["0.3", "0.21", "0.50"], "question": "", "cluster": "Surgery"}
+{"ideal": "20%", "distractors": ["10%", "38%", "48%"], "question": "", "cluster": "Dental"}
+{"ideal": "256", "distractors": ["132", "100", "96"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "30", "distractors": ["20", "15", "10"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20", "distractors": ["14", "10", "28"], "question": "", "cluster": "Anatomy"}
+{"ideal": "30", "distractors": ["26", "22", "20"], "question": "", "cluster": "Psychiatry"}
+{"ideal": "40", "distractors": ["30", "46", "54"], "question": "", "cluster": "Surgery"}
+{"ideal": "20", "distractors": ["14", "10.0", "9"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "0.5", "distractors": ["0.2", "1", "2"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "24", "distractors": ["86", "147", "100"], "question": "", "cluster": "Surgery"}
+{"ideal": "11", "distractors": ["13", "16", "19"], "question": "", "cluster": "Anatomy"}
+{"ideal": "1", "distractors": ["0", "-2", "2"], "question": "", "cluster": "Microbiology"}
+{"ideal": "12", "distractors": ["7", "6", "21"], "question": "", "cluster": "Unknown"}
+{"ideal": "7.40%", "distractors": ["6.05%", "6.000%", "8.2%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "10", "distractors": ["8", "6", "5"], "question": "", "cluster": "Anatomy"}
+{"ideal": "11", "distractors": ["7", "6", "4"], "question": "", "cluster": "Pathology"}
+{"ideal": "7.2", "distractors": ["6.8", "7.6", "8"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "30", "distractors": ["27", "35", "36"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1063", "distractors": ["898", "1350", "1538.74"], "question": "", "cluster": "Dental"}
+{"ideal": "5", "distractors": ["3", "2", "9.03"], "question": "", "cluster": "ENT"}
+{"ideal": "0.683", "distractors": ["0.535", "0.408", "0.900"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "7.4", "distractors": ["7.02", "6.6", "6.8"], "question": "", "cluster": "Physiology"}
+{"ideal": "2500", "distractors": ["2000", "1000", "4000.0"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "50%", "distractors": ["77%", "104%", "200%"], "question": "", "cluster": "Medicine"}
+{"ideal": "193", "distractors": ["184", "163", "170"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "60", "distractors": ["50", "36", "76"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "8", "distractors": ["3", "4", "2.0"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "7", "distractors": ["5", "4", "3"], "question": "", "cluster": "Medicine"}
+{"ideal": "95%", "distractors": ["83%", "76%", "100.00%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1000", "distractors": ["30", "42109", "69983"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "5%", "distractors": ["3%", "2%", "1%"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "100", "distractors": ["80", "147", "151"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "200", "distractors": ["153", "306", "400.0"], "question": "", "cluster": "Medicine"}
+{"ideal": "13%", "distractors": ["21.00%", "20%", "50%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "48", "distractors": ["41", "37", "35"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "9", "distractors": ["5", "3", "4"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1000", "distractors": ["482", "312", "319"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1971", "distractors": ["1896", "2102", "2134"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "7", "distractors": ["6", "8", "8.8"], "question": "", "cluster": "Ophthalmology"}
+{"ideal": "2,6", "distractors": ["17", "11", "39"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "60%", "distractors": ["50%", "33%", "31%"], "question": "", "cluster": "Physiology"}
+{"ideal": "2.50%", "distractors": ["2.01%", "1%", "3%"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "40%", "distractors": ["30%", "54%", "80%"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "85%", "distractors": ["57%", "100%", "230%"], "question": "", "cluster": "Physiology"}
+{"ideal": "22", "distractors": ["18", "20", "26"], "question": "", "cluster": "Anatomy"}
+{"ideal": "0.6", "distractors": ["0.4", "0.9", "1"], "question": "", "cluster": "Medicine"}
+{"ideal": "33%", "distractors": ["64%", "112%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1.5", "distractors": ["1", "2", "3"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "5", "distractors": ["4", "7.00", "10"], "question": "", "cluster": "Psychiatry"}
+{"ideal": "50%", "distractors": ["30%", "24%", "10%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "6", "distractors": ["4", "2", "3"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "6", "distractors": ["3", "14", "20"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "60%", "distractors": ["87%", "99.00%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "16,8", "distractors": ["30", "15", "915"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "3", "distractors": ["2", "5", "7"], "question": "", "cluster": "Surgery"}
+{"ideal": "0%", "distractors": ["-28%", "31%", "45%"], "question": "", "cluster": "Pathology"}
+{"ideal": "90%", "distractors": ["70%", "135%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "25%", "distractors": ["20%", "11%", "6%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2500", "distractors": ["4129", "4447.00", "6372"], "question": "", "cluster": "Dental"}
+{"ideal": "64", "distractors": ["62", "57", "67"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "1967", "distractors": ["1880", "2051", "2000"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "60", "distractors": ["50", "30", "40.0"], "question": "", "cluster": "Physiology"}
+{"ideal": "10", "distractors": ["7", "6", "4.0"], "question": "", "cluster": "Anatomy"}
+{"ideal": "32", "distractors": ["36.5", "41", "40"], "question": "", "cluster": "Dental"}
+{"ideal": "10", "distractors": ["5", "14.96", "21"], "question": "", "cluster": "Pathology"}
+{"ideal": "0.08", "distractors": ["0.100", "0.18", "0.2"], "question": "", "cluster": "Radiology"}
+{"ideal": "10", "distractors": ["9", "11", "14"], "question": "", "cluster": "Anatomy"}
+{"ideal": "67%", "distractors": ["54%", "80%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "20%", "distractors": ["73%", "100%", "175%"], "question": "", "cluster": "Surgery"}
+{"ideal": "12", "distractors": ["8", "6", "5.02"], "question": "", "cluster": "Pharmacology"}
+{"ideal": "1,2,3,4", "distractors": ["688", "487", "286"], "question": "", "cluster": "Anatomy"}
+{"ideal": "10", "distractors": ["7", "16", "24"], "question": "", "cluster": "Anatomy"}
+{"ideal": "17", "distractors": ["13", "11", "22"], "question": "", "cluster": "Pathology"}
+{"ideal": "300", "distractors": ["200", "100", "552"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "2010", "distractors": ["1882", "2084", "2151"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "0%", "distractors": ["-35%", "-57%", "-62%"], "question": "", "cluster": "Pathology"}
+{"ideal": "22%", "distractors": ["13%", "10%", "7.0%"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "40", "distractors": ["20", "72", "88"], "question": "", "cluster": "Surgery"}
+{"ideal": "6", "distractors": ["4", "3", "2.02"], "question": "", "cluster": "Physiology"}
+{"ideal": "2", "distractors": ["1", "2.93", "5"], "question": "", "cluster": "Surgery"}
+{"ideal": "10", "distractors": ["8", "16", "21"], "question": "", "cluster": "Biochemistry"}
+{"ideal": "1,6", "distractors": ["7", "6", "30"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "10%", "distractors": ["3%", "1%", "37.09%"], "question": "", "cluster": "Surgery"}
+{"ideal": "21", "distractors": ["18", "17", "23"], "question": "", "cluster": "Physiology"}
+{"ideal": "3.84", "distractors": ["2.33", "1.91", "5"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "1.3", "distractors": ["1.5", "1.6", "2"], "question": "", "cluster": "Pediatrics"}
+{"ideal": "93%", "distractors": ["75%", "57%", "118%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "50", "distractors": ["30", "24", "79"], "question": "", "cluster": "Surgery"}
+{"ideal": "130", "distractors": ["99", "200.00", "199"], "question": "", "cluster": "Surgery"}
+{"ideal": "15", "distractors": ["10", "8", "7.0"], "question": "", "cluster": "Dental"}
+{"ideal": "6", "distractors": ["4", "3", "1.98"], "question": "", "cluster": "Dental"}
+{"ideal": "16", "distractors": ["6", "41", "70"], "question": "", "cluster": "Anatomy"}
+{"ideal": "47", "distractors": ["45", "44", "41"], "question": "", "cluster": "Pathology"}
+{"ideal": "10", "distractors": ["3", "2", "1.0"], "question": "", "cluster": "Gynaecology & Obstetrics"}
+{"ideal": "20%", "distractors": ["7%", "50.00%", "100%"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "10%", "distractors": ["22%", "31%", "46%"], "question": "", "cluster": "Pathology"}
+{"ideal": "5000", "distractors": ["8860", "11030", "12160"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "197", "distractors": ["155", "138", "234"], "question": "", "cluster": "Forensic Medicine"}
+{"ideal": "7", "distractors": ["5", "4", "9.89"], "question": "", "cluster": "Anaesthesia"}
+{"ideal": "1.37", "distractors": ["1.3", "1.26", "1.16"], "question": "", "cluster": "Physiology"}
+{"ideal": "20%", "distractors": ["9%", "6%", "4.0%"], "question": "", "cluster": "Medicine"}
+{"ideal": "31", "distractors": ["29", "27", "25"], "question": "", "cluster": "Anatomy"}
+{"ideal": "1995", "distractors": ["2078", "2216", "2325.0"], "question": "", "cluster": "Social & Preventive Medicine"}
+{"ideal": "25%", "distractors": ["10%", "39%", "45%"], "question": "", "cluster": "Social & Preventive Medicine"}

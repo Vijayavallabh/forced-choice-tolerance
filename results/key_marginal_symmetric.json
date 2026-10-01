@@ -1,0 +1,212 @@
+{
+  "out": "build/mmlu_frontier_key_marginal_symmetric_aligned.jsonl",
+  "n_items": 456,
+  "dropped_items": 8,
+  "dropped_subjects": [
+    "college_computer_science",
+    "electrical_engineering",
+    "human_sexuality",
+    "machine_learning"
+  ],
+  "gamma_item_weighted": 0.6457640888987171,
+  "subjects": {
+    "abstract_algebra": {
+      "n_items": 9,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "business_ethics": {
+      "n_items": 4,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "clinical_knowledge": {
+      "n_items": 5,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "college_mathematics": {
+      "n_items": 17,
+      "gamma": 1.8319523476652333,
+      "mc_se": 0.016363668642829024
+    },
+    "college_physics": {
+      "n_items": 4,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "elementary_mathematics": {
+      "n_items": 136,
+      "gamma": 0.43195914353318376,
+      "mc_se": 0.005860233965261675
+    },
+    "global_facts": {
+      "n_items": 56,
+      "gamma": 0.715134285573299,
+      "mc_se": 0.007855659699690733
+    },
+    "high_school_biology": {
+      "n_items": 4,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "high_school_chemistry": {
+      "n_items": 6,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "high_school_computer_science": {
+      "n_items": 8,
+      "gamma": 3.3536566765804965,
+      "mc_se": 0.018995442096387035
+    },
+    "high_school_mathematics": {
+      "n_items": 146,
+      "gamma": 0.5305911192913015,
+      "mc_se": 0.00545347742937388
+    },
+    "high_school_psychology": {
+      "n_items": 4,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "high_school_statistics": {
+      "n_items": 29,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "miscellaneous": {
+      "n_items": 12,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    },
+    "nutrition": {
+      "n_items": 6,
+      "gamma": 10.039285714285718,
+      "mc_se": 0.04752724782389873
+    },
+    "professional_accounting": {
+      "n_items": 10,
+      "gamma": 0.0,
+      "mc_se": 0.0
+    }
+  },
+  "cost": {
+    "level": {
+      "rate": 0.5032894736842105,
+      "beta_concentration": 193.77773209785977,
+      "n_clusters": 16,
+      "n_effective": 4.65931702070449,
+      "coverage_at_95": 0.8936666666666667,
+      "level_for_95": 0.9849999999999961,
+      "nominal": 0.9499999999999968
+    },
+    "models": {
+      "Qwen/Qwen2.5-7B-Instruct": {
+        "key-marginal": {
+          "points": 15.460526315789474,
+          "nominal_95": [
+            7.5119855850322885,
+            23.844449919961903
+          ],
+          "covering": [
+            5.888888888888888,
+            25.20053475935829
+          ]
+        },
+        "key-marginal-near": {
+          "points": 12.719298245614036,
+          "nominal_95": [
+            5.387769543361833,
+            20.89487195740365
+          ],
+          "covering": [
+            4.056603773584905,
+            22.545219638242894
+          ]
+        },
+        "key-marginal-symmetric": {
+          "points": 15.131578947368421,
+          "nominal_95": [
+            8.023465041128086,
+            21.19851677784516
+          ],
+          "covering": [
+            5.847953216374268,
+            22.429078014184398
+          ]
+        }
+      },
+      "meta-llama/Meta-Llama-3.1-8B-Instruct": {
+        "key-marginal": {
+          "points": 20.50438596491228,
+          "nominal_95": [
+            12.845998282718726,
+            26.10980010094442
+          ],
+          "covering": [
+            11.25776397515528,
+            27.198492462311556
+          ]
+        },
+        "key-marginal-near": {
+          "points": 16.940789473684212,
+          "nominal_95": [
+            11.535341575429532,
+            23.371493492768067
+          ],
+          "covering": [
+            10.558252427184465,
+            26.666666666666668
+          ]
+        },
+        "key-marginal-symmetric": {
+          "points": 20.614035087719298,
+          "nominal_95": [
+            13.89953197330893,
+            25.61229794375217
+          ],
+          "covering": [
+            12.395833333333334,
+            26.60377358490566
+          ]
+        }
+      },
+      "Qwen/Qwen2.5-14B-Instruct": {
+        "key-marginal": {
+          "points": 16.282894736842106,
+          "nominal_95": [
+            9.205009033853175,
+            20.360111531986533
+          ],
+          "covering": [
+            7.572614107883817,
+            21.511627906976745
+          ]
+        },
+        "key-marginal-near": {
+          "points": 11.403508771929824,
+          "nominal_95": [
+            2.0443115439169097,
+            16.05292711759869
+          ],
+          "covering": [
+            0.2222222222222222,
+            17.22689075630252
+          ]
+        },
+        "key-marginal-symmetric": {
+          "points": 14.912280701754385,
+          "nominal_95": [
+            5.82687768480401,
+            19.731414853867832
+          ],
+          "covering": [
+            4.382470119521913,
+            20.597014925373134
+          ]
+        }
+      }
+    }
+  }
+}

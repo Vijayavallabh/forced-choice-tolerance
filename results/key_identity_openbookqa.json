@@ -1,0 +1,131 @@
+{
+ "n_options": 4,
+ "chance": 0.25,
+ "features": [
+  "is integer",
+  "has percent",
+  "has exponent",
+  "has separator",
+  "has minus",
+  "has point",
+  "distinct chars",
+  "trailing zeros",
+  "significant digits",
+  "decimal places",
+  "digit sum",
+  "digit count"
+ ],
+ "roundness_features": [
+  "is integer",
+  "significant digits",
+  "trailing zeros",
+  "decimal places"
+ ],
+ "steps": 400,
+ "l2": 0.001,
+ "files": {
+  "released": {
+   "path": "build/openbookqa.jsonl",
+   "n_items": 7,
+   "n_clusters": 7,
+   "written form": {
+    "cv_accuracy": 0.14285714285714285,
+    "cv_ci95": [
+     0.0,
+     0.42857142857142855
+    ],
+    "argmax_ties": 0,
+    "n_scored": 7,
+    "weights": {
+     "is integer": 2.9441772745969687e-15,
+     "has percent": 4.0653356473095694e-16,
+     "has exponent": 0.0,
+     "has separator": 0.0,
+     "has minus": 0.0,
+     "has point": 0.0,
+     "distinct chars": -1.509111631859507,
+     "trailing zeros": -0.5510475344327391,
+     "significant digits": 0.21184279781703091,
+     "decimal places": 0.0,
+     "digit sum": -0.34688296031745947,
+     "digit count": -0.33920473661570605
+    }
+   },
+   "roundness": {
+    "cv_accuracy": 0.14285714285714285,
+    "cv_ci95": [
+     0.0,
+     0.42857142857142855
+    ],
+    "argmax_ties": 5,
+    "n_scored": 7,
+    "weights": {
+     "is integer": 1.491638409193292e-15,
+     "significant digits": 0.15041122598702067,
+     "trailing zeros": -0.7939504716186833,
+     "decimal places": 0.0
+    }
+   }
+  }
+ },
+ "clean": {
+  "written form": {
+   "scores": [
+    0.0,
+    0.14285714285714285,
+    0.0,
+    0.14285714285714285,
+    0.7142857142857143,
+    0.5714285714285714,
+    0.42857142857142855,
+    0.14285714285714285,
+    0.0,
+    0.2857142857142857,
+    0.2857142857142857,
+    0.14285714285714285,
+    0.2857142857142857,
+    0.8571428571428571,
+    0.7142857142857143,
+    0.2857142857142857,
+    0.14285714285714285,
+    0.14285714285714285,
+    0.0,
+    0.42857142857142855
+   ],
+   "mean": 0.2857142857142857,
+   "max": 0.8571428571428571,
+   "replicates": 20,
+   "n_items": 7,
+   "n_clusters": 7
+  },
+  "roundness": {
+   "scores": [
+    0.5714285714285714,
+    0.14285714285714285,
+    0.0,
+    0.2857142857142857,
+    0.7142857142857143,
+    0.0,
+    0.14285714285714285,
+    0.0,
+    0.0,
+    0.2857142857142857,
+    0.2857142857142857,
+    0.14285714285714285,
+    0.0,
+    0.7142857142857143,
+    0.14285714285714285,
+    0.42857142857142855,
+    0.2857142857142857,
+    0.14285714285714285,
+    0.14285714285714285,
+    0.2857142857142857
+   ],
+   "mean": 0.2357142857142857,
+   "max": 0.7142857142857143,
+   "replicates": 20,
+   "n_items": 7,
+   "n_clusters": 7
+  }
+ }
+}

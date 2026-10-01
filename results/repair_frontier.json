@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "seed": 20260919,
+  "near_factor": 10.0,
+  "n_source_items": 635,
+  "n_kept": 520,
+  "n_dropped_short_generation": 17,
+  "n_dropped_small_subject_pool": 31,
+  "n_dropped_no_near_keys": 67,
+  "arms": {
+    "imitation": "build/mmlu_frontier_imitation.jsonl",
+    "key_marginal": "build/mmlu_frontier_key_marginal.jsonl",
+    "key_marginal_near": "build/mmlu_frontier_key_marginal_near.jsonl",
+    "released_matched": "build/mmlu_frontier_released_matched.jsonl"
+  },
+  "design": "same items and same key in every arm; the arms differ only in what the distractor-writing process was allowed to condition on"
+}

@@ -1,0 +1,336 @@
+{
+  "releases": {
+    "v1.5": {
+      "claude-3-5-sonnet-latest": {
+        "arms": {
+          "mcq_forced": {
+            "n": 205,
+            "n_clusters": 59,
+            "accuracy": 34.146341463414636,
+            "chance": 25.0,
+            "margin": 9.146341463414634,
+            "interval": [
+              2.6147314413373985,
+              16.26319121992402
+            ]
+          },
+          "mcq_decline": {
+            "n": 205,
+            "n_clusters": 59,
+            "accuracy": 8.292682926829269,
+            "chance": 20.0,
+            "margin": -11.70731707317073,
+            "interval": [
+              -15.187294323323734,
+              -7.804878048780487
+            ]
+          },
+          "open_ended": {
+            "n": 205,
+            "n_clusters": 59,
+            "accuracy": 2.9268292682926833,
+            "chance": 0.0,
+            "margin": 2.9268292682926833,
+            "interval": [
+              0.952268111035884,
+              5.555555555555555
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "llm_verifier": {
+              "n": 83,
+              "accuracy": 40.963855421686745
+            },
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 22.950819672131146
+            },
+            "str_verifier": {
+              "n": 61,
+              "accuracy": 36.0655737704918
+            }
+          },
+          "mcq_decline": {
+            "llm_verifier": {
+              "n": 83,
+              "accuracy": 12.048192771084338
+            },
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 6.557377049180328
+            },
+            "str_verifier": {
+              "n": 61,
+              "accuracy": 4.918032786885246
+            }
+          },
+          "open_ended": {
+            "llm_verifier": {
+              "n": 83,
+              "accuracy": 6.024096385542169
+            },
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 0.0
+            },
+            "str_verifier": {
+              "n": 61,
+              "accuracy": 1.639344262295082
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "mcq_decline": {
+            "rate": 78.53658536585365,
+            "n_answered": 44,
+            "accuracy_when_answered": 38.63636363636363
+          },
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "mcq_decline": null,
+          "open_ended": 54.63414634146341
+        },
+        "forced_minus_open": {
+          "n_paired": 205,
+          "n_clusters": 59,
+          "n_effective": 45.139634801288935,
+          "difference": 6.219512195121951,
+          "interval": [
+            -0.4634081196581179,
+            13.38943626839611
+          ]
+        }
+      },
+      "gpt-4o": {
+        "arms": {
+          "mcq_forced": {
+            "n": 205,
+            "n_clusters": 59,
+            "accuracy": 36.09756097560975,
+            "chance": 25.0,
+            "margin": 11.097560975609756,
+            "interval": [
+              4.245283018867925,
+              18.386298045388955
+            ]
+          },
+          "mcq_decline": {
+            "n": 205,
+            "n_clusters": 59,
+            "accuracy": 3.902439024390244,
+            "chance": 20.0,
+            "margin": -16.097560975609756,
+            "interval": [
+              -18.913621646623493,
+              -12.380845611787315
+            ]
+          },
+          "open_ended": {
+            "n": 205,
+            "n_clusters": 59,
+            "accuracy": 2.9268292682926833,
+            "chance": 0.0,
+            "margin": 2.9268292682926833,
+            "interval": [
+              0.9569377990430622,
+              5.405738250565839
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "llm_verifier": {
+              "n": 83,
+              "accuracy": 45.78313253012048
+            },
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 29.508196721311474
+            },
+            "str_verifier": {
+              "n": 61,
+              "accuracy": 29.508196721311474
+            }
+          },
+          "mcq_decline": {
+            "llm_verifier": {
+              "n": 83,
+              "accuracy": 7.228915662650602
+            },
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 0.0
+            },
+            "str_verifier": {
+              "n": 61,
+              "accuracy": 3.278688524590164
+            }
+          },
+          "open_ended": {
+            "llm_verifier": {
+              "n": 83,
+              "accuracy": 3.614457831325301
+            },
+            "range_verifier": {
+              "n": 61,
+              "accuracy": 0.0
+            },
+            "str_verifier": {
+              "n": 61,
+              "accuracy": 4.918032786885246
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "mcq_decline": {
+            "rate": 90.2439024390244,
+            "n_answered": 20,
+            "accuracy_when_answered": 40.0
+          },
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 1.4634146341463414,
+          "mcq_decline": null,
+          "open_ended": 40.97560975609756
+        },
+        "forced_minus_open": {
+          "n_paired": 205,
+          "n_clusters": 59,
+          "n_effective": 45.139634801288935,
+          "difference": 8.170731707317074,
+          "interval": [
+            1.1251468860164549,
+            15.500158227848102
+          ]
+        }
+      }
+    },
+    "v1.0": {
+      "claude-3-5-sonnet-latest": {
+        "arms": {
+          "mcq_forced": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 33.78378378378378,
+            "chance": 25.0,
+            "margin": 8.783783783783784,
+            "interval": [
+              2.491209804055439,
+              14.735311597894379
+            ]
+          },
+          "open_ended": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 11.486486486486488,
+            "chance": 0.0,
+            "margin": 11.486486486486488,
+            "interval": [
+              7.07070707070707,
+              16.610169491525422
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "": {
+              "n": 296,
+              "accuracy": 33.78378378378378
+            }
+          },
+          "open_ended": {
+            "": {
+              "n": 296,
+              "accuracy": 11.486486486486488
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "open_ended": 48.986486486486484
+        },
+        "forced_minus_open": {
+          "n_paired": 296,
+          "n_clusters": 53,
+          "n_effective": 50.528258362168394,
+          "difference": -2.7027027027027026,
+          "interval": [
+            -9.281421575901467,
+            3.6195576454197145
+          ]
+        }
+      },
+      "gpt-4o": {
+        "arms": {
+          "mcq_forced": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 32.0945945945946,
+            "chance": 25.0,
+            "margin": 7.094594594594595,
+            "interval": [
+              0.8275440418993215,
+              13.851828364909762
+            ]
+          },
+          "open_ended": {
+            "n": 296,
+            "n_clusters": 53,
+            "accuracy": 9.121621621621621,
+            "chance": 0.0,
+            "margin": 9.121621621621621,
+            "interval": [
+              5.298013245033113,
+              13.652246871444826
+            ]
+          }
+        },
+        "graders": {
+          "mcq_forced": {
+            "": {
+              "n": 296,
+              "accuracy": 32.0945945945946
+            }
+          },
+          "open_ended": {
+            "": {
+              "n": 296,
+              "accuracy": 9.121621621621621
+            }
+          }
+        },
+        "declined": {
+          "mcq_forced": null,
+          "open_ended": null
+        },
+        "said_no_data": {
+          "mcq_forced": 0.0,
+          "open_ended": 27.7027027027027
+        },
+        "forced_minus_open": {
+          "n_paired": 296,
+          "n_clusters": 53,
+          "n_effective": 50.528258362168394,
+          "difference": -2.027027027027027,
+          "interval": [
+            -8.275261324041812,
+            4.49164736007804
+          ]
+        }
+      }
+    }
+  },
+  "bootstrap": 4000,
+  "verifier": null
+}

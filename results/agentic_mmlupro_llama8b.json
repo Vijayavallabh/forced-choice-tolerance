@@ -1,0 +1,65 @@
+{
+ "meta-llama/Meta-Llama-3.1-8B-Instruct|withheld_aware": {
+  "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld_aware",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 11.500547645125959,
+   "chance": 10.0,
+   "margin_over_chance": 1.5005476451259578,
+   "margin_ci95": [
+    -0.35090808005930335,
+    4.114696664258552
+   ],
+   "used_tool": 7.776560788608982,
+   "unparsed": 0.43811610076670315,
+   "mean_turns": 1.66210295728368,
+   "second_smallest_rate": 4.983570646221248,
+   "by_tool": {
+    "used": {
+     "n": 142,
+     "accuracy": 7.746478873239436
+    },
+    "not_used": {
+     "n": 1684,
+     "accuracy": 11.817102137767222
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 9.955995599559957,
+   "chance": 10.0,
+   "margin_over_chance": -0.04400440044004444,
+   "margin_ci95": [
+    -1.3641364136413643,
+    1.5301466825857055
+   ],
+   "used_tool": 14.576457645764576,
+   "unparsed": 0.77007700770077,
+   "mean_turns": 1.7827282728272826,
+   "second_smallest_rate": 8.800880088008801,
+   "by_tool": {
+    "used": {
+     "n": 265,
+     "accuracy": 9.056603773584905
+    },
+    "not_used": {
+     "n": 1553,
+     "accuracy": 10.109465550547329
+    }
+   }
+  },
+  "margin_over_clean": 1.5445520455660022,
+  "margin_over_clean_ci95": [
+   -0.9581018470095105,
+   4.382670174896228
+  ]
+ }
+}

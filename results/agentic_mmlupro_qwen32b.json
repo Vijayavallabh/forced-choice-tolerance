@@ -1,0 +1,65 @@
+{
+ "Qwen/Qwen2.5-32B-Instruct|withheld_aware": {
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "items": "build/mmlu_pro_matched_released.jsonl",
+  "condition": "withheld_aware",
+  "draws": 2,
+  "max_turns": 3,
+  "n_items": 913,
+  "file": {
+   "n_rollouts": 1826,
+   "n_clusters": 60,
+   "accuracy": 17.46987951807229,
+   "chance": 10.0,
+   "margin_over_chance": 7.469879518072288,
+   "margin_ci95": [
+    5.295083889064168,
+    10.650666972457378
+   ],
+   "used_tool": 15.498357064622127,
+   "unparsed": 0.2738225629791895,
+   "mean_turns": 1.3598028477546549,
+   "second_smallest_rate": 2.135815991237678,
+   "by_tool": {
+    "used": {
+     "n": 283,
+     "accuracy": 20.49469964664311
+    },
+    "not_used": {
+     "n": 1543,
+     "accuracy": 16.915100453661697
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 1818,
+   "n_clusters": 60,
+   "accuracy": 11.991199119911991,
+   "chance": 10.0,
+   "margin_over_chance": 1.9911991199119905,
+   "margin_ci95": [
+    0.13119099487249047,
+    3.766899275823378
+   ],
+   "used_tool": 5.9405940594059405,
+   "unparsed": 0.0,
+   "mean_turns": 1.2656765676567656,
+   "second_smallest_rate": 4.62046204620462,
+   "by_tool": {
+    "used": {
+     "n": 108,
+     "accuracy": 13.88888888888889
+    },
+    "not_used": {
+     "n": 1710,
+     "accuracy": 11.871345029239766
+    }
+   }
+  },
+  "margin_over_clean": 5.478680398160297,
+  "margin_over_clean_ci95": [
+   2.68637963833367,
+   9.234943956333066
+  ]
+ }
+}

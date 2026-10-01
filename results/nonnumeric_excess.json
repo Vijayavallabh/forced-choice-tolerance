@@ -1,0 +1,4470 @@
+{
+ "seed": 20260927,
+ "not_registered": true,
+ "interval": "plain 95% percentile cluster bootstrap over capsules",
+ "v1.0": {
+  "classes": {
+   "direction or change": 37,
+   "name": 24,
+   "number with words": 58,
+   "interval or bound": 10,
+   "list of names": 2,
+   "statement": 6
+  },
+  "by_class": {
+   "Claude 3.5 Sonnet|published": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 173,
+     "open": 26.96895424836601,
+     "score": 54.75163398692812,
+     "excess": {
+      "mean": 27.78268,
+      "lo": 9.86631,
+      "hi": 47.334343,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 18.2577614379085,
+     "misses_accepted": {
+      "share": 40.36916881082895,
+      "lo": 15.9863203085207,
+      "hi": 67.95188335199332,
+      "weight": 7.303104575163399,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 973,
+     "open": 20.919586830497476,
+     "score": 42.78362509553125,
+     "excess": {
+      "mean": 21.864038,
+      "lo": 15.989392,
+      "hi": 28.829154,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 19.770103292375634,
+     "misses_accepted": {
+      "share": 29.842884084782654,
+      "lo": 23.352709393649832,
+      "hi": 38.07072934025819,
+      "weight": 45.816639638311464,
+      "n_questions": 56
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 18,
+     "open": 0.0,
+     "score": 0.0,
+     "excess": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "weight": 2.0,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 37,
+     "runs": 560,
+     "open": 22.015363992918175,
+     "score": 39.199294938459026,
+     "excess": {
+      "mean": 17.183931,
+      "lo": 9.207673,
+      "hi": 27.194883,
+      "n_items": 37,
+      "n_clusters": 22
+     },
+     "at_chance": 19.496159001770458,
+     "misses_accepted": {
+      "share": 23.52894911597443,
+      "lo": 12.459821905356335,
+      "hi": 38.99267199557434,
+      "weight": 28.804315322620276,
+      "n_questions": 36
+     }
+    },
+    "name": {
+     "questions": 24,
+     "runs": 350,
+     "open": 26.820032106409812,
+     "score": 44.7542364899176,
+     "excess": {
+      "mean": 17.934204,
+      "lo": 5.361761,
+      "hi": 30.848703,
+      "n_items": 24,
+      "n_clusters": 18
+     },
+     "at_chance": 18.294991973397543,
+     "misses_accepted": {
+      "share": 28.108311457346446,
+      "lo": 13.594662010168861,
+      "hi": 43.674090851907856,
+      "weight": 17.563192294461643,
+      "n_questions": 23
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 102,
+     "open": 22.855392156862745,
+     "score": 47.69607843137255,
+     "excess": {
+      "mean": 24.840686,
+      "lo": 9.75,
+      "hi": 35.619748,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 19.286151960784316,
+     "misses_accepted": {
+      "share": 33.55043685464655,
+      "lo": 10.282621767889356,
+      "hi": 67.64907470870459,
+      "weight": 4.6286764705882355,
+      "n_questions": 6
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free gpt-4o": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 173,
+     "open": 26.96895424836601,
+     "score": 47.21486928104575,
+     "excess": {
+      "mean": 20.245915,
+      "lo": 5.297386,
+      "hi": 43.136586,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 18.2577614379085,
+     "misses_accepted": {
+      "share": 29.624119028974157,
+      "lo": 8.267991572220565,
+      "hi": 62.2918707149853,
+      "weight": 7.303104575163399,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 973,
+     "open": 20.919586830497476,
+     "score": 45.28081423131866,
+     "excess": {
+      "mean": 24.361227,
+      "lo": 17.561404,
+      "hi": 31.142925,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 19.770103292375634,
+     "misses_accepted": {
+      "share": 32.72931730297704,
+      "lo": 26.055601902638312,
+      "hi": 39.48241517266053,
+      "weight": 45.816639638311464,
+      "n_questions": 56
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 18,
+     "open": 0.0,
+     "score": 13.88888888888889,
+     "excess": {
+      "mean": 13.888889,
+      "lo": 13.888889,
+      "hi": 13.888889,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 13.88888888888889,
+      "lo": 13.88888888888889,
+      "hi": 13.88888888888889,
+      "weight": 2.0,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 37,
+     "runs": 560,
+     "open": 22.015363992918175,
+     "score": 39.83716827176579,
+     "excess": {
+      "mean": 17.821804,
+      "lo": 9.760954,
+      "hi": 26.157372,
+      "n_items": 37,
+      "n_clusters": 22
+     },
+     "at_chance": 19.496159001770458,
+     "misses_accepted": {
+      "share": 24.352123081041295,
+      "lo": 13.03788739527222,
+      "hi": 38.454938017883485,
+      "weight": 28.804315322620276,
+      "n_questions": 36
+     }
+    },
+    "name": {
+     "questions": 24,
+     "runs": 350,
+     "open": 26.820032106409812,
+     "score": 50.35223372974921,
+     "excess": {
+      "mean": 23.532202,
+      "lo": 11.135399,
+      "hi": 35.959379,
+      "n_items": 24,
+      "n_clusters": 18
+     },
+     "at_chance": 18.294991973397543,
+     "misses_accepted": {
+      "share": 32.74097255293467,
+      "lo": 16.815310684269164,
+      "hi": 48.21014724934493,
+      "weight": 17.563192294461643,
+      "n_questions": 23
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 102,
+     "open": 22.855392156862745,
+     "score": 44.77328431372549,
+     "excess": {
+      "mean": 21.917892,
+      "lo": 0.625,
+      "hi": 40.02451,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 19.286151960784316,
+     "misses_accepted": {
+      "share": 29.761715647339162,
+      "lo": 1.937984496124031,
+      "hi": 63.70801919122687,
+      "weight": 4.6286764705882355,
+      "n_questions": 6
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free gemma-3-27b": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 173,
+     "open": 26.96895424836601,
+     "score": 49.42156862745099,
+     "excess": {
+      "mean": 22.452614,
+      "lo": 5.595491,
+      "hi": 47.002585,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 18.2577614379085,
+     "misses_accepted": {
+      "share": 33.02606555543125,
+      "lo": 10.691223397572804,
+      "hi": 67.4173628768616,
+      "weight": 7.303104575163399,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 973,
+     "open": 20.919586830497476,
+     "score": 40.64926991667811,
+     "excess": {
+      "mean": 19.729683,
+      "lo": 13.820128,
+      "hi": 25.882933,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 19.770103292375634,
+     "misses_accepted": {
+      "share": 26.795390099866697,
+      "lo": 21.259970859944506,
+      "hi": 32.85355044323915,
+      "weight": 45.816639638311464,
+      "n_questions": 56
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 18,
+     "open": 0.0,
+     "score": 25.0,
+     "excess": {
+      "mean": 25.0,
+      "lo": 25.0,
+      "hi": 25.0,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 25.0,
+      "lo": 25.0,
+      "hi": 25.0,
+      "weight": 2.0,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 37,
+     "runs": 560,
+     "open": 22.015363992918175,
+     "score": 35.76034847319677,
+     "excess": {
+      "mean": 13.744984,
+      "lo": 6.57897,
+      "hi": 21.376059,
+      "n_items": 37,
+      "n_clusters": 22
+     },
+     "at_chance": 19.496159001770458,
+     "misses_accepted": {
+      "share": 19.92653257319227,
+      "lo": 9.680919674300629,
+      "hi": 32.40873589801902,
+      "weight": 28.804315322620276,
+      "n_questions": 36
+     }
+    },
+    "name": {
+     "questions": 24,
+     "runs": 350,
+     "open": 26.820032106409812,
+     "score": 50.58554269661081,
+     "excess": {
+      "mean": 23.765511,
+      "lo": 11.976394,
+      "hi": 35.557578,
+      "n_items": 24,
+      "n_clusters": 18
+     },
+     "at_chance": 18.294991973397543,
+     "misses_accepted": {
+      "share": 33.2021310410321,
+      "lo": 18.021651007664317,
+      "hi": 48.32431454595673,
+      "weight": 17.563192294461643,
+      "n_questions": 23
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 102,
+     "open": 22.855392156862745,
+     "score": 45.595043572984736,
+     "excess": {
+      "mean": 22.739651,
+      "lo": 1.111111,
+      "hi": 40.441176,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 19.286151960784316,
+     "misses_accepted": {
+      "share": 30.82693495719707,
+      "lo": 3.5888601780074643,
+      "hi": 65.4557916381083,
+      "weight": 4.6286764705882355,
+      "n_questions": 6
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free Qwen2.5-72B": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 173,
+     "open": 26.96895424836601,
+     "score": 54.85947712418301,
+     "excess": {
+      "mean": 27.890523,
+      "lo": 9.228395,
+      "hi": 45.837985,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 18.2577614379085,
+     "misses_accepted": {
+      "share": 39.73375097885669,
+      "lo": 16.21107820086629,
+      "hi": 63.765822784810126,
+      "weight": 7.303104575163399,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 973,
+     "open": 20.919586830497476,
+     "score": 48.530935816552876,
+     "excess": {
+      "mean": 27.611349,
+      "lo": 20.90233,
+      "hi": 34.509952,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 19.770103292375634,
+     "misses_accepted": {
+      "share": 35.38160146893329,
+      "lo": 28.885467894825698,
+      "hi": 42.269114105758185,
+      "weight": 45.816639638311464,
+      "n_questions": 56
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 18,
+     "open": 0.0,
+     "score": 5.555555555555555,
+     "excess": {
+      "mean": 5.555556,
+      "lo": 5.555556,
+      "hi": 5.555556,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 5.555555555555555,
+      "lo": 5.555555555555555,
+      "hi": 5.555555555555555,
+      "weight": 2.0,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 37,
+     "runs": 560,
+     "open": 22.015363992918175,
+     "score": 38.84273315774864,
+     "excess": {
+      "mean": 16.827369,
+      "lo": 9.81364,
+      "hi": 23.625569,
+      "n_items": 37,
+      "n_clusters": 22
+     },
+     "at_chance": 19.496159001770458,
+     "misses_accepted": {
+      "share": 22.34956698945201,
+      "lo": 11.934989749910331,
+      "hi": 34.54014395658417,
+      "weight": 28.804315322620276,
+      "n_questions": 36
+     }
+    },
+    "name": {
+     "questions": 24,
+     "runs": 350,
+     "open": 26.820032106409812,
+     "score": 53.720028215964746,
+     "excess": {
+      "mean": 26.899996,
+      "lo": 12.62518,
+      "hi": 41.285325,
+      "n_items": 24,
+      "n_clusters": 18
+     },
+     "at_chance": 18.294991973397543,
+     "misses_accepted": {
+      "share": 37.34304410769757,
+      "lo": 19.592034376644172,
+      "hi": 56.16131765823225,
+      "weight": 17.563192294461643,
+      "n_questions": 23
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 102,
+     "open": 22.855392156862745,
+     "score": 44.31372549019607,
+     "excess": {
+      "mean": 21.458333,
+      "lo": 3.75,
+      "hi": 35.0,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 19.286151960784316,
+     "misses_accepted": {
+      "share": 30.341540905480546,
+      "lo": 5.167958656330749,
+      "hi": 57.89386125436699,
+      "weight": 4.6286764705882355,
+      "n_questions": 6
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free Llama-3.3-70B": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 173,
+     "open": 26.96895424836601,
+     "score": 42.65686274509804,
+     "excess": {
+      "mean": 15.687908,
+      "lo": -2.756536,
+      "hi": 41.71123,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 18.2577614379085,
+     "misses_accepted": {
+      "share": 26.885557668643028,
+      "lo": 6.593900417423955,
+      "hi": 60.45751633986929,
+      "weight": 7.303104575163399,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 973,
+     "open": 20.919586830497476,
+     "score": 44.48227090291652,
+     "excess": {
+      "mean": 23.562684,
+      "lo": 15.749515,
+      "hi": 31.874953,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 19.770103292375634,
+     "misses_accepted": {
+      "share": 33.08968403969097,
+      "lo": 25.629060344237143,
+      "hi": 41.06705623179711,
+      "weight": 45.816639638311464,
+      "n_questions": 56
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 18,
+     "open": 0.0,
+     "score": 8.333333333333332,
+     "excess": {
+      "mean": 8.333333,
+      "lo": 8.333333,
+      "hi": 8.333333,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 8.333333333333332,
+      "lo": 8.333333333333332,
+      "hi": 8.333333333333332,
+      "weight": 2.0,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 37,
+     "runs": 560,
+     "open": 22.015363992918175,
+     "score": 35.75007670208908,
+     "excess": {
+      "mean": 13.734713,
+      "lo": 7.24893,
+      "hi": 21.39051,
+      "n_items": 37,
+      "n_clusters": 22
+     },
+     "at_chance": 19.496159001770458,
+     "misses_accepted": {
+      "share": 19.736453944020656,
+      "lo": 10.151578585626957,
+      "hi": 31.83209280565383,
+      "weight": 28.804315322620276,
+      "n_questions": 36
+     }
+    },
+    "name": {
+     "questions": 24,
+     "runs": 350,
+     "open": 26.820032106409812,
+     "score": 48.27481796812292,
+     "excess": {
+      "mean": 21.454786,
+      "lo": 9.589745,
+      "hi": 34.083016,
+      "n_items": 24,
+      "n_clusters": 18
+     },
+     "at_chance": 18.294991973397543,
+     "misses_accepted": {
+      "share": 30.052030899283537,
+      "lo": 14.87725600934049,
+      "hi": 46.678454752571206,
+      "weight": 17.563192294461643,
+      "n_questions": 23
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 102,
+     "open": 22.855392156862745,
+     "score": 49.74264705882352,
+     "excess": {
+      "mean": 26.887255,
+      "lo": 5.0,
+      "hi": 42.521008,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 19.286151960784316,
+     "misses_accepted": {
+      "share": 35.393169181890386,
+      "lo": 5.167958656330749,
+      "hi": 69.07216494845362,
+      "weight": 4.6286764705882355,
+      "n_questions": 6
+     }
+    }
+   },
+   "gpt-4o|published": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 143,
+     "open": 16.169602456367162,
+     "score": 48.90931372549019,
+     "excess": {
+      "mean": 32.739711,
+      "lo": 18.960084,
+      "hi": 52.070479,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 20.957599385908214,
+     "misses_accepted": {
+      "share": 39.61059380371647,
+      "lo": 21.15452305526223,
+      "hi": 67.44535881780374,
+      "weight": 8.265392695539754,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 895,
+     "open": 10.835349543046776,
+     "score": 38.56020349708296,
+     "excess": {
+      "mean": 27.724854,
+      "lo": 21.921432,
+      "hi": 34.144532,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 22.291162614238306,
+     "misses_accepted": {
+      "share": 32.511578444445206,
+      "lo": 25.11758670491742,
+      "hi": 40.94157961944594,
+      "weight": 50.84634354293797,
+      "n_questions": 58
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 32,
+     "open": 0.0,
+     "score": 3.125,
+     "excess": {
+      "mean": 3.125,
+      "lo": 3.125,
+      "hi": 3.125,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 3.4482758620689653,
+      "lo": 3.4482758620689653,
+      "hi": 3.4482758620689653,
+      "weight": 1.8125,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 33,
+     "runs": 462,
+     "open": 10.761550540962304,
+     "score": 43.97826326970712,
+     "excess": {
+      "mean": 33.216713,
+      "lo": 23.25615,
+      "hi": 43.40516,
+      "n_items": 33,
+      "n_clusters": 21
+     },
+     "at_chance": 22.309612364759424,
+     "misses_accepted": {
+      "share": 38.86382352779293,
+      "lo": 26.397774117251128,
+      "hi": 51.68519796405971,
+      "weight": 29.019743410184585,
+      "n_questions": 33
+     }
+    },
+    "name": {
+     "questions": 22,
+     "runs": 322,
+     "open": 14.527413376097586,
+     "score": 42.998571638981154,
+     "excess": {
+      "mean": 28.471158,
+      "lo": 18.794299,
+      "hi": 37.707747,
+      "n_items": 22,
+      "n_clusters": 17
+     },
+     "at_chance": 21.368146655975604,
+     "misses_accepted": {
+      "share": 35.130820535160325,
+      "lo": 24.59180389552381,
+      "hi": 45.49370782133203,
+      "weight": 18.25179818891119,
+      "n_questions": 21
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 93,
+     "open": 29.072681704260656,
+     "score": 51.38583638583639,
+     "excess": {
+      "mean": 22.313155,
+      "lo": 8.820513,
+      "hi": 31.950756,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 17.731829573934835,
+     "misses_accepted": {
+      "share": 31.4591827489354,
+      "lo": 9.025641025641026,
+      "hi": 68.33333333333334,
+      "weight": 4.2556390977443606,
+      "n_questions": 6
+     }
+    }
+   },
+   "gpt-4o|code-free gpt-4o": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 143,
+     "open": 16.169602456367162,
+     "score": 48.42086834733893,
+     "excess": {
+      "mean": 32.251266,
+      "lo": 14.994748,
+      "hi": 50.905987,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 20.957599385908214,
+     "misses_accepted": {
+      "share": 39.37548370278043,
+      "lo": 18.567011927383458,
+      "hi": 65.07780507780508,
+      "weight": 8.265392695539754,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 895,
+     "open": 10.835349543046776,
+     "score": 44.515155452355195,
+     "excess": {
+      "mean": 33.679806,
+      "lo": 27.61958,
+      "hi": 40.488908,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 22.291162614238306,
+     "misses_accepted": {
+      "share": 38.81492104344032,
+      "lo": 31.98706948161517,
+      "hi": 46.399954727542074,
+      "weight": 50.84634354293797,
+      "n_questions": 58
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 32,
+     "open": 0.0,
+     "score": 17.1875,
+     "excess": {
+      "mean": 17.1875,
+      "lo": 17.1875,
+      "hi": 17.1875,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 18.96551724137931,
+      "lo": 18.96551724137931,
+      "hi": 18.96551724137931,
+      "weight": 1.8125,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 33,
+     "runs": 462,
+     "open": 10.761550540962304,
+     "score": 44.2245403141125,
+     "excess": {
+      "mean": 33.46299,
+      "lo": 22.472189,
+      "hi": 43.990463,
+      "n_items": 33,
+      "n_clusters": 21
+     },
+     "at_chance": 22.309612364759424,
+     "misses_accepted": {
+      "share": 38.268038652754335,
+      "lo": 24.559369257759162,
+      "hi": 52.07599972824224,
+      "weight": 29.019743410184585,
+      "n_questions": 33
+     }
+    },
+    "name": {
+     "questions": 22,
+     "runs": 322,
+     "open": 14.527413376097586,
+     "score": 40.19461414488505,
+     "excess": {
+      "mean": 25.667201,
+      "lo": 16.329704,
+      "hi": 37.389383,
+      "n_items": 22,
+      "n_clusters": 17
+     },
+     "at_chance": 21.368146655975604,
+     "misses_accepted": {
+      "share": 30.93823474644773,
+      "lo": 19.713252703187226,
+      "hi": 44.269398715083824,
+      "weight": 18.25179818891119,
+      "n_questions": 21
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 93,
+     "open": 29.072681704260656,
+     "score": 38.90977443609023,
+     "excess": {
+      "mean": 9.837093,
+      "lo": 0.0,
+      "hi": 18.56203,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 17.731829573934835,
+     "misses_accepted": {
+      "share": 13.869257950530036,
+      "lo": 0.0,
+      "hi": 40.97510373443984,
+      "weight": 4.2556390977443606,
+      "n_questions": 6
+     }
+    }
+   },
+   "gpt-4o|code-free gemma-3-27b": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 143,
+     "open": 16.169602456367162,
+     "score": 51.36029411764705,
+     "excess": {
+      "mean": 35.190692,
+      "lo": 17.521008,
+      "hi": 56.10119,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 20.957599385908214,
+     "misses_accepted": {
+      "share": 42.93178874306523,
+      "lo": 21.34080485668322,
+      "hi": 72.11449954167264,
+      "weight": 8.265392695539754,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 895,
+     "open": 10.835349543046776,
+     "score": 38.74103675510876,
+     "excess": {
+      "mean": 27.905687,
+      "lo": 22.228346,
+      "hi": 34.405556,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 22.291162614238306,
+     "misses_accepted": {
+      "share": 32.741740596702996,
+      "lo": 25.447988255878798,
+      "hi": 41.19941045685825,
+      "weight": 50.84634354293797,
+      "n_questions": 58
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 32,
+     "open": 0.0,
+     "score": 12.5,
+     "excess": {
+      "mean": 12.5,
+      "lo": 12.5,
+      "hi": 12.5,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 13.793103448275861,
+      "lo": 13.793103448275861,
+      "hi": 13.793103448275861,
+      "weight": 1.8125,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 33,
+     "runs": 462,
+     "open": 10.761550540962304,
+     "score": 37.51072036499844,
+     "excess": {
+      "mean": 26.74917,
+      "lo": 18.467939,
+      "hi": 35.117944,
+      "n_items": 33,
+      "n_clusters": 21
+     },
+     "at_chance": 22.309612364759424,
+     "misses_accepted": {
+      "share": 30.970786273197522,
+      "lo": 20.607315173536307,
+      "hi": 42.336034913991696,
+      "weight": 29.019743410184585,
+      "n_questions": 33
+     }
+    },
+    "name": {
+     "questions": 22,
+     "runs": 322,
+     "open": 14.527413376097586,
+     "score": 41.5538090201227,
+     "excess": {
+      "mean": 27.026396,
+      "lo": 15.707398,
+      "hi": 38.210688,
+      "n_items": 22,
+      "n_clusters": 17
+     },
+     "at_chance": 21.368146655975604,
+     "misses_accepted": {
+      "share": 32.57655481473533,
+      "lo": 19.3423803374705,
+      "hi": 45.49439437809259,
+      "weight": 18.25179818891119,
+      "n_questions": 21
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 93,
+     "open": 29.072681704260656,
+     "score": 45.19600282758178,
+     "excess": {
+      "mean": 16.123321,
+      "lo": 2.871795,
+      "hi": 26.746032,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 17.731829573934835,
+     "misses_accepted": {
+      "share": 22.732173597897983,
+      "lo": 3.076923076923077,
+      "hi": 52.16459197786999,
+      "weight": 4.2556390977443606,
+      "n_questions": 6
+     }
+    }
+   },
+   "gpt-4o|code-free Qwen2.5-72B": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 143,
+     "open": 16.169602456367162,
+     "score": 52.022934173669455,
+     "excess": {
+      "mean": 35.853332,
+      "lo": 19.845792,
+      "hi": 51.635313,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 20.957599385908214,
+     "misses_accepted": {
+      "share": 43.73349300616696,
+      "lo": 22.5920579537573,
+      "hi": 67.13776597603159,
+      "weight": 8.265392695539754,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 895,
+     "open": 10.835349543046776,
+     "score": 46.827948086722245,
+     "excess": {
+      "mean": 35.992599,
+      "lo": 29.279003,
+      "hi": 43.182967,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 22.291162614238306,
+     "misses_accepted": {
+      "share": 41.84189000822807,
+      "lo": 34.51853767466595,
+      "hi": 50.074523643618974,
+      "weight": 50.84634354293797,
+      "n_questions": 58
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 32,
+     "open": 0.0,
+     "score": 3.125,
+     "excess": {
+      "mean": 3.125,
+      "lo": 3.125,
+      "hi": 3.125,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 3.4482758620689653,
+      "lo": 3.4482758620689653,
+      "hi": 3.4482758620689653,
+      "weight": 1.8125,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 33,
+     "runs": 462,
+     "open": 10.761550540962304,
+     "score": 41.867738742738744,
+     "excess": {
+      "mean": 31.106188,
+      "lo": 20.143358,
+      "hi": 40.22697,
+      "n_items": 33,
+      "n_clusters": 21
+     },
+     "at_chance": 22.309612364759424,
+     "misses_accepted": {
+      "share": 35.48030029435996,
+      "lo": 22.395412522375256,
+      "hi": 48.04212127584647,
+      "weight": 29.019743410184585,
+      "n_questions": 33
+     }
+    },
+    "name": {
+     "questions": 22,
+     "runs": 322,
+     "open": 14.527413376097586,
+     "score": 44.349528786096485,
+     "excess": {
+      "mean": 29.822115,
+      "lo": 15.473542,
+      "hi": 44.934057,
+      "n_items": 22,
+      "n_clusters": 17
+     },
+     "at_chance": 21.368146655975604,
+     "misses_accepted": {
+      "share": 35.94640551190065,
+      "lo": 19.301749364362212,
+      "hi": 53.009150487961264,
+      "weight": 18.25179818891119,
+      "n_questions": 21
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 93,
+     "open": 29.072681704260656,
+     "score": 42.042606516290725,
+     "excess": {
+      "mean": 12.969925,
+      "lo": 0.0,
+      "hi": 24.874687,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 17.731829573934835,
+     "misses_accepted": {
+      "share": 18.904593639575975,
+      "lo": 0.0,
+      "hi": 46.88796680497925,
+      "weight": 4.2556390977443606,
+      "n_questions": 6
+     }
+    }
+   },
+   "gpt-4o|code-free Llama-3.3-70B": {
+    "interval or bound": {
+     "questions": 10,
+     "runs": 143,
+     "open": 16.169602456367162,
+     "score": 48.2661333764275,
+     "excess": {
+      "mean": 32.096531,
+      "lo": 16.16031,
+      "hi": 49.398396,
+      "n_items": 10,
+      "n_clusters": 7
+     },
+     "at_chance": 20.957599385908214,
+     "misses_accepted": {
+      "share": 39.76309765297228,
+      "lo": 19.55128205128205,
+      "hi": 64.20731640190671,
+      "weight": 8.265392695539754,
+      "n_questions": 10
+     }
+    },
+    "number with words": {
+     "questions": 58,
+     "runs": 895,
+     "open": 10.835349543046776,
+     "score": 41.526629426704154,
+     "excess": {
+      "mean": 30.69128,
+      "lo": 23.422344,
+      "hi": 38.600807,
+      "n_items": 58,
+      "n_clusters": 34
+     },
+     "at_chance": 22.291162614238306,
+     "misses_accepted": {
+      "share": 36.14097980867304,
+      "lo": 27.901548678351126,
+      "hi": 45.06641238742325,
+      "weight": 50.84634354293797,
+      "n_questions": 58
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 32,
+     "open": 0.0,
+     "score": 17.1875,
+     "excess": {
+      "mean": 17.1875,
+      "lo": 17.1875,
+      "hi": 17.1875,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 18.96551724137931,
+      "lo": 18.96551724137931,
+      "hi": 18.96551724137931,
+      "weight": 1.8125,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 33,
+     "runs": 462,
+     "open": 10.761550540962304,
+     "score": 37.696255393447906,
+     "excess": {
+      "mean": 26.934705,
+      "lo": 16.655859,
+      "hi": 36.786609,
+      "n_items": 33,
+      "n_clusters": 21
+     },
+     "at_chance": 22.309612364759424,
+     "misses_accepted": {
+      "share": 31.598996482309477,
+      "lo": 19.452396302989662,
+      "hi": 43.93518764128204,
+      "weight": 29.019743410184585,
+      "n_questions": 33
+     }
+    },
+    "name": {
+     "questions": 22,
+     "runs": 322,
+     "open": 14.527413376097586,
+     "score": 43.443135206257914,
+     "excess": {
+      "mean": 28.915722,
+      "lo": 17.103347,
+      "hi": 41.905258,
+      "n_items": 22,
+      "n_clusters": 17
+     },
+     "at_chance": 21.368146655975604,
+     "misses_accepted": {
+      "share": 35.731839109966515,
+      "lo": 21.769129576246232,
+      "hi": 51.47544913105808,
+      "weight": 18.25179818891119,
+      "n_questions": 21
+     }
+    },
+    "statement": {
+     "questions": 6,
+     "runs": 93,
+     "open": 29.072681704260656,
+     "score": 34.64912280701755,
+     "excess": {
+      "mean": 5.576441,
+      "lo": -8.881579,
+      "hi": 34.285714,
+      "n_items": 6,
+      "n_clusters": 5
+     },
+     "at_chance": 17.731829573934835,
+     "misses_accepted": {
+      "share": 23.321554770318023,
+      "lo": 0.0,
+      "hi": 62.831858407079636,
+      "weight": 4.2556390977443606,
+      "n_questions": 6
+     }
+    }
+   }
+  },
+  "all": {
+   "Claude 3.5 Sonnet|published": {
+    "questions": 137,
+    "runs": 2176,
+    "open": 22.470125327631372,
+    "score": 42.62495368233091,
+    "excess": {
+     "mean": 20.154828,
+     "lo": 16.131617,
+     "hi": 24.613834,
+     "n_items": 137,
+     "n_clusters": 46
+    },
+    "at_chance": 19.382468668092155,
+    "misses_accepted": {
+     "share": 28.165630189162794,
+     "lo": 21.99140957058543,
+     "hi": 35.54965790102356,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    }
+   },
+   "Claude 3.5 Sonnet|code-free gpt-4o": {
+    "questions": 137,
+    "runs": 2176,
+    "open": 22.470125327631372,
+    "score": 44.359724360995514,
+    "excess": {
+     "mean": 21.889599,
+     "lo": 18.149334,
+     "hi": 25.852587,
+     "n_items": 137,
+     "n_clusters": 46
+    },
+    "at_chance": 19.382468668092155,
+    "misses_accepted": {
+     "share": 29.75908316334704,
+     "lo": 23.998987685677445,
+     "hi": 36.25423379853231,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    }
+   },
+   "Claude 3.5 Sonnet|code-free gemma-3-27b": {
+    "questions": 137,
+    "runs": 2176,
+    "open": 22.470125327631372,
+    "score": 41.69802570150867,
+    "excess": {
+     "mean": 19.2279,
+     "lo": 15.351603,
+     "hi": 23.498438,
+     "n_items": 137,
+     "n_clusters": 46
+    },
+    "at_chance": 19.382468668092155,
+    "misses_accepted": {
+     "share": 26.562091439402316,
+     "lo": 20.96002303521394,
+     "hi": 33.10147083213678,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    }
+   },
+   "Claude 3.5 Sonnet|code-free Qwen2.5-72B": {
+    "questions": 137,
+    "runs": 2176,
+    "open": 22.470125327631372,
+    "score": 46.47331618010247,
+    "excess": {
+     "mean": 24.003191,
+     "lo": 19.45806,
+     "hi": 28.638701,
+     "n_items": 137,
+     "n_clusters": 46
+    },
+    "at_chance": 19.382468668092155,
+    "misses_accepted": {
+     "share": 31.68633779786888,
+     "lo": 25.31098762033636,
+     "hi": 38.4603523110454,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    }
+   },
+   "Claude 3.5 Sonnet|code-free Llama-3.3-70B": {
+    "questions": 137,
+    "runs": 2176,
+    "open": 22.470125327631372,
+    "score": 42.35774713906564,
+    "excess": {
+     "mean": 19.887622,
+     "lo": 15.42018,
+     "hi": 24.644608,
+     "n_items": 137,
+     "n_clusters": 46
+    },
+    "at_chance": 19.382468668092155,
+    "misses_accepted": {
+     "share": 28.169201860821254,
+     "lo": 21.873962105085877,
+     "hi": 35.43576172887367,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    }
+   },
+   "gpt-4o|published": {
+    "questions": 131,
+    "runs": 1947,
+    "open": 12.513867560395816,
+    "score": 41.50687955998971,
+    "excess": {
+     "mean": 28.993012,
+     "lo": 24.248991,
+     "hi": 33.786577,
+     "n_items": 131,
+     "n_clusters": 45
+    },
+    "at_chance": 21.871533109901048,
+    "misses_accepted": {
+     "share": 34.58951311446164,
+     "lo": 28.200797338718882,
+     "hi": 41.73050280836633,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    }
+   },
+   "gpt-4o|code-free gpt-4o": {
+    "questions": 131,
+    "runs": 1947,
+    "open": 12.513867560395816,
+    "score": 43.34055486931081,
+    "excess": {
+     "mean": 30.826687,
+     "lo": 26.112765,
+     "hi": 35.682618,
+     "n_items": 131,
+     "n_clusters": 45
+    },
+    "at_chance": 21.871533109901048,
+    "misses_accepted": {
+     "share": 36.17255693189763,
+     "lo": 30.13397945089074,
+     "hi": 42.8722696820918,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    }
+   },
+   "gpt-4o|code-free gemma-3-27b": {
+    "questions": 131,
+    "runs": 1947,
+    "open": 12.513867560395816,
+    "score": 39.76180656813678,
+    "excess": {
+     "mean": 27.247939,
+     "lo": 22.656603,
+     "hi": 32.085119,
+     "n_items": 131,
+     "n_clusters": 45
+    },
+    "at_chance": 21.871533109901048,
+    "misses_accepted": {
+     "share": 32.32267662324028,
+     "lo": 26.257438306392004,
+     "hi": 39.22171006542487,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    }
+   },
+   "gpt-4o|code-free Qwen2.5-72B": {
+    "questions": 131,
+    "runs": 1947,
+    "open": 12.513867560395816,
+    "score": 44.67237390586893,
+    "excess": {
+     "mean": 32.158506,
+     "lo": 26.498753,
+     "hi": 37.889179,
+     "n_items": 131,
+     "n_clusters": 45
+    },
+    "at_chance": 21.871533109901048,
+    "misses_accepted": {
+     "share": 37.89546277960291,
+     "lo": 30.762170691265084,
+     "hi": 45.4846534305913,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    }
+   },
+   "gpt-4o|code-free Llama-3.3-70B": {
+    "questions": 131,
+    "runs": 1947,
+    "open": 12.513867560395816,
+    "score": 40.71145786165402,
+    "excess": {
+     "mean": 28.19759,
+     "lo": 22.958038,
+     "hi": 33.890302,
+     "n_items": 131,
+     "n_clusters": 45
+    },
+    "at_chance": 21.871533109901048,
+    "misses_accepted": {
+     "share": 34.40670295011965,
+     "lo": 27.87767982872673,
+     "hi": 41.7215510906019,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    }
+   }
+  },
+  "nearest": {
+   "Claude 3.5 Sonnet|published": {
+    "n_misses": 1610,
+    "misses_accepted": {
+     "share": 28.165630189162794,
+     "lo": 22.04601783964504,
+     "hi": 35.98950589808089,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 28.165630189162794,
+      "lo": 21.932885624831446,
+      "hi": 35.704929606094176,
+      "weight": 106.11592830114502,
+      "n_questions": 133
+     },
+     "points_above_chance": 2.4519984392783876
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.631844809164543,
+      "accepted": {
+       "share": 69.32485404674043,
+       "lo": 54.48561644099012,
+       "hi": 81.78192135230971,
+       "weight": 11.282080814782054,
+       "n_questions": 46
+      },
+      "points_above_chance": 3.6501940544433937
+     },
+     "other": {
+      "share_of_misses": 38.28713463839476,
+      "accepted": {
+       "share": 18.98775954503538,
+       "lo": 13.606961915835125,
+       "hi": 26.171646317997244,
+       "weight": 40.62874834144184,
+       "n_questions": 99
+      },
+      "points_above_chance": -1.7829912730875421
+     },
+     "neither": {
+      "share_of_misses": 51.081020552440705,
+      "accepted": {
+       "share": 26.47803447275669,
+       "lo": 19.552955015290088,
+       "hi": 34.717694219212305,
+       "weight": 54.20509914492113,
+       "n_questions": 110
+      },
+      "points_above_chance": 0.5847956579225364
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.079004508769473,
+      "accepted": {
+       "share": 56.62084245176968,
+       "lo": 35.552198188701674,
+       "hi": 76.36252907543007,
+       "weight": 5.389632782937737,
+       "n_questions": 27
+      },
+      "points_above_chance": 1.243976124833337
+     },
+     "other": {
+      "share_of_misses": 22.315216382925623,
+      "accepted": {
+       "share": 17.098750623360143,
+       "lo": 10.467970884969795,
+       "hi": 27.02487466372958,
+       "weight": 23.67999901715072,
+       "n_questions": 75
+      },
+      "points_above_chance": -1.365704945059084
+     },
+     "tied": {
+      "share_of_misses": 6.674926393751665,
+      "accepted": {
+       "share": 32.18209670814335,
+       "lo": 20.588378661329543,
+       "hi": 47.23808796387203,
+       "weight": 7.083160106147722,
+       "n_questions": 32
+      },
+      "points_above_chance": 0.37132803563223216
+     },
+     "none": {
+      "share_of_misses": 65.93085271455324,
+      "accepted": {
+       "share": 29.31268106631662,
+       "lo": 22.430806316619822,
+       "hi": 37.28418323202241,
+       "weight": 69.96313639490884,
+       "n_questions": 114
+      },
+      "points_above_chance": 2.2023992238719026
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 16.888416371298216,
+      "accepted": {
+       "share": 80.79851172811668,
+       "lo": 64.37724818670479,
+       "hi": 93.1066968135298,
+       "weight": 6.15390314020345,
+       "n_questions": 22
+      },
+      "points_above_chance": 2.5064134054185123
+     },
+     "other": {
+      "share_of_misses": 54.847375379666715,
+      "accepted": {
+       "share": 19.885943092585222,
+       "lo": 12.662064852257,
+       "hi": 29.57611214390034,
+       "weight": 19.98561784362868,
+       "n_questions": 40
+      },
+      "points_above_chance": -0.7460407808916881
+     },
+     "neither": {
+      "share_of_misses": 28.264208249035065,
+      "accepted": {
+       "share": 30.63610623900645,
+       "lo": 18.72646083556587,
+       "hi": 42.676396991232885,
+       "weight": 10.29908287876554,
+       "n_questions": 30
+      },
+      "points_above_chance": 0.42369872459164226
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 0.2984643976868951,
+     "accepted": {
+      "share": 100.0,
+      "lo": 99.99999999999999,
+      "hi": 100.00000000000001,
+      "weight": 0.31671826625386995,
+      "n_questions": 3
+     },
+     "points_above_chance": 0.17338591218277555
+    },
+    "contains a distractor": {
+     "share_of_misses": 1.5829197266157995,
+     "accepted": {
+      "share": 2.976668936457795,
+      "lo": 0.0,
+      "hi": 13.07637362581473,
+      "weight": 1.6797299621603026,
+      "n_questions": 13
+     },
+     "points_above_chance": -0.27002371572268297
+    },
+    "key longest": {
+     "questions": 28.710462287104626,
+     "neither, key longest": {
+      "share_of_misses": 15.178574581384163,
+      "accepted": {
+       "share": 31.177092706983142,
+       "lo": 17.39224460940633,
+       "hi": 45.53153007589856,
+       "weight": 16.106885319917442,
+       "n_questions": 55
+      },
+      "points_above_chance": 0.7262315608896053
+     },
+     "neither, key not longest": {
+      "share_of_misses": 35.90244597105654,
+      "accepted": {
+       "share": 24.491400862111508,
+       "lo": 18.444574993459923,
+       "hi": 31.559939205855105,
+       "weight": 38.09821382500368,
+       "n_questions": 92
+      },
+      "points_above_chance": -0.1414359029670689
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 40.87591240875913,
+     "all misses, answered without the data": {
+      "share_of_misses": 38.107370725080955,
+      "accepted": {
+       "share": 36.0391605548082,
+       "lo": 24.53578318069896,
+       "hi": 49.77030289071156,
+       "weight": 40.43799019607843,
+       "n_questions": 54
+      },
+      "points_above_chance": 3.258404863418027
+     },
+     "all misses, not": {
+      "share_of_misses": 61.892629274919045,
+      "accepted": {
+       "share": 23.317887508429436,
+       "lo": 18.503958647075308,
+       "hi": 28.89885108190959,
+       "weight": 65.67793810506659,
+       "n_questions": 79
+      },
+      "points_above_chance": -0.8064064241396391
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 17.178353108797484,
+      "accepted": {
+       "share": 34.47000692798318,
+       "lo": 20.708764915315683,
+       "hi": 48.21931175477101,
+       "weight": 18.228968868249055,
+       "n_questions": 41
+      },
+      "points_above_chance": 1.2600617625715926
+     },
+     "neither, not": {
+      "share_of_misses": 33.90266744364322,
+      "accepted": {
+       "share": 22.428532317804404,
+       "lo": 16.31156644142372,
+       "hi": 29.220475315807466,
+       "weight": 35.97613027667207,
+       "n_questions": 69
+      },
+      "points_above_chance": -0.6752661046490565
+     }
+    },
+    "neither, selects its own no-data choice": {
+     "all": {
+      "share": 27.738261441759335,
+      "lo": 21.35486919723658,
+      "hi": 34.93966993309194,
+      "weight": 54.20509914492113,
+      "n_questions": 110
+     },
+     "where that choice is a distractor": {
+      "share": 24.32731151597143,
+      "lo": 16.550234474650207,
+      "hi": 32.38925869686754,
+      "weight": 35.97613027667207,
+      "n_questions": 69
+     }
+    },
+    "selects none": 1.3831202982661903,
+    "accepted, of those selecting": {
+     "share": 28.560658453552357,
+     "lo": 22.49066273841202,
+     "hi": 35.94558115964859,
+     "weight": 104.64821735711828,
+     "n_questions": 132
+    }
+   },
+   "Claude 3.5 Sonnet|code-free gpt-4o": {
+    "n_misses": 1610,
+    "misses_accepted": {
+     "share": 29.75908316334704,
+     "lo": 24.094080246118878,
+     "hi": 36.149716922798106,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 29.75908316334704,
+      "lo": 24.134150121843273,
+      "hi": 36.28527076431226,
+      "weight": 106.11592830114502,
+      "n_questions": 133
+     },
+     "points_above_chance": 3.6862374287658466
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.631844809164543,
+      "accepted": {
+       "share": 73.69800164159133,
+       "lo": 60.117214194715515,
+       "hi": 85.0970088102954,
+       "weight": 11.282080814782054,
+       "n_questions": 46
+      },
+      "points_above_chance": 4.010326934589945
+     },
+     "other": {
+      "share_of_misses": 38.28713463839476,
+      "accepted": {
+       "share": 16.645801945535457,
+       "lo": 10.829661526012105,
+       "hi": 23.25195174194293,
+       "weight": 40.62874834144184,
+       "n_questions": 99
+      },
+      "points_above_chance": -2.477522703280313
+     },
+     "neither": {
+      "share_of_misses": 51.081020552440705,
+      "accepted": {
+       "share": 30.44266780626567,
+       "lo": 22.635654110902077,
+       "hi": 38.721505938415866,
+       "weight": 54.20509914492113,
+       "n_questions": 110
+      },
+      "points_above_chance": 2.153433197456214
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.079004508769473,
+      "accepted": {
+       "share": 63.23729688458632,
+       "lo": 41.05081183330837,
+       "hi": 84.15700512417594,
+       "weight": 5.389632782937737,
+       "n_questions": 27
+      },
+      "points_above_chance": 1.504269991387514
+     },
+     "other": {
+      "share_of_misses": 22.315216382925623,
+      "accepted": {
+       "share": 17.27217341064694,
+       "lo": 9.217584535394874,
+       "hi": 26.981696474101543,
+       "weight": 23.67999901715072,
+       "n_questions": 75
+      },
+      "points_above_chance": -1.3357293871576035
+     },
+     "tied": {
+      "share_of_misses": 6.674926393751665,
+      "accepted": {
+       "share": 32.07631496742035,
+       "lo": 21.255695339362166,
+       "hi": 45.58953729401031,
+       "weight": 7.083160106147722,
+       "n_questions": 32
+      },
+      "points_above_chance": 0.36585891880122523
+     },
+     "none": {
+      "share_of_misses": 65.93085271455324,
+      "accepted": {
+       "share": 31.171847280378312,
+       "lo": 24.549935299199156,
+       "hi": 37.86376844697204,
+       "weight": 69.96313639490884,
+       "n_questions": 114
+      },
+      "points_above_chance": 3.15183790573471
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 16.888416371298216,
+      "accepted": {
+       "share": 83.97703068717281,
+       "lo": 70.81660123736764,
+       "hi": 95.08142510729682,
+       "weight": 6.15390314020345,
+       "n_questions": 22
+      },
+      "points_above_chance": 2.649189301793198
+     },
+     "other": {
+      "share_of_misses": 54.847375379666715,
+      "accepted": {
+       "share": 14.40364798670428,
+       "lo": 7.474457448712782,
+       "hi": 23.38108218178441,
+       "weight": 19.98561784362868,
+       "n_questions": 40
+      },
+      "points_above_chance": -1.545800305651778
+     },
+     "neither": {
+      "share_of_misses": 28.264208249035065,
+      "accepted": {
+       "share": 31.60847408425689,
+       "lo": 16.368980387339057,
+       "hi": 47.6757588256658,
+       "weight": 10.29908287876554,
+       "n_questions": 30
+      },
+      "points_above_chance": 0.49679724303602874
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 0.2984643976868951,
+     "accepted": {
+      "share": 65.64027370478983,
+      "lo": 0.0,
+      "hi": 100.0,
+      "weight": 0.31671826625386995,
+      "n_questions": 3
+     },
+     "points_above_chance": 0.09395267903550203
+    },
+    "contains a distractor": {
+     "share_of_misses": 1.5829197266157995,
+     "accepted": {
+      "share": 6.450985311208844,
+      "lo": 0.0,
+      "hi": 16.487186636418706,
+      "weight": 1.6797299621603026,
+      "n_questions": 13
+     },
+     "points_above_chance": -0.22742580833075962
+    },
+    "key longest": {
+     "questions": 28.710462287104626,
+     "neither, key longest": {
+      "share_of_misses": 15.178574581384163,
+      "accepted": {
+       "share": 36.80666844369638,
+       "lo": 22.89912709492422,
+       "hi": 50.683320221714055,
+       "weight": 16.106885319917442,
+       "n_questions": 55
+      },
+      "points_above_chance": 1.388092369583254
+     },
+     "neither, key not longest": {
+      "share_of_misses": 35.90244597105654,
+      "accepted": {
+       "share": 27.752141974429833,
+       "lo": 20.718668573806205,
+       "hi": 35.3952073327438,
+       "weight": 38.09821382500368,
+       "n_questions": 92
+      },
+      "points_above_chance": 0.7653408278729599
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 40.87591240875913,
+     "all misses, answered without the data": {
+      "share_of_misses": 38.107370725080955,
+      "accepted": {
+       "share": 42.243248511126716,
+       "lo": 32.12365629753286,
+       "hi": 54.06153543612036,
+       "weight": 40.43799019607843,
+       "n_questions": 54
+      },
+      "points_above_chance": 5.089651928769972
+     },
+     "all misses, not": {
+      "share_of_misses": 61.892629274919045,
+      "accepted": {
+       "share": 22.072566647981706,
+       "lo": 17.000896879513956,
+       "hi": 27.83506485418013,
+       "weight": 65.67793810506659,
+       "n_questions": 79
+      },
+      "points_above_chance": -1.4034145000041252
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 17.178353108797484,
+      "accepted": {
+       "share": 43.983033635747546,
+       "lo": 28.9262621210889,
+       "hi": 58.49119309538997,
+       "weight": 18.228968868249055,
+       "n_questions": 41
+      },
+      "points_above_chance": 2.525847658182238
+     },
+     "neither, not": {
+      "share_of_misses": 33.90266744364322,
+      "accepted": {
+       "share": 23.581815755972265,
+       "lo": 17.258421553331612,
+       "hi": 30.558164075335974,
+       "weight": 35.97613027667207,
+       "n_questions": 69
+      },
+      "points_above_chance": -0.37241446072602424
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free gemma-3-27b": {
+    "n_misses": 1610,
+    "misses_accepted": {
+     "share": 26.562091439402316,
+     "lo": 21.070179109344483,
+     "hi": 33.26139406951154,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 26.562091439402316,
+      "lo": 20.97963144642132,
+      "hi": 32.97720499227946,
+      "weight": 106.11592830114502,
+      "n_questions": 133
+     },
+     "points_above_chance": 1.209947322506926
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.631844809164543,
+      "accepted": {
+       "share": 67.90314338878355,
+       "lo": 52.679539531142915,
+       "hi": 80.81127573451415,
+       "weight": 11.282080814782054,
+       "n_questions": 46
+      },
+      "points_above_chance": 3.533114824236776
+     },
+     "other": {
+      "share_of_misses": 38.28713463839476,
+      "accepted": {
+       "share": 15.16315410598359,
+       "lo": 9.993065248526966,
+       "hi": 21.229559775891765,
+       "weight": 40.62874834144184,
+       "n_questions": 99
+      },
+      "points_above_chance": -2.917217053295899
+     },
+     "neither": {
+      "share_of_misses": 51.081020552440705,
+      "accepted": {
+       "share": 26.5014231105262,
+       "lo": 18.75923903400228,
+       "hi": 35.86219634245899,
+       "weight": 54.20509914492113,
+       "n_questions": 110
+      },
+      "points_above_chance": 0.5940495515660484
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.079004508769473,
+      "accepted": {
+       "share": 59.89159199721081,
+       "lo": 36.47107224189968,
+       "hi": 80.86661307954576,
+       "weight": 5.389632782937737,
+       "n_questions": 27
+      },
+      "points_above_chance": 1.3726486720952948
+     },
+     "other": {
+      "share_of_misses": 22.315216382925623,
+      "accepted": {
+       "share": 14.339488316523967,
+       "lo": 7.583604516574943,
+       "hi": 21.910012280786205,
+       "weight": 23.67999901715072,
+       "n_questions": 75
+      },
+      "points_above_chance": -1.8426343517301913
+     },
+     "tied": {
+      "share_of_misses": 6.674926393751665,
+      "accepted": {
+       "share": 30.807302656238267,
+       "lo": 19.03844361034626,
+       "hi": 45.8833201202702,
+       "weight": 7.083160106147722,
+       "n_questions": 32
+      },
+      "points_above_chance": 0.3002485729853473
+     },
+     "none": {
+      "share_of_misses": 65.93085271455324,
+      "accepted": {
+       "share": 27.701662282941783,
+       "lo": 21.09989237677179,
+       "hi": 35.12982294017375,
+       "weight": 69.96313639490884,
+       "n_questions": 114
+      },
+      "points_above_chance": 1.379684429156475
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 16.888416371298216,
+      "accepted": {
+       "share": 76.28338694649723,
+       "lo": 57.80028768952405,
+       "hi": 90.59204296008234,
+       "weight": 6.15390314020345,
+       "n_questions": 22
+      },
+      "points_above_chance": 2.3035985107322476
+     },
+     "other": {
+      "share_of_misses": 54.847375379666715,
+      "accepted": {
+       "share": 14.752320325193304,
+       "lo": 7.89013225216593,
+       "hi": 23.761579508713883,
+       "weight": 19.98561784362868,
+       "n_questions": 40
+      },
+      "points_above_chance": -1.4949358376978656
+     },
+     "neither": {
+      "share_of_misses": 28.264208249035065,
+      "accepted": {
+       "share": 30.189767639823806,
+       "lo": 17.30639491003923,
+       "hi": 45.336823213632464,
+       "weight": 10.29908287876554,
+       "n_questions": 30
+      },
+      "points_above_chance": 0.3901448689348963
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 0.2984643976868951,
+     "accepted": {
+      "share": 49.022482893450636,
+      "lo": 0.0,
+      "hi": 66.66666666666666,
+      "weight": 0.31671826625386995,
+      "n_questions": 3
+     },
+     "points_above_chance": 0.05553546812501413
+    },
+    "contains a distractor": {
+     "share_of_misses": 1.5829197266157995,
+     "accepted": {
+      "share": 4.884317449915268,
+      "lo": 0.0,
+      "hi": 15.006310698354158,
+      "weight": 1.6797299621603026,
+      "n_questions": 13
+     },
+     "points_above_chance": -0.24663441378600356
+    },
+    "key longest": {
+     "questions": 28.710462287104626,
+     "neither, key longest": {
+      "share_of_misses": 15.178574581384163,
+      "accepted": {
+       "share": 35.686805221273964,
+       "lo": 18.812704735929223,
+       "hi": 50.66528013158139,
+       "weight": 16.106885319917442,
+       "n_questions": 55
+      },
+      "points_above_chance": 1.256431723615728
+     },
+     "neither, key not longest": {
+      "share_of_misses": 35.90244597105654,
+      "accepted": {
+       "share": 22.61809417135326,
+       "lo": 16.18386770499022,
+       "hi": 30.329564348441583,
+       "weight": 38.09821382500368,
+       "n_questions": 92
+      },
+      "points_above_chance": -0.6623821720496795
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 40.87591240875913,
+     "all misses, answered without the data": {
+      "share_of_misses": 38.107370725080955,
+      "accepted": {
+       "share": 36.00262391752503,
+       "lo": 23.91408822258527,
+       "hi": 49.50603826652724,
+       "weight": 40.43799019607843,
+       "n_questions": 54
+      },
+      "points_above_chance": 3.247620424146096
+     },
+     "all misses, not": {
+      "share_of_misses": 61.892629274919045,
+      "accepted": {
+       "share": 20.749543560914088,
+       "lo": 16.092382062312645,
+       "hi": 25.65083573589922,
+       "weight": 65.67793810506659,
+       "n_questions": 79
+      },
+      "points_above_chance": -2.0376731016391703
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 17.178353108797484,
+      "accepted": {
+       "share": 34.85895999107405,
+       "lo": 16.8209922684349,
+       "hi": 54.55817312687751,
+       "weight": 18.228968868249055,
+       "n_questions": 41
+      },
+      "points_above_chance": 1.3118151441649784
+     },
+     "neither, not": {
+      "share_of_misses": 33.90266744364322,
+      "accepted": {
+       "share": 22.266690846685755,
+       "lo": 16.06806084585793,
+       "hi": 28.49669189878523,
+       "weight": 35.97613027667207,
+       "n_questions": 69
+      },
+      "points_above_chance": -0.7177655925989297
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free Qwen2.5-72B": {
+    "n_misses": 1610,
+    "misses_accepted": {
+     "share": 31.68633779786888,
+     "lo": 25.24293965690204,
+     "hi": 38.66597479212134,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 31.68633779786888,
+      "lo": 25.32139784870915,
+      "hi": 38.66884463146034,
+      "weight": 106.11592830114502,
+      "n_questions": 133
+     },
+     "points_above_chance": 5.179028776320363
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.631844809164543,
+      "accepted": {
+       "share": 70.1558450043762,
+       "lo": 55.901189840299345,
+       "hi": 82.49764182845959,
+       "weight": 11.282080814782054,
+       "n_questions": 46
+      },
+      "points_above_chance": 3.7186269532784295
+     },
+     "other": {
+      "share_of_misses": 38.28713463839476,
+      "accepted": {
+       "share": 18.573978106436446,
+       "lo": 12.42115558981385,
+       "hi": 25.34605118559194,
+       "weight": 40.62874834144184,
+       "n_questions": 99
+      },
+      "points_above_chance": -1.9057023821181691
+     },
+     "neither": {
+      "share_of_misses": 51.081020552440705,
+      "accepted": {
+       "share": 33.50761798025681,
+       "lo": 25.43860889457586,
+       "hi": 41.94528629513431,
+       "weight": 54.20509914492113,
+       "n_questions": 110
+      },
+      "points_above_chance": 3.3661042051601022
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.079004508769473,
+      "accepted": {
+       "share": 64.5685021616977,
+       "lo": 43.18717473784238,
+       "hi": 84.72261182745703,
+       "weight": 5.389632782937737,
+       "n_questions": 27
+      },
+      "points_above_chance": 1.5566401198717417
+     },
+     "other": {
+      "share_of_misses": 22.315216382925623,
+      "accepted": {
+       "share": 16.68214344785451,
+       "lo": 9.123758592997454,
+       "hi": 25.435808664357747,
+       "weight": 23.67999901715072,
+       "n_questions": 75
+      },
+      "points_above_chance": -1.437714123938729
+     },
+     "tied": {
+      "share_of_misses": 6.674926393751665,
+      "accepted": {
+       "share": 41.75560658402552,
+       "lo": 28.0911531113758,
+       "hi": 55.20762758350608,
+       "weight": 7.083160106147722,
+       "n_questions": 32
+      },
+      "points_above_chance": 0.8662966723377787
+     },
+     "none": {
+      "share_of_misses": 65.93085271455324,
+      "accepted": {
+       "share": 33.21220240270133,
+       "lo": 26.863082972433883,
+       "hi": 40.28297050013059,
+       "weight": 69.96313639490884,
+       "n_questions": 114
+      },
+      "points_above_chance": 4.193806108049571
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 16.888416371298216,
+      "accepted": {
+       "share": 76.31724079966763,
+       "lo": 57.809505351093115,
+       "hi": 90.42963432199657,
+       "weight": 6.15390314020345,
+       "n_questions": 22
+      },
+      "points_above_chance": 2.3051191919974547
+     },
+     "other": {
+      "share_of_misses": 54.847375379666715,
+      "accepted": {
+       "share": 19.331653644121634,
+       "lo": 11.39142733518651,
+       "hi": 27.77732085248218,
+       "weight": 19.98561784362868,
+       "n_questions": 40
+      },
+      "points_above_chance": -0.8269007596635786
+     },
+     "neither": {
+      "share_of_misses": 28.264208249035065,
+      "accepted": {
+       "share": 43.90617057066937,
+       "lo": 25.035913896796934,
+       "hi": 63.0731695808489,
+       "weight": 10.29908287876554,
+       "n_questions": 30
+      },
+      "points_above_chance": 1.4212862600540281
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 0.2984643976868951,
+     "accepted": {
+      "share": 81.42717497556208,
+      "lo": 0.0,
+      "hi": 100.0,
+      "weight": 0.31671826625386995,
+      "n_questions": 3
+     },
+     "points_above_chance": 0.13044902940046552
+    },
+    "contains a distractor": {
+     "share_of_misses": 1.5829197266157995,
+     "accepted": {
+      "share": 4.884317449915268,
+      "lo": 0.0,
+      "hi": 15.137176825778212,
+      "weight": 1.6797299621603026,
+      "n_questions": 13
+     },
+     "points_above_chance": -0.24663441378600356
+    },
+    "key longest": {
+     "questions": 28.710462287104626,
+     "neither, key longest": {
+      "share_of_misses": 15.178574581384163,
+      "accepted": {
+       "share": 35.61953733352912,
+       "lo": 22.36644246359795,
+       "hi": 50.02426905089643,
+       "weight": 16.106885319917442,
+       "n_questions": 55
+      },
+      "points_above_chance": 1.248523138552813
+     },
+     "neither, key not longest": {
+      "share_of_misses": 35.90244597105654,
+      "accepted": {
+       "share": 32.614756100056375,
+       "lo": 24.031023827502644,
+       "hi": 41.641638664447825,
+       "weight": 38.09821382500368,
+       "n_questions": 92
+      },
+      "points_above_chance": 2.117581066607289
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 40.87591240875913,
+     "all misses, answered without the data": {
+      "share_of_misses": 38.107370725080955,
+      "accepted": {
+       "share": 41.4010290443936,
+       "lo": 30.44825718290809,
+       "hi": 53.75703683996473,
+       "weight": 40.43799019607843,
+       "n_questions": 54
+      },
+      "points_above_chance": 4.841055851845156
+     },
+     "all misses, not": {
+      "share_of_misses": 61.892629274919045,
+      "accepted": {
+       "share": 25.70499001626745,
+       "lo": 19.49530922771435,
+       "hi": 33.15457080812209,
+       "weight": 65.67793810506659,
+       "n_questions": 79
+      },
+      "points_above_chance": 0.3379729244752069
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 17.178353108797484,
+      "accepted": {
+       "share": 44.318181014023686,
+       "lo": 27.970118067807512,
+       "hi": 60.07297096699561,
+       "weight": 18.228968868249055,
+       "n_questions": 41
+      },
+      "points_above_chance": 2.570441753984216
+     },
+     "neither, not": {
+      "share_of_misses": 33.90266744364322,
+      "accepted": {
+       "share": 28.029946661099864,
+       "lo": 20.309135928582318,
+       "hi": 37.094242668156895,
+       "weight": 35.97613027667207,
+       "n_questions": 69
+      },
+      "points_above_chance": 0.795662451175886
+     }
+    }
+   },
+   "Claude 3.5 Sonnet|code-free Llama-3.3-70B": {
+    "n_misses": 1610,
+    "misses_accepted": {
+     "share": 28.169201860821254,
+     "lo": 21.83485066231979,
+     "hi": 35.3197802144892,
+     "weight": 106.11592830114502,
+     "n_questions": 133
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 28.169201860821254,
+      "lo": 22.036313188488347,
+      "hi": 35.417196624324944,
+      "weight": 106.11592830114502,
+      "n_questions": 133
+     },
+     "points_above_chance": 2.4547649447792947
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.631844809164543,
+      "accepted": {
+       "share": 67.6889170805809,
+       "lo": 49.78943458800625,
+       "hi": 82.71362766021079,
+       "weight": 11.282080814782054,
+       "n_questions": 46
+      },
+      "points_above_chance": 3.515473083201779
+     },
+     "other": {
+      "share_of_misses": 38.28713463839476,
+      "accepted": {
+       "share": 16.97770598499385,
+       "lo": 11.532666988507389,
+       "hi": 23.36094308781,
+       "weight": 40.62874834144184,
+       "n_questions": 99
+      },
+      "points_above_chance": -2.3790931726769333
+     },
+     "neither": {
+      "share_of_misses": 51.081020552440705,
+      "accepted": {
+       "share": 28.332135768444267,
+       "lo": 20.20598570662705,
+       "hi": 37.35941729635393,
+       "weight": 54.20509914492113,
+       "n_questions": 110
+      },
+      "points_above_chance": 1.3183850342544496
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.079004508769473,
+      "accepted": {
+       "share": 62.227733396733555,
+       "lo": 39.29775277540284,
+       "hi": 82.97881052236743,
+       "weight": 5.389632782937737,
+       "n_questions": 27
+      },
+      "points_above_chance": 1.4645533748138775
+     },
+     "other": {
+      "share_of_misses": 22.315216382925623,
+      "accepted": {
+       "share": 14.518952742504474,
+       "lo": 8.243923184359954,
+       "hi": 22.3535224119088,
+       "weight": 23.67999901715072,
+       "n_questions": 75
+      },
+      "points_above_chance": -1.8116145164686441
+     },
+     "tied": {
+      "share_of_misses": 6.674926393751665,
+      "accepted": {
+       "share": 31.443749263929064,
+       "lo": 19.051840123131104,
+       "hi": 47.2406154326377,
+       "weight": 7.083160106147722,
+       "n_questions": 32
+      },
+      "points_above_chance": 0.3331540709509569
+     },
+     "none": {
+      "share_of_misses": 65.93085271455324,
+      "accepted": {
+       "share": 29.834089544130215,
+       "lo": 22.636257154179795,
+       "hi": 37.616186730624655,
+       "weight": 69.96313639490884,
+       "n_questions": 114
+      },
+      "points_above_chance": 2.4686720154831043
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 16.888416371298216,
+      "accepted": {
+       "share": 73.84463182599588,
+       "lo": 47.21839440375031,
+       "hi": 95.66474335187934,
+       "weight": 6.15390314020345,
+       "n_questions": 22
+      },
+      "points_above_chance": 2.1940520669786676
+     },
+     "other": {
+      "share_of_misses": 54.847375379666715,
+      "accepted": {
+       "share": 18.373323769885015,
+       "lo": 10.159942653549157,
+       "hi": 28.208224199697856,
+       "weight": 19.98561784362868,
+       "n_questions": 40
+      },
+      "points_above_chance": -0.9667023263396792
+     },
+     "neither": {
+      "share_of_misses": 28.264208249035065,
+      "accepted": {
+       "share": 32.94339828807957,
+       "lo": 20.55534054003753,
+       "hi": 46.46768510797817,
+       "weight": 10.29908287876554,
+       "n_questions": 30
+      },
+      "points_above_chance": 0.597151221226101
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 0.2984643976868951,
+     "accepted": {
+      "share": 73.53372434017597,
+      "lo": 0.0,
+      "hi": 100.0,
+      "weight": 0.31671826625386995,
+      "n_questions": 3
+     },
+     "points_above_chance": 0.11220085421798377
+    },
+    "contains a distractor": {
+     "share_of_misses": 1.5829197266157995,
+     "accepted": {
+      "share": 9.584321033795996,
+      "lo": 0.0,
+      "hi": 22.874087571495146,
+      "weight": 1.6797299621603026,
+      "n_questions": 13
+     },
+     "points_above_chance": -0.1890085974202717
+    },
+    "key longest": {
+     "questions": 28.710462287104626,
+     "neither, key longest": {
+      "share_of_misses": 15.178574581384163,
+      "accepted": {
+       "share": 36.860255039582256,
+       "lo": 22.367841783688714,
+       "hi": 50.797098808930635,
+       "weight": 16.106885319917442,
+       "n_questions": 55
+      },
+      "points_above_chance": 1.3943924656023678
+     },
+     "neither, key not longest": {
+      "share_of_misses": 35.90244597105654,
+      "accepted": {
+       "share": 24.726679624863916,
+       "lo": 17.30669999329056,
+       "hi": 33.15393779343551,
+       "weight": 38.09821382500368,
+       "n_questions": 92
+      },
+      "points_above_chance": -0.07600743134791803
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 40.87591240875913,
+     "all misses, answered without the data": {
+      "share_of_misses": 38.107370725080955,
+      "accepted": {
+       "share": 37.320957451299456,
+       "lo": 25.83876987570566,
+       "hi": 49.904912546004354,
+       "weight": 40.43799019607843,
+       "n_questions": 54
+      },
+      "points_above_chance": 3.63675004833538
+     },
+     "all misses, not": {
+      "share_of_misses": 61.892629274919045,
+      "accepted": {
+       "share": 22.53445428009422,
+       "lo": 16.992442156805026,
+       "hi": 28.706633000380958,
+       "weight": 65.67793810506659,
+       "n_questions": 79
+      },
+      "points_above_chance": -1.181985103556085
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 17.178353108797484,
+      "accepted": {
+       "share": 38.19850971698587,
+       "lo": 22.499877979223616,
+       "hi": 53.543107669836,
+       "weight": 18.228968868249055,
+       "n_questions": 41
+      },
+      "points_above_chance": 1.756169509038088
+     },
+     "neither, not": {
+      "share_of_misses": 33.90266744364322,
+      "accepted": {
+       "share": 23.33288148046737,
+       "lo": 16.812697120671125,
+       "hi": 30.19397797532957,
+       "weight": 35.97613027667207,
+       "n_questions": 69
+      },
+      "points_above_chance": -0.4377844747836386
+     }
+    }
+   },
+   "gpt-4o|published": {
+    "n_misses": 1647,
+    "misses_accepted": {
+     "share": 34.58951311446164,
+     "lo": 28.071602427704203,
+     "hi": 41.744262510564035,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 34.58951311446164,
+      "lo": 28.210596602864587,
+      "hi": 41.551308717668434,
+      "weight": 112.45141693531787,
+      "n_questions": 130
+     },
+     "points_above_chance": 8.231712499549808
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.627307347148873,
+      "accepted": {
+       "share": 71.04497139096739,
+       "lo": 56.66820083731259,
+       "hi": 81.46454570239253,
+       "weight": 11.950557693940047,
+       "n_questions": 55
+      },
+      "points_above_chance": 4.200481581095991
+     },
+     "other": {
+      "share_of_misses": 23.176825888218985,
+      "accepted": {
+       "share": 27.806375058927287,
+       "lo": 19.447293167685842,
+       "hi": 36.57478466031054,
+       "weight": 26.06266911193382,
+       "n_questions": 77
+      },
+      "points_above_chance": 0.5583330119450814
+     },
+     "neither": {
+      "share_of_misses": 66.19586676463213,
+      "accepted": {
+       "share": 31.111777099382877,
+       "lo": 25.19382823030387,
+       "hi": 37.84863898655126,
+       "weight": 74.438190129444,
+       "n_questions": 126
+      },
+      "points_above_chance": 3.4728979065087353
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.488829395997534,
+      "accepted": {
+       "share": 75.01989534171706,
+       "lo": 58.471770386046636,
+       "hi": 87.81881238015198,
+       "weight": 6.172266428961476,
+       "n_questions": 36
+      },
+      "points_above_chance": 2.356764280899594
+     },
+     "other": {
+      "share_of_misses": 12.854853704790564,
+      "accepted": {
+       "share": 30.63477901065085,
+       "lo": 19.025079632105125,
+       "hi": 42.65965507378165,
+       "weight": 14.455465135999193,
+       "n_questions": 53
+      },
+      "points_above_chance": 0.6217813094467433
+     },
+     "tied": {
+      "share_of_misses": 5.731450123742201,
+      "accepted": {
+       "share": 30.615116938031765,
+       "lo": 19.11212750839971,
+       "hi": 44.02000976378831,
+       "weight": 6.445096875089135,
+       "n_questions": 34
+      },
+      "points_above_chance": 0.2762593330577756
+     },
+     "none": {
+      "share_of_misses": 75.92486677546971,
+      "accepted": {
+       "share": 32.63628099229142,
+       "lo": 26.789233232821765,
+       "hi": 39.18661504948031,
+       "weight": 85.37858849526806,
+       "n_questions": 124
+      },
+      "points_above_chance": 4.9769075761456945
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 19.224724606089037,
+      "accepted": {
+       "share": 72.48737333058665,
+       "lo": 52.39627415437101,
+       "hi": 84.92796350571696,
+       "weight": 7.568130446265121,
+       "n_questions": 26
+      },
+      "points_above_chance": 2.743439968827261
+     },
+     "other": {
+      "share_of_misses": 33.37999093872213,
+      "accepted": {
+       "share": 23.164558308898687,
+       "lo": 13.966913147058033,
+       "hi": 34.33994589416936,
+       "weight": 13.140584892403778,
+       "n_questions": 34
+      },
+      "points_above_chance": -0.18411280425170956
+     },
+     "neither": {
+      "share_of_misses": 47.39528445518883,
+      "accepted": {
+       "share": 27.162892783240952,
+       "lo": 18.992069884025483,
+       "hi": 37.86697680802381,
+       "weight": 18.657936727015674,
+       "n_questions": 43
+      },
+      "points_above_chance": 0.30805432593151494
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 1.1033554758233373,
+     "accepted": {
+      "share": 100.0,
+      "lo": 99.99999999999999,
+      "hi": 100.00000000000001,
+      "weight": 1.2407388663967611,
+      "n_questions": 4
+     },
+     "points_above_chance": 0.7103466792347869
+    },
+    "contains a distractor": {
+     "share_of_misses": 0.5652222309213143,
+     "accepted": {
+      "share": 9.833222141155435,
+      "lo": 0.0,
+      "hi": 37.61832969406767,
+      "weight": 0.6356004075044323,
+      "n_questions": 8
+     },
+     "points_above_chance": -0.07358786402756341
+    },
+    "key longest": {
+     "questions": 27.353689567430024,
+     "neither, key longest": {
+      "share_of_misses": 19.15451363796166,
+      "accepted": {
+       "share": 33.146642111219315,
+       "lo": 23.706400161800477,
+       "hi": 43.16474054874173,
+       "weight": 21.53952199295659,
+       "n_questions": 64
+      },
+      "points_above_chance": 1.3395021139187382
+     },
+     "neither, key not longest": {
+      "share_of_misses": 47.04135312667049,
+      "accepted": {
+       "share": 30.28321144321059,
+       "lo": 24.481383359087708,
+       "hi": 36.824560543683496,
+       "weight": 52.89866813648741,
+       "n_questions": 105
+      },
+      "points_above_chance": 2.133395792589997
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 32.82442748091603,
+     "all misses, answered without the data": {
+      "share_of_misses": 31.034042690528302,
+      "accepted": {
+       "share": 52.28490808873908,
+       "lo": 40.85776537408535,
+       "hi": 63.150525552944664,
+       "weight": 34.89822073781052,
+       "n_questions": 43
+      },
+      "points_above_chance": 7.268662177799145
+     },
+     "all misses, not": {
+      "share_of_misses": 68.9659573094717,
+      "accepted": {
+       "share": 26.626749100424462,
+       "lo": 21.4705679164937,
+       "hi": 32.93647678468684,
+       "weight": 77.55319619750735,
+       "n_questions": 87
+      },
+      "points_above_chance": 0.9630503217506622
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 16.039828163412732,
+      "accepted": {
+       "share": 52.08829990756727,
+       "lo": 38.099587426819625,
+       "hi": 64.83006311611453,
+       "weight": 18.03701404374779,
+       "n_questions": 42
+      },
+      "points_above_chance": 3.7297102736949825
+     },
+     "neither, not": {
+      "share_of_misses": 50.15603860121941,
+      "accepted": {
+       "share": 24.403515627931554,
+       "lo": 19.98360230457258,
+       "hi": 29.390246240994195,
+       "weight": 56.40117608569621,
+       "n_questions": 84
+      },
+      "points_above_chance": -0.25681236718624745
+     }
+    },
+    "neither, selects its own no-data choice": {
+     "all": {
+      "share": 34.022083181373446,
+      "lo": 28.549983381835208,
+      "hi": 39.823014908152295,
+      "weight": 74.438190129444,
+      "n_questions": 126
+     },
+     "where that choice is a distractor": {
+      "share": 28.108147769933524,
+      "lo": 21.696172020748115,
+      "hi": 34.00137412186622,
+      "weight": 56.40117608569621,
+      "n_questions": 84
+     }
+    },
+    "selects none": 9.865736620572932,
+    "accepted, of those selecting": {
+     "share": 38.37554312598578,
+     "lo": 31.17766794809411,
+     "hi": 45.95913900572864,
+     "weight": 101.35725631437705,
+     "n_questions": 130
+    }
+   },
+   "gpt-4o|code-free gpt-4o": {
+    "n_misses": 1647,
+    "misses_accepted": {
+     "share": 36.17255693189763,
+     "lo": 30.038752405092318,
+     "hi": 42.88444090420029,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 36.17255693189763,
+      "lo": 30.174677275970474,
+      "hi": 42.910436821463605,
+      "weight": 112.45141693531787,
+      "n_questions": 130
+     },
+     "points_above_chance": 9.590609601392341
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.627307347148873,
+      "accepted": {
+       "share": 79.61171683566938,
+       "lo": 68.3874998050989,
+       "hi": 88.06883457989224,
+       "weight": 11.950557693940047,
+       "n_questions": 55
+      },
+      "points_above_chance": 4.981988342059419
+     },
+     "other": {
+      "share_of_misses": 23.176825888218985,
+      "accepted": {
+       "share": 27.077757680937925,
+       "lo": 18.461933870658328,
+       "hi": 36.144427032961154,
+       "weight": 26.06266911193382,
+       "n_questions": 77
+      },
+      "points_above_chance": 0.41337336590125334
+     },
+     "neither": {
+      "share_of_misses": 66.19586676463213,
+      "accepted": {
+       "share": 32.38300424934919,
+       "lo": 26.73247513699812,
+       "hi": 38.41970307990023,
+       "weight": 74.438190129444,
+       "n_questions": 126
+      },
+      "points_above_chance": 4.1952478934316675
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.488829395997534,
+      "accepted": {
+       "share": 75.74301774822304,
+       "lo": 59.47680933943774,
+       "hi": 88.72884898745697,
+       "weight": 6.172266428961476,
+       "n_questions": 36
+      },
+      "points_above_chance": 2.39083530497369
+     },
+     "other": {
+      "share_of_misses": 12.854853704790564,
+      "accepted": {
+       "share": 31.373426563339557,
+       "lo": 18.910945254015413,
+       "hi": 44.275069771742,
+       "weight": 14.455465135999193,
+       "n_questions": 53
+      },
+      "points_above_chance": 0.7032888968183677
+     },
+     "tied": {
+      "share_of_misses": 5.731450123742201,
+      "accepted": {
+       "share": 29.498631051889028,
+       "lo": 16.72192016408886,
+       "hi": 46.113109014588915,
+       "weight": 6.445096875089135,
+       "n_questions": 34
+      },
+      "points_above_chance": 0.22132910637182374
+     },
+     "none": {
+      "share_of_misses": 75.92486677546971,
+      "accepted": {
+       "share": 34.62823922134164,
+       "lo": 29.66877145491827,
+       "hi": 40.464767381852916,
+       "weight": 85.37858849526806,
+       "n_questions": 124
+      },
+      "points_above_chance": 6.2751562932284575
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 19.224724606089037,
+      "accepted": {
+       "share": 86.85456688714787,
+       "lo": 75.95727781333194,
+       "hi": 94.5708682082922,
+       "weight": 7.568130446265121,
+       "n_questions": 26
+      },
+      "points_above_chance": 3.573461304573787
+     },
+     "other": {
+      "share_of_misses": 33.37999093872213,
+      "accepted": {
+       "share": 21.967891644981258,
+       "lo": 11.648447968050247,
+       "hi": 32.53732307935575,
+       "weight": 13.140584892403778,
+       "n_questions": 34
+      },
+      "points_above_chance": -0.3041502079548897
+     },
+     "neither": {
+      "share_of_misses": 47.39528445518883,
+      "accepted": {
+       "share": 37.29542258152172,
+       "lo": 26.939848641282857,
+       "hi": 48.17885666727065,
+       "weight": 18.657936727015674,
+       "n_questions": 43
+      },
+      "points_above_chance": 1.7512001263965788
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 1.1033554758233373,
+     "accepted": {
+      "share": 100.0,
+      "lo": 99.99999999999999,
+      "hi": 100.00000000000001,
+      "weight": 1.2407388663967611,
+      "n_questions": 4
+     },
+     "points_above_chance": 0.7103466792347869
+    },
+    "contains a distractor": {
+     "share_of_misses": 0.5652222309213143,
+     "accepted": {
+      "share": 9.833222141155435,
+      "lo": 0.0,
+      "hi": 36.96967619391702,
+      "weight": 0.6356004075044323,
+      "n_questions": 8
+     },
+     "points_above_chance": -0.07358786402756341
+    },
+    "key longest": {
+     "questions": 27.353689567430024,
+     "neither, key longest": {
+      "share_of_misses": 19.15451363796166,
+      "accepted": {
+       "share": 32.41068077518367,
+       "lo": 24.099630671699238,
+       "hi": 41.77963527312065,
+       "weight": 21.53952199295659,
+       "n_questions": 64
+      },
+      "points_above_chance": 1.2184925308385444
+     },
+     "neither, key not longest": {
+      "share_of_misses": 47.04135312667049,
+      "accepted": {
+       "share": 32.37173479478822,
+       "lo": 26.42920704264101,
+       "hi": 38.981886307749384,
+       "weight": 52.89866813648741,
+       "n_questions": 105
+      },
+      "points_above_chance": 2.976755362593122
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 32.82442748091603,
+     "all misses, answered without the data": {
+      "share_of_misses": 31.034042690528302,
+      "accepted": {
+       "share": 54.60773757704943,
+       "lo": 43.391459148338896,
+       "hi": 65.26975556212446,
+       "weight": 34.89822073781052,
+       "n_questions": 43
+      },
+      "points_above_chance": 7.88746077489342
+     },
+     "all misses, not": {
+      "share_of_misses": 68.9659573094717,
+      "accepted": {
+       "share": 27.876896210739663,
+       "lo": 22.621487525096807,
+       "hi": 33.88678609490069,
+       "weight": 77.55319619750735,
+       "n_questions": 87
+      },
+      "points_above_chance": 1.7031488264989199
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 16.039828163412732,
+      "accepted": {
+       "share": 53.79756713583276,
+       "lo": 41.259264100789,
+       "hi": 66.08776728049291,
+       "weight": 18.03701404374779,
+       "n_questions": 42
+      },
+      "points_above_chance": 3.965054372937294
+     },
+     "neither, not": {
+      "share_of_misses": 50.15603860121941,
+      "accepted": {
+       "share": 25.534658198242973,
+       "lo": 20.557209014953248,
+       "hi": 31.069726211671743,
+       "weight": 56.40117608569621,
+       "n_questions": 84
+      },
+      "points_above_chance": 0.23019352049437364
+     }
+    }
+   },
+   "gpt-4o|code-free gemma-3-27b": {
+    "n_misses": 1647,
+    "misses_accepted": {
+     "share": 32.32267662324028,
+     "lo": 26.28970995094878,
+     "hi": 39.18341146565657,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 32.32267662324028,
+      "lo": 26.28080590984104,
+      "hi": 39.11954829664217,
+      "weight": 112.45141693531787,
+      "n_questions": 130
+     },
+     "points_above_chance": 6.2858424583396815
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.627307347148873,
+      "accepted": {
+       "share": 74.29028295371316,
+       "lo": 61.20891050721623,
+       "hi": 84.6967465363274,
+       "weight": 11.950557693940047,
+       "n_questions": 55
+      },
+      "points_above_chance": 4.496537177015104
+     },
+     "other": {
+      "share_of_misses": 23.176825888218985,
+      "accepted": {
+       "share": 25.430485615788704,
+       "lo": 16.908488397484117,
+       "hi": 34.22990500981774,
+       "weight": 26.06266911193382,
+       "n_questions": 77
+      },
+      "points_above_chance": 0.08564583329578718
+     },
+     "neither": {
+      "share_of_misses": 66.19586676463213,
+      "accepted": {
+       "share": 27.99818396046001,
+       "lo": 22.58610614548215,
+       "hi": 34.31225984412864,
+       "weight": 74.438190129444,
+       "n_questions": 126
+      },
+      "points_above_chance": 1.7036594480287908
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.488829395997534,
+      "accepted": {
+       "share": 75.59675416933057,
+       "lo": 59.19671313448762,
+       "hi": 88.96311459981618,
+       "weight": 6.172266428961476,
+       "n_questions": 36
+      },
+      "points_above_chance": 2.383943871555539
+     },
+     "other": {
+      "share_of_misses": 12.854853704790564,
+      "accepted": {
+       "share": 28.725207462480583,
+       "lo": 16.980173042480622,
+       "hi": 40.68921367794525,
+       "weight": 14.455465135999193,
+       "n_questions": 53
+      },
+      "points_above_chance": 0.41106569922329855
+     },
+     "tied": {
+      "share_of_misses": 5.731450123742201,
+      "accepted": {
+       "share": 27.987258396034115,
+       "lo": 15.973638032705022,
+       "hi": 44.758441547056826,
+       "weight": 6.445096875089135,
+       "n_questions": 34
+      },
+      "points_above_chance": 0.14697076147605537
+     },
+     "none": {
+      "share_of_misses": 75.92486677546971,
+      "accepted": {
+       "share": 30.130629894887345,
+       "lo": 25.027455199546143,
+       "hi": 35.961677769625716,
+       "weight": 85.37858849526806,
+       "n_questions": 124
+      },
+      "points_above_chance": 3.3438621260847885
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 19.224724606089037,
+      "accepted": {
+       "share": 79.30504462492675,
+       "lo": 62.960981215429555,
+       "hi": 92.56821360966977,
+       "weight": 7.568130446265121,
+       "n_questions": 26
+      },
+      "points_above_chance": 3.137310393982398
+     },
+     "other": {
+      "share_of_misses": 33.37999093872213,
+      "accepted": {
+       "share": 21.613944851558795,
+       "lo": 10.936718734691931,
+       "hi": 33.88681964801915,
+       "weight": 13.140584892403778,
+       "n_questions": 34
+      },
+      "points_above_chance": -0.3396545429652867
+     },
+     "neither": {
+      "share_of_misses": 47.39528445518883,
+      "accepted": {
+       "share": 33.41275623357713,
+       "lo": 24.078585135141683,
+       "hi": 43.809416510890934,
+       "weight": 18.657936727015674,
+       "n_questions": 43
+      },
+      "points_above_chance": 1.1982036145487684
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 1.1033554758233373,
+     "accepted": {
+      "share": 94.62685755462196,
+      "lo": 66.66666666666667,
+      "hi": 100.0,
+      "weight": 1.2407388663967611,
+      "n_questions": 4
+     },
+     "points_above_chance": 0.6594560939930566
+    },
+    "contains a distractor": {
+     "share_of_misses": 0.5652222309213143,
+     "accepted": {
+      "share": 9.833222141155435,
+      "lo": 0.0,
+      "hi": 36.840566304012334,
+      "weight": 0.6356004075044323,
+      "n_questions": 8
+     },
+     "points_above_chance": -0.07358786402756341
+    },
+    "key longest": {
+     "questions": 27.353689567430024,
+     "neither, key longest": {
+      "share_of_misses": 19.15451363796166,
+      "accepted": {
+       "share": 32.3192347071068,
+       "lo": 21.4310009519483,
+       "hi": 43.13246099679725,
+       "weight": 21.53952199295659,
+       "n_questions": 64
+      },
+      "points_above_chance": 1.2034566179033452
+     },
+     "neither, key not longest": {
+      "share_of_misses": 47.04135312667049,
+      "accepted": {
+       "share": 26.238718724966077,
+       "lo": 21.331943405241795,
+       "hi": 31.77971649341774,
+       "weight": 52.89866813648741,
+       "n_questions": 105
+      },
+      "points_above_chance": 0.5002028301254454
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 32.82442748091603,
+     "all misses, answered without the data": {
+      "share_of_misses": 31.034042690528302,
+      "accepted": {
+       "share": 45.0453741852792,
+       "lo": 33.04721505226208,
+       "hi": 56.893072810494424,
+       "weight": 34.89822073781052,
+       "n_questions": 43
+      },
+      "points_above_chance": 5.340060252594521
+     },
+     "all misses, not": {
+      "share_of_misses": 68.9659573094717,
+      "accepted": {
+       "share": 26.597580435461126,
+       "lo": 21.056622147985454,
+       "hi": 32.90747003706672,
+       "weight": 77.55319619750735,
+       "n_questions": 87
+      },
+      "points_above_chance": 0.9457822057451605
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 16.039828163412732,
+      "accepted": {
+       "share": 41.94005097842847,
+       "lo": 28.429668124319743,
+       "hi": 56.731136188816585,
+       "weight": 18.03701404374779,
+       "n_questions": 42
+      },
+      "points_above_chance": 2.3324270030512793
+     },
+     "neither, not": {
+      "share_of_misses": 50.15603860121941,
+      "accepted": {
+       "share": 23.539595174703543,
+       "lo": 18.50459083144772,
+       "hi": 29.05326404346869,
+       "weight": 56.40117608569621,
+       "n_questions": 84
+      },
+      "points_above_chance": -0.6287675550224885
+     }
+    }
+   },
+   "gpt-4o|code-free Qwen2.5-72B": {
+    "n_misses": 1647,
+    "misses_accepted": {
+     "share": 37.89546277960291,
+     "lo": 30.824289731752785,
+     "hi": 45.529995033263525,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 37.89546277960291,
+      "lo": 30.695700349102882,
+      "hi": 45.404590263449954,
+      "weight": 112.45141693531787,
+      "n_questions": 130
+     },
+     "points_above_chance": 11.069565355748088
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.627307347148873,
+      "accepted": {
+       "share": 73.30074945600693,
+       "lo": 59.687172276868445,
+       "hi": 83.67600783965312,
+       "weight": 11.950557693940047,
+       "n_questions": 55
+      },
+      "points_above_chance": 4.406266359042397
+     },
+     "other": {
+      "share_of_misses": 23.176825888218985,
+      "accepted": {
+       "share": 27.408423284549123,
+       "lo": 18.517096780265693,
+       "hi": 36.457485075688915,
+       "weight": 26.06266911193382,
+       "n_questions": 77
+      },
+      "points_above_chance": 0.4791598408143559
+     },
+     "neither": {
+      "share_of_misses": 66.19586676463213,
+      "accepted": {
+       "share": 35.88315323106333,
+       "lo": 28.57177343770209,
+       "hi": 43.664521278496,
+       "weight": 74.438190129444,
+       "n_questions": 126
+      },
+      "points_above_chance": 6.184139155891337
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.488829395997534,
+      "accepted": {
+       "share": 75.32098970137197,
+       "lo": 58.72573770123872,
+       "hi": 87.89342383878386,
+       "weight": 6.172266428961476,
+       "n_questions": 36
+      },
+      "points_above_chance": 2.3709508046251484
+     },
+     "other": {
+      "share_of_misses": 12.854853704790564,
+      "accepted": {
+       "share": 27.89771198481295,
+       "lo": 16.188672702675333,
+       "hi": 40.234012339300264,
+       "weight": 14.455465135999193,
+       "n_questions": 53
+      },
+      "points_above_chance": 0.31975400435595885
+     },
+     "tied": {
+      "share_of_misses": 5.731450123742201,
+      "accepted": {
+       "share": 36.76165332967624,
+       "lo": 23.12807842485632,
+       "hi": 52.56477628928655,
+       "weight": 6.445096875089135,
+       "n_questions": 34
+      },
+      "points_above_chance": 0.5786640848929625
+     },
+     "none": {
+      "share_of_misses": 75.92486677546971,
+      "accepted": {
+       "share": 36.968173221347286,
+       "lo": 30.048217965834635,
+       "hi": 44.38590874318242,
+       "weight": 85.37858849526806,
+       "n_questions": 124
+      },
+      "points_above_chance": 7.800196461874019
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 19.224724606089037,
+      "accepted": {
+       "share": 77.96741104971012,
+       "lo": 59.67721615506754,
+       "hi": 90.2962218823001,
+       "weight": 7.568130446265121,
+       "n_questions": 26
+      },
+      "points_above_chance": 3.0600326429400826
+     },
+     "other": {
+      "share_of_misses": 33.37999093872213,
+      "accepted": {
+       "share": 25.386216765338013,
+       "lo": 13.733866493139066,
+       "hi": 37.157001426929604,
+       "weight": 13.140584892403778,
+       "n_questions": 34
+      },
+      "points_above_chance": 0.03874132970834927
+     },
+     "neither": {
+      "share_of_misses": 47.39528445518883,
+      "accepted": {
+       "share": 43.971512801491485,
+       "lo": 32.39371762229733,
+       "hi": 57.23080447653471,
+       "weight": 18.657936727015674,
+       "n_questions": 43
+      },
+      "points_above_chance": 2.7020556142442445
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 1.1033554758233373,
+     "accepted": {
+      "share": 100.0,
+      "lo": 99.99999999999999,
+      "hi": 100.00000000000001,
+      "weight": 1.2407388663967611,
+      "n_questions": 4
+     },
+     "points_above_chance": 0.7103466792347869
+    },
+    "contains a distractor": {
+     "share_of_misses": 0.5652222309213143,
+     "accepted": {
+      "share": 9.833222141155435,
+      "lo": 0.0,
+      "hi": 37.89678553955884,
+      "weight": 0.6356004075044323,
+      "n_questions": 8
+     },
+     "points_above_chance": -0.07358786402756341
+    },
+    "key longest": {
+     "questions": 27.353689567430024,
+     "neither, key longest": {
+      "share_of_misses": 19.15451363796166,
+      "accepted": {
+       "share": 37.73689181565963,
+       "lo": 25.033625789420537,
+       "hi": 50.61909436019738,
+       "weight": 21.53952199295659,
+       "n_questions": 64
+      },
+      "points_above_chance": 2.0942485601932024
+     },
+     "neither, key not longest": {
+      "share_of_misses": 47.04135312667049,
+      "accepted": {
+       "share": 35.12833946318014,
+       "lo": 28.154184832659332,
+       "hi": 43.00831127022517,
+       "weight": 52.89866813648741,
+       "n_questions": 105
+      },
+      "points_above_chance": 4.089890595698135
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 32.82442748091603,
+     "all misses, answered without the data": {
+      "share_of_misses": 31.034042690528302,
+      "accepted": {
+       "share": 49.772733947217134,
+       "lo": 38.662524749284884,
+       "hi": 59.44621857461961,
+       "weight": 34.89822073781052,
+       "n_questions": 43
+      },
+      "points_above_chance": 6.599422424191113
+     },
+     "all misses, not": {
+      "share_of_misses": 68.9659573094717,
+      "accepted": {
+       "share": 32.550800647114855,
+       "lo": 25.884546857748138,
+       "hi": 40.251311521765594,
+       "weight": 77.55319619750735,
+       "n_questions": 87
+      },
+      "points_above_chance": 4.470142931556977
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 16.039828163412732,
+      "accepted": {
+       "share": 49.68805163142313,
+       "lo": 36.60746177688963,
+       "hi": 61.011142064252645,
+       "weight": 18.03701404374779,
+       "n_questions": 42
+      },
+      "points_above_chance": 3.3992269770133547
+     },
+     "neither, not": {
+      "share_of_misses": 50.15603860121941,
+      "accepted": {
+       "share": 31.46836680991725,
+       "lo": 24.389458285526572,
+       "hi": 39.41335982696771,
+       "weight": 56.40117608569621,
+       "n_questions": 84
+      },
+      "points_above_chance": 2.7849121788779816
+     }
+    }
+   },
+   "gpt-4o|code-free Llama-3.3-70B": {
+    "n_misses": 1647,
+    "misses_accepted": {
+     "share": 34.40670295011965,
+     "lo": 27.788701318632913,
+     "hi": 41.92984967004016,
+     "weight": 112.45141693531787,
+     "n_questions": 130
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 34.40670295011965,
+      "lo": 27.882132277742524,
+      "hi": 41.832228588908585,
+      "weight": 112.45141693531787,
+      "n_questions": 130
+     },
+     "points_above_chance": 8.07478683534801
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 10.627307347148873,
+      "accepted": {
+       "share": 70.57806789674896,
+       "lo": 55.746774709686804,
+       "hi": 81.66823840213857,
+       "weight": 11.950557693940047,
+       "n_questions": 55
+      },
+      "points_above_chance": 4.157888015102405
+     },
+     "other": {
+      "share_of_misses": 23.176825888218985,
+      "accepted": {
+       "share": 24.228655446566744,
+       "lo": 15.55743324821643,
+       "hi": 34.096428133039,
+       "weight": 26.06266911193382,
+       "n_questions": 77
+      },
+      "points_above_chance": -0.15346028906429962
+     },
+     "neither": {
+      "share_of_misses": 66.19586676463213,
+      "accepted": {
+       "share": 32.16321880465339,
+       "lo": 26.115100854559007,
+       "hi": 38.76567516219391,
+       "weight": 74.438190129444,
+       "n_questions": 126
+      },
+      "points_above_chance": 4.070359109309904
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 5.488829395997534,
+      "accepted": {
+       "share": 66.47640441400063,
+       "lo": 48.16739427518821,
+       "hi": 81.5414123293622,
+       "weight": 6.172266428961476,
+       "n_questions": 36
+      },
+      "points_above_chance": 1.9542245691493558
+     },
+     "other": {
+      "share_of_misses": 12.854853704790564,
+      "accepted": {
+       "share": 24.76272669280415,
+       "lo": 14.373088412556612,
+       "hi": 35.58037943944404,
+       "weight": 14.455465135999193,
+       "n_questions": 53
+      },
+      "points_above_chance": -0.026182412365441218
+     },
+     "tied": {
+      "share_of_misses": 5.731450123742201,
+      "accepted": {
+       "share": 29.576151065892553,
+       "lo": 19.105794659490098,
+       "hi": 41.78105036008268,
+       "weight": 6.445096875089135,
+       "n_questions": 34
+      },
+      "points_above_chance": 0.2251430300360298
+     },
+     "none": {
+      "share_of_misses": 75.92486677546971,
+      "accepted": {
+       "share": 34.08576529114404,
+       "lo": 27.864994564840355,
+       "hi": 41.144010066868134,
+       "weight": 85.37858849526806,
+       "n_questions": 124
+      },
+      "points_above_chance": 5.921601648528066
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 19.224724606089037,
+      "accepted": {
+       "share": 80.14734417226568,
+       "lo": 61.28080948319186,
+       "hi": 91.723931107578,
+       "weight": 7.568130446265121,
+       "n_questions": 26
+      },
+      "points_above_chance": 3.1859717134411083
+     },
+     "other": {
+      "share_of_misses": 33.37999093872213,
+      "accepted": {
+       "share": 23.113619390425427,
+       "lo": 11.172922462761937,
+       "hi": 37.54894981982991,
+       "weight": 13.140584892403778,
+       "n_questions": 34
+      },
+      "points_above_chance": -0.1892224774007559
+     },
+     "neither": {
+      "share_of_misses": 47.39528445518883,
+      "accepted": {
+       "share": 35.074979442710365,
+       "lo": 23.342385313796978,
+       "hi": 46.86221488483711,
+       "weight": 18.657936727015674,
+       "n_questions": 43
+      },
+      "points_above_chance": 1.4349490760921646
+     }
+    },
+    "value_questions": 45,
+    "contains the key": {
+     "share_of_misses": 1.1033554758233373,
+     "accepted": {
+      "share": 100.0,
+      "lo": 99.99999999999999,
+      "hi": 100.00000000000001,
+      "weight": 1.2407388663967611,
+      "n_questions": 4
+     },
+     "points_above_chance": 0.7103466792347869
+    },
+    "contains a distractor": {
+     "share_of_misses": 0.5652222309213143,
+     "accepted": {
+      "share": 9.833222141155435,
+      "lo": 0.0,
+      "hi": 37.303664921465966,
+      "weight": 0.6356004075044323,
+      "n_questions": 8
+     },
+     "points_above_chance": -0.07358786402756341
+    },
+    "key longest": {
+     "questions": 27.353689567430024,
+     "neither, key longest": {
+      "share_of_misses": 19.15451363796166,
+      "accepted": {
+       "share": 33.41997303843538,
+       "lo": 23.381119165593326,
+       "hi": 44.18489878226959,
+       "weight": 21.53952199295659,
+       "n_questions": 64
+      },
+      "points_above_chance": 1.384444232377713
+     },
+     "neither, key not longest": {
+      "share_of_misses": 47.04135312667049,
+      "accepted": {
+       "share": 31.65148785920796,
+       "lo": 25.326576653019387,
+       "hi": 38.387268648571215,
+       "weight": 52.89866813648741,
+       "n_questions": 105
+      },
+      "points_above_chance": 2.6859148769321917
+     }
+    },
+    "no-data answer": {
+     "questions answered without the data": 32.82442748091603,
+     "all misses, answered without the data": {
+      "share_of_misses": 31.034042690528302,
+      "accepted": {
+       "share": 48.05216100234251,
+       "lo": 35.94468138254288,
+       "hi": 59.711758231410435,
+       "weight": 34.89822073781052,
+       "n_questions": 43
+      },
+      "points_above_chance": 6.141064146132034
+     },
+     "all misses, not": {
+      "share_of_misses": 68.9659573094717,
+      "accepted": {
+       "share": 28.266373079481607,
+       "lo": 21.922949142100684,
+       "hi": 35.31293574112806,
+       "weight": 77.55319619750735,
+       "n_questions": 87
+      },
+      "points_above_chance": 1.9337226892159776
+     },
+     "neither, answered without the data": {
+      "share_of_misses": 16.039828163412732,
+      "accepted": {
+       "share": 48.2845936385409,
+       "lo": 36.399035812049966,
+       "hi": 59.04213344351079,
+       "weight": 18.03701404374779,
+       "n_questions": 42
+      },
+      "points_above_chance": 3.2059888737505546
+     },
+     "neither, not": {
+      "share_of_misses": 50.15603860121941,
+      "accepted": {
+       "share": 27.0076265907333,
+       "lo": 20.64128240731861,
+       "hi": 34.23404993787804,
+       "weight": 56.40117608569621,
+       "n_questions": 84
+      },
+      "points_above_chance": 0.86437023555935
+     }
+    }
+   }
+  },
+  "question_classes": {
+   "CapsuleFolder-d37acffb-d802-4ce0-8caa-66f50667367a_q1": "direction or change",
+   "CapsuleFolder-d37acffb-d802-4ce0-8caa-66f50667367a_q4": "name",
+   "CapsuleFolder-d37acffb-d802-4ce0-8caa-66f50667367a_q5": "number with words",
+   "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9_q2": "number with words",
+   "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9_q5": "number with words",
+   "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9_q6": "name",
+   "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584_q1": "direction or change",
+   "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584_q3": "number with words",
+   "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584_q4": "number with words",
+   "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584_q6": "number with words",
+   "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960_q1": "direction or change",
+   "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960_q2": "interval or bound",
+   "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960_q3": "interval or bound",
+   "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960_q4": "number with words",
+   "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5_q1": "number with words",
+   "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5_q3": "direction or change",
+   "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5_q4": "number with words",
+   "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5_q5": "list of names",
+   "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5_q6": "list of names",
+   "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5_q7": "name",
+   "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe_q1": "direction or change",
+   "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe_q2": "direction or change",
+   "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe_q3": "direction or change",
+   "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe_q4": "direction or change",
+   "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821_q1": "name",
+   "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821_q4": "number with words",
+   "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821_q5": "name",
+   "CapsuleFolder-b1dbace7-f6e9-42ec-81e1-bcc24161cc27_q2": "interval or bound",
+   "CapsuleFolder-8b462015-86ab-434f-29e1-04dda1588031_q1": "number with words",
+   "CapsuleFolder-8b462015-86ab-434f-29e1-04dda1588031_q5": "number with words",
+   "CapsuleFolder-4a336d0c-3d6b-440a-bfb0-437b26a00af3_q1": "direction or change",
+   "CapsuleFolder-4a336d0c-3d6b-440a-bfb0-437b26a00af3_q2": "name",
+   "CapsuleFolder-4a336d0c-3d6b-440a-bfb0-437b26a00af3_q4": "number with words",
+   "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8_q3": "number with words",
+   "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8_q5": "number with words",
+   "CapsuleFolder-33b801bb-9b47-4a0a-9314-05325c82fde7_q1": "interval or bound",
+   "CapsuleFolder-33b801bb-9b47-4a0a-9314-05325c82fde7_q2": "interval or bound",
+   "CapsuleFolder-33b801bb-9b47-4a0a-9314-05325c82fde7_q3": "name",
+   "CapsuleFolder-33b801bb-9b47-4a0a-9314-05325c82fde7_q4": "name",
+   "CapsuleFolder-4ef3fcd8-1c35-466f-9d93-49b92f4ea760_q1": "number with words",
+   "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b_q1": "statement",
+   "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b_q2": "statement",
+   "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b_q3": "number with words",
+   "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b_q4": "number with words",
+   "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43_q1": "direction or change",
+   "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43_q3": "number with words",
+   "CapsuleFolder-8690e7cb-7405-4d2a-9721-e85824d05822_q1": "number with words",
+   "CapsuleFolder-8690e7cb-7405-4d2a-9721-e85824d05822_q2": "number with words",
+   "CapsuleFolder-28a5984e-9061-4d6f-99a1-40f8753bc9f4_q1": "direction or change",
+   "CapsuleFolder-28a5984e-9061-4d6f-99a1-40f8753bc9f4_q3": "number with words",
+   "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1_q1": "number with words",
+   "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1_q2": "direction or change",
+   "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1_q3": "interval or bound",
+   "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1_q4": "number with words",
+   "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1_q5": "name",
+   "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046_q1": "number with words",
+   "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046_q5": "number with words",
+   "CapsuleFolder-8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1_q1": "number with words",
+   "CapsuleFolder-975f3e91-53b0-44b1-ac9f-20023d9c8cd0_q1": "direction or change",
+   "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc_q3": "number with words",
+   "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc_q5": "number with words",
+   "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc_q6": "number with words",
+   "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc_q7": "direction or change",
+   "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922_q1": "direction or change",
+   "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922_q2": "direction or change",
+   "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922_q3": "statement",
+   "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922_q5": "direction or change",
+   "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922_q6": "number with words",
+   "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922_q7": "number with words",
+   "CapsuleFolder-bda54b38-9b49-4009-aad6-d5f52675438a_q1": "name",
+   "CapsuleFolder-bda54b38-9b49-4009-aad6-d5f52675438a_q2": "direction or change",
+   "CapsuleFolder-d36654ed-2cd6-41c1-84f9-1a3a16be3de5_q1": "number with words",
+   "CapsuleFolder-d36654ed-2cd6-41c1-84f9-1a3a16be3de5_q2": "number with words",
+   "CapsuleFolder-d36654ed-2cd6-41c1-84f9-1a3a16be3de5_q4": "name",
+   "CapsuleFolder-d36654ed-2cd6-41c1-84f9-1a3a16be3de5_q6": "number with words",
+   "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843_q1": "number with words",
+   "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843_q2": "number with words",
+   "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843_q3": "statement",
+   "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843_q4": "number with words",
+   "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843_q5": "name",
+   "CapsuleFolder-ebc7c8a6-ba34-46db-bf8c-b3e310434ba9_q1": "direction or change",
+   "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6_q1": "number with words",
+   "CapsuleFolder-2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d_q1": "name",
+   "CapsuleFolder-2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d_q4": "direction or change",
+   "CapsuleFolder-2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d_q5": "name",
+   "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52_q4": "number with words",
+   "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52_q6": "name",
+   "CapsuleFolder-4cb6f8ce-4d81-40b2-8d9c-85868796ee73_q1": "direction or change",
+   "CapsuleFolder-7718a922-ce2c-4e59-900b-84fe06050ce6_q1": "statement",
+   "CapsuleFolder-7718a922-ce2c-4e59-900b-84fe06050ce6_q4": "number with words",
+   "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295_q3": "number with words",
+   "CapsuleFolder-2ccdbe37-0a92-47b5-9bab-fa8a8c470799_q5": "number with words",
+   "CapsuleFolder-2ccdbe37-0a92-47b5-9bab-fa8a8c470799_q7": "number with words",
+   "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56_q3": "name",
+   "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56_q5": "interval or bound",
+   "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56_q6": "number with words",
+   "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56_q7": "name",
+   "CapsuleFolder-e3bde22d-915c-409b-8646-039e0215b171_q1": "direction or change",
+   "CapsuleFolder-e3bde22d-915c-409b-8646-039e0215b171_q3": "direction or change",
+   "CapsuleFolder-e3bde22d-915c-409b-8646-039e0215b171_q4": "number with words",
+   "CapsuleFolder-e3bde22d-915c-409b-8646-039e0215b171_q5": "direction or change",
+   "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423_q1": "interval or bound",
+   "CapsuleFolder-1d54e4a7-8b0f-4224-bd31-efcfded0d46c_q4": "number with words",
+   "CapsuleFolder-d49cde68-cc3a-479d-88cb-11302207ac3c_q1": "number with words",
+   "CapsuleFolder-d49cde68-cc3a-479d-88cb-11302207ac3c_q3": "number with words",
+   "CapsuleFolder-a45810bb-beee-466a-b31f-ba60268afa53_q1": "direction or change",
+   "CapsuleFolder-a45810bb-beee-466a-b31f-ba60268afa53_q2": "number with words",
+   "CapsuleFolder-a45810bb-beee-466a-b31f-ba60268afa53_q3": "number with words",
+   "CapsuleFolder-a45810bb-beee-466a-b31f-ba60268afa53_q4": "number with words",
+   "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4_q1": "number with words",
+   "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4_q2": "interval or bound",
+   "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4_q5": "interval or bound",
+   "CapsuleFolder-27821d45-94e6-4f4e-a914-e66ffaefdd3f_q2": "direction or change",
+   "CapsuleFolder-27821d45-94e6-4f4e-a914-e66ffaefdd3f_q3": "name",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q1": "name",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q2": "direction or change",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q3": "direction or change",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q4": "direction or change",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q5": "direction or change",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q6": "name",
+   "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5_q7": "direction or change",
+   "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765_q1": "number with words",
+   "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765_q2": "name",
+   "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765_q3": "number with words",
+   "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765_q5": "number with words",
+   "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b_q1": "direction or change",
+   "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b_q2": "direction or change",
+   "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b_q3": "number with words",
+   "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b_q5": "number with words",
+   "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b_q6": "name",
+   "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b_q7": "statement",
+   "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8_q1": "direction or change",
+   "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8_q2": "name",
+   "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8_q3": "direction or change",
+   "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8_q4": "direction or change",
+   "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8_q5": "direction or change",
+   "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8_q7": "name"
+  }
+ },
+ "v1.5": {
+  "classes": {
+   "interval or bound": 63,
+   "name": 18,
+   "direction or change": 8,
+   "number with words": 8,
+   "list of names": 2,
+   "statement": 1
+  },
+  "by_class": {
+   "seven configurations|own model": {
+    "interval or bound": {
+     "questions": 63,
+     "runs": 441,
+     "open": 16.3265306122449,
+     "score": 33.21995464852608,
+     "excess": {
+      "mean": 16.893424,
+      "lo": 13.392857,
+      "hi": 20.535714,
+      "n_items": 63,
+      "n_clusters": 20
+     },
+     "at_chance": 20.918367346938773,
+     "misses_accepted": {
+      "share": 23.224852071005916,
+      "lo": 19.338411309412983,
+      "hi": 27.71748373262347,
+      "weight": 48.285714285714285,
+      "n_questions": 63
+     }
+    },
+    "number with words": {
+     "questions": 8,
+     "runs": 56,
+     "open": 19.64285714285714,
+     "score": 32.14285714285714,
+     "excess": {
+      "mean": 12.5,
+      "lo": 4.464286,
+      "hi": 20.535714,
+      "n_items": 8,
+      "n_clusters": 8
+     },
+     "at_chance": 20.089285714285715,
+     "misses_accepted": {
+      "share": 20.0,
+      "lo": 7.352941176470588,
+      "hi": 33.82352941176471,
+      "weight": 5.0,
+      "n_questions": 8
+     }
+    },
+    "list of names": {
+     "questions": 2,
+     "runs": 14,
+     "open": 0.0,
+     "score": 14.285714285714285,
+     "excess": {
+      "mean": 14.285714,
+      "lo": 14.285714,
+      "hi": 14.285714,
+      "n_items": 2,
+      "n_clusters": 1
+     },
+     "at_chance": 25.0,
+     "misses_accepted": {
+      "share": 16.666666666666668,
+      "lo": 16.666666666666668,
+      "hi": 16.666666666666668,
+      "weight": 1.7142857142857142,
+      "n_questions": 2
+     }
+    },
+    "direction or change": {
+     "questions": 8,
+     "runs": 56,
+     "open": 28.57142857142857,
+     "score": 41.07142857142857,
+     "excess": {
+      "mean": 12.5,
+      "lo": 4.081633,
+      "hi": 21.428571,
+      "n_items": 8,
+      "n_clusters": 7
+     },
+     "at_chance": 17.85714285714286,
+     "misses_accepted": {
+      "share": 25.0,
+      "lo": 7.142857142857143,
+      "hi": 38.46153846153845,
+      "weight": 4.571428571428571,
+      "n_questions": 8
+     }
+    },
+    "name": {
+     "questions": 18,
+     "runs": 126,
+     "open": 14.285714285714285,
+     "score": 29.365079365079367,
+     "excess": {
+      "mean": 15.079365,
+      "lo": 7.589286,
+      "hi": 22.5,
+      "n_items": 18,
+      "n_clusters": 14
+     },
+     "at_chance": 21.42857142857143,
+     "misses_accepted": {
+      "share": 21.11111111111111,
+      "lo": 11.44578313253012,
+      "hi": 31.25,
+      "weight": 12.857142857142858,
+      "n_questions": 18
+     }
+    },
+    "statement": {
+     "questions": 1,
+     "runs": 7,
+     "open": 14.285714285714285,
+     "score": 71.42857142857143,
+     "excess": {
+      "mean": 57.142857,
+      "lo": 57.142857,
+      "hi": 57.142857,
+      "n_items": 1,
+      "n_clusters": 1
+     },
+     "at_chance": 21.42857142857143,
+     "misses_accepted": {
+      "share": 79.99999999999999,
+      "lo": 79.99999999999999,
+      "hi": 79.99999999999999,
+      "weight": 0.7142857142857143,
+      "n_questions": 1
+     }
+    }
+   }
+  },
+  "all": {
+   "seven configurations|own model": {
+    "questions": 100,
+    "runs": 700,
+    "open": 16.857142857142854,
+    "score": 33.07142857142858,
+    "excess": {
+     "mean": 16.214286,
+     "lo": 13.207508,
+     "hi": 19.350862,
+     "n_items": 100,
+     "n_clusters": 34
+    },
+    "at_chance": 20.78571428571429,
+    "misses_accepted": {
+     "share": 23.14453125,
+     "lo": 19.516674486591832,
+     "hi": 27.08780047466902,
+     "weight": 73.14285714285714,
+     "n_questions": 100
+    }
+   }
+  },
+  "nearest": {
+   "seven configurations|own model": {
+    "n_misses": 512,
+    "misses_accepted": {
+     "share": 23.14453125,
+     "lo": 19.464275308025304,
+     "hi": 27.12667920202711,
+     "weight": 73.14285714285714,
+     "n_questions": 100
+    },
+    "all": {
+     "share_of_misses": 100.0,
+     "accepted": {
+      "share": 23.14453125,
+      "lo": 19.560349573355353,
+      "hi": 27.25175748039489,
+      "weight": 73.14285714285714,
+      "n_questions": 100
+     },
+     "points_above_chance": -1.357142857142857
+    },
+    "nearest": {
+     "key": {
+      "share_of_misses": 13.476562500000002,
+      "accepted": {
+       "share": 59.420289855072454,
+       "lo": 50.675675675675684,
+       "hi": 70.75471698113206,
+       "weight": 9.857142857142858,
+       "n_questions": 37
+      },
+      "points_above_chance": 3.392857142857143
+     },
+     "other": {
+      "share_of_misses": 51.17187500000001,
+      "accepted": {
+       "share": 10.687022900763358,
+       "lo": 7.692307692307692,
+       "hi": 13.953577543158794,
+       "weight": 37.42857142857143,
+       "n_questions": 83
+      },
+      "points_above_chance": -5.357142857142857
+     },
+     "neither": {
+      "share_of_misses": 35.3515625,
+      "accepted": {
+       "share": 27.34806629834254,
+       "lo": 19.892398859383356,
+       "hi": 34.25937676254935,
+       "weight": 25.857142857142858,
+       "n_questions": 68
+      },
+      "points_above_chance": 0.6071428571428572
+     }
+    },
+    "wording": {
+     "key": {
+      "share_of_misses": 3.125,
+      "accepted": {
+       "share": 53.125,
+       "lo": 37.5,
+       "hi": 87.5,
+       "weight": 2.2857142857142856,
+       "n_questions": 8
+      },
+      "points_above_chance": 0.6428571428571428
+     },
+     "other": {
+      "share_of_misses": 12.695312499999998,
+      "accepted": {
+       "share": 10.76923076923077,
+       "lo": 3.3322368421052726,
+       "hi": 20.0,
+       "weight": 9.285714285714285,
+       "n_questions": 35
+      },
+      "points_above_chance": -1.3214285714285714
+     },
+     "tied": {
+      "share_of_misses": 4.6875,
+      "accepted": {
+       "share": 29.166666666666668,
+       "lo": 7.894736842105264,
+       "hi": 59.37500000000001,
+       "weight": 3.4285714285714284,
+       "n_questions": 13
+      },
+      "points_above_chance": 0.1428571428571429
+     },
+     "none": {
+      "share_of_misses": 79.4921875,
+      "accepted": {
+       "share": 23.587223587223587,
+       "lo": 19.823078344419805,
+       "hi": 27.623155914678144,
+       "weight": 58.14285714285714,
+       "n_questions": 94
+      },
+      "points_above_chance": -0.8214285714285713
+     }
+    },
+    "value": {
+     "key": {
+      "share_of_misses": 16.809116809116812,
+      "accepted": {
+       "share": 60.16949152542372,
+       "lo": 50.78094951923077,
+       "hi": 72.32190349544074,
+       "weight": 8.428571428571429,
+       "n_questions": 31
+      },
+      "points_above_chance": 2.964285714285714
+     },
+     "other": {
+      "share_of_misses": 62.3931623931624,
+      "accepted": {
+       "share": 10.273972602739725,
+       "lo": 7.142857142857144,
+       "hi": 13.271673221894458,
+       "weight": 31.285714285714285,
+       "n_questions": 62
+      },
+      "points_above_chance": -4.607142857142857
+     },
+     "neither": {
+      "share_of_misses": 20.7977207977208,
+      "accepted": {
+       "share": 32.87671232876712,
+       "lo": 21.11111111111111,
+       "hi": 43.749999999999986,
+       "weight": 10.428571428571429,
+       "n_questions": 37
+      },
+      "points_above_chance": 0.8214285714285714
+     }
+    },
+    "value_questions": 66,
+    "contains the key": {
+     "share_of_misses": 0.78125,
+     "accepted": {
+      "share": 12.5,
+      "lo": 0.0,
+      "hi": 50.0,
+      "weight": 0.5714285714285714,
+      "n_questions": 2
+     },
+     "points_above_chance": -0.07142857142857142
+    },
+    "contains a distractor": {
+     "share_of_misses": 3.3203125,
+     "accepted": {
+      "share": 2.9411764705882355,
+      "lo": 0.0,
+      "hi": 11.904761904761905,
+      "weight": 2.4285714285714284,
+      "n_questions": 9
+     },
+     "points_above_chance": -0.5357142857142857
+    },
+    "key longest": {
+     "questions": 32.166666666666664,
+     "neither, key longest": {
+      "share_of_misses": 12.288411458333334,
+      "accepted": {
+       "share": 32.450331125827816,
+       "lo": 22.221784776902883,
+       "hi": 41.79111598496068,
+       "weight": 8.988095238095237,
+       "n_questions": 42
+      },
+      "points_above_chance": 0.6696428571428572
+     },
+     "neither, key not longest": {
+      "share_of_misses": 23.063151041666668,
+      "accepted": {
+       "share": 24.629498941425542,
+       "lo": 16.213460231135283,
+       "hi": 32.67862060674943,
+       "weight": 16.86904761904762,
+       "n_questions": 54
+      },
+      "points_above_chance": -0.062499999999999944
+     }
+    }
+   }
+  },
+  "question_classes": {
+   "bix-10-q1": "interval or bound",
+   "bix-10-q2": "interval or bound",
+   "bix-10-q3": "interval or bound",
+   "bix-10-q4": "interval or bound",
+   "bix-10-q5": "interval or bound",
+   "bix-10-q6": "interval or bound",
+   "bix-10-q7": "interval or bound",
+   "bix-14-q1": "interval or bound",
+   "bix-14-q2": "interval or bound",
+   "bix-16-q1": "name",
+   "bix-16-q2": "direction or change",
+   "bix-16-q4": "interval or bound",
+   "bix-18-q1": "interval or bound",
+   "bix-18-q3": "interval or bound",
+   "bix-18-q4": "interval or bound",
+   "bix-18-q5": "interval or bound",
+   "bix-19-q2": "interval or bound",
+   "bix-19-q3": "interval or bound",
+   "bix-19-q4": "interval or bound",
+   "bix-19-q5": "number with words",
+   "bix-2-q1": "interval or bound",
+   "bix-2-q2": "interval or bound",
+   "bix-20-q1": "interval or bound",
+   "bix-20-q2": "interval or bound",
+   "bix-20-q3": "interval or bound",
+   "bix-20-q4": "interval or bound",
+   "bix-22-q1": "name",
+   "bix-22-q2": "interval or bound",
+   "bix-22-q3": "interval or bound",
+   "bix-22-q4": "interval or bound",
+   "bix-22-q6": "interval or bound",
+   "bix-24-q1": "name",
+   "bix-24-q2": "direction or change",
+   "bix-24-q6": "name",
+   "bix-27-q2": "interval or bound",
+   "bix-27-q4": "name",
+   "bix-27-q5": "interval or bound",
+   "bix-28-q1": "number with words",
+   "bix-29-q1": "interval or bound",
+   "bix-29-q2": "interval or bound",
+   "bix-29-q3": "direction or change",
+   "bix-29-q4": "direction or change",
+   "bix-3-q1": "interval or bound",
+   "bix-3-q2": "interval or bound",
+   "bix-3-q3": "interval or bound",
+   "bix-3-q4": "interval or bound",
+   "bix-3-q5": "name",
+   "bix-30-q3": "number with words",
+   "bix-31-q2": "interval or bound",
+   "bix-32-q3": "list of names",
+   "bix-32-q4": "list of names",
+   "bix-33-q1": "name",
+   "bix-36-q1": "interval or bound",
+   "bix-36-q3": "interval or bound",
+   "bix-36-q4": "interval or bound",
+   "bix-36-q5": "name",
+   "bix-37-q1": "number with words",
+   "bix-38-q1": "direction or change",
+   "bix-41-q3": "interval or bound",
+   "bix-41-q5": "number with words",
+   "bix-42-q2": "direction or change",
+   "bix-43-q1": "name",
+   "bix-43-q4": "number with words",
+   "bix-43-q5": "name",
+   "bix-47-q3": "name",
+   "bix-5-q1": "name",
+   "bix-5-q4": "name",
+   "bix-51-q1": "interval or bound",
+   "bix-51-q2": "interval or bound",
+   "bix-51-q3": "interval or bound",
+   "bix-51-q4": "interval or bound",
+   "bix-51-q5": "interval or bound",
+   "bix-51-q6": "interval or bound",
+   "bix-51-q8": "interval or bound",
+   "bix-52-q1": "interval or bound",
+   "bix-52-q2": "interval or bound",
+   "bix-52-q3": "interval or bound",
+   "bix-52-q5": "interval or bound",
+   "bix-52-q6": "name",
+   "bix-53-q2": "direction or change",
+   "bix-53-q3": "number with words",
+   "bix-53-q6": "name",
+   "bix-54-q1": "interval or bound",
+   "bix-54-q2": "interval or bound",
+   "bix-54-q3": "interval or bound",
+   "bix-54-q4": "interval or bound",
+   "bix-54-q5": "interval or bound",
+   "bix-54-q6": "interval or bound",
+   "bix-54-q7": "interval or bound",
+   "bix-6-q1": "name",
+   "bix-6-q4": "interval or bound",
+   "bix-6-q6": "interval or bound",
+   "bix-6-q7": "name",
+   "bix-61-q6": "direction or change",
+   "bix-7-q2": "interval or bound",
+   "bix-7-q3": "interval or bound",
+   "bix-8-q2": "interval or bound",
+   "bix-8-q5": "number with words",
+   "bix-9-q3": "statement",
+   "bix-9-q5": "name"
+  }
+ }
+}

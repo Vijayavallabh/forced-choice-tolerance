@@ -1,0 +1,487 @@
+{
+  "url": "https://api.datacite.org/dois/10.5061/dryad.wm37pvmw8",
+  "retrieved_at": "2026-09-16T15:26:25.283295+00:00",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": "10.5061/dryad.wm37pvmw8",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.5061/dryad.wm37pvmw8",
+        "prefix": "10.5061",
+        "suffix": "dryad.wm37pvmw8",
+        "identifiers": [],
+        "alternateIdentifiers": [],
+        "creators": [
+          {
+            "name": "Tangili, Marianthi",
+            "nameType": "Personal",
+            "givenName": "Marianthi",
+            "familyName": "Tangili",
+            "affiliation": [
+              "University of Groningen"
+            ],
+            "nameIdentifiers": [
+              {
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-2871-5265",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Sudyka, Joanna",
+            "nameType": "Personal",
+            "givenName": "Joanna",
+            "familyName": "Sudyka",
+            "affiliation": [
+              "University of Groningen"
+            ],
+            "nameIdentifiers": [
+              {
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0003-3006-3806",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          },
+          {
+            "name": "Furni, Fabricio",
+            "nameType": "Personal",
+            "givenName": "Fabricio",
+            "familyName": "Furni",
+            "affiliation": [
+              "University of Groningen"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Palsb\u00f8ll, Per",
+            "nameType": "Personal",
+            "givenName": "Per",
+            "familyName": "Palsb\u00f8ll",
+            "affiliation": [
+              "University of Groningen"
+            ],
+            "nameIdentifiers": []
+          },
+          {
+            "name": "Verhulst, Simon",
+            "nameType": "Personal",
+            "givenName": "Simon",
+            "familyName": "Verhulst",
+            "affiliation": [
+              "University of Groningen"
+            ],
+            "nameIdentifiers": [
+              {
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-1143-6868",
+                "nameIdentifierScheme": "ORCID"
+              }
+            ]
+          }
+        ],
+        "titles": [
+          {
+            "title": "Identification of age-related CpG sites from longitudinal avian methylomes"
+          }
+        ],
+        "publisher": "Dryad",
+        "container": {},
+        "publicationYear": 2025,
+        "subjects": [
+          {
+            "subject": "FOS: Biological sciences",
+            "schemeUri": "https://web-archive.oecd.org/2012-06-15/138575-38235147.pdf",
+            "subjectScheme": "fos"
+          },
+          {
+            "subject": "FOS: Biological sciences",
+            "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+            "subjectScheme": "Fields of Science and Technology (FOS)"
+          },
+          {
+            "subject": "Aging",
+            "schemeUri": "https://github.com/PLOS/plos-thesaurus",
+            "subjectScheme": "PLOS Subject Area Thesaurus"
+          },
+          {
+            "subject": "Epigenetics",
+            "schemeUri": "https://github.com/PLOS/plos-thesaurus",
+            "subjectScheme": "PLOS Subject Area Thesaurus"
+          },
+          {
+            "subject": "DNA methylation",
+            "schemeUri": "https://github.com/PLOS/plos-thesaurus",
+            "subjectScheme": "PLOS Subject Area Thesaurus"
+          },
+          {
+            "subject": "Avian"
+          },
+          {
+            "subject": "Sex chromosomes",
+            "schemeUri": "https://github.com/PLOS/plos-thesaurus",
+            "subjectScheme": "PLOS Subject Area Thesaurus"
+          }
+        ],
+        "contributors": [],
+        "dates": [
+          {
+            "date": "2024-06-18T08:45:13Z",
+            "dateType": "Created"
+          },
+          {
+            "date": "2024-06-18T08:45:36Z",
+            "dateType": "Submitted"
+          },
+          {
+            "date": "2024-06-21T00:00:00Z",
+            "dateType": "Issued"
+          },
+          {
+            "date": "2024-06-21T00:00:00Z",
+            "dateType": "Available"
+          },
+          {
+            "date": "2025-09-25T00:00:00Z",
+            "dateType": "Updated"
+          }
+        ],
+        "language": "en",
+        "types": {
+          "ris": "DATA",
+          "bibtex": "misc",
+          "citeproc": "dataset",
+          "schemaOrg": "Dataset",
+          "resourceType": "dataset",
+          "resourceTypeGeneral": "Dataset"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsCitedBy",
+            "relatedIdentifier": "10.1101/2024.10.02.616244",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsSupplementedBy",
+            "relatedIdentifier": "https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1108628",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsDerivedFrom",
+            "relatedIdentifier": "10.5281/zenodo.17190694",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsCitedBy",
+            "relatedIdentifier": "10.1111/mec.70147",
+            "relatedIdentifierType": "DOI"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [
+          "363248293 bytes"
+        ],
+        "formats": [],
+        "version": "9",
+        "rightsList": [
+          {
+            "rights": "Creative Commons Zero v1.0 Universal",
+            "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rightsIdentifier": "cc0-1.0",
+            "rightsIdentifierScheme": "SPDX"
+          }
+        ],
+        "descriptions": [
+          {
+            "description": "Sex chromosomes are thought to play an important role in sex-dependent\n ageing, yet they are neglected in epigenetic aging research. We identified\n genome-wide age-related CpG (AR-CpG) sites in two avian species (zebra\n finch and jackdaw) and found AR-CpG sites to be overrepresented on the\n haploid, female-specific W chromosome in both species, and on the Z\n chromosome in the zebra finch.",
+            "descriptionType": "Abstract"
+          },
+          {
+            "description": "Zebra finch blood samples were collected during a long-term\n experiment where birds were housed in outdoor aviaries (320 \u00d7 150 \u00d7 210\n cm) each containing single sex groups of 18\u201324 adults\u00a0. Twenty\n longitudinal samples were collected from ten known-age individuals (six\n males and four females) sampled twice during their lifetime at an average\n interval of 1,470 days between the two sampling points. Jackdaw blood\n samples were collected from individuals of a free-ranging population\n breeding in nest-boxes south of Groningen, the Netherlands (53.1708\u00b0N,\n 6.6064\u00b0E). We analyzed 22 longitudinal blood samples collected during 2007\n \u2013 2021 from 11 known age adults (five males and six females) with an\n average sampling interval of 2,429 days. Samples were taken between June\n 2008 and December 2014 and stored in -80<sup>o</sup>C in EDTA\n buffer. We extracted total-cell DNA using innuPREP DNA\n Mini Kit (Analytik Jena GmbH+Co) from 3\u03bcl (nucleated) red blood cells\n according to the manufacturer\u2019s protocol. Whole genome sequencing was\n performed by The Hospital for Sick Children (Toronto, Canada) where\n paired-end Illumina next-generation sequencing (150bp) was carried out on\n either an Illumina HiSeqX\u2122 (12 zebra finch samples) or an Illumina\n NovaSeq\u2122 sequencer (eight zebra finch samples and 22 jackdaw samples).\n Libraries were prepared using the Swift Biosciences Inc. Accel NGS Methyl\n Seq kit (part no. 30024 and 30096) and the DNA was bisulfite converted\n using the EZ-96 DNA Methylation-Gold kit from (Zymo Research Inc., part\n no. D5005) as per the manufacturer's protocol and subsequently\n subjected to whole-genome amplification. \u00a0 Sequences\n were trimmed using Trim Galore! \u00a0v. 0.6.10 (<em>38</em>) in\n paired-end mode. Visual quality controls of the data were carried out\n before and after trimming using FastQC v. 011.9 (<em>39</em>)\n and MultiQC v. 11.14 (<em>40</em>). Because the Swift\n Biosciences Inc. Accel NGS Methyl Seq kit was used for library\n preparation, the first ~10 bp showed extreme biases in sequence\n composition and M-bias, so after checking the M-bias plots, the first 10\n bps were further trimmed from each sequence. Alignments\n were performed using Bismark v. 0.14.433\u00a0 using the Bowtie 2 v. 2.4.5\n alignment algorithm \u00a0for both in silico bisulfite conversion of the\n reference genomes and alignments. For zebra finch, trimmed reads were\n aligned against the in silico bisulfite converted zebra finch\n (<em>Taeniopygia guttata</em>) reference genome\n (GCA_003957565.4) and the average mapping efficiency was 64.5% (SD: 3.22).\n Because the jackdaw reference genome did not contain an assembled W\n chromosome, the jackdaw bisulfite sequencing data was aligned to an\n <em>in silico</em> bisulfite converted Hawaiian crow genome\n (<em>Corvus hawaiiensis</em>, GCA_020740725.1, the closest\n relative species with an assembled W chromosome) the average mapping\n efficiency was 64.7% (SD: 0.98). The GFT-formatted\n annotation files for the zebra finch (GCF_003957565.2) and the Hawaiian\n crow \u00a0(GCF_020740725.1) were converted into BED12 format using the\n University of California, Santa Cruz (UCSC) utilities\n <em>gtfToGenePred</em> and\u00a0<em>genePredToBed</em>\n (available at https://hgdownload.soe.ucsc.edu/downloads.html#utilities_downloads). AR-CpG sites were annotated using the tool <em>annotateWithGeneParts</em> from the R 4.1.2 package <em>genomation</em> 1.4.1. This tool hierarchically classifies the sites into pre-defined functional regions, i.e., promoter, exon, intron, or intergenic, hereon referred to as annotation categories. The predefined functional regions were based on the annotation information present in the BED12 files accessed with the <em>genomation</em> tool <em>readTranscriptFeatures</em>. Annotations were performed as a hierarchical assignment (promoter &gt; exon). Subsequently, a customized R script was employed to integrate the annotation results of AR-CpG sites with their respective annotation category information.",
+            "descriptionType": "Methods"
+          },
+          {
+            "description": "# Identification of age-related CpG sites from longitudinal avian\n methylomes\n [https://doi.org/10.5061/dryad.wm37pvmw8](https://doi.org/10.5061/dryad.wm37pvmw8) Data for identification of age-related CpG sites from longitudinal avian methylomes #### Description of the data and file structure **Codes**: **Code #1 (01_Bioinformatics)**:\u00a0 * Bioinformatics code for DNA methylation extraction from WGBS and EMSeq data **Code #2 (02_Pipeline.R)**: * Merging DNA methylation measurements per CpG site per sample in one data frame per species - Running the initial part of the pipeline for identification of age-related CpG sites **Code #3** **(03_Annotation.sh +\u00a003_Annotation_Length.sh):** * Functional annotation of all CpG sites captured by our analysis and calculation of the length of each annotation category **Code #4 (04.Plots_Stats.R)**: * Final steps of the pipeline - Functional annotation of age-related CpG sites * Statistical analyses - Plots ## **File descriptions:** \"**JD_AgeRelated_CpG_noMT_Final.csv**\"- Contains information for all age-related CpG sites per sample for the jackdaw. \"Pos\": age-related CpG site position(Chromosome_position) \"SampleShared\"= how many samples this age-related CpG sites is shared by \"Sample\"= inividual ID \"SampleL\"= denotes longitudinal samples taken from the same individual \"StartPosition\"= position of site \"Endposition\"= position of site (\"StartPosition\" and \"Endposition\" should be the same) \"MethylationPercentage\"= percentage of DNA methylation per site \"CountMethylated\"= count of methylated reads per site CountNonMethylated\"= count of unmethylated reads per site \"Chromosome\"= chromosome in which the site is located \"Coverage\"= coverage per site \"Dage\"= delta age per sample (the difference between an individual's chronological age and its average age) **\"JD_AgeRelated_CpG_noMT_LENIENT_Final.csv**\"- Contains information for all age-related CpG sites per sample for the jackdaw when using the lenient pipeline (more lenient cut-offs). \"Pos\": age-related CpG site position(Chromosome_position) \"SampleShared\"= how many samples this age-related CpG sites is shared by \"Sample\"= inividual ID \"SampleL\"= denotes longitudinal samples taken from the same individual \"StartPosition\"= position of site \"Endposition\"= position of site (\"StartPosition\" and \"Endposition\" should be the same) \"MethylationPercentage\"= percentage of DNA methylation per site \"CountMethylated\"= count of methylated reads per site CountNonMethylated\"= count of unmethylated reads per site \"Chromosome\"= chromosome in which the site is located \"Coverage\"= coverage per site \"Dage\"= delta age per sample (the difference between an individual's chronological age and its average age) \"**JD_ARCpGs_AllGenes.csv**\" - Contains information on all genes of the jackdaw in which we located age-related CpG sites and the genomic annotation of each of them. \"Pos\": age-related CpG site (Chromosome_position) \"gene.name\": gene name \"category\": annotation category of the site (promoter, exon, intron or intergenic) \"**JD_Annotation_All.rds**\"- RDS file containing the genomic annotation of all CpG sites captured by our analysis in the jackdaw \"chromossome\"= chromosome \"site\"=position of site \"dist.to.feature\"= distance to nearst feature \"feature.name\"= feature name \"feature.strand\"= feature strand \"prom\"= promoter (0=no,1=yes) \"exon\"= exon (0=no,1=yes) \"intron\"= exon (0=no,1=yes) \"gene.name\"= gene name \"Pos\"= position in the genome (Chromosome_position) \"category\"= asigned annotation category (promoter, exon, intron or intergenic) \"**JD_Chromosome_Length.csv**\"- Contains information on the hawaiian crow chromosome length \"Chromosome\"= chromosome \"Length\"= length (bp) \"**JD_CpG_Info_Final.csv**\"- Contains additional information on the age-related CpG sites in the jackdaw \"Pos\"= age-related CpG site (Chromosome_position) \"MeanC\"= mean coverage over all samples \"SDC\"= standard deviation of coverage over all samples \"mCor\"= correlation of DNA methylation and Dage over all samples \"abs\"= absolute correlation of DNA methylation and Dage over all samples \"MeanM\"= mean DNA methylation of coverage over all samples \"**JD_Positions_AR_Final.csv**\"- Location of all age-related CpG sites for the jackdaw \"Chromosome\"=chromosome \"Position\"=position \"**JD_Positions_AR_Final_Len.csv**\"- Location of all age-related CpG sites for the jackdaw when using the lenient pipeline (more lenient cut-offs). \"Chromosome\"=chromosome \"Position\"=position \"**JD_PositionsPerChr_All_Final.csv**\"- Count of unique CpG sites per chromosome captured by our analysis in the jackdaw \"Chromosome\"= chromosome \"Unique_Pos_Count\"= count of unique CpG sites per chromosome captured by our analysis **\"JD_Filtered_Expected.csv\"** - CpG sites that passed the filters in pipeline Steps 1,2,3 for the jackdaw \"Pos\"= Position as chromosome_position \"r\" = correlation value \"pval\" = p-value **\"JD_ARsites_PerChr_Stats.csv\"** - Results of chi-squared tests of observed vs. expected proportions of age-related CpG sites per chromosome for the jackdaw \"Chromosome\"- Chromosome \"ARsites\" - count of age-related CpG sites \"prop_exp\" - proportion of expected CpG sites \"prop_obs\"- proportion of observed CpG sites \"p_adj\"- FDR-corrected p-value **\"JD_ARCpGs_Promoters.csv\"**- Information of age-related CpG sites located in promoters of the jackdaw \"Pos\" \"Chromosome\"= chromosome \"Position\" = position \"r\" = correlation value \"pval\" = p-value ``` \"MeanC\"= mean coverage over all samples ``` \"coverage_bin\" = coverage bin at which the CpG site was located \"SDC\"= standard deviation of coverage over all samples \"mCor\"= correlation of DNA methylation and Dage over all samples \"abs\"= absolute correlation of DNA methylation and Dage over all samples \"MeanM\"= mean DNA methylation of coverage over all samples \"gene.name\" = name of the gene in whose promoter the CpG site is located \"category\" =\u00a0 annotation category\u00a0 \"**ZF_AgeRelated_CpG_noMT_Final.csv**\"- Contains information for all age-related CpG sites per sample for the zebra finch when using the lenient pipeline (more lenient cut-offs). \"Pos\": age-related CpG site position(Chromosome_position) \"SampleShared\"= how many samples this age-related CpG sites is shared by \"Sample\"= inividual ID \"SampleL\"= denotes longitudinal samples taken from the same individual \"Chromosome\"= chromosome in which the site is located \"StartPosition\"= position of site \"Endposition\"= position of site (\"StartPosition\" and \"Endposition\" should be the same) \"MethylationPercentage\"= percentage of DNA methylation per site \"CountMethylated\"= count of methylated reads per site CountNonMethylated\"= count of unmethylated reads per site \"Coverage\"= coverage per site \"Dage\"= delta age per sample (the difference between an individual's chronological age and its average age) \"**ZF_AgeRelated_CpG_noMT_LENIENT_Final.csv**\"- Contains information for all age-related CpG sites per sample for the zebra finch when using the lenient pipeline (more lenient cut-offs). \"Pos\": age-related CpG site position(Chromosome_position) \"SampleShared\"= how many samples this age-related CpG sites is shared by \"Sample\"= inividual ID \"SampleL\"= denotes longitudinal samples taken from the same individual \"Chromosome\"= chromosome in which the site is located \"StartPosition\"= position of site \"Endposition\"= position of site (\"StartPosition\" and \"Endposition\" should be the same) \"MethylationPercentage\"= percentage of DNA methylation per site \"CountMethylated\"= count of methylated reads per site CountNonMethylated\"= count of unmethylated reads per site \"Coverage\"= coverage per site \"Dage\"= delta age per sample (the difference between an individual's chronological age and its average age) \"**ZF_Annotation_All.rds**\"- RDS file containing the genomic annotation of all CpG sites captured by our analysis \"chromossome\"= chromosome \"site\"=position of site \"dist.to.feature\"= distance to nearst feature \"feature.name\"= feature name \"feature.strand\"= feature strand \"prom\"= promoter (0=no,1=yes) \"intron\"= exon (0=no,1=yes) \"exon\"= exon (0=no,1=yes) \"gene.name\"= gene name \"Pos\"= position in the genome (Chromosome_position) \"category\"= asigned annotation category (promoter, exon, intron or intergenic) \"**ZF_ARCpGs_AllGenes.csv**\" - Contains information on all genes in which we located age-related CpG sites and the genomic annotation of each of them \"Pos\": age-related CpG site (Chromosome_position) \"gene.name\": gene name \"Location\": annotation category of the site (promoter, exon, intron or intergenic) \"**ZF_Chromosome_Length.csv**\"- Contains information on the zebra finch chromosome length \"Chromosome\"= chromosome \"Length\"= length (bp) **\"ZF_CpG_Info_Final.csv\"**- Contains additional information on the age-related CpG sites in the zebra finch \"Pos\"= age-related CpG site (Chromosome_position) \"MeanC\"= mean coverage over all samples \"SDC\"= standard deviation of coverage over all samples \"mCor\"= correlation of DNA methylation and Dage over all samples \"abs\"= absolute correlation of DNA methylation and Dage over all samples \"MeanM\"= mean DNA methylation of coverage over all samples **\"ZF_Positions_AR_Final.csv\"**- Location of all age-related CpG sites for the zebra finch \"Chromosome\"=chromosome \"Position\"=position **\"ZF_Positions_AR_Final_Len.csv\"**- Location of all age-related CpG sites for the zebra finch when using the lenient pipeline (more lenient cut-offs). \"Chromosome\"=chromosome \"Position\"=position **\"ZF_PositionsPerChr_All_Final.csv\"**- Count of unique CpG sites per chromosome captured by our analysis in the zebra finch \"Chromosome\"= chromosome \"Unique_Pos_Count\"= count of unique CpG sites per chromosome captured by our analysis **\"ZF_Filtered_Expected.csv\"** - CpG sites that passed the filters in pipeline Steps 1,2,3 for the zebra finch \"Pos\"= Position as chromosome_position \"r\" = correlation value \"pval\" = p-value **\"ZF_ARsites_PerChr_Stats.csv\"** - Results of chi-squared tests of observed vs. expected proportions of age-related CpG sites per chromosome for the zebra finch \"Chromosome\"- Chromosome \"ARsites\" - count of age-related CpG sites \"prop_exp\" - proportion of expected CpG sites \"prop_obs\"- proportion of observed CpG sites \"p_adj\"- FDR-corrected p-value **\"ZF_ARCpGs_Promoters.csv\"**- Information of age-related CpG sites located in promoters of the zebra finch \"Pos\" \"Chromosome\"= chromosome \"Position\" = position \"r\" = correlation value \"pval\" = p-value ``` \"MeanC\"= mean coverage over all samples ``` \"coverage_bin\" = coverage bin at which the CpG site was located \"SDC\"= standard deviation of coverage over all samples \"mCor\"= correlation of DNA methylation and Dage over all samples \"abs\"= absolute correlation of DNA methylation and Dage over all samples \"MeanM\"= mean DNA methylation of coverage over all samples \"gene.name\" = name of the gene in whose promoter the CpG site is located \"category\" =\u00a0 annotation category\u00a0 **\"length_category_chromosome.ZF.txt\"** and\u00a0**\"length_category_chromosome.JD.txt\"**- length of each annotation category per chromosome for each species \"Chromosome\"= chromosome \"exon_length\"= length of exons (bp) intron_length\" = length of introns (bp) \"promoterlength\" =\u00a0 length of promoters (bp) \"intergenic_length\" = length of intergenic regions (bp) \"gene_length\" = length of genes (bp) \"chrom_size\" = chromosome size (bp) ## Raw sequencing data Raw sequencing data for both species can be found in:\u00a0[https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1108628](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1108628) ## Change Log **2024-06-21:** Initial data and code submission. **2025-06-24:** Added calculation of the length of each annotation category (Code #3) and an enrichment- depletion test for AR-CpG sites in each annotation category in the whole genome and split into autosomes, Z and W (Code #4). The raw data of the length of each annotation category per chromosome for each species were also added in the submission as\u00a0**\"length_category_chromosome.ZF.txt\"** and\u00a0**\"length_category_chromosome.JD.txt\"**. **2025-09-25**: Changed the order of the steps of the pipeline for identification of age-related CpG sites (Code #2).\u00a0 Additionally, we now consider as \"expected\" distribution of age-related CpG sites, the distribution of sites that passed the filtering steps1,2,3 in the pipeline. Code #4 has been updated accordingly and information on the sites that passed filtering for each species were added as **\"ZF_Filtered_Expected.csv\"** and **\"JD_Filtered_Expected.csv\"**. All plots and statistical analyses have been updated accordingly (Code #4).",
+            "descriptionType": "TechnicalInfo"
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [
+          {
+            "schemeUri": "https://ror.org",
+            "funderName": "University of Groningen",
+            "funderIdentifier": "https://ror.org/012p63287",
+            "funderIdentifierType": "ROR"
+          },
+          {
+            "schemeUri": "https://ror.org",
+            "funderName": "European Commission",
+            "awardNumber": "101025890",
+            "funderIdentifier": "https://ror.org/00k4n6c32",
+            "funderIdentifierType": "ROR"
+          },
+          {
+            "schemeUri": "https://ror.org",
+            "funderName": "European Commission",
+            "awardNumber": "813383",
+            "funderIdentifier": "https://ror.org/00k4n6c32",
+            "funderIdentifierType": "ROR"
+          }
+        ],
+        "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTA2MS9EUllBRC5XTTM3UFZNVzg8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlRhbmdpbGksIE1hcmlhbnRoaTwvY3JlYXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iaHR0cDovL29yY2lkLm9yZy8iPjAwMDAtMDAwMi0yODcxLTUyNjU8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDEycDYzMjg3IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmciPlVuaXZlcnNpdHkgb2YgR3JvbmluZ2VuPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TdWR5a2EsIEpvYW5uYTwvY3JlYXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iaHR0cDovL29yY2lkLm9yZy8iPjAwMDAtMDAwMy0zMDA2LTM4MDY8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDEycDYzMjg3IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmciPlVuaXZlcnNpdHkgb2YgR3JvbmluZ2VuPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5GdXJuaSwgRmFicmljaW88L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDEycDYzMjg3IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmciPlVuaXZlcnNpdHkgb2YgR3JvbmluZ2VuPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5QYWxzYsO4bGwsIFBlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMTJwNjMyODciIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZyI+VW5pdmVyc2l0eSBvZiBHcm9uaW5nZW48L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlZlcmh1bHN0LCBTaW1vbjwvY3JlYXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iaHR0cDovL29yY2lkLm9yZy8iPjAwMDAtMDAwMi0xMTQzLTY4Njg8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDEycDYzMjg3IiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmciPlVuaXZlcnNpdHkgb2YgR3JvbmluZ2VuPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+SWRlbnRpZmljYXRpb24gb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGZyb20gbG9uZ2l0dWRpbmFsIGF2aWFuIG1ldGh5bG9tZXM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXIgcHVibGlzaGVySWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzAweDZoNW45NSIgcHVibGlzaGVySWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZy8iPkRyeWFkPC9wdWJsaXNoZXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ij5kYXRhc2V0PC9yZXNvdXJjZVR5cGU+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI1PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iZm9zIiBzY2hlbWVVUkk9Imh0dHBzOi8vd2ViLWFyY2hpdmUub2VjZC5vcmcvMjAxMi0wNi0xNS8xMzg1NzUtMzgyMzUxNDcucGRmIj5GT1M6IEJpb2xvZ2ljYWwgc2NpZW5jZXM8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJQTE9TIFN1YmplY3QgQXJlYSBUaGVzYXVydXMiIHNjaGVtZVVSST0iaHR0cHM6Ly9naXRodWIuY29tL1BMT1MvcGxvcy10aGVzYXVydXMiPkFnaW5nPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iUExPUyBTdWJqZWN0IEFyZWEgVGhlc2F1cnVzIiBzY2hlbWVVUkk9Imh0dHBzOi8vZ2l0aHViLmNvbS9QTE9TL3Bsb3MtdGhlc2F1cnVzIj5FcGlnZW5ldGljczwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IlBMT1MgU3ViamVjdCBBcmVhIFRoZXNhdXJ1cyIgc2NoZW1lVVJJPSJodHRwczovL2dpdGh1Yi5jb20vUExPUy9wbG9zLXRoZXNhdXJ1cyI+RE5BIG1ldGh5bGF0aW9uPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+QXZpYW48L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJQTE9TIFN1YmplY3QgQXJlYSBUaGVzYXVydXMiIHNjaGVtZVVSST0iaHR0cHM6Ly9naXRodWIuY29tL1BMT1MvcGxvcy10aGVzYXVydXMiPlNleCBjaHJvbW9zb21lczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxmdW5kaW5nUmVmZXJlbmNlcz4KICAgIDxmdW5kaW5nUmVmZXJlbmNlPgogICAgICA8ZnVuZGVyTmFtZT5Vbml2ZXJzaXR5IG9mIEdyb25pbmdlbjwvZnVuZGVyTmFtZT4KICAgICAgPGZ1bmRlcklkZW50aWZpZXIgZnVuZGVySWRlbnRpZmllclR5cGU9IlJPUiI+aHR0cHM6Ly9yb3Iub3JnLzAxMnA2MzI4NzwvZnVuZGVySWRlbnRpZmllcj4KICAgIDwvZnVuZGluZ1JlZmVyZW5jZT4KICAgIDxmdW5kaW5nUmVmZXJlbmNlPgogICAgICA8ZnVuZGVyTmFtZT5FdXJvcGVhbiBDb21taXNzaW9uPC9mdW5kZXJOYW1lPgogICAgICA8ZnVuZGVySWRlbnRpZmllciBmdW5kZXJJZGVudGlmaWVyVHlwZT0iUk9SIj5odHRwczovL3Jvci5vcmcvMDBrNG42YzMyPC9mdW5kZXJJZGVudGlmaWVyPgogICAgICA8YXdhcmROdW1iZXI+MTAxMDI1ODkwPC9hd2FyZE51bWJlcj4KICAgIDwvZnVuZGluZ1JlZmVyZW5jZT4KICAgIDxmdW5kaW5nUmVmZXJlbmNlPgogICAgICA8ZnVuZGVyTmFtZT5FdXJvcGVhbiBDb21taXNzaW9uPC9mdW5kZXJOYW1lPgogICAgICA8ZnVuZGVySWRlbnRpZmllciBmdW5kZXJJZGVudGlmaWVyVHlwZT0iUk9SIj5odHRwczovL3Jvci5vcmcvMDBrNG42YzMyPC9mdW5kZXJJZGVudGlmaWVyPgogICAgICA8YXdhcmROdW1iZXI+ODEzMzgzPC9hd2FyZE51bWJlcj4KICAgIDwvZnVuZGluZ1JlZmVyZW5jZT4KICA8L2Z1bmRpbmdSZWZlcmVuY2VzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJDcmVhdGVkIj4yMDI0LTA2LTE4VDA4OjQ1OjEzWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiPjIwMjQtMDYtMThUMDg6NDU6MzZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAyNC0wNi0yMVQwMDowMDowMFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIj4yMDI0LTA2LTIxVDAwOjAwOjAwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIj4yMDI1LTA5LTI1VDAwOjAwOjAwWjwvZGF0ZT4KICA8L2RhdGVzPgogIDxsYW5ndWFnZT5lbjwvbGFuZ3VhZ2U+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzQ2l0ZWRCeSIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiPmh0dHBzOi8vZG9pLm9yZy8xMC4xMTAxLzIwMjQuMTAuMDIuNjE2MjQ0PC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzU3VwcGxlbWVudGVkQnkiIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iVVJMIj5odHRwczovL3d3dy5uY2JpLm5sbS5uaWguZ292L2Jpb3Byb2plY3QvP3Rlcm09UFJKTkExMTA4NjI4PC9yZWxhdGVkSWRlbnRpZmllcj4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGlvblR5cGU9IklzRGVyaXZlZEZyb20iIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIj5odHRwczovL2RvaS5vcmcvMTAuNTI4MS96ZW5vZG8uMTcxOTA2OTQ8L3JlbGF0ZWRJZGVudGlmaWVyPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0aW9uVHlwZT0iSXNDaXRlZEJ5IiByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSI+aHR0cHM6Ly9kb2kub3JnLzEwLjExMTEvbWVjLjcwMTQ3PC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8c2l6ZXM+CiAgICA8c2l6ZT4zNjMyNDgyOTMgYnl0ZXM8L3NpemU+CiAgPC9zaXplcz4KICA8dmVyc2lvbj45PC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vc3BkeC5vcmcvbGljZW5zZXMvQ0MwLTEuMC5odG1sIj5DcmVhdGl2ZSBDb21tb25zIFplcm8gdjEuMCBVbml2ZXJzYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij4KICAgICAgU2V4IGNocm9tb3NvbWVzIGFyZSB0aG91Z2h0IHRvIHBsYXkgYW4gaW1wb3J0YW50IHJvbGUgaW4gc2V4LWRlcGVuZGVudAogICAgICBhZ2VpbmcsIHlldCB0aGV5IGFyZSBuZWdsZWN0ZWQgaW4gZXBpZ2VuZXRpYyBhZ2luZyByZXNlYXJjaC4gV2UgaWRlbnRpZmllZAogICAgICBnZW5vbWUtd2lkZSBhZ2UtcmVsYXRlZCBDcEcgKEFSLUNwRykgc2l0ZXMgaW4gdHdvIGF2aWFuIHNwZWNpZXMgKHplYnJhCiAgICAgIGZpbmNoIGFuZCBqYWNrZGF3KSBhbmQgZm91bmQgQVItQ3BHIHNpdGVzIHRvIGJlIG92ZXJyZXByZXNlbnRlZCBvbiB0aGUKICAgICAgaGFwbG9pZCwgZmVtYWxlLXNwZWNpZmljIFcgY2hyb21vc29tZSBpbiBib3RoIHNwZWNpZXMsIGFuZCBvbiB0aGUgWgogICAgICBjaHJvbW9zb21lIGluIHRoZSB6ZWJyYSBmaW5jaC4KICAgIDwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJNZXRob2RzIj4KICAgICAgJmx0O3AmZ3Q7WmVicmEgZmluY2ggYmxvb2Qgc2FtcGxlcyB3ZXJlIGNvbGxlY3RlZCBkdXJpbmcgYSBsb25nLXRlcm0KICAgICAgZXhwZXJpbWVudCB3aGVyZSBiaXJkcyB3ZXJlIGhvdXNlZCBpbiBvdXRkb29yIGF2aWFyaWVzICgzMjAgw5cgMTUwIMOXIDIxMAogICAgICBjbSkgZWFjaCBjb250YWluaW5nIHNpbmdsZSBzZXggZ3JvdXBzIG9mIDE44oCTMjQgYWR1bHRzwqAuIFR3ZW50eQogICAgICBsb25naXR1ZGluYWwgc2FtcGxlcyB3ZXJlIGNvbGxlY3RlZCBmcm9tIHRlbiBrbm93bi1hZ2UgaW5kaXZpZHVhbHMgKHNpeAogICAgICBtYWxlcyBhbmQgZm91ciBmZW1hbGVzKSBzYW1wbGVkIHR3aWNlIGR1cmluZyB0aGVpciBsaWZldGltZSBhdCBhbiBhdmVyYWdlCiAgICAgIGludGVydmFsIG9mIDEsNDcwIGRheXMgYmV0d2VlbiB0aGUgdHdvIHNhbXBsaW5nIHBvaW50cy4gSmFja2RhdyBibG9vZAogICAgICBzYW1wbGVzIHdlcmUgY29sbGVjdGVkIGZyb20gaW5kaXZpZHVhbHMgb2YgYSBmcmVlLXJhbmdpbmcgcG9wdWxhdGlvbgogICAgICBicmVlZGluZyBpbiBuZXN0LWJveGVzIHNvdXRoIG9mIEdyb25pbmdlbiwgdGhlIE5ldGhlcmxhbmRzICg1My4xNzA4wrBOLAogICAgICA2LjYwNjTCsEUpLiBXZSBhbmFseXplZCAyMiBsb25naXR1ZGluYWwgYmxvb2Qgc2FtcGxlcyBjb2xsZWN0ZWQgZHVyaW5nIDIwMDcKICAgICAg4oCTIDIwMjEgZnJvbSAxMSBrbm93biBhZ2UgYWR1bHRzIChmaXZlIG1hbGVzIGFuZCBzaXggZmVtYWxlcykgd2l0aCBhbgogICAgICBhdmVyYWdlIHNhbXBsaW5nIGludGVydmFsIG9mIDIsNDI5IGRheXMuIFNhbXBsZXMgd2VyZSB0YWtlbiBiZXR3ZWVuIEp1bmUKICAgICAgMjAwOCBhbmQgRGVjZW1iZXIgMjAxNCBhbmQgc3RvcmVkIGluIC04MCZsdDtzdXAmZ3Q7byZsdDsvc3VwJmd0O0MgaW4gRURUQQogICAgICBidWZmZXIuJmx0Oy9wJmd0OyAmbHQ7cCZndDtXZSBleHRyYWN0ZWQgdG90YWwtY2VsbCBETkEgdXNpbmcgaW5udVBSRVAgRE5BCiAgICAgIE1pbmkgS2l0IChBbmFseXRpayBKZW5hIEdtYkgrQ28pIGZyb20gM868bCAobnVjbGVhdGVkKSByZWQgYmxvb2QgY2VsbHMKICAgICAgYWNjb3JkaW5nIHRvIHRoZSBtYW51ZmFjdHVyZXLigJlzIHByb3RvY29sLiBXaG9sZSBnZW5vbWUgc2VxdWVuY2luZyB3YXMKICAgICAgcGVyZm9ybWVkIGJ5IFRoZSBIb3NwaXRhbCBmb3IgU2ljayBDaGlsZHJlbiAoVG9yb250bywgQ2FuYWRhKSB3aGVyZQogICAgICBwYWlyZWQtZW5kIElsbHVtaW5hIG5leHQtZ2VuZXJhdGlvbiBzZXF1ZW5jaW5nICgxNTBicCkgd2FzIGNhcnJpZWQgb3V0IG9uCiAgICAgIGVpdGhlciBhbiBJbGx1bWluYSBIaVNlcVjihKIgKDEyIHplYnJhIGZpbmNoIHNhbXBsZXMpIG9yIGFuIElsbHVtaW5hCiAgICAgIE5vdmFTZXHihKIgc2VxdWVuY2VyIChlaWdodCB6ZWJyYSBmaW5jaCBzYW1wbGVzIGFuZCAyMiBqYWNrZGF3IHNhbXBsZXMpLgogICAgICBMaWJyYXJpZXMgd2VyZSBwcmVwYXJlZCB1c2luZyB0aGUgU3dpZnQgQmlvc2NpZW5jZXMgSW5jLiBBY2NlbCBOR1MgTWV0aHlsCiAgICAgIFNlcSBraXQgKHBhcnQgbm8uIDMwMDI0IGFuZCAzMDA5NikgYW5kIHRoZSBETkEgd2FzIGJpc3VsZml0ZSBjb252ZXJ0ZWQKICAgICAgdXNpbmcgdGhlIEVaLTk2IEROQSBNZXRoeWxhdGlvbi1Hb2xkIGtpdCBmcm9tIChaeW1vIFJlc2VhcmNoIEluYy4sIHBhcnQKICAgICAgbm8uIEQ1MDA1KSBhcyBwZXIgdGhlIG1hbnVmYWN0dXJlcidzIHByb3RvY29sIGFuZCBzdWJzZXF1ZW50bHkKICAgICAgc3ViamVjdGVkIHRvIHdob2xlLWdlbm9tZSBhbXBsaWZpY2F0aW9uLiDCoCZsdDsvcCZndDsgJmx0O3AmZ3Q7U2VxdWVuY2VzCiAgICAgIHdlcmUgdHJpbW1lZCB1c2luZyBUcmltIEdhbG9yZSEgwqB2LiAwLjYuMTAgKCZsdDtlbSZndDszOCZsdDsvZW0mZ3Q7KSBpbgogICAgICBwYWlyZWQtZW5kIG1vZGUuIFZpc3VhbCBxdWFsaXR5IGNvbnRyb2xzIG9mIHRoZSBkYXRhIHdlcmUgY2FycmllZCBvdXQKICAgICAgYmVmb3JlIGFuZCBhZnRlciB0cmltbWluZyB1c2luZyBGYXN0UUMgdi4gMDExLjkgKCZsdDtlbSZndDszOSZsdDsvZW0mZ3Q7KQogICAgICBhbmQgTXVsdGlRQyB2LiAxMS4xNCAoJmx0O2VtJmd0OzQwJmx0Oy9lbSZndDspLiBCZWNhdXNlIHRoZSBTd2lmdAogICAgICBCaW9zY2llbmNlcyBJbmMuIEFjY2VsIE5HUyBNZXRoeWwgU2VxIGtpdCB3YXMgdXNlZCBmb3IgbGlicmFyeQogICAgICBwcmVwYXJhdGlvbiwgdGhlIGZpcnN0IH4xMCBicCBzaG93ZWQgZXh0cmVtZSBiaWFzZXMgaW4gc2VxdWVuY2UKICAgICAgY29tcG9zaXRpb24gYW5kIE0tYmlhcywgc28gYWZ0ZXIgY2hlY2tpbmcgdGhlIE0tYmlhcyBwbG90cywgdGhlIGZpcnN0IDEwCiAgICAgIGJwcyB3ZXJlIGZ1cnRoZXIgdHJpbW1lZCBmcm9tIGVhY2ggc2VxdWVuY2UuJmx0Oy9wJmd0OyAmbHQ7cCZndDtBbGlnbm1lbnRzCiAgICAgIHdlcmUgcGVyZm9ybWVkIHVzaW5nIEJpc21hcmsgdi4gMC4xNC40MzPCoCB1c2luZyB0aGUgQm93dGllIDIgdi4gMi40LjUKICAgICAgYWxpZ25tZW50IGFsZ29yaXRobSDCoGZvciBib3RoIGluIHNpbGljbyBiaXN1bGZpdGUgY29udmVyc2lvbiBvZiB0aGUKICAgICAgcmVmZXJlbmNlIGdlbm9tZXMgYW5kIGFsaWdubWVudHMuIEZvciB6ZWJyYSBmaW5jaCwgdHJpbW1lZCByZWFkcyB3ZXJlCiAgICAgIGFsaWduZWQgYWdhaW5zdCB0aGUgaW4gc2lsaWNvIGJpc3VsZml0ZSBjb252ZXJ0ZWQgemVicmEgZmluY2gKICAgICAgKCZsdDtlbSZndDtUYWVuaW9weWdpYSBndXR0YXRhJmx0Oy9lbSZndDspIHJlZmVyZW5jZSBnZW5vbWUKICAgICAgKEdDQV8wMDM5NTc1NjUuNCkgYW5kIHRoZSBhdmVyYWdlIG1hcHBpbmcgZWZmaWNpZW5jeSB3YXMgNjQuNSUgKFNEOiAzLjIyKS4KICAgICAgQmVjYXVzZSB0aGUgamFja2RhdyByZWZlcmVuY2UgZ2Vub21lIGRpZCBub3QgY29udGFpbiBhbiBhc3NlbWJsZWQgVwogICAgICBjaHJvbW9zb21lLCB0aGUgamFja2RhdyBiaXN1bGZpdGUgc2VxdWVuY2luZyBkYXRhIHdhcyBhbGlnbmVkIHRvIGFuCiAgICAgICZsdDtlbSZndDtpbiBzaWxpY28mbHQ7L2VtJmd0OyBiaXN1bGZpdGUgY29udmVydGVkIEhhd2FpaWFuIGNyb3cgZ2Vub21lCiAgICAgICgmbHQ7ZW0mZ3Q7Q29ydnVzIGhhd2FpaWVuc2lzJmx0Oy9lbSZndDssIEdDQV8wMjA3NDA3MjUuMSwgdGhlIGNsb3Nlc3QKICAgICAgcmVsYXRpdmUgc3BlY2llcyB3aXRoIGFuIGFzc2VtYmxlZCBXIGNocm9tb3NvbWUpIHRoZSBhdmVyYWdlIG1hcHBpbmcKICAgICAgZWZmaWNpZW5jeSB3YXMgNjQuNyUgKFNEOiAwLjk4KS4mbHQ7L3AmZ3Q7ICZsdDtwJmd0O1RoZSBHRlQtZm9ybWF0dGVkCiAgICAgIGFubm90YXRpb24gZmlsZXMgZm9yIHRoZSB6ZWJyYSBmaW5jaCAoR0NGXzAwMzk1NzU2NS4yKSBhbmQgdGhlIEhhd2FpaWFuCiAgICAgIGNyb3cgwqAoR0NGXzAyMDc0MDcyNS4xKSB3ZXJlIGNvbnZlcnRlZCBpbnRvIEJFRDEyIGZvcm1hdCB1c2luZyB0aGUKICAgICAgVW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBTYW50YSBDcnV6IChVQ1NDKSB1dGlsaXRpZXMKICAgICAgJmx0O2VtJmd0O2d0ZlRvR2VuZVByZWQmbHQ7L2VtJmd0OyBhbmTCoCZsdDtlbSZndDtnZW5lUHJlZFRvQmVkJmx0Oy9lbSZndDsKICAgICAgKGF2YWlsYWJsZSBhdCZsdDthCiAgICAgIGhyZWY9IiUyMGh0dHBzOi9oZ2Rvd25sb2FkLnNvZS51Y3NjLmVkdS9kb3dubG9hZHMuaHRtbCUyM3V0aWxpdGllc19kb3dubG9hZHMiJmd0OyBodHRwczovL2hnZG93bmxvYWQuc29lLnVjc2MuZWR1L2Rvd25sb2Fkcy5odG1sI3V0aWxpdGllc19kb3dubG9hZHMmbHQ7L2EmZ3Q7KS4gQVItQ3BHIHNpdGVzIHdlcmUgYW5ub3RhdGVkIHVzaW5nIHRoZSB0b29sICZsdDtlbSZndDthbm5vdGF0ZVdpdGhHZW5lUGFydHMmbHQ7L2VtJmd0OyBmcm9tIHRoZSBSIDQuMS4yIHBhY2thZ2UgJmx0O2VtJmd0O2dlbm9tYXRpb24mbHQ7L2VtJmd0OyAxLjQuMS4gVGhpcyB0b29sIGhpZXJhcmNoaWNhbGx5IGNsYXNzaWZpZXMgdGhlIHNpdGVzIGludG8gcHJlLWRlZmluZWQgZnVuY3Rpb25hbCByZWdpb25zLCBpLmUuLCBwcm9tb3RlciwgZXhvbiwgaW50cm9uLCBvciBpbnRlcmdlbmljLCBoZXJlb24gcmVmZXJyZWQgdG8gYXMgYW5ub3RhdGlvbiBjYXRlZ29yaWVzLiBUaGUgcHJlZGVmaW5lZCBmdW5jdGlvbmFsIHJlZ2lvbnMgd2VyZSBiYXNlZCBvbiB0aGUgYW5ub3RhdGlvbiBpbmZvcm1hdGlvbiBwcmVzZW50IGluIHRoZSBCRUQxMiBmaWxlcyBhY2Nlc3NlZCB3aXRoIHRoZSAmbHQ7ZW0mZ3Q7Z2Vub21hdGlvbiZsdDsvZW0mZ3Q7IHRvb2wgJmx0O2VtJmd0O3JlYWRUcmFuc2NyaXB0RmVhdHVyZXMmbHQ7L2VtJmd0Oy4gQW5ub3RhdGlvbnMgd2VyZSBwZXJmb3JtZWQgYXMgYSBoaWVyYXJjaGljYWwgYXNzaWdubWVudCAocHJvbW90ZXIgJmFtcDtndDsgZXhvbikuIFN1YnNlcXVlbnRseSwgYSBjdXN0b21pemVkIFIgc2NyaXB0IHdhcyBlbXBsb3llZCB0byBpbnRlZ3JhdGUgdGhlIGFubm90YXRpb24gcmVzdWx0cyBvZiBBUi1DcEcgc2l0ZXMgd2l0aCB0aGVpciByZXNwZWN0aXZlIGFubm90YXRpb24gY2F0ZWdvcnkgaW5mb3JtYXRpb24uJmx0Oy9wJmd0OwogICAgPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IlRlY2huaWNhbEluZm8iPgogICAgICAjIElkZW50aWZpY2F0aW9uIG9mIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBmcm9tIGxvbmdpdHVkaW5hbCBhdmlhbgogICAgICBtZXRoeWxvbWVzCiAgICAgIFtodHRwczovL2RvaS5vcmcvMTAuNTA2MS9kcnlhZC53bTM3cHZtdzhdKGh0dHBzOi8vZG9pLm9yZy8xMC41MDYxL2RyeWFkLndtMzdwdm13OCkgRGF0YSBmb3IgaWRlbnRpZmljYXRpb24gb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGZyb20gbG9uZ2l0dWRpbmFsIGF2aWFuIG1ldGh5bG9tZXMgIyMjIyBEZXNjcmlwdGlvbiBvZiB0aGUgZGF0YSBhbmQgZmlsZSBzdHJ1Y3R1cmUgKipDb2RlcyoqOiAqKkNvZGUgIzEgKDAxX0Jpb2luZm9ybWF0aWNzKSoqOsKgICogQmlvaW5mb3JtYXRpY3MgY29kZSBmb3IgRE5BIG1ldGh5bGF0aW9uIGV4dHJhY3Rpb24gZnJvbSBXR0JTIGFuZCBFTVNlcSBkYXRhICoqQ29kZSAjMiAoMDJfUGlwZWxpbmUuUikqKjogKiBNZXJnaW5nIEROQSBtZXRoeWxhdGlvbiBtZWFzdXJlbWVudHMgcGVyIENwRyBzaXRlIHBlciBzYW1wbGUgaW4gb25lIGRhdGEgZnJhbWUgcGVyIHNwZWNpZXMgLSBSdW5uaW5nIHRoZSBpbml0aWFsIHBhcnQgb2YgdGhlIHBpcGVsaW5lIGZvciBpZGVudGlmaWNhdGlvbiBvZiBhZ2UtcmVsYXRlZCBDcEcgc2l0ZXMgKipDb2RlICMzKiogKiooMDNfQW5ub3RhdGlvbi5zaCArwqAwM19Bbm5vdGF0aW9uX0xlbmd0aC5zaCk6KiogKiBGdW5jdGlvbmFsIGFubm90YXRpb24gb2YgYWxsIENwRyBzaXRlcyBjYXB0dXJlZCBieSBvdXIgYW5hbHlzaXMgYW5kIGNhbGN1bGF0aW9uIG9mIHRoZSBsZW5ndGggb2YgZWFjaCBhbm5vdGF0aW9uIGNhdGVnb3J5ICoqQ29kZSAjNCAoMDQuUGxvdHNfU3RhdHMuUikqKjogKiBGaW5hbCBzdGVwcyBvZiB0aGUgcGlwZWxpbmUgLSBGdW5jdGlvbmFsIGFubm90YXRpb24gb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzICogU3RhdGlzdGljYWwgYW5hbHlzZXMgLSBQbG90cyAjIyAqKkZpbGUgZGVzY3JpcHRpb25zOioqICIqKkpEX0FnZVJlbGF0ZWRfQ3BHX25vTVRfRmluYWwuY3N2KioiLSBDb250YWlucyBpbmZvcm1hdGlvbiBmb3IgYWxsIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBwZXIgc2FtcGxlIGZvciB0aGUgamFja2Rhdy4gIlBvcyI6IGFnZS1yZWxhdGVkIENwRyBzaXRlIHBvc2l0aW9uKENocm9tb3NvbWVfcG9zaXRpb24pICJTYW1wbGVTaGFyZWQiPSBob3cgbWFueSBzYW1wbGVzIHRoaXMgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGlzIHNoYXJlZCBieSAiU2FtcGxlIj0gaW5pdmlkdWFsIElEICJTYW1wbGVMIj0gZGVub3RlcyBsb25naXR1ZGluYWwgc2FtcGxlcyB0YWtlbiBmcm9tIHRoZSBzYW1lIGluZGl2aWR1YWwgIlN0YXJ0UG9zaXRpb24iPSBwb3NpdGlvbiBvZiBzaXRlICJFbmRwb3NpdGlvbiI9IHBvc2l0aW9uIG9mIHNpdGUgKCJTdGFydFBvc2l0aW9uIiBhbmQgIkVuZHBvc2l0aW9uIiBzaG91bGQgYmUgdGhlIHNhbWUpICJNZXRoeWxhdGlvblBlcmNlbnRhZ2UiPSBwZXJjZW50YWdlIG9mIEROQSBtZXRoeWxhdGlvbiBwZXIgc2l0ZSAiQ291bnRNZXRoeWxhdGVkIj0gY291bnQgb2YgbWV0aHlsYXRlZCByZWFkcyBwZXIgc2l0ZSBDb3VudE5vbk1ldGh5bGF0ZWQiPSBjb3VudCBvZiB1bm1ldGh5bGF0ZWQgcmVhZHMgcGVyIHNpdGUgIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lIGluIHdoaWNoIHRoZSBzaXRlIGlzIGxvY2F0ZWQgIkNvdmVyYWdlIj0gY292ZXJhZ2UgcGVyIHNpdGUgIkRhZ2UiPSBkZWx0YSBhZ2UgcGVyIHNhbXBsZSAodGhlIGRpZmZlcmVuY2UgYmV0d2VlbiBhbiBpbmRpdmlkdWFsJ3MgY2hyb25vbG9naWNhbCBhZ2UgYW5kIGl0cyBhdmVyYWdlIGFnZSkgKioiSkRfQWdlUmVsYXRlZF9DcEdfbm9NVF9MRU5JRU5UX0ZpbmFsLmNzdioqIi0gQ29udGFpbnMgaW5mb3JtYXRpb24gZm9yIGFsbCBhZ2UtcmVsYXRlZCBDcEcgc2l0ZXMgcGVyIHNhbXBsZSBmb3IgdGhlIGphY2tkYXcgd2hlbiB1c2luZyB0aGUgbGVuaWVudCBwaXBlbGluZSAobW9yZSBsZW5pZW50IGN1dC1vZmZzKS4gIlBvcyI6IGFnZS1yZWxhdGVkIENwRyBzaXRlIHBvc2l0aW9uKENocm9tb3NvbWVfcG9zaXRpb24pICJTYW1wbGVTaGFyZWQiPSBob3cgbWFueSBzYW1wbGVzIHRoaXMgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGlzIHNoYXJlZCBieSAiU2FtcGxlIj0gaW5pdmlkdWFsIElEICJTYW1wbGVMIj0gZGVub3RlcyBsb25naXR1ZGluYWwgc2FtcGxlcyB0YWtlbiBmcm9tIHRoZSBzYW1lIGluZGl2aWR1YWwgIlN0YXJ0UG9zaXRpb24iPSBwb3NpdGlvbiBvZiBzaXRlICJFbmRwb3NpdGlvbiI9IHBvc2l0aW9uIG9mIHNpdGUgKCJTdGFydFBvc2l0aW9uIiBhbmQgIkVuZHBvc2l0aW9uIiBzaG91bGQgYmUgdGhlIHNhbWUpICJNZXRoeWxhdGlvblBlcmNlbnRhZ2UiPSBwZXJjZW50YWdlIG9mIEROQSBtZXRoeWxhdGlvbiBwZXIgc2l0ZSAiQ291bnRNZXRoeWxhdGVkIj0gY291bnQgb2YgbWV0aHlsYXRlZCByZWFkcyBwZXIgc2l0ZSBDb3VudE5vbk1ldGh5bGF0ZWQiPSBjb3VudCBvZiB1bm1ldGh5bGF0ZWQgcmVhZHMgcGVyIHNpdGUgIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lIGluIHdoaWNoIHRoZSBzaXRlIGlzIGxvY2F0ZWQgIkNvdmVyYWdlIj0gY292ZXJhZ2UgcGVyIHNpdGUgIkRhZ2UiPSBkZWx0YSBhZ2UgcGVyIHNhbXBsZSAodGhlIGRpZmZlcmVuY2UgYmV0d2VlbiBhbiBpbmRpdmlkdWFsJ3MgY2hyb25vbG9naWNhbCBhZ2UgYW5kIGl0cyBhdmVyYWdlIGFnZSkgIioqSkRfQVJDcEdzX0FsbEdlbmVzLmNzdioqIiAtIENvbnRhaW5zIGluZm9ybWF0aW9uIG9uIGFsbCBnZW5lcyBvZiB0aGUgamFja2RhdyBpbiB3aGljaCB3ZSBsb2NhdGVkIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBhbmQgdGhlIGdlbm9taWMgYW5ub3RhdGlvbiBvZiBlYWNoIG9mIHRoZW0uICJQb3MiOiBhZ2UtcmVsYXRlZCBDcEcgc2l0ZSAoQ2hyb21vc29tZV9wb3NpdGlvbikgImdlbmUubmFtZSI6IGdlbmUgbmFtZSAiY2F0ZWdvcnkiOiBhbm5vdGF0aW9uIGNhdGVnb3J5IG9mIHRoZSBzaXRlIChwcm9tb3RlciwgZXhvbiwgaW50cm9uIG9yIGludGVyZ2VuaWMpICIqKkpEX0Fubm90YXRpb25fQWxsLnJkcyoqIi0gUkRTIGZpbGUgY29udGFpbmluZyB0aGUgZ2Vub21pYyBhbm5vdGF0aW9uIG9mIGFsbCBDcEcgc2l0ZXMgY2FwdHVyZWQgYnkgb3VyIGFuYWx5c2lzIGluIHRoZSBqYWNrZGF3ICJjaHJvbW9zc29tZSI9IGNocm9tb3NvbWUgInNpdGUiPXBvc2l0aW9uIG9mIHNpdGUgImRpc3QudG8uZmVhdHVyZSI9IGRpc3RhbmNlIHRvIG5lYXJzdCBmZWF0dXJlICJmZWF0dXJlLm5hbWUiPSBmZWF0dXJlIG5hbWUgImZlYXR1cmUuc3RyYW5kIj0gZmVhdHVyZSBzdHJhbmQgInByb20iPSBwcm9tb3RlciAoMD1ubywxPXllcykgImV4b24iPSBleG9uICgwPW5vLDE9eWVzKSAiaW50cm9uIj0gZXhvbiAoMD1ubywxPXllcykgImdlbmUubmFtZSI9IGdlbmUgbmFtZSAiUG9zIj0gcG9zaXRpb24gaW4gdGhlIGdlbm9tZSAoQ2hyb21vc29tZV9wb3NpdGlvbikgImNhdGVnb3J5Ij0gYXNpZ25lZCBhbm5vdGF0aW9uIGNhdGVnb3J5IChwcm9tb3RlciwgZXhvbiwgaW50cm9uIG9yIGludGVyZ2VuaWMpICIqKkpEX0Nocm9tb3NvbWVfTGVuZ3RoLmNzdioqIi0gQ29udGFpbnMgaW5mb3JtYXRpb24gb24gdGhlIGhhd2FpaWFuIGNyb3cgY2hyb21vc29tZSBsZW5ndGggIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lICJMZW5ndGgiPSBsZW5ndGggKGJwKSAiKipKRF9DcEdfSW5mb19GaW5hbC5jc3YqKiItIENvbnRhaW5zIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gb24gdGhlIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBpbiB0aGUgamFja2RhdyAiUG9zIj0gYWdlLXJlbGF0ZWQgQ3BHIHNpdGUgKENocm9tb3NvbWVfcG9zaXRpb24pICJNZWFuQyI9IG1lYW4gY292ZXJhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAiU0RDIj0gc3RhbmRhcmQgZGV2aWF0aW9uIG9mIGNvdmVyYWdlIG92ZXIgYWxsIHNhbXBsZXMgIm1Db3IiPSBjb3JyZWxhdGlvbiBvZiBETkEgbWV0aHlsYXRpb24gYW5kIERhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAiYWJzIj0gYWJzb2x1dGUgY29ycmVsYXRpb24gb2YgRE5BIG1ldGh5bGF0aW9uIGFuZCBEYWdlIG92ZXIgYWxsIHNhbXBsZXMgIk1lYW5NIj0gbWVhbiBETkEgbWV0aHlsYXRpb24gb2YgY292ZXJhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAiKipKRF9Qb3NpdGlvbnNfQVJfRmluYWwuY3N2KioiLSBMb2NhdGlvbiBvZiBhbGwgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGZvciB0aGUgamFja2RhdyAiQ2hyb21vc29tZSI9Y2hyb21vc29tZSAiUG9zaXRpb24iPXBvc2l0aW9uICIqKkpEX1Bvc2l0aW9uc19BUl9GaW5hbF9MZW4uY3N2KioiLSBMb2NhdGlvbiBvZiBhbGwgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGZvciB0aGUgamFja2RhdyB3aGVuIHVzaW5nIHRoZSBsZW5pZW50IHBpcGVsaW5lIChtb3JlIGxlbmllbnQgY3V0LW9mZnMpLiAiQ2hyb21vc29tZSI9Y2hyb21vc29tZSAiUG9zaXRpb24iPXBvc2l0aW9uICIqKkpEX1Bvc2l0aW9uc1BlckNocl9BbGxfRmluYWwuY3N2KioiLSBDb3VudCBvZiB1bmlxdWUgQ3BHIHNpdGVzIHBlciBjaHJvbW9zb21lIGNhcHR1cmVkIGJ5IG91ciBhbmFseXNpcyBpbiB0aGUgamFja2RhdyAiQ2hyb21vc29tZSI9IGNocm9tb3NvbWUgIlVuaXF1ZV9Qb3NfQ291bnQiPSBjb3VudCBvZiB1bmlxdWUgQ3BHIHNpdGVzIHBlciBjaHJvbW9zb21lIGNhcHR1cmVkIGJ5IG91ciBhbmFseXNpcyAqKiJKRF9GaWx0ZXJlZF9FeHBlY3RlZC5jc3YiKiogLSBDcEcgc2l0ZXMgdGhhdCBwYXNzZWQgdGhlIGZpbHRlcnMgaW4gcGlwZWxpbmUgU3RlcHMgMSwyLDMgZm9yIHRoZSBqYWNrZGF3ICJQb3MiPSBQb3NpdGlvbiBhcyBjaHJvbW9zb21lX3Bvc2l0aW9uICJyIiA9IGNvcnJlbGF0aW9uIHZhbHVlICJwdmFsIiA9IHAtdmFsdWUgKioiSkRfQVJzaXRlc19QZXJDaHJfU3RhdHMuY3N2IioqIC0gUmVzdWx0cyBvZiBjaGktc3F1YXJlZCB0ZXN0cyBvZiBvYnNlcnZlZCB2cy4gZXhwZWN0ZWQgcHJvcG9ydGlvbnMgb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIHBlciBjaHJvbW9zb21lIGZvciB0aGUgamFja2RhdyAiQ2hyb21vc29tZSItIENocm9tb3NvbWUgIkFSc2l0ZXMiIC0gY291bnQgb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzICJwcm9wX2V4cCIgLSBwcm9wb3J0aW9uIG9mIGV4cGVjdGVkIENwRyBzaXRlcyAicHJvcF9vYnMiLSBwcm9wb3J0aW9uIG9mIG9ic2VydmVkIENwRyBzaXRlcyAicF9hZGoiLSBGRFItY29ycmVjdGVkIHAtdmFsdWUgKioiSkRfQVJDcEdzX1Byb21vdGVycy5jc3YiKiotIEluZm9ybWF0aW9uIG9mIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBsb2NhdGVkIGluIHByb21vdGVycyBvZiB0aGUgamFja2RhdyAiUG9zIiAiQ2hyb21vc29tZSI9IGNocm9tb3NvbWUgIlBvc2l0aW9uIiA9IHBvc2l0aW9uICJyIiA9IGNvcnJlbGF0aW9uIHZhbHVlICJwdmFsIiA9IHAtdmFsdWUgYGBgICJNZWFuQyI9IG1lYW4gY292ZXJhZ2Ugb3ZlciBhbGwgc2FtcGxlcyBgYGAgImNvdmVyYWdlX2JpbiIgPSBjb3ZlcmFnZSBiaW4gYXQgd2hpY2ggdGhlIENwRyBzaXRlIHdhcyBsb2NhdGVkICJTREMiPSBzdGFuZGFyZCBkZXZpYXRpb24gb2YgY292ZXJhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAibUNvciI9IGNvcnJlbGF0aW9uIG9mIEROQSBtZXRoeWxhdGlvbiBhbmQgRGFnZSBvdmVyIGFsbCBzYW1wbGVzICJhYnMiPSBhYnNvbHV0ZSBjb3JyZWxhdGlvbiBvZiBETkEgbWV0aHlsYXRpb24gYW5kIERhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAiTWVhbk0iPSBtZWFuIEROQSBtZXRoeWxhdGlvbiBvZiBjb3ZlcmFnZSBvdmVyIGFsbCBzYW1wbGVzICJnZW5lLm5hbWUiID0gbmFtZSBvZiB0aGUgZ2VuZSBpbiB3aG9zZSBwcm9tb3RlciB0aGUgQ3BHIHNpdGUgaXMgbG9jYXRlZCAiY2F0ZWdvcnkiID3CoCBhbm5vdGF0aW9uIGNhdGVnb3J5wqAgIioqWkZfQWdlUmVsYXRlZF9DcEdfbm9NVF9GaW5hbC5jc3YqKiItIENvbnRhaW5zIGluZm9ybWF0aW9uIGZvciBhbGwgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIHBlciBzYW1wbGUgZm9yIHRoZSB6ZWJyYSBmaW5jaCB3aGVuIHVzaW5nIHRoZSBsZW5pZW50IHBpcGVsaW5lIChtb3JlIGxlbmllbnQgY3V0LW9mZnMpLiAiUG9zIjogYWdlLXJlbGF0ZWQgQ3BHIHNpdGUgcG9zaXRpb24oQ2hyb21vc29tZV9wb3NpdGlvbikgIlNhbXBsZVNoYXJlZCI9IGhvdyBtYW55IHNhbXBsZXMgdGhpcyBhZ2UtcmVsYXRlZCBDcEcgc2l0ZXMgaXMgc2hhcmVkIGJ5ICJTYW1wbGUiPSBpbml2aWR1YWwgSUQgIlNhbXBsZUwiPSBkZW5vdGVzIGxvbmdpdHVkaW5hbCBzYW1wbGVzIHRha2VuIGZyb20gdGhlIHNhbWUgaW5kaXZpZHVhbCAiQ2hyb21vc29tZSI9IGNocm9tb3NvbWUgaW4gd2hpY2ggdGhlIHNpdGUgaXMgbG9jYXRlZCAiU3RhcnRQb3NpdGlvbiI9IHBvc2l0aW9uIG9mIHNpdGUgIkVuZHBvc2l0aW9uIj0gcG9zaXRpb24gb2Ygc2l0ZSAoIlN0YXJ0UG9zaXRpb24iIGFuZCAiRW5kcG9zaXRpb24iIHNob3VsZCBiZSB0aGUgc2FtZSkgIk1ldGh5bGF0aW9uUGVyY2VudGFnZSI9IHBlcmNlbnRhZ2Ugb2YgRE5BIG1ldGh5bGF0aW9uIHBlciBzaXRlICJDb3VudE1ldGh5bGF0ZWQiPSBjb3VudCBvZiBtZXRoeWxhdGVkIHJlYWRzIHBlciBzaXRlIENvdW50Tm9uTWV0aHlsYXRlZCI9IGNvdW50IG9mIHVubWV0aHlsYXRlZCByZWFkcyBwZXIgc2l0ZSAiQ292ZXJhZ2UiPSBjb3ZlcmFnZSBwZXIgc2l0ZSAiRGFnZSI9IGRlbHRhIGFnZSBwZXIgc2FtcGxlICh0aGUgZGlmZmVyZW5jZSBiZXR3ZWVuIGFuIGluZGl2aWR1YWwncyBjaHJvbm9sb2dpY2FsIGFnZSBhbmQgaXRzIGF2ZXJhZ2UgYWdlKSAiKipaRl9BZ2VSZWxhdGVkX0NwR19ub01UX0xFTklFTlRfRmluYWwuY3N2KioiLSBDb250YWlucyBpbmZvcm1hdGlvbiBmb3IgYWxsIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBwZXIgc2FtcGxlIGZvciB0aGUgemVicmEgZmluY2ggd2hlbiB1c2luZyB0aGUgbGVuaWVudCBwaXBlbGluZSAobW9yZSBsZW5pZW50IGN1dC1vZmZzKS4gIlBvcyI6IGFnZS1yZWxhdGVkIENwRyBzaXRlIHBvc2l0aW9uKENocm9tb3NvbWVfcG9zaXRpb24pICJTYW1wbGVTaGFyZWQiPSBob3cgbWFueSBzYW1wbGVzIHRoaXMgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzIGlzIHNoYXJlZCBieSAiU2FtcGxlIj0gaW5pdmlkdWFsIElEICJTYW1wbGVMIj0gZGVub3RlcyBsb25naXR1ZGluYWwgc2FtcGxlcyB0YWtlbiBmcm9tIHRoZSBzYW1lIGluZGl2aWR1YWwgIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lIGluIHdoaWNoIHRoZSBzaXRlIGlzIGxvY2F0ZWQgIlN0YXJ0UG9zaXRpb24iPSBwb3NpdGlvbiBvZiBzaXRlICJFbmRwb3NpdGlvbiI9IHBvc2l0aW9uIG9mIHNpdGUgKCJTdGFydFBvc2l0aW9uIiBhbmQgIkVuZHBvc2l0aW9uIiBzaG91bGQgYmUgdGhlIHNhbWUpICJNZXRoeWxhdGlvblBlcmNlbnRhZ2UiPSBwZXJjZW50YWdlIG9mIEROQSBtZXRoeWxhdGlvbiBwZXIgc2l0ZSAiQ291bnRNZXRoeWxhdGVkIj0gY291bnQgb2YgbWV0aHlsYXRlZCByZWFkcyBwZXIgc2l0ZSBDb3VudE5vbk1ldGh5bGF0ZWQiPSBjb3VudCBvZiB1bm1ldGh5bGF0ZWQgcmVhZHMgcGVyIHNpdGUgIkNvdmVyYWdlIj0gY292ZXJhZ2UgcGVyIHNpdGUgIkRhZ2UiPSBkZWx0YSBhZ2UgcGVyIHNhbXBsZSAodGhlIGRpZmZlcmVuY2UgYmV0d2VlbiBhbiBpbmRpdmlkdWFsJ3MgY2hyb25vbG9naWNhbCBhZ2UgYW5kIGl0cyBhdmVyYWdlIGFnZSkgIioqWkZfQW5ub3RhdGlvbl9BbGwucmRzKioiLSBSRFMgZmlsZSBjb250YWluaW5nIHRoZSBnZW5vbWljIGFubm90YXRpb24gb2YgYWxsIENwRyBzaXRlcyBjYXB0dXJlZCBieSBvdXIgYW5hbHlzaXMgImNocm9tb3Nzb21lIj0gY2hyb21vc29tZSAic2l0ZSI9cG9zaXRpb24gb2Ygc2l0ZSAiZGlzdC50by5mZWF0dXJlIj0gZGlzdGFuY2UgdG8gbmVhcnN0IGZlYXR1cmUgImZlYXR1cmUubmFtZSI9IGZlYXR1cmUgbmFtZSAiZmVhdHVyZS5zdHJhbmQiPSBmZWF0dXJlIHN0cmFuZCAicHJvbSI9IHByb21vdGVyICgwPW5vLDE9eWVzKSAiaW50cm9uIj0gZXhvbiAoMD1ubywxPXllcykgImV4b24iPSBleG9uICgwPW5vLDE9eWVzKSAiZ2VuZS5uYW1lIj0gZ2VuZSBuYW1lICJQb3MiPSBwb3NpdGlvbiBpbiB0aGUgZ2Vub21lIChDaHJvbW9zb21lX3Bvc2l0aW9uKSAiY2F0ZWdvcnkiPSBhc2lnbmVkIGFubm90YXRpb24gY2F0ZWdvcnkgKHByb21vdGVyLCBleG9uLCBpbnRyb24gb3IgaW50ZXJnZW5pYykgIioqWkZfQVJDcEdzX0FsbEdlbmVzLmNzdioqIiAtIENvbnRhaW5zIGluZm9ybWF0aW9uIG9uIGFsbCBnZW5lcyBpbiB3aGljaCB3ZSBsb2NhdGVkIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBhbmQgdGhlIGdlbm9taWMgYW5ub3RhdGlvbiBvZiBlYWNoIG9mIHRoZW0gIlBvcyI6IGFnZS1yZWxhdGVkIENwRyBzaXRlIChDaHJvbW9zb21lX3Bvc2l0aW9uKSAiZ2VuZS5uYW1lIjogZ2VuZSBuYW1lICJMb2NhdGlvbiI6IGFubm90YXRpb24gY2F0ZWdvcnkgb2YgdGhlIHNpdGUgKHByb21vdGVyLCBleG9uLCBpbnRyb24gb3IgaW50ZXJnZW5pYykgIioqWkZfQ2hyb21vc29tZV9MZW5ndGguY3N2KioiLSBDb250YWlucyBpbmZvcm1hdGlvbiBvbiB0aGUgemVicmEgZmluY2ggY2hyb21vc29tZSBsZW5ndGggIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lICJMZW5ndGgiPSBsZW5ndGggKGJwKSAqKiJaRl9DcEdfSW5mb19GaW5hbC5jc3YiKiotIENvbnRhaW5zIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gb24gdGhlIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBpbiB0aGUgemVicmEgZmluY2ggIlBvcyI9IGFnZS1yZWxhdGVkIENwRyBzaXRlIChDaHJvbW9zb21lX3Bvc2l0aW9uKSAiTWVhbkMiPSBtZWFuIGNvdmVyYWdlIG92ZXIgYWxsIHNhbXBsZXMgIlNEQyI9IHN0YW5kYXJkIGRldmlhdGlvbiBvZiBjb3ZlcmFnZSBvdmVyIGFsbCBzYW1wbGVzICJtQ29yIj0gY29ycmVsYXRpb24gb2YgRE5BIG1ldGh5bGF0aW9uIGFuZCBEYWdlIG92ZXIgYWxsIHNhbXBsZXMgImFicyI9IGFic29sdXRlIGNvcnJlbGF0aW9uIG9mIEROQSBtZXRoeWxhdGlvbiBhbmQgRGFnZSBvdmVyIGFsbCBzYW1wbGVzICJNZWFuTSI9IG1lYW4gRE5BIG1ldGh5bGF0aW9uIG9mIGNvdmVyYWdlIG92ZXIgYWxsIHNhbXBsZXMgKioiWkZfUG9zaXRpb25zX0FSX0ZpbmFsLmNzdiIqKi0gTG9jYXRpb24gb2YgYWxsIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBmb3IgdGhlIHplYnJhIGZpbmNoICJDaHJvbW9zb21lIj1jaHJvbW9zb21lICJQb3NpdGlvbiI9cG9zaXRpb24gKioiWkZfUG9zaXRpb25zX0FSX0ZpbmFsX0xlbi5jc3YiKiotIExvY2F0aW9uIG9mIGFsbCBhZ2UtcmVsYXRlZCBDcEcgc2l0ZXMgZm9yIHRoZSB6ZWJyYSBmaW5jaCB3aGVuIHVzaW5nIHRoZSBsZW5pZW50IHBpcGVsaW5lIChtb3JlIGxlbmllbnQgY3V0LW9mZnMpLiAiQ2hyb21vc29tZSI9Y2hyb21vc29tZSAiUG9zaXRpb24iPXBvc2l0aW9uICoqIlpGX1Bvc2l0aW9uc1BlckNocl9BbGxfRmluYWwuY3N2IioqLSBDb3VudCBvZiB1bmlxdWUgQ3BHIHNpdGVzIHBlciBjaHJvbW9zb21lIGNhcHR1cmVkIGJ5IG91ciBhbmFseXNpcyBpbiB0aGUgemVicmEgZmluY2ggIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lICJVbmlxdWVfUG9zX0NvdW50Ij0gY291bnQgb2YgdW5pcXVlIENwRyBzaXRlcyBwZXIgY2hyb21vc29tZSBjYXB0dXJlZCBieSBvdXIgYW5hbHlzaXMgKioiWkZfRmlsdGVyZWRfRXhwZWN0ZWQuY3N2IioqIC0gQ3BHIHNpdGVzIHRoYXQgcGFzc2VkIHRoZSBmaWx0ZXJzIGluIHBpcGVsaW5lIFN0ZXBzIDEsMiwzIGZvciB0aGUgemVicmEgZmluY2ggIlBvcyI9IFBvc2l0aW9uIGFzIGNocm9tb3NvbWVfcG9zaXRpb24gInIiID0gY29ycmVsYXRpb24gdmFsdWUgInB2YWwiID0gcC12YWx1ZSAqKiJaRl9BUnNpdGVzX1BlckNocl9TdGF0cy5jc3YiKiogLSBSZXN1bHRzIG9mIGNoaS1zcXVhcmVkIHRlc3RzIG9mIG9ic2VydmVkIHZzLiBleHBlY3RlZCBwcm9wb3J0aW9ucyBvZiBhZ2UtcmVsYXRlZCBDcEcgc2l0ZXMgcGVyIGNocm9tb3NvbWUgZm9yIHRoZSB6ZWJyYSBmaW5jaCAiQ2hyb21vc29tZSItIENocm9tb3NvbWUgIkFSc2l0ZXMiIC0gY291bnQgb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzICJwcm9wX2V4cCIgLSBwcm9wb3J0aW9uIG9mIGV4cGVjdGVkIENwRyBzaXRlcyAicHJvcF9vYnMiLSBwcm9wb3J0aW9uIG9mIG9ic2VydmVkIENwRyBzaXRlcyAicF9hZGoiLSBGRFItY29ycmVjdGVkIHAtdmFsdWUgKioiWkZfQVJDcEdzX1Byb21vdGVycy5jc3YiKiotIEluZm9ybWF0aW9uIG9mIGFnZS1yZWxhdGVkIENwRyBzaXRlcyBsb2NhdGVkIGluIHByb21vdGVycyBvZiB0aGUgemVicmEgZmluY2ggIlBvcyIgIkNocm9tb3NvbWUiPSBjaHJvbW9zb21lICJQb3NpdGlvbiIgPSBwb3NpdGlvbiAiciIgPSBjb3JyZWxhdGlvbiB2YWx1ZSAicHZhbCIgPSBwLXZhbHVlIGBgYCAiTWVhbkMiPSBtZWFuIGNvdmVyYWdlIG92ZXIgYWxsIHNhbXBsZXMgYGBgICJjb3ZlcmFnZV9iaW4iID0gY292ZXJhZ2UgYmluIGF0IHdoaWNoIHRoZSBDcEcgc2l0ZSB3YXMgbG9jYXRlZCAiU0RDIj0gc3RhbmRhcmQgZGV2aWF0aW9uIG9mIGNvdmVyYWdlIG92ZXIgYWxsIHNhbXBsZXMgIm1Db3IiPSBjb3JyZWxhdGlvbiBvZiBETkEgbWV0aHlsYXRpb24gYW5kIERhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAiYWJzIj0gYWJzb2x1dGUgY29ycmVsYXRpb24gb2YgRE5BIG1ldGh5bGF0aW9uIGFuZCBEYWdlIG92ZXIgYWxsIHNhbXBsZXMgIk1lYW5NIj0gbWVhbiBETkEgbWV0aHlsYXRpb24gb2YgY292ZXJhZ2Ugb3ZlciBhbGwgc2FtcGxlcyAiZ2VuZS5uYW1lIiA9IG5hbWUgb2YgdGhlIGdlbmUgaW4gd2hvc2UgcHJvbW90ZXIgdGhlIENwRyBzaXRlIGlzIGxvY2F0ZWQgImNhdGVnb3J5IiA9wqAgYW5ub3RhdGlvbiBjYXRlZ29yecKgICoqImxlbmd0aF9jYXRlZ29yeV9jaHJvbW9zb21lLlpGLnR4dCIqKiBhbmTCoCoqImxlbmd0aF9jYXRlZ29yeV9jaHJvbW9zb21lLkpELnR4dCIqKi0gbGVuZ3RoIG9mIGVhY2ggYW5ub3RhdGlvbiBjYXRlZ29yeSBwZXIgY2hyb21vc29tZSBmb3IgZWFjaCBzcGVjaWVzICJDaHJvbW9zb21lIj0gY2hyb21vc29tZSAiZXhvbl9sZW5ndGgiPSBsZW5ndGggb2YgZXhvbnMgKGJwKSBpbnRyb25fbGVuZ3RoIiA9IGxlbmd0aCBvZiBpbnRyb25zIChicCkgInByb21vdGVybGVuZ3RoIiA9wqAgbGVuZ3RoIG9mIHByb21vdGVycyAoYnApICJpbnRlcmdlbmljX2xlbmd0aCIgPSBsZW5ndGggb2YgaW50ZXJnZW5pYyByZWdpb25zIChicCkgImdlbmVfbGVuZ3RoIiA9IGxlbmd0aCBvZiBnZW5lcyAoYnApICJjaHJvbV9zaXplIiA9IGNocm9tb3NvbWUgc2l6ZSAoYnApICMjIFJhdyBzZXF1ZW5jaW5nIGRhdGEgUmF3IHNlcXVlbmNpbmcgZGF0YSBmb3IgYm90aCBzcGVjaWVzIGNhbiBiZSBmb3VuZCBpbjrCoFtodHRwczovL3d3dy5uY2JpLm5sbS5uaWguZ292L2Jpb3Byb2plY3QvP3Rlcm09UFJKTkExMTA4NjI4XShodHRwczovL3d3dy5uY2JpLm5sbS5uaWguZ292L2Jpb3Byb2plY3QvP3Rlcm09UFJKTkExMTA4NjI4KSAjIyBDaGFuZ2UgTG9nICoqMjAyNC0wNi0yMToqKiBJbml0aWFsIGRhdGEgYW5kIGNvZGUgc3VibWlzc2lvbi4gKioyMDI1LTA2LTI0OioqIEFkZGVkIGNhbGN1bGF0aW9uIG9mIHRoZSBsZW5ndGggb2YgZWFjaCBhbm5vdGF0aW9uIGNhdGVnb3J5IChDb2RlICMzKSBhbmQgYW4gZW5yaWNobWVudC0gZGVwbGV0aW9uIHRlc3QgZm9yIEFSLUNwRyBzaXRlcyBpbiBlYWNoIGFubm90YXRpb24gY2F0ZWdvcnkgaW4gdGhlIHdob2xlIGdlbm9tZSBhbmQgc3BsaXQgaW50byBhdXRvc29tZXMsIFogYW5kIFcgKENvZGUgIzQpLiBUaGUgcmF3IGRhdGEgb2YgdGhlIGxlbmd0aCBvZiBlYWNoIGFubm90YXRpb24gY2F0ZWdvcnkgcGVyIGNocm9tb3NvbWUgZm9yIGVhY2ggc3BlY2llcyB3ZXJlIGFsc28gYWRkZWQgaW4gdGhlIHN1Ym1pc3Npb24gYXPCoCoqImxlbmd0aF9jYXRlZ29yeV9jaHJvbW9zb21lLlpGLnR4dCIqKiBhbmTCoCoqImxlbmd0aF9jYXRlZ29yeV9jaHJvbW9zb21lLkpELnR4dCIqKi4gKioyMDI1LTA5LTI1Kio6IENoYW5nZWQgdGhlIG9yZGVyIG9mIHRoZSBzdGVwcyBvZiB0aGUgcGlwZWxpbmUgZm9yIGlkZW50aWZpY2F0aW9uIG9mIGFnZS1yZWxhdGVkIENwRyBzaXRlcyAoQ29kZSAjMikuwqAgQWRkaXRpb25hbGx5LCB3ZSBub3cgY29uc2lkZXIgYXMgImV4cGVjdGVkIiBkaXN0cmlidXRpb24gb2YgYWdlLXJlbGF0ZWQgQ3BHIHNpdGVzLCB0aGUgZGlzdHJpYnV0aW9uIG9mIHNpdGVzIHRoYXQgcGFzc2VkIHRoZSBmaWx0ZXJpbmcgc3RlcHMxLDIsMyBpbiB0aGUgcGlwZWxpbmUuIENvZGUgIzQgaGFzIGJlZW4gdXBkYXRlZCBhY2NvcmRpbmdseSBhbmQgaW5mb3JtYXRpb24gb24gdGhlIHNpdGVzIHRoYXQgcGFzc2VkIGZpbHRlcmluZyBmb3IgZWFjaCBzcGVjaWVzIHdlcmUgYWRkZWQgYXMgKioiWkZfRmlsdGVyZWRfRXhwZWN0ZWQuY3N2IioqIGFuZCAqKiJKRF9GaWx0ZXJlZF9FeHBlY3RlZC5jc3YiKiouIEFsbCBwbG90cyBhbmQgc3RhdGlzdGljYWwgYW5hbHlzZXMgaGF2ZSBiZWVuIHVwZGF0ZWQgYWNjb3JkaW5nbHkgKENvZGUgIzQpLgogICAgPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+        "url": "https://datadryad.org/dataset/doi:10.5061/dryad.wm37pvmw8",
+        "contentUrl": null,
+        "metadataVersion": 7,
+        "schemaVersion": "http://datacite.org/schema/kernel-4",
+        "source": "mds",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 168,
+        "viewsOverTime": [
+          {
+            "yearMonth": "2024-06",
+            "total": 13
+          },
+          {
+            "yearMonth": "2024-07",
+            "total": 6
+          },
+          {
+            "yearMonth": "2024-08",
+            "total": 9
+          },
+          {
+            "yearMonth": "2024-09",
+            "total": 3
+          },
+          {
+            "yearMonth": "2024-10",
+            "total": 14
+          },
+          {
+            "yearMonth": "2024-11",
+            "total": 20
+          },
+          {
+            "yearMonth": "2024-12",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-01",
+            "total": 17
+          },
+          {
+            "yearMonth": "2025-04",
+            "total": 4
+          },
+          {
+            "yearMonth": "2025-05",
+            "total": 5
+          },
+          {
+            "yearMonth": "2025-06",
+            "total": 10
+          },
+          {
+            "yearMonth": "2025-07",
+            "total": 7
+          },
+          {
+            "yearMonth": "2025-08",
+            "total": 2
+          },
+          {
+            "yearMonth": "2025-09",
+            "total": 8
+          },
+          {
+            "yearMonth": "2025-10",
+            "total": 6
+          },
+          {
+            "yearMonth": "2025-12",
+            "total": 2
+          },
+          {
+            "yearMonth": "2026-01",
+            "total": 13
+          },
+          {
+            "yearMonth": "2026-02",
+            "total": 9
+          },
+          {
+            "yearMonth": "2026-03",
+            "total": 7
+          },
+          {
+            "yearMonth": "2026-05",
+            "total": 12
+          }
+        ],
+        "downloadCount": 20,
+        "downloadsOverTime": [
+          {
+            "yearMonth": "2024-06",
+            "total": 2
+          },
+          {
+            "yearMonth": "2024-07",
+            "total": 0
+          },
+          {
+            "yearMonth": "2024-08",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-09",
+            "total": 0
+          },
+          {
+            "yearMonth": "2024-10",
+            "total": 1
+          },
+          {
+            "yearMonth": "2024-11",
+            "total": 3
+          },
+          {
+            "yearMonth": "2024-12",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-01",
+            "total": 6
+          },
+          {
+            "yearMonth": "2025-04",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-05",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-06",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-07",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-08",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-09",
+            "total": 0
+          },
+          {
+            "yearMonth": "2025-10",
+            "total": 1
+          },
+          {
+            "yearMonth": "2025-12",
+            "total": 0
+          },
+          {
+            "yearMonth": "2026-01",
+            "total": 1
+          },
+          {
+            "yearMonth": "2026-02",
+            "total": 3
+          },
+          {
+            "yearMonth": "2026-03",
+            "total": 0
+          },
+          {
+            "yearMonth": "2026-05",
+            "total": 0
+          }
+        ],
+        "referenceCount": 0,
+        "citationCount": 3,
+        "citationsOverTime": [
+          {
+            "year": "2024",
+            "total": 1
+          },
+          {
+            "year": "2025",
+            "total": 1
+          },
+          {
+            "year": "2026",
+            "total": 1
+          }
+        ],
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2024-06-21T11:54:02.000Z",
+        "registered": "2024-06-21T11:54:03.000Z",
+        "published": "2025",
+        "updated": "2026-03-12T22:22:23.000Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "dryad.dryad",
+            "type": "clients"
+          }
+        },
+        "provider": {
+          "data": {
+            "id": "dryad",
+            "type": "providers"
+          }
+        },
+        "media": {
+          "data": {
+            "id": "10.5061/dryad.wm37pvmw8",
+            "type": "media"
+          }
+        },
+        "references": {
+          "data": []
+        },
+        "citations": {
+          "data": [
+            {
+              "id": "10.1101/2024.07.31.605993",
+              "type": "dois"
+            },
+            {
+              "id": "10.1101/2024.10.02.616244",
+              "type": "dois"
+            },
+            {
+              "id": "10.1111/mec.70147",
+              "type": "dois"
+            }
+          ]
+        },
+        "parts": {
+          "data": []
+        },
+        "partOf": {
+          "data": []
+        },
+        "versions": {
+          "data": []
+        },
+        "versionOf": {
+          "data": []
+        }
+      }
+    }
+  }
+}

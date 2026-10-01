@@ -1,0 +1,2721 @@
+{
+  "design": {
+    "arms": [
+      "original",
+      "placebo",
+      "repaired",
+      "original_stemless",
+      "repaired_stemless"
+    ],
+    "chance": 0.25,
+    "unit_of_analysis": "question, averaged over redraws; clustered on capsule",
+    "inference": "paired cluster bootstrap for intervals; paired sign-flip randomisation over capsules for p-values",
+    "bootstrap_reps": 10000
+  },
+  "models": [
+    {
+      "model": "Qwen/Qwen2.5-32B-Instruct",
+      "n_rows": 33050,
+      "n_draws": 10,
+      "subsets": {
+        "all items": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.6771558245083208,
+              "ci95": [
+                0.5903614457831325,
+                0.7747714808043876
+              ],
+              "clustering": {
+                "icc": 0.13991622719727262,
+                "design_effect": 3.23148444401804,
+                "effective_n": 204.54995574049866,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.7139183055975794,
+              "ci95": [
+                0.6276836158192091,
+                0.8053735255570118
+              ],
+              "clustering": {
+                "icc": 0.14938536399951682,
+                "design_effect": 3.3825050360948583,
+                "effective_n": 195.4172995890443,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.7222390317700453,
+              "ci95": [
+                0.63312,
+                0.8212239583333334
+              ],
+              "clustering": {
+                "icc": 0.21349059347496582,
+                "design_effect": 4.404901260036635,
+                "effective_n": 150.060117350849,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2527987897125567,
+              "ci95": [
+                0.21962397179788484,
+                0.28567375886524826
+              ],
+              "clustering": {
+                "icc": 0.025009663953853952,
+                "design_effect": 1.3988720763922349,
+                "effective_n": 472.5235503340334,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.27261724659606656,
+              "ci95": [
+                0.24371772805507744,
+                0.302868068833652
+              ],
+              "clustering": {
+                "icc": 0.039177080218908054,
+                "design_effect": 1.6248242024656618,
+                "effective_n": 406.81324108598096,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04508320726172466,
+              "ci95": [
+                -0.07061403508771931,
+                -0.023316062176165803
+              ],
+              "p_value": 0.005499450054994501,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.7222390317700453
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0367624810892587,
+              "ci95": [
+                -0.058750000000000004,
+                -0.01227154046997389
+              ],
+              "p_value": 0.022897710228977103,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.7139183055975794
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.008320726172465959,
+              "ci95": [
+                -0.027080181543116488,
+                0.007645875251509056
+              ],
+              "p_value": 0.36906309369063095,
+              "accuracy_a": 0.7139183055975794,
+              "accuracy_b": 0.7222390317700453
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.019818456883509833,
+              "ci95": [
+                -0.049749999999999996,
+                0.015675675675675675
+              ],
+              "p_value": 0.31456854314568544,
+              "accuracy_a": 0.2527987897125567,
+              "accuracy_b": 0.27261724659606656
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.424357034795764,
+              "ci95": [
+                0.34579439252336447,
+                0.4954918032786885
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.2527987897125567
+            }
+          ]
+        },
+        "numeric options": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.6771558245083208,
+              "ci95": [
+                0.5903614457831325,
+                0.7747714808043876
+              ],
+              "clustering": {
+                "icc": 0.13991622719727262,
+                "design_effect": 3.23148444401804,
+                "effective_n": 204.54995574049866,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.7139183055975794,
+              "ci95": [
+                0.6276836158192091,
+                0.8053735255570118
+              ],
+              "clustering": {
+                "icc": 0.14938536399951682,
+                "design_effect": 3.3825050360948583,
+                "effective_n": 195.4172995890443,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.7222390317700453,
+              "ci95": [
+                0.63312,
+                0.8212239583333334
+              ],
+              "clustering": {
+                "icc": 0.21349059347496582,
+                "design_effect": 4.404901260036635,
+                "effective_n": 150.060117350849,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2527987897125567,
+              "ci95": [
+                0.21962397179788484,
+                0.28567375886524826
+              ],
+              "clustering": {
+                "icc": 0.025009663953853952,
+                "design_effect": 1.3988720763922349,
+                "effective_n": 472.5235503340334,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.27261724659606656,
+              "ci95": [
+                0.24371772805507744,
+                0.302868068833652
+              ],
+              "clustering": {
+                "icc": 0.039177080218908054,
+                "design_effect": 1.6248242024656618,
+                "effective_n": 406.81324108598096,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04508320726172466,
+              "ci95": [
+                -0.07061403508771931,
+                -0.023316062176165803
+              ],
+              "p_value": 0.005499450054994501,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.7222390317700453
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0367624810892587,
+              "ci95": [
+                -0.058750000000000004,
+                -0.01227154046997389
+              ],
+              "p_value": 0.022897710228977103,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.7139183055975794
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.008320726172465959,
+              "ci95": [
+                -0.027080181543116488,
+                0.007645875251509056
+              ],
+              "p_value": 0.36906309369063095,
+              "accuracy_a": 0.7139183055975794,
+              "accuracy_b": 0.7222390317700453
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.019818456883509833,
+              "ci95": [
+                -0.049749999999999996,
+                0.015675675675675675
+              ],
+              "p_value": 0.31456854314568544,
+              "accuracy_a": 0.2527987897125567,
+              "accuracy_b": 0.27261724659606656
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.424357034795764,
+              "ci95": [
+                0.34579439252336447,
+                0.4954918032786885
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.2527987897125567
+            }
+          ]
+        },
+        "numeric, redraw feasible": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.6771558245083208,
+              "ci95": [
+                0.5903614457831325,
+                0.7747714808043876
+              ],
+              "clustering": {
+                "icc": 0.13991622719727262,
+                "design_effect": 3.23148444401804,
+                "effective_n": 204.54995574049866,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "accuracy": 0.710974778459441,
+              "ci95": [
+                0.6241866175567833,
+                0.8043557168784029
+              ],
+              "clustering": {
+                "icc": 0.1462855258681515,
+                "design_effect": 3.299308393773766,
+                "effective_n": 197.61717371750115,
+                "n_items": 652,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.7301533270897871,
+              "ci95": [
+                0.6445577337138851,
+                0.8289637225200032
+              ],
+              "clustering": {
+                "icc": 0.2012450159505854,
+                "design_effect": 4.209599997981131,
+                "effective_n": 157.02204492517268,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2527987897125567,
+              "ci95": [
+                0.21962397179788484,
+                0.28567375886524826
+              ],
+              "clustering": {
+                "icc": 0.025009663953853952,
+                "design_effect": 1.3988720763922349,
+                "effective_n": 472.5235503340334,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.27977991499171534,
+              "ci95": [
+                0.2514162887377173,
+                0.3131792376317924
+              ],
+              "clustering": {
+                "icc": 0.041240951525291274,
+                "design_effect": 1.6577403038136198,
+                "effective_n": 398.73555494752355,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.05299750258146627,
+              "ci95": [
+                -0.08635941706117145,
+                -0.030500354122401364
+              ],
+              "p_value": 0.0021997800219978004,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.7301533270897871
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.03612815269256987,
+              "ci95": [
+                -0.058943533697632056,
+                -0.012195121951219514
+              ],
+              "p_value": 0.021997800219978002,
+              "accuracy_a": 0.6748466257668712,
+              "accuracy_b": 0.710974778459441
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.018009908462362445,
+              "ci95": [
+                -0.039849227857357936,
+                -0.003174603174603173
+              ],
+              "p_value": 0.0420957904209579,
+              "accuracy_a": 0.710974778459441,
+              "accuracy_b": 0.7289846869218035
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.026981125279158562,
+              "ci95": [
+                -0.059872935706269045,
+                0.008276369687660011
+              ],
+              "p_value": 0.1780821917808219,
+              "accuracy_a": 0.2527987897125567,
+              "accuracy_b": 0.27977991499171534
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.424357034795764,
+              "ci95": [
+                0.34579439252336447,
+                0.4954918032786885
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.6771558245083208,
+              "accuracy_b": 0.2527987897125567
+            }
+          ]
+        },
+        "non-numeric options": {
+          "arms": {},
+          "contrasts": []
+        }
+      },
+      "rank_bias": {
+        "original": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.17745839636913768,
+            "1": 0.2712556732223903,
+            "2": 0.30892586989409987,
+            "3": 0.24236006051437217
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "placebo": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.2037821482602118,
+            "1": 0.27488653555219367,
+            "2": 0.28517397881996975,
+            "3": 0.23615733736762481
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.2832072617246596,
+            "1": 0.2574886535552194,
+            "2": 0.24326777609682299,
+            "3": 0.21603630862329803
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        },
+        "original_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.2739788199697428,
+            "1": 0.29485627836611195,
+            "2": 0.24599092284417548,
+            "3": 0.18517397881996975
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.28517397881996975,
+            "1": 0.2688350983358548,
+            "2": 0.24251134644478065,
+            "3": 0.20347957639939485
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        }
+      },
+      "decomposition": {
+        "original_bias_from_stemless": {
+          "arm": "original",
+          "bias_estimated_from": "original_stemless",
+          "choice_by_rank_q": {
+            "0": 0.2739788199697428,
+            "1": 0.29485627836611195,
+            "2": 0.24599092284417548,
+            "3": 0.18517397881996975
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.24933912537964528,
+          "observed": 0.6771558245083207,
+          "residual": 0.42781669912867537,
+          "chance": 0.25,
+          "geometry_share_of_margin": -0.0015471511388506056
+        },
+        "original_bias_from_self": {
+          "arm": "original",
+          "bias_estimated_from": "original",
+          "choice_by_rank_q": {
+            "0": 0.17745839636913768,
+            "1": 0.2712556732223903,
+            "2": 0.30892586989409987,
+            "3": 0.24236006051437217
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.2585847327091168,
+          "observed": 0.6771558245083207,
+          "residual": 0.4185710917992039,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.020097426317429463
+        },
+        "repaired_bias_from_stemless": {
+          "arm": "repaired",
+          "bias_estimated_from": "repaired_stemless",
+          "choice_by_rank_q": {
+            "0": 0.28517397881996975,
+            "1": 0.2688350983358548,
+            "2": 0.24251134644478065,
+            "3": 0.20347957639939485
+          },
+          "key_by_rank_p": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          },
+          "predicted_from_geometry": 0.2532970948981624,
+          "observed": 0.7222390317700453,
+          "residual": 0.46894193687188296,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.006981834783550639
+        }
+      }
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "n_rows": 33050,
+      "n_draws": 10,
+      "subsets": {
+        "all items": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.4444780635400908,
+              "ci95": [
+                0.4042755344418052,
+                0.4997093023255814
+              ],
+              "clustering": {
+                "icc": 0.06055167643443714,
+                "design_effect": 1.9657216087748692,
+                "effective_n": 336.2632821704425,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.49425113464447806,
+              "ci95": [
+                0.4274566473988439,
+                0.5722222222222222
+              ],
+              "clustering": {
+                "icc": 0.12814091398910876,
+                "design_effect": 3.043683294903222,
+                "effective_n": 217.1710838334832,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.5101361573373676,
+              "ci95": [
+                0.4441938178780284,
+                0.5888888888888889
+              ],
+              "clustering": {
+                "icc": 0.13584206049358727,
+                "design_effect": 3.1665067083849046,
+                "effective_n": 208.7473865915626,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.23903177004538578,
+              "ci95": [
+                0.22903828197945847,
+                0.254957507082153
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2788199697428139,
+              "ci95": [
+                0.26756756756756755,
+                0.3012578616352201
+              ],
+              "clustering": {
+                "icc": 0.003402348320711244,
+                "design_effect": 1.054263093730318,
+                "effective_n": 626.9782219741487,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.06565809379727686,
+              "ci95": [
+                -0.1037037037037037,
+                -0.031619537275064266
+              ],
+              "p_value": 0.0008999100089991,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.5101361573373676
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04977307110438729,
+              "ci95": [
+                -0.08669201520912548,
+                -0.013289036544850499
+              ],
+              "p_value": 0.022097790220977902,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.49425113464447806
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.01588502269288956,
+              "ci95": [
+                -0.03587786259541985,
+                -0.004206241519674356
+              ],
+              "p_value": 0.017598240175982403,
+              "accuracy_a": 0.49425113464447806,
+              "accuracy_b": 0.5101361573373676
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.03978819969742814,
+              "ci95": [
+                -0.05633484162895927,
+                -0.024921135646687697
+              ],
+              "p_value": 0.00039996000399960006,
+              "accuracy_a": 0.23903177004538578,
+              "accuracy_b": 0.2788199697428139
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.205446293494705,
+              "ci95": [
+                0.16815642458100558,
+                0.2526153846153846
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.23903177004538578
+            }
+          ]
+        },
+        "numeric options": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.4444780635400908,
+              "ci95": [
+                0.4042755344418052,
+                0.4997093023255814
+              ],
+              "clustering": {
+                "icc": 0.06055167643443714,
+                "design_effect": 1.9657216087748692,
+                "effective_n": 336.2632821704425,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.49425113464447806,
+              "ci95": [
+                0.4274566473988439,
+                0.5722222222222222
+              ],
+              "clustering": {
+                "icc": 0.12814091398910876,
+                "design_effect": 3.043683294903222,
+                "effective_n": 217.1710838334832,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.5101361573373676,
+              "ci95": [
+                0.4441938178780284,
+                0.5888888888888889
+              ],
+              "clustering": {
+                "icc": 0.13584206049358727,
+                "design_effect": 3.1665067083849046,
+                "effective_n": 208.7473865915626,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.23903177004538578,
+              "ci95": [
+                0.22903828197945847,
+                0.254957507082153
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2788199697428139,
+              "ci95": [
+                0.26756756756756755,
+                0.3012578616352201
+              ],
+              "clustering": {
+                "icc": 0.003402348320711244,
+                "design_effect": 1.054263093730318,
+                "effective_n": 626.9782219741487,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.06565809379727686,
+              "ci95": [
+                -0.1037037037037037,
+                -0.031619537275064266
+              ],
+              "p_value": 0.0008999100089991,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.5101361573373676
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04977307110438729,
+              "ci95": [
+                -0.08669201520912548,
+                -0.013289036544850499
+              ],
+              "p_value": 0.022097790220977902,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.49425113464447806
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.01588502269288956,
+              "ci95": [
+                -0.03587786259541985,
+                -0.004206241519674356
+              ],
+              "p_value": 0.017598240175982403,
+              "accuracy_a": 0.49425113464447806,
+              "accuracy_b": 0.5101361573373676
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.03978819969742814,
+              "ci95": [
+                -0.05633484162895927,
+                -0.024921135646687697
+              ],
+              "p_value": 0.00039996000399960006,
+              "accuracy_a": 0.23903177004538578,
+              "accuracy_b": 0.2788199697428139
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.205446293494705,
+              "ci95": [
+                0.16815642458100558,
+                0.2526153846153846
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.23903177004538578
+            }
+          ]
+        },
+        "numeric, redraw feasible": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.4444780635400908,
+              "ci95": [
+                0.4042755344418052,
+                0.4997093023255814
+              ],
+              "clustering": {
+                "icc": 0.06055167643443714,
+                "design_effect": 1.9657216087748692,
+                "effective_n": 336.2632821704425,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "accuracy": 0.49237024052974976,
+              "ci95": [
+                0.4244869072894551,
+                0.5712585034013605
+              ],
+              "clustering": {
+                "icc": 0.129357332453352,
+                "design_effect": 3.0332319177924303,
+                "effective_n": 214.95224159269762,
+                "n_items": 652,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.5166390509809572,
+              "ci95": [
+                0.45014354066985646,
+                0.5996835856802908
+              ],
+              "clustering": {
+                "icc": 0.13717010035831276,
+                "design_effect": 3.187687241612065,
+                "effective_n": 207.3603681601215,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.23903177004538578,
+              "ci95": [
+                0.22903828197945847,
+                0.254957507082153
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.27934586845328147,
+              "ci95": [
+                0.267059010973691,
+                0.302060639070443
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.07216098744086642,
+              "ci95": [
+                -0.11336451247165534,
+                -0.03564418598980811
+              ],
+              "p_value": 0.0005999400059994001,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.5166390509809572
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.048811958321160774,
+              "ci95": [
+                -0.08667917448405253,
+                -0.011664106502816178
+              ],
+              "p_value": 0.0240975902409759,
+              "accuracy_a": 0.44355828220858895,
+              "accuracy_b": 0.49237024052974976
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.02299031064368488,
+              "ci95": [
+                -0.04213010204081633,
+                -0.01174214058117851
+              ],
+              "p_value": 0.0008999100089991,
+              "accuracy_a": 0.49237024052974976,
+              "accuracy_b": 0.5153605511734346
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04031409840789568,
+              "ci95": [
+                -0.059322344322344324,
+                -0.02326884051927835
+              ],
+              "p_value": 0.0005999400059994001,
+              "accuracy_a": 0.23903177004538578,
+              "accuracy_b": 0.27934586845328147
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.205446293494705,
+              "ci95": [
+                0.16815642458100558,
+                0.2526153846153846
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.4444780635400908,
+              "accuracy_b": 0.23903177004538578
+            }
+          ]
+        },
+        "non-numeric options": {
+          "arms": {},
+          "contrasts": []
+        }
+      },
+      "rank_bias": {
+        "original": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.21739788199697427,
+            "1": 0.24145234493192133,
+            "2": 0.2853252647503782,
+            "3": 0.2558245083207262
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "placebo": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.245839636913767,
+            "1": 0.2561270801815431,
+            "2": 0.26959152798789715,
+            "3": 0.22844175491679275
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.2909228441754917,
+            "1": 0.2532526475037821,
+            "2": 0.23131618759455372,
+            "3": 0.22450832072617247
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        },
+        "original_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.35537065052950073,
+            "1": 0.23116490166414524,
+            "2": 0.21316187594553707,
+            "3": 0.20030257186081693
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.3016641452344932,
+            "1": 0.232375189107413,
+            "2": 0.23585476550680787,
+            "3": 0.23010590015128593
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        }
+      },
+      "decomposition": {
+        "original_bias_from_stemless": {
+          "arm": "original",
+          "bias_estimated_from": "original_stemless",
+          "choice_by_rank_q": {
+            "0": 0.35537065052950073,
+            "1": 0.23116490166414524,
+            "2": 0.21316187594553707,
+            "3": 0.20030257186081693
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.24049519249475304,
+          "observed": 0.4444780635400908,
+          "residual": 0.20398287104533774,
+          "chance": 0.25,
+          "geometry_share_of_margin": -0.0488734170437047
+        },
+        "original_bias_from_self": {
+          "arm": "original",
+          "bias_estimated_from": "original",
+          "choice_by_rank_q": {
+            "0": 0.21739788199697427,
+            "1": 0.24145234493192133,
+            "2": 0.2853252647503782,
+            "3": 0.2558245083207262
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.2538742701769885,
+          "observed": 0.4444780635400908,
+          "residual": 0.1906037933631023,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.019921373683309165
+        },
+        "repaired_bias_from_stemless": {
+          "arm": "repaired",
+          "bias_estimated_from": "repaired_stemless",
+          "choice_by_rank_q": {
+            "0": 0.3016641452344932,
+            "1": 0.232375189107413,
+            "2": 0.23585476550680787,
+            "3": 0.23010590015128593
+          },
+          "key_by_rank_p": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          },
+          "predicted_from_geometry": 0.2528484783290343,
+          "observed": 0.5101361573373676,
+          "residual": 0.2572876790083333,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.010949951587622356
+        }
+      }
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "n_rows": 33050,
+      "n_draws": 10,
+      "subsets": {
+        "all items": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.24629349470499246,
+              "ci95": [
+                0.23356643356643358,
+                0.2743440233236151
+              ],
+              "clustering": {
+                "icc": 0.04463837901360788,
+                "design_effect": 1.7119249165760024,
+                "effective_n": 386.1150647436437,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2924357034795764,
+              "ci95": [
+                0.2728643216080402,
+                0.3273049645390071
+              ],
+              "clustering": {
+                "icc": 0.07987236710807838,
+                "design_effect": 2.273861854903199,
+                "effective_n": 290.69488041881925,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2957639939485628,
+              "ci95": [
+                0.27924151696606786,
+                0.3353689567430026
+              ],
+              "clustering": {
+                "icc": 0.10173304912840649,
+                "design_effect": 2.6225117066120216,
+                "effective_n": 252.0484458976676,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.24720121028744327,
+              "ci95": [
+                0.23708987161198292,
+                0.26126582278481014
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2562783661119516,
+              "ci95": [
+                0.24737864077669905,
+                0.27062146892655364
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04947049924357035,
+              "ci95": [
+                -0.07202797202797204,
+                -0.03595238095238095
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.2957639939485628
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.046142208774583963,
+              "ci95": [
+                -0.06666666666666667,
+                -0.027500000000000004
+              ],
+              "p_value": 0.00029997000299970003,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.2924357034795764
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0033282904689863847,
+              "ci95": [
+                -0.01764705882352941,
+                0.005272407732864677
+              ],
+              "p_value": 0.5314468553144686,
+              "accuracy_a": 0.2924357034795764,
+              "accuracy_b": 0.2957639939485628
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.009077155824508321,
+              "ci95": [
+                -0.017552533992583434,
+                -0.0018644067796610181
+              ],
+              "p_value": 0.031596840315968405,
+              "accuracy_a": 0.24720121028744327,
+              "accuracy_b": 0.2562783661119516
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0009077155824508324,
+              "ci95": [
+                -0.01826923076923077,
+                0.027380952380952384
+              ],
+              "p_value": 0.9417058294170583,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.24720121028744327
+            }
+          ]
+        },
+        "numeric options": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.24629349470499246,
+              "ci95": [
+                0.23356643356643358,
+                0.2743440233236151
+              ],
+              "clustering": {
+                "icc": 0.04463837901360788,
+                "design_effect": 1.7119249165760024,
+                "effective_n": 386.1150647436437,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2924357034795764,
+              "ci95": [
+                0.2728643216080402,
+                0.3273049645390071
+              ],
+              "clustering": {
+                "icc": 0.07987236710807838,
+                "design_effect": 2.273861854903199,
+                "effective_n": 290.69488041881925,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2957639939485628,
+              "ci95": [
+                0.27924151696606786,
+                0.3353689567430026
+              ],
+              "clustering": {
+                "icc": 0.10173304912840649,
+                "design_effect": 2.6225117066120216,
+                "effective_n": 252.0484458976676,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.24720121028744327,
+              "ci95": [
+                0.23708987161198292,
+                0.26126582278481014
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2562783661119516,
+              "ci95": [
+                0.24737864077669905,
+                0.27062146892655364
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.04947049924357035,
+              "ci95": [
+                -0.07202797202797204,
+                -0.03595238095238095
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.2957639939485628
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.046142208774583963,
+              "ci95": [
+                -0.06666666666666667,
+                -0.027500000000000004
+              ],
+              "p_value": 0.00029997000299970003,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.2924357034795764
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0033282904689863847,
+              "ci95": [
+                -0.01764705882352941,
+                0.005272407732864677
+              ],
+              "p_value": 0.5314468553144686,
+              "accuracy_a": 0.2924357034795764,
+              "accuracy_b": 0.2957639939485628
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.009077155824508321,
+              "ci95": [
+                -0.017552533992583434,
+                -0.0018644067796610181
+              ],
+              "p_value": 0.031596840315968405,
+              "accuracy_a": 0.24720121028744327,
+              "accuracy_b": 0.2562783661119516
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0009077155824508324,
+              "ci95": [
+                -0.01826923076923077,
+                0.027380952380952384
+              ],
+              "p_value": 0.9417058294170583,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.24720121028744327
+            }
+          ]
+        },
+        "numeric, redraw feasible": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.24629349470499246,
+              "ci95": [
+                0.23356643356643358,
+                0.2743440233236151
+              ],
+              "clustering": {
+                "icc": 0.04463837901360788,
+                "design_effect": 1.7119249165760024,
+                "effective_n": 386.1150647436437,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "accuracy": 0.29138122017723245,
+              "ci95": [
+                0.2723429951690821,
+                0.32230332522303323
+              ],
+              "clustering": {
+                "icc": 0.07362148721186142,
+                "design_effect": 2.157178760535155,
+                "effective_n": 302.24662504940073,
+                "n_items": 652,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2947428139183056,
+              "ci95": [
+                0.2755528332705114,
+                0.3381756756756757
+              ],
+              "clustering": {
+                "icc": 0.11249574408343688,
+                "design_effect": 2.7941628928178908,
+                "effective_n": 236.56459031040487,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.24720121028744327,
+              "ci95": [
+                0.23708987161198292,
+                0.26126582278481014
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.2526114833225272,
+              "ci95": [
+                0.2439847733965381,
+                0.26597626511419614
+              ],
+              "clustering": {
+                "icc": 0.0,
+                "design_effect": 1.0,
+                "effective_n": 661.0,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.048449319213313156,
+              "ci95": [
+                -0.07554665917497776,
+                -0.032183066230110864
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.2947428139183056
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.046749318336741646,
+              "ci95": [
+                -0.0672782874617737,
+                -0.027440476190476192
+              ],
+              "p_value": 0.00029997000299970003,
+              "accuracy_a": 0.2446319018404908,
+              "accuracy_b": 0.29138122017723245
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.0014485344239945454,
+              "ci95": [
+                -0.01786122332394826,
+                0.006835337665276566
+              ],
+              "p_value": 0.7923207679232077,
+              "accuracy_a": 0.29138122017723245,
+              "accuracy_b": 0.292829754601227
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.005410273035083927,
+              "ci95": [
+                -0.014625244037008742,
+                0.0026657174497706068
+              ],
+              "p_value": 0.2186781321867813,
+              "accuracy_a": 0.24720121028744327,
+              "accuracy_b": 0.2526114833225272
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0009077155824508324,
+              "ci95": [
+                -0.01826923076923077,
+                0.027380952380952384
+              ],
+              "p_value": 0.9417058294170583,
+              "accuracy_a": 0.24629349470499246,
+              "accuracy_b": 0.24720121028744327
+            }
+          ]
+        },
+        "non-numeric options": {
+          "arms": {},
+          "contrasts": []
+        }
+      },
+      "rank_bias": {
+        "original": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.297428139183056,
+            "1": 0.2717095310136157,
+            "2": 0.22662632375189107,
+            "3": 0.2042360060514372
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "placebo": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.26142208774583964,
+            "1": 0.28623298033282907,
+            "2": 0.24720121028744327,
+            "3": 0.20514372163388805
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.278517397881997,
+            "1": 0.26898638426626326,
+            "2": 0.23691376701966718,
+            "3": 0.21558245083207261
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        },
+        "original_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.27382753403933435,
+            "1": 0.24069591527987896,
+            "2": 0.24341906202723146,
+            "3": 0.24205748865355523
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.26187594553706506,
+            "1": 0.2509833585476551,
+            "2": 0.23615733736762481,
+            "3": 0.2509833585476551
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        }
+      },
+      "decomposition": {
+        "original_bias_from_stemless": {
+          "arm": "original",
+          "bias_estimated_from": "original_stemless",
+          "choice_by_rank_q": {
+            "0": 0.27382753403933435,
+            "1": 0.24069591527987896,
+            "2": 0.24341906202723146,
+            "3": 0.24205748865355523
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.24781619560515517,
+          "observed": 0.24629349470499243,
+          "residual": -0.0015227009001627378,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.5891815122418093
+        },
+        "original_bias_from_self": {
+          "arm": "original",
+          "bias_estimated_from": "original",
+          "choice_by_rank_q": {
+            "0": 0.297428139183056,
+            "1": 0.2717095310136157,
+            "2": 0.22662632375189107,
+            "3": 0.2042360060514372
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.24612824744061282,
+          "observed": 0.24629349470499243,
+          "residual": 0.0001652472643796088,
+          "chance": 0.25,
+          "geometry_share_of_margin": 1.0445830374509881
+        },
+        "repaired_bias_from_stemless": {
+          "arm": "repaired",
+          "bias_estimated_from": "repaired_stemless",
+          "choice_by_rank_q": {
+            "0": 0.26187594553706506,
+            "1": 0.2509833585476551,
+            "2": 0.23615733736762481,
+            "3": 0.2509833585476551
+          },
+          "key_by_rank_p": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          },
+          "predicted_from_geometry": 0.25063647661705435,
+          "observed": 0.2957639939485628,
+          "residual": 0.04512751733150844,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.013907803103237179
+        }
+      }
+    },
+    {
+      "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "n_rows": 33050,
+      "n_draws": 10,
+      "subsets": {
+        "all items": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.37715582450832075,
+              "ci95": [
+                0.34276094276094277,
+                0.4274021352313167
+              ],
+              "clustering": {
+                "icc": 0.07547374157959924,
+                "design_effect": 2.2037094169874543,
+                "effective_n": 299.94880218990465,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.46732223903177,
+              "ci95": [
+                0.4036082474226804,
+                0.5433234421364985
+              ],
+              "clustering": {
+                "icc": 0.13551754750909184,
+                "design_effect": 3.1613311423244905,
+                "effective_n": 209.08913689882365,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.4900151285930408,
+              "ci95": [
+                0.44225512528473804,
+                0.5553435114503816
+              ],
+              "clustering": {
+                "icc": 0.10555760139230244,
+                "design_effect": 2.6835084119490284,
+                "effective_n": 246.3193322058255,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.22178517397881997,
+              "ci95": [
+                0.1943127962085308,
+                0.24903225806451612
+              ],
+              "clustering": {
+                "icc": 0.0005721336886118941,
+                "design_effect": 1.0091247988286307,
+                "effective_n": 655.0230464728187,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.32571860816944026,
+              "ci95": [
+                0.3010899182561308,
+                0.36089887640449436
+              ],
+              "clustering": {
+                "icc": 0.0666347801759754,
+                "design_effect": 2.062739314601454,
+                "effective_n": 320.4476665184971,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.11285930408472011,
+              "ci95": [
+                -0.148068669527897,
+                -0.08682588597842836
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.4900151285930408
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.09016641452344933,
+              "ci95": [
+                -0.13358585858585859,
+                -0.05009633911368015
+              ],
+              "p_value": 0.0004999500049995,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.46732223903177
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0226928895612708,
+              "ci95": [
+                -0.04782608695652174,
+                -0.002485207100591718
+              ],
+              "p_value": 0.06269373062693731,
+              "accuracy_a": 0.46732223903177,
+              "accuracy_b": 0.4900151285930408
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.10393343419062027,
+              "ci95": [
+                -0.13560606060606062,
+                -0.07720706260032104
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.22178517397881997,
+              "accuracy_b": 0.32571860816944026
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.15537065052950075,
+              "ci95": [
+                0.12310536044362291,
+                0.2037344398340249
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.22178517397881997
+            }
+          ]
+        },
+        "numeric options": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.37715582450832075,
+              "ci95": [
+                0.34276094276094277,
+                0.4274021352313167
+              ],
+              "clustering": {
+                "icc": 0.07547374157959924,
+                "design_effect": 2.2037094169874543,
+                "effective_n": 299.94880218990465,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.46732223903177,
+              "ci95": [
+                0.4036082474226804,
+                0.5433234421364985
+              ],
+              "clustering": {
+                "icc": 0.13551754750909184,
+                "design_effect": 3.1613311423244905,
+                "effective_n": 209.08913689882365,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.4900151285930408,
+              "ci95": [
+                0.44225512528473804,
+                0.5553435114503816
+              ],
+              "clustering": {
+                "icc": 0.10555760139230244,
+                "design_effect": 2.6835084119490284,
+                "effective_n": 246.3193322058255,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.22178517397881997,
+              "ci95": [
+                0.1943127962085308,
+                0.24903225806451612
+              ],
+              "clustering": {
+                "icc": 0.0005721336886118941,
+                "design_effect": 1.0091247988286307,
+                "effective_n": 655.0230464728187,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.32571860816944026,
+              "ci95": [
+                0.3010899182561308,
+                0.36089887640449436
+              ],
+              "clustering": {
+                "icc": 0.0666347801759754,
+                "design_effect": 2.062739314601454,
+                "effective_n": 320.4476665184971,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.11285930408472011,
+              "ci95": [
+                -0.148068669527897,
+                -0.08682588597842836
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.4900151285930408
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.09016641452344933,
+              "ci95": [
+                -0.13358585858585859,
+                -0.05009633911368015
+              ],
+              "p_value": 0.0004999500049995,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.46732223903177
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.0226928895612708,
+              "ci95": [
+                -0.04782608695652174,
+                -0.002485207100591718
+              ],
+              "p_value": 0.06269373062693731,
+              "accuracy_a": 0.46732223903177,
+              "accuracy_b": 0.4900151285930408
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.10393343419062027,
+              "ci95": [
+                -0.13560606060606062,
+                -0.07720706260032104
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.22178517397881997,
+              "accuracy_b": 0.32571860816944026
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.15537065052950075,
+              "ci95": [
+                0.12310536044362291,
+                0.2037344398340249
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.22178517397881997
+            }
+          ]
+        },
+        "numeric, redraw feasible": {
+          "arms": {
+            "original": {
+              "arm": "original",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.37715582450832075,
+              "ci95": [
+                0.34276094276094277,
+                0.4274021352313167
+              ],
+              "clustering": {
+                "icc": 0.07547374157959924,
+                "design_effect": 2.2037094169874543,
+                "effective_n": 299.94880218990465,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "placebo": {
+              "arm": "placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "accuracy": 0.46480669977602496,
+              "ci95": [
+                0.400372595894984,
+                0.5415339233038348
+              ],
+              "clustering": {
+                "icc": 0.13149620408702342,
+                "design_effect": 3.066850592444753,
+                "effective_n": 212.59594504088815,
+                "n_items": 652,
+                "n_clusters": 39
+              }
+            },
+            "repaired": {
+              "arm": "repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.5004892779098528,
+              "ci95": [
+                0.44946054902951454,
+                0.5695451066520248
+              ],
+              "clustering": {
+                "icc": 0.11587602496585013,
+                "design_effect": 2.848074039198943,
+                "effective_n": 232.0866630931809,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "original_stemless": {
+              "arm": "original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.22178517397881997,
+              "ci95": [
+                0.1943127962085308,
+                0.24903225806451612
+              ],
+              "clustering": {
+                "icc": 0.0005721336886118941,
+                "design_effect": 1.0091247988286307,
+                "effective_n": 655.0230464728187,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            },
+            "repaired_stemless": {
+              "arm": "repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "accuracy": 0.33526643133299716,
+              "ci95": [
+                0.3090047065337763,
+                0.3750593192603502
+              ],
+              "clustering": {
+                "icc": 0.08254536695364678,
+                "design_effect": 2.316492775517136,
+                "effective_n": 285.3451592796087,
+                "n_items": 661,
+                "n_clusters": 39
+              }
+            }
+          },
+          "contrasts": [
+            {
+              "contrast": "original - repaired",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.12333345340153207,
+              "ci95": [
+                -0.16189617261045833,
+                -0.09154948332800683
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.5004892779098528
+            },
+            {
+              "contrast": "original - placebo",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.08903982861038076,
+              "ci95": [
+                -0.13300165837479272,
+                -0.048322245564892626
+              ],
+              "p_value": 0.0005999400059994001,
+              "accuracy_a": 0.37576687116564417,
+              "accuracy_b": 0.46480669977602496
+            },
+            {
+              "contrast": "placebo - repaired",
+              "n_items": 652,
+              "n_clusters": 39,
+              "difference": -0.035919393319700066,
+              "ci95": [
+                -0.05506083954359816,
+                -0.01804336259643522
+              ],
+              "p_value": 0.0045995400459954,
+              "accuracy_a": 0.46480669977602496,
+              "accuracy_b": 0.500726093095725
+            },
+            {
+              "contrast": "original_stemless - repaired_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": -0.11348125735417716,
+              "ci95": [
+                -0.151305165611524,
+                -0.08454915954915955
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.22178517397881997,
+              "accuracy_b": 0.33526643133299716
+            },
+            {
+              "contrast": "original - original_stemless",
+              "n_items": 661,
+              "n_clusters": 39,
+              "difference": 0.15537065052950075,
+              "ci95": [
+                0.12310536044362291,
+                0.2037344398340249
+              ],
+              "p_value": 9.999000099990002e-05,
+              "accuracy_a": 0.37715582450832075,
+              "accuracy_b": 0.22178517397881997
+            }
+          ]
+        },
+        "non-numeric options": {
+          "arms": {},
+          "contrasts": []
+        }
+      },
+      "rank_bias": {
+        "original": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.22844175491679275,
+            "1": 0.25703479576399396,
+            "2": 0.27866868381240545,
+            "3": 0.23585476550680787
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "placebo": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.24402420574886535,
+            "1": 0.2686838124054463,
+            "2": 0.2599092284417549,
+            "3": 0.22738275340393344
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.2859304084720121,
+            "1": 0.24947049924357034,
+            "2": 0.23222390317700453,
+            "3": 0.232375189107413
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        },
+        "original_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.43222390317700454,
+            "1": 0.30620272314674735,
+            "2": 0.17760968229954613,
+            "3": 0.08396369137670197
+          },
+          "key_by_rank": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          }
+        },
+        "repaired_stemless": {
+          "n": 6610,
+          "choice_by_rank": {
+            "0": 0.4205748865355522,
+            "1": 0.2944024205748865,
+            "2": 0.17518910741301058,
+            "3": 0.10983358547655069
+          },
+          "key_by_rank": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          }
+        }
+      },
+      "decomposition": {
+        "original_bias_from_stemless": {
+          "arm": "original",
+          "bias_estimated_from": "original_stemless",
+          "choice_by_rank_q": {
+            "0": 0.43222390317700454,
+            "1": 0.30620272314674735,
+            "2": 0.17760968229954613,
+            "3": 0.08396369137670197
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.2353729850476402,
+          "observed": 0.37715582450832075,
+          "residual": 0.14178283946068054,
+          "chance": 0.25,
+          "geometry_share_of_margin": -0.11503220563366834
+        },
+        "original_bias_from_self": {
+          "arm": "original",
+          "bias_estimated_from": "original",
+          "choice_by_rank_q": {
+            "0": 0.22844175491679275,
+            "1": 0.25703479576399396,
+            "2": 0.27866868381240545,
+            "3": 0.23585476550680787
+          },
+          "key_by_rank_p": {
+            "0": 0.1800302571860817,
+            "1": 0.2723146747352496,
+            "2": 0.3010590015128593,
+            "3": 0.24659606656580937
+          },
+          "predicted_from_geometry": 0.253177347850069,
+          "observed": 0.37715582450832075,
+          "residual": 0.12397847665825174,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.02498782782743149
+        },
+        "repaired_bias_from_stemless": {
+          "arm": "repaired",
+          "bias_estimated_from": "repaired_stemless",
+          "choice_by_rank_q": {
+            "0": 0.4205748865355522,
+            "1": 0.2944024205748865,
+            "2": 0.17518910741301058,
+            "3": 0.10983358547655069
+          },
+          "key_by_rank_p": {
+            "0": 0.29062027231467474,
+            "1": 0.2574886535552194,
+            "2": 0.23691376701966718,
+            "3": 0.21497730711043872
+          },
+          "predicted_from_geometry": 0.26314931074496306,
+          "observed": 0.49001512859304086,
+          "residual": 0.2268658178480778,
+          "chance": 0.25,
+          "geometry_share_of_margin": 0.054785341332622646
+        }
+      }
+    }
+  ],
+  "pooled_over_models": {
+    "all items": {
+      "arms": {
+        "original": {
+          "mean_over_models": 0.4362708018154312,
+          "n_models": 4,
+          "min": 0.24629349470499246,
+          "max": 0.6771558245083208
+        },
+        "placebo": {
+          "mean_over_models": 0.49198184568835096,
+          "n_models": 4,
+          "min": 0.2924357034795764,
+          "max": 0.7139183055975794
+        },
+        "repaired": {
+          "mean_over_models": 0.5045385779122541,
+          "n_models": 4,
+          "min": 0.2957639939485628,
+          "max": 0.7222390317700453
+        },
+        "original_stemless": {
+          "mean_over_models": 0.24020423600605142,
+          "n_models": 4,
+          "min": 0.22178517397881997,
+          "max": 0.2527987897125567
+        },
+        "repaired_stemless": {
+          "mean_over_models": 0.28335854765506807,
+          "n_models": 4,
+          "min": 0.2562783661119516,
+          "max": 0.32571860816944026
+        }
+      },
+      "contrasts": {
+        "original - repaired": {
+          "mean_over_models": -0.068267776096823,
+          "n_models": 4,
+          "min": -0.11285930408472011,
+          "max": -0.04508320726172466,
+          "n_models_p_below_0.05": 4
+        },
+        "original - placebo": {
+          "mean_over_models": -0.05571104387291982,
+          "n_models": 4,
+          "min": -0.09016641452344933,
+          "max": -0.0367624810892587,
+          "n_models_p_below_0.05": 4
+        },
+        "placebo - repaired": {
+          "mean_over_models": -0.012556732223903177,
+          "n_models": 4,
+          "min": -0.0226928895612708,
+          "max": -0.0033282904689863847,
+          "n_models_p_below_0.05": 1
+        },
+        "original_stemless - repaired_stemless": {
+          "mean_over_models": -0.04315431164901664,
+          "n_models": 4,
+          "min": -0.10393343419062027,
+          "max": -0.009077155824508321,
+          "n_models_p_below_0.05": 3
+        },
+        "original - original_stemless": {
+          "mean_over_models": 0.19606656580937973,
+          "n_models": 4,
+          "min": -0.0009077155824508324,
+          "max": 0.424357034795764,
+          "n_models_p_below_0.05": 3
+        }
+      }
+    },
+    "numeric options": {
+      "arms": {
+        "original": {
+          "mean_over_models": 0.4362708018154312,
+          "n_models": 4,
+          "min": 0.24629349470499246,
+          "max": 0.6771558245083208
+        },
+        "placebo": {
+          "mean_over_models": 0.49198184568835096,
+          "n_models": 4,
+          "min": 0.2924357034795764,
+          "max": 0.7139183055975794
+        },
+        "repaired": {
+          "mean_over_models": 0.5045385779122541,
+          "n_models": 4,
+          "min": 0.2957639939485628,
+          "max": 0.7222390317700453
+        },
+        "original_stemless": {
+          "mean_over_models": 0.24020423600605142,
+          "n_models": 4,
+          "min": 0.22178517397881997,
+          "max": 0.2527987897125567
+        },
+        "repaired_stemless": {
+          "mean_over_models": 0.28335854765506807,
+          "n_models": 4,
+          "min": 0.2562783661119516,
+          "max": 0.32571860816944026
+        }
+      },
+      "contrasts": {
+        "original - repaired": {
+          "mean_over_models": -0.068267776096823,
+          "n_models": 4,
+          "min": -0.11285930408472011,
+          "max": -0.04508320726172466,
+          "n_models_p_below_0.05": 4
+        },
+        "original - placebo": {
+          "mean_over_models": -0.05571104387291982,
+          "n_models": 4,
+          "min": -0.09016641452344933,
+          "max": -0.0367624810892587,
+          "n_models_p_below_0.05": 4
+        },
+        "placebo - repaired": {
+          "mean_over_models": -0.012556732223903177,
+          "n_models": 4,
+          "min": -0.0226928895612708,
+          "max": -0.0033282904689863847,
+          "n_models_p_below_0.05": 1
+        },
+        "original_stemless - repaired_stemless": {
+          "mean_over_models": -0.04315431164901664,
+          "n_models": 4,
+          "min": -0.10393343419062027,
+          "max": -0.009077155824508321,
+          "n_models_p_below_0.05": 3
+        },
+        "original - original_stemless": {
+          "mean_over_models": 0.19606656580937973,
+          "n_models": 4,
+          "min": -0.0009077155824508324,
+          "max": 0.424357034795764,
+          "n_models_p_below_0.05": 3
+        }
+      }
+    },
+    "numeric, redraw feasible": {
+      "arms": {
+        "original": {
+          "mean_over_models": 0.4362708018154312,
+          "n_models": 4,
+          "min": 0.24629349470499246,
+          "max": 0.6771558245083208
+        },
+        "placebo": {
+          "mean_over_models": 0.489883234735612,
+          "n_models": 4,
+          "min": 0.29138122017723245,
+          "max": 0.710974778459441
+        },
+        "repaired": {
+          "mean_over_models": 0.5105061174747256,
+          "n_models": 4,
+          "min": 0.2947428139183056,
+          "max": 0.7301533270897871
+        },
+        "original_stemless": {
+          "mean_over_models": 0.24020423600605142,
+          "n_models": 4,
+          "min": 0.22178517397881997,
+          "max": 0.2527987897125567
+        },
+        "repaired_stemless": {
+          "mean_over_models": 0.2867509245251303,
+          "n_models": 4,
+          "min": 0.2526114833225272,
+          "max": 0.33526643133299716
+        }
+      },
+      "contrasts": {
+        "original - repaired": {
+          "mean_over_models": -0.07423531565929448,
+          "n_models": 4,
+          "min": -0.12333345340153207,
+          "max": -0.048449319213313156,
+          "n_models_p_below_0.05": 4
+        },
+        "original - placebo": {
+          "mean_over_models": -0.05518231449021326,
+          "n_models": 4,
+          "min": -0.08903982861038076,
+          "max": -0.03612815269256987,
+          "n_models_p_below_0.05": 4
+        },
+        "placebo - repaired": {
+          "mean_over_models": -0.019592036712435482,
+          "n_models": 4,
+          "min": -0.035919393319700066,
+          "max": -0.0014485344239945454,
+          "n_models_p_below_0.05": 3
+        },
+        "original_stemless - repaired_stemless": {
+          "mean_over_models": -0.04654668851907883,
+          "n_models": 4,
+          "min": -0.11348125735417716,
+          "max": -0.005410273035083927,
+          "n_models_p_below_0.05": 2
+        },
+        "original - original_stemless": {
+          "mean_over_models": 0.19606656580937973,
+          "n_models": 4,
+          "min": -0.0009077155824508324,
+          "max": 0.424357034795764,
+          "n_models_p_below_0.05": 3
+        }
+      }
+    },
+    "non-numeric options": {
+      "arms": {},
+      "contrasts": {}
+    }
+  },
+  "scale_trend": {}
+}

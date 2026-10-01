@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TATE temporal manifest 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "benchmark", "tasks"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "benchmark": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "revision", "sha256", "source_url"],
+      "properties": {
+        "name": {"type": "string"}, "revision": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_url": {"type": "string", "format": "uri"}
+      }
+    },
+    "tasks": {"type": "array", "items": {"$ref": "#/$defs/task"}}
+  },
+  "$defs": {
+    "date": {"type": ["string", "null"], "format": "date"},
+    "material": {
+      "type": "object", "additionalProperties": false,
+      "required": ["public_by", "first_public", "first_appearance_verified", "evidence_urls"],
+      "properties": {
+        "public_by": {"$ref": "#/$defs/date"},
+        "first_public": {"$ref": "#/$defs/date"},
+        "first_appearance_verified": {"type": "boolean"},
+        "evidence_urls": {"type": "array", "items": {"type": "string", "format": "uri"}}
+      },
+      "allOf": [{
+        "if": {"properties": {"first_appearance_verified": {"const": true}}},
+        "then": {"properties": {
+          "first_public": {"type": "string", "format": "date"},
+          "evidence_urls": {"minItems": 1}
+        }}
+      }, {
+        "if": {"properties": {"public_by": {"type": "string"}}},
+        "then": {"properties": {"evidence_urls": {"minItems": 1}}}
+      }]
+    },
+    "task": {
+      "type": "object", "additionalProperties": false,
+      "required": ["task_id", "source_group", "analysis", "data", "artifact"],
+      "properties": {
+        "task_id": {"type": "string"},
+        "source_group": {"type": ["string", "null"]},
+        "analysis": {"$ref": "#/$defs/material"},
+        "data": {"$ref": "#/$defs/material"},
+        "artifact": {"$ref": "#/$defs/material"}
+      }
+    }
+  }
+}

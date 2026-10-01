@@ -1,0 +1,380 @@
+{
+  "Qwen/Qwen2.5-1.5B-Instruct|mmlu_pro_matched_released": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "items": "build/mmlu_pro_matched_released.jsonl",
+    "n_items": 901,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 15.871254162042176,
+        "chance": 10.0,
+        "unparsed": 2.0532741398446173,
+        "declined": 0.0,
+        "margin": 5.871254162042176,
+        "n_clusters": 60,
+        "n_effective": 10.621635766528412,
+        "interval": [
+          4.196092949770983,
+          7.653969676424978
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.3329633740288568,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.8949047461401869
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.776914539400666,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.2125229651110431,
+              1.6520051334328465
+            ]
+          },
+          "0.1": {
+            "accuracy": 1.7758046614872365,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.7781912097801879,
+              3.3226920410631577
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 5.5382907880133185,
+      "0.05": 5.09433962264151,
+      "0.1": 4.095449500554939
+    }
+  },
+  "Qwen/Qwen2.5-7B-Instruct|mmlu_pro_matched_released": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "items": "build/mmlu_pro_matched_released.jsonl",
+    "n_items": 901,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 14.428412874583795,
+        "chance": 10.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 4.428412874583795,
+        "n_clusters": 60,
+        "n_effective": 10.621635766528412,
+        "interval": [
+          2.1118290788351417,
+          7.343829719387755
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.776914539400666,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.20987890484065863,
+              1.6636629698089953
+            ]
+          },
+          "0.05": {
+            "accuracy": 1.7758046614872365,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              1.1336509215816089,
+              2.7826259832310485
+            ]
+          },
+          "0.1": {
+            "accuracy": 2.885682574916759,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              1.8181818181818181,
+              4.564614248540683
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 3.6514983351831294,
+      "0.05": 2.652608213096559,
+      "0.1": 1.5427302996670362
+    }
+  },
+  "Qwen/Qwen2.5-14B-Instruct|mmlu_pro_matched_released": {
+    "model": "Qwen/Qwen2.5-14B-Instruct",
+    "items": "build/mmlu_pro_matched_released.jsonl",
+    "n_items": 901,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 18.25749167591565,
+        "chance": 10.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 8.257491675915649,
+        "n_clusters": 60,
+        "n_effective": 10.621635766528412,
+        "interval": [
+          5.184436027023201,
+          11.47508566687537
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 3.218645948945616,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              1.5891542135450871,
+              4.8101741696012175
+            ]
+          },
+          "0.05": {
+            "accuracy": 3.218645948945616,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              1.5891542135450871,
+              4.8101741696012175
+            ]
+          },
+          "0.1": {
+            "accuracy": 3.218645948945616,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              1.5891542135450871,
+              4.8101741696012175
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 5.038845726970033,
+      "0.05": 5.038845726970033,
+      "0.1": 5.038845726970033
+    }
+  },
+  "microsoft/phi-4|mmlu_pro_matched_released": {
+    "model": "microsoft/phi-4",
+    "items": "build/mmlu_pro_matched_released.jsonl",
+    "n_items": 901,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 1.2208657047724751,
+        "chance": 10.0,
+        "unparsed": 93.84017758046615,
+        "declined": 45.50499445061043,
+        "margin": -8.779134295227525,
+        "n_clusters": 60,
+        "n_effective": 10.621635766528412,
+        "interval": [
+          -9.386983370243161,
+          -7.8999103770565275
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.1": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": -8.779134295227525,
+      "0.05": -8.779134295227525,
+      "0.1": -8.779134295227525
+    }
+  },
+  "meta-llama/Meta-Llama-3.1-8B-Instruct|mmlu_pro_matched_released": {
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "items": "build/mmlu_pro_matched_released.jsonl",
+    "n_items": 901,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 20.6992230854606,
+        "chance": 10.0,
+        "unparsed": 4.8834628190899005,
+        "declined": 0.11098779134295228,
+        "margin": 10.699223085460599,
+        "n_clusters": 60,
+        "n_effective": 10.621635766528412,
+        "interval": [
+          7.123260141831475,
+          15.1994925567154
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.1": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 10.699223085460599,
+      "0.05": 10.699223085460599,
+      "0.1": 10.699223085460599
+    }
+  },
+  "meta-llama/Llama-3.2-3B-Instruct|mmlu_pro_matched_released": {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "items": "build/mmlu_pro_matched_released.jsonl",
+    "n_items": 901,
+    "tolerances": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "arms": {
+      "mcq": {
+        "accuracy": 13.762486126526083,
+        "chance": 10.0,
+        "unparsed": 0.0,
+        "declined": 0.0,
+        "margin": 3.762486126526083,
+        "n_clusters": 60,
+        "n_effective": 10.621635766528412,
+        "interval": [
+          2.1344491744066048,
+          6.187856275114474
+        ]
+      },
+      "free": {
+        "chance": 0.0,
+        "declined": 0.0,
+        "by_tolerance": {
+          "0.01": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.05": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "0.1": {
+            "accuracy": 0.0,
+            "n_clusters": 60,
+            "n_effective": 10.621635766528412,
+            "interval": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "option_set_worth": {
+      "0.01": 3.762486126526083,
+      "0.05": 3.762486126526083,
+      "0.1": 3.762486126526083
+    }
+  }
+}

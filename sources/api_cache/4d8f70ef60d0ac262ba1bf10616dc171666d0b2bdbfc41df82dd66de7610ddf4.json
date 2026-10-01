@@ -1,0 +1,576 @@
+{
+  "url": "https://api.crossref.org/works/10.1371/journal.pone.0305268",
+  "retrieved_at": "2026-09-16T15:26:18.481932+00:00",
+  "status": 200,
+  "body": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2026-04-01T18:25:59Z",
+        "timestamp": 1775067959585,
+        "version": "3.50.1"
+      },
+      "reference-count": 36,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "9",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2024-09-03T00:00:00Z",
+            "timestamp": 1725321600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.plosone.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS ONE"
+      ],
+      "abstract": "<jats:sec id=\"sec001\">\n<jats:title>Motivation</jats:title>\n<jats:p>There exists an unexplained diverse variation within the predefined colon cancer stages using only features from either genomics or histopathological whole slide images as prognostic factors. Unraveling this variation will bring about improved staging and treatment outcomes. Hence, motivated by the advancement of Deep Neural Network (DNN) libraries and complementary factors within some genomics datasets, we aggregate atypia patterns in histopathological images with diverse carcinogenic expression from mRNA, miRNA and DNA methylation as an integrative input source into a deep neural network for colon cancer stages classification, and samples stratification into low or high-risk survival groups.</jats:p>\n</jats:sec>\n<jats:sec id=\"sec002\">\n<jats:title>Results</jats:title>\n<jats:p>The genomics-only and integrated input features return Area Under Curve\u2013Receiver Operating Characteristic curve (AUC-ROC) of 0.97 compared with AUC-ROC of 0.78 obtained when only image features are used for the stage\u2019s classification. A further analysis of prediction accuracy using the confusion matrix shows that the integrated features have a weakly improved accuracy of 0.08% more than the accuracy obtained with genomics features. Also, the extracted features were used to split the patients into low or high-risk survival groups. Among the 2,700 fused features, 1,836 (68%) features showed statistically significant survival probability differences in aggregating samples into either low or high between the two risk survival groups.</jats:p>\n<jats:p><jats:bold>Availability and Implementation:</jats:bold> <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/Ogundipe-L/EDCNN\" xlink:type=\"simple\">https://github.com/Ogundipe-L/EDCNN</jats:ext-link></jats:p>\n</jats:sec>",
+      "DOI": "10.1371/journal.pone.0305268",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ],
+        "date-time": "2024-09-03T17:23:13Z",
+        "timestamp": 1725384193000
+      },
+      "page": "e0305268",
+      "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 3,
+      "title": [
+        "Deep neural networks integrating genomics and histopathological images for predicting stages and survival time-to-event in colon cancer"
+      ],
+      "prefix": "10.1371",
+      "volume": "19",
+      "author": [
+        {
+          "given": "Olalekan",
+          "family": "Ogundipe",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3186-8091",
+          "authenticated-orcid": true,
+          "given": "Zeyneb",
+          "family": "Kurt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Wai Lok",
+          "family": "Woo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "340",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "pone.0305268.ref001",
+          "first-page": "A68",
+          "volume-title": "Wspolczesna Onkologia",
+          "author": "K Tomczak",
+          "year": "2015"
+        },
+        {
+          "key": "pone.0305268.ref002",
+          "article-title": "TransSurv: Transformer-based Survival Analysis Model Integrating Histopathological Images and Genomic Data for Colorectal Cancer",
+          "author": "Z Lv",
+          "year": "2022",
+          "journal-title": "IEEE/ACM Trans Comput Biol Bioinform"
+        },
+        {
+          "key": "pone.0305268.ref003",
+          "article-title": "Deep learning with whole slide images can improve the prognostic risk stratification with stage III colorectal cancer",
+          "volume": "221",
+          "author": "C Sun",
+          "year": "2022",
+          "journal-title": "Comput Methods Programs Biomed"
+        },
+        {
+          "key": "pone.0305268.ref004",
+          "article-title": "Exploring prognostic indicators in the pathological images of ovarian cancer based on a deep survival network",
+          "volume": "13",
+          "author": "M Wu",
+          "year": "2023",
+          "journal-title": "Front Genet"
+        },
+        {
+          "key": "pone.0305268.ref005",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.ebiom.2023.104726",
+          "article-title": "Integrative deep learning analysis improves colon adenocarcinoma patient stratification at risk for mortality",
+          "volume": "94",
+          "author": "J Zhou",
+          "year": "2023",
+          "journal-title": "EBioMedicine"
+        },
+        {
+          "key": "pone.0305268.ref006",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.3389/fbioe.2019.00052",
+          "article-title": "Deep learning with sampling in colon cancer histology",
+          "volume": "7",
+          "author": "M Shapcott",
+          "year": "2019",
+          "journal-title": "Front Bioeng Biotechnol"
+        },
+        {
+          "issue": "7861",
+          "key": "pone.0305268.ref007",
+          "doi-asserted-by": "crossref",
+          "first-page": "106",
+          "DOI": "10.1038/s41586-021-03512-4",
+          "article-title": "AI-based pathology predicts origins for cancers of unknown primary",
+          "volume": "594",
+          "author": "MY Lu",
+          "year": "2021",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "August",
+          "key": "pone.0305268.ref008",
+          "doi-asserted-by": "crossref",
+          "first-page": "104003",
+          "DOI": "10.1016/j.compbiomed.2020.104003",
+          "article-title": "A comprehensive review of deep learning in colon cancer",
+          "volume": "126",
+          "author": "I Pacal",
+          "year": "2020",
+          "journal-title": "Comput Biol Med"
+        },
+        {
+          "issue": "9",
+          "key": "pone.0305268.ref009",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.3390/cancers10090319",
+          "article-title": "Impact of tumor regression grade as a major prognostic factor in locally advanced rectal cancer after neoadjuvant chemoradiotherapy: A proposal for a modified staging system",
+          "volume": "10",
+          "author": "C Song",
+          "year": "2018",
+          "journal-title": "Cancers (Basel)"
+        },
+        {
+          "issue": "8",
+          "key": "pone.0305268.ref010",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.3390/diagnostics11081398",
+          "article-title": "Colon tissues classification and localization in whole slide images using deep learning",
+          "volume": "11",
+          "author": "P Gupta",
+          "year": "2021",
+          "journal-title": "Diagnostics"
+        },
+        {
+          "issue": "1",
+          "key": "pone.0305268.ref011",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1038/s41746-021-00427-2",
+          "article-title": "Interpretable survival prediction for colorectal cancer using deep learning",
+          "volume": "4",
+          "author": "E Wulczyn",
+          "year": "2021",
+          "journal-title": "NPJ Digit Med"
+        },
+        {
+          "issue": "9",
+          "key": "pone.0305268.ref012",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.3390/cancers11091235",
+          "article-title": "Cancer diagnosis using deep learning: A bibliographic review",
+          "volume": "11",
+          "author": "K Munir",
+          "year": "2019",
+          "journal-title": "Cancers (Basel)"
+        },
+        {
+          "key": "pone.0305268.ref013",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1186/s12859-019-2823-4",
+          "article-title": "Deep convolutional neural networks for mammography: Advances, challenges and applications",
+          "volume": "20",
+          "author": "D Abdelhafiz",
+          "year": "2019",
+          "journal-title": "BMC Bioinformatics"
+        },
+        {
+          "key": "pone.0305268.ref014",
+          "doi-asserted-by": "crossref",
+          "first-page": "9",
+          "DOI": "10.1016/j.neucom.2019.09.044",
+          "article-title": "BreakHis based breast cancer automatic diagnosis using deep learning: Taxonomy, survey and insights",
+          "volume": "375",
+          "author": "Y Benhammou",
+          "year": "2020",
+          "journal-title": "Neurocomputing"
+        },
+        {
+          "issue": "1",
+          "key": "pone.0305268.ref015",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1186/s12885-020-07316-z",
+          "article-title": "Interconnectivity between molecular subtypes and tumor stage in colorectal cancer",
+          "volume": "20",
+          "author": "RRJ Coebergh Van Den Braak",
+          "year": "2020",
+          "journal-title": "BMC Cancer"
+        },
+        {
+          "key": "pone.0305268.ref016",
+          "author": "A D\u2019Amour",
+          "year": "2020",
+          "journal-title": "Underspecification Presents Challenges for Credibility in Modern Machine Learning"
+        },
+        {
+          "key": "pone.0305268.ref017",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Xie S, Girshick R, Doll\u00e1r P, Tu Z, He K. Aggregated residual transformations for deep neural networks. Proceedings - 30th IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017. 2017;2017-Janua:5987\u201395.",
+          "DOI": "10.1109/CVPR.2017.634"
+        },
+        {
+          "issue": "6",
+          "key": "pone.0305268.ref018",
+          "first-page": "1248",
+          "volume": "24",
+          "author": "K Chaudhary",
+          "year": "2019",
+          "journal-title": "Survival in Liver Cancer"
+        },
+        {
+          "key": "pone.0305268.ref019",
+          "first-page": "34",
+          "article-title": "Machine Learning Methods for Histopathological Image Analysis. Comput Struct Biotechnol J",
+          "volume": "16",
+          "author": "D Komura",
+          "year": "2018",
+          "journal-title": "Internet]"
+        },
+        {
+          "issue": "7",
+          "key": "pone.0305268.ref020",
+          "doi-asserted-by": "crossref",
+          "first-page": "1054",
+          "DOI": "10.1038/s41591-019-0462-y",
+          "article-title": "Deep learning can predict microsatellite instability directly from histology in gastrointestinal cancer",
+          "volume": "25",
+          "author": "JN Kather",
+          "year": "2019",
+          "journal-title": "Nat Med"
+        },
+        {
+          "key": "pone.0305268.ref021",
+          "doi-asserted-by": "crossref",
+          "first-page": "67",
+          "DOI": "10.1016/j.cancergen.2019.04.001",
+          "article-title": "Prognostic significance of CDC25C in lung adenocarcinoma: An analysis of TCGA data",
+          "volume": "233\u2013234",
+          "author": "Z Xia",
+          "year": "2019",
+          "journal-title": "Cancer Genet"
+        },
+        {
+          "issue": "10",
+          "key": "pone.0305268.ref022",
+          "article-title": "A review of explainable deep learning cancer detection models in medical imaging",
+          "volume": "11",
+          "author": "MA Gulum",
+          "year": "2021",
+          "journal-title": "Applied Sciences (Switzerland)"
+        },
+        {
+          "issue": "13",
+          "key": "pone.0305268.ref023",
+          "doi-asserted-by": "crossref",
+          "first-page": "E2970",
+          "DOI": "10.1073/pnas.1717139115",
+          "article-title": "Predicting cancer outcomes from histology and genomics using convolutional networks",
+          "volume": "115",
+          "author": "P Mobadersany",
+          "year": "2018",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "pone.0305268.ref024",
+          "first-page": "1",
+          "article-title": "A deep learning model to predict RNA-Seq expression of tumours from whole slide images",
+          "author": "B Schmauch",
+          "year": "2020",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "issue": "21",
+          "key": "pone.0305268.ref025",
+          "doi-asserted-by": "crossref",
+          "first-page": "e91",
+          "DOI": "10.1158/0008-5472.CAN-17-0313",
+          "article-title": "Integrative analysis of histopathological images and genomic data predicts clear cell renal cell carcinoma prognosis",
+          "volume": "77",
+          "author": "J Cheng",
+          "year": "2017",
+          "journal-title": "Cancer Res"
+        },
+        {
+          "issue": "1",
+          "key": "pone.0305268.ref026",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1371/journal.pmed.1002730",
+          "article-title": "Predicting survival from colorectal cancer histology slides using deep learning: A retrospective multicenter study",
+          "volume": "16",
+          "author": "JN Kather",
+          "year": "2019",
+          "journal-title": "PLoS Med"
+        },
+        {
+          "issue": "1",
+          "key": "pone.0305268.ref027",
+          "first-page": "1",
+          "article-title": "Long-term cancer survival prediction using multimodal deep learning",
+          "volume": "11",
+          "author": "LA Vale-Silva",
+          "year": "2021",
+          "journal-title": "Sci Rep"
+        },
+        {
+          "issue": "15",
+          "key": "pone.0305268.ref028",
+          "doi-asserted-by": "crossref",
+          "first-page": "4244",
+          "DOI": "10.3748/wjg.v20.i15.4244",
+          "article-title": "Multimodal imaging evaluation in staging of rectal cancer",
+          "volume": "20",
+          "author": "SH Heo",
+          "year": "2014",
+          "journal-title": "World J Gastroenterol"
+        },
+        {
+          "key": "pone.0305268.ref029",
+          "first-page": "1",
+          "article-title": "Multimodal AI for prediction of distant metastasis in carcinoma patients",
+          "volume": "2023",
+          "author": "I Olatunji",
+          "year": "2023"
+        },
+        {
+          "key": "pone.0305268.ref030",
+          "first-page": "193",
+          "article-title": "Autoencoders",
+          "author": "WH Lopez Pinaya",
+          "year": "2019",
+          "journal-title": "Machine Learning: Methods and Applications to Brain Disorders"
+        },
+        {
+          "key": "pone.0305268.ref031",
+          "doi-asserted-by": "crossref",
+          "first-page": "457",
+          "DOI": "10.18653/v1/D16-1044",
+          "author": "A Fukui",
+          "year": "2016",
+          "journal-title": "Multimodal compact bilinear pooling for visual question answering and visual grounding. EMNLP 2016\u2014Conference on Empirical Methods in Natural Language Processing, Proceedings"
+        },
+        {
+          "key": "pone.0305268.ref032",
+          "author": "K. He",
+          "journal-title": "Deep Residual Learning for Image Recognition"
+        },
+        {
+          "issue": "12",
+          "key": "pone.0305268.ref033",
+          "doi-asserted-by": "crossref",
+          "first-page": "e05625",
+          "DOI": "10.1016/j.heliyon.2020.e05625",
+          "article-title": "Detecting pathological brain via ResNet and randomized neural networks",
+          "volume": "6",
+          "author": "S Lu",
+          "year": "2020",
+          "journal-title": "Heliyon"
+        },
+        {
+          "issue": "1",
+          "key": "pone.0305268.ref034",
+          "doi-asserted-by": "crossref",
+          "first-page": "62",
+          "DOI": "10.1016/j.irbm.2020.12.002",
+          "article-title": "A Hybrid Deep Learning Model for Predicting Molecular Subtypes of Human Breast Cancer Using Multimodal Data",
+          "volume": "43",
+          "author": "T Liu",
+          "year": "2022",
+          "journal-title": "Irbm"
+        },
+        {
+          "key": "pone.0305268.ref035",
+          "doi-asserted-by": "crossref",
+          "first-page": "102260",
+          "DOI": "10.1016/j.artmed.2022.102260",
+          "article-title": "A multi-modal fusion framework based on multi-task correlation learning for cancer prognosis prediction",
+          "volume": "126",
+          "author": "K Tan",
+          "year": "2022",
+          "journal-title": "Artif Intell Med"
+        },
+        {
+          "issue": "14",
+          "key": "pone.0305268.ref036",
+          "doi-asserted-by": "crossref",
+          "first-page": "i446",
+          "DOI": "10.1093/bioinformatics/btz342",
+          "article-title": "Deep learning with multimodal representation for pancancer prognosis prediction",
+          "volume": "35",
+          "author": "A Cheerla",
+          "year": "2019",
+          "journal-title": "Bioinformatics"
+        }
+      ],
+      "container-title": [
+        "PLOS ONE"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://dx.plos.org/10.1371/journal.pone.0305268",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ],
+        "date-time": "2024-09-03T17:23:56Z",
+        "timestamp": 1725384236000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://dx.plos.org/10.1371/journal.pone.0305268"
+        }
+      },
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "John",
+          "family": "Adeoye",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "editor",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      },
+      "references-count": 36,
+      "journal-issue": {
+        "issue": "9",
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              3
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1371/journal.pone.0305268",
+      "relation": {},
+      "ISSN": [
+        "1932-6203"
+      ],
+      "issn-type": [
+        {
+          "value": "1932-6203",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            3
+          ]
+        ]
+      }
+    }
+  }
+}

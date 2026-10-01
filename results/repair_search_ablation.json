@@ -1,0 +1,3600 @@
+{
+  "file": "data/bixbench.jsonl",
+  "n_options": 4,
+  "n_items": 205,
+  "chance": 0.25,
+  "reps": 4000,
+  "seeds": [
+    20260919,
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924,
+    20260925,
+    20260926
+  ],
+  "orderings": [
+    "lexical isolation",
+    "written length",
+    "significant digits"
+  ],
+  "cells": [
+    {
+      "search": "sample",
+      "draw": "uniform",
+      "leaks": 2,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.046524918294836924,
+        "written length": -0.03188366711252415,
+        "significant digits": -0.04358233825302017
+      },
+      "bound_worst": {
+        "lexical isolation": 0.017326732673267342,
+        "written length": 0.037037037037037035,
+        "significant digits": -0.0026881720430107503
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.8011904761904762,
+        "written length": 0.25,
+        "significant digits": 0.41904761904761906
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.9023809523809524,
+        "written length": 0.5178571428571429,
+        "significant digits": 0.6666666666666666
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.3,
+        "written length": 0.32261904761904764,
+        "significant digits": 0.30238095238095236
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.1839481274503653,
+        "written length": 0.22045390491942948,
+        "significant digits": 0.19896882176379022
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.054597701149425276,
+            "written length": 0.0026315789473684292,
+            "significant digits": -0.05246913580246915
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.26666666666666666,
+            "significant digits": 0.38095238095238093
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9238095238095239,
+            "written length": 0.5238095238095238,
+            "significant digits": 0.6095238095238096
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7916666666666666,
+              0.8095238095238095,
+              0.8076923076923077,
+              0.8235294117647058
+            ],
+            "written length": [
+              0.38461538461538464,
+              0.34782608695652173,
+              0.16,
+              0.1935483870967742
+            ],
+            "significant digits": [
+              0.32,
+              0.5,
+              0.4,
+              0.23809523809523808
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.031862745098039214,
+            "written length": 0.22461538461538463,
+            "significant digits": 0.2619047619047619
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.3523809523809524,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.016666666666666663,
+          "bound": {
+            "lexical isolation": -0.0412087912087912,
+            "written length": -0.07352941176470587,
+            "significant digits": -0.024436090225563922
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8285714285714286,
+            "written length": 0.20952380952380953,
+            "significant digits": 0.37142857142857144
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8952380952380953,
+            "written length": 0.42857142857142855,
+            "significant digits": 0.6761904761904762
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.6333333333333333,
+              1.0,
+              0.8484848484848485,
+              0.9130434782608695
+            ],
+            "written length": [
+              0.375,
+              0.1,
+              0.16,
+              0.23076923076923078
+            ],
+            "significant digits": [
+              0.4,
+              0.32,
+              0.3125,
+              0.5
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.3666666666666667,
+            "written length": 0.275,
+            "significant digits": 0.1875
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.26666666666666666,
+            "significant digits": 0.3142857142857143
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.045238095238095244,
+          "bound": {
+            "lexical isolation": -0.02192982456140352,
+            "written length": -0.04797979797979798,
+            "significant digits": -0.04381443298969073
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8285714285714286,
+            "written length": 0.20952380952380953,
+            "significant digits": 0.4380952380952381
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9142857142857143,
+            "written length": 0.4857142857142857,
+            "significant digits": 0.638095238095238
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8095238095238095,
+              0.8333333333333334,
+              0.8888888888888888,
+              0.7777777777777778
+            ],
+            "written length": [
+              0.28,
+              0.21428571428571427,
+              0.21428571428571427,
+              0.125
+            ],
+            "significant digits": [
+              0.38461538461538464,
+              0.5,
+              0.5,
+              0.4
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.11111111111111105,
+            "written length": 0.15500000000000003,
+            "significant digits": 0.11538461538461536
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3238095238095238,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.12142857142857144,
+          "bound": {
+            "lexical isolation": 0.017326732673267342,
+            "written length": 0.037037037037037035,
+            "significant digits": -0.04207920792079209
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7333333333333333,
+            "written length": 0.23809523809523808,
+            "significant digits": 0.3904761904761905
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8476190476190476,
+            "written length": 0.5428571428571428,
+            "significant digits": 0.6952380952380952
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.5,
+              0.7941176470588235,
+              0.7142857142857143,
+              0.8148148148148148
+            ],
+            "written length": [
+              0.4482758620689655,
+              0.16666666666666666,
+              0.22727272727272727,
+              0.08333333333333333
+            ],
+            "significant digits": [
+              0.375,
+              0.4666666666666667,
+              0.46153846153846156,
+              0.24
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.31481481481481477,
+            "written length": 0.3649425287356322,
+            "significant digits": 0.22666666666666668
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3619047619047619,
+            "written length": 0.4095238095238095,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.07857142857142857,
+            "written length": -0.011363636363636354,
+            "significant digits": -0.04545454545454544
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.819047619047619,
+            "written length": 0.3238095238095238,
+            "significant digits": 0.5142857142857142
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.5619047619047619,
+            "significant digits": 0.7142857142857143
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.696969696969697,
+              0.9411764705882353,
+              1.0,
+              0.7575757575757576
+            ],
+            "written length": [
+              0.47058823529411764,
+              0.16666666666666666,
+              0.18181818181818182,
+              0.47368421052631576
+            ],
+            "significant digits": [
+              0.4482758620689655,
+              0.68,
+              0.5483870967741935,
+              0.35
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.303030303030303,
+            "written length": 0.3070175438596491,
+            "significant digits": 0.33000000000000007
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.26666666666666666,
+            "written length": 0.34285714285714286,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.0357142857142857,
+          "bound": {
+            "lexical isolation": -0.07857142857142857,
+            "written length": -0.06746031746031747,
+            "significant digits": -0.07051282051282051
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7904761904761904,
+            "written length": 0.23809523809523808,
+            "significant digits": 0.38095238095238093
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9047619047619048,
+            "written length": 0.5238095238095238,
+            "significant digits": 0.6952380952380952
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8,
+              0.7666666666666667,
+              0.8571428571428571,
+              0.75
+            ],
+            "written length": [
+              0.2692307692307692,
+              0.14814814814814814,
+              0.2916666666666667,
+              0.25
+            ],
+            "significant digits": [
+              0.3333333333333333,
+              0.5,
+              0.3939393939393939,
+              0.30434782608695654
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1071428571428571,
+            "written length": 0.14351851851851855,
+            "significant digits": 0.19565217391304346
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.26666666666666666,
+            "written length": 0.2857142857142857,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.06428571428571428,
+          "bound": {
+            "lexical isolation": -0.07432432432432431,
+            "written length": -0.04207920792079209,
+            "significant digits": -0.0026881720430107503
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.780952380952381,
+            "written length": 0.22857142857142856,
+            "significant digits": 0.44761904761904764
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8857142857142857,
+            "written length": 0.5238095238095238,
+            "significant digits": 0.7047619047619048
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7391304347826086,
+              0.7857142857142857,
+              0.8260869565217391,
+              0.7741935483870968
+            ],
+            "written length": [
+              0.36,
+              0.25,
+              0.1724137931034483,
+              0.16129032258064516
+            ],
+            "significant digits": [
+              0.3870967741935484,
+              0.5,
+              0.5,
+              0.4230769230769231
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.08695652173913049,
+            "written length": 0.19870967741935483,
+            "significant digits": 0.11290322580645162
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.3333333333333333
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.04032258064516128,
+            "written length": -0.05232558139534885,
+            "significant digits": -0.06720430107526881
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.819047619047619,
+            "written length": 0.2857142857142857,
+            "significant digits": 0.42857142857142855
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8952380952380953,
+            "written length": 0.5523809523809524,
+            "significant digits": 0.6
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.75,
+              0.76,
+              0.8461538461538461,
+              0.9
+            ],
+            "written length": [
+              0.3448275862068966,
+              0.2727272727272727,
+              0.25,
+              0.2608695652173913
+            ],
+            "significant digits": [
+              0.5217391304347826,
+              0.3888888888888889,
+              0.47619047619047616,
+              0.36
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.15000000000000002,
+            "written length": 0.09482758620689657,
+            "significant digits": 0.1617391304347826
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.3142857142857143,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": []
+        }
+      ]
+    },
+    {
+      "search": "sample",
+      "draw": "calibrated",
+      "leaks": 3,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.03627655108308964,
+        "written length": -0.03291412580835755,
+        "significant digits": -0.05094589458245429
+      },
+      "bound_worst": {
+        "lexical isolation": 0.019565217391304346,
+        "written length": 0.015306122448979609,
+        "significant digits": -0.023195876288659795
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.8333333333333333,
+        "written length": 0.275,
+        "significant digits": 0.44166666666666665
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.9,
+        "written length": 0.5071428571428571,
+        "significant digits": 0.6821428571428572
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.30952380952380953,
+        "written length": 0.32142857142857145,
+        "significant digits": 0.2976190476190476
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.20209073769324534,
+        "written length": 0.25053590967630296,
+        "significant digits": 0.20619623963459044
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.04999999999999999,
+            "written length": 0.0077319587628865705,
+            "significant digits": -0.05645161290322581
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8571428571428571,
+            "written length": 0.20952380952380953,
+            "significant digits": 0.38095238095238093
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9333333333333333,
+            "written length": 0.4857142857142857,
+            "significant digits": 0.638095238095238
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7857142857142857,
+              0.8846153846153846,
+              0.8620689655172413,
+              0.9090909090909091
+            ],
+            "written length": [
+              0.3333333333333333,
+              0.30434782608695654,
+              0.15151515151515152,
+              0.08
+            ],
+            "significant digits": [
+              0.41379310344827586,
+              0.4444444444444444,
+              0.3870967741935484,
+              0.2962962962962963
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.12337662337662336,
+            "written length": 0.2533333333333333,
+            "significant digits": 0.14814814814814814
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.3619047619047619,
+            "significant digits": 0.26666666666666666
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.016666666666666663,
+          "bound": {
+            "lexical isolation": 0.004385964912280715,
+            "written length": -0.06818181818181818,
+            "significant digits": -0.03723404255319149
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.819047619047619,
+            "written length": 0.3523809523809524,
+            "significant digits": 0.4
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8761904761904762,
+            "written length": 0.5238095238095238,
+            "significant digits": 0.6190476190476191
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7727272727272727,
+              0.7241379310344828,
+              0.9333333333333333,
+              0.8333333333333334
+            ],
+            "written length": [
+              0.3,
+              0.3125,
+              0.4166666666666667,
+              0.3793103448275862
+            ],
+            "significant digits": [
+              0.30303030303030304,
+              0.35294117647058826,
+              0.5555555555555556,
+              0.39285714285714285
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.20919540229885059,
+            "written length": 0.1166666666666667,
+            "significant digits": 0.25252525252525254
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.34285714285714286,
+            "written length": 0.2761904761904762,
+            "significant digits": 0.3142857142857143
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.05851063829787234,
+            "written length": -0.04487179487179488,
+            "significant digits": -0.04629629629629631
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8857142857142857,
+            "written length": 0.3238095238095238,
+            "significant digits": 0.49523809523809526
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9238095238095239,
+            "written length": 0.5523809523809524,
+            "significant digits": 0.7428571428571429
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8275862068965517,
+              0.9130434782608695,
+              0.9545454545454546,
+              0.8709677419354839
+            ],
+            "written length": [
+              0.5,
+              0.35714285714285715,
+              0.25,
+              0.28205128205128205
+            ],
+            "significant digits": [
+              0.52,
+              0.6129032258064516,
+              0.3939393939393939,
+              0.4375
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.12695924764890287,
+            "written length": 0.25,
+            "significant digits": 0.2189638318670577
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.12142857142857144,
+          "bound": {
+            "lexical isolation": 0.019565217391304346,
+            "written length": 0.015306122448979609,
+            "significant digits": -0.06188118811881188
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.780952380952381,
+            "written length": 0.19047619047619047,
+            "significant digits": 0.47619047619047616
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8476190476190476,
+            "written length": 0.47619047619047616,
+            "significant digits": 0.7428571428571429
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7608695652173914,
+              0.6666666666666666,
+              0.8421052631578947,
+              0.8947368421052632
+            ],
+            "written length": [
+              0.48,
+              0.12,
+              0.0625,
+              0.10256410256410256
+            ],
+            "significant digits": [
+              0.5,
+              0.6190476190476191,
+              0.5,
+              0.3333333333333333
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.22807017543859653,
+            "written length": 0.4175,
+            "significant digits": 0.28571428571428575
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3523809523809524,
+            "written length": 0.3904761904761905,
+            "significant digits": 0.29523809523809524
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.04999999999999999,
+            "written length": -0.02419354838709678,
+            "significant digits": -0.04824561403508773
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.2761904761904762,
+            "significant digits": 0.49523809523809526
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8571428571428571,
+            "written length": 0.45714285714285713,
+            "significant digits": 0.6761904761904762
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.75,
+              0.8076923076923077,
+              0.7647058823529411,
+              0.9
+            ],
+            "written length": [
+              0.4117647058823529,
+              0.23529411764705882,
+              0.27906976744186046,
+              0.21428571428571427
+            ],
+            "significant digits": [
+              0.45454545454545453,
+              0.47619047619047616,
+              0.5333333333333333,
+              0.5238095238095238
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.15000000000000002,
+            "written length": 0.19747899159663865,
+            "significant digits": 0.0787878787878788
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.29523809523809524,
+            "written length": 0.3333333333333333,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.0357142857142857,
+          "bound": {
+            "lexical isolation": -0.04787234042553193,
+            "written length": -0.06132075471698112,
+            "significant digits": -0.023195876288659795
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8476190476190476,
+            "written length": 0.23809523809523808,
+            "significant digits": 0.45714285714285713
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9238095238095239,
+            "written length": 0.5333333333333333,
+            "significant digits": 0.6857142857142857
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.72,
+              0.8333333333333334,
+              1.0,
+              0.8333333333333334
+            ],
+            "written length": [
+              0.2777777777777778,
+              0.19047619047619047,
+              0.12903225806451613,
+              0.34285714285714286
+            ],
+            "significant digits": [
+              0.4375,
+              0.4,
+              0.5333333333333333,
+              0.48484848484848486
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.28,
+            "written length": 0.21382488479262673,
+            "significant digits": 0.1333333333333333
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.2857142857142857,
+            "significant digits": 0.3333333333333333
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.06428571428571428,
+          "bound": {
+            "lexical isolation": -0.07653061224489796,
+            "written length": -0.04611650485436894,
+            "significant digits": -0.05733944954128439
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8571428571428571,
+            "written length": 0.34285714285714286,
+            "significant digits": 0.37142857142857144
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.5142857142857142,
+            "significant digits": 0.6666666666666666
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.6829268292682927,
+              0.9545454545454546,
+              1.0,
+              0.9583333333333334
+            ],
+            "written length": [
+              0.47368421052631576,
+              0.2777777777777778,
+              0.35714285714285715,
+              0.3181818181818182
+            ],
+            "significant digits": [
+              0.3409090909090909,
+              0.55,
+              0.375,
+              0.23529411764705882
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.31707317073170727,
+            "written length": 0.19590643274853797,
+            "significant digits": 0.3147058823529412
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2761904761904762,
+            "written length": 0.29523809523809524,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.03125,
+            "written length": -0.04166666666666666,
+            "significant digits": -0.07692307692307693
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.26666666666666666,
+            "significant digits": 0.45714285714285713
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8857142857142857,
+            "written length": 0.5142857142857142,
+            "significant digits": 0.6857142857142857
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.717948717948718,
+              0.875,
+              0.8,
+              0.9
+            ],
+            "written length": [
+              0.5217391304347826,
+              0.2608695652173913,
+              0.18181818181818182,
+              0.16216216216216217
+            ],
+            "significant digits": [
+              0.44,
+              0.47058823529411764,
+              0.5652173913043478,
+              0.34782608695652173
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.18205128205128207,
+            "written length": 0.3595769682726204,
+            "significant digits": 0.21739130434782605
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3142857142857143,
+            "written length": 0.3238095238095238,
+            "significant digits": 0.2761904761904762
+          },
+          "coordinates_firing": []
+        }
+      ]
+    },
+    {
+      "search": "nearest",
+      "draw": "uniform",
+      "leaks": 7,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.03135412038993263,
+        "written length": 0.05707965399365682,
+        "significant digits": -0.04589649401368649
+      },
+      "bound_worst": {
+        "lexical isolation": 0.004716981132075471,
+        "written length": 0.12864077669902912,
+        "significant digits": -0.022727272727272735
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.9452380952380952,
+        "written length": 0.7083333333333334,
+        "significant digits": 0.7107142857142857
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.9773809523809524,
+        "written length": 0.8702380952380953,
+        "significant digits": 0.9047619047619048
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.31666666666666665,
+        "written length": 0.41904761904761906,
+        "significant digits": 0.30952380952380953
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.11229709088006501,
+        "written length": 0.6093246466316181,
+        "significant digits": 0.2701598746496114
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.0024752475247524774,
+            "written length": 0.042035398230088505,
+            "significant digits": -0.06188118811881188
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.6571428571428571,
+            "significant digits": 0.7142857142857143
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.8285714285714286,
+            "significant digits": 0.8666666666666667
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.90625,
+              0.95,
+              0.9444444444444444,
+              1.0
+            ],
+            "written length": [
+              0.896551724137931,
+              0.6896551724137931,
+              0.5925925925925926,
+              0.35
+            ],
+            "significant digits": [
+              0.6451612903225806,
+              0.631578947368421,
+              0.9565217391304348,
+              0.65625
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.09375,
+            "written length": 0.5465517241379311,
+            "significant digits": 0.3249427917620138
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.34285714285714286,
+            "written length": 0.42857142857142855,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.02619047619047621,
+          "bound": {
+            "lexical isolation": 0.004716981132075471,
+            "written length": 0.018518518518518545,
+            "significant digits": -0.022727272727272735
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9333333333333333,
+            "written length": 0.7238095238095238,
+            "significant digits": 0.6761904761904762
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.8952380952380953,
+            "significant digits": 0.8761904761904762
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.9565217391304348,
+              0.9285714285714286,
+              0.8571428571428571,
+              0.9696969696969697
+            ],
+            "written length": [
+              0.9230769230769231,
+              0.9,
+              0.7083333333333334,
+              0.32
+            ],
+            "significant digits": [
+              0.46153846153846156,
+              0.75,
+              0.76,
+              0.7307692307692307
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.11255411255411263,
+            "written length": 0.6030769230769231,
+            "significant digits": 0.29846153846153844
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3523809523809524,
+            "written length": 0.3619047619047619,
+            "significant digits": 0.3238095238095238
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.08505154639175258,
+            "written length": -0.011061946902654857,
+            "significant digits": -0.04816513761467889
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9333333333333333,
+            "written length": 0.7238095238095238,
+            "significant digits": 0.6476190476190476
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9428571428571428,
+            "written length": 0.8952380952380953,
+            "significant digits": 0.8857142857142857
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8928571428571429,
+              1.0,
+              0.9285714285714286,
+              0.9230769230769231
+            ],
+            "written length": [
+              0.9090909090909091,
+              0.8571428571428571,
+              0.75,
+              0.34782608695652173
+            ],
+            "significant digits": [
+              0.5806451612903226,
+              0.6428571428571429,
+              0.7777777777777778,
+              0.6428571428571429
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1071428571428571,
+            "written length": 0.5612648221343873,
+            "significant digits": 0.19713261648745517
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.26666666666666666,
+            "written length": 0.3523809523809524,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.12142857142857144,
+          "bound": {
+            "lexical isolation": -0.015306122448979581,
+            "written length": 0.11082474226804123,
+            "significant digits": -0.07727272727272727
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9619047619047619,
+            "written length": 0.7047619047619048,
+            "significant digits": 0.7619047619047619
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9904761904761905,
+            "written length": 0.8571428571428571,
+            "significant digits": 0.9333333333333333
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8666666666666667,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "written length": [
+              0.9166666666666666,
+              0.8,
+              0.5294117647058824,
+              0.36363636363636365
+            ],
+            "significant digits": [
+              0.6666666666666666,
+              0.8064516129032258,
+              0.8333333333333334,
+              0.7307692307692307
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1333333333333333,
+            "written length": 0.553030303030303,
+            "significant digits": 0.16666666666666674
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3333333333333333,
+            "written length": 0.47619047619047616,
+            "significant digits": 0.2761904761904762
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.0625,
+            "written length": 0.12864077669902912,
+            "significant digits": -0.0427927927927928
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9428571428571428,
+            "written length": 0.7523809523809524,
+            "significant digits": 0.7523809523809524
+          },
+          "assigned_met": {
+            "lexical isolation": 1.0,
+            "written length": 0.9142857142857143,
+            "significant digits": 0.9238095238095239
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.9230769230769231,
+              0.896551724137931,
+              1.0,
+              0.9655172413793104
+            ],
+            "written length": [
+              1.0,
+              0.88,
+              0.6666666666666666,
+              0.35
+            ],
+            "significant digits": [
+              0.6176470588235294,
+              0.875,
+              0.8695652173913043,
+              0.625
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.10344827586206895,
+            "written length": 0.65,
+            "significant digits": 0.25735294117647056
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.4857142857142857,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.0357142857142857,
+          "bound": {
+            "lexical isolation": -0.03431372549019607,
+            "written length": 0.02619047619047621,
+            "significant digits": -0.03260869565217392
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9904761904761905,
+            "written length": 0.7428571428571429,
+            "significant digits": 0.7523809523809524
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.8952380952380953,
+            "significant digits": 0.9047619047619048
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.9666666666666667,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "written length": [
+              0.96,
+              0.8709677419354839,
+              0.6666666666666666,
+              0.4090909090909091
+            ],
+            "significant digits": [
+              0.5294117647058824,
+              0.6451612903225806,
+              0.9117647058823529,
+              0.8260869565217391
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.033333333333333326,
+            "written length": 0.5509090909090908,
+            "significant digits": 0.38235294117647056
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.3904761904761905,
+            "significant digits": 0.34285714285714286
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.03761061946902655,
+            "written length": 0.07110091743119268,
+            "significant digits": -0.03
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9142857142857143,
+            "written length": 0.6857142857142857,
+            "significant digits": 0.7333333333333333
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.8285714285714286,
+            "significant digits": 0.9333333333333333
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8518518518518519,
+              0.9523809523809523,
+              0.8823529411764706,
+              1.0
+            ],
+            "written length": [
+              0.9393939393939394,
+              0.782608695652174,
+              0.6818181818181818,
+              0.2962962962962963
+            ],
+            "significant digits": [
+              0.6129032258064516,
+              0.7,
+              0.92,
+              0.7241379310344828
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.14814814814814814,
+            "written length": 0.6430976430976432,
+            "significant digits": 0.3070967741935484
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.42857142857142855,
+            "significant digits": 0.3333333333333333
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.018292682926829257,
+            "written length": 0.07038834951456313,
+            "significant digits": -0.051724137931034475
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9333333333333333,
+            "written length": 0.6761904761904762,
+            "significant digits": 0.6476190476190476
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9619047619047619,
+            "written length": 0.8476190476190476,
+            "significant digits": 0.9142857142857143
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8333333333333334,
+              0.8636363636363636,
+              1.0,
+              1.0
+            ],
+            "written length": [
+              0.9393939393939394,
+              1.0,
+              0.64,
+              0.23333333333333334
+            ],
+            "significant digits": [
+              0.5,
+              0.6551724137931034,
+              0.7272727272727273,
+              0.6764705882352942
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.16666666666666663,
+            "written length": 0.7666666666666666,
+            "significant digits": 0.2272727272727273
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3238095238095238,
+            "written length": 0.42857142857142855,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        }
+      ]
+    },
+    {
+      "search": "nearest",
+      "draw": "calibrated",
+      "leaks": 5,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.006586258659004234,
+        "written length": -0.014874097189843297,
+        "significant digits": -0.044408046993303835
+      },
+      "bound_worst": {
+        "lexical isolation": 0.039156626506024084,
+        "written length": 0.006880733944954143,
+        "significant digits": 0.0
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.9416666666666667,
+        "written length": 0.5047619047619047,
+        "significant digits": 0.594047619047619
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.9761904761904762,
+        "written length": 0.825,
+        "significant digits": 0.8690476190476191
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.3380952380952381,
+        "written length": 0.33690476190476193,
+        "significant digits": 0.30238095238095236
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.13367468218888276,
+        "written length": 0.6244386641511772,
+        "significant digits": 0.3715474033743052
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.019230769230769218,
+            "written length": -0.03378378378378377,
+            "significant digits": 0.0
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.5047619047619047,
+            "significant digits": 0.6476190476190476
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9904761904761905,
+            "written length": 0.8761904761904762,
+            "significant digits": 0.8952380952380953
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.896551724137931,
+              1.0,
+              1.0,
+              0.8666666666666667
+            ],
+            "written length": [
+              1.0,
+              0.8461538461538461,
+              0.6818181818181818,
+              0.328125
+            ],
+            "significant digits": [
+              0.38461538461538464,
+              0.76,
+              0.8947368421052632,
+              0.7727272727272727
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1333333333333333,
+            "written length": 0.671875,
+            "significant digits": 0.5101214574898785
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3142857142857143,
+            "written length": 0.3142857142857143,
+            "significant digits": 0.34285714285714286
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.02619047619047621,
+          "bound": {
+            "lexical isolation": 0.005813953488372103,
+            "written length": -0.005555555555555564,
+            "significant digits": -0.04464285714285715
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9619047619047619,
+            "written length": 0.49523809523809526,
+            "significant digits": 0.5714285714285714
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9714285714285714,
+            "written length": 0.8571428571428571,
+            "significant digits": 0.8952380952380953
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.9166666666666666,
+              0.9743589743589743,
+              0.9615384615384616,
+              1.0
+            ],
+            "written length": [
+              1.0,
+              0.875,
+              0.7333333333333333,
+              0.3088235294117647
+            ],
+            "significant digits": [
+              0.36,
+              0.85,
+              0.6842105263157895,
+              0.75
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.08333333333333337,
+            "written length": 0.6911764705882353,
+            "significant digits": 0.49
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3619047619047619,
+            "written length": 0.3523809523809524,
+            "significant digits": 0.29523809523809524
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.055194805194805185,
+            "written length": 0.004385964912280715,
+            "significant digits": -0.06720430107526881
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9238095238095239,
+            "written length": 0.5428571428571428,
+            "significant digits": 0.580952380952381
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.8666666666666667,
+            "significant digits": 0.8476190476190476
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8787878787878788,
+              0.88,
+              1.0,
+              0.9545454545454546
+            ],
+            "written length": [
+              1.0,
+              0.9285714285714286,
+              0.5769230769230769,
+              0.34545454545454546
+            ],
+            "significant digits": [
+              0.4807692307692308,
+              0.7058823529411765,
+              0.6153846153846154,
+              0.6956521739130435
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.12121212121212122,
+            "written length": 0.6545454545454545,
+            "significant digits": 0.22511312217194573
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.3619047619047619,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.12142857142857144,
+          "bound": {
+            "lexical isolation": -0.021428571428571436,
+            "written length": 0.006880733944954143,
+            "significant digits": -0.03813559322033899
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.4380952380952381,
+            "significant digits": 0.5714285714285714
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.780952380952381,
+            "significant digits": 0.7904761904761904
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.9459459459459459,
+              0.9629629629629629,
+              0.9090909090909091,
+              1.0
+            ],
+            "written length": [
+              0.9090909090909091,
+              0.6363636363636364,
+              0.4,
+              0.3275862068965517
+            ],
+            "significant digits": [
+              0.5306122448979592,
+              0.5454545454545454,
+              0.6666666666666666,
+              0.631578947368421
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.09090909090909094,
+            "written length": 0.5815047021943573,
+            "significant digits": 0.1360544217687074
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3333333333333333,
+            "written length": 0.37142857142857144,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": 0.0,
+            "written length": 0.0,
+            "significant digits": -0.07178217821782179
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.5333333333333333,
+            "significant digits": 0.5619047619047619
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9714285714285714,
+            "written length": 0.7619047619047619,
+            "significant digits": 0.8571428571428571
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8260869565217391,
+              0.9473684210526315,
+              1.0,
+              1.0
+            ],
+            "written length": [
+              1.0,
+              0.7142857142857143,
+              0.6551724137931034,
+              0.375
+            ],
+            "significant digits": [
+              0.47619047619047616,
+              0.5333333333333333,
+              0.7272727272727273,
+              0.6818181818181818
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.17391304347826086,
+            "written length": 0.625,
+            "significant digits": 0.25108225108225113
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.34285714285714286,
+            "written length": 0.34285714285714286,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.045238095238095244,
+          "bound": {
+            "lexical isolation": -0.015957446808510634,
+            "written length": -0.0753968253968254,
+            "significant digits": -0.04069767441860464
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 0.5428571428571428,
+            "significant digits": 0.6
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9714285714285714,
+            "written length": 0.8095238095238095,
+            "significant digits": 0.8761904761904762
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8518518518518519,
+              0.9642857142857143,
+              1.0,
+              1.0
+            ],
+            "written length": [
+              1.0,
+              0.8461538461538461,
+              0.5806451612903226,
+              0.42105263157894735
+            ],
+            "significant digits": [
+              0.3939393939393939,
+              0.5806451612903226,
+              1.0,
+              0.6896551724137931
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.14814814814814814,
+            "written length": 0.5789473684210527,
+            "significant digits": 0.6060606060606061
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3333333333333333,
+            "written length": 0.2761904761904762,
+            "significant digits": 0.3142857142857143
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.045238095238095244,
+          "bound": {
+            "lexical isolation": 0.039156626506024084,
+            "written length": -0.007281553398058249,
+            "significant digits": -0.04047619047619047
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9333333333333333,
+            "written length": 0.47619047619047616,
+            "significant digits": 0.5904761904761905
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9619047619047619,
+            "written length": 0.780952380952381,
+            "significant digits": 0.9238095238095239
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.875,
+              0.9047619047619048,
+              1.0,
+              0.975609756097561
+            ],
+            "written length": [
+              0.875,
+              0.75,
+              0.5,
+              0.3333333333333333
+            ],
+            "significant digits": [
+              0.42105263157894735,
+              0.7058823529411765,
+              0.875,
+              0.8260869565217391
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.125,
+            "written length": 0.5416666666666667,
+            "significant digits": 0.45394736842105265
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3904761904761905,
+            "written length": 0.34285714285714286,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.045238095238095244,
+          "bound": {
+            "lexical isolation": 0.014150943396226412,
+            "written length": -0.00824175824175824,
+            "significant digits": -0.05232558139534885
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.9047619047619048,
+            "written length": 0.5047619047619047,
+            "significant digits": 0.6285714285714286
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 0.8666666666666667,
+            "significant digits": 0.8666666666666667
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8064516129032258,
+              0.9047619047619048,
+              0.9393939393939394,
+              1.0
+            ],
+            "written length": [
+              1.0,
+              0.8461538461538461,
+              0.5909090909090909,
+              0.3492063492063492
+            ],
+            "significant digits": [
+              0.5,
+              0.6785714285714286,
+              0.5833333333333334,
+              0.8
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.19354838709677424,
+            "written length": 0.6507936507936508,
+            "significant digits": 0.30000000000000004
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.34285714285714286,
+            "written length": 0.3333333333333333,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        }
+      ]
+    },
+    {
+      "search": "guided",
+      "draw": "uniform",
+      "leaks": 8,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.050465290250462425,
+        "written length": 0.06612981118100665,
+        "significant digits": -0.04882182846928717
+      },
+      "bound_worst": {
+        "lexical isolation": -0.02227722772277227,
+        "written length": 0.10483870967741937,
+        "significant digits": -0.011904761904761918
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.7821428571428571,
+        "written length": 0.6297619047619047,
+        "significant digits": 0.6476190476190476
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.8083333333333333,
+        "written length": 0.8261904761904763,
+        "significant digits": 0.8154761904761905
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.2988095238095238,
+        "written length": 0.4261904761904762,
+        "significant digits": 0.3
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.20905133130213605,
+        "written length": 0.5692609669746101,
+        "significant digits": 0.2636337254186355
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.05392156862745098,
+            "written length": 0.048969072164948446,
+            "significant digits": -0.04310344827586207
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8761904761904762,
+            "written length": 0.7142857142857143,
+            "significant digits": 0.6666666666666666
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8857142857142857,
+            "written length": 0.8952380952380953,
+            "significant digits": 0.8476190476190476
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.8235294117647058,
+              0.8095238095238095,
+              1.0,
+              0.8928571428571429
+            ],
+            "written length": [
+              0.9642857142857143,
+              0.8181818181818182,
+              0.5416666666666666,
+              0.4
+            ],
+            "significant digits": [
+              0.375,
+              0.7307692307692307,
+              0.8461538461538461,
+              0.6896551724137931
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.19047619047619047,
+            "written length": 0.5642857142857143,
+            "significant digits": 0.47115384615384615
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.29523809523809524,
+            "written length": 0.42857142857142855,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.016666666666666663,
+          "bound": {
+            "lexical isolation": -0.04207920792079209,
+            "written length": 0.06182795698924731,
+            "significant digits": -0.011904761904761918
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.819047619047619,
+            "written length": 0.6285714285714286,
+            "significant digits": 0.6952380952380952
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8285714285714286,
+            "written length": 0.819047619047619,
+            "significant digits": 0.8476190476190476
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.9375,
+              0.8787878787878788,
+              0.6666666666666666,
+              0.8461538461538461
+            ],
+            "written length": [
+              0.8148148148148148,
+              0.8095238095238095,
+              0.5945945945945946,
+              0.25
+            ],
+            "significant digits": [
+              0.56,
+              0.6666666666666666,
+              0.875,
+              0.6333333333333333
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.27083333333333337,
+            "written length": 0.5648148148148148,
+            "significant digits": 0.31499999999999995
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.4095238095238095,
+            "significant digits": 0.3333333333333333
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.02227722772277227,
+            "written length": 0.03455284552845528,
+            "significant digits": -0.03947368421052633
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7904761904761904,
+            "written length": 0.580952380952381,
+            "significant digits": 0.6476190476190476
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8380952380952381,
+            "written length": 0.8095238095238095,
+            "significant digits": 0.8095238095238095
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7666666666666667,
+              0.8055555555555556,
+              0.7142857142857143,
+              0.84
+            ],
+            "written length": [
+              0.95,
+              0.76,
+              0.5416666666666666,
+              0.2777777777777778
+            ],
+            "significant digits": [
+              0.5862068965517241,
+              0.6153846153846154,
+              0.7352941176470589,
+              0.625
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.12571428571428567,
+            "written length": 0.6722222222222222,
+            "significant digits": 0.1490872210953348
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3142857142857143,
+            "written length": 0.41904761904761906,
+            "significant digits": 0.3238095238095238
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.12142857142857144,
+          "bound": {
+            "lexical isolation": -0.0702247191011236,
+            "written length": 0.10483870967741937,
+            "significant digits": -0.06818181818181818
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.780952380952381,
+            "written length": 0.6476190476190476,
+            "significant digits": 0.6857142857142857
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8,
+            "written length": 0.8,
+            "significant digits": 0.8095238095238095
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.6875,
+              0.9130434782608695,
+              0.7619047619047619,
+              0.7931034482758621
+            ],
+            "written length": [
+              0.8620689655172413,
+              0.7916666666666666,
+              0.5806451612903226,
+              0.2857142857142857
+            ],
+            "significant digits": [
+              0.5909090909090909,
+              0.6785714285714286,
+              0.8,
+              0.64
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.2255434782608695,
+            "written length": 0.5763546798029556,
+            "significant digits": 0.2090909090909091
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.45714285714285713,
+            "significant digits": 0.2761904761904762
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.06395348837209303,
+            "written length": 0.09920634920634919,
+            "significant digits": -0.07242990654205608
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.638095238095238,
+            "significant digits": 0.6285714285714286
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8285714285714286,
+            "written length": 0.8380952380952381,
+            "significant digits": 0.8285714285714286
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7931034482758621,
+              0.7586206896551724,
+              0.8260869565217391,
+              0.875
+            ],
+            "written length": [
+              0.9615384615384616,
+              0.7916666666666666,
+              0.5,
+              0.30434782608695654
+            ],
+            "significant digits": [
+              0.5625,
+              0.6129032258064516,
+              0.631578947368421,
+              0.7391304347826086
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.11637931034482762,
+            "written length": 0.657190635451505,
+            "significant digits": 0.17663043478260865
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2761904761904762,
+            "written length": 0.44761904761904764,
+            "significant digits": 0.2761904761904762
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.0357142857142857,
+          "bound": {
+            "lexical isolation": -0.07524271844660194,
+            "written length": 0.07978723404255317,
+            "significant digits": -0.055825242718446605
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7047619047619048,
+            "written length": 0.6190476190476191,
+            "significant digits": 0.6571428571428571
+          },
+          "assigned_met": {
+            "lexical isolation": 0.7333333333333333,
+            "written length": 0.8,
+            "significant digits": 0.7904761904761904
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.6071428571428571,
+              0.68,
+              0.7777777777777778,
+              0.76
+            ],
+            "written length": [
+              0.8181818181818182,
+              0.782608695652174,
+              0.42857142857142855,
+              0.39285714285714285
+            ],
+            "significant digits": [
+              0.5526315789473685,
+              0.6818181818181818,
+              0.7619047619047619,
+              0.7083333333333334
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1706349206349207,
+            "written length": 0.4253246753246754,
+            "significant digits": 0.2092731829573934
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2761904761904762,
+            "written length": 0.44761904761904764,
+            "significant digits": 0.29523809523809524
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.045238095238095244,
+          "bound": {
+            "lexical isolation": -0.04824561403508773,
+            "written length": 0.0625,
+            "significant digits": -0.021084337349397603
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.6952380952380952,
+            "written length": 0.6285714285714286,
+            "significant digits": 0.580952380952381
+          },
+          "assigned_met": {
+            "lexical isolation": 0.7333333333333333,
+            "written length": 0.7714285714285715,
+            "significant digits": 0.7428571428571429
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7586206896551724,
+              0.8333333333333334,
+              0.6774193548387096,
+              0.47619047619047616
+            ],
+            "written length": [
+              0.8571428571428571,
+              0.6666666666666666,
+              0.6666666666666666,
+              0.3076923076923077
+            ],
+            "significant digits": [
+              0.42857142857142855,
+              0.5909090909090909,
+              0.6,
+              0.6428571428571429
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.3571428571428572,
+            "written length": 0.5494505494505494,
+            "significant digits": 0.21428571428571436
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.41904761904761906,
+            "significant digits": 0.3333333333333333
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.02777777777777779,
+            "written length": 0.03735632183908044,
+            "significant digits": -0.07857142857142857
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.780952380952381,
+            "written length": 0.580952380952381,
+            "significant digits": 0.6190476190476191
+          },
+          "assigned_met": {
+            "lexical isolation": 0.819047619047619,
+            "written length": 0.8761904761904762,
+            "significant digits": 0.8476190476190476
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.6666666666666666,
+              0.8823529411764706,
+              0.7941176470588235,
+              0.8333333333333334
+            ],
+            "written length": [
+              0.76,
+              0.7777777777777778,
+              0.6086956521739131,
+              0.23333333333333334
+            ],
+            "significant digits": [
+              0.46153846153846156,
+              0.8260869565217391,
+              0.6071428571428571,
+              0.6071428571428571
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.21568627450980393,
+            "written length": 0.5444444444444445,
+            "significant digits": 0.36454849498327757
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3333333333333333,
+            "written length": 0.38095238095238093,
+            "significant digits": 0.2571428571428571
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        }
+      ]
+    },
+    {
+      "search": "guided",
+      "draw": "calibrated",
+      "leaks": 4,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.040296885365753446,
+        "written length": -0.006590204694362001,
+        "significant digits": -0.04796214976148513
+      },
+      "bound_worst": {
+        "lexical isolation": -0.014227642276422758,
+        "written length": 0.06428571428571428,
+        "significant digits": 0.013736263736263743
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.7297619047619047,
+        "written length": 0.5226190476190476,
+        "significant digits": 0.5476190476190476
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.7678571428571429,
+        "written length": 0.7738095238095238,
+        "significant digits": 0.7797619047619048
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.30833333333333335,
+        "written length": 0.3523809523809524,
+        "significant digits": 0.2976190476190476
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.21839793960724788,
+        "written length": 0.5902223186490951,
+        "significant digits": 0.33628839639662356
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.07075471698113209,
+            "written length": 0.0077319587628865705,
+            "significant digits": -0.058080808080808094
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7619047619047619,
+            "written length": 0.6285714285714286,
+            "significant digits": 0.6285714285714286
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8,
+            "written length": 0.8,
+            "significant digits": 0.8285714285714286
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7241379310344828,
+              0.9259259259259259,
+              0.7083333333333334,
+              0.68
+            ],
+            "written length": [
+              1.0,
+              0.7857142857142857,
+              0.631578947368421,
+              0.42105263157894735
+            ],
+            "significant digits": [
+              0.5142857142857142,
+              0.5517241379310345,
+              0.875,
+              0.6470588235294118
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.24592592592592588,
+            "written length": 0.5789473684210527,
+            "significant digits": 0.36071428571428577
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.37142857142857144,
+            "significant digits": 0.2761904761904762
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.016666666666666663,
+          "bound": {
+            "lexical isolation": -0.04381443298969073,
+            "written length": 0.003968253968253954,
+            "significant digits": -0.04569892473118278
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.6095238095238096,
+            "written length": 0.4666666666666667,
+            "significant digits": 0.4666666666666667
+          },
+          "assigned_met": {
+            "lexical isolation": 0.6476190476190476,
+            "written length": 0.7333333333333333,
+            "significant digits": 0.6952380952380952
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.5609756097560976,
+              0.6153846153846154,
+              0.6363636363636364,
+              0.6875
+            ],
+            "written length": [
+              0.9,
+              0.75,
+              0.3333333333333333,
+              0.3898305084745763
+            ],
+            "significant digits": [
+              0.30303030303030304,
+              0.5,
+              0.55,
+              0.5833333333333334
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.12652439024390238,
+            "written length": 0.5666666666666667,
+            "significant digits": 0.28030303030303033
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.3619047619047619,
+            "significant digits": 0.29523809523809524
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.047619047619047616,
+            "written length": -0.014227642276422758,
+            "significant digits": -0.06188118811881188
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7523809523809524,
+            "written length": 0.4666666666666667,
+            "significant digits": 0.5142857142857142
+          },
+          "assigned_met": {
+            "lexical isolation": 0.780952380952381,
+            "written length": 0.7619047619047619,
+            "significant digits": 0.7619047619047619
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.696969696969697,
+              0.8076923076923077,
+              0.875,
+              0.7
+            ],
+            "written length": [
+              0.875,
+              0.7272727272727273,
+              0.5,
+              0.359375
+            ],
+            "significant digits": [
+              0.34375,
+              0.5238095238095238,
+              0.6818181818181818,
+              0.5666666666666667
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.17803030303030298,
+            "written length": 0.515625,
+            "significant digits": 0.33806818181818177
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.29523809523809524,
+            "written length": 0.34285714285714286,
+            "significant digits": 0.29523809523809524
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.1119047619047619,
+          "bound": {
+            "lexical isolation": -0.04611650485436894,
+            "written length": -0.015217391304347822,
+            "significant digits": -0.04629629629629631
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7714285714285715,
+            "written length": 0.5047619047619047,
+            "significant digits": 0.5619047619047619
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.7714285714285715,
+            "significant digits": 0.819047619047619
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7647058823529411,
+              0.8260869565217391,
+              0.7777777777777778,
+              0.7142857142857143
+            ],
+            "written length": [
+              1.0,
+              0.7777777777777778,
+              0.631578947368421,
+              0.20930232558139536
+            ],
+            "significant digits": [
+              0.45454545454545453,
+              0.5652173913043478,
+              0.8260869565217391,
+              0.46153846153846156
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.11180124223602483,
+            "written length": 0.7906976744186046,
+            "significant digits": 0.3715415019762846
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.29523809523809524,
+            "written length": 0.3619047619047619,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.03260869565217392,
+            "written length": -0.007575757575757569,
+            "significant digits": -0.08132530120481929
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.780952380952381,
+            "written length": 0.4380952380952381,
+            "significant digits": 0.5047619047619047
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.780952380952381,
+            "significant digits": 0.7714285714285715
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.7333333333333333,
+              0.8709677419354839,
+              0.7391304347826086,
+              0.7619047619047619
+            ],
+            "written length": [
+              0.9090909090909091,
+              0.6923076923076923,
+              0.4642857142857143,
+              0.2641509433962264
+            ],
+            "significant digits": [
+              0.34375,
+              0.6206896551724138,
+              0.5,
+              0.5833333333333334
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1376344086021506,
+            "written length": 0.6449399656946826,
+            "significant digits": 0.2769396551724138
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3142857142857143,
+            "written length": 0.37142857142857144,
+            "significant digits": 0.2761904761904762
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": true
+          },
+          "value_credit": 0.0357142857142857,
+          "bound": {
+            "lexical isolation": -0.014227642276422758,
+            "written length": -0.04787234042553193,
+            "significant digits": 0.013736263736263743
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.6857142857142857,
+            "written length": 0.5428571428571428,
+            "significant digits": 0.4857142857142857
+          },
+          "assigned_met": {
+            "lexical isolation": 0.7142857142857143,
+            "written length": 0.7428571428571429,
+            "significant digits": 0.7047619047619048
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.5882352941176471,
+              0.7,
+              0.6666666666666666,
+              0.8260869565217391
+            ],
+            "written length": [
+              1.0,
+              0.7272727272727273,
+              0.6666666666666666,
+              0.4492753623188406
+            ],
+            "significant digits": [
+              0.3055555555555556,
+              0.42424242424242425,
+              0.7857142857142857,
+              0.6818181818181818
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.23785166240409206,
+            "written length": 0.5507246376811594,
+            "significant digits": 0.4801587301587301
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.34285714285714286,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.3523809523809524
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": true,
+            "significant digits": false
+          },
+          "value_credit": 0.06428571428571428,
+          "bound": {
+            "lexical isolation": -0.03723404255319149,
+            "written length": 0.06428571428571428,
+            "significant digits": -0.014150943396226412
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7619047619047619,
+            "written length": 0.5619047619047619,
+            "significant digits": 0.638095238095238
+          },
+          "assigned_met": {
+            "lexical isolation": 0.8095238095238095,
+            "written length": 0.8380952380952381,
+            "significant digits": 0.8476190476190476
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.6060606060606061,
+              0.875,
+              0.75,
+              0.8571428571428571
+            ],
+            "written length": [
+              0.9473684210526315,
+              0.7692307692307693,
+              0.5,
+              0.36585365853658536
+            ],
+            "significant digits": [
+              0.5,
+              0.8620689655172413,
+              0.6666666666666666,
+              0.5238095238095238
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.2689393939393939,
+            "written length": 0.5815147625160462,
+            "significant digits": 0.3620689655172413
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.4,
+            "significant digits": 0.3142857142857143
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.03,
+            "written length": -0.04381443298969073,
+            "significant digits": -0.09
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.7142857142857143,
+            "written length": 0.5714285714285714,
+            "significant digits": 0.580952380952381
+          },
+          "assigned_met": {
+            "lexical isolation": 0.7714285714285715,
+            "written length": 0.7619047619047619,
+            "significant digits": 0.8095238095238095
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.4166666666666667,
+              0.8571428571428571,
+              0.8,
+              0.7575757575757576
+            ],
+            "written length": [
+              0.8888888888888888,
+              0.7619047619047619,
+              0.6818181818181818,
+              0.39622641509433965
+            ],
+            "significant digits": [
+              0.59375,
+              0.5128205128205128,
+              0.7333333333333333,
+              0.5789473684210527
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.4404761904761904,
+            "written length": 0.4926624737945492,
+            "significant digits": 0.2205128205128205
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3238095238095238,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.26666666666666666
+          },
+          "coordinates_firing": []
+        }
+      ]
+    },
+    {
+      "search": "construct",
+      "draw": "frontier",
+      "leaks": 2,
+      "n_seeds": 8,
+      "bound_mean": {
+        "lexical isolation": -0.0338593188823129,
+        "written length": -0.04559052151786416,
+        "significant digits": -0.05358550869582561
+      },
+      "bound_worst": {
+        "lexical isolation": 0.020833333333333315,
+        "written length": -0.024647887323943657,
+        "significant digits": -0.03205128205128205
+      },
+      "first_draw_met_mean": {
+        "lexical isolation": 0.21666666666666667,
+        "written length": 0.23333333333333334,
+        "significant digits": 0.23928571428571427
+      },
+      "assigned_met_mean": {
+        "lexical isolation": 0.9511904761904761,
+        "written length": 1.0,
+        "significant digits": 1.0
+      },
+      "widest_realised_mean": {
+        "lexical isolation": 0.3107142857142857,
+        "written length": 0.2976190476190476,
+        "significant digits": 0.29285714285714287
+      },
+      "hit_rate_spread_mean": {
+        "lexical isolation": 0.13698339158781317,
+        "written length": 0.23655569068612547,
+        "significant digits": 0.1695601380872789
+      },
+      "runs": [
+        {
+          "seed": 20260919,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.016666666666666663,
+          "bound": {
+            "lexical isolation": -0.0518018018018018,
+            "written length": -0.054597701149425276,
+            "significant digits": -0.05219780219780221
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.21904761904761905,
+            "written length": 0.19047619047619047,
+            "significant digits": 0.2857142857142857
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9428571428571428,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.2962962962962963,
+              0.14814814814814814,
+              0.2222222222222222,
+              0.20833333333333334
+            ],
+            "written length": [
+              0.11538461538461539,
+              0.13636363636363635,
+              0.375,
+              0.15151515151515152
+            ],
+            "significant digits": [
+              0.26666666666666666,
+              0.15,
+              0.3684210526315789,
+              0.3333333333333333
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.14814814814814814,
+            "written length": 0.2596153846153846,
+            "significant digits": 0.21842105263157893
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.2857142857142857,
+            "significant digits": 0.3142857142857143
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260920,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": true,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.02619047619047621,
+          "bound": {
+            "lexical isolation": 0.020833333333333315,
+            "written length": -0.024647887323943657,
+            "significant digits": -0.03205128205128205
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.20952380952380953,
+            "written length": 0.20952380952380953,
+            "significant digits": 0.3333333333333333
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9333333333333333,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.19230769230769232,
+              0.21052631578947367,
+              0.13793103448275862,
+              0.2903225806451613
+            ],
+            "written length": [
+              0.11538461538461539,
+              0.17647058823529413,
+              0.3333333333333333,
+              0.2
+            ],
+            "significant digits": [
+              0.18181818181818182,
+              0.46153846153846156,
+              0.2,
+              0.4375
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.1523915461624027,
+            "written length": 0.21794871794871792,
+            "significant digits": 0.27972027972027974
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.37142857142857144,
+            "written length": 0.3142857142857143,
+            "significant digits": 0.3142857142857143
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        },
+        {
+          "seed": 20260921,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.05476190476190479,
+          "bound": {
+            "lexical isolation": -0.05314960629921259,
+            "written length": -0.04999999999999999,
+            "significant digits": -0.04999999999999999
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.2,
+            "written length": 0.24761904761904763,
+            "significant digits": 0.24761904761904763
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9809523809523809,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.20689655172413793,
+              0.24,
+              0.15384615384615385,
+              0.2
+            ],
+            "written length": [
+              0.2,
+              0.391304347826087,
+              0.125,
+              0.2727272727272727
+            ],
+            "significant digits": [
+              0.2727272727272727,
+              0.27586206896551724,
+              0.18518518518518517,
+              0.25925925925925924
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.08615384615384614,
+            "written length": 0.266304347826087,
+            "significant digits": 0.09067688378033206
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260922,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.03888888888888889,
+            "written length": -0.06188118811881188,
+            "significant digits": -0.06395348837209303
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.20952380952380953,
+            "written length": 0.20952380952380953,
+            "significant digits": 0.1523809523809524
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.14814814814814814,
+              0.2222222222222222,
+              0.17391304347826086,
+              0.2857142857142857
+            ],
+            "written length": [
+              0.24,
+              0.25,
+              0.08333333333333333,
+              0.25
+            ],
+            "significant digits": [
+              0.13793103448275862,
+              0.1111111111111111,
+              0.15384615384615385,
+              0.21739130434782608
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.13756613756613756,
+            "written length": 0.16666666666666669,
+            "significant digits": 0.10628019323671498
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3047619047619048,
+            "written length": 0.2857142857142857,
+            "significant digits": 0.26666666666666666
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260923,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.08333333333333331,
+          "bound": {
+            "lexical isolation": -0.04591836734693877,
+            "written length": -0.05412371134020619,
+            "significant digits": -0.08146067415730338
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.1523809523809524,
+            "written length": 0.2571428571428571,
+            "significant digits": 0.22857142857142856
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9142857142857143,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.1111111111111111,
+              0.23809523809523808,
+              0.11764705882352941,
+              0.17391304347826086
+            ],
+            "written length": [
+              0.391304347826087,
+              0.16666666666666666,
+              0.2962962962962963,
+              0.2
+            ],
+            "significant digits": [
+              0.17857142857142858,
+              0.25,
+              0.20689655172413793,
+              0.2916666666666667
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.12698412698412698,
+            "written length": 0.22463768115942032,
+            "significant digits": 0.11309523809523811
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.29523809523809524,
+            "written length": 0.29523809523809524,
+            "significant digits": 0.2571428571428571
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260924,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.0357142857142857,
+          "bound": {
+            "lexical isolation": -0.08486238532110091,
+            "written length": -0.04999999999999999,
+            "significant digits": -0.04787234042553193
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.21904761904761905,
+            "written length": 0.24761904761904763,
+            "significant digits": 0.20952380952380953
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9619047619047619,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.22727272727272727,
+              0.2,
+              0.18518518518518517,
+              0.25806451612903225
+            ],
+            "written length": [
+              0.4090909090909091,
+              0.09090909090909091,
+              0.25,
+              0.3
+            ],
+            "significant digits": [
+              0.2692307692307692,
+              0.16,
+              0.13043478260869565,
+              0.25806451612903225
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.07287933094384708,
+            "written length": 0.31818181818181823,
+            "significant digits": 0.13879598662207357
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.2571428571428571,
+            "written length": 0.2857142857142857,
+            "significant digits": 0.2857142857142857
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260925,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.045238095238095244,
+          "bound": {
+            "lexical isolation": -0.01470588235294118,
+            "written length": -0.03947368421052633,
+            "significant digits": -0.042452830188679236
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.23809523809523808,
+            "written length": 0.2761904761904762,
+            "significant digits": 0.2571428571428571
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9714285714285714,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.2857142857142857,
+              0.1724137931034483,
+              0.14285714285714285,
+              0.37037037037037035
+            ],
+            "written length": [
+              0.375,
+              0.125,
+              0.2727272727272727,
+              0.37037037037037035
+            ],
+            "significant digits": [
+              0.3333333333333333,
+              0.26666666666666666,
+              0.14285714285714285,
+              0.23809523809523808
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.2275132275132275,
+            "written length": 0.25,
+            "significant digits": 0.19047619047619047
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3238095238095238,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.3047619047619048
+          },
+          "coordinates_firing": []
+        },
+        {
+          "seed": 20260926,
+          "n_repaired": 105,
+          "fired": {
+            "numeric rule family": false,
+            "surface rule family": false,
+            "lexical isolation": false,
+            "written length": false,
+            "significant digits": false
+          },
+          "value_credit": 0.09285714285714286,
+          "bound": {
+            "lexical isolation": -0.0023809523809523725,
+            "written length": -0.03,
+            "significant digits": -0.05869565217391304
+          },
+          "first_draw_met": {
+            "lexical isolation": 0.2857142857142857,
+            "written length": 0.22857142857142856,
+            "significant digits": 0.2
+          },
+          "assigned_met": {
+            "lexical isolation": 0.9523809523809523,
+            "written length": 1.0,
+            "significant digits": 1.0
+          },
+          "hit_rate_by_target_rank": {
+            "lexical isolation": [
+              0.375,
+              0.23076923076923078,
+              0.25806451612903225,
+              0.2916666666666667
+            ],
+            "written length": [
+              0.28,
+              0.25,
+              0.09090909090909091,
+              0.2692307692307692
+            ],
+            "significant digits": [
+              0.3157894736842105,
+              0.23333333333333334,
+              0.2,
+              0.0967741935483871
+            ]
+          },
+          "hit_rate_spread": {
+            "lexical isolation": 0.14423076923076922,
+            "written length": 0.18909090909090912,
+            "significant digits": 0.21901528013582341
+          },
+          "widest_realised_rank": {
+            "lexical isolation": 0.3619047619047619,
+            "written length": 0.3047619047619048,
+            "significant digits": 0.29523809523809524
+          },
+          "coordinates_firing": [
+            "(migrated: at least one)"
+          ]
+        }
+      ]
+    }
+  ]
+}

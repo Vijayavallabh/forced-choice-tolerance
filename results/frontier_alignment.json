@@ -1,0 +1,21 @@
+{
+  "n_common": 464,
+  "arms": {
+    "released_matched": "build/mmlu_frontier_released_matched_aligned.jsonl",
+    "imitation": "build/mmlu_frontier_imitation_aligned.jsonl",
+    "wrong_step": "build/mmlu_frontier_wrong_step_aligned.jsonl",
+    "key_marginal_near": "build/mmlu_frontier_key_marginal_near_aligned.jsonl",
+    "key_marginal": "build/mmlu_frontier_key_marginal_aligned.jsonl",
+    "rank_uniform": "build/mmlu_frontier_rank_uniform_aligned.jsonl",
+    "exchangeable": "build/mmlu_frontier_exchangeable_aligned.jsonl"
+  },
+  "n_before": {
+    "released_matched": 520,
+    "imitation": 520,
+    "wrong_step": 629,
+    "key_marginal_near": 520,
+    "key_marginal": 520,
+    "rank_uniform": 520,
+    "exchangeable": 474
+  }
+}

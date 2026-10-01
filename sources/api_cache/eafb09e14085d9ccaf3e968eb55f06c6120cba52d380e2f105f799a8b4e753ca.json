@@ -1,0 +1,384 @@
+{
+  "url": "https://api.crossref.org/works/10.3324/haematol.2024.285239",
+  "retrieved_at": "2026-09-16T15:26:22.213026+00:00",
+  "status": 200,
+  "body": {
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            9
+          ]
+        ],
+        "date-time": "2026-09-09T17:08:41Z",
+        "timestamp": 1788973721496,
+        "version": "build-2803163510"
+      },
+      "reference-count": 15,
+      "publisher": "Ferrata Storti Foundation (Haematologica)",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                7,
+                25
+              ]
+            ],
+            "date-time": "2024-07-25T00:00:00Z",
+            "timestamp": 1721865600000
+          },
+          "content-version": "unspecified",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "haematol"
+      ],
+      "DOI": "10.3324/haematol.2024.285239",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2024-07-25T02:56:56Z",
+        "timestamp": 1721876216000
+      },
+      "page": "187-192",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Increased frequency of clonal hematopoiesis of indeterminate potential in Bloom syndrome probands and carriers"
+      ],
+      "prefix": "10.3324",
+      "volume": "110",
+      "author": [
+        {
+          "given": "Isabella",
+          "family": "Lin",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Angela",
+          "family": "Wei",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tsumugi A.",
+          "family": "Gebo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul C.",
+          "family": "Boutros",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Maeve",
+          "family": "Flanagan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicole",
+          "family": "Kucine",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christopher",
+          "family": "Cunniff",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Valerie A.",
+          "family": "Arboleda",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vivian Y.",
+          "family": "Chang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "1856",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            25
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "71130",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Cunniff C, Bassetti JA, Ellis NA. Bloom\u2019s syndrome: clinical spectrum, molecular pathogenesis, and cancer predisposition. Mol Syndromol. 2017; 8(1):4-23.",
+          "DOI": "10.1159/000452082"
+        },
+        {
+          "key": "71131",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Landrum MJ, Lee JM, Riley GR. ClinVar: public archive of relationships among sequence variation and human phenotype. Nucleic Acids Res. 2014; 42(database issue):D980-9855.",
+          "DOI": "10.1093/nar/gkt1113"
+        },
+        {
+          "key": "71132",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Sugra\u00f1es TA, Flanagan M, Thomas C, Chang VY, Walsh M, Cunniff C. Age of first cancer diagnosis and survival in Bloom syndrome. Genet Med. 2022; 24(7):1476-1484.",
+          "DOI": "10.1016/j.gim.2022.03.008"
+        },
+        {
+          "key": "71133",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Laitman Y, Boker-Keinan L, Berkenstadt M. The risk for developing cancer in Israeli ATM, BLM, and FANCC heterozygous mutation carriers. Cancer Genet. 2016; 209(3):70-74.",
+          "DOI": "10.1016/j.cancergen.2015.12.006"
+        },
+        {
+          "key": "71134",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Bogdanova N, Togo AV, Ratajska M. Prevalence of the BLM nonsense mutation, p.Q548X, in ovarian cancer patients from Central and Eastern Europe. Fam Cancer. 2015; 14(1):145-149.",
+          "DOI": "10.1007/s10689-014-9748-x"
+        },
+        {
+          "key": "71135",
+          "doi-asserted-by": "crossref",
+          "unstructured": "de Voer RM, Hahn M-M, Mensenkamp AR. Deleterious germline BLM mutations and the risk for early-onset colorectal cancer. Sci Rep. 2015; 5:14060.",
+          "DOI": "10.1038/srep14060"
+        },
+        {
+          "key": "71136",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Thompson ER, Doyle MA, Ryland GL. Exome sequencing identifies rare deleterious mutations in DNA repair genes FANCC and BLM as potential breast cancer susceptibility alleles. PLoS Genet. 2012; 8(9):e1002894.",
+          "DOI": "10.1371/journal.pgen.1002894"
+        },
+        {
+          "key": "71137",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Bononi A, Goto K, Ak G. Heterozygous germline BLM mutations increase susceptibility to asbestos and mesothelioma. Proc Natl Acad Sci U S A. 2020; 117(52):33466-33473.",
+          "DOI": "10.1073/pnas.2019652117"
+        },
+        {
+          "key": "71138",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Jaiswal S, Fontanillas P, Flannick J. Age-related clonal hematopoiesis associated with adverse outcomes. N Engl J Med. 2014; 371(26):2488-2498.",
+          "DOI": "10.1056/NEJMoa1408617"
+        },
+        {
+          "key": "71139",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Bick AG, Weinstock JS, Nandakumar SK. Inherited causes of clonal haematopoiesis in 97,691 whole genomes. Nature. 2020; 586(7831):763-768.",
+          "DOI": "10.1038/s41586-020-2819-2"
+        },
+        {
+          "key": "71140",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Schratz KE, Haley L, Danoff SK. Cancer spectrum and outcomes in the Mendelian short telomere syndromes. Blood. 2020; 135(22):1946-1956.",
+          "DOI": "10.1182/blood.2019003264"
+        },
+        {
+          "key": "71141",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Liu J, Tran D, Chan ICC. Genetic determinants of clonal hematopoiesis and progression to hematologic malignancies in 479,117 individuals. Blood. 2023; 142(Suppl 1):811.",
+          "DOI": "10.1182/blood-2023-182423"
+        },
+        {
+          "key": "71142",
+          "doi-asserted-by": "crossref",
+          "unstructured": "McKenna A, Hanna M, Banks E. The genome analysis toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res. 2010; 20(9):1297-1303.",
+          "DOI": "10.1101/gr.107524.110"
+        },
+        {
+          "key": "71143",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Coffee B, Cox HC, Bernhisel R. A substantial proportion of apparently heterozygous TP53 pathogenic variants detected with a next-generation sequencing hereditary pan-cancer panel are acquired somatically. Hum Mutat. 2020; 41(1):203-211.",
+          "DOI": "10.1002/humu.23910"
+        },
+        {
+          "key": "71144",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Steensma DP, Bejar R, Jaiswal S. Clonal hematopoiesis of indeterminate potential and its distinction from myelodysplastic syndromes. Blood. 2015; 126(1):9-16.",
+          "DOI": "10.1182/blood-2015-03-631747"
+        }
+      ],
+      "container-title": [
+        "Haematologica"
+      ],
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://haematologica.org/article/download/haematol.2024.285239/77323",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://haematologica.org/article/download/haematol.2024.285239/77952",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://haematologica.org/article/download/haematol.2024.285239/77323",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            9
+          ]
+        ],
+        "date-time": "2026-09-09T16:11:03Z",
+        "timestamp": 1788970263000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://haematologica.org/article/view/haematol.2024.285239"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            25
+          ]
+        ]
+      },
+      "references-count": 15,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.3324/haematol.2024.285239",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/2024.02.02.24302163",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "1592-8721",
+        "0390-6078"
+      ],
+      "issn-type": [
+        {
+          "value": "1592-8721",
+          "type": "electronic"
+        },
+        {
+          "value": "0390-6078",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            25
+          ]
+        ]
+      }
+    }
+  }
+}

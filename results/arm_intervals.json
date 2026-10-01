@@ -1,0 +1,464 @@
+{
+  "bootstrap": 2000,
+  "arms": [
+    {
+      "arm": "BixBench, Qwen2.5-14B",
+      "dump": "build/dumps/qwen14b_withheld_aware.jsonl",
+      "n_clusters": 46,
+      "effective_clusters": 29.55764075067024,
+      "margin_over_clean": 11.11111111111111,
+      "ci95": [
+        2.9580351986176305,
+        19.58896271686968
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        2.6079677081581405,
+        19.961813911997197
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    },
+    {
+      "arm": "BixBench, Qwen2.5-32B",
+      "dump": "build/dumps/qwen32b_withheld_aware.jsonl",
+      "n_clusters": 46,
+      "effective_clusters": 29.55764075067024,
+      "margin_over_clean": 5.714285714285715,
+      "ci95": [
+        -2.0543397369331933,
+        13.341566203885039
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        -2.3843853911568735,
+        13.737387887690568
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    },
+    {
+      "arm": "MMLU-Pro, Qwen2.5-14B",
+      "dump": "build/dumps/qwen14b_mmlupro_steered_tools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 6.25430012880806,
+      "ci95": [
+        4.036588769309033,
+        8.687052695836599
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        3.558249884213177,
+        9.189953135759616
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, Qwen2.5-14B at batch 12",
+      "dump": "build/dumps/qwen14b_mmlupro_batch12.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 5.595439061978486,
+      "ci95": [
+        3.105558783006304,
+        8.580668218566796
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        2.7362698841672546,
+        9.40768825160417
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, Qwen2.5-32B",
+      "dump": "build/dumps/qwen32b_mmlupro.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 5.478680398160297,
+      "ci95": [
+        2.686379638333671,
+        9.234943956333066
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        2.1049765070500173,
+        10.202864688420279
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B steered, no tool",
+      "dump": "build/dumps/qwen14b_mmlupro_steered_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 4.060345793615506,
+      "ci95": [
+        1.863023261508416,
+        6.340255715911586
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        1.42218777749193,
+        6.808275816329466
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B neutral, interpreter",
+      "dump": "build/dumps/qwen14b_mmlupro_neutral_tools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 4.550575539481659,
+      "ci95": [
+        2.0312111568709446,
+        7.2248712728103825
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        1.505974022494678,
+        7.832264224455916
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B neutral, no tool",
+      "dump": "build/dumps/qwen14b_mmlupro_neutral_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 10.359710669862167,
+      "ci95": [
+        7.103917955350904,
+        14.274481346381691
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        6.608466843702291,
+        15.374315932843825
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B neutral, one letter",
+      "dump": "build/dumps/qwen14b_mmlupro_argmax_withheld.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 8.330290860411342,
+      "ci95": [
+        4.954068089498089,
+        12.420512110809799
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        4.202888533280382,
+        13.143055597983173
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B steered, one letter",
+      "dump": "build/dumps/qwen14b_mmlupro_argmax_withheld_aware.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 5.205821786997976,
+      "ci95": [
+        2.310996166119615,
+        8.477861086748169
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        1.8700299531240265,
+        9.349247169359439
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B BixBench prompt, one letter",
+      "dump": "build/dumps/qwen14b_mmlupro_bixprompt_argmax.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 1.2716934344036814,
+      "ci95": [
+        -1.5999951697623545,
+        3.7965795586620183
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -2.373862113203658,
+        4.514070068125599
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 14B BixBench prompt, generated",
+      "dump": "build/dumps/qwen14b_mmlupro_bixprompt_generated.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 0.4504667334203298,
+      "ci95": [
+        -2.3563333987441126,
+        2.8167564757367116
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -2.9705094602547617,
+        3.5271987791782156
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 32B steered, no tool",
+      "dump": "build/dumps/qwen32b_mmlupro_steered_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 5.262273215273334,
+      "ci95": [
+        2.4564462456672276,
+        8.897715051332641
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        1.8879695815731592,
+        9.854737440382321
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 32B neutral, interpreter",
+      "dump": "build/dumps/qwen32b_mmlupro_neutral_tools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 7.463939165000837,
+      "ci95": [
+        5.0251513506937675,
+        9.762966025671767
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        4.495937594885912,
+        10.379887879888809
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, 32B neutral, no tool",
+      "dump": "build/dumps/qwen32b_mmlupro_neutral_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 5.596162025841137,
+      "ci95": [
+        2.921156944867757,
+        8.171248145135007
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        2.391669559361855,
+        8.77558730184707
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, phi-4 BixBench prompt, one letter",
+      "dump": "build/dumps/phi4_mmlupro_bixprompt_argmax.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 2.5862827246580076,
+      "ci95": [
+        -0.3525309257828172,
+        5.099112553126937
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -1.108505939582025,
+        5.647952312576058
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, phi-4 neutral, no tool",
+      "dump": "build/dumps/phi4_mmlupro_neutral_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": -2.112620900644281,
+      "ci95": [
+        -3.923318046073756,
+        -0.44213249368650615
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -4.350093880793314,
+        -0.08700009409284051
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, Qwen2.5-72B BixBench prompt, one letter",
+      "dump": "build/dumps/qwen72b_mmlupro_bixprompt_argmax.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 2.476753699466332,
+      "ci95": [
+        0.22675695442172072,
+        4.798343596108954
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -0.4884146044440344,
+        5.246306806945379
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, Qwen2.5-72B neutral, no tool",
+      "dump": "build/dumps/qwen72b_mmlupro_neutral_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 8.555614597604338,
+      "ci95": [
+        5.671179370093063,
+        11.81535257969658
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        5.117522158784351,
+        12.634694734371589
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, Llama-3.3-70B BixBench prompt, one letter",
+      "dump": "build/dumps/llama70b_mmlupro_bixprompt_argmax.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 1.5479258769250421,
+      "ci95": [
+        -0.6179629569332112,
+        3.4626765064289797
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -1.2378090922418103,
+        3.840859114890396
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro, Llama-3.3-70B neutral, no tool",
+      "dump": "build/dumps/llama70b_mmlupro_neutral_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.695969614925641,
+      "margin_over_clean": 5.378549903183089,
+      "ci95": [
+        2.964665954951801,
+        8.395120603314526
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        2.2669448979483655,
+        9.1949390259358
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "MMLU-Pro placebo, 14B neutral, no tool",
+      "dump": "build/dumps/qwen14b_mmlupro_placebo_neutral_notools.jsonl",
+      "n_clusters": 60,
+      "effective_clusters": 10.725978601081732,
+      "margin_over_clean": 2.8176795580110494,
+      "ci95": [
+        -0.2803443970145205,
+        5.341126001829077
+      ],
+      "calibrated_level": 0.9824999999999962,
+      "ci_calibrated": [
+        -1.0214157480154358,
+        5.919420158523293
+      ],
+      "coverage_of_the_95_interval": 0.903
+    },
+    {
+      "arm": "BixBench 205, Qwen2.5-14B",
+      "dump": "build/dumps/qwen14b_bixall.jsonl",
+      "n_clusters": 59,
+      "effective_clusters": 45.139634801288935,
+      "margin_over_clean": 10.569105691056912,
+      "ci95": [
+        3.7658165204587433,
+        17.66529989482146
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        3.32273012855567,
+        17.99448660658945
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    },
+    {
+      "arm": "BixBench 205, 14B BixBench prompt, one letter",
+      "dump": "build/dumps/qwen14b_bixall_bixprompt_argmax.jsonl",
+      "n_clusters": 59,
+      "effective_clusters": 45.139634801288935,
+      "margin_over_clean": 8.455284552845528,
+      "ci95": [
+        3.2243782368106597,
+        13.563520372356892
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        2.958573469911083,
+        13.837697967731529
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    },
+    {
+      "arm": "BixBench 205, 14B BixBench prompt, generated",
+      "dump": "build/dumps/qwen14b_bixall_bixprompt_generated.jsonl",
+      "n_clusters": 59,
+      "effective_clusters": 45.139634801288935,
+      "margin_over_clean": 8.130081300813009,
+      "ci95": [
+        2.9663700657022867,
+        13.139289119697589
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        2.530045235757845,
+        13.586480006274234
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    },
+    {
+      "arm": "BixBench 205, 14B neutral, one letter",
+      "dump": "build/dumps/qwen14b_bixall_neutral_argmax.jsonl",
+      "n_clusters": 59,
+      "effective_clusters": 45.139634801288935,
+      "margin_over_clean": 14.146341463414634,
+      "ci95": [
+        8.116476461828267,
+        19.90925605558731
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        7.851963031206663,
+        20.215817895554732
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    },
+    {
+      "arm": "BixBench 205, 14B neutral, no tool",
+      "dump": "build/dumps/qwen14b_bixall_neutral_notools.jsonl",
+      "n_clusters": 59,
+      "effective_clusters": 45.139634801288935,
+      "margin_over_clean": 14.959349593495935,
+      "ci95": [
+        8.761748545572074,
+        20.725868034886634
+      ],
+      "calibrated_level": 0.9599999999999966,
+      "ci_calibrated": [
+        8.42860257666119,
+        20.924913280304967
+      ],
+      "coverage_of_the_95_interval": 0.94075
+    }
+  ]
+}

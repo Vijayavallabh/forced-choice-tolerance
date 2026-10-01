@@ -1,0 +1,72 @@
+{
+ "google/gemma-3-4b-it|bixbench_v10|withheld|argmax|bixprompt": {
+  "model": "google/gemma-3-4b-it",
+  "items": "build/bixbench_v10.jsonl",
+  "condition": "withheld",
+  "transformers": "5.17.0",
+  "torch": "2.10.0+cu128",
+  "dump": "build/dumps/gemma3_4b_bixv10_bixprompt_argmax.jsonl",
+  "readout": "argmax",
+  "prompt": "bixbench",
+  "tools": false,
+  "system": "You are answering a multiple-choice question. You can run Python. To run code, write a fenced block:\n```python\nprint(2 + 2)\n```\nI will run it and send you its output. You may do this up to 3 times. When you are ready, reply with a single final line in exactly this form:\nFINAL: <letter>",
+  "draws": 3,
+  "max_turns": 3,
+  "n_items": 296,
+  "file": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 29.84234234234234,
+   "chance": 25.0,
+   "margin_over_chance": 4.842342342342342,
+   "margin_ci95": [
+    1.0725014809173226,
+    8.45664251207728
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 23.80952380952381,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 29.84234234234234
+    }
+   }
+  },
+  "clean": {
+   "n_rollouts": 888,
+   "n_clusters": 53,
+   "accuracy": 23.1981981981982,
+   "chance": 25.0,
+   "margin_over_chance": -1.8018018018018018,
+   "margin_ci95": [
+    -5.189798339264532,
+    1.5795557236828277
+   ],
+   "used_tool": 0.0,
+   "unparsed": 0.0,
+   "mean_turns": 1.0,
+   "second_smallest_rate": 25.0,
+   "by_tool": {
+    "used": {
+     "n": 0,
+     "accuracy": NaN
+    },
+    "not_used": {
+     "n": 888,
+     "accuracy": 23.1981981981982
+    }
+   }
+  },
+  "margin_over_clean": 6.6441441441441444,
+  "margin_over_clean_ci95": [
+   1.4533281001051768,
+   11.575806659335852
+  ]
+ }
+}
