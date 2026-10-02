@@ -15,7 +15,7 @@ as it scored gpt-5.1's: gpt-4o 2024-11-20 as the MCQ grader
 through the three option sets, forced and with BixBench's refusal option, and as the open-ended judge. For each
 agent this reports what ``strong_agent.py`` reports for gpt-5.1 (the share within 5% of the key, the open-ended
 grade, the forced-choice and refusal-option scores minus the tolerance, and U - P on the moved keys and over all
-numeric items under the nearest-option rule and under gpt-4o), Table 1's quantities from
+numeric items under the nearest-option rule and under gpt-4o), Table 2's quantities from
 ``score_decomposition.summarise`` (calibrated intervals; the misses accepted by the option nearest the number;
 the correct answers accepted), and the forced score corrected for guessing from ``formula_scoring.summarise``.
 

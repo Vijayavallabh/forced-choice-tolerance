@@ -48,10 +48,15 @@ out = ARGS.out.resolve() if ARGS.out else root / "submission"
 if not ARGS.dry_run:
     out.mkdir(parents=True, exist_ok=True)
 
-source_files = [
-    "main.tex", "refs.bib", "neurips_2026.sty",
-    "figures/overview.pdf", "figures/withdata.pdf",
-]
+# every figure main.tex includes, so the LaTeX source compiles on its own (a hand-kept list
+# missed the figures added to the main text)
+import re as _re_src  # noqa: E402
+_figures = sorted({f if f.endswith(".pdf") else f"{f}.pdf" for f in _re_src.findall(
+    r"\\includegraphics(?:\[[^\]]*\])?\{([^}]+)\}", (root / "main.tex").read_text(encoding="utf-8"))})
+_missing = [f for f in _figures if not (root / f).exists()]
+if _missing:
+    raise SystemExit(f"refusing to package: main.tex includes {_missing}, which do not exist")
+source_files = ["main.tex", "refs.bib", "neurips_2026.sty"] + _figures
 
 code_files = [
     "audit_provenance.py", "authorship_causal.py", "authorship_contrast.py", "bio_to_jsonl.py", "benchmark_census.py", "no_data_baseline.py",

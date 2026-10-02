@@ -438,7 +438,7 @@ def nearest_block(runs, grading, capsule, label):
     value on the questions whose options each state one number or interval), by whether the answer contains the
     key's or a distractor's text, and by whether the same model chose the key without the data: per part, its
     share of the graded misses, the share of it accepted, and the points it adds to the score beyond what a random
-    choice among four on it would. Every ratio weighs a question's runs as Table 1 does -- each question's runs
+    choice among four on it would. Every ratio weighs a question's runs as Table 2 does -- each question's runs
     averaged, the questions summed -- so that the parts' points add up to those of all the misses."""
     graded = [r for r in runs if grading in r["grades"]]
     if not graded:

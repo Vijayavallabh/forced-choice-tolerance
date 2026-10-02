@@ -385,7 +385,7 @@ def forced_over_tolerance(model):
 
 
 def excess_over_tolerance(runs, reading):
-    """A grading's score minus the tolerance's, per question (its runs averaged), grouped by capsule: Table 1's
+    """A grading's score minus the tolerance's, per question (its runs averaged), grouped by capsule: Table 2's
     excess, as ``score_decomposition.summarise`` computes it."""
     import score_decomposition as sd
     per_item, capsule = defaultdict(list), {}

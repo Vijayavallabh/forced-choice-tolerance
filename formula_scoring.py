@@ -6,7 +6,7 @@ $(S-1/k)/(1-1/k)$: it removes what a random choice among the options would add o
 place, and it is a monotone map, so it keeps every ranking. Applied to a 2026 system's $64.4\%$ forced-choice
 score it gives $52.5\%$, against its $48.8\%$ open-ended. This asks what it leaves on the paper's runs.
 
-For each grading of Table 1 (and the code-free gradings of the same runs) the corrected score minus the share
+For each grading of Table 2 (and the code-free gradings of the same runs) the corrected score minus the share
 within 5% of the key is split exactly into what each kind of answer contributes beyond a random choice:
 
     (S - 1/k)/(1 - 1/k) - t = k/(k-1) * [ h (a_h - 1) + sum_j m_j (a_j - 1/k) - e/k ]
@@ -16,7 +16,7 @@ that are misses of kind $j$ and the share of them it accepts (the key the single
 another option, or neither: no number, or a number equidistant from several options), and $e$ the share of
 empty answers, scored wrong without grading. A grading that accepted every correct answer and chose at random
 on every miss would leave zero; what remains is the part of the score that depends on where each miss lies
-among the options. Each question's runs are averaged, then the questions, as in Table 1. Beside it: the share of
+among the options. Each question's runs are averaged, then the questions, as in Table 2. Beside it: the share of
 correct answers each grading accepts, the share of misses it accepts, and the share of misses it accepts among
 those on which it selects an option.
 
@@ -96,7 +96,7 @@ def summarise(runs, reading, capsule, tag):
         num = per_item(read, lambda r, kind=kind: float(kind_of(r) == kind) * acc(r))
         den = per_item(read, lambda r, kind=kind: float(kind_of(r) == kind))
         out["parts"][kind]["accepted"] = 100.0 * sum(num.values()) / sum(den.values()) if sum(den.values()) else None
-    # shares weighted as Table 1 weighs them: each question's runs averaged, the questions summed
+    # shares weighted as Table 2 weighs them: each question's runs averaged, the questions summed
     is_miss = lambda r: float(kind_of(r).startswith("miss"))
     num = per_item(read, lambda r: is_miss(r) * acc(r))
     den = per_item(read, is_miss)

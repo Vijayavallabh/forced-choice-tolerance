@@ -13,7 +13,8 @@ One command, ``python3 make_figures.py`` from any directory, writes every figure
     figures/overview_full.{pdf,png}  Figure 1 with all four panels, for the poster
     figures/design.{pdf,png}         Figure 2: what is compared, one answer graded two ways
     figures/cost.{pdf,png}           Figure 3: who bears the cost of a hidden rank, and what each design trades
-    figures/withdata.{pdf,png}       Figure 4
+    figures/test.{pdf,png}           Figure 4: the pre-specified test, each hypothesis on each data set
+    figures/withdata.{pdf,png}       Figure 5
 
 Canvases are the NeurIPS text width, 5.5 in, and the paper includes each at
 ``width=\\linewidth`` with no trim, so the absolute font sizes below are the
@@ -292,9 +293,9 @@ box(ax, 24.0, 0.3, 40.0, 16.7, "Through options, after the run",
      "graders: MCQ grader with the notebook,", "forced or with refusal; code-free;",
      "within-5% option; nearest-option rule"], fill="#f3f3f3")
 box(ax, 67.5, 17.0, 32.2, 10.0, "Excess over the tolerance",
-    ["graded correct through $R$", "minus within 5% (Table 1)"])
+    ["graded correct through $R$", "minus within 5%"])
 box(ax, 67.5, 0.3, 32.2, 12.0, "Cost of hiding the rank",
-    ["$U-P$ on the keys that $U$", "moves from bracketed to", "extreme (Table 2, Figure 3)"])
+    ["$U-P$ on the keys that $U$", "moves from bracketed", "to extreme"])
 arrow(ax, (20.1, 19.0), (24.0, 22.5))
 arrow(ax, (20.1, 8.0), (24.0, 8.0))
 arrow(ax, (64.0, 23.0), (67.5, 23.0))
@@ -305,7 +306,7 @@ save(fig, "design")
 # ---------------------------------------------------------------------------
 # Figure 3: who bears the cost of a hidden rank, and what each design of the options trades
 # ---------------------------------------------------------------------------
-from option_design import TABLE as DESIGNS  # Table 37's rows: (design, its distractors, its key rank)
+from option_design import TABLE as DESIGNS  # Table 38's rows: (design, its distractors, its key rank)
 
 design = load("results/option_design.json")
 RANK_COLOUR = {"released": MID, "middle": RUST, "uniform": BLUE}
@@ -314,7 +315,7 @@ SPACING_MARKER = {"$R$, released": "s", "$P$": "s", "$U$": "s", "redrawn": "o", 
 
 
 def panel_designs(ax):
-    """(b) every design of v1.5's numeric options (Table 37): the rank rule's gain on held-out capsules
+    """(b) every design of v1.5's numeric options (Table 38): the rank rule's gain on held-out capsules
     against the share of misses the nearest-option rule accepts. Colour is the key's rank policy and shape
     how the distractors are written; each rank policy is labelled on the plot, so no class rests on colour
     alone"""
@@ -352,7 +353,53 @@ panel_designs(fig.add_subplot(grid[1]))
 save(fig, "cost")
 
 # ---------------------------------------------------------------------------
-# Figure 4: with the data, the options decide the reading
+# Figure 4: the pre-specified test -- each hypothesis's contrast under the nearest-option rule on each data set
+# ---------------------------------------------------------------------------
+test = load("results/replication.json")
+# (hypothesis, what it contrasts, its result key, read without the data); H3, a share of the newly accepted runs,
+# is a count rather than a contrast and is left to the table
+TESTED = [("H1", "moved keys, $U-R$", "gain|moved to an edge", False),
+          ("H2", "unchanged keys, $U-R$", "gain|kept", False),
+          ("H5", "inward keys, $U-R$", "gain|moved inward", False),
+          ("H4", "moved keys, $U-P$", "repaired-placebo|moved to an edge", False),
+          ("H6", "moved keys, $U-R$, no data", "gain|moved to an edge", True)]
+# RUST, BLUE and MID pass the palette check together (MID carries no hue on purpose); markers repeat the identity
+DATASETS = [("v1.0, published runs", test["D1"], None, RUST, "o"),
+            ("v1.5, new seeds", test["D2"]["reruns|data"], test["D2"]["reruns|nodata"], BLUE, "s"),
+            ("v1.5, Qwen3-235B-A22B", test["D2"]["qwen3-235b|data"], test["D2"]["qwen3-235b|nodata"], MID, "D")]
+
+fig = plt.figure(figsize=(WIDTH, 1.5))
+ax = fig.add_axes([0.283, 0.235, 0.43, 0.74])
+for i, (h, label, key, nodata) in enumerate(TESTED):
+    for j, (name, res, res_nodata, colour, marker) in enumerate(DATASETS):
+        block = res_nodata if nodata else res
+        if block is None:          # the published runs have no run without the data
+            continue
+        v = block[key]
+        passed = block["verdicts"][h]
+        # H2 passes its stated criterion on a mean within 5 points of 0 even where the interval excludes 0; the
+        # paper counts that as a failure, and so does the figure
+        if h == "H2" and not v.get("level_capped") and not v["lo"] <= 0 <= v["hi"]:
+            passed = False
+        y = i + (j - 1) * 0.24
+        if not v.get("level_capped"):  # no interval where no nominal level attains 95% coverage
+            ax.plot([v["lo"], v["hi"]], [y, y], color=colour, lw=0.9, solid_capstyle="butt")
+        ax.plot(v["mean"], y, marker, ms=3.6, color=colour, mfc=colour if passed else "white", mew=0.8, zorder=3)
+ax.axvline(0, color="black", lw=0.7)
+ax.set_yticks(range(len(TESTED)))
+ax.set_yticklabels([f"{h}: {label}" for h, label, _, _ in TESTED], fontsize=SMALL)
+ax.set_ylim(len(TESTED) - 0.55, -0.55)
+ax.set_xlabel("contrast under the nearest-option rule (points)")
+spines(ax)
+handles = [Line2D([], [], marker=m, ls="-", lw=0.9, ms=3.6, color=c, label=n) for n, _, _, c, m in DATASETS]
+handles += [Line2D([], [], marker="o", ls="", ms=3.6, color="black", label="hypothesis passes"),
+            Line2D([], [], marker="o", ls="", ms=3.6, color="black", mfc="white", mew=0.8, label="fails")]
+fig.legend(handles=handles, loc="center left", bbox_to_anchor=(0.725, 0.56), frameon=False, handlelength=1.4,
+           fontsize=SMALL)
+save(fig, "test")
+
+# ---------------------------------------------------------------------------
+# Figure 5: with the data, the options decide the reading
 # ---------------------------------------------------------------------------
 withdata = load("results/bixbench_withdata.json")
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(WIDTH, 2.25), gridspec_kw={"width_ratios": [0.9, 1.1]})

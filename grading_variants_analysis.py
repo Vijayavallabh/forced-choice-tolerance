@@ -298,7 +298,7 @@ def letter_summary():
     reads = [x for r in rows for arm in r["reads"] for x in r["reads"][arm]]
     out = {"n_runs": len(rows), "n_quarter": len(quarter), "no_pick": 100.0 * float(np.mean([x["no_pick"] for x in reads])),
            "server_errors": sum(x["server_error"] for x in reads)}
-    # which misses it accepts through R, on the quarter, as Table 1 counts them
+    # which misses it accepts through R, on the quarter, as Table 2 counts them
     kinds = collections.defaultdict(list)
     kinds_u = collections.defaultdict(list)
     kinds_p = collections.defaultdict(list)          # the published grades of the same runs

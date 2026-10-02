@@ -132,7 +132,7 @@ def restated():
                                          ("v1.5 closed", "gpt-5.1", "gpt-4o may-decline", "v1.5|gpt-5.1|may decline")):
         got = sd[block][group][reading]["restated"]
         out["released_reading"][label] = {f"{round(100 * t)}%": got[f"{t:g}"] for t in T3_TOLERANCES}
-    # the current agents' rows of Table 1 (frontier_agents.py, which summarises them as score_decomposition does)
+    # the current agents' rows of Table 2 (frontier_agents.py, which summarises them as score_decomposition does)
     fa = json.loads((ROOT / "results" / "frontier_agents.json").read_text())["agents"]
     for label in ("gpt-6-luna", "DeepSeek-V4-Pro"):
         for reading, mode in (("gpt-4o forced", "forced"), ("gpt-4o may-decline", "may decline")):
@@ -333,7 +333,7 @@ def main():
               f"gemma {f(e['qwen72b - gemma27b'])}; Table 8 cap last "
               + ("--" if t3['table_8_cap'][t]['last_number'] is None else f"{t3['table_8_cap'][t]['last_number']:.1f}")
               + f", any {t3['table_8_cap'][t]['any_number']:.1f}")
-    print("T3 Table 1 regrade: " + "; ".join(f"{k} " + "/".join(f"{v[t]:.1f}" for t in ('1%', '2%', '5%', '10%'))
+    print("T3 Table 2 regrade: " + "; ".join(f"{k} " + "/".join(f"{v[t]:.1f}" for t in ('1%', '2%', '5%', '10%'))
                                               for k, v in t3["table_1_regrade"].items()))
     for name in ("released_reading", "writers"):
         for k, v in t3[name].items():

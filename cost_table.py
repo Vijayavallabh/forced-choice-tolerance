@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-r"""Table 2 (tab:cost): what hiding the key's rank costs each grader, from the files the appendix tables print.
+r"""Table 3 (tab:cost): what hiding the key's rank costs each grader, from the files the appendix tables print.
 
 $U-P$ on the keys $U$ moves to an extreme and over all numeric items, for every set of runs graded with the data.
-A row is one kind of grader on one set of runs; a kind with several graders is given as the range of their means,
-and the nearest-option rule carries the intervals the appendix gives it (over capsules, at the level the double
-bootstrap finds attains 95% coverage). The kinds:
+A pair of rows is one set of runs, the moved keys and then all items, and a column one kind of grader; a kind with
+several graders is given as the range of their means, and the nearest-option rule carries the intervals the appendix
+gives it (over capsules, at the level the double bootstrap finds attains 95% coverage). The kinds:
 
 * code-free, and within 5%: ``grading_variants.py``'s gradings without the notebook (tab:variants), without and
   with the option stating that none of the others is within 5% of the answer;
@@ -153,12 +153,29 @@ def fmt(cell):
     return span(v)
 
 
+KINDS = ("nearest-option rule", "code-free", "with the notebook", "refusal", "within $5\\%$")
+
+
 def table_rows():
-    """tab:cost's rows, the set of runs named on its first row."""
-    out, last = [], None
+    """tab:cost's rows: for each set of runs, the moved keys and then all items, one column per kind of grader in
+    KINDS' order ('--' where the set has no grader of that kind); the current agents' joint cells are split into
+    one pair of rows per agent."""
+    sets = {}
     for runs, grader, moved, allv in cells():
-        out.append(f"{runs if runs != last else ''} & {grader} & {fmt(moved)} & {fmt(allv)}\\\\")
-        last = runs
+        sets.setdefault(runs, {})[grader] = (moved, allv)
+    joint = "v1.5, " + ", ".join(CURRENT)
+    out = []
+    for runs, kinds in sets.items():
+        for i, label in enumerate([f"v1.5, {a}" for a in CURRENT] if runs == joint else [runs]):
+            for col, keys in enumerate(("moved", "all")):
+                row = []
+                for kind in KINDS:
+                    if kind not in kinds:
+                        row.append("--")
+                        continue
+                    cell = kinds[kind][col]
+                    row.append(fmt(("range", [cell[1][i]]) if cell[0] == "each" else cell))
+                out.append(f"{label if col == 0 else ''} & {keys} & " + " & ".join(row) + "\\\\")
     return out
 
 

@@ -145,7 +145,7 @@ def main():
                                 "matched": v10_of}
     print(f"v1.0: {len(v10_of)} items, groups {report['overlap']['v10']['by_group']}")
 
-    # Table 1's v1.5 rows on the overlap, the items with a confirmed key, and all 105
+    # Table 2's v1.5 rows on the overlap, the items with a confirmed key, and all 105
     d0, d2, d3 = sd.d0_runs(), sd.d2_runs(), sd.d3_runs()
     blocks = {"seven configurations": dg.generic(d0, {"forced": "family forced", "refusal": "family may-decline"}),
               "new seeds": dg.generic([r for r in d2 if r["group"] == "new seeds"],

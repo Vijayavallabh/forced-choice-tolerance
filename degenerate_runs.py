@@ -170,7 +170,7 @@ def census(runs, numeric):
     return out, flags
 
 
-# ---------------------------------------------------------------- Table 1's rows
+# ---------------------------------------------------------------- Table 2's rows
 
 def by_item(rows, value, group=None):
     """Each question's value: the mean over its runs or, with ``group``, over each group's runs and then over
@@ -185,7 +185,7 @@ def by_item(rows, value, group=None):
 
 def table1_row(runs, reading, capsule, seed, group=None):
     """Score minus the tolerance (``replication.calibrated`` at 2000 x 5000, as ``score_decomposition``), the
-    tolerance, the misses accepted (``score_decomposition.miss_rates`` when the runs are pooled as Table 1
+    tolerance, the misses accepted (``score_decomposition.miss_rates`` when the runs are pooled as Table 2
     pools them; the same ratio of sums over questions when ``group`` weighs each group once) and the correct
     answers accepted."""
     hit = lambda r: float(bool(graded(r["answer"], r["options"][0], TOL))) if r["answer"] else 0.0
@@ -427,7 +427,7 @@ def main():
               f"truncated {n['truncated_reply'] if n['truncation_visible'] else '--':>3} wall clock {n['wall_clock']:2d} "
               f"| degenerate {n['degenerate']:3d} | turns truncated {n['truncated_turn_share']}", flush=True)
 
-    # Table 1's rows, all runs and without the degenerate ones
+    # Table 2's rows, all runs and without the degenerate ones
     d0, d2, d3 = sd.d0_runs(), sd.d2_runs(), sd.d3_runs()
     run_q = lambda r: (r["run"] if not r["key"].startswith("D3") else f"gpt-5.1-react|r{r['key'].split('|')[-1]}", r["q"])
     keep = lambda rows: [r for r in rows if ok(*run_q(r))]

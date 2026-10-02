@@ -283,7 +283,7 @@ def d3_runs():
     """gpt-5.1's runs with the data (``strong_agent.py``), read by gpt-4o through the released options."""
     import strong_agent as sa
     if not (sa.ROWS.exists() or sa.BUILD_ROWS.exists()):
-        raise SystemExit(f"{sa.ROWS.relative_to(ROOT)} is missing, and Table 1's gpt-5.1 rows are read from it")
+        raise SystemExit(f"{sa.ROWS.relative_to(ROOT)} is missing, and Table 2's gpt-5.1 rows are read from it")
     sets = bw.option_sets()
     out = []
     for r in sa.load_rows():
@@ -578,7 +578,7 @@ def analyse(args):
 
 # tab:released: one row per reading; v1.0 by the published readings, v1.5 by each run set's own family
 # (the seven run sets) or by gemma-3-27b (the new runs)
-# Table 1's rows: (block, group, reading, runs, grading). The current agents' blocks are frontier_agents.py's, which
+# Table 2's rows: (block, group, reading, runs, grading). The current agents' blocks are frontier_agents.py's, which
 # summarises their runs as this report does (``summarise``).
 LATEX = (("v1.0", "gpt-4o", "published forced", "v1.0, gpt-4o", "forced"),
          ("v1.0", "gpt-4o", "published may-decline", "", "with refusal"),
@@ -608,7 +608,7 @@ def contribution(s, kind):
 
 
 def table_rows(report, formula=None, frontier=None):
-    """Table 1, one row per grading: the tolerance; the score minus the tolerance with its interval, split into what
+    """Table 2, one row per grading: the tolerance; the score minus the tolerance with its interval, split into what
     the misses whose single nearest option is the key, another option or neither add, less the correct answers the
     grading rejects; for a forced grading, the score corrected for guessing (``formula_scoring.py``) minus the
     tolerance; and the share of graded misses accepted, over all of them and by their single nearest option."""
