@@ -238,7 +238,7 @@ def table_rows(report, summary="results/bixbench_withdata.json"):
     under a header row per protocol."""
     wd = json.loads(pathlib.Path(summary).read_text())
     header = {"text": "\\multicolumn{7}{l}{\\emph{tools called in text}}\\\\",
-              "published": "\\multicolumn{7}{l}{\\emph{as published: BixBench's ReAct agent}}\\\\"}
+              "published": "\\multicolumn{7}{l}{\\emph{BixBench's ReAct agent}}\\\\"}
     rows, seen = [], set()
     for run in RUNS:
         if PROTOCOL[run] not in seen:
@@ -261,7 +261,7 @@ def mechanism_rows(report):
     """tab:mechanism: what the repair newly credits on the moved keys, and what it does against
     the placebo, per run set."""
     header = {"text": "\\multicolumn{10}{l}{\\emph{tools called in text}}\\\\",
-              "published": "\\multicolumn{10}{l}{\\emph{as published: BixBench's ReAct agent}}\\\\"}
+              "published": "\\multicolumn{10}{l}{\\emph{BixBench's ReAct agent}}\\\\"}
     rows, seen = [], set()
     for run in RUNS:
         if PROTOCOL[run] not in seen:

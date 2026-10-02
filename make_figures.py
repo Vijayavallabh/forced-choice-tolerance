@@ -109,13 +109,13 @@ def panel_a(ax):
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
-    title(ax, "(a) One property, two effects")
+    title(ax, "(a) The key's position has two effects")
     # Values on a line; the agent's answer (triangle) is read as the nearest option.
-    ROWS = [(0.66, "Bracketed key (as released)", [0.05, 0.36, 0.50], 0.21,
+    ROWS = [(0.66, "Bracketed key (middle)", [0.05, 0.36, 0.50], 0.21,
              [(0.11, False), (0.31, False)],
-             ["without data: the 2nd smallest", "is the key", "with data: a miss on either",
+             ["without data: the 2nd smallest", "is the key", "with data: a far miss on either",
               "side is nearer a distractor"]),
-            (0.16, "Extreme key (uniform rank)", [0.24, 0.36, 0.50], 0.09,
+            (0.16, "Extreme key (at an end)", [0.24, 0.36, 0.50], 0.09,
              [(0.02, True)],
              ["without data: no rank favoured", "(rank drawn uniformly)", "with data: any miss on the",
               "open side is nearest the key"])]
@@ -167,7 +167,7 @@ def panel_b(ax):
 def panel_c(ax, heading="(c) The cost a grader bears", releases=False):
     """(c) how much of the nearest-option rule's cost of hiding the rank each grading bears: its gain
     on the moved keys as a share of the rule's on the same answers, against its proximity weight
-    (Remark 1); code-free graders filled, BixBench's graders with the notebook open, the "none
+    (Remark 1); answer-only graders filled, BixBench's graders with the notebook open, the "none
     within 5%" option a cross; with ``releases``, a second legend names the two colours"""
     cost = load("results/proximity_cost.json")
     STYLE = {"code-free": dict(marker="o", mfc=None), "notebook": dict(marker="o", mfc="white"),
@@ -185,16 +185,16 @@ def panel_c(ax, heading="(c) The cost a grader bears", releases=False):
     shares = [g["share"] for g in cost["gradings"]]
     ax.set_ylim(min(-0.15, min(shares) - 0.05), max(1.45, max(shares) + 0.1))  # every grading in view
     ax.set_xlabel(r"proximity weight $\lambda$")
-    ax.set_ylabel("share of the rule's gain\non the moved keys")
-    ax.plot([], [], "o", color="black", ms=3.4, label="code-free")
+    ax.set_ylabel("$U-P$ on the moved keys,\nover the rule's")
+    ax.plot([], [], "o", color="black", ms=3.4, label="answer-only")
     ax.plot([], [], "o", color="black", mfc="white", mew=0.8, ms=3.4, label="with the notebook")
     ax.plot([], [], "x", color="black", ms=3.6, label="within-5% option" if releases else "none within 5%")
-    # 5.9 pt: at 6.5 its last entry runs into the highest code-free grading (poster only)
+    # 5.9 pt: at 6.5 its last entry runs into the highest answer-only grading (poster only)
     kinds = ax.legend(frameon=False, loc="upper left", handlelength=0.8, borderaxespad=0.0,
                       fontsize=SMALL if releases else 5.9)
     if releases:
         ax.add_artist(kinds)
-        ax.text(0.80, 0.70, r"share $=\lambda$", fontsize=SMALL, rotation=33, ha="center", va="bottom")
+        ax.text(0.80, 0.70, r"ratio $=\lambda$", fontsize=SMALL, rotation=33, ha="center", va="bottom")
         handles = [Line2D([], [], marker="s", ls="", ms=3.6, color=RUST, label="v1.0, published runs"),
                    Line2D([], [], marker="s", ls="", ms=3.6, color=BLUE, label="v1.5 runs")]
         ax.legend(handles=handles, frameon=False, loc="lower right", handlelength=0.8, borderaxespad=0.0,
@@ -224,7 +224,7 @@ def panel_d(ax):
     ax.set_ylabel("$U-P$ on the\nmoved keys (points)")
     moved = split["n_items"]["moved to an edge"]
     ax.plot([], [], "o", color=BLUE, ms=3.4, label=f"nearest option ({moved} keys)")
-    ax.plot([], [], "o", color=RUST, mfc="white", mew=0.8, ms=3.4, label="own model as MCQ grader")
+    ax.plot([], [], "o", color=RUST, mfc="white", mew=0.8, ms=3.4, label="own model as grader")
     ax.legend(frameon=False, loc="upper right", handlelength=0.8, borderaxespad=0.0, fontsize=SMALL)
     title(ax, "(d) What hiding the rank accepts")
     spines(ax)
@@ -294,8 +294,8 @@ box(ax, 24.0, 19.0, 40.0, 8.0, "Reference: a tolerance",
     [r"correct when $|a-y|\leq 0.05\,|y|$, $y$ the key"], fill="#f3f3f3")
 box(ax, 24.0, 0.3, 40.0, 16.7, "Through options, after the run",
     ["$R$ released; $P$ redrawn, key's rank kept;", "$U$ redrawn, key's rank drawn uniformly",
-     "graders: MCQ grader with the notebook,", "forced or with refusal; code-free;",
-     "within-5% option; nearest-option rule"], fill="#f3f3f3")
+     "graders: BixBench's (notebook; forced", "or with refusal); answer-only, also with",
+     "a within-5% option; nearest-option rule"], fill="#f3f3f3")
 box(ax, 67.5, 17.0, 32.2, 10.0, "Excess over the tolerance",
     ["graded correct through $R$", "minus within 5%"])
 box(ax, 67.5, 0.3, 32.2, 12.0, "Cost of hiding the rank",
@@ -362,11 +362,11 @@ save(fig, "cost")
 test = load("results/replication.json")
 # (hypothesis, what it contrasts, its result key, read without the data); H3, a share of the newly accepted runs,
 # is a count rather than a contrast and is left to the table
-TESTED = [("H1", "moved keys, $U-R$", "gain|moved to an edge", False),
-          ("H2", "unchanged keys, $U-R$", "gain|kept", False),
-          ("H5", "inward keys, $U-R$", "gain|moved inward", False),
-          ("H4", "moved keys, $U-P$", "repaired-placebo|moved to an edge", False),
-          ("H6", "moved keys, $U-R$, no data", "gain|moved to an edge", True)]
+TESTED = [("H1", "moved keys gain", "gain|moved to an edge", False),
+          ("H2", "unchanged keys do not", "gain|kept", False),
+          ("H4", "not the redrawing", "repaired-placebo|moved to an edge", False),
+          ("H5", "inward keys do not gain", "gain|moved inward", False),
+          ("H6", "the gain needs no data", "gain|moved to an edge", True)]
 # RUST, BLUE and MID pass the palette check together (MID carries no hue on purpose); markers repeat the identity
 DATASETS = [("v1.0, published runs", test["D1"], None, RUST, "o"),
             ("v1.5, new seeds", test["D2"]["reruns|data"], test["D2"]["reruns|nodata"], BLUE, "s"),
@@ -393,7 +393,7 @@ ax.axvline(0, color="black", lw=0.7)
 ax.set_yticks(range(len(TESTED)))
 ax.set_yticklabels([f"{h}: {label}" for h, label, _, _ in TESTED], fontsize=SMALL)
 ax.set_ylim(len(TESTED) - 0.55, -0.55)
-ax.set_xlabel("contrast under the nearest-option rule (points)")
+ax.set_xlabel("difference under the nearest-option rule (points)")
 spines(ax)
 handles = [Line2D([], [], marker=m, ls="-", lw=0.9, ms=3.6, color=c, label=n) for n, _, _, c, m in DATASETS]
 handles += [Line2D([], [], marker="o", ls="", ms=3.6, color="black", label="hypothesis passes"),
@@ -478,7 +478,7 @@ ax1.set_xticklabels(["$R$", "$P$", "$U$"])
 ax1.set_xlim(-0.25, 2.25)
 ax1.set_ylabel("graded correct, forced (%)")
 ax1.plot([], [], ms=3, lw=0.9, label="tools in text", **FAMILY["text"])
-ax1.plot([], [], ms=3, lw=0.9, label="as published (ReAct)", **FAMILY["publ."])
+ax1.plot([], [], ms=3, lw=0.9, label="BixBench's ReAct agent", **FAMILY["publ."])
 ax1.legend(frameon=False, loc="upper left", handlelength=2.0, borderaxespad=0.1)
 title(ax1, "(a) Same runs, three option sets")
 spines(ax1)

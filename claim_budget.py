@@ -489,7 +489,8 @@ def published_reader(reader):
 # is marked, and the caption says what the mark means
 ROWS = {"rank rule": ("A rule that ignores the question selects the second-smallest option",
                       "v1.5, $105$ numeric; chance"),
-        "published, gpt-4o": ("BixBench's released forced-choice run, gpt-4o", "v1.5, $205$; chance"),
+        "published, gpt-4o": ("BixBench's released forced-choice run without the data, gpt-4o",
+                              "v1.5, $205$; chance"),
         "published, claude": ("The same, Claude 3.5 Sonnet", "v1.5, $205$; chance"),
         "not the rank|gpt-4o": ("Accuracy where the key is second-smallest minus elsewhere, gpt-4o",
                                 "v1.5, $105$ numeric; below"),

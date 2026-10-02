@@ -11,7 +11,7 @@ README keep the names they were written with.
 
 | Paper | Code, result files and this README |
 |---|---|
-| MCQ grader; grading, graded correct, accepted | reader; reading, read as (names) the key, credited |
+| multiple-choice grader; grading, graded correct, accepted | reader; reading, read as (names) the key, credited |
 | forced / with a refusal option | forced / may decline (`decline`) |
 | nearest-option rule | the rule (`nearest`) |
 | released options (R) | released (`q`) |
@@ -20,16 +20,17 @@ README keep the names they were written with.
 | U − P, P − R, U − R | repaired − placebo, placebo − released, repaired − released |
 | moved, unchanged and inward keys | moved to an edge, kept, moved inward |
 | extreme key | key at an edge |
-| configuration | run set |
-| each configuration's own model as MCQ grader | family reader (`own`) |
+| configuration; run set (one configuration's runs from one seed) | run set |
+| BixBench's ReAct agent (ReAct runs) | the published agent, published protocol (`-react`) |
+| each configuration's own model as multiple-choice grader | family reader (`own`) |
 | grader without the question | question-blind reader |
-| control file | clean control |
+| control dataset | clean control |
 | distractor generator | writer, arm |
 | pre-specified test, hypotheses fixed before analysis | registered replication (`PREREGISTRATION.md`, `replication.py`) |
 | seed 2, seed 3; Qwen3-235B-A22B run 1, run 2 | `r1`, `r2`; `r0`, `r1` |
 | digit-matched rewrites (P′, U′) | `placebo_digits`, `repaired_digits` (`digit_matched.py`) |
-| code-free grader (answer and options, no notebook) | `codefree` (`grading_variants.py`) |
-| letter-only grader (notebook, reply constrained to a letter) | `letter` |
+| answer-only grader (question, options and answer, no notebook) | code-free, `codefree` (`grading_variants.py`) |
+| letter-only grader (notebook, reply restricted to an analysis and a letter) | `letter` |
 | the "within 5%" option | `withintol` (`NONE_WITHIN`) |
 | proximity weight λ (Remark 1) | `lambda` (`proximity_weight.py`, `lambda_holdout.py`) |
 | correction for guessing (formula scoring) | `corrected` (`formula_scoring.py`) |

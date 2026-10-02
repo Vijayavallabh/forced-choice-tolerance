@@ -216,7 +216,8 @@ def table_rows(report):
     for r in report["rows"]:
         d, p = r["corrected_minus_tolerance"], r["parts"]
         tol = f"${r['tolerance']:.1f}$" if r["label"] else ""
-        rows.append(f"{r['label']} & {r['how']} & {tol} & ${r['correct_accepted']:.1f}$ & ${r['misses_accepted']:.1f}$ & "
+        # the result file keeps "code-free"; the paper calls that grader answer-only
+        rows.append(f"{r['label']} & {r['how'].replace('code-free', 'answer-only')} & {tol} & ${r['correct_accepted']:.1f}$ & ${r['misses_accepted']:.1f}$ & "
                     f"${r['misses_accepted_of_selected']:.1f}$ & ${d['mean']:+.1f}$ {{\\scriptsize$[{d['lo']:+.1f},{d['hi']:+.1f}]$}} & "
                     f"${p['miss, key nearest']['points']:+.1f}$ & ${p['miss, other nearest']['points']:+.1f}$ & "
                     f"${p['miss, neither']['points']:+.1f}$ & ${p['correct']['points'] + p['empty']['points']:+.1f}$\\\\")

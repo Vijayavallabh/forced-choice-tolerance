@@ -441,6 +441,8 @@ def proximity_cost(report):
 # ---------------------------------------------------------------- tab:readers2
 
 GRADING_LABELS = {"codefree": "code-free", "letter": "letter only", "withintol": "within $5\\%$"}
+# the result files keep "code-free"; the paper calls that grader answer-only
+paper_label = lambda label: label.replace("code-free", "answer-only")
 
 
 def grading_label(grading):
@@ -539,7 +541,7 @@ def table2_rows(report):
         last = r["runs"]
         lam = "$1$" if r["grader"] == "nearest option" else f"${r['lambda']:.2f}$"
         allv = "--" if r["all"] is None else f"${r['all']:+.1f}$"
-        out.append(f"{runs} & {r['grader']} & {lam} & {_ci(r['moved'])} & {_pv(r['p'])} & {allv}\\\\")
+        out.append(f"{runs} & {paper_label(r['grader'])} & {lam} & {_ci(r['moved'])} & {_pv(r['p'])} & {allv}\\\\")
     return out
 
 
@@ -577,7 +579,7 @@ def allq_rows(report):
                 elif grading == "gpt-4o, with the notebook":
                     label = "gpt-4o"
                 refused = f"${b['refused']:.0f}$" if "refused" in b else "--"
-                out.append(f"{(rel + ', ' + runs) if i == 0 else ''} & {label} & {_excess(b, 'numeric')} & "
+                out.append(f"{(rel + ', ' + runs) if i == 0 else ''} & {paper_label(label)} & {_excess(b, 'numeric')} & "
                            f"{_excess(b, 'other')} & {_excess(b, 'all', with_ci=True)} & {refused}\\\\")
     return out
 
@@ -608,7 +610,7 @@ def variants_rows(report):
             mv = lambda c: "--" if not c else _ci(c["moved to an edge"])
             pv = lambda c: "--" if not c or not c.get("signflip") else _pv(c["signflip"]["p"])
             est = lambda c, g: "--" if not c or not c.get(g) else f"${c[g]['mean']:+.1f}$"
-            out.append(f"{label} & ${prox['lambda']:.2f}$ & {mv(o)} & {pv(o)} & {mv(d)} & {pv(d)} & "
+            out.append(f"{paper_label(label)} & ${prox['lambda']:.2f}$ & {mv(o)} & {pv(o)} & {mv(d)} & {pv(d)} & "
                        f"{est(o, 'kept')} & {est(o, 'all')} & {pred}\\\\")
     return out
 

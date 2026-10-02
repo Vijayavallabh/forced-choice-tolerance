@@ -26,82 +26,98 @@
 \maketitle
 
 \begin{abstract}
-BixBench grades an agent's free-text answer open-ended and through multiple choice: a second model reads the agent's
-notebook and answer and selects one of four options, forced to choose or allowed to refuse. The forced-choice score is
-still reported in 2026. On the benchmark's numeric questions we compare both gradings with a tolerance (is the
-submitted number within $5\%$ of the key?) on published, open-weight and current agents' runs. Forced to choose,
-BixBench's grader accepts a fifth to a quarter of the wrong answers, about as many as a random choice among four
-would, but it favours the misses whose nearest option is the key: on the published runs it accepts them $3.5$ and
-$6.0$ times as often as those nearest a distractor. The correction for guessing recovers the tolerance on the
-published runs only by cancellation. On current agents forced choice still adds $10$ to $12$ points. The options
-also leak the key: v1.5 places it second-smallest on $51\%$ of numeric items, a rank that a rule ignoring the question
-learns on held-out capsules. Hiding the rank conflicts with rejecting misses, because a uniformly drawn rank leaves
-keys at an extreme, where every miss beyond the key and of its sign is nearest it; graders pay for this as far as
-they follow the nearest option. Numeric answers should be graded by tolerance.
+BixBench, a benchmark of biological data analysis for agents, grades an agent's free-text answer in two ways:
+open-ended, and through multiple choice, where a second model reads the agent's notebook and answer and selects one of
+four options, forced to choose or allowed to refuse. A 2026 system still reports the forced-choice score. On the
+benchmark's numeric questions we compare the multiple-choice grades with a tolerance, which accepts a submitted number
+within $5\%$ of the correct value (the \emph{key}), on the runs BixBench published and on open-weight and current
+agents' runs. Forced to choose, BixBench's grader accepts $17$ to $25\%$ of the wrong answers, about as many as a
+random choice among four would, but it favours those whose nearest option is the key: on the published runs of gpt-4o
+and Claude 3.5 Sonnet it accepts them $3.5$ and $6.0$ times as often as those nearest a wrong option. On three current
+agents' runs forced choice still scores $10$ to $12$ percentage points above the tolerance. The standard correction
+for guessing matches the tolerance on the published runs only because opposite errors cancel. The options also reveal
+where the key lies: the second release, v1.5, makes it the second-smallest of the four values on $51\%$ of numeric questions, a
+rank that a rule ignoring the question learns from the benchmark's other datasets. Drawing the key's rank at random
+would hide it, but conflicts with rejecting wrong answers: some keys then become the smallest or largest option, and
+every wrong answer of the same sign beyond such a key is nearest it. Graders accept these to the extent that they
+select the option nearest the answer. Numeric answers should be graded by tolerance.
 \end{abstract}
 
 \section{Introduction}
 \label{sec:intro}
 
 BixBench \citep{bixbench} asks an agent to analyse a biological dataset in a notebook and to submit a free-text
-answer, graded open-ended and through multiple choice: a second model, the \emph{MCQ grader}, receives the notebook,
-the question with four options and the answer, and selects the best option, \emph{forced} to choose or allowed to
-\emph{refuse}. BixBench's authors call the options ``a useful proxy'' whose scores are ``marginally better than
-random''. The forced-choice score remains in use: a 2026 system reports $64.4\%$ forced-choice against $48.8\%$
-open-ended accuracy on v1.5, graded by a model that sees the answer and the options but not the notebook, and sets it
-beside published forced-choice scores graded with the notebook \citep{bioagents}. What such a score consists of has
-not been measured.
+answer, graded open-ended and through multiple choice: a second model, the \emph{multiple-choice grader}, receives the
+notebook, the question with four options and the answer, and selects the best option, \emph{forced} to choose or
+allowed to \emph{refuse} by selecting ``Insufficient information to answer the question''. One option, the
+\emph{key}, is correct; the other three are \emph{distractors}. BixBench's authors call the options ``a useful proxy''
+whose scores are ``marginally better than random'', yet the forced-choice score remains in use: a 2026 system
+\citep{bioagents} reports $64.4\%$ forced-choice and $48.8\%$ open-ended accuracy on v1.5, BixBench's second release
+(v1.0 was the first). Its forced-choice grader sees the answer and the options but not the notebook, yet the score is set
+beside published forced-choice scores graded with the notebook. No one has measured how much of such a score comes
+from wrong answers that the grader accepts.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/overview.pdf}
 \caption{\textbf{Options that reject misses on both sides reveal the key's rank.}
-\textbf{(a)} With a distractor on each side, the key (star) has a middle rank, which a rule that ignores the
-question can learn, and an answer (triangle) that misses by more than half the gap to the next option, on
-either side, is nearer a distractor. At an extreme rank the key's position is uninformative, but any miss on the
-open side is nearest the key.
-\textbf{(b)} BixBench v1.5's $105$ numeric items: the key is the second-smallest of four values on
-$51.4\%$ of them; $81\%$ are bracketed, against $61\%$ of v1.0's $159$ and $57\%$ under the rank-uniform
-rewrite.}
+\textbf{(a)} With a distractor on each side (a \emph{bracketed} key), the key (star) has a middle rank, which a
+rule that ignores the question can learn, and an answer (triangle) that misses by more than half the gap, on a log
+scale, to the next option on either side is nearer a distractor. A key that is the smallest or largest option (an
+\emph{extreme} key) need not reveal its rank, but any miss on its side with no distractor (the \emph{open side}) is
+nearest it.
+\textbf{(b)} BixBench v1.5's $105$ numeric items: the key is the second-smallest of four values on $51.4\%$ of them;
+$81\%$ are bracketed, against $61\%$ of v1.0's $159$ and $57\%$ under $U$, the rewrite that draws the key's rank at
+random (\S\ref{sec:theory}); dotted line: $25\%$.}
 \label{fig:overview}
 \end{figure}
 
-We measure it where the reference needs no grader. On the questions whose options are numbers ($159$ in v1.0 and
-$105$ in v1.5), a \emph{tolerance} accepts a submitted number within $5\%$ of the key \citep{scibench}, and because
-the agent never sees the options, its answers can be regraded through other option sets after the run
-(Figure~\ref{fig:design}). We find that:
+We measure it on the questions whose options are numbers (the \emph{numeric items}: $159$ in v1.0 and $105$ in
+v1.5), where correctness needs no grader: a \emph{tolerance} accepts a submitted number, the last number in the answer, within $5\%$ of the key
+\citep{scibench}, and any other answer, including one with no number, is a \emph{miss}. Because the agent never sees
+the options, its answers can be regraded through other option sets after the run (Figure~\ref{fig:design}). BixBench
+groups its questions into \emph{capsules}, each a dataset with its questions, and every interval we report resamples
+capsules. The key's \emph{rank} is its place among the sorted option values. We find that:
 \begin{itemize}\setlength{\itemsep}{1pt}\setlength{\topsep}{2pt}\setlength{\parsep}{0pt}
 \item forced choice accepts about as many misses as a random choice would, but favours those whose nearest option is
 the key (\S\ref{sec:withdata}, Table~\ref{tab:released});
-\item the correction for guessing agrees with the tolerance only by cancellation (\S\ref{sec:guessing});
-\item v1.5's options leak the key's rank (\S\ref{sec:leak}, Figure~\ref{fig:overview}b);
-\item for a grader that follows the nearest option, hiding the rank conflicts with rejecting misses
-(Observation~\ref{obs:bracket}, Figure~\ref{fig:overview}a); graders bear this cost as far as they follow it
-(\S\ref{sec:cost}), and no design of the options escapes it (\S\ref{sec:design}).
+\item the standard correction for guessing agrees with the tolerance only because opposite errors cancel
+(\S\ref{sec:guessing});
+\item v1.5's options reveal the key's rank (\S\ref{sec:leak}, Figure~\ref{fig:overview}b);
+\item drawing the rank at random would hide it, but for a grader that \emph{follows the nearest option}, selecting
+the option nearest the submitted number, this conflicts with rejecting misses (Observation~\ref{obs:bracket},
+Figure~\ref{fig:overview}a); real graders bear this cost to the extent that they follow the nearest option
+(\S\ref{sec:cost}), and no design of the option values escapes it (\S\ref{sec:design}).
 \end{itemize}
 
 \section{Related work}
 \label{sec:related}
 
-\emph{Grading free answers.} Matching an answer against a reference agrees with human grading where multiple choice
-does not \citep{answermatching,openstyle}; for a number the reference is a tolerance \citep{scibench}. Verifiers miss
-answers written in another form or accept wrong ones \citep{xverify,compassverifier,verifierpitfalls}, model judges
-are biased and lenient \citep{llmjudge,fairevaluators,judgingjudges}, and formula scoring \citep{lordformula,frary}
-assumes that guesses fall on the options at random. \emph{Choices without the question.} BixBench's no-data baseline
-is the hypothesis-only baseline \citep{hypothesisonly,artifacts} applied to multiple choice
-\citep{choicesonly,shortcut,rightwrong,niven}. ``Choose the middle value'' is a test-wiseness cue \citep{testwiseness}
-that shuffling, which removes middle positions \citep{attalibarhillel,selectionbias,positionsensitivity}, leaves in
-place. Work on distractors asks how they function for examinees
+\emph{Grading free-text answers.} Comparing an answer with the correct one agrees with human grading where
+multiple choice does not \citep{answermatching,openstyle}; for a number the comparison is a tolerance
+\citep{scibench}. Automatic answer checkers
+miss answers written in another form or accept wrong ones \citep{xverify,compassverifier,verifierpitfalls}, models used
+as judges are biased and lenient \citep{llmjudge,fairevaluators,judgingjudges}, and the standard correction for
+guessing, formula scoring \citep{lordformula,frary}, assumes that guesses fall on the options at random. \emph{Choices
+without the question.} BixBench's no-data baseline, the score of a model that answers without the data, is a
+multiple-choice form of the hypothesis-only baseline, which asks what a model can answer from part of its input
+\citep{hypothesisonly,artifacts}, here the options \citep{choicesonly,shortcut,rightwrong,niven}. ``Choose the middle
+value'' is a cue test-takers learn \citep{testwiseness}; shuffling the order in which options are shown, which removes
+cues in an option's place in the list \citep{attalibarhillel,selectionbias,positionsensitivity}, leaves it in place,
+as it lies in the values and not in their order.
+Work on distractors asks how well they attract test-takers who do not know the answer
 \citep{haladynataxonomy,haladynarodriguez,distractorgeneration,distractorfunction,howmanyoptions,threeoptions}, and
-contamination tests examine the model
+contamination tests ask whether a model has seen the test
 \citep{memorisationexploitation,contaminationsurvey,taskcontamination,minkprob,memorisation,timetravel,tsguessing,exchangeablecontamination};
-neither asks what the options reveal without the question. \emph{Agent benchmarks} have been criticised for missing
-holdout sets and for reward designs that misestimate performance \citep{agentsmatter,abc}. A concurrent audit of
+neither asks what the options reveal without the question. \emph{Agent benchmarks} have been criticised for lacking
+held-out test sets and for grading that misestimates performance \citep{agentsmatter,abc}. A concurrent audit of
 BixBench \citep{bixbenchaudit} re-derives the answer keys of three capsules ($14$ questions) from the raw data and
 grades $140$ replicated agent runs on them, taking the options as given. BixBench-Verified-50 re-checks fifty of its
-questions with domain experts and grades the open answer, $13$ by a numeric range, keeping the distractors
+questions with domain experts and grades the free-text answer, $13$ of the $50$ by a numeric range, keeping the
+distractors
 \citep{verified50}; frontier agents with added skills now answer $84$ to $98\%$ of them \citep{zhang2026}. Other
 benchmarks for scientific data analysis grade without options \citep{corebench,discoverybench,scienceagentbench} or
-show the options to the model that answers \citep{labbench}.
+show the options to the model that answers \citep{labbench}. None measures what a forced-choice grade of a free-text
+answer is made of.
 
 \section{Methods}
 \label{sec:methods}
@@ -109,96 +125,116 @@ show the options to the model that answers \citep{labbench}.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/design.pdf}
-\caption{\textbf{What is compared.} Each with-data answer (Table~\ref{tab:runs}) is graded by a tolerance on its last
-number and, after the run, through three option sets with the same key, by model graders and by the nearest-option
-rule. The excess over the tolerance is in Table~\ref{tab:released}; the cost of hiding the rank
-in Table~\ref{tab:cost} and Figure~\ref{fig:cost}.}
+\caption{\textbf{What is compared.} Each answer given with the data (Table~\ref{tab:runs}) is graded by the tolerance
+on its last number and, after the run, through three option sets with the same key ($R$, $P$ and $U$;
+\S\ref{sec:theory}), by model graders and by the nearest-option rule. How far each grading exceeds the tolerance is in Table~\ref{tab:released};
+what hiding the key's rank costs, in Table~\ref{tab:cost} and Figure~\ref{fig:cost}.}
 \label{fig:design}
 \end{figure}
 
 \subsection{Runs and gradings}
 \label{sec:runs}
 
-Table~\ref{tab:runs} lists the runs we grade (Appendix~\ref{app:withdata}). A \emph{miss} is an answer whose submitted
-number, the last number in the answer, is more than $5\%$ from the key, or that gives none. A \emph{code-free} grader
-sees the question, the options and the answer but not the notebook, approximating, not reproducing, the 2026 system's grader; the
-\emph{within-$5\%$ option} is a fifth option stating that none of the others is within $5\%$ of the answer (prompts in
-Figure~\ref{fig:gradingprompts}, terms in Table~\ref{tab:glossary}).
+Table~\ref{tab:runs} lists the runs we grade (Appendix~\ref{app:withdata}): BixBench's own released v1.0 runs of
+gpt-4o and Claude 3.5 Sonnet (the \emph{published runs}; where two numbers are given for them, gpt-4o's comes first),
+our v1.5 runs of open-weight models, and runs of three \emph{current agents}, gpt-5.1, gpt-6-luna and DeepSeek-V4-Pro.
+A \emph{configuration} is one agent model run one way: writing its tool calls as plain text, or through BixBench's own
+ReAct agent; a \emph{run set} is one configuration's runs from one seed (the published runs are four: each model with
+and without images). Besides BixBench's grader, which reads the notebook, we use \emph{answer-only} graders, which see the
+question, the options and the answer but not the notebook, approximating, not reproducing, the 2026 system's grader,
+and offer them a \emph{within-$5\%$ option}, a fifth option stating that none of the others is within $5\%$ of the
+answer (prompts in Figure~\ref{fig:gradingprompts}, terms in
+Table~\ref{tab:glossary}).
 
 \begin{table}[t]
 \centering\footnotesize\setlength{\tabcolsep}{3pt}
-\caption{\textbf{The runs we grade.} With-data runs on the numeric questions. A
-\emph{configuration} is one agent model under one protocol: tools called in text, or BixBench's published ReAct
-agent. \emph{MCQ grader}: the grader of Table~\ref{tab:released}, given BixBench's prompt and the notebook
-(Qwen3-30B-A3B's runs are graded by gemma-3-27b). Every set is also graded through $R$, $P$ and $U$ by the
-nearest-option rule and the graders of Table~\ref{tab:cost}. $^{\dagger}$The data of the pre-specified test.}
+\caption{\textbf{The runs we grade}: runs with the data, on the numeric questions. \emph{In text}: the model writes
+each tool call as plain text, which our code reads; \emph{ReAct}: BixBench's own agent, which alternates a reasoning
+step with a tool call passed through the model server's tool-calling interface. \emph{Multiple-choice grader}: the
+grader of Table~\ref{tab:released}, given BixBench's prompt and the notebook (Qwen3-30B-A3B's runs are graded by
+gemma-3-27b, as its own replies were cut off before their answer). Every set is also graded through the option sets $R$, $P$ and $U$
+(\S\ref{sec:theory}) by the nearest-option rule and the graders of Table~\ref{tab:cost}. $^{\dagger}$The runs of the
+pre-specified test (\S\ref{sec:stats}).}
 \label{tab:runs}
 \begin{tabularx}{\linewidth}{@{}lr>{\raggedright\arraybackslash}Xrl@{}}
 \toprule
-runs & items & agents & runs & MCQ grader\\
+runs & items & agents & runs & multiple-choice grader\\
 \midrule
-v1.0, published$^{\dagger}$ & $159$ & gpt-4o and Claude 3.5 Sonnet, each with and without images, released with the
-benchmark & $5{,}161$ & the agent's model\\
+v1.0, published$^{\dagger}$ & $159$ & gpt-4o and Claude 3.5 Sonnet, each with and without its plots shown as
+images, released with the benchmark & $5{,}161$ & the agent's model\\
 v1.5, seven configurations & $105$ & in text: Qwen2.5-72B, Llama-3.3-70B, gemma-3-27b; ReAct: Qwen2.5-72B,
 Llama-3.3-70B, GLM-4.5-Air, Qwen3-30B-A3B & $735$ & own model; gemma-3-27b\\
 v1.5, new seeds$^{\dagger}$ & $105$ & two more seeds of each in-text configuration & $630$ & gemma-3-27b\\
-v1.5, Qwen3-235B-A22B$^{\dagger}$ & $105$ & two runs, in text & $210$ & gemma-3-27b\\
-v1.5, current agents & $105$ & ReAct: gpt-5.1 (two runs), gpt-6-luna, DeepSeek-V4-Pro & $420$ & gpt-4o
+v1.5, Qwen3-235B-A22B$^{\dagger}$ & $105$ & two runs per question, in text & $210$ & gemma-3-27b\\
+v1.5, current agents & $105$ & ReAct: gpt-5.1 (two runs per question), gpt-6-luna, DeepSeek-V4-Pro & $420$ & gpt-4o
 (2024-11-20)\\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\subsection{The reference}
+\subsection{Why a 5\% tolerance}
 \label{sec:reference}
 
-The $5\%$ width, also SciBench's, agrees with BixBench's own judgment: the $60$ keys its authors wrote as ranges have a
-median half-width of $6.1\%$, and over $5{,}161$ of gpt-4o's and Claude 3.5 Sonnet's published answers the v1.0 grader
-and a $5\%$ rule disagree on $120$ ($2.3\%$; $\kappa=0.90$, the highest of the rules we tried).
+The $5\%$ width, which SciBench also uses, agrees with BixBench's own judgment: the $60$ v1.5 keys its authors wrote as
+ranges have a median half-width of $6.1\%$, and over $5{,}161$ of gpt-4o's and Claude 3.5 Sonnet's published answers
+BixBench v1.0's open-ended grader and a $5\%$ tolerance disagree on $120$ ($2.3\%$; chance-corrected agreement
+$\kappa=0.90$, the highest of the rules we tried).
 Table~\ref{tab:tolerance} compares the rules; Table~\ref{tab:extraction} counts how the answers state their
 number.
 
 \subsection{Option sets and what they reveal}
 \label{sec:theory}
 
-Sort an item's $k$ numeric values and let $p_j$ be the share of items whose key has rank $j$; a rule that always
-selects rank $j$, ignoring the question, scores $p_j$. A key is \emph{bracketed} if distractors lie on both sides of it
-and \emph{extreme} otherwise; the side of an extreme key without a distractor is its \emph{open side}. $R$ are the
-released options; one generator (Appendix~\ref{app:options}) builds $P$, which redraws every distractor and keeps the
-key's rank, and $U$, which draws the rank uniformly and so moves some keys from bracketed to extreme (the \emph{moved
-keys}). $U$ moves $37$ of v1.5's $105$ numeric keys from bracketed to extreme and $12$ from extreme to bracketed (the
-\emph{inward keys}), and leaves $56$ in their class (the \emph{unchanged keys}); $P$ moves none. On the moved keys
-$U-P$ isolates the key's rank; over all items it is what a benchmark would pay for drawing the rank uniformly, since
-$U$ also moves keys inward, where the rule and most gradings lose. The \emph{nearest-option rule} selects, for a
-submitted number $a$, the option $v$ that minimises $d(a,v)=|a-v|/(|a|+|v|)$ (for values of one sign, the nearest on a log
-scale), with no model; as the pre-specified test fixed it, the rule reads a number only when the whole answer is one
-(Table~\ref{tab:lastnumber} repeats the test reading the last number).
+Let $p_j$ be the share of items whose key has rank $j$ among the $k$ option values; a \emph{rank rule}, which always
+selects rank $j$ and ignores the question, scores $p_j$. A key is \emph{bracketed} if distractors lie on both sides of
+it and \emph{extreme} otherwise. The \emph{nearest-option rule} (\emph{the rule}) uses no language model: for a
+number $a$ it selects the option $v$ that minimises $d(a,v)=|a-v|/(|a|+|v|)$, which for values of the same sign is the
+option nearest $a$ on a log scale; in the pre-specified test (\S\ref{sec:stats}) it reads a number only when the whole
+answer is a single number. To separate the key's rank from the distractors' values, we compare three option sets with
+the same key: $R$, the released options, and two rewrites by one generator that sees neither the question nor the runs
+(Appendix~\ref{app:options}): $P$, which redraws every distractor and \emph{preserves} the key's rank, and $U$, which
+redraws them and draws the key's rank at random, each rank equally likely (\emph{uniformly}). $U$ moves $37$ of v1.5's
+$105$ numeric keys from bracketed to extreme (the \emph{moved keys}) and $12$ from extreme to bracketed (the
+\emph{inward keys}), and leaves $56$ bracketed or extreme as they were (the \emph{unchanged keys}, though it may change
+their rank); $P$ moves none. $U-P$, the extra share of answers a grading accepts through $U$, in percentage points
+(\emph{points}), is the \emph{cost} of hiding the rank: on the moved keys it isolates the rank's effect, and over all
+items it is what a benchmark would see from drawing the rank uniformly, since $U$ also moves keys inward, where the
+rule and most gradings accept fewer answers.
 
 \begin{observation}[the nearest-option rule]
 \label{obs:bracket}
-Let a key $y\neq0$ have its nearest options of its own sign at factors $\rho_-$ below and $\rho_+$ above it in
-magnitude. The rule accepts exactly the misses of $y$'s sign within factors $\sqrt{\rho_-}$ and $\sqrt{\rho_+}$ of
-it, and a key with no such option on one side (an extreme key) also every miss beyond it on that side, however large.
-Hence, among $k$ options, a key rank drawn uniformly leaves $2/k$ of the keys extreme in expectation, and a rank kept
-off the extremes lets a rule that ignores the question gain at least $1/(k-2)-1/k=2/(k(k-2))$ over chance.
+Let a key $y\neq0$ have its nearest options of the same sign at magnitudes $|y|/\rho_-$ and $|y|\rho_+$
+($\rho_\pm>1$). The rule accepts exactly the misses of $y$'s sign whose magnitude lies between $|y|/\sqrt{\rho_-}$ and
+$|y|\sqrt{\rho_+}$, and, if $y$ has no such option on one side (an extreme key), also every miss of its sign beyond it
+on that side, however large. Among $k$ options, a key rank drawn uniformly leaves $2/k$ of the keys extreme in
+expectation, and a rank kept off the extremes lets a rank rule gain at least $1/(k-2)-1/k=2/(k(k-2))$ over chance.
 \end{observation}
 
-The observation (proof in Appendix~\ref{app:theory}) binds only a grader that follows the nearest option: a tolerance,
-or a grader offered an option saying that no value is within $t$, rejects any miss larger than $t$ whatever the
-options. Remark~\ref{rem:lambda} defines a grader's \emph{proximity weight} $\lambda$ from how often it selects the
-nearest option on a miss and how often it selects none; a grader of that form bears the rule's cost in proportion to
-$\lambda$.
+The observation (proof in Appendix~\ref{app:theory}) constrains only a grader that follows the nearest option: a
+tolerance of width $t$, or a grader offered an option saying that no value is within $t$ of the answer, rejects any
+answer more than $t$ from the key, whatever the options. Real graders follow the nearest option only in part. A
+grader's \emph{proximity weight} is $\lambda=(1-\delta)(qk-1)/(k-1)$, where $q$ is the share of its selections on
+misses that are the option nearest the miss and $\delta$ the share of misses on which it selects no option, its reply
+naming no option's letter: $\lambda$ is $1$ for a grader that always selects the nearest option, $0$ for one that
+selects it no more often than any other, and lower the more often it selects none. A grader that did so alike on every
+set of options would bear the rule's cost in proportion to $\lambda$ (Remark~\ref{rem:lambda}); real graders do not,
+so $\lambda$ orders graders rather than predicting their cost.
 
 \subsection{Statistics and the pre-specified test}
 \label{sec:stats}
 
-Every interval in the main text is a percentile bootstrap over capsules at the nominal level that attains $95\%$
-coverage on the group's own capsules, and none is given where no level does (Appendix~\ref{app:stats}). Paired
-contrasts are also tested by flipping the signs of whole capsules, and the paper's ten headline findings are corrected
-jointly (Table~\ref{tab:claims}). Before analysing runs that no earlier analysis had used (the published runs, and new
-v1.5 runs made afterwards), we fixed six hypotheses about the nearest-option rule's contrasts, each with a pass
-criterion, in a dated plan that was not deposited publicly (Appendix~\ref{app:replication}, Table~\ref{tab:predictions}).
-The split into moved and unchanged keys was chosen after the first v1.5 results, and every MCQ grading is exploratory.
+Every interval in the main text resamples whole capsules. With few capsules of unequal size a nominal $95\%$
+interval covers the true value less often, so each interval uses the level that does cover it $95\%$ of the time on
+data built like its own; where no level does, none is given (Appendix~\ref{app:stats}). Differences between two gradings of the same answers are also tested by randomly flipping
+the sign of each capsule's difference (the \emph{sign-flip test}), and the paper's ten headline findings are corrected
+jointly for multiple comparisons (Table~\ref{tab:claims}). Before analysing runs that no earlier analysis had used (the published runs, and new
+v1.5 runs made afterwards), we fixed six hypotheses about the nearest-option rule, each with a pass criterion, in
+a dated plan that was not registered publicly (Appendix~\ref{app:replication}, Table~\ref{tab:predictions}). Under
+the rule, $U$ should accept more than $R$ on the moved keys (H1) but not on the unchanged keys (H2); most answers it
+newly accepts should lie more than $25\%$ from the key and on its open side (H3); $U$ should accept more than $P$ on
+the moved keys, so that the rise comes from the rank and not from the redrawing (H4); $U$ should not accept more than
+$R$ on the inward keys (H5); and H1 should hold without the data too (H6). We chose the hypotheses, and the split into
+moved and unchanged keys, after the first v1.5 results; gradings by a model are outside the test.
 
 \section{Results}
 \label{sec:results}
@@ -208,15 +244,15 @@ The split into moved and unchanged keys was chosen after the first v1.5 results,
 
 \begin{table}[t]
 \centering\footnotesize\setlength{\tabcolsep}{1.3pt}
-\caption{\textbf{Forced-choice grading accepts about a quarter of the misses, and most often those nearest the
-key.} With-data runs on the numeric questions, graded through the released options by the MCQ
-graders of Table~\ref{tab:runs}, forced or with BixBench's refusal option. \emph{Within $5\%$}: the share whose submitted number is within $5\%$ of the key. \emph{Excess}: the score minus that share, in points, split exactly into what each kind of answer adds, less the
+\caption{\textbf{Forced-choice grading accepts $17$ to $25\%$ of the misses, most often those nearest the key.} Runs
+with the data on the numeric questions, graded through the released options by the multiple-choice graders of
+Table~\ref{tab:runs}, forced or with BixBench's refusal option. \emph{Within $5\%$}: the share whose submitted number is within $5\%$ of the key. \emph{Excess}: the score minus that share, in points, split exactly into what each kind of answer adds, less the
 correct answers the grading rejects (\emph{rej.}). The kinds are misses whose single nearest option is the key
 (\emph{key}), another option (\emph{other}), or neither (no number, or no single nearest option); an empty answer is
-scored wrong ungraded and adds nothing; parts are rounded separately. \emph{Corrected}: the forced score corrected for
-guessing, $(S-1/4)/(3/4)$, minus the within-$5\%$ share (Table~\ref{tab:formula} splits it). \emph{Misses
-accepted}: the share of the graded misses graded correct, over all and by their single nearest option. Each
-question's runs are averaged; intervals over capsules.}
+scored wrong without grading and adds nothing; parts are rounded separately. \emph{Corrected}: the forced score $S$
+corrected for guessing, $(S-1/4)/(3/4)$, minus the within-$5\%$ share (Table~\ref{tab:formula} splits it).
+\emph{Misses accepted}: the share of the non-empty misses that the grading accepts, over all and by their single
+nearest option. Each question's runs are averaged; intervals resample capsules (\S\ref{sec:stats}).}
 \label{tab:released}
 \resizebox{\linewidth}{!}{\begin{tabular}{llrrrrrrrrrr}
 \toprule
@@ -243,32 +279,32 @@ v1.5, DeepSeek-V4-Pro & forced & $28.6$ & $+11.9$ {\scriptsize$[+4.6,+19.4]$} & 
 
 Forced to choose, BixBench's grader accepts about as many misses as a random choice among four would, but not the
 same misses: on the published runs it accepts those whose nearest option is the key $3.5$ and $6.0$ times as often as
-those nearest another option (Table~\ref{tab:released}). Most of the excess comes from misses nearest another option
-and from answers with no number or no single nearest option. Of the answers with no number the grader accepts $29$
-and $34\%$, though the key's value is in the notebook for only $16$ and $7\%$ of them. The excess is not self-grading:
-gemma-3-27b grading all seven v1.5 configurations finds as much excess as their own models. It persists on the
-current agents' runs, although gpt-6-luna's interval reaches $-1.1$ when the paper's ten headline findings are
-corrected jointly. The excess
-survives the other references we tried, BixBench's own open-ended grading, tolerances from $1$ to $10\%$ and p-value
-keys on a log scale (Tables~\ref{tab:reference} and~\ref{tab:restated}). With BixBench's refusal option the grading
-lands near the tolerance, but only as the net of the misses it accepts and the correct answers it rejects, $8.8$ and
-$10.2\%$ on the published runs, where it refuses $82$ and $69\%$ of runs.
+those nearest another option (Table~\ref{tab:released}). Misses nearest another option are far more common, so most
+of the \emph{excess}, the score minus the share within $5\%$ of the key, comes from them and from answers with no
+number or no single nearest option. Of the answers with no number the grader accepts $29$
+and $34\%$, though the key's value is in the notebook for only $16$ and $7\%$ of them. The excess does not come from models grading their
+own runs: gemma-3-27b grading all seven v1.5 configurations finds as much excess as their own models. It persists on the
+current agents' runs, although gpt-6-luna's interval extends to $-1.1$ when the paper's ten headline findings are
+corrected jointly. The excess also holds against the other references we tried: BixBench's own open-ended grading,
+tolerances from $1$ to $10\%$, and keys that are p-values graded within a factor of ten (Tables~\ref{tab:reference}
+and~\ref{tab:restated}). With the refusal option the score comes close to the tolerance's, but only because the misses
+it accepts offset the correct answers it rejects, $8.8$ and $10.2\%$ of them on the published runs, where it refuses
+$82$ and $69\%$ of runs.
 
 \begin{table}[t]
 \centering\footnotesize\setlength{\tabcolsep}{3pt}
-\caption{\textbf{What hiding the key's rank costs each grader.} $U-P$, in points: the gain from drawing the key's rank
-uniformly ($U$) rather than keeping it ($P$), on the keys $U$ moves to an extreme (\emph{moved}) and over all numeric items (\emph{all}). \emph{Rule}: the nearest-option rule, with intervals
-at the level that attains $95\%$ coverage. A range spans the graders of a kind: \emph{code-free} (gpt-4o,
-gemma-3-27b, Qwen2.5-72B and Llama-3.3-70B; gpt-4o and gemma-3-27b for gpt-5.1); \emph{notebook}, BixBench's prompt
-with the notebook, forced (Qwen2.5-72B, gemma-3-27b and Llama-3.3-70B, with gpt-4o on the published runs and each
-configuration's own model on the seven; gpt-4o alone for gpt-5.1 and the current agents); \emph{refusal},
-gemma-3-27b with BixBench's refusal option; \emph{within $5\%$}, code-free with the within-$5\%$ option. Every
-grader's value, interval and capsule sign-flip $p$ are in Tables~\ref{tab:readers2}, \ref{tab:readersfull},
-\ref{tab:variants}, \ref{tab:strong} and~\ref{tab:frontier}.}
+\caption{\textbf{What hiding the key's rank costs each grader.} $U-P$, in points: the extra share of answers
+accepted when the key's rank is drawn uniformly ($U$) rather than kept ($P$), on the keys $U$ moves to an extreme
+(\emph{moved}) and over all numeric items (\emph{all}). \emph{Rule}: the nearest-option rule, with an interval
+where the pre-specified test (H4) or Table~\ref{tab:readersfull} gives one. A range spans the graders of a kind: \emph{answer-only};
+\emph{notebook}, BixBench's prompt with the notebook, forced; \emph{refusal}, gemma-3-27b with BixBench's refusal
+option; \emph{within $5\%$}, answer-only graders offered the within-$5\%$ option. Tables~\ref{tab:readers2},
+\ref{tab:readersfull}, \ref{tab:variants}, \ref{tab:strong} and~\ref{tab:frontier} name the graders and give every
+value, interval and sign-flip test's $p$.}
 \label{tab:cost}
 \begin{tabular}{llrrrrr}
 \toprule
-runs & keys & rule & code-free & notebook & refusal & within $5\%$\\
+runs & keys & rule & answer-only & notebook & refusal & within $5\%$\\
 \midrule
 v1.0, published & moved & $+18.6$ {\scriptsize$[+8.7,+30.7]$} & $+23.4$ to $+28.2$ & $+5.9$ to $+14.4$ & $+3.2$ & $-1.1$ to $-0.1$\\
  & all & $+3.4$ & $+2.1$ to $+4.0$ & $+0.5$ to $+3.0$ & $+0.5$ & $+0.0$ to $+0.1$\\
@@ -288,41 +324,46 @@ v1.5, DeepSeek-V4-Pro & moved & $+4.7$ & -- & $-2.7$ & -- & --\\
 \end{tabular}
 \end{table}
 
-\subsection{The correction for guessing agrees with the tolerance only by cancellation}
+\subsection{The correction for guessing matches the tolerance only because errors cancel}
 \label{sec:guessing}
 
-Formula scoring \citep{lordformula,frary} maps a forced score $S$ over $k$ options to $(S-1/k)/(1-1/k)$, which leaves a
-grader that accepts every correct answer and chooses at random on every miss at the tolerance. On the published runs it
-lands near the tolerance (Table~\ref{tab:released}, \emph{corrected}), but as a sum of opposite parts
-(Table~\ref{tab:formula}): beyond a random choice, the misses nearest the key add $2.6$ and $7.8$ points and those
-nearest another option subtract $6.5$ and $9.3$. On v1.5 it lands below the tolerance, largely because it scores a
-grade that selects no option as a wrong guess, not as an omission (Appendix~\ref{app:guessing}). Being monotone, it
-leaves every ranking as forced choice made it.
+Formula scoring \citep{lordformula,frary}, the standard correction for guessing, maps a forced score $S$ over $k$ options to $(S-1/k)/(1-1/k)$, which gives a grader that accepts every correct
+answer and chooses at random on every miss exactly the tolerance's score. On the published runs the corrected score
+comes close to the tolerance's (Table~\ref{tab:released}, \emph{corrected}), but as a sum of opposite parts
+(Table~\ref{tab:formula}): relative to a random choice, the misses nearest the key add $2.6$ and $7.8$ points and
+those nearest another option subtract $6.5$ and $9.3$. On v1.5 it falls below the tolerance's, largely because forced
+graders sometimes select no option, which the correction counts as a wrong guess rather than as a skipped question
+(Appendix~\ref{app:guessing}). As it never
+reverses the order of two scores, it leaves every ranking as forced choice made it.
 
-\subsection{v1.5's options leak the key's rank}
+\subsection{v1.5's options reveal the key's rank}
 \label{sec:leak}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/cost.pdf}
 \caption{\textbf{Who bears the cost of a hidden rank, and what each design of the options trades.} \textbf{(a)} Each
-grading's $U-P$ on the moved keys as a share of the nearest-option rule's (star) on the same answers, against its
-proximity weight $\lambda$ (Remark~\ref{rem:lambda}); dashed: share $=\lambda$. \textbf{(b)} Each design
-of v1.5's numeric options (Table~\ref{tab:design}): the rank rule's gain on held-out capsules against the share of
-misses the nearest-option rule accepts. Colour: the key's rank policy; shape: the distractors (squares $R$, $P$, $U$;
-circles redrawn; diamonds a fifth or a tenth of the key apart; triangles agents' errors). No design both leaks little
-and accepts few misses.}
+grading's $U-P$ on the moved keys divided by the nearest-option rule's on the same answers (star $=1$), against its
+proximity weight $\lambda$ (\S\ref{sec:theory}); dashed: ratio $=\lambda$. \textbf{(b)} Each design of v1.5's numeric
+options (\S\ref{sec:design}, Table~\ref{tab:design}): the rank leak, what a rank rule chosen on the other capsules
+scores above chance on held-out ones, against the share of misses the nearest-option rule accepts. Colour: how the
+key's rank is set; shape: how the distractors are made (squares $R$, $P$, $U$; circles redrawn as in $P$ and $U$;
+diamonds a fifth or a tenth of the key apart; triangles other agents' wrong numbers). No design both leaks little and
+accepts few misses.}
 \label{fig:cost}
 \end{figure}
 
 On BixBench v1.5's $105$ four-option numeric items ($46$ capsules) the key's rank distribution is
-$(p_1,\dots,p_4)=(12.4,51.4,29.5,6.7)\%$, far from uniform with items clustered by capsule ($p=4\times10^{-8}$;
-Figure~\ref{fig:overview}b). The second-smallest rule scores $+26.4$ $[+14.0,+38.6]$ points above chance, and in each
-of $46$ leave-one-capsule-out folds the rank chosen on the other $45$ capsules is the second-smallest. On v1.0's $159$
-numeric items the best rule's in-sample $+5.8$ falls to $-2.4$ when its rank is chosen on held-out folds. The skew
+$(p_1,\dots,p_4)=(12.4,51.4,29.5,6.7)\%$, far from uniform ($p=4\times10^{-8}$, treating each capsule's items as a
+cluster; Figure~\ref{fig:overview}b). A rule that always selects the second-smallest option scores $+26.4$ $[+14.0,+38.6]$ points above chance, and
+holding out each of the $46$ capsules in turn, the rank chosen on the other $45$ is always the second-smallest. On
+v1.0's $159$ numeric items the best rank rule scores $+5.8$ on the items it was chosen on, but $-2.4$ when its rank is
+chosen on the other capsules. The skew
 arose in v1.5 (Table~\ref{tab:origin}): in the $24$ of v1.0's items whose distractors it rewrote, the key is
 second-smallest on $19$ ($79\%$, up from $29\%$ in v1.0). No model we tested is shown to use the rank
-(Appendix~\ref{app:arms}), so the leak threatens BixBench's no-data baseline, not its scores with the data.
+(Appendix~\ref{app:arms}), so the leak threatens BixBench's no-data baseline, where a model above chance may be reading
+the rank rather than recalling the answer, and not its scores with the data. Drawing the rank at random would close
+the leak; we now ask what that costs.
 
 \subsection{Hiding the rank costs a grader as far as it follows the nearest option}
 \label{sec:cost}
@@ -330,83 +371,98 @@ second-smallest on $19$ ($79\%$, up from $29\%$ in v1.0). No model we tested is 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/test.pdf}
-\caption{\textbf{The pre-specified test.} Each hypothesis's contrast under the nearest-option rule on the runs not used
-in forming the hypotheses, with the interval fixed in advance: $U-R$ on a key group, $U-P$ for H4, and without the
-data for H6 (none for the published runs). H2 on the published runs passes its stated
-criterion only by a mean within $5$ points of zero and is counted as failed; Qwen3-235B-A22B's inward keys carry no
-interval, as no nominal level attains $95\%$ coverage on them. H3, on where the newly accepted answers lie, passes on
-all three data sets. Criteria and values: Table~\ref{tab:predictions}.}
+\caption{\textbf{The pre-specified test.} Each hypothesis's difference under the nearest-option rule, on the run
+sets of the test, with the interval method fixed in advance: $U-R$ on a group of keys, $U-P$ for H4, and $U-R$ without
+the data for H6 (not tested on the published runs). H2 on the published runs passes its stated criterion only by a
+mean within $5$ points of zero and is counted as failed; Qwen3-235B-A22B's inward keys carry no interval, as no
+interval reaches $95\%$ coverage on them. H3, on where the newly accepted answers lie, passes on all three run sets.
+Criteria and values: Table~\ref{tab:predictions}.}
 \label{fig:test}
 \end{figure}
 
 Under the nearest-option rule, hiding the rank raises the share of the seven configurations' answers graded correct by
 $+16.7$ $[+10.2,+23.0]$ points on the moved keys and by $+5.3$ $[+1.9,+8.6]$ over all numeric items
-(Table~\ref{tab:cost}). Of the $47$ answers that $U$ newly accepts with the data, $46$ lie on the key's open side and
-$16$ are off by more than $100\%$ (Table~\ref{tab:mechanism}). The other graders bear a share of the rule's gain that
-rises with their proximity weight (Figure~\ref{fig:cost}a). Code-free graders follow the nearest option most closely
-and bear most of the cost. Graders given BixBench's prompt and the notebook bear less, and on the new seeds none of
-their gains is significant by a capsule sign-flip test ($p=0.059$ to $0.861$). BixBench's own published grades exist
-only through $R$, but their proximity weights predict what they would bear on the published runs' moved keys: $+6.9$
-for gpt-4o's ($\lambda=0.24$) and $+20.1$ for Claude 3.5 Sonnet's ($\lambda=0.58$, within the code-free graders'
-$0.48$ to $0.69$). With the within-$5\%$ option, code-free graders change by
-$-2.0$ to $-0.1$ points when the rank is hidden. The cost falls on misses, so it shrinks as agents improve: over the nineteen configurations
-with the data, the rule's gain over all items falls as agents land within $5\%$ of the key more often (Spearman $\rho=-0.89$; Figure~\ref{fig:scaling}).
+(Table~\ref{tab:cost}). Of the $47$ answers with the data that the rule accepts through $U$ but not through $R$, $46$
+lie on the key's open side and $16$ are off by more than $100\%$ (Table~\ref{tab:mechanism}). The other graders bear a
+share of the rule's cost that rises with their proximity weight (Figure~\ref{fig:cost}a). Answer-only graders follow
+the nearest option most closely and bear most of the cost. Graders given BixBench's prompt and the notebook bear less,
+and on the new seeds none of their costs is significant by the sign-flip test ($p=0.059$ to $0.861$). BixBench
+released its own grades only through $R$, but their proximity weights predict their cost on the published runs' moved
+keys: $+6.9$ for gpt-4o's ($\lambda=0.24$) and $+20.1$ for Claude 3.5 Sonnet's ($\lambda=0.58$, within the
+answer-only graders' $0.48$ to $0.69$), though $\lambda$'s predictions err by $3.9$ points on average
+(Appendix~\ref{app:theory}). With the within-$5\%$ option, answer-only graders change by $-2.0$ to $-0.1$ points on
+the moved keys when the rank is hidden. The cost falls on misses, so it shrinks as agents improve: over the nineteen
+run sets with the data, the rule's cost over all items falls as agents land within $5\%$ of the key more often (rank correlation $-0.89$;
+Figure~\ref{fig:scaling}).
 
 \paragraph{The pre-specified test.} Observation~\ref{obs:bracket} fixes the direction of H1, H3 and H5, so these
-test only magnitude; they pass on the published runs and the new seeds (Figure~\ref{fig:test}). Of the informative
-two, H4 holds there too, and H2 fails on the published runs, where $2.4$ of the unchanged keys' $+3.7$ points come from
-$11$ keys that $U$ moves from one extreme to the other. Qwen3-235B-A22B fails H1, H2 and H4, as the redrawing itself
-credits its near misses (Appendix~\ref{app:replication}). Read from the last number in the answer, every hypothesis
-keeps its verdict on every data set (Table~\ref{tab:lastnumber}).
+test only whether the effect is large enough to detect; they pass on the published runs and the new seeds
+(Figure~\ref{fig:test}). Of the two whose outcome Observation~\ref{obs:bracket} does not fix, H4 holds there too, and
+H2 fails on the published runs, where $2.4$ of the unchanged keys' $+3.7$ points come from $11$ keys that $U$ moves
+from one extreme to the other. H6 passes on both v1.5 run sets; it was not tested on the published runs.
+Qwen3-235B-A22B fails H1, H2 and H4 because redrawing the distractors farther from the key
+(Appendix~\ref{app:options}) already accepts many of its near misses, whatever the key's rank
+(Appendix~\ref{app:replication}). When the rule reads the last number in the answer, as the tolerance does, every
+hypothesis keeps its verdict on every run set (Table~\ref{tab:lastnumber}).
 
-\subsection{No design of the options escapes the conflict}
+\subsection{No design of the option values escapes the conflict}
 \label{sec:design}
 
-We rebuilt every numeric item's distractors under designs an author could choose and regraded the same runs by the
-rule and the four code-free graders (Table~\ref{tab:design}, Appendix~\ref{app:design}, Figure~\ref{fig:cost}b). Distractors taken from agents' errors leave the cost in place: drawing their key's rank uniformly rather than
-at its released rank raises the rule's acceptance on the keys it moves to an extreme by $+24.1$ $[+16.3,+33.8]$ on the
-published runs and $+18.8$ $[+11.3,+28.1]$ on v1.5. More options shrink both sides of the conflict: a uniform rank
-costs the rule $11.1$ and $8.4$ points over all items against one kept off the extremes at $k=4$, and $6.1$ and $4.5$
-at $k=8$, where a rank kept off the extremes leaks at least $25$ and $4.2$ points (Table~\ref{tab:designpairs}). No
-design removes both costs for a grader that follows the nearest option. The within-$5\%$ option does, by grading the
-tolerance itself, at the price of rejecting $6.6$ to $17.9\%$ of correct answers.
+We rebuilt every numeric item's distractors under \emph{designs} an author could choose, which set the number of
+options $k$ ($4$ to $10$), the key's rank (as released at $k=4$, drawn from all $k$ ranks, or drawn from the $k-2$
+ranks off the extremes) and the distractors (spaced as in $P$ and $U$, a fixed fifth or tenth of the key apart, or other
+agents' wrong numbers for the same question), and regraded the same runs by the rule and the four answer-only graders
+(Table~\ref{tab:design}, Appendix~\ref{app:design}, Figure~\ref{fig:cost}b). Distractors taken from other agents' wrong
+numbers leave the cost in place: drawing their key's rank uniformly rather than at its released rank raises the rule's
+acceptance on the keys it moves to an extreme by $+24.1$ $[+16.3,+33.8]$ points on the published runs and $+18.8$
+$[+11.3,+28.1]$ on v1.5. More options shrink both sides of the conflict: against a rank
+kept off the extremes, a uniform rank costs the rule $11.1$ and $8.4$ points over all items at $k=4$ (v1.0 and v1.5)
+and $6.1$ and $4.5$ at $k=8$, while a rank kept off the extremes reveals at least $25$ points at $k=4$ and $4.2$ at
+$k=8$ (Tables~\ref{tab:design} and~\ref{tab:designpairs}). No design removes both the leak and the cost for a
+grader that follows the nearest option. With the within-$5\%$ option the rank can be drawn uniformly without the cost,
+since the grader applies the tolerance itself, but it rejects $6.6$ to $17.9\%$ of correct answers
+(Appendix~\ref{app:replication}).
 
 \section{Discussion}
 \label{sec:discussion}
 
-\paragraph{Beyond BixBench.} Of nine released multiple-choice files with numeric options, a rank chosen on held-out
-clusters stays above chance on four (Table~\ref{tab:survey}), and Observation~\ref{obs:bracket} holds wherever free
-numeric answers are mapped to options by nearness.
+\paragraph{Beyond BixBench.} Of nine released multiple-choice datasets with numeric options, BixBench's two
+included, five have a key rank that departs from uniform beyond chance, and in four of these (v1.5, SciQ, MMLU-Pro and
+MMLU) a rank chosen on some groups of items stays above chance on the held-out groups (Table~\ref{tab:survey}).
+Observation~\ref{obs:bracket} holds wherever free-text numeric answers are mapped to options by nearness.
 
 \paragraph{Recommendations.} \emph{Grade numeric answers by tolerance}, on a number extracted the same way for every
 grading. \emph{Report how many answers contain no number}: more than a quarter of gpt-4o's published answers to
 numeric questions contain none, and forced-choice grading accepts $29\%$ of those. \emph{Neither correct for guessing
-nor compare forced-choice scores taken by different graders}: graded without the notebook, the same runs score $0.6$
-to $6.5$ points more over all questions. \emph{If options must grade free answers, add an option saying that no value
-is within the tolerance}, and report the correct answers it rejects. \emph{For a no-data baseline}, draw the key's
-rank uniformly and publish the key-rank histogram.
+nor compare forced-choice scores taken by different graders}: graded by gpt-4o without the notebook, the same runs
+score $0.6$ to $6.5$ points more over all questions than graded with it. \emph{If free-text answers must be graded
+through options, add an option saying that no value is within the tolerance}, and report the correct answers it
+rejects. \emph{For a no-data baseline}, where the model chooses among the options itself, draw the key's rank uniformly
+and publish how often the key takes each rank.
 
 \paragraph{Limitations.} No human audited the accepted misses or the tolerance's verdicts. Every tolerance-dependent
 result is restated at $1$, $2$ and $10\%$ (Table~\ref{tab:restated}), where at $10\%$ the excess intervals of gpt-5.1
-and gpt-6-luna reach zero. Our open-weight
+and gpt-6-luna include zero. Our open-weight
 agents, run at temperature $1.0$, are weak: with the data their number is within $5\%$ of the key on $2$ to $24\%$ of
-numeric items. What forced choice adds shrinks as agents improve, but not per miss: over the $22$ configurations with
-the data, the share of misses accepted does not fall as agents land within $5\%$ more often (Spearman $\rho=+0.07$,
-$p=0.75$). Where the original graders cannot be run, we substitute gpt-4o 2024-11-20
-for 2024-08-06, which selected no option on $24.4\%$ of the published runs' misses against 2024-11-20's $56.0\%$, and
-nothing for the retired Claude 3.5 Sonnet. The paper's claim family was chosen after the
-v1.5 results, and the plan was not deposited in a public registry, so the test's precedence rests on GitHub's push
-record, archived with the code (Appendix~\ref{app:replication}). Keys are taken as released, though on the $26$ numeric
-items whose keys BixBench-Verified-50's experts re-checked the excess and the rule's gain are as on all items
-(Table~\ref{tab:robust}). We show no published ranking of agents that forced
-choice reverses. The study covers one benchmark's secondary metric, on $105$ and $159$ items.
+numeric items. What forced choice adds shrinks as agents improve, but not per miss: over those nineteen run sets and the
+three current agents' runs, the share of misses accepted does not fall as agents land within $5\%$ more often (rank
+correlation $+0.07$, $p=0.75$). Where the original graders cannot be run, we substitute gpt-4o 2024-11-20 for
+2024-08-06: on the quarter of the published runs that 2024-11-20 regraded, 2024-08-06 selected no option on $24.4\%$
+of the misses and 2024-11-20 on $56.0\%$. We substitute no model for the retired Claude 3.5 Sonnet. The ten findings
+corrected jointly were chosen after the v1.5 results, and the plan was not registered publicly, so the evidence that it
+preceded the analysis rests on GitHub's record of the push, archived with the code (Appendix~\ref{app:replication}).
+Keys are taken as released, though on the $26$ numeric items whose keys BixBench-Verified-50's experts re-checked the
+excess and the rule's cost are about the same as on all items (Table~\ref{tab:robust}). We do not show that forced
+choice reverses any published ranking of agents. The study covers one benchmark's secondary metric, its
+multiple-choice score, on v1.0's $159$ and v1.5's $105$ numeric items.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
 Forced choice accepts misses by where the options place them, and no correction for guessing removes this. Options
-that hide the key's rank leave some keys extreme, where a grader that follows the nearest option accepts every far miss
-on the open side. A tolerance accepts no far miss and reveals no rank: numeric answers should be graded by tolerance.
+that hide the key's rank leave some keys extreme, where a grader that follows the nearest option accepts every miss
+beyond the key on the open side, however far. A tolerance accepts none of these and reveals no rank: numeric answers
+should be graded by tolerance.
 The code, runs, grades and analyses are at
 \url{https://github.com/Vijayavallabh/forced-choice-tolerance}; every result can be recomputed from them without a GPU.
 
@@ -428,84 +484,109 @@ validation.
 \subsection{Runs and gradings}
 \label{app:withdata}
 
-The agent is BixBench's data-analysis agent at the version the benchmark specifies (1.5.0): its system prompt and
-open-answer template, its three tools (edit a notebook cell, list the working directory, submit an answer), at most
-$40$ steps at temperature $1.0$, and each capsule mounted read-only in a rebuild of BixBench's notebook image. Each run
-is graded in the two ways BixBench publishes: open-ended, by the v1.5 graders, and through the options, by BixBench's
-MCQ grader, a second model shown the notebook, the question with the options shuffled, and the agent's answer. In the
-\emph{text} protocol, three open-weight families call the tools in text, each served in FP8 with vLLM and grading its
-own runs, as the published runs were graded by the model that made them; the \emph{published} protocol is BixBench's
-ReAct agent at the versions the benchmark specifies. The \emph{no-data} condition is the same agent with an empty working directory. Table~\ref{tab:settings}
-lists where our runs depart from the published agent, and Table~\ref{tab:glossary} defines the other graders, each at
-temperature $0$ with two shuffles of each option set per run (prompts in Figure~\ref{fig:gradingprompts}). Every grading
+The agent is BixBench's data-analysis agent at version 1.5.0 of its software, as the benchmark specifies: its
+system prompt and its prompt template for a free-text answer, its three tools (edit a notebook cell, list the working
+directory, submit an answer), at most $40$ steps at temperature $1.0$, and each capsule's files available read-only in
+our rebuild of BixBench's software container. Each run is graded in the two ways BixBench publishes: open-ended, by
+BixBench v1.5's graders (Figure~\ref{fig:gradingprompts}), and through the options, by BixBench's multiple-choice
+grader, a second model shown the notebook, the question with the options shuffled, and the agent's answer. In
+\emph{in-text} runs the model writes each tool call as plain text, which our code reads; three open-weight model
+families ran this way, each served by the vLLM inference server with 8-bit floating-point (FP8) weights and grading its own runs, as the
+published runs were graded by the model that made them. \emph{ReAct} runs use BixBench's ReAct agent at the versions the benchmark specifies,
+which passes the tools through the model server's tool-calling interface. The \emph{no-data} condition is the same agent with an
+empty working directory. Table~\ref{tab:settings} lists where our runs depart from BixBench's agent, and
+Table~\ref{tab:glossary} defines the other graders, each at temperature $0$ and grading each run twice per option set,
+with the options in two random orders (prompts in Figure~\ref{fig:gradingprompts}). Every grading
 call is recorded, so every number can be recomputed from the recorded runs without a GPU.
 
 \begin{table}[htbp]
 \centering\footnotesize
-\caption{The terms the paper uses, in the order they appear.}
+\caption{The terms the paper uses.}
 \label{tab:glossary}
 \begin{tabularx}{\linewidth}{@{}lX@{}}
 \toprule
 term & meaning\\
 \midrule
+key; distractors & the correct option; the other options\\
+numeric item & a question whose options are all numbers ($159$ in v1.0, $105$ in v1.5)\\
+multiple-choice grader; forced, refusal & the model that maps an answer to an option, shown the notebook, the
+question, the options and the answer; forced to choose, or offered BixBench's ``insufficient information'' option\\
+selects no option & a forced grader's reply that names no option's letter (e.g.\ it says that none matches); BixBench
+scores it wrong\\
+tolerance; miss & accepts a submitted number (the last in the answer) within $5\%$ of the key; a miss is any other
+answer\\
 capsule & a BixBench dataset with its questions; every interval resamples capsules\\
-configuration & one agent model under one protocol: \emph{text} (tools called in text) or \emph{published}
-(BixBench's ReAct agent)\\
-tolerance, miss & a submitted number (the last in the answer) within $5\%$ of the key; a miss is any other answer\\
-MCQ grader; forced, refusal & the model that maps an answer to an option, shown the notebook, the question, the
-options and the answer; forced to choose, or offered BixBench's ``insufficient information'' option\\
-code-free grader & shown the question, the options and the answer, not the notebook; reply constrained to a letter\\
-letter-only grader & with the notebook, reply constrained to an analysis and a letter\\
+rank; bracketed, extreme, open side & the key's place among the sorted option values; a key with distractors on both
+sides, or on one only; the side of an extreme key with none\\
+published runs; current agents & BixBench's released v1.0 runs of gpt-4o and Claude 3.5 Sonnet; gpt-5.1, gpt-6-luna
+and DeepSeek-V4-Pro run through BixBench's ReAct agent\\
+configuration; run set & one agent model run one way: \emph{in text} (tool calls written as plain text) or
+\emph{ReAct} (BixBench's own agent); one configuration's runs from one seed, or one published model's runs with or
+without images\\
+answer-only grader & shown the question, the options and the answer, not the notebook; the model server restricts its
+reply to one option letter\\
+letter-only grader & BixBench's prompt with the notebook, the reply restricted to an analysis and then one letter, so
+that it cannot select no option\\
 within-$5\%$ option & a fifth option stating that none of the others is within $5\%$ of the answer\\
-nearest-option rule & selects the option $v$ minimising $d(a,v)=|a-v|/(|a|+|v|)$, with no model\\
-bracketed, extreme, open side & a key with distractors on both sides, or on one; the side of an extreme key with none\\
-$\Gamma$, $p_j$, $\beta$ & the most a grader of the options alone exceeds chance by; the share of keys at rank $j$;
-the share bracketed\\
-$R$, $P$, $U$; $P'$, $U'$ & the released options; a rewrite keeping the key's rank; one drawing it uniformly; the
-same keeping the released distractors' significant digits\\
-moved, unchanged, inward keys & keys $U$ moves from bracketed to extreme, leaves in their class, or moves from
-extreme to bracketed\\
-new seeds & two further runs of each text-protocol agent, made for the pre-specified test\\
-proximity weight $\lambda$ & $(1-\delta)(qk-1)/(k-1)$: $q$ the share of a grader's selections on misses that are the
+excess & a grading's score minus the share of answers within $5\%$ of the key, in points\\
+margin & accuracy above chance ($25\%$ with four options, $20\%$ with a refusal option), in points\\
+corrected score & a forced score $S$ corrected for guessing (formula scoring), $(S-1/k)/(1-1/k)$
+\citep{lordformula,frary}\\
+rank rule; $p_j$ & a rule that always selects one rank, ignoring the question; the share of keys at rank $j$\\
+nearest-option rule & selects, for a submitted number $a$, the option $v$ minimising $d(a,v)=|a-v|/(|a|+|v|)$, with
+no model\\
+$R$, $P$, $U$ & the released options; a rewrite preserving the key's rank; one drawing it uniformly\\
+moved, inward, unchanged keys & keys $U$ moves from bracketed to extreme, from extreme to bracketed, or leaves
+bracketed or extreme (possibly at another rank)\\
+$U-P$; points & the cost of hiding the rank: the share of answers a grading accepts through $U$ minus that through
+$P$; percentage points\\
+proximity weight $\lambda$ & how closely a grader follows the nearest option ($1$: always; $0$: no more often than any
+other option), $(1-\delta)(qk-1)/(k-1)$: $q$ the share of a grader's selections on misses that are the
 nearest option, $\delta$ the share of misses on which it selects none (Remark~\ref{rem:lambda})\\
-corrected score & a forced score $S$ corrected for guessing, $(S-1/k)/(1-1/k)$ \citep{lordformula,frary}\\
-uniform, middle designs & options whose key's rank is drawn from all $k$ ranks, or from the $k-2$ middle ones
-(Appendix~\ref{app:design})\\
-error-modelled options & distractors taken from other agents' wrong numbers on the same question\\
+sign-flip test & a test of a paired difference that flips the sign of each capsule's difference at random\\
+new seeds & two further runs of each in-text configuration, made for the pre-specified test\\
+$P'$, $U'$ & $P$ and $U$ with each new distractor written to the significant digits of the one it replaces\\
+$\Gamma$; $\beta$ & the largest margin over chance that a grader seeing only the options (not the question) can
+reach; the share of keys bracketed\\
+uniform, middle designs & options whose key's rank is drawn from all $k$ ranks, or from the $k-2$ middle ones, so kept
+off the extremes (Appendix~\ref{app:design})\\
+agents' errors & distractors taken from other agents' wrong numbers on the same question\\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \begin{table}[htbp]
 \centering\footnotesize
-\caption{Where our runs depart from BixBench's published agent. An episode cut short by a clock of ours was run
-again from the start, so no kept run was cut by one.}
+\caption{Where our runs depart from BixBench's own agent. A run cut short by one of our time limits was run
+again from the start, so no kept run was cut short.}
 \label{tab:settings}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
 setting & our runs\\
 \midrule
-tool calls & text protocol: tools called in text; published protocol: BixBench's ReAct agent, whose tool-selection
-call begins with the model family's own tool-call tag, as vLLM does not support the tool-choice setting it
-requests\\
-reasoning step & sends both Qwen families into a repetition loop that runs to the $4{,}096$-token reply limit (all
-$183$ of Qwen2.5-72B's reasoning turns that reach the limit and $2{,}090$ of Qwen3-30B-A3B's $2{,}276$); left as
-published\\
-network & none, where the published agent had it ($8$ of the published v1.0 notebooks read KEGG online or install a
-package from CRAN); a failed connection or name lookup appears in $6$ to $22$ of each configuration's $105$ with-data
+tool calls & in text: tool calls written as plain text; ReAct: BixBench's ReAct agent, whose tool-selection call
+we start with the model family's own tool-call marker, as vLLM does not support the setting that forces that call to
+return a tool\\
+reasoning step & BixBench's reasoning step, the free-text call before each tool call, sends both Qwen families into a
+repetition loop that runs to the $4{,}096$-token reply limit (all $183$ of Qwen2.5-72B's reasoning replies that reach
+the limit and $2{,}090$ of Qwen3-30B-A3B's $2{,}276$); left as BixBench wrote it\\
+network & none, where BixBench's agent had it ($8$ of the published runs' notebooks query the KEGG database online or
+install an R package from CRAN); a failed connection or DNS lookup appears in $6$ to $22$ of each configuration's $105$ with-data
 runs on the numeric questions, in $16$ of gpt-5.1's $210$ and in $12$ of gpt-6-luna's $105$, none of these last
 within $5\%$ of the key\\
-context & $32{,}768$ tokens for Qwen2.5-72B and Qwen3-235B-A22B, $65{,}536$ for the other open models, $272{,}000$
-for gpt-5.1 and gpt-6-luna, $128{,}000$ for DeepSeek-V4-Pro and Kimi-K3; beyond it the older turns are cut to a few
+context window & $32{,}768$ tokens for Qwen2.5-72B and Qwen3-235B-A22B, $65{,}536$ for the other open models, $272{,}000$
+for gpt-5.1 and gpt-6-luna, $128{,}000$ for DeepSeek-V4-Pro and Kimi-K3 (run, then left out;
+Appendix~\ref{app:replication}); beyond it the older turns are cut to a few
 hundred characters\\
 notebook shown & $36{,}000$ characters for the open models, $300{,}000$ for gpt-5.1 and gpt-6-luna, $200{,}000$ for
-DeepSeek-V4-Pro and Kimi-K3, the oldest outputs shortened first, and every output at $6{,}000$\\
-kernel & persistent: runs each new cell alone and interrupts it after $10$ minutes, where the published environment
-re-executes the notebook after every edit and attaches each plot as an image, which our agent never sees\\
-wall clock & an hour per episode; three hours for the new seeds and Qwen3-235B-A22B's later runs, and up to six for
+DeepSeek-V4-Pro and Kimi-K3, cut by shortening the oldest cell outputs first, each cell output capped at
+$6{,}000$\\
+code execution & a persistent Jupyter kernel (the process that runs the notebook's code), which runs each new cell
+alone and stops it after $10$ minutes, where BixBench's environment re-runs the whole notebook after every edit and attaches each plot as an image, which our agent never sees\\
+time limit & an hour per run; three hours for the new seeds and Qwen3-235B-A22B's later runs, and up to six for
 Qwen3-30B-A3B\\
-models & GLM-4.5-Air runs and grades with its thinking mode off; Qwen3-30B-A3B is its Instruct-2507 release\\
-MCQ grader & reply capped at $1{,}536$ tokens ($4{,}096$ for GLM-4.5-Air), notebook at $60{,}000$ characters
+models & GLM-4.5-Air runs and grades with its built-in reasoning mode off; Qwen3-30B-A3B is its Instruct-2507 release\\
+multiple-choice grader & reply capped at $1{,}536$ tokens ($4{,}096$ for GLM-4.5-Air), notebook at $60{,}000$ characters
 ($150{,}000$ for gemma-3-27b); every one of Qwen3-30B-A3B's own gradings that selects no option was cut at the cap
 before its answer, so gemma-3-27b grades its runs\\
 \bottomrule
@@ -519,11 +600,13 @@ before its answer, so gemma-3-27b grades its runs\\
 is BixBench's formatting of the question followed by its options as lettered lines (\texttt{A. \ldots}), shuffled
 twice per run; with the refusal option, the fifth option is BixBench's ``Insufficient information to answer the
 question''; with the within-$5\%$ option, it is ``None of the other options is within 5\% of the proposed answer''.
-A reply is read as the letter inside \texttt{<answer>} tags (the MCQ grader) or, for the code-free and within-$5\%$
-prompts, as the one letter the server allows. Every grading is at temperature $0$.
+A reply is read as the letter inside \texttt{<answer>} tags (the multiple-choice grader) or, for the answer-only and
+within-$5\%$ prompts, as the single letter to which the model server restricts the reply. The letter-only grader uses
+the multiple-choice grader's prompt with its reply restricted to an analysis and then one letter. Every grading is at
+temperature $0$.
 
 \smallskip
-\emph{MCQ grader.} BixBench's \texttt{MCQ\_EVAL\_PROMPT}, with the run's notebook:
+\emph{Multiple-choice grader.} BixBench's \texttt{MCQ\_EVAL\_PROMPT}, with the run's notebook:
 
 {\ttfamily\scriptsize First, carefully examine the following notebook:\par\smallskip
 <notebook>\par \{\{notebook\}\}\par </notebook>\par\smallskip
@@ -554,7 +637,7 @@ Remember:\par
 Please proceed with your analysis and answer selection.\par}
 
 \smallskip
-\emph{Code-free grader.} The question and the answer as above, without the notebook, and asked to map the answer
+\emph{Answer-only grader.} The question and the answer as above, without the notebook, and asked to map the answer
 rather than to answer from the notebook:
 
 {\ttfamily\scriptsize Consider the following multiple-choice question:\par\smallskip
@@ -564,7 +647,7 @@ This was an open response answer submitted to the question:\par\smallskip
 Map the proposed answer to the most appropriate answer option, and give the letter of that option.\par}
 
 \smallskip
-\emph{Within-$5\%$ option.} The code-free prompt with its last line replaced by:
+\emph{Within-$5\%$ option.} The answer-only prompt with its last line replaced by:
 
 {\ttfamily\scriptsize Map the proposed answer to the answer option whose value is within 5\% of it. If no option's
 value is within\par
@@ -579,24 +662,25 @@ judge given BixBench's \texttt{OPEN\_ENDED\_GRADING\_PROMPT} (question, target a
 \label{fig:gradingprompts}
 \end{figure}
 
-\subsection{The reference}
+\subsection{The tolerance}
 \label{app:reference}
 
-The half-widths of the keys BixBench v1.5 writes as ranges have quartiles $1.3$ and $11.5\%$. The v1.0 grader
-accepts $96\%$ of answers within $1\%$ of the key, $40\%$ at $2$ to $5\%$ and $3\%$ at $10$ to $20\%$: the tolerance
-it applies, whatever it was instructed, lies between $2$ and $10\%$. The v1.5 graders agree best with $1$ and $2\%$
-(Table~\ref{tab:tolerance}). The tolerance reads the last number in
-an answer, and treats an answer written as a fraction against a key written as a per cent as that fraction times
-$100$. The pre-specified test's rule reads a number only when the whole answer is one; on the moved keys no other
-reading gives a smaller contrast (Table~\ref{tab:extraction}).
+The keys BixBench v1.5 writes as ranges have half-widths with lower and upper quartiles of $1.3$ and $11.5\%$. BixBench
+v1.0's open-ended grader, whose verdicts were released with the runs, accepts $96\%$ of answers within $1\%$ of the
+key, $40\%$ at $2$ to $5\%$ and $3\%$ at $10$ to $20\%$: the tolerance it applies, regardless of its instructions,
+lies between $2$ and $10\%$. The v1.5 graders agree best with tolerances of $1$ and $2\%$ (Table~\ref{tab:tolerance}).
+The tolerance reads the last number in an answer and, when the key is a percentage and the answer a fraction ($0.42$
+for $42\%$), multiplies the answer by $100$. The pre-specified test's rule reads a number only when the whole answer
+is a single number; on the moved keys no other way of reading the number gives a smaller $U-P$
+(Table~\ref{tab:extraction}).
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{4pt}
-\caption{Tolerance rules against BixBench's own graders. \emph{v1.0}: the published grader's verdicts on
+\caption{Tolerance rules against BixBench's own graders. \emph{v1.0}: BixBench v1.0's open-ended grader's verdicts on
 gpt-4o's and Claude 3.5 Sonnet's $5{,}161$ with-data answers to numeric questions, with the answers it accepts
 that a rule rejects, and the reverse; \emph{v1.5}: the v1.5 graders' verdicts on the seven configurations'
 $735$ with-data answers to numeric questions. \emph{Key precision}: the answer, rounded to the precision at
-which the key is written, equals the key.}
+which the key is written, equals the key. $\kappa$: Cohen's chance-corrected agreement.}
 \label{tab:tolerance}
 \begin{tabular}{lrrrr}
 \toprule
@@ -620,10 +704,9 @@ key precision & $0.74$ & $241$ & $33$ & $0.78$\\
 numeric questions, and the share, in per cent, that are empty, contain no number, are a number (the input of
 the pre-specified test's rule), contain one number within text, or contain several. \emph{Bottom}: the rule's
 $U-P$ in points, on the moved keys and over all numeric items, extracted as in the pre-specified test
-(\emph{whole}), from the last number in the answer as the tolerance does (\emph{last}), from the last number on
-the answers that contain exactly one (\emph{one}), and as in the test without the keys that are zero or
-negative (\emph{positive}); configurations pooled as in the test, with plain $95\%$ cluster intervals over
-capsules.}
+(\emph{whole}), from the last number in the answer as the tolerance does (\emph{last}), on only the answers that
+contain exactly one number (\emph{one}), and as in the test without the keys that are zero or negative
+(\emph{positive}); configurations pooled as in the test.}
 \label{tab:extraction}
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -653,62 +736,70 @@ v1.5, Qwen3-235B-A22B & $+4.7$ & $+4.7$ & $+8.3$ & $+5.1$ & $+1.2$ & $+1.2$\\
 \label{app:options}
 
 $P$ and $U$ keep the question and the key and replace the three distractors by one generator, which is asked for a
-rank for the key: its released rank for $P$, and a rank drawn uniformly from the four for $U$. Neither looks at the
-question, the runs or any grading. When the four released values share the key's sign, the $j$-th new distractor on
-each side of the key $y$, counting outward, lies at $|y|(1+sju)$ or $|y|/(1+sju)$, where $u$ is drawn uniformly from
-$[0.6,1.4]$ and $s$ is the released distractors' mean relative distance from the key, at least $0.05$; otherwise at
-$y\pm Sju$, with $S$ their mean absolute distance. Each new value is written in the notation of the distractor it
+rank for the key: its released rank for $P$, and a rank drawn uniformly from the four for $U$. The generator never
+sees the question, the runs or any grading. When the four released values share the key's sign, the $j$-th new
+distractor on each side of the key $y$, counting outward, lies at $y(1+sju)$ or $y/(1+sju)$, where $u$ is drawn
+uniformly from $[0.6,1.4]$ and $s$ is the released distractors' mean relative distance from the key (raised to $0.05$
+if smaller); otherwise at $y\pm Dju$, with $D$ their mean absolute distance. Each new value is written in the notation of the distractor it
 replaces. A draw that makes two options equal, changes a value's sign or moves the key off its rank is redrawn with a
 wider spread, up to $24$ times; failing that, $U$ takes another rank ($3$ of v1.5's $105$ items and $10$ of v1.0's
 $159$) and $P$ leaves the item out ($1$ of v1.0's). Each rewrite is one draw at a fixed seed. The generator's nearest
 distractor lies farther from the key than in $R$ (a median $d$ of $0.185$ in $P$ and $0.188$ in $U$, against
 $0.142$), so $P-R$ is not zero; $U-P$, which shares the redrawing, isolates the rank.
 
-The digit-matched $P'$ and $U'$ also keep the significant digits of the distractor each new value replaces, assigned
-in order of size, so that the key keeps its standing among the options' digits: the rule that selects the option with
-the fewest significant digits is correct on $25.3$ and $25.5\%$ of v1.5's $P'$ and $U'$, against $25.0\%$ on $R$ and
-$31.7$ and $31.9\%$ on $P$ and $U$. Through $P'$ and $U'$ the rule's $U-P$ moves by at most $2.9$ points on the moved
-keys, the unchanged keys and all items of every set of runs but DeepSeek-V4-Pro's, whose gain rests on two to four
-answers and falls to zero.
+In $P$ and $U$ the key stands out by its significant digits. The digit-matched $P'$ and $U'$ remove this: each new
+value also takes the significant digits of the distractor it replaces, assigned in order of size, and a rule that
+selects the option with the fewest significant digits is then correct on $25.3$ and $25.5\%$ of v1.5's $P'$ and $U'$,
+against $25.0\%$ on $R$ and $31.7$ and $31.9\%$ on $P$ and $U$. For every set of runs but DeepSeek-V4-Pro's, the
+rule's $U'-P'$ lies within $2.9$ points of its $U-P$ on the moved keys, the unchanged keys and all items;
+DeepSeek-V4-Pro's cost rests on two to four answers and falls to zero.
 
 \subsection{Statistics}
 \label{app:stats}
 
-Every interval is a percentile bootstrap over capsules, read at the nominal level whose coverage reaches $95\%$ on
-those capsules. For a margin or a difference over a whole file, the level comes from files simulated with each
-condition's own capsule sizes and between-capsule spread (a beta-binomial matched by moments): BixBench's $46$
-capsules, of unequal size, are worth $29.6$ by Kish's effective count, and its margins and differences are read at
-$96.75$ and $96.0\%$. For a paired difference per question, and for any subset of a file, a double bootstrap sets the
-level: the lowest, on a grid from $80$ to $99.995\%$, at which the intervals of at least $2{,}000$ resamples of the
+Every interval is a percentile bootstrap over capsules: the capsules are resampled with replacement and the interval
+is read from the percentiles of the resampled estimates. With few capsules of unequal size a nominal $95\%$ interval
+covers the true value less than $95\%$ of the time, so each interval not called \emph{plain} is read at the nominal
+level at which it does; a plain $95\%$ interval is the uncorrected range from the $2.5$th to the $97.5$th percentile.
+For a margin or a difference over all of a release's items, the level comes from data simulated with each condition's
+own capsule sizes and spread of accuracy between capsules (a beta-binomial distribution matched to the observed mean
+and variance): v1.5's $46$ capsules, of unequal size, carry as much information as $29.6$ equal ones (Kish's effective
+sample size), and its margins and differences are read at $96.75$ and $96.0\%$. For a paired difference per question,
+and for any subset of a release's items, a nested resampling (a double bootstrap) sets the level: the lowest, on a grid from $80$ to $99.995\%$, at which the intervals of at least $2{,}000$ resamples of the
 capsules hold the full sample's estimate $95\%$ of the time. Where no level on the grid does, the estimate is given
-without an interval and marked $^{\ddagger}$. When a paired difference is exactly zero on most capsules, an end of the
-interval is set to zero whenever a resample of only those capsules is likelier than the tail. Paired contrasts are
-also tested by flipping the signs of whole capsules, over every pattern up to $20$ capsules and $200{,}000$ random
-patterns beyond; the test assumes only that each capsule's deviation is symmetric, and inverted, it covered the truth
-in $197$ of $200$ simulated files shaped like the moved keys.
+without an interval and marked $^{\ddagger}$. When a paired difference is exactly zero on most capsules, a resample
+can draw only those capsules and give exactly zero; when that is likelier than the interval's tail, that end of the
+interval is set to zero, which is why several intervals end at $+0.0$. The sign-flip test compares a paired
+difference's mean with the means obtained by flipping the sign of each capsule's difference at random, over every
+pattern up to $20$ capsules and $200{,}000$ random patterns beyond; it assumes only that each capsule's difference is
+symmetric about the true value, and, turned into an interval, it contained the true value in $197$ of $200$ simulated
+data sets built like the moved keys.
 
-Ten headline findings are treated as one family (Table~\ref{tab:claims}), each read at the level that attains
-$1-0.05/10$ coverage on its own file, so that the surviving claims hold jointly; a finding that is a conjunction is
-tested as an intersection--union test, every part of which must hold. Eight of the ten survive. The family was chosen
-after the results were known, so the correction controls multiplicity within it but not the choice of it. The
-pre-specified test is outside the family.
+We correct ten headline findings jointly (Table~\ref{tab:claims}): each is read at the level that attains
+$1-0.05/10=99.5\%$ coverage on its own data (a Bonferroni correction), so that the findings that survive hold
+together, and a finding with several parts survives only if every part does. Eight of the ten survive. We chose the
+ten after seeing the results, so the correction guards against chance among them but not against how they were
+chosen. The pre-specified test is not among them.
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{4pt}
-\caption{The paper's ten headline findings, corrected jointly: points above the stated reference, with the
-interval at the level that attains $95\%$ coverage, as the paper states it elsewhere, and the interval at
-the level that attains $1-0.05/10$ coverage on each file's own clusters, calibrated by simulation or, for the paired
-differences, by the double bootstrap (Appendix~\ref{app:stats}). The rank claim must fall below a rank-following
-model's value for both models; the excess over the tolerance and the acceptance of misses nearest the key must hold
-for both published models, the current agents' excess for all three agents, and the graders' gain on the published
-runs for all three graders. At the nominal $95\%$ every finding holds. $^{\times}$Does not hold at the family level.}
+\caption{The paper's ten headline findings, corrected jointly: points above the stated comparison, with the
+interval at the level that attains $95\%$ coverage, as the paper states it elsewhere, and the jointly corrected
+interval (\emph{joint}), at the level that attains $1-0.05/10$ coverage on each data set's own capsules, calibrated by
+simulation or, for the paired differences, by the double bootstrap (Appendix~\ref{app:stats}). Rows $1$, $2$, $3$,
+$4$--$5$, $6$--$7$, $8$--$9$, $10$, $11$--$13$, $14$ and $15$--$17$ are the ten findings. Rows $4$--$5$ must fall below
+the value a model would show if its whole margin came from choosing the second-smallest option
+(Table~\ref{tab:attribution}), for both models; the excess over the tolerance and the acceptance of misses nearest the
+key must hold for both published models, the current agents' excess for all three agents, and the graders' gain on the
+published runs for all three graders. With each finding's own $95\%$ interval every finding holds. $^{\times}$Does not
+hold once the ten are corrected jointly.}
 \label{tab:claims}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xlrrr@{}}
 \toprule
-Finding & File, reference & Estimate & $95\%$ & Corrected\\
+Finding & Data; compared with & Estimate & $95\%$ & Joint\\
 \midrule
 A rule that ignores the question selects the second-smallest option & v1.5, $105$ numeric; chance & $+26.4$ & $[+14.0,+38.6]$ & $[+9.4,+42.8]$\\
-BixBench's released forced-choice run, gpt-4o & v1.5, $205$; chance & $+11.1$ & $[+3.8,+18.8]$ & $[+0.4,+22.8]$\\
+BixBench's released forced-choice run without the data, gpt-4o & v1.5, $205$; chance & $+11.1$ & $[+3.8,+18.8]$ & $[+0.4,+22.8]$\\
 The same, Claude 3.5 Sonnet & v1.5, $205$; chance & $+9.1$ & $[+2.5,+16.4]$ & $[-0.2,+20.1]$$^{\times}$\\
 Accuracy where the key is second-smallest minus elsewhere, gpt-4o & v1.5, $105$ numeric; below $+45.9$ & $-7.8$ & $[-27.1,+12.9]$ & $[-34.0,+20.5]$\\
 The same, Claude 3.5 Sonnet & v1.5, $105$ numeric; below $+35.1$ & $-13.4$ & $[-36.2,+11.3]$ & $[-43.1,+20.7]$\\
@@ -738,8 +829,9 @@ grader that sees only $V$ (neither the question nor the data) can exceed chance 
 \Gamma \;=\; \mathbb{E}_V\Big[\max_{v\in V}\Pr(Y=v\mid V)\Big]-\tfrac1k ,
 \label{eq:gamma}
 \end{equation}
-the population value of the choices-only baseline \citep{choicesonly}. $\Gamma$ depends on the law that generated
-the options, so it cannot be computed for a released file; the rank rules of Section~\ref{sec:theory} bound it from
+the best margin that a choices-only baseline \citep{choicesonly}, which answers from the options alone, could reach
+on unlimited items generated the same way.
+$\Gamma$ depends on the process that generated the options, so it cannot be computed for a released dataset; the rank rules of Section~\ref{sec:theory} bound it from
 below. A grader's margin over chance shows that the options reveal the key, but chance performance does not show that
 they conceal it:
 
@@ -750,22 +842,22 @@ that sees only the options is correct with probability exactly $\tfrac1k$, whate
 it uses.
 \end{lemma}
 
-\paragraph{Lemma~\ref{lem:flat}.} $\max_{v\in V}\Pr(Y=v\mid V)\ge\frac1k\sum_{v\in
-V}\Pr(Y=v\mid V)=\frac1k$ pointwise, so $\Gamma\ge0$ always and $\Gamma=0$ forces
-$\max_{v}\Pr(Y=v\mid V)=\frac1k$ almost surely, which for $k$ non-negative numbers summing to one
-means all of them equal $\frac1k$. Conversely a flat posterior makes the maximum $\frac1k$ on every
-$V$. A grader that sees only $V$ picks $\pi(V)\in V$ by any rule and any randomness, and
+\paragraph{Proof of Lemma~\ref{lem:flat}.} $\max_{v\in V}\Pr(Y=v\mid V)\ge\frac1k\sum_{v\in
+V}\Pr(Y=v\mid V)=\frac1k$ for every $V$, so $\Gamma\ge0$ always and $\Gamma=0$ forces
+$\max_{v}\Pr(Y=v\mid V)=\frac1k$ with probability one, which for $k$ non-negative numbers summing to one
+means all of them equal $\frac1k$. Conversely, if every option is equally likely to be the key given $V$, the maximum
+is $\frac1k$ on every $V$. A grader that sees only $V$ picks $\pi(V)\in V$ by any rule and any randomness, and
 $\Pr[\pi(V)=Y]=\mathbb{E}_V\Pr(Y=\pi(V)\mid V)=\frac1k$; the statistic it uses never enters.
 
 \paragraph{The rank rule's floor.} A bracketed key has one of the $k-2$ middle ranks, so if a share $\beta$ of a
 file's keys are bracketed, $\sum_{j=2}^{k-1}p_j=\beta$ and the largest of those $k-2$ terms is at least their mean,
 $\beta/(k-2)$. The rule that always selects that rank uses only $V$ and scores $p_j$, and no rule using
 only $V$ scores more than $\mathbb{E}_V[\max_v\Pr(Y=v\mid V)]$, so $\Gamma\ge\max_jp_j-\tfrac1k\ge
-\beta/(k-2)-\tfrac1k$ (Table~\ref{tab:survey} gives both bounds for nine files). A rank uniform over the $k-2$ middle
+\beta/(k-2)-\tfrac1k$ (Table~\ref{tab:survey} gives both bounds for nine datasets). A rank uniform over the $k-2$ middle
 ranks makes $p_j=1/(k-2)$ for each middle $j$, so $\Gamma\ge1/(k-2)-1/k=2/(k(k-2))$; a rank uniform over all $k$
 makes every $p_j=1/k$ and leaves $2/k$ of the keys at the extremes.
 
-\paragraph{Observation~\ref{obs:bracket}.} For $a,v$ of the same sign write $r=|a|/|v|$: $d(a,v)=|r-1|/(r+1)=
+\paragraph{Proof of Observation~\ref{obs:bracket}.} For $a,v$ of the same sign write $r=|a|/|v|$: $d(a,v)=|r-1|/(r+1)=
 \tanh(|\log r|/2)$, increasing in $|\log|a|-\log|v||$, and $d(a,v)=1$ when the signs differ or one of them is
 zero. Let the key $y\ne0$ be the largest in magnitude among the options of its sign, and $a$ an answer of that
 sign with $|a|>|y|$. Every other option $v$ of that sign has $|v|<|y|<|a|$, so $\log|y|$ lies between $\log|v|$
@@ -776,12 +868,13 @@ key's sign, $d(a,y)<d(a,v)$ exactly when $\log|a|$ lies on $y$'s side of the mid
 logarithm of the geometric mean $\sqrt{|y||v|}$. With the key's nearest options of its sign at magnitudes
 $|y|/\rho_-$ and $|y|\rho_+$, a miss of its sign is therefore nearest the key exactly when
 $|y|/\sqrt{\rho_-}<|a|<|y|\sqrt{\rho_+}$. An extreme key has no such neighbour on its open side, and every answer of
-its sign beyond it is nearest it. The argument holds for any distance that increases with separation on the line. For
-the rule a key is extreme when it is the smallest or largest in magnitude among the options of its sign, which differs
-from its rank among the values where zero or a negative option lies below a positive key ($2$ of v1.5's $105$
-released keys, $2$ of v1.0's $159$) and where the key is zero ($4$ and $2$), at distance $1$ from every nonzero
-answer. The tests use the rank among the values, as specified, and score an answer at distance $1$ from every option
-as a tie split evenly, the expected score of a random tie-break.
+its sign beyond it is nearest it. The part on extreme keys holds for any distance that grows with the gap between
+two numbers; the bounds in $\sqrt{\rho_\pm}$ are specific to $d$. Under $d$, a key is extreme when it is the smallest
+or largest in magnitude among the options of its sign. This differs from its rank among all the values when zero or a
+negative option lies below a positive key ($2$ of v1.5's $105$ released keys, $2$ of v1.0's $159$) and when the key is
+zero ($4$ and $2$), since zero is at distance $1$ from every nonzero answer. The pre-specified test uses the key's rank
+among all the values, as its plan specified, and scores an answer at distance $1$ from every option as a tie among all
+the options, worth the expected score of a random tie-break.
 
 \paragraph{How far a grader follows the nearest option.} Graders follow the nearest option only in part.
 
@@ -796,27 +889,27 @@ raises the share it accepts by $\lambda\Delta$, where $\lambda=(1-\delta)(qk-1)/
 
 A grader of this form bears the rule's cost in proportion to its \emph{proximity weight} $\lambda$: in full if it
 always selects the nearest option, not at all if it selects the nearest no more often than any other ($q=1/k$),
-and less as it refuses more.
+and less the more often it selects no option.
 
-\paragraph{Remark~\ref{rem:lambda}.} On a miss whose number has a single nearest option the grader accepts with
+\paragraph{Derivation of Remark~\ref{rem:lambda}.} On a miss whose number has a single nearest option the grader accepts with
 probability $(1-\delta)q$ if that option is the key and $(1-\delta)(1-q)/(k-1)$ if it is not. A change of options
 that moves a share $\Delta$ of these misses from the second case to the first raises acceptance by
 $\Delta(1-\delta)\big(q-(1-q)/(k-1)\big)=\lambda\Delta$; misses whose nearest option is the key under both option
 sets, or under neither, contribute nothing. We measure $q$ as the share of a grading's selections on misses that
 are the nearest option to the number the tolerance reads, and $\delta$ as the share of its gradings of those misses
 that select none, every option set pooled; ties in $d$ are broken by $|a-v|$. Real graders are not of this form, so
-we use $\lambda$ to order graders: its predictions of the moved keys' gain (Table~\ref{tab:variants}) err by $3.9$
-points on average over the $42$ gradings that also graded those keys, and the observed gain lies within the interval
-of its prediction for $18$ of the $42$.
+we use $\lambda$ to order graders. Estimated from the unchanged and inward keys alone, $\lambda$ predicts the moved
+keys' cost with an error of $3.9$ points on average over the $42$ gradings that also graded those keys, and the
+observed cost lies within its prediction's interval for $18$ of the $42$; Table~\ref{tab:variants}'s \emph{predicted}
+column uses $\lambda$ from all keys.
 
-\paragraph{Exchangeability is sufficient and strictly stronger.} If the $k$-tuple
-$(\text{key},\text{distractor}_1,\dots,\text{distractor}_{k-1})$ is exchangeable, then the key is
-equally likely to be any element of $V$, so $\Gamma=0$. The converse fails. Draw a $k$-subset $V$
-from any law, let the key be uniform on $V$, and list the remaining $k-1$ values in increasing
-order. The posterior is flat and $\Gamma=0$, while the permutation that swaps two distractor slots
-sends the law to one supported where the order is reversed, a set of probability zero. The presentation
-order is therefore not what has to be randomised, and randomising it, as BixBench does, does not give
-$\Gamma=0$.
+\paragraph{Shuffling the displayed order does not hide the rank.} If the $k$ values
+$(\text{key},\text{distractor}_1,\dots,\text{distractor}_{k-1})$ are exchangeable, that is, their joint distribution
+is unchanged by any reordering, then the key is equally likely to be any option, so $\Gamma=0$. The converse fails:
+draw any $k$ values, make one of them the key at random, and list the other $k-1$ in increasing order. Every option is
+then equally likely to be the key and $\Gamma=0$, yet swapping two distractors gives orders that never occur, so the
+values are not exchangeable. What must be random is which value is the key, not the order in which the options are
+shown, and shuffling that order, as BixBench does, does not give $\Gamma=0$.
 
 \FloatBarrier
 \section{Results in detail}
@@ -833,14 +926,13 @@ open-ended ones by more than a random choice on every miss would add.
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{2pt}
-\caption{\textbf{The forced-choice excess against other references.} BixBench's grading of the released options
-minus each reference, in points, on the with-data runs of Table~\ref{tab:released}: the $5\%$ tolerance on the
+\caption{\textbf{The forced-choice excess against other references.} BixBench's multiple-choice grading (its
+prompt, with the notebook) of the released options minus each reference, in points, on the with-data runs of Table~\ref{tab:released}: the $5\%$ tolerance on the
 last number in the answer (Table~\ref{tab:released}'s reference and interval);
 BixBench's own open-ended grading of the same runs (the v1.0 grader on the published runs, the v1.5 graders on
 the seven configurations), which reads the whole answer; the $5\%$ tolerance on any number in the answer; the
 tolerance without the items whose key is a p-value ($19$ of v1.0's $159$, $8$ of v1.5's $105$); and the
-tolerance with those keys graded within a factor of ten. Intervals over capsules at the level the double bootstrap
-finds attains $95\%$ coverage, as in Table~\ref{tab:released}.}
+tolerance with those keys graded within a factor of ten. Intervals as in Table~\ref{tab:released}.}
 \label{tab:reference}
 \resizebox{\linewidth}{!}{\begin{tabular}{llrrrrr}
 \toprule
@@ -863,7 +955,7 @@ open-ended grade of the same runs, in points, on the numeric questions, the othe
 that accepts every correct answer and chooses at random among the four options on every miss would add (in
 parentheses: a quarter of the misses) and a plain $95\%$ interval over capsules on all questions.
 \emph{Published}: BixBench's own forced grades, with the notebook; \emph{own model}: each configuration's own
-model, with the notebook; \emph{code-free} as in Table~\ref{tab:readers2}; \emph{refused}: the share of
+model, with the notebook; \emph{answer-only} as in Table~\ref{tab:glossary}; \emph{refused}: the share of
 gradings selecting the refusal option, in per cent. Each question's runs are averaged within a model, then the
 models. v1.0: $296$ questions, $159$ of them numeric ($289$ and $158$ with gpt-4o's runs); v1.5: $205$, $105$
 numeric.}
@@ -873,46 +965,46 @@ numeric.}
 runs & grading & numeric & other & all & refused\\
 \midrule
 v1.0, gpt-4o & published & $+20.4$ {\scriptsize$(+22.4)$} & $+29.0$ {\scriptsize$(+21.9)$} & $+24.3$ {\scriptsize$[+21.2,+27.5]$} {\scriptsize$(+22.2)$} & --\\
- & gpt-4o, code-free & $+24.2$ {\scriptsize$(+22.4)$} & $+30.8$ {\scriptsize$(+21.9)$} & $+27.2$ {\scriptsize$[+24.0,+30.6]$} {\scriptsize$(+22.2)$} & --\\
- & gemma-3-27b, code-free & $+23.1$ {\scriptsize$(+22.4)$} & $+27.2$ {\scriptsize$(+21.9)$} & $+25.0$ {\scriptsize$[+21.5,+28.6]$} {\scriptsize$(+22.2)$} & --\\
- & Qwen2.5-72B, code-free & $+25.2$ {\scriptsize$(+22.4)$} & $+32.2$ {\scriptsize$(+21.9)$} & $+28.4$ {\scriptsize$[+24.4,+32.4]$} {\scriptsize$(+22.2)$} & --\\
- & Llama-3.3-70B, code-free & $+27.3$ {\scriptsize$(+22.4)$} & $+28.2$ {\scriptsize$(+21.9)$} & $+27.7$ {\scriptsize$[+24.2,+31.3]$} {\scriptsize$(+22.2)$} & --\\
- & gpt-4o, code-free, refusal & $+2.0$ {\scriptsize$(+22.4)$} & $+8.1$ {\scriptsize$(+21.9)$} & $+4.8$ {\scriptsize$[+2.9,+6.8]$} {\scriptsize$(+22.2)$} & $74$\\
- & gemma-3-27b, code-free, refusal & $+3.9$ {\scriptsize$(+22.4)$} & $+9.0$ {\scriptsize$(+21.9)$} & $+6.2$ {\scriptsize$[+4.2,+8.4]$} {\scriptsize$(+22.2)$} & $69$\\
+ & gpt-4o, answer-only & $+24.2$ {\scriptsize$(+22.4)$} & $+30.8$ {\scriptsize$(+21.9)$} & $+27.2$ {\scriptsize$[+24.0,+30.6]$} {\scriptsize$(+22.2)$} & --\\
+ & gemma-3-27b, answer-only & $+23.1$ {\scriptsize$(+22.4)$} & $+27.2$ {\scriptsize$(+21.9)$} & $+25.0$ {\scriptsize$[+21.5,+28.6]$} {\scriptsize$(+22.2)$} & --\\
+ & Qwen2.5-72B, answer-only & $+25.2$ {\scriptsize$(+22.4)$} & $+32.2$ {\scriptsize$(+21.9)$} & $+28.4$ {\scriptsize$[+24.4,+32.4]$} {\scriptsize$(+22.2)$} & --\\
+ & Llama-3.3-70B, answer-only & $+27.3$ {\scriptsize$(+22.4)$} & $+28.2$ {\scriptsize$(+21.9)$} & $+27.7$ {\scriptsize$[+24.2,+31.3]$} {\scriptsize$(+22.2)$} & --\\
+ & gpt-4o, answer-only, refusal & $+2.0$ {\scriptsize$(+22.4)$} & $+8.1$ {\scriptsize$(+21.9)$} & $+4.8$ {\scriptsize$[+2.9,+6.8]$} {\scriptsize$(+22.2)$} & $74$\\
+ & gemma-3-27b, answer-only, refusal & $+3.9$ {\scriptsize$(+22.4)$} & $+9.0$ {\scriptsize$(+21.9)$} & $+6.2$ {\scriptsize$[+4.2,+8.4]$} {\scriptsize$(+22.2)$} & $69$\\
 v1.0, Claude 3.5 Sonnet & published & $+21.7$ {\scriptsize$(+21.3)$} & $+20.2$ {\scriptsize$(+19.4)$} & $+21.0$ {\scriptsize$[+18.6,+23.6]$} {\scriptsize$(+20.4)$} & --\\
- & gpt-4o, code-free & $+21.4$ {\scriptsize$(+21.3)$} & $+21.9$ {\scriptsize$(+19.4)$} & $+21.6$ {\scriptsize$[+19.1,+24.3]$} {\scriptsize$(+20.4)$} & --\\
- & gemma-3-27b, code-free & $+20.7$ {\scriptsize$(+21.3)$} & $+19.2$ {\scriptsize$(+19.4)$} & $+20.0$ {\scriptsize$[+17.2,+23.1]$} {\scriptsize$(+20.4)$} & --\\
- & Qwen2.5-72B, code-free & $+23.6$ {\scriptsize$(+21.3)$} & $+24.0$ {\scriptsize$(+19.4)$} & $+23.8$ {\scriptsize$[+20.4,+27.2]$} {\scriptsize$(+20.4)$} & --\\
- & Llama-3.3-70B, code-free & $+23.6$ {\scriptsize$(+21.3)$} & $+19.9$ {\scriptsize$(+19.4)$} & $+21.9$ {\scriptsize$[+18.8,+25.1]$} {\scriptsize$(+20.4)$} & --\\
- & gpt-4o, code-free, refusal & $+0.4$ {\scriptsize$(+21.3)$} & $+5.4$ {\scriptsize$(+19.4)$} & $+2.8$ {\scriptsize$[+1.2,+4.4]$} {\scriptsize$(+20.4)$} & $63$\\
- & gemma-3-27b, code-free, refusal & $+3.8$ {\scriptsize$(+21.3)$} & $+7.8$ {\scriptsize$(+19.4)$} & $+5.6$ {\scriptsize$[+3.9,+7.6]$} {\scriptsize$(+20.4)$} & $54$\\
+ & gpt-4o, answer-only & $+21.4$ {\scriptsize$(+21.3)$} & $+21.9$ {\scriptsize$(+19.4)$} & $+21.6$ {\scriptsize$[+19.1,+24.3]$} {\scriptsize$(+20.4)$} & --\\
+ & gemma-3-27b, answer-only & $+20.7$ {\scriptsize$(+21.3)$} & $+19.2$ {\scriptsize$(+19.4)$} & $+20.0$ {\scriptsize$[+17.2,+23.1]$} {\scriptsize$(+20.4)$} & --\\
+ & Qwen2.5-72B, answer-only & $+23.6$ {\scriptsize$(+21.3)$} & $+24.0$ {\scriptsize$(+19.4)$} & $+23.8$ {\scriptsize$[+20.4,+27.2]$} {\scriptsize$(+20.4)$} & --\\
+ & Llama-3.3-70B, answer-only & $+23.6$ {\scriptsize$(+21.3)$} & $+19.9$ {\scriptsize$(+19.4)$} & $+21.9$ {\scriptsize$[+18.8,+25.1]$} {\scriptsize$(+20.4)$} & --\\
+ & gpt-4o, answer-only, refusal & $+0.4$ {\scriptsize$(+21.3)$} & $+5.4$ {\scriptsize$(+19.4)$} & $+2.8$ {\scriptsize$[+1.2,+4.4]$} {\scriptsize$(+20.4)$} & $63$\\
+ & gemma-3-27b, answer-only, refusal & $+3.8$ {\scriptsize$(+21.3)$} & $+7.8$ {\scriptsize$(+19.4)$} & $+5.6$ {\scriptsize$[+3.9,+7.6]$} {\scriptsize$(+20.4)$} & $54$\\
 v1.5, seven configurations & own model & $+14.1$ {\scriptsize$(+22.4)$} & $+16.2$ {\scriptsize$(+20.8)$} & $+15.1$ {\scriptsize$[+12.9,+17.4]$} {\scriptsize$(+21.6)$} & --\\
- & gpt-4o, code-free & $+15.6$ {\scriptsize$(+22.4)$} & $+19.0$ {\scriptsize$(+20.8)$} & $+17.3$ {\scriptsize$[+14.5,+20.1]$} {\scriptsize$(+21.6)$} & --\\
- & gemma-3-27b, code-free & $+12.8$ {\scriptsize$(+22.4)$} & $+18.9$ {\scriptsize$(+20.8)$} & $+15.7$ {\scriptsize$[+13.4,+18.1]$} {\scriptsize$(+21.6)$} & --\\
- & Qwen2.5-72B, code-free & $+17.6$ {\scriptsize$(+22.4)$} & $+17.3$ {\scriptsize$(+20.8)$} & $+17.4$ {\scriptsize$[+14.1,+20.9]$} {\scriptsize$(+21.6)$} & --\\
- & Llama-3.3-70B, code-free & $+12.9$ {\scriptsize$(+22.4)$} & $+16.9$ {\scriptsize$(+20.8)$} & $+14.8$ {\scriptsize$[+12.1,+17.7]$} {\scriptsize$(+21.6)$} & --\\
- & gpt-4o, code-free, refusal & $-0.5$ {\scriptsize$(+22.4)$} & $+3.8$ {\scriptsize$(+20.8)$} & $+1.6$ {\scriptsize$[+0.1,+3.1]$} {\scriptsize$(+21.6)$} & $70$\\
- & gemma-3-27b, code-free, refusal & $+0.7$ {\scriptsize$(+22.4)$} & $+5.7$ {\scriptsize$(+20.8)$} & $+3.2$ {\scriptsize$[+1.6,+4.6]$} {\scriptsize$(+21.6)$} & $61$\\
+ & gpt-4o, answer-only & $+15.6$ {\scriptsize$(+22.4)$} & $+19.0$ {\scriptsize$(+20.8)$} & $+17.3$ {\scriptsize$[+14.5,+20.1]$} {\scriptsize$(+21.6)$} & --\\
+ & gemma-3-27b, answer-only & $+12.8$ {\scriptsize$(+22.4)$} & $+18.9$ {\scriptsize$(+20.8)$} & $+15.7$ {\scriptsize$[+13.4,+18.1]$} {\scriptsize$(+21.6)$} & --\\
+ & Qwen2.5-72B, answer-only & $+17.6$ {\scriptsize$(+22.4)$} & $+17.3$ {\scriptsize$(+20.8)$} & $+17.4$ {\scriptsize$[+14.1,+20.9]$} {\scriptsize$(+21.6)$} & --\\
+ & Llama-3.3-70B, answer-only & $+12.9$ {\scriptsize$(+22.4)$} & $+16.9$ {\scriptsize$(+20.8)$} & $+14.8$ {\scriptsize$[+12.1,+17.7]$} {\scriptsize$(+21.6)$} & --\\
+ & gpt-4o, answer-only, refusal & $-0.5$ {\scriptsize$(+22.4)$} & $+3.8$ {\scriptsize$(+20.8)$} & $+1.6$ {\scriptsize$[+0.1,+3.1]$} {\scriptsize$(+21.6)$} & $70$\\
+ & gemma-3-27b, answer-only, refusal & $+0.7$ {\scriptsize$(+22.4)$} & $+5.7$ {\scriptsize$(+20.8)$} & $+3.2$ {\scriptsize$[+1.6,+4.6]$} {\scriptsize$(+21.6)$} & $61$\\
 v1.5, gpt-5.1 & gpt-4o & $+15.2$ {\scriptsize$(+19.4)$} & $+15.2$ {\scriptsize$(+17.6)$} & $+15.2$ {\scriptsize$[+11.5,+19.2]$} {\scriptsize$(+18.5)$} & --\\
- & gpt-4o, code-free & $+23.8$ {\scriptsize$(+19.4)$} & $+19.5$ {\scriptsize$(+17.6)$} & $+21.7$ {\scriptsize$[+16.3,+27.6]$} {\scriptsize$(+18.5)$} & --\\
- & gemma-3-27b, code-free & $+23.8$ {\scriptsize$(+19.4)$} & $+18.8$ {\scriptsize$(+17.6)$} & $+21.3$ {\scriptsize$[+16.6,+26.5]$} {\scriptsize$(+18.5)$} & --\\
- & gpt-4o, code-free, refusal & $+5.7$ {\scriptsize$(+19.4)$} & $+2.0$ {\scriptsize$(+17.6)$} & $+3.9$ {\scriptsize$[+0.8,+7.4]$} {\scriptsize$(+18.5)$} & $61$\\
- & gemma-3-27b, code-free, refusal & $+8.3$ {\scriptsize$(+19.4)$} & $+4.0$ {\scriptsize$(+17.6)$} & $+6.2$ {\scriptsize$[+2.4,+10.6]$} {\scriptsize$(+18.5)$} & $53$\\
+ & gpt-4o, answer-only & $+23.8$ {\scriptsize$(+19.4)$} & $+19.5$ {\scriptsize$(+17.6)$} & $+21.7$ {\scriptsize$[+16.3,+27.6]$} {\scriptsize$(+18.5)$} & --\\
+ & gemma-3-27b, answer-only & $+23.8$ {\scriptsize$(+19.4)$} & $+18.8$ {\scriptsize$(+17.6)$} & $+21.3$ {\scriptsize$[+16.6,+26.5]$} {\scriptsize$(+18.5)$} & --\\
+ & gpt-4o, answer-only, refusal & $+5.7$ {\scriptsize$(+19.4)$} & $+2.0$ {\scriptsize$(+17.6)$} & $+3.9$ {\scriptsize$[+0.8,+7.4]$} {\scriptsize$(+18.5)$} & $61$\\
+ & gemma-3-27b, answer-only, refusal & $+8.3$ {\scriptsize$(+19.4)$} & $+4.0$ {\scriptsize$(+17.6)$} & $+6.2$ {\scriptsize$[+2.4,+10.6]$} {\scriptsize$(+18.5)$} & $53$\\
 \bottomrule
 \end{tabular}}
 \end{table}
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
-\caption{The paper's tolerance-dependent results at four tolerances: the model-free regrading of
-Table~\ref{tab:arms}'s condition without options (a number in the reply within tolerance), Qwen2.5-72B's
+\caption{The paper's tolerance-dependent results at four tolerances: the answers given without options and
+without the data (Table~\ref{tab:arms}), regraded by the tolerance with no model (any number in the reply within
+tolerance), Qwen2.5-72B's
 with-data runs (Appendix~\ref{app:withdata}; intervals paired over $46$ capsules at $96\%$), the best of six
 open-weight models asked for a number without options (Appendix~\ref{app:arms}) when any number in
 the reply may count, BixBench's gradings of
-Table~\ref{tab:released} minus the tolerance (intervals over capsules at the level the double bootstrap finds attains
-$95\%$ coverage, as in Table~\ref{tab:released}), and the share of misses that the
-nearest-option rule accepts through $R$ and $U$. The distance bins of
-Table~\ref{tab:mechanism} describe how far the accepted answers are and are not a verdict.}
+Table~\ref{tab:released} minus the tolerance (intervals as in Table~\ref{tab:released}), and the share of misses that the
+nearest-option rule accepts through $R$ and $U$. Table~\ref{tab:mechanism}'s
+distance bins are not restated: they describe how far accepted answers lie from the key and give no verdict.}
 \label{tab:restated}
 \resizebox{\linewidth}{!}{\begin{tabular}{lrrrr}
 \toprule
@@ -955,22 +1047,23 @@ Misses the rule accepts, v1.5, $R$ & $13.6$ & $13.6$ & $12.9$ & $11.4$\\
 \label{app:guessing}
 
 Table~\ref{tab:formula} splits the corrected score minus the tolerance exactly by the kind of answer: each kind
-contributes $k/(k-1)$ times what the grading accepts of it beyond what a grader would that accepts every correct
-answer and chooses at random on every miss, and an empty answer, scored wrong without grading, $-1/(k-1)$ of its
-share. Scoring a grade that selects no option, and an empty answer, as an omission, as formula scoring does for an
-examinee who omits, rather than as a wrong selection moves the published gpt-4o residual from $-3.9$ to $+4.0$,
-gpt-5.1's from $-10.8$ to $+1.7$ and the two current agents' from $-6.0$ and $-7.9$ to $+5.4$ and $+5.4$. gpt-4o
-selects no option on $24.9$, $49.0$, $53.8$ and $47.0\%$ of their misses, the seven configurations' graders on
-$12.3\%$ (their residual moves to $-3.0$), and the others on fewer than $3\%$. For a forced grader the correction is an
-affine map of the score, so a difference between option sets, such as $U-P$, is multiplied by $k/(k-1)$ and kept. The
+contributes $k/(k-1)$ times the share the grading accepts beyond what a grader that accepts every correct answer and
+chooses at random on every miss would accept, and an empty answer, scored wrong without grading, $-1/(k-1)$ times its
+share. Scoring a grade that selects no option, and an empty answer, as a skipped question, as formula scoring treats a
+test-taker who skips one, rather than as a wrong selection moves the corrected score minus the tolerance for the
+published gpt-4o runs from $-3.9$ to $+4.0$, for gpt-5.1 from $-10.8$ to $+1.7$ and for gpt-6-luna and DeepSeek-V4-Pro
+from $-6.0$ and $-7.9$ to $+5.4$ and $+5.4$. gpt-4o selects no option on $24.9$, $49.0$, $53.8$ and $47.0\%$ of their
+misses, the seven configurations' graders on $12.3\%$ (their difference moves to $-3.0$), and the other forced gradings of
+Table~\ref{tab:formula} on fewer than $3\%$. For a forced grader the correction rescales the score linearly, so a difference between option sets, such as
+$U-P$, is not removed but multiplied by $k/(k-1)$. The
 correction maps the 2026 system's $64.4\%$ to $52.5\%$, $3.7$ points above its open-ended $48.8\%$; how far that lies
 from a tolerance depends on where its misses fall among the options, which the correction does not see.
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{1.8pt}
 \caption{\textbf{What the correction for guessing leaves.} The forced gradings of Table~\ref{tab:released} and
-gpt-4o's code-free gradings of the same runs through the released options. \emph{Within $5\%$}; the share of those
-the grading \emph{accepts}; the share of misses it accepts, over all and among those on which it selects an option
+gpt-4o's answer-only gradings of the same runs through the released options. \emph{Within $5\%$}: the share within $5\%$
+of the key; \emph{accepts}: the share of those the grading accepts; the share of misses it accepts, over all and among those on which it selects an option
 (\emph{of selected}); the score corrected for guessing, $(S-1/4)/(3/4)$, minus the within-$5\%$ share, with its
 interval over capsules; and that difference split exactly by the kind of answer, each kind's acceptance beyond what
 a grader accepting every correct answer and choosing at random on every miss would give, times $4/3$: misses whose
@@ -992,9 +1085,9 @@ v1.5, Qwen3-235B-A22B & forced & $23.8$ & $94.0$ & $22.9$ & $23.0$ & $-7.0$ {\sc
 v1.5, gpt-5.1 & forced & $27.6$ & $91.4$ & $17.1$ & $33.5$ & $-10.8$ {\scriptsize$[-18.8,-3.3]$} & $+0.5$ & $-4.9$ & $-3.2$ & $-3.2$\\
 v1.5, gpt-6-luna & forced & $38.1$ & $97.5$ & $19.2$ & $41.7$ & $-6.0$ {\scriptsize$[-15.2,+2.5]$} & $+0.6$ & $-3.5$ & $-1.9$ & $-1.3$\\
 v1.5, DeepSeek-V4-Pro & forced & $28.6$ & $93.3$ & $22.0$ & $41.4$ & $-7.9$ {\scriptsize$[-16.5,+0.7]$} & $+2.2$ & $-5.4$ & $+0.6$ & $-5.4$\\
-v1.0, gpt-4o & code-free & $11.4$ & $98.0$ & $26.9$ & $26.9$ & $+1.2$ {\scriptsize$[-4.8,+8.1]$} & $+8.2$ & $-7.5$ & $+1.5$ & $-1.0$\\
-v1.0, Claude 3.5 & code-free & $15.6$ & $99.0$ & $24.8$ & $24.8$ & $-0.5$ {\scriptsize$[-5.2,+4.2]$} & $+10.0$ & $-11.5$ & $+1.3$ & $-0.4$\\
-v1.5, seven configurations & code-free & $9.8$ & $93.1$ & $21.9$ & $21.9$ & $-8.5$ {\scriptsize$[-13.5,-3.5]$} & $+3.5$ & $-7.1$ & $+0.4$ & $-5.3$\\
+v1.0, gpt-4o & answer-only & $11.4$ & $98.0$ & $26.9$ & $26.9$ & $+1.2$ {\scriptsize$[-4.8,+8.1]$} & $+8.2$ & $-7.5$ & $+1.5$ & $-1.0$\\
+v1.0, Claude 3.5 & answer-only & $15.6$ & $99.0$ & $24.8$ & $24.8$ & $-0.5$ {\scriptsize$[-5.2,+4.2]$} & $+10.0$ & $-11.5$ & $+1.3$ & $-0.4$\\
+v1.5, seven configurations & answer-only & $9.8$ & $93.1$ & $21.9$ & $21.9$ & $-8.5$ {\scriptsize$[-13.5,-3.5]$} & $+3.5$ & $-7.1$ & $+0.4$ & $-5.3$\\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -1003,26 +1096,27 @@ v1.5, seven configurations & code-free & $9.8$ & $93.1$ & $21.9$ & $21.9$ & $-8.
 \subsection{The leak}
 \label{app:arms}
 
-Of nine released files with at least $20$ items whose options are all distinct numbers
-\citep{labbench,aquarat,medmcqa,medqa,mmlu,mmlupro,sciq}, five reject a uniform key rank
-with items clustered by source, and a rank chosen on held-out folds of each file's clusters stays above chance on four
-(Table~\ref{tab:survey}). In v1.5 the skew comes from the distractors it rewrote and from its new items
+Of nine released multiple-choice datasets with at least $20$ items whose options are all distinct numbers
+\citep{labbench,aquarat,medmcqa,medqa,mmlu,mmlupro,sciq}, a test that treats the items from one source as a cluster
+rejects a uniform key rank in five, and in four of these five a rank chosen on some clusters stays above chance on the
+held-out clusters (Table~\ref{tab:survey}). In v1.5 the skew comes from the distractors it rewrote and from its new items
 (Table~\ref{tab:origin}).
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{2.4pt}
-\caption{Nine released multiple-choice files with at least $20$ items whose options are all distinct
+\caption{Nine released multiple-choice datasets with at least $20$ items whose options are all distinct
 numbers. \emph{Bracketed}: share of keys at a middle rank, in per cent. \emph{Floor}:
-the rank rule's floor $\beta/(k-2)-1/k$ (Appendix~\ref{app:theory}). \emph{In-sample}: the best single-rank rule over
-chance; \emph{if uniform}: what that maximum averages under a uniform rank at the file's size;
-\emph{held out}: the rank chosen on held-out clusters. All in points. $p$: a test of a uniform key rank, with
-items treated as independent and with items clustered by source.}
+the rank rule's floor $\beta/(k-2)-1/k$ (Appendix~\ref{app:theory}). \emph{In-sample}: the best rank rule over chance,
+chosen and scored on the same items; \emph{if uniform}: the average of that best score when the key's rank is uniform,
+at the dataset's size; \emph{held out}: the rank chosen on the other clusters, scored on each held-out one. All in points. $p$: a chi-square test of a uniform key
+rank, treating items as independent (\emph{items}) or allowing items from one source to be alike (\emph{clusters});
+--: no source recorded, so each item is its own cluster.}
 \label{tab:survey}
 \begin{tabular}{lrrrrrrrrrr}
 \toprule
 & & & & & & \multicolumn{3}{c}{best rank rule} & \multicolumn{2}{c}{$p$, uniform rank}\\
 \cmidrule(lr){7-9}\cmidrule(lr){10-11}
-file & $k$ & items & clusters & bracketed & floor & in-sample & if uniform & held out & items & clusters\\
+dataset & $k$ & items & clusters & bracketed & floor & in-sample & if uniform & held out & items & clusters\\
 \midrule
 BixBench v1.5 & $4$ & $105$ & $46$ & $81$ & $+15.5$ & $+26.4$ & $+5.1$ & $+26.4$ & $5\times10^{-11}$ & $4\times10^{-8}$\\
 BixBench v1.0 & $4$ & $159$ & $48$ & $61$ & $+5.5$ & $+5.8$ & $+4.1$ & $-2.4$ & $0.03$ & $0.046$\\
@@ -1062,36 +1156,40 @@ v1.5, every numeric item & $105$ & $12$ & $51$ & $30$ & $7$ & $81$\\
 \end{tabular}
 \end{table}
 
-\paragraph{No model we tested uses the rank.} With each forced-choice run, BixBench released the same models on the
-same questions without options, and with an ``insufficient information'' option added (Table~\ref{tab:arms}). Forced
+\paragraph{No model we tested is shown to use the rank.} Alongside its forced-choice runs without the data,
+BixBench released the same models answering the same questions without the data in two other ways: without options,
+and with an ``insufficient information'' option added (Table~\ref{tab:arms}). Forced
 to choose without the data, gpt-4o and Claude 3.5 Sonnet are $+11.1$ $[+3.8,+18.8]$ and $+9.1$ $[+2.5,+16.4]$ points
 above chance on v1.5, although without options each states the answer on $6$ of $205$ questions. A model that drew
 its whole margin from the rank would be correct far more often where the key is second-smallest; both are less
 accurate there, and as far above chance on the questions whose options are not numbers (Table~\ref{tab:attribution}).
-The cells are small, so this bounds the rank's share rather than excluding it: at the upper ends of the corrected
-intervals (Table~\ref{tab:claims}), a preference for the second-smallest option could explain at most $45\%$ of
+The groups at each rank are small, so this bounds the rank's share rather than excluding it: at the upper ends of
+the jointly corrected intervals (Table~\ref{tab:claims}), a preference for the second-smallest option could explain at most $45\%$ of
 gpt-4o's numeric margin and $59\%$ of Claude's. The models' knowledge cutoffs, October 2023 for gpt-4o and April
 2024 for Claude 3.5 Sonnet, precede BixBench's first release in February 2025 \citep{bixbench}, which excludes memory
-of the benchmark but not knowledge of the biology behind it. A later gpt-4o, run again without the data, is at chance
+of the benchmark but not knowledge of the biology behind it. gpt-4o 2024-11-20, run again without the data, is at chance
 with the question withheld and selects the second-smallest option on $24.1\%$ of v1.5's items; with the question,
 under BixBench's template, redrawing every distractor changes its margin by no significant amount on either release
 (Table~\ref{tab:gptnodata}; prompts in Figure~\ref{fig:prompts}). Thirteen open-weight models shown v1.5's options without the question select the
-second-smallest on at most $33.3\%$ of their runs, where the key lies on $51.4\%$ of the items, and solved v1.5 items
-in context teach eight of them nothing about the key's rank (Figure~\ref{fig:norank}). Asked for a number without
+second-smallest on at most $33.3\%$ of their runs, where the key lies on $51.4\%$ of the items, and showing eight of
+them $64$ solved v1.5 items as examples does not measurably change their accuracy, whether the examples' keys sit at
+their released ranks or at uniform ones (Figure~\ref{fig:norank}b). Asked for a number without
 options, six open-weight models give one within $5\%$ of the key on at most $3.8\%$ of v1.5's numeric items, even
 counting any number in the reply; with options, drawing the key's rank uniformly changes the margin of none of the
-five whose runs can be parsed.
+five whose replies could be read.
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{4pt}
 \caption{BixBench's own no-data runs as released: two models, two releases, three conditions. Accuracy in per
 cent; chance is $25\%$ forced, $20\%$ with a refusal option and $0$ without options. \emph{Refused}: the share
-selecting ``insufficient information''. \emph{Numeric keys}: the answers without options regraded on the
-questions whose key is a number or numeric range ($163$ on v1.0, $166$ on v1.5) by a rule that uses no model (any
+selecting ``insufficient information''. \emph{Graded}: BixBench's open-ended grade.
+\emph{Numeric keys}: the answers without options regraded on the questions whose key is a number or numeric range
+($163$ on v1.0, $166$ on v1.5, more than the numeric items, whose options are all numbers) by a rule that uses no model (any
 number in the reply within $5\%$ of the key or inside its range), which is lenient by design. On v1.5 these two
-columns count $6$ of $205$ answers for each model, and $2$ and $4$ of $166$. BixBench's paper reads the no-data score
-with options as ``the pure recall performance of both models'', of v1.0 in its first version and of v1.5 in its
-third.}
+columns count $6$ of $205$ answers for each model, and $2$ and $4$ of $166$. \emph{Rank rule ceiling}: the best
+rank rule's in-sample margin (Table~\ref{tab:survey}), the most a model following only the rank could gain. BixBench's
+paper reads the no-data score with options as ``the pure recall performance of both models'', in its first version (on
+v1.0) and its third (on v1.5).}
 \label{tab:arms}
 \begin{tabular}{llrrrrrr}
 \toprule
@@ -1109,15 +1207,15 @@ v1.5 (205) & Claude 3.5 Sonnet & $34.1$ & $8.3$ & $78.5$ & $2.9$ & $2.4$ & $+26.
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{1.9pt}
-\caption{\textbf{BixBench's forced-choice no-data runs do not follow the key's rank.} The released runs, with
+\caption{\textbf{BixBench's forced-choice no-data runs are not more accurate where the key is second-smallest.} The released runs, with
 the question and without the data. \emph{Margin}: accuracy above the $25\%$ chance on the numeric items, whose
 options have a rank ($105$ on v1.5, $159$ on v1.0), and on the others ($100$, $137$), whose options do not.
 \emph{Accuracy by key rank}: on the numeric items, by the key's rank among the four values (v1.5: $13$, $54$,
 $31$ and $7$ items). \emph{2nd $-$ rest}: accuracy where the key is second-smallest minus elsewhere; a model
 drawing its whole numeric margin on v1.5 from a preference for the second-smallest option would show $+45.9$
-(gpt-4o) and $+35.1$ (Claude 3.5 Sonnet). The v1.0 runs record the order shown, and the selections fall on the
-four ranks at $25/23/25/27\%$ (gpt-4o) and $20/18/30/33\%$ (Claude). Intervals over capsules at the nominal
-levels that attain $95\%$ coverage on each column's clusters.}
+(gpt-4o) and $+35.1$ (Claude 3.5 Sonnet). Only the v1.0 runs record the order in which the
+options were shown; there the selections fall on the four ranks at $25/23/25/27\%$ (gpt-4o) and $20/18/30/33\%$ (Claude). Intervals as in
+Appendix~\ref{app:stats}.}
 \label{tab:attribution}
 \begin{tabular}{llrrrrrrr}
 \toprule
@@ -1140,10 +1238,10 @@ release's numeric items (the $158$ of v1.0's $159$ that have all three): under B
 question, the condition of its published runs; under the chat prompt of Figure~\ref{fig:prompts}; and under
 BixBench's template with the question withheld. The version is 2024-11-20: BixBench's grading code calls
 gpt-4o without a version, and Azure OpenAI, which serves our runs, no longer offers 2024-08-06 to new customers.
-Margins over the $25\%$ chance, greedy, three
-letter orderings an item (two under the chat prompt); differences paired over the same items and orderings at
-$96.0\%$ over capsules. 2nd: the share of $R$'s picks that are its second-smallest option, in per cent. BixBench's
-published v1.5 run scored $+12.1$ on the same $105$ items.}
+Margins over the $25\%$ chance, taking the model's most likely reply, with each
+item asked in three orders of the option letters (two under the chat prompt); differences paired over the same items
+and orders, with intervals over capsules at $96.0\%$. 2nd: the share of $R$'s picks that are its second-smallest option, in per cent. BixBench's
+released no-data run of gpt-4o on v1.5 scored $+12.1$ on the same $105$ items.}
 \label{tab:gptnodata}
 \begin{tabular}{llrrrrrr}
 \toprule
@@ -1164,12 +1262,12 @@ v1.0 ($158$) & BixBench template & $+10.2$ & $+8.8$ & $+10.0$ & $+1.5$ $[-3.3,+6
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/norank.pdf}
-\caption{\textbf{No model we tested follows v1.5's key rank.} \textbf{(a)} The share of each model's selections that
-fall on the second-smallest of v1.5's four numeric options, with the question withheld (BixBench's template, one letter read per run as the arg-max over the
-letter tokens \citep{multiplechoiceability}, three letter orderings of each of the $105$ items), against the share of keys there and the share a uniform choice gives.
+\caption{\textbf{No model we tested picks v1.5's second-smallest option as often as the key sits there.} \textbf{(a)} The share of each model's selections that
+fall on the second-smallest of v1.5's four numeric options, with the question withheld (BixBench's template, once per prompt, the letter the model
+rates most likely \citep{multiplechoiceability}, three letter orderings of each of the $105$ items), against the share of keys there and the share a uniform choice gives.
 \textbf{(b)} Solved v1.5 items from other capsules in context: accuracy with $64$ examples whose keys sit at their
 released ranks minus with the same examples redrawn to a uniform rank, with the question withheld and shown, and
-$95\%$ cluster intervals over $46$ capsules; eight draws of examples and orderings per item.}
+plain $95\%$ intervals over $46$ capsules; eight draws of examples and orderings per item.}
 \label{fig:norank}
 \end{figure}
 
@@ -1211,19 +1309,19 @@ Options:\par
 \label{app:replication}
 
 \paragraph{With the data.} Table~\ref{tab:withdata} scores each configuration with and without the data, and
-Figure~\ref{fig:withdata}a grades the same runs through $R$, $P$ and $U$. Under the text protocol one model uses the
-data: Qwen2.5-72B's submitted number is within $5\%$ of the key on $14.3\%$ of the numeric items, against $1.0\%$
-without the data, yet no grading through options resolves its lead over the other two text-protocol agents
+Figure~\ref{fig:withdata}a grades the same runs through $R$, $P$ and $U$. Among the agents that call tools in text, one
+uses the data: Qwen2.5-72B's submitted number is within $5\%$ of the key on $14.3\%$ of the numeric items, against $1.0\%$
+without the data, yet no grading through options shows its lead over the other two in-text agents with an interval that excludes
+zero
 (Figure~\ref{fig:withdata}b). Table~\ref{tab:mechanism} counts what $U$ newly accepts on the moved keys.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/withdata.pdf}
 \caption{\textbf{The same runs, graded through different options.} \textbf{(a)} The runs with the data,
-graded by each configuration's own model as MCQ grader (forced; Qwen3-30B-A3B's runs by gemma-3-27b) on the
-$105$ numeric items through three option sets with the same key: $R$; $P$, which redraws every distractor and
-keeps the key's rank; and $U$, which draws the rank uniformly. Seven configurations; the dotted line is
-chance. \textbf{(b)} Qwen2.5-72B's lead with the data over the other two text-protocol agents: by its
+graded by each configuration's own model as multiple-choice grader (forced; Qwen3-30B-A3B's runs by gemma-3-27b) on the
+$105$ numeric items through $R$, $P$ and $U$. Seven configurations; the dotted line is
+chance. \textbf{(b)} Qwen2.5-72B's lead with the data over the other two in-text agents: by its
 submitted number falling within $5\%$ of the key, and by three gradings of the same runs (the nearest-option rule, the
 configuration's own model and gemma-3-27b) through $R$ and $U$. Intervals paired over $46$ capsules at $96\%$.}
 \label{fig:withdata}
@@ -1231,14 +1329,13 @@ configuration's own model and gemma-3-27b) through $R$ and $U$. Intervals paired
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{2.3pt}
-\caption{BixBench's agent with and without each capsule's data: three open-weight families calling its tools
-in text, and four running it as published (BixBench's ReAct agent), each graded by its own model as the
-published runs were, except $^\dagger$graded by gemma-3-27b, because Qwen3-30B-A3B's own grading, its reply cut
+\caption{BixBench's agent with and without each capsule's data: three open-weight families writing its tool
+calls as text, and four running BixBench's ReAct agent, each graded by its own model as the published runs were, except $^\dagger$graded by gemma-3-27b, because Qwen3-30B-A3B's own grading, its reply cut
 at $1{,}536$ tokens before the answer, selects no option on $51.7$ and $63.3\%$ of its forced gradings through $R$
 with and without the data (its open-ended grades are its own). \emph{Open}: BixBench v1.5's
-graders on all $205$ items; \emph{within $5\%$}: the submitted number within $5\%$ of the key on the $105$ numeric items, as the tolerance reads it. \emph{MCQ}: BixBench's MCQ grader on all $205$ with the released
-options, forced, and with BixBench's ``insufficient information'' option, with the share of the graded runs (those
-with an answer) that select it in brackets. The last four columns grade the \emph{same} runs on the $105$ numeric
+graders on all $205$ items; \emph{within $5\%$}: the submitted number within $5\%$ of the key on the $105$ numeric items, as the tolerance reads it. \emph{Multiple choice}: BixBench's multiple-choice grader on all $205$ with the
+released options, forced, and with BixBench's ``insufficient information'' option, with the share of the graded runs (those
+with an answer) that select it in parentheses. The last four columns grade the \emph{same} runs on the $105$ numeric
 items through the three
 option sets, so a difference between them is due to the option set alone; the interval is paired over $46$
 capsules at $96.0\%$, the level that attains $95\%$ coverage. Chance is $25\%$ forced and $20\%$ when the
@@ -1246,7 +1343,7 @@ grader may refuse.}
 \label{tab:withdata}
 \begin{tabular}{llrrrrrrrr}
 \toprule
-& & \multicolumn{2}{c}{open answer} & \multicolumn{2}{c}{MCQ, all $205$} &
+& & \multicolumn{2}{c}{open answer} & \multicolumn{2}{c}{multiple choice, all $205$} &
 \multicolumn{4}{c}{the same runs, $105$ numeric items, forced}\\
 \cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-10}
 Agent & data & graders & within $5\%$ & forced & with refusal & $R$ & $P$ & $U$ & $R-U$\\
@@ -1259,7 +1356,7 @@ Llama-3.3-70B & with & $6.3$ & $4.8$ & $25.9$ & $8.0$ $(70)$ & $26.2$ & $29.5$ &
 gemma-3-27b & with & $4.4$ & $3.8$ & $21.7$ & $9.0$ $(62)$ & $21.9$ & $25.2$ & $25.2$ & $-3.3$ $[-7.1,+0.0]$\\
  & without & $5.9$ & $3.8$ & $23.4$ & $8.3$ $(60)$ & $22.4$ & $24.3$ & $25.2$ & $-2.9$ $[-8.5,+2.5]$\\
 \midrule
-\multicolumn{10}{l}{\emph{as published: BixBench's ReAct agent, tools passed natively}}\\
+\multicolumn{10}{l}{\emph{BixBench's ReAct agent, tools passed through the server's interface}}\\
 Qwen2.5-72B & with & $10.7$ & $9.5$ & $19.3$ & $12.4$ $(56)$ & $16.2$ & $19.5$ & $24.8$ & $-8.6$ $[-15.1,-1.8]$\\
  & without & $5.4$ & $2.9$ & $19.5$ & $6.8$ $(73)$ & $17.1$ & $17.1$ & $17.1$ & $+0.0$ $[-6.5,+6.1]$\\
 Llama-3.3-70B & with & $9.8$ & $5.7$ & $30.5$ & $6.6$ $(87)$ & $29.5$ & $34.8$ & $33.8$ & $-4.3$ $[-10.9,+1.8]$\\
@@ -1278,11 +1375,8 @@ Qwen3-30B-A3B$^\dagger$ & with & $18.0$ & $14.3$ & $32.7$ & $21.7$ $(50)$ & $23.
 nearest-option rule grades correct under $U$ and not under $R$, by the submitted number's relative distance
 from the key; \emph{open side}: of those, the answers beyond the key on the side without a distractor.
 \emph{Without the data}: the same count for the same agents' runs without it. \emph{$U-P$}: the two rewrites
-share the redrawing and differ in the key's rank; on the moved keys (interval over $21$ capsules at
-$97.75\%$), on the $12$ inward keys ($10$ capsules, $98\%$) and on the $56$ unchanged keys ($37$ capsules,
-$96.75\%$), each group at the level that attains $95\%$ coverage on its own capsules. The nearest distractor
-lies at a median $d$ of $0.142$ from the key in $R$, $0.185$ in $P$ and $0.188$ in $U$; a rule that selects the
-option written with the fewest significant digits, ties split, is correct on $25.0$, $31.7$ and $31.9\%$.}
+share the redrawing and differ in the key's rank; on the moved keys, with an interval over their $21$ capsules at
+$97.75\%$, the level that attains $95\%$ coverage there, and on the $12$ inward and $56$ unchanged keys.}
 \label{tab:mechanism}
 \begin{tabular}{lrrrrrrrrr}
 \toprule
@@ -1295,7 +1389,7 @@ Qwen2.5-72B & $1$ & $0$ & $2$ & $1$ & $4$ & $5$ & $+13.5$ $[+0.0,+28.9]$ & $-8.3
 Llama-3.3-70B & $0$ & $2$ & $9$ & $2$ & $13$ & $12$ & $+27.0$ $[+9.7,+45.5]$ & $-8.3$ & $+1.8$\\
 gemma-3-27b & $0$ & $0$ & $4$ & $4$ & $8$ & $9$ & $+18.2$ $[+4.4,+34.6]$ & $+0.0$ & $+1.8$\\
 \addlinespace
-\multicolumn{10}{l}{\emph{as published: BixBench's ReAct agent}}\\
+\multicolumn{10}{l}{\emph{BixBench's ReAct agent}}\\
 Qwen2.5-72B & $1$ & $0$ & $2$ & $2$ & $5$ & $4$ & $+12.8$ $[+0.0,+26.3]$ & $-8.3$ & $+0.0$\\
 Llama-3.3-70B & $0$ & $1$ & $4$ & $3$ & $8$ & $6$ & $+21.6$ $[+5.7,+38.9]$ & $-8.3$ & $+3.6$\\
 GLM-4.5-Air & $0$ & $1$ & $2$ & $1$ & $3$ & $7$ & $+10.1$ $[+0.0,+23.0]$ & $-16.7$ & $+0.0$\\
@@ -1308,25 +1402,28 @@ Qwen3-30B-A3B$^\dagger$ & $1$ & $0$ & $1$ & $3$ & $5$ & $4$ & $+13.5$ $[+2.6,+28
 the grading rule, the statistics and a pass criterion for each hypothesis (Table~\ref{tab:predictions}). The plan is
 dated 24 September 2026, before the published runs were analysed and before the new runs were made. It was committed
 to our version history and pushed to GitHub, whose push record, archived with the code, dates the push at 16:25 UTC,
-$15$ minutes before that of the first results; it was not deposited in a public registry, so a reader of this paper
-cannot check its precedence independently. The published runs are the $5{,}161$ runs of BixBench's released v1.0
-evaluation that answer its $159$ numeric questions; the new runs, $3{,}280$ episodes, are two runs of
-Qwen3-235B-A22B-Instruct-2507 and two new seeds of each text-protocol agent. H2's criterion also accepts a mean within
-$5$ points of zero; we count H2 as failed wherever its interval excludes zero, as it does on the published runs,
-through the $11$ keys that $U$ moves from one extreme to the other ($+19.1$ against $R$). Qwen3-235B-A22B fails H1, H2
-and H4 because the redrawing itself credits its near misses: its keys that keep their rank gain $+6.7$ against $R$ and
-$+1.7$ against $P$. Read from the last number in the answer, every verdict stands (Table~\ref{tab:lastnumber}).
+$15$ minutes before that of the first results; it was not registered publicly, so a reader cannot check
+independently that it came first. The published runs are the $5{,}161$ runs of BixBench's released v1.0
+evaluation that answer its $159$ numeric questions; the new runs, $3{,}280$ question runs, are two runs of
+Qwen3-235B-A22B-Instruct-2507 and two new seeds of each in-text agent. H2's criterion (unchanged keys do not
+gain) also passes a mean within $5$ points of zero; we count H2 as failed wherever its interval excludes zero. On the
+published runs it does, because of $11$ unchanged keys that $U$ moves from one extreme to the other, which moves their
+open side; on those keys $U-R$ is $+19.1$ points. Qwen3-235B-A22B fails H1, H2 and H4 because replacing the
+distractors alone already accepts more of its near misses: on its unchanged keys whose rank $U$ leaves as released,
+$U$ gains $+6.7$ points against $R$ and $+1.7$ against $P$. When the rule reads the last number in the answer, every
+verdict stands (Table~\ref{tab:lastnumber}).
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{2.5pt}
 \caption{\textbf{The hypotheses of the pre-specified test and their results.} Each hypothesis, its pass
-criterion (abbreviated), and each data set's estimate with the data: the nearest-option rule, $U-R$ unless
+criterion (abbreviated), and each run set's estimate with the data: the nearest-option rule, $U-R$ unless
 stated otherwise, in points, with the interval fixed in advance (H6: without the data). H3 gives the shares of
-newly accepted runs more than $25\%$ off and on the open side. \emph{pass} or \textbf{fail} is the verdict
-under the stated criterion, except where marked. $^{\ddagger}$No nominal level attains $95\%$ coverage on these
+newly accepted answers more than $25\%$ off and on the open side. \emph{pass} or \textbf{fail} is the verdict
+under the stated criterion, except where marked. $^{\ddagger}$No interval reaches $95\%$ coverage on these
 $12$ keys in $10$ capsules; H5's criterion uses the mean alone, so this pass carries no uncertainty statement.
 $^{\S}$The stated criterion passes it only by its $5$-point clause; the interval excludes $0$, so we count it
-as failed. The last row, H2 as an equivalence claim, was added after the results and is not part of the plan.}
+as failed. The last row, H2 as an equivalence claim (the whole interval within $\pm5$ points of zero, ruling out a change
+larger than $5$ points), was added after the results and is not part of the plan.}
 \label{tab:predictions}
 \begin{tabularx}{\linewidth}{@{}p{2.2cm}Xp{2.35cm}p{2.35cm}p{2.35cm}@{}}
 \toprule
@@ -1346,10 +1443,10 @@ H2 as equivalence & the whole interval within $\pm5$ points & not shown (upper e
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
 \caption{\textbf{The pre-specified test with the number read as the tolerance reads it.} Each hypothesis of
-Table~\ref{tab:predictions} on each data set, the nearest-option rule reading the last number in the answer instead
+Table~\ref{tab:predictions} on each run set, the nearest-option rule reading the last number in the answer instead
 of a number only when the whole answer is one; the same statistics, levels and criteria, with H2 counted as failed
 wherever its interval excludes zero. The whole-answer reading reproduces Table~\ref{tab:predictions} exactly.
-$^{\ddagger}$No nominal level attains $95\%$ coverage on these keys.}
+$^{\ddagger}$No interval reaches $95\%$ coverage on these keys.}
 \label{tab:lastnumber}
 \begin{tabular}{llll}
 \toprule
@@ -1366,30 +1463,32 @@ H6: the gain needs no data & -- & $+32.5$ {\scriptsize$[+20.0,+45.2]$} pass & $+
 \end{table}
 
 \paragraph{Other graders.} Tables~\ref{tab:readers2}, \ref{tab:readersfull} and~\ref{tab:variants} give every
-grading's contrasts. Qwen2.5-72B and Llama-3.3-70B graded every run in a random quarter of the published runs and
-every run on a moved key; gemma-3-27b graded every run of the test, as BixBench grades a run. Over the $46$ gradings, a
-grading's share of the rule's gain rises with its $\lambda$ (Spearman $0.88$), but the gain $\lambda$ predicts falls
-short of the code-free graders' on the published runs and exceeds the notebook graders' on the new seeds: $\lambda$
-orders graders, and does not price them. On the moved keys the code-free graders gain $74$ to $90\%$ of what the
-nearest-option rule gains on the same answers read as the tolerance reads them. With the within-$5\%$ option they
-select that option on $80.1$ to $91.5\%$ of the published runs' misses and on $5.8$ to $12.3\%$ of their correct
-answers.
+grading's differences. With BixBench's prompt and the notebook, Qwen2.5-72B and Llama-3.3-70B graded every run in a
+random quarter of the published runs and every run on a moved key, and gemma-3-27b graded every run of the test. Over
+the $46$ gradings of Figure~\ref{fig:cost}a, a grading's share of the rule's cost rises with its $\lambda$ (rank
+correlation $0.88$), but the cost $\lambda$ predicts falls short of the answer-only graders' on the published runs and
+exceeds the notebook graders' on the new seeds: $\lambda$ orders graders but does not predict the size of their cost.
+On the moved keys the answer-only graders bear $74$ to $90\%$ of the nearest-option rule's cost on the same answers
+read as the tolerance reads them. With the within-$5\%$ option they select that option on $80.1$ to $91.5\%$ of the
+published runs' misses and on $5.8$ to $12.3\%$ of their correct answers; counting wrong selections too, they reject
+$6.6$ to $17.9\%$ of the correct answers on the two releases.
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{3pt}
 \caption{\textbf{Graders bear the cost of hiding the rank in the order of their proximity weight.} $U-P$ in
 points on the moved keys ($41$ on v1.0, $40$ of them also redrawn by $P$; $37$ on v1.5), with its interval and
-a capsule sign-flip $p$-value, and over all numeric items. $\lambda$: the grading's proximity weight
+the sign-flip test's $p$-value, and over all numeric items. $\lambda$: the grading's proximity weight
 (Remark~\ref{rem:lambda}), from its own selections on the misses of the same runs. \emph{Nearest
 option}: the rule of the pre-specified test, the only row fixed before its data were analysed;
-\emph{published}: BixBench's own forced grades, which exist only for $R$; \emph{code-free}: shown the question,
-the options and the answer but not the notebook, approximating the 2026 system's grader; \emph{letter only}: the reply
-constrained to a letter;
-\emph{refusal}: with BixBench's ``insufficient information'' option; \emph{within $5\%$}: code-free, with an
+\emph{published}: BixBench's own forced grades, which exist only for $R$ ($\lambda$ pooled over both models:
+$0.24$ for gpt-4o's grades, $0.58$ for Claude 3.5 Sonnet's); \emph{answer-only}: shown the question, the options and
+the answer but not the notebook, approximating the 2026 system's grader; \emph{letter only}: BixBench's prompt with
+the notebook, the reply restricted to an analysis and then one letter;
+\emph{refusal}: with BixBench's ``insufficient information'' option; \emph{within $5\%$}: answer-only, with an
 option stating that none of the others is within $5\%$ of the answer. The other graders read the notebook under
 BixBench's prompt; gpt-4o is version 2024-11-20. Qwen2.5-72B and Llama-3.3-70B graded only the new seeds'
-moved keys. Double-bootstrap intervals over each group's capsules; every contrast is in
-Tables~\ref{tab:readersfull} and~\ref{tab:variants}.}
+moved keys. Double-bootstrap intervals over each group's capsules ($^{\ddagger}$no level attains $95\%$
+coverage); every difference is in Tables~\ref{tab:readersfull} and~\ref{tab:variants}.}
 \label{tab:readers2}
 \begin{tabular}{llrrrr}
 \toprule
@@ -1399,8 +1498,8 @@ runs & grader & $\lambda$ & $U-P$ & $p$ & $U-P$\\
 \midrule
 v1.0, published & nearest option & $1$ & $+18.6$ {\scriptsize$[+8.7,+30.7]$} & $<0.001$ & $+3.4$\\
  & published & $0.44$ & -- & -- & --\\
- & gpt-4o, code-free & $0.69$ & $+27.2$ {\scriptsize$[+14.7,+38.5]$} & $<0.001$ & $+4.0$\\
- & gemma-3-27b, code-free & $0.62$ & $+28.2$ {\scriptsize$[+17.4,+39.4]$} & $<0.001$ & $+3.9$\\
+ & gpt-4o, answer-only & $0.69$ & $+27.2$ {\scriptsize$[+14.7,+38.5]$} & $<0.001$ & $+4.0$\\
+ & gemma-3-27b, answer-only & $0.62$ & $+28.2$ {\scriptsize$[+17.4,+39.4]$} & $<0.001$ & $+3.9$\\
  & Qwen2.5-72B & $0.43$ & $+14.4$ {\scriptsize$[+7.0,+22.2]$} & $<0.001$ & $+0.5$\\
  & gemma-3-27b & $0.29$ & $+8.7$ {\scriptsize$[+4.3,+14.0]$} & $<0.001$ & $+0.7$\\
  & gpt-4o, letter only & $0.24$ & $+6.6$ {\scriptsize$[+2.0,+12.1]$} & $<0.001$ & $+0.4$\\
@@ -1409,8 +1508,8 @@ v1.0, published & nearest option & $1$ & $+18.6$ {\scriptsize$[+8.7,+30.7]$} & $
  & gpt-4o & $0.17$ & $+5.9$ {\scriptsize$[+1.0,+11.2]$} & $0.014$ & $+0.7$\\
  & gemma-3-27b, within $5\%$ & $0.08$ & $-0.1$ {\scriptsize$[-0.7,+0.3]$} & $0.500$ & $+0.1$\\
 v1.5, new seeds & nearest option & $1$ & $+17.9$ {\scriptsize$[+9.9,+25.5]$} & $<0.001$ & $+6.6$\\
- & gpt-4o, code-free & $0.65$ & $+21.2$ {\scriptsize$[+11.9,+30.6]$} & $<0.001$ & $+5.0$\\
- & gemma-3-27b, code-free & $0.60$ & $+21.8$ {\scriptsize$[+15.1,+28.8]$} & $<0.001$ & $+6.6$\\
+ & gpt-4o, answer-only & $0.65$ & $+21.2$ {\scriptsize$[+11.9,+30.6]$} & $<0.001$ & $+5.0$\\
+ & gemma-3-27b, answer-only & $0.60$ & $+21.8$ {\scriptsize$[+15.1,+28.8]$} & $<0.001$ & $+6.6$\\
  & Qwen2.5-72B & $0.40$ & $+6.8$ {\scriptsize$[+0.2,+13.6]$} & $0.059$ & --\\
  & gemma-3-27b & $0.20$ & $+0.7$ {\scriptsize$[-4.8,+5.7]$} & $0.861$ & $+0.5$\\
  & Llama-3.3-70B & $0.18$ & $+4.5$ {\scriptsize$[-2.5,+11.1]$} & $0.178$ & --\\
@@ -1422,14 +1521,13 @@ v1.5, new seeds & nearest option & $1$ & $+17.9$ {\scriptsize$[+9.9,+25.5]$} & $
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{1.8pt}
-\caption{\textbf{All gradings of the same runs, all contrasts.} Differences between gradings of the same
+\caption{\textbf{All gradings of the same runs, all differences.} Differences between gradings of the same
 with-data runs through two option sets, in points. On the moved keys ($37$ on v1.5; $41$ on v1.0, $40$ of
 them also redrawn by $P$): $U-P$ (the rank alone), $P-R$ (the redrawing alone) and $U-R$; on the unchanged keys
 and over all numeric items, $U-P$. Graders as in Table~\ref{tab:readers2}; Qwen2.5-72B and Llama-3.3-70B
 graded the published runs' random quarter and every run on a moved key, and only the moved keys of the v1.5
 runs (--: not graded). Configurations pooled as in the pre-specified test; no row of this table is part of it.
-Intervals over capsules at the level that the double bootstrap finds attains $95\%$ coverage on each group's
-capsules ($^{\ddagger}$no level does); $p$: a capsule sign-flip test of $U-P$ on the moved keys.}
+Intervals as in Appendix~\ref{app:stats} ($^{\ddagger}$no level attains $95\%$ coverage); $p$: the sign-flip test of $U-P$ on the moved keys.}
 \label{tab:readersfull}
 \resizebox{\linewidth}{!}{\begin{tabular}{llrrrrrr}
 \toprule
@@ -1482,13 +1580,13 @@ v1.5, Qwen3-235B-A22B & gemma-3-27b & $+1.4$ & $+4.1$ & $+5.4$ & $-2.7$ & $-1.2$
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{1.6pt}
 \caption{\textbf{The rank's cost under the other gradings.} The same with-data runs as
-Table~\ref{tab:readers2}. $\lambda$: the proximity weight; $U-P$ on the moved keys with a capsule sign-flip
+Table~\ref{tab:readers2}. $\lambda$: the proximity weight; $U-P$ on the moved keys with the sign-flip test's
 $p$, through the original rewrites and through the digit-matched $P'$ and $U'$ (which move $42$ keys on v1.0 and
-$36$ on v1.5); $U-P$ on the unchanged keys and over all numeric items; and the gain on the moved keys that
-$\lambda$ predicts (Remark~\ref{rem:lambda}). Graders as in Table~\ref{tab:readers2};
-\emph{notebook}: BixBench's prompt with the notebook, graded through $P'$ and $U'$ only (its $U-P$ is in
-Table~\ref{tab:readersfull}). Double-bootstrap intervals over each group's capsules; no row is part of the
-pre-specified test.}
+$36$ on v1.5); $U-P$ on the unchanged keys and over all numeric items; and the cost on the moved keys that
+$\lambda$ predicts (Remark~\ref{rem:lambda}). Graders as in Table~\ref{tab:readers2}; rows without a suffix:
+BixBench's prompt with the notebook, graded through $P'$ and $U'$ only (its $U-P$ is in Table~\ref{tab:readersfull}).
+Double-bootstrap intervals over each group's capsules ($^{\ddagger}$no level attains $95\%$ coverage); no row is part
+of the pre-specified test.}
 \label{tab:variants}
 \resizebox{\linewidth}{!}{\begin{tabular}{lrrrrrrrr}
 \toprule
@@ -1497,10 +1595,10 @@ pre-specified test.}
 grader & $\lambda$ & & $p$ & & $p$ & $U-P$ & $U-P$ & predicted\\
 \midrule
 \multicolumn{9}{l}{\emph{BixBench's published runs (v1.0)}}\\
-gpt-4o, code-free & $0.69$ & $+27.2$ {\scriptsize$[+14.7,+38.5]$} & $<0.001$ & $+29.7$ {\scriptsize$[+18.0,+41.1]$} & $<0.001$ & $+4.1$ & $+4.0$ & $+22.1$\\
-gemma-3-27b, code-free & $0.62$ & $+28.2$ {\scriptsize$[+17.4,+39.4]$} & $<0.001$ & $+28.2$ {\scriptsize$[+18.5,+38.0]$} & $<0.001$ & $+2.0$ & $+3.9$ & $+20.0$\\
-Qwen2.5-72B, code-free & $0.58$ & $+24.7$ {\scriptsize$[+6.3,+42.9]$} & $0.004$ & $+28.8$ {\scriptsize$[+14.8,+42.3]$} & $<0.001$ & $+2.5$ & $+2.1$ & $+18.6$\\
-Llama-3.3-70B, code-free & $0.48$ & $+23.4$ {\scriptsize$[+11.9,+34.9]$} & $<0.001$ & $+19.7$ {\scriptsize$[+7.7,+31.9]$} & $0.002$ & $+3.3$ & $+3.5$ & $+15.5$\\
+gpt-4o, answer-only & $0.69$ & $+27.2$ {\scriptsize$[+14.7,+38.5]$} & $<0.001$ & $+29.7$ {\scriptsize$[+18.0,+41.1]$} & $<0.001$ & $+4.1$ & $+4.0$ & $+22.1$\\
+gemma-3-27b, answer-only & $0.62$ & $+28.2$ {\scriptsize$[+17.4,+39.4]$} & $<0.001$ & $+28.2$ {\scriptsize$[+18.5,+38.0]$} & $<0.001$ & $+2.0$ & $+3.9$ & $+20.0$\\
+Qwen2.5-72B, answer-only & $0.58$ & $+24.7$ {\scriptsize$[+6.3,+42.9]$} & $0.004$ & $+28.8$ {\scriptsize$[+14.8,+42.3]$} & $<0.001$ & $+2.5$ & $+2.1$ & $+18.6$\\
+Llama-3.3-70B, answer-only & $0.48$ & $+23.4$ {\scriptsize$[+11.9,+34.9]$} & $<0.001$ & $+19.7$ {\scriptsize$[+7.7,+31.9]$} & $0.002$ & $+3.3$ & $+3.5$ & $+15.5$\\
 Qwen2.5-72B & $0.43$ & -- & -- & $+14.0$ {\scriptsize$[+4.7,+24.9]$} & $<0.001$ & -- & -- & $+12.5$\\
 gemma-3-27b & $0.27$ & -- & -- & $+7.3$ {\scriptsize$[+2.4,+12.2]$} & $0.003$ & -- & -- & $+7.8$\\
 gpt-4o, letter only & $0.24$ & $+6.6$ {\scriptsize$[+2.0,+12.1]$} & $<0.001$ & $+5.3$ {\scriptsize$[-0.3,+11.0]$} & $0.061$ & $+0.5$ & $+0.4$ & $+7.6$\\
@@ -1509,10 +1607,10 @@ gemma-3-27b, within $5\%$ & $0.08$ & $-0.1$ {\scriptsize$[-0.7,+0.3]$} & $0.500$
 gpt-4o, within $5\%$ & $0.08$ & $-1.1$$^{\ddagger}$ & $0.548$ & $-1.7$$^{\ddagger}$ & $0.321$ & $+0.5$ & $+0.1$ & $+2.5$\\
 Qwen2.5-72B, within $5\%$ & $0.06$ & $-1.1$$^{\ddagger}$ & $0.267$ & $-1.3$$^{\ddagger}$ & $0.142$ & $+0.1$ & $-0.0$ & $+1.9$\\
 \multicolumn{9}{l}{\emph{our seven configurations (v1.5)}}\\
-gpt-4o, code-free & $0.60$ & $+18.5$ {\scriptsize$[+11.7,+24.9]$} & $<0.001$ & $+19.9$ {\scriptsize$[+12.1,+29.1]$} & $<0.001$ & $-2.0$ & $+4.3$ & $+20.7$\\
-gemma-3-27b, code-free & $0.54$ & $+22.0$ {\scriptsize$[+14.9,+29.0]$} & $<0.001$ & $+21.6$ {\scriptsize$[+13.7,+30.0]$} & $<0.001$ & $+1.7$ & $+7.3$ & $+18.9$\\
-Qwen2.5-72B, code-free & $0.49$ & $+21.6$ {\scriptsize$[+13.5,+29.0]$} & $<0.001$ & $+21.2$ {\scriptsize$[+13.8,+29.5]$} & $<0.001$ & $+1.7$ & $+7.3$ & $+17.0$\\
-Llama-3.3-70B, code-free & $0.42$ & $+15.3$ {\scriptsize$[+7.1,+23.4]$} & $0.002$ & $+11.0$ {\scriptsize$[+1.1,+21.7]$} & $0.041$ & $+1.4$ & $+5.1$ & $+14.8$\\
+gpt-4o, answer-only & $0.60$ & $+18.5$ {\scriptsize$[+11.7,+24.9]$} & $<0.001$ & $+19.9$ {\scriptsize$[+12.1,+29.1]$} & $<0.001$ & $-2.0$ & $+4.3$ & $+20.7$\\
+gemma-3-27b, answer-only & $0.54$ & $+22.0$ {\scriptsize$[+14.9,+29.0]$} & $<0.001$ & $+21.6$ {\scriptsize$[+13.7,+30.0]$} & $<0.001$ & $+1.7$ & $+7.3$ & $+18.9$\\
+Qwen2.5-72B, answer-only & $0.49$ & $+21.6$ {\scriptsize$[+13.5,+29.0]$} & $<0.001$ & $+21.2$ {\scriptsize$[+13.8,+29.5]$} & $<0.001$ & $+1.7$ & $+7.3$ & $+17.0$\\
+Llama-3.3-70B, answer-only & $0.42$ & $+15.3$ {\scriptsize$[+7.1,+23.4]$} & $0.002$ & $+11.0$ {\scriptsize$[+1.1,+21.7]$} & $0.041$ & $+1.4$ & $+5.1$ & $+14.8$\\
 Qwen2.5-72B & $0.36$ & -- & -- & $+12.8$ {\scriptsize$[+6.9,+19.0]$} & $<0.001$ & -- & -- & $+12.4$\\
 gemma-3-27b & $0.24$ & -- & -- & $+5.8$ {\scriptsize$[+2.3,+9.4]$} & $0.011$ & -- & -- & $+8.4$\\
 Llama-3.3-70B & $0.22$ & -- & -- & $+2.6$ {\scriptsize$[-0.7,+6.0]$} & $0.114$ & -- & -- & $+7.5$\\
@@ -1520,48 +1618,48 @@ gemma-3-27b, within $5\%$ & $0.07$ & $-0.2$$^{\ddagger}$ & $1.000$ & $-0.2$$^{\d
 gpt-4o, within $5\%$ & $0.06$ & $-1.4$ {\scriptsize$[-3.2,+0.4]$} & $0.249$ & $-3.9$ {\scriptsize$[-9.8,+0.0]$} & $0.125$ & $-0.4$ & $-0.7$ & $+2.2$\\
 Qwen2.5-72B, within $5\%$ & $0.05$ & $-0.6$ {\scriptsize$[-1.7,+0.6]$} & $0.500$ & $-0.4$$^{\ddagger}$ & $1.000$ & $+0.0$ & $-0.5$ & $+1.9$\\
 \multicolumn{9}{l}{\emph{the new seeds (v1.5)}}\\
-gpt-4o, code-free & $0.65$ & $+21.2$ {\scriptsize$[+11.9,+30.6]$} & $<0.001$ & $+28.3$ {\scriptsize$[+17.5,+38.9]$} & $<0.001$ & $+0.4$ & $+5.0$ & $+26.6$\\
-gemma-3-27b, code-free & $0.60$ & $+21.8$ {\scriptsize$[+15.1,+28.8]$} & $<0.001$ & $+26.3$ {\scriptsize$[+18.5,+33.9]$} & $<0.001$ & $+1.9$ & $+6.6$ & $+24.5$\\
-Qwen2.5-72B, code-free & $0.55$ & $+28.2$ {\scriptsize$[+19.6,+36.0]$} & $<0.001$ & $+28.0$ {\scriptsize$[+15.8,+39.2]$} & $0.001$ & $+2.4$ & $+8.7$ & $+22.6$\\
-Llama-3.3-70B, code-free & $0.46$ & $+20.7$ {\scriptsize$[+10.5,+30.9]$} & $<0.001$ & $+18.2$ {\scriptsize$[+8.9,+30.4]$} & $<0.001$ & $+1.3$ & $+6.0$ & $+19.0$\\
+gpt-4o, answer-only & $0.65$ & $+21.2$ {\scriptsize$[+11.9,+30.6]$} & $<0.001$ & $+28.3$ {\scriptsize$[+17.5,+38.9]$} & $<0.001$ & $+0.4$ & $+5.0$ & $+26.6$\\
+gemma-3-27b, answer-only & $0.60$ & $+21.8$ {\scriptsize$[+15.1,+28.8]$} & $<0.001$ & $+26.3$ {\scriptsize$[+18.5,+33.9]$} & $<0.001$ & $+1.9$ & $+6.6$ & $+24.5$\\
+Qwen2.5-72B, answer-only & $0.55$ & $+28.2$ {\scriptsize$[+19.6,+36.0]$} & $<0.001$ & $+28.0$ {\scriptsize$[+15.8,+39.2]$} & $0.001$ & $+2.4$ & $+8.7$ & $+22.6$\\
+Llama-3.3-70B, answer-only & $0.46$ & $+20.7$ {\scriptsize$[+10.5,+30.9]$} & $<0.001$ & $+18.2$ {\scriptsize$[+8.9,+30.4]$} & $<0.001$ & $+1.3$ & $+6.0$ & $+19.0$\\
 Qwen2.5-72B & $0.40$ & -- & -- & $+15.4$ {\scriptsize$[+7.8,+24.3]$} & $<0.001$ & -- & -- & $+17.6$\\
 gemma-3-27b & $0.22$ & -- & -- & $+4.0$ {\scriptsize$[-2.2,+10.3]$} & $0.202$ & -- & -- & $+9.5$\\
 Llama-3.3-70B & $0.21$ & -- & -- & $+3.8$ {\scriptsize$[-0.5,+8.3]$} & $0.102$ & -- & -- & $+9.2$\\
 gemma-3-27b, within $5\%$ & $0.06$ & $-0.2$$^{\ddagger}$ & $1.000$ & $+0.0$$^{\ddagger}$ & $1.000$ & $-0.1$ & $-0.2$ & $+2.5$\\
 Qwen2.5-72B, within $5\%$ & $0.05$ & $-0.7$ {\scriptsize$[-1.4,+0.0]$} & $0.249$ & $-0.3$$^{\ddagger}$ & $1.000$ & $+0.4$ & $-0.2$ & $+2.1$\\
 \multicolumn{9}{l}{\emph{Qwen3-235B-A22B (v1.5)}}\\
-gpt-4o, code-free & $0.60$ & $+6.1$ {\scriptsize$[-1.9,+14.0]$} & $0.173$ & $+7.6$ {\scriptsize$[+2.5,+12.5]$} & $0.031$ & $-3.1$ & $-1.0$ & $+7.6$\\
-gemma-3-27b, code-free & $0.55$ & $+13.5$ {\scriptsize$[+6.2,+23.3]$} & $0.002$ & $+12.9$ {\scriptsize$[+5.8,+19.7]$} & $0.008$ & $-4.5$ & $+0.0$ & $+6.9$\\
-Qwen2.5-72B, code-free & $0.51$ & $+15.5$ {\scriptsize$[+4.2,+26.6]$} & $0.018$ & $+14.4$ {\scriptsize$[+7.4,+20.9]$} & $0.004$ & $-2.2$ & $+1.7$ & $+6.3$\\
+gpt-4o, answer-only & $0.60$ & $+6.1$ {\scriptsize$[-1.9,+14.0]$} & $0.173$ & $+7.6$ {\scriptsize$[+2.5,+12.5]$} & $0.031$ & $-3.1$ & $-1.0$ & $+7.6$\\
+gemma-3-27b, answer-only & $0.55$ & $+13.5$ {\scriptsize$[+6.2,+23.3]$} & $0.002$ & $+12.9$ {\scriptsize$[+5.8,+19.7]$} & $0.008$ & $-4.5$ & $+0.0$ & $+6.9$\\
+Qwen2.5-72B, answer-only & $0.51$ & $+15.5$ {\scriptsize$[+4.2,+26.6]$} & $0.018$ & $+14.4$ {\scriptsize$[+7.4,+20.9]$} & $0.004$ & $-2.2$ & $+1.7$ & $+6.3$\\
 Qwen2.5-72B & $0.47$ & -- & -- & $+3.0$ {\scriptsize$[-2.1,+7.0]$} & $0.359$ & -- & -- & $+6.6$\\
-Llama-3.3-70B, code-free & $0.40$ & $+12.2$ {\scriptsize$[+3.1,+22.4]$} & $0.017$ & $+8.3$ {\scriptsize$[+1.8,+15.0]$} & $0.039$ & $-0.9$ & $+1.2$ & $+5.0$\\
+Llama-3.3-70B, answer-only & $0.40$ & $+12.2$ {\scriptsize$[+3.1,+22.4]$} & $0.017$ & $+8.3$ {\scriptsize$[+1.8,+15.0]$} & $0.039$ & $-0.9$ & $+1.2$ & $+5.0$\\
 Llama-3.3-70B & $0.38$ & -- & -- & $+4.5$ {\scriptsize$[-1.4,+10.9]$} & $0.219$ & -- & -- & $+5.3$\\
 gemma-3-27b & $0.26$ & -- & -- & $+1.5$ {\scriptsize$[-4.0,+6.3]$} & $0.750$ & -- & -- & $+3.7$\\
 gemma-3-27b, within $5\%$ & $0.08$ & $-2.0$$^{\ddagger}$ & $0.499$ & $-2.3$$^{\ddagger}$ & $0.500$ & $+0.4$ & $-0.7$ & $+1.0$\\
 Qwen2.5-72B, within $5\%$ & $0.07$ & $-0.7$$^{\ddagger}$ & $1.000$ & $-3.0$$^{\ddagger}$ & $0.500$ & $+0.4$ & $-0.2$ & $+0.9$\\
 \multicolumn{9}{l}{\emph{gpt-5.1 (v1.5)}}\\
-gpt-4o, code-free & $0.45$ & $+18.2$ {\scriptsize$[+9.5,+27.5]$} & $0.001$ & $+15.9$ {\scriptsize$[+2.9,+29.7]$} & $0.024$ & $-4.9$ & $+0.5$ & $+7.9$\\
-gemma-3-27b, code-free & $0.43$ & $+14.2$ {\scriptsize$[+6.8,+24.1]$} & $<0.001$ & $+12.9$ {\scriptsize$[+3.3,+25.0]$} & $0.009$ & $+0.4$ & $+4.3$ & $+7.6$\\
+gpt-4o, answer-only & $0.45$ & $+18.2$ {\scriptsize$[+9.5,+27.5]$} & $0.001$ & $+15.9$ {\scriptsize$[+2.9,+29.7]$} & $0.024$ & $-4.9$ & $+0.5$ & $+7.9$\\
+gemma-3-27b, answer-only & $0.43$ & $+14.2$ {\scriptsize$[+6.8,+24.1]$} & $<0.001$ & $+12.9$ {\scriptsize$[+3.3,+25.0]$} & $0.009$ & $+0.4$ & $+4.3$ & $+7.6$\\
 \bottomrule
 \end{tabular}}
 \end{table}
 
 \paragraph{Current agents.} Outside the pre-specified test, gpt-5.1 (version 2025-11-13, medium reasoning effort) ran
-BixBench's published agent with the data twice on each of v1.5's $105$ numeric questions, and gpt-6-luna and
+BixBench's ReAct agent with the data twice on each of v1.5's $105$ numeric questions, and gpt-6-luna and
 DeepSeek-V4-Pro once each, through Azure AI Foundry; gpt-4o (version 2024-11-20) graded every run
-(Tables~\ref{tab:strong} and~\ref{tab:frontier}). DeepSeek-V4-Pro's first runs had two drivers writing to one
-directory, each overwriting episodes the other had finished; we ran all $105$ again on 1 October with one driver and
-report these, and both sets ship with the code. gpt-4o selects no option on $47.0$ to $53.8\%$ of the current agents'
-misses and on $49.0\%$ of gpt-5.1's, which BixBench's parser scores wrong, where BixBench's own gpt-4o grades did on
+(Tables~\ref{tab:strong} and~\ref{tab:frontier}). DeepSeek-V4-Pro's first runs had two copies of our run script
+writing to one directory, each overwriting runs the other had finished; we ran all $105$ again on 1 October with one
+copy and report these, and both sets ship with the code. gpt-4o selects no option on $49.0\%$ of gpt-5.1's misses
+and on $47.0$ to $53.8\%$ of gpt-6-luna's and DeepSeek-V4-Pro's, which BixBench's answer parser scores wrong, where BixBench's own gpt-4o grades did on
 $24.9\%$ of the published runs'. Kimi-K3 is left out: its long answers state its number first, so gpt-4o grades
 $53.7\%$ of them correct open-ended, while the last number, which the tolerance reads, is within $5\%$ of the key in
 $32.6\%$ and the first number in $55.8\%$.
 
 \begin{table}[htbp]
 \centering\footnotesize\setlength{\tabcolsep}{4pt}
-\caption{gpt-5.1 as BixBench's published agent with the data, two runs on each of v1.5's $105$ numeric
+\caption{gpt-5.1 running BixBench's ReAct agent with the data, two runs on each of v1.5's $105$ numeric
 questions, graded by gpt-4o: in per cent, and $U-P$ in points; each question's runs averaged, with plain $95\%$
-cluster-bootstrap intervals over its $46$ capsules. The forced and refusal-option grades are in
+intervals over its $46$ capsules. The forced and refusal-option grades are in
 Table~\ref{tab:released}.}
 \label{tab:strong}
 \begin{tabular}{lr}
@@ -1580,11 +1678,11 @@ $U-P$, gpt-4o forced, moved keys & $+4.1$ $[+0.6,+8.6]$\\
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{2pt}
-\caption{Two current agents as BixBench's published agent with the data, one run on each of v1.5's $105$ numeric
+\caption{gpt-6-luna and DeepSeek-V4-Pro running BixBench's ReAct agent with the data, one run on each of v1.5's $105$ numeric
 questions, graded by gpt-4o as gpt-5.1's runs are (Table~\ref{tab:strong}), in per cent and points: the questions
 whose run finished; the share within $5\%$ of the key and graded correct open-ended; the forced and refusal-option
-scores minus the tolerance and the forced score corrected for guessing minus it, with intervals over capsules at the
-level that attains $95\%$ coverage; the share of misses the forced grading accepts, over all and by the single nearest
+scores minus the tolerance and the forced score corrected for guessing minus it, with intervals as in
+Appendix~\ref{app:stats}; the share of misses the forced grading accepts, over all and by the single nearest
 option; and $U-P$ on the moved keys under the nearest-option rule (plain $95\%$ interval) and under gpt-4o, forced.}
 \label{tab:frontier}
 \resizebox{\linewidth}{!}{\begin{tabular}{lrrrrrrrrrrr}
@@ -1599,34 +1697,35 @@ DeepSeek-V4-Pro & $105$ & $28.6$ & $23.8$ & $+11.9$ {\scriptsize$[+4.6,+19.4]$} 
 \end{tabular}}
 \end{table}
 
-\paragraph{Agent accuracy.} The gain from a hidden rank falls on misses (Figure~\ref{fig:scaling}). Over the nineteen
-configurations with the data, the rule's $U-P$ over all items falls as agents land within $5\%$ of the key more often
-($\rho=-0.89$), and per miss on the moved keys it falls less ($\rho=-0.46$, $p=0.050$). The configurations share
-models: with each of the eight models counted once, only the decrease over all items survives ($\rho=-0.90$,
-$p=0.005$). What a forced grader accepts per miss does not fall as agents improve: over the $22$ configurations the
-share of misses accepted is unrelated to the share within $5\%$ (Spearman $+0.07$, $p=0.75$), and under one code-free
-grader for all it rises ($+0.50$ for gemma-3-27b, $+0.53$ for gpt-4o), because a more accurate agent's misses more
-often lie nearest the key ($+0.66$, $p=0.001$).
+\paragraph{Agent accuracy.} The cost of a hidden rank comes only from misses (Figure~\ref{fig:scaling}). Over the
+nineteen run sets with the data, the rule's $U-P$ over all items decreases as agents land within $5\%$ of the key more
+often (rank correlation $-0.89$), and per miss on the moved keys it decreases less ($-0.46$, $p=0.050$). The run sets
+share models: with each of the eight models counted once, only the decrease over all items remains ($-0.90$,
+$p=0.005$). What a forced grader accepts per miss does not decrease as agents improve: over the $22$ run sets, these
+nineteen and the three current agents', the share of misses accepted shows no rank correlation with the share within
+$5\%$ ($+0.07$, $p=0.75$), and when one answer-only grader grades every run set it rises ($+0.50$ for gemma-3-27b,
+$+0.53$ for gpt-4o); a more accurate agent's misses more often lie nearest the key ($+0.66$, $p=0.001$).
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/scaling.pdf}
 \caption{\textbf{The cost of a hidden rank falls with agent accuracy, but less per miss.} The nearest-option rule's
-$U-P$ for each of the nineteen configurations with the data, against the share of its answers within $5\%$ of the key:
-\textbf{(a)} over all numeric items; \textbf{(b)} on the moved keys, per miss (the contrast divided by the moved keys'
-share beyond $5\%$). Markers distinguish the eight models; $\rho$ is Spearman's over the configurations, with a
-permutation $p$-value.}
+$U-P$ for each of the nineteen run sets with the data, against the share of its answers within $5\%$ of the key:
+\textbf{(a)} over all numeric items; \textbf{(b)} on the moved keys, per miss (the difference divided by the moved keys'
+share beyond $5\%$). Markers distinguish the eight models; $\rho$: rank correlation (Spearman's) over the run sets,
+with a permutation $p$-value.}
 \label{fig:scaling}
 \end{figure}
 
-\paragraph{Robustness.} Table~\ref{tab:robust} repeats the main contrasts on other samples of the runs, other draws of
+\paragraph{Robustness.} Table~\ref{tab:robust} repeats the main differences on other samples of the runs, other draws of
 $U$, other subsets of the items and other graders of the options alone.
 
 \begin{table}[htbp]
 \centering\footnotesize
 \caption{\textbf{Robustness checks.} Each check, the runs it uses and its result, in points (the rule's $U-P$ on the
-moved keys unless stated), with intervals as in Table~\ref{tab:readers2}. A control file places the key uniformly
-among options drawn from the file's own pool, so its $\Gamma$ is zero.}
+moved keys unless stated), with intervals as in Table~\ref{tab:readers2}. A control dataset places the key at random
+among options drawn from the dataset's own values, so its options reveal nothing ($\Gamma=0$,
+Appendix~\ref{app:theory}).}
 \label{tab:robust}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}X@{}}
 \toprule
@@ -1634,23 +1733,24 @@ check & runs & result\\
 \midrule
 one run per question, $2{,}000$ draws & published & $15.1$ to $24.6$ in $95\%$ of draws\\
 $U$ redrawn with $100$ seeds & v1.5 with and without the data; published & $U$ moves $33$ to $60$ keys to an extreme;
-the gain is $+13.4$ to $+24.9$, $+14.8$ to $+27.9$ and $+16.1$ to $+29.7$, its interval excluding zero at every
-seed\\
-without the six capsules a concurrent audit examined \citep{bixbenchaudit} & $23$ of v1.5's $105$ items, $24$ of
-v1.0's $159$ & no moved-key contrast of the test or of Tables~\ref{tab:readers2} and~\ref{tab:readersfull} changes by
+the rule's $U-P$ on them is $+13.4$ to $+24.9$ (v1.5 with the data), $+14.8$ to $+27.9$ (without) and $+16.1$ to
+$+29.7$ (published), its interval excluding zero at every seed\\
+without the six capsules a concurrent audit examined, three in full and three in a pilot \citep{bixbenchaudit} & $23$ of v1.5's $105$ items, $24$ of
+v1.0's $159$ & no moved-key difference of the test or of Tables~\ref{tab:readers2} and~\ref{tab:readersfull} changes by
 more than $1.8$\\
 the keys BixBench-Verified-50's experts re-checked \citep{verified50} & $26$ v1.5 numeric items, $14$ of them moved &
 forced-choice excess $+13.5$ $[+6.1,+20.1]$ (seven configurations) and $+15.4$ $[+7.7,+25.3]$ (new seeds); the
 rule's $U-P$ $+19.6$ $[+5.0,+31.1]$ and $+19.9$ $[+0.8,+33.3]$\\
-without degenerate runs (no answer, step or reply limit, wall clock) & seven configurations, $123$ of $735$ runs
+without the runs that gave no answer or hit the step, reply-length or time limit & seven configurations, $123$ of $735$ runs
 removed & forced-choice excess from $+14.6$ to $+17.3$ $[+14.5,+20.0]$; the rule's $U-P$ from $+16.7$ to $+18.8$
 $[+11.7,+25.9]$\\
-four more runs of Qwen3-235B-A22B, after the test & $420$ episodes & $+9.5$ $[+0.9,+17.4]$; with the test's two runs
-$+7.9$ $[+0.7,+14.7]$; its $30$ unchanged keys that keep their rank, $+0.3$\\
+four more runs of Qwen3-235B-A22B, after the test & $420$ question runs & $+9.5$ $[+0.9,+17.4]$; with the test's two runs
+$+7.9$ $[+0.7,+14.7]$; its $30$ unchanged keys whose rank $U$ leaves as released, $+0.3$\\
 the three configurations whose accuracy rises with the data & Qwen2.5-72B (text), GLM-4.5-Air, Qwen3-30B-A3B &
 forced-choice excess $+10.8$ $[+5.3,+16.4]$; the rule's $U-P$ $+12.4$ $[+4.8,+21.9]$\\
-a learned grader of the options alone & v1.5's $R$, $P$, $U$ & selects the key on $43.8$, $41.9$ and $30.5\%$; on the
-worst of ten control files, $30.5\%$\\
+a learned grader of the options alone: a linear score of features of each option set (ranks, written length,
+significant digits), fitted and scored on held-out capsules & v1.5's $R$, $P$, $U$ & selects the key on $43.8$, $41.9$
+and $30.5\%$; on ten control datasets, whose options cannot reveal the key, on at most $30.5\%$\\
 the fewest-digits rule & v1.5's $P$, $U$ & correct on $31.7$ and $31.9\%$: $U$ gains $+0.2$ over $P$\\
 \bottomrule
 \end{tabularx}
@@ -1660,24 +1760,30 @@ the fewest-digits rule & v1.5's $P$, $U$ & correct on $31.7$ and $31.9\%$: $U$ g
 \subsection{Designs of the options}
 \label{app:design}
 
+A design sets how an item's options are built: their number $k$, the key's rank and the distractors' spacing.
 Every design keeps each numeric item's key and redraws its distractors with the generator of $P$ and $U$
 (Appendix~\ref{app:options}), asked for $k-1$ distractors and a rank for the key: drawn uniformly from all $k$ ranks
-(\emph{uniform}), from the $k-2$ middle ones (\emph{middle}), or the key's released rank ($k=4$). The distractors are
-spaced as those of $P$ and $U$, or at a fixed fraction of the key. The error-modelled designs take their distractors
+(\emph{uniform}), from the $k-2$ middle ones, so kept off the extremes (\emph{middle}), or the key's released rank
+($k=4$). The distractors are
+spaced as those of $P$ and $U$, or at a fixed fraction of the key. Designs from agents' errors take their distractors
 from the numbers other agents submitted to the same question that are more than $5\%$ from the key and of its sign; a
 run is graded through options built without its own model's numbers. Designs are compared on the runs that every
-design can grade ($4{,}877$ of the $5{,}161$ published runs, $2{,}070$ of the $2{,}205$ v1.5 runs with the data).
-Coarsely written keys cannot take every rank at close spacing, so the most frequent middle rank holds more than its
-uniform share ($35.4$ against $25\%$ of v1.0's keys at $k=6$), and the rank rule gains more than the theory gives
+design can grade ($4{,}877$ of the $5{,}161$ published runs, and $2{,}070$ of the $2{,}205$ v1.5 runs with the data: the seven
+configurations', the new seeds', Qwen3-235B-A22B's six runs per question and gpt-5.1's two). Keys written with few
+digits cannot take every rank when the options are close together, so under the middle design the most frequent
+middle rank holds more than its uniform share ($35.4$ against $25\%$ of v1.0's keys at $k=6$), and the rank rule gains
+more than Observation~\ref{obs:bracket}'s floor
 (Table~\ref{tab:design}). Table~\ref{tab:designpairs} sets out what drawing the rank from all $k$ costs.
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{2pt}
 \caption{\textbf{Designs of the options.} Each design's distractors, number of options $k$ and key rank; what a rule
-that selects one rank gains over $1/k$, in theory and on held-out capsules of each release, in points; the share of
-misses the nearest-option rule accepts, reading the last number; the range over the four code-free graders of the
+that selects one rank gains over $1/k$, in theory (Observation~\ref{obs:bracket}'s floor) and on held-out capsules of
+each release, in points; the share of misses the nearest-option rule accepts, reading the last number, on the runs
+every design can grade; the range over the four answer-only graders of the
 share of misses they accept (--: not graded); and the range of the share of correct answers they accept, over both
-releases. \emph{Redrawn}: spaced as $P$ and $U$; \emph{a fifth} or \emph{a tenth apart}: at that fraction of the
+releases. \emph{Redrawn}: a new draw spaced as $P$ and $U$, each value written with the significant digits of a released
+distractor; \emph{a fifth} or \emph{a tenth apart}: at that fraction of the
 key; \emph{agents' errors}: from other agents' wrong numbers. $R$, $P$ and $U$ are the paper's option sets.}
 \label{tab:design}
 \resizebox{\linewidth}{!}{\begin{tabular}{lrlrrrrrrrr}
@@ -1711,11 +1817,12 @@ agents' errors & $4$ & middle & $25.0$ & $+31.8$ & $+22.0$ & $13.2$ & $14.4$ & -
 
 \begin{table}[htbp]
 \centering\scriptsize\setlength{\tabcolsep}{2pt}
-\caption{\textbf{What drawing the rank from all $k$ costs.} The rule's gain from a design whose key rank is drawn
-from all $k$ ranks over one whose rank is released or kept off the extremes, on the keys it moves from bracketed to
-extreme (their number on v1.0 and v1.5), with intervals over capsules at the level the double bootstrap finds
-attains $95\%$ coverage, and over all items; and the range of the same gain on the moved keys over the four code-free
-graders (--: not graded).}
+\caption{\textbf{What drawing the rank from all $k$ costs.} How many more answers the rule accepts under a design whose key rank is
+drawn from all $k$ ranks than under one whose rank is released or kept off the extremes, on the keys it moves from bracketed to
+extreme (their number on v1.0 and v1.5), with intervals as in Appendix~\ref{app:stats},
+and over all items; and the range of the same difference on the moved keys over the four answer-only
+graders (--: not graded). Here the rule reads the last number, on the runs every design can grade, so its $U-P$
+differs from Table~\ref{tab:cost}'s.}
 \label{tab:designpairs}
 \resizebox{\linewidth}{!}{\begin{tabular}{lrrrrrrr}
 \toprule
