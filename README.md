@@ -1739,7 +1739,7 @@ python -m pytest tests
 python3 validate_artifact.py                            # paper numbers vs results
 
 mkdir -p build
-tectonic --reruns 2 --keep-logs --keep-intermediates --outdir build main.tex
+tectonic --reruns 3 --keep-logs --keep-intermediates --outdir build main.tex
 python package_submission.py --camera-ready   # the PDF and both ZIPs, into submission/
 ```
 
