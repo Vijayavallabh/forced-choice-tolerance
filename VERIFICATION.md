@@ -24,7 +24,7 @@ commands; where one disagrees with this list, this list is current.
 | KEY MARGINAL as built (Gamma +7.1) and rebuilt (+0.65), and its cost | not in the paper | `python3 key_marginal_gamma.py`; `python3 key_marginal_symmetric.py --cost` | `results/key_marginal_gamma.json`, `results/key_marginal_symmetric.json` |
 | Proposition 2(iii) against the built arm; the collision bound | not in the paper | `writer_theory.py --empirical --model M` (GPU, one solver each); `python3 collision_bound.py` | `results/writer_price.json`, `results/collision_bound.json` |
 | Coverage of the cluster bootstrap and the levels that cover | App. A.4 | `python3 bootstrap_calibration.py` | `results/bootstrap_calibration.json` |
-| The ten headline findings (the abstract's and the introduction's, and the two no-data margins App. C.3 rests on), corrected together (eight survive), and each at the nominal 95% (all ten clear) | §3.4, §4.1, App. A.4, Table 8 | `python3 claim_budget.py` (about 25 minutes on CPU; `--latex` prints Table 8) | `results/claim_budget.json` |
+| The ten headline findings (the abstract's and the introduction's, and the two no-data margins App. C.3 rests on), corrected together (eight survive), and each at the nominal 95% (all ten clear) | §3.4, §4.1, App. A.4, App. C, Table 8 | `python3 claim_budget.py` (about 25 minutes on CPU; `--latex` prints Table 8) | `results/claim_budget.json` |
 | The registered replication on BixBench v1.0's published gpt-4o and Claude 3.5 Sonnet runs: H1-H5, per run set, single-run spread | §3.4, §4.4, Fig. 4, Tables 20 and 27, App. C.4 | `python3 replication.py analyse` (the plan: `PREREGISTRATION.md`) | `results/replication.json`, `results/bixbench_v10_published_runs.json.gz` |
 | The registered replication on new v1.5 runs (Qwen3-235B-A22B; two new seeds of three agents): H1-H6, run to run, and the placebo's own change beside them (not registered) | §3.4, §4.4, Fig. 4, Tables 20 and 21, App. C.4 | `python3 replication.py pack` then `analyse` (runs: `bixbench_agent.py`, see below) | `results/replication.json`, `results/agent_runs_replication/` |
 | The repair redrawn at 100 seeds | App. C.4, Table 27 | `python3 repair_seeds.py --seeds 100` | `results/repair_seeds.json` |
@@ -2808,8 +2808,8 @@ the shipped trajectories.
   (Introduction, Related work, Methods, Results, Discussion, Conclusion) with
   four figures and three tables: the main text and the acknowledgments end on
   page 8, the references run from page 9 to page 12, and three appendices (A,
-  methods in detail; B, proofs; C, results in detail) run from page 13 to page 33,
-  33 pages in total, with five figures and twenty-six tables. Every figure and
+  methods in detail; B, proofs; C, results in detail) run from page 13 to page 32,
+  32 pages in total, with five figures and twenty-six tables. Every figure and
   table carries a caption and is cited in the running text outside its own float,
   and each of the seven in the main text is cited in the main text's prose.
 - No undefined references or citations, no missing glyphs, no overfull boxes;

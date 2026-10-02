@@ -1983,7 +1983,10 @@ if _cbc:
           and -0.5 < _cl_lo <= 0 and _luna_lo <= 0
           and "We correct ten headline findings jointly (Table~\\ref{tab:claims})" in _flat
           and "each is read at the level that attains $1-0.05/10=99.5\\%$ coverage on its own data" in _flat
-          and "Eight of the ten survive." in _flat
+          and "Eight of the ten headline findings survive the joint correction of Appendix~\\ref{app:stats} "
+              "(Table~\\ref{tab:claims})." in _flat
+          and _flat.index("Eight of the ten headline findings survive") > _flat.index("\\section{Results in detail}")
+          and _flat.index("\\label{tab:claims}") > _flat.index("\\section{Results in detail}")
           and f"although under the joint correction (\\S\\ref{{sec:stats}}) gpt-6-luna's interval extends to "
               f"${_luna_lo:.1f}$." in _flat,
           f"app:stats or the introduction misstate which of the ten claims survive; the budget says {_cb['survivors']}")
