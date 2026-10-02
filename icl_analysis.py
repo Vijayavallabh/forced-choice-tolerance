@@ -186,7 +186,7 @@ SHORT = {"Qwen/Qwen2.5-1.5B-Instruct": "Qwen2.5-1.5B", "microsoft/Phi-3.5-mini-i
 
 
 def table_rows(doc, shots=64):
-    """tab:icl: per model, in order of size, the no-example and the ``shots``-example accuracies with the
+    """tab:icl (no longer in the paper; Figure~\ref{fig:norank}b instead): per model, in order of size, the no-example and the ``shots``-example accuracies with the
     question withheld, and the rank-isolating contrast with the question withheld and shown."""
     rows = []
     for rec in sorted(doc["models"], key=lambda m: PARAMETERS_B[m["model"]]):

@@ -233,7 +233,7 @@ def _ci(x):
 
 
 def table_rows(report, summary="results/bixbench_withdata.json"):
-    """tab:bracket: the run set's own reading through each option set, and the nearest-option
+    """tab:bracket (no longer in the paper): the run set's own reading through each option set, and the nearest-option
     rule's repaired-minus-released gain overall and split by whether the repair moved the key,
     under a header row per protocol."""
     wd = json.loads(pathlib.Path(summary).read_text())
@@ -282,7 +282,7 @@ def mechanism_rows(report):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--output", default="results/bracketing.json")
-    ap.add_argument("--latex", action="store_true", help="print tab:bracket's rows from the two result files")
+    ap.add_argument("--latex", action="store_true", help="print tab:bracket's rows (no longer in the paper), then tab:mechanism's")
     args = ap.parse_args()
     if args.latex:
         report = json.loads(pathlib.Path(args.output).read_text())

@@ -22,7 +22,7 @@ and asks whether the with-data results hold without them.
 * **The configurations that use the data.** The same restricted to the three whose accuracy measurably
   rises with the data (Qwen2.5-72B in text, GLM-4.5-Air and Qwen3-30B-A3B as published), and with
   Qwen3-235B-A22B and gpt-5.1 added, each model's runs averaged first so that each model weighs once.
-* **Per miss.** For each configuration of Table~\ref{tab:scaling}, gpt-5.1 and the two current agents
+* **Per miss.** For each configuration of Figure~\ref{fig:scaling}, gpt-5.1 and the two current agents
   (gpt-6-luna and DeepSeek-V4-Pro, graded by gpt-4o forced as gpt-5.1 is), the share of its graded
   misses that forced-choice grading through the released options accepts, against how often it is within
   5% of the key: as each is graded in Table~\ref{tab:released}, and under one grader for all, gemma-3-27b
@@ -70,7 +70,7 @@ MODEL = {"qwen72b": "Qwen2.5-72B", "qwen72b-react": "Qwen2.5-72B", "llama70b": "
 
 
 def label_of(run):
-    """A run set's name as Table~\\ref{tab:scaling} gives it: seeds 2 and 3 are rollouts 1 and 2."""
+    """A run set's name as run_set_scaling.py gives it: seeds 2 and 3 are rollouts 1 and 2."""
     base, _, r = run.partition("|")
     if base == "gpt-5.1-react":
         return "v1.5, gpt-5.1" + (f", run {int(r[1:]) + 1}" if r else "")
@@ -313,7 +313,7 @@ def permutation_p(x, y, draws=200000, seed=SEED):
 
 
 def per_miss_rows():
-    """Every configuration of Table~\\ref{tab:scaling}, gpt-5.1 and the two current agents, through the released
+    """Every configuration of Figure~\\ref{fig:scaling}, gpt-5.1 and the two current agents, through the released
     options: its share
     within 5%, and the share of its graded misses accepted forced -- as Table~\\ref{tab:released} grades it and
     by gemma-3-27b and gpt-4o code-free -- with the share of its misses whose single nearest option is the key."""

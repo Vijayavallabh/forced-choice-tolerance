@@ -41,8 +41,7 @@ Every number below is printed by the script named beside it; those the paper
 states are pinned to `main.tex` by `validate_artifact.py` (run it with
 `AGENTICLS_VALIDATE_COLLECT=1` to list every failing pin at once).
 
-- **What a forced reading credits** (`score_decomposition.py`, Tables 2 and
-  26). As released, BixBench's forced reading credits 22.6 and 25.3% of the
+- **What a forced reading credits** (`score_decomposition.py`, Table 2). As released, BixBench's forced reading credits 22.6 and 25.3% of the
   misses it reads on gpt-4o's and Claude 3.5 Sonnet's published runs (an empty
   answer is scored wrong unread), where a choice at random among four would
   credit 25%. It scores the runs 19.2 and 21.0 points above the share within
@@ -53,16 +52,16 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   with no number. gpt-4o's published reading names no option on about 30% of
   misses (the parser's `Z`), Claude's on under 1%; of the reads that name one,
   the nearest option is named on 63.8 and 48.3% (gpt-4o, key nearest or not)
-  and 68.7 and 68.0% (Claude) (`picks_on_misses`, `--latex-picks`). The misses
+  and 68.7 and 68.0% (Claude) (`picks_on_misses`, `--latex-picks`; no longer in the paper). The misses
   nearest another option are not explained by the key's value in the notebook
   (written on 16% of those runs, a distractor's on 16 and 14%) or by a slip of
   scale. The may-decline reading credits 2.0 and 5.6% of misses but rejects 8.8 and
   10.2% of the correct answers, and is within 4 points of the tolerance; at
   every tolerance from 1 to 10% the forced readings sit 13 to 24 points above
-  it (Table 37). Our seven run sets: +14.6
+  it (Table 11). Our seven run sets: +14.6
   forced, +1.3 may decline; gpt-5.1 as the published agent, read by gpt-4o,
   +10.0 forced and -0.2 may decline (the closed models, below).
-- **Against other references** (`reference_check.py`, Table 24). Against
+- **Against other references** (`reference_check.py`, Table 9). Against
   BixBench's own open-ended grading of the same runs, which reads the whole
   answer, the published forced-choice excess is +20.4 and +21.7; counting any
   number in the answer, or dropping the 19 p-value keys, moves it by under a
@@ -74,8 +73,8 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   With each of the eight agent models counted once, the cost over all
   items still falls with accuracy (rho -0.90, p = 0.005); per miss it does not
   (rho -0.43, p = 0.30).
-- **How a number is read** (`answer_extraction.py`, Table 31;
-  `extraction_verdicts.py`, Table 23). The registered
+- **How a number is read** (`answer_extraction.py`, Table 7;
+  `extraction_verdicts.py`, Table 21). The registered
   rule reads only answers that are a number: 60% of our v1.5 answers, 58 and
   91% of gpt-4o's and Claude 3.5 Sonnet's published ones. Read from the last
   number in the answer, as the tolerance reads it, no moved-key contrast
@@ -99,29 +98,29 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   v1.5 brackets 81% of its 105 numeric keys and the second-smallest option is
   the key on 54 (51.4%); the second-smallest rule takes +26.4 [+14.0, +38.6],
   chosen afresh in every leave-one-capsule-out fold. v1.0's best rule, +5.8
-  in-sample, falls to -2.4 held out. Table 8 gives each of nine files' rule
-  chosen on held-out clusters against its floor (App. B).
-- **Where v1.5's rank came from** (`leak_origin.py`, Table 9). v1.5 kept 62 of
+  in-sample, falls to -2.4 held out. Table 13 gives each of nine files' rule
+  chosen on held-out clusters against its floor (App. C.3).
+- **Where v1.5's rank came from** (`leak_origin.py`, Table 14). v1.5 kept 62 of
   v1.0's 159 numeric items (same capsule, same key), mostly the bracketed ones
   (77% against 51% of those dropped), and rewrote the distractors of 24 of
   them, putting the key at the second-smallest rank on 19 (from 29% to 79%);
   its 43 new items put the key there on 40%.
 - **What hiding the rank would credit** (`bixbench_withdata.py`,
-  `reader_split.py`, Table 28). Seven run sets frozen and re-read
+  `reader_split.py`, Table 23). Seven run sets frozen and re-read
   through the released options, a placebo (rank held) and a repair (rank
   uniform). On the 37 keys the repair moves to an edge, against the placebo:
   the option nearest the agent's number is the key +16.7 points more often
   (+15.3 and +16.5 keeping one protocol per family; +15.1 without the data),
   +5.3 over the whole file.
-- **Who pays** (`run_set_scaling.py`, Table 33). Over nineteen run sets with
+- **Who pays** (`run_set_scaling.py`, Figure 9). Over nineteen run sets with
   the data the rule's moved-key gain falls as agents land within 5% more often
   (Spearman -0.56), and its whole-file gain falls faster (-0.89), from +10.2 to
   +0.7 for Qwen3-235B-A22B at 23.8%. gpt-5.1, at 27.6%, gives the rule +3.1
-  [+0.7, +5.7] over the whole file (`strong_agent.py`, Table 34; the report
+  [+0.7, +5.7] over the whole file (`strong_agent.py`, Table 25; the report
   also extrapolates the nineteen run sets' line to gpt-5.1's share, which the
   paper does not use).
 - **Under BixBench's readers** (`published_reads.py`, `reader_split.py`,
-  Tables 27 and 28, App. F). Three open models read BixBench's published gpt-4o and
+  Tables 22 and 23, App. C.4). Three open models read BixBench's published gpt-4o and
   Claude 3.5 Sonnet runs through `MCQ_EVAL_PROMPT`, forced, where the rule
   gains +18.6 on the moved keys: Qwen2.5-72B, which names the option nearest
   a miss on 63.1% of misses as the published reading does on 63.3%, gains
@@ -146,12 +145,12 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   the same runs names none on 24.4% of misses, Claude's on 0.2%
   (`grader_declines.py`).
 - **The proximity weight** (`proximity_weight.py`, `lambda_holdout.py`, Remark
-  1, Tables 27 and 29). A forced grader that on a miss selects no option with
+  1, Tables 22 and 24). A forced grader that on a miss selects no option with
   probability delta and the nearest with probability q bears lambda = (1 -
   delta)(4q - 1)/3 of the rule's gain from a change of options. Measured from
   each grading's own selections on the misses of the same runs (ties in d, as
   for an answer of 0, broken by the absolute distance), lambda orders the 46
-  gradings of Tables 27 and 29 at Spearman 0.88: code-free graders 0.48 to 0.69,
+  gradings of Tables 22 and 24 at Spearman 0.88: code-free graders 0.48 to 0.69,
   BixBench's graders with the notebook about 0.1 to 0.5, the within-5% option
   under 0.1. BixBench's own published grades, which exist only through R, have
   lambda 0.44, near Qwen2.5-72B's 0.43. Fitted on the unchanged and inward keys
@@ -161,7 +160,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   and 3.4 for the mean share of the grading's kind: it orders graders and does
   not price them.
 - **Without the notebook, constrained, or with a tolerance option**
-  (`grading_variants.py`, `grading_variants_analysis.py`, Tables 27, 29 and 30;
+  (`grading_variants.py`, `grading_variants_analysis.py`, Tables 10, 22 and 24;
   not registered). Graded as a 2026 system grades, from the answer and the
   options only (code-free), the published runs score +27.2 and +21.6 over
   BixBench's open-ended grades over all questions, where the published grades
@@ -179,19 +178,19 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   grading through options a tolerance: code-free graders accept 0.6 to 1.5% of
   misses and 86.8 to 93.4% of correct answers, and hiding the rank costs nothing
   (-1.1 to -0.1).
-- **The digit-matched rewrites** (`digit_matched.py`, App. E,
+- **The digit-matched rewrites** (`digit_matched.py`, App. A.3,
   `tests/test_digit_matched.py`). The same generator and seeds with every new
   distractor written to the significant digits of the one it replaces: the
   fewest-digits rule falls from 31.7 and 31.9% on P and U to 25.3 and 25.5% on
   P' and U' (25.0% on R), and no moved-key, unchanged-key or all-item contrast
   of the rule moves by more than 2.9 points, DeepSeek-V4-Pro's few accepted
   answers apart (U' - P' on the published runs' moved keys +18.6 [+8.4, +31.4]).
-- **The accepted misses** (`miss_anatomy.py`, App. F). On answers with no number
+- **The accepted misses** (`miss_anatomy.py`, App. C.4). On answers with no number
   the graders favour the smallest option, not the second-smallest; 62% of the
   published grades' accepted misses are more than 25% off and 7% within 11.5%;
   H2's +3.7 on the published runs comes mostly (2.4 points) from 11 keys U moves
   from one extreme to the other.
-- **Four more runs of Qwen3-235B-A22B** (`q235_extra.py`, App. F; not
+- **Four more runs of Qwen3-235B-A22B** (`q235_extra.py`, Table 27; not
   registered). The same agent, protocol and settings as its two runs in the
   pre-specified test (rollouts 2-5, with the data, on v1.5's 105 numeric
   questions, under a three-hour wall clock that cut 2 of the 420 episodes, both
@@ -202,7 +201,8 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   the moved keys' gain now clears zero, as a lack of power in the test would
   leave it, but the test's verdict stands; the unchanged keys' gain comes from
   the redrawing (+0.3 against P on the 30 that keep their rank).
-- **Asked for a number** (`forced_guess.py`, App. C; not registered). gpt-4o
+- **Asked for a number** (`forced_guess.py`; not registered, and
+  not in the paper). gpt-4o
   2024-11-20 on each release's numeric questions without the data or the
   options, asked for its answer as a number (free_response.py's free arm) and,
   in a second prompt, told a best estimate is required: it gives a number on 104
@@ -213,8 +213,8 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   (v1.0: 35.2%), 13.4 to 17.7 points more on v1.5 than choosing the option
   nearest its own number would score. Replies:
   `results/forced_guess_replies.jsonl.gz`; about $0.14.
-- **Registered in advance** (`PREREGISTRATION.md`, `replication.py`, Tables 21
-  and 22). The plan was pushed before its analyses ran. On BixBench v1.0's own
+- **Registered in advance** (`PREREGISTRATION.md`, `replication.py`,
+  Table 20). The plan was pushed before its analyses ran. On BixBench v1.0's own
   published with-data runs of gpt-4o and Claude 3.5 Sonnet (`eval_df.csv`,
   5,161 runs on its 159 numeric questions) four predictions hold: +19.8
   [+10.4, +31.2] on the 41 moved keys, +18.6 against the placebo, +3.4 over the
@@ -225,14 +225,16 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   informative ones. New v1.5 seeds of three agents pass all five;
   Qwen3-235B-A22B fails H1, H2 and H4 (H1 because its moved keys' interval,
   +9.5 [+0.0, +22.1], reaches zero).
-- **Who comes first** (`ranking_check.py`, Table 32). Not settled on seven run
+- **Who comes first** (`ranking_check.py`; the paper keeps
+  only the statement that it shows no published ranking reversed). Not settled on seven run
   sets: the tolerance's Kendall tau with the graders' order exceeds the family
   reader's by +0.85 [-0.10, +1.25], an interval that reaches zero, though a
   noise-matched control's exceeds it in 98% of draws; the rule's is not
   distinguishable from the tolerance's. On the published runs Claude 3.5
   Sonnet leads gpt-4o under every reading.
 - **What the no-data baseline measures** (`release_arms.py`,
-  `rank_attribution.py`, `partial_knowledge.py`, Tables 10 and 11). BixBench's
+  `rank_attribution.py`, `partial_knowledge.py`, Tables 15 and 16; the
+  stated numbers are not in the paper). BixBench's
   published models state the answer unaided on 6 of 205 questions, which would
   lift a forced score 2.2 points over chance (3.7 and 4.8 crediting declined
   questions at the attempted rate); forced, they score 11.1 and 9.1 over it.
@@ -241,18 +243,18 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   the option nearest their own number on 35.2 and 27.0% of v1.0's. A
   preference for the second-smallest rank could carry at most 45 and 59% of
   their margins (28 and 32% at 95%). gpt-4o run again without the data
-  (`openai_nodata.py`, Table 15) is at chance with the question withheld (+1.0
+  (`openai_nodata.py`, Table 17) is at chance with the question withheld (+1.0
   and +1.4) and, under BixBench's template, keeps its margin when every
   distractor is redrawn: the margin rests on the question and the key's value,
   not on the options' rank.
-- **Solved examples in context** (`icl_probe.py`, `icl_analysis.py`, Table 12).
+- **Solved examples in context** (`icl_probe.py`, `icl_analysis.py`, Figure 6b).
   Eight open models, 1.5 to 72B, shown up to 64 solved v1.5 items from other
   capsules gain no more from examples at the released ranks than from the
   same examples redrawn to a uniform rank (-1.3 to +1.3 points at 64 examples,
   question withheld); examples lift the larger models by up to +6.1 either way.
-- **What survives a correction** (`claim_budget.py`, Table 7): the ten
+- **What survives a correction** (`claim_budget.py`, Table 8): the ten
   headline findings (the abstract's and the introduction's, and the two no-data
-  margins App. C rests on), as one family at 1 - 0.05/10.
+  margins Appendix C.3 rests on), as one family at 1 - 0.05/10.
   Eight survive, the three open readers' gains on the published runs among them;
   Claude's no-data forced margin reaches -0.2, and the current agents' excess
   over the tolerance does not clear because gpt-6-luna's reaches -1.1. At the
@@ -264,30 +266,30 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   reads nothing about the item closes the channel only by drawing distractors
   from other items' keys, which on MMLU makes items +14.9 to +20.6 points
   easier.
-- **The tolerance** (`tolerance_check.py`, Tables 36-37). BixBench's own 60
+- **The tolerance** (`tolerance_check.py`, Tables 6 and 11). BixBench's own 60
   range keys have median half-width 6.1%; the v1.0 grader and a 5% rule
   disagree on 120 of 5,161 closed-model answers (2.3%; kappa 0.90, the highest
   of the rules tried);
   the v1.5 graders agree best with 1 or 2% (kappa 0.81 against 0.77 at 5%).
   The paper's tolerance verdicts are restated at 1, 2, 5 and 10%.
 - **The reader** (`prompt_factorial.py`, `prompt_factorial_summary.py`; not in
-  the paper, whose Appendix D keeps the thirteen models on BixBench). One instruction sentence of BixBench's template moves a
+  the paper, whose Figure 6a keeps the thirteen models on BixBench). One instruction sentence of BixBench's template moves a
   question-blind reading on MMLU-Pro by 3.4 to 7.3 points on each of three
   models.
 - **The closed models** (`openai_api.py`, `openai_nodata.py`,
-  `published_reads.py`, `bixbench_agent.py`, `strong_agent.py`; Tables 2, 15,
-  27 and 34). Served through an Azure OpenAI resource: gpt-4o as version
+  `published_reads.py`, `bixbench_agent.py`, `strong_agent.py`; Tables 2, 17,
+  22 and 25). Served through an Azure OpenAI resource: gpt-4o as version
   2024-11-20 (2024-08-06, the published runs' version, is no longer offered to
   new Azure OpenAI customers) and gpt-5.1 as 2025-11-13; Claude 3.5 Sonnet has been retired, so
   gpt-4o also re-read Claude's published runs. gpt-5.1 ran BixBench's published
   agent with the data (medium reasoning effort), two runs on each of v1.5's 105
   numeric questions, read by gpt-4o: within 5% of the key on 27.6%, above every
-  open-weight run set of Table 33, and 22.4% open-ended; forced it is read
+  open-weight run set of Figure 9, and 22.4% open-ended; forced it is read
   +10.0 [+3.5, +16.6] over the tolerance, with a refusal option -0.2. 35 of its
   210 answers give no number, 31 of them saying the value cannot be determined,
   and the forced reading credits 21.8% of those, 5.7 points of its score. Two more
   runs on each of v1.5's 100 other questions give its scores over all 205
-  (Table 30). None of this is part of the registered test. Every call's tokens
+  (Table 10). None of this is part of the registered test. Every call's tokens
   and estimated cost went to a local ledger (`build/openai_usage.jsonl`, not
   shipped): about $1,026 at list prices in all, the current agents' runs
   (below), the code-free and letter-only gradings of `grading_variants.py` and
@@ -295,7 +297,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   `results/strong_agent/` ships gpt-5.1's trajectories and gpt-4o's replies;
   `results/strong_agent_rows.json.gz` the scored rows every number above is
   computed from.
-- **The correction for guessing** (`formula_scoring.py`, Tables 2 and 25; not
+- **The correction for guessing** (`formula_scoring.py`, Tables 2 and 12; not
   registered). Formula scoring maps a forced score S over k options to
   (S - 1/k)/(1 - 1/k). On the published runs it lands -3.9 [-8.6, +1.3] and
   -0.1 [-4.7, +4.7] points from the tolerance, as a sum of opposite parts: the
@@ -307,7 +309,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   on 24.9% of misses and accept 30.1% of those on which they select one. The
   split is exact (the script asserts it); the omission-aware variant scores an
   unselected grade and an empty answer as omissions.
-- **Other designs** (`option_design.py`, Section 4.5, Tables 38 and 39; not
+- **Other designs** (`option_design.py`, Section 4.5, Tables 28 and 29; not
   registered). Every numeric item's distractors rebuilt by the generator of P
   and U for k = 4, 6, 8, 10 options with the key's rank uniform over all or over
   the middle ranks, at fixed spacings, and from other agents' wrong numbers
@@ -322,7 +324,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   option sets and the graders' reads ship gzipped in `results/option_design/`,
   from which `option_design.py analyse` reproduces `results/option_design.json`
   byte for byte.
-- **Degenerate runs** (`degenerate_runs.py`, App. F; not registered). 123 of the
+- **Degenerate runs** (`degenerate_runs.py`, Table 27; not registered). 123 of the
   seven run sets' 735 with-data numeric runs give no answer, hit the step limit
   or have a reply cut at the token limit (49 Qwen3-30B-A3B's, 58 Qwen2.5-72B's);
   without them the forced excess rises from +14.6 to +17.3 and the rule's
@@ -331,13 +333,13 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   what forced graders accept does not fall with accuracy over 22 run sets
   (Spearman +0.07, p = 0.75; -0.09 with each of eleven models once), and the
   share of misses nearest the key rises (+0.66, p = 0.001).
-- **The questions experts re-checked** (`verified50.py`, App. F; not
+- **The questions experts re-checked** (`verified50.py`, Table 27; not
   registered). BixBench-Verified-50's ids, from two public ports that pin the
   same revision (the dataset's files are gated): 26 are v1.5 numeric items (14
   moved keys). On them the seven run sets' forced excess is +13.5 [+6.1, +20.1]
   and the rule's moved-key gain +19.6 [+5.0, +31.1].
-- **Options that are not numbers** (`nonnumeric_excess.py`, App. F; not
-  registered). v1.0's 137 other questions by their options: numbers with words
+- **Options that are not numbers** (`nonnumeric_excess.py`, App. C.1, which keeps
+  one sentence of it; not registered). v1.0's 137 other questions by their options: numbers with words
   58, directions or changes 37, names 24, intervals 10, statements 6, lists of
   names 2. The published grades accept 71.0 and 69.3% of misses whose nearest
   option (in value or wording) is the key, 27.8 and 19.0% of those nearest
@@ -345,7 +347,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   same model answers correctly without the data, 24.4 and 22.4% elsewhere. The
   per-run picks ship as `results/nonnumeric_published_picks.jsonl.gz` (built
   from the 1.1 GB `eval_df.csv` by `nonnumeric_excess.py build`).
-- **Two current agents** (`frontier_agents.py`, App. F, Table 35; not registered).
+- **Two current agents** (`frontier_agents.py`, App. C.4, Table 26; not registered).
   gpt-6-luna (medium reasoning effort; through the Responses API, which
   `openai_api.py` uses for models named in `AGENTICLS_OPENAI_RESPONSES`, since that
   deployment takes function tools with reasoning only there) and DeepSeek-V4-Pro ran
@@ -358,7 +360,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   first, so the last number, which the tolerance reads, is often another (open-ended
   53.7% against 32.6% within 5%).
 - **How the placebo and the repair are built** (`mcq_audit.py`,
-  `build_placebo_arm.py`, App. E; `tests/test_option_sets.py`). One generator,
+  `build_placebo_arm.py`, App. A.3; `tests/test_option_sets.py`). One generator,
   `mcq_audit.redraw_row`, redraws the three distractors around the key: at the
   key's released rank for the placebo, at a rank drawn uniformly for the
   repair. It spaces them by the released distractors' mean relative distance
@@ -1576,11 +1578,11 @@ produced a number worth believing before it was caught.
 | `frontier_calibrated.py` | the writer frontier's table (not the paper's tab:frontier, which `frontier_agents.py` prints) at the level that covers at 4.8 effective clusters — all three columns, each reproducing its own script's nominal interval first — and the difficulty column for two 70B-class solvers beside it (`--large`) |
 | `frontier_validity.py` | the difficulty column: three solvers given the question, per-item answers kept (`results/frontier_validity_items.json`) |
 | `claim_budget.py` | **the paper-wide error budget**: the ten headline findings (the abstract's and the introduction's, and the two no-data margins Appendix C rests on), as one family, each read at the level covering 1−0.05/10 on its own file (the paired with-data claims, the forced reading's excess over the tolerance and the readers' gains on the published runs by a double bootstrap over their capsules' paired gains) |
-| `bracketing.py` | **the trade under BixBench's agent**: the nearest-option reading split by what the repair did to each key's rank (moved to an edge, moved inward, kept), each group at the level covering its own capsules; the newly credited answers' distance from the key and side; the placebo contrast; the rewritten distractors' distance from the key (`--latex` prints tab:bracket and tab:mechanism) |
-| `rank_attribution.py` | **whether a no-data reader reads the rank**: BixBench's published forced runs split by the key's rank against what a reader drawing its margin from the rank would show; the open models' forced cell through the placebo and repaired options; thirteen question-withheld readers' picks by rank (`--latex` prints tab:attribution and tab:rewritten) |
+| `bracketing.py` | **the trade under BixBench's agent**: the nearest-option reading split by what the repair did to each key's rank (moved to an edge, moved inward, kept), each group at the level covering its own capsules; the newly credited answers' distance from the key and side; the placebo contrast; the rewritten distractors' distance from the key (`--latex` prints tab:bracket, which the paper no longer prints, and tab:mechanism) |
+| `rank_attribution.py` | **whether a no-data reader reads the rank**: BixBench's published forced runs split by the key's rank against what a reader drawing its margin from the rank would show; the open models' forced cell through the placebo and repaired options; thirteen question-withheld readers' picks by rank (`--latex` prints tab:attribution, then tab:rewritten, which the paper no longer prints) |
 | `run_free_rewritten.sh` | the deleted-option arm's forced cell through the placebo and repaired option sets, six open models (GPU) |
 | `PREREGISTRATION.md` | **the registered replication**: data, option sets, groups, reading, statistics and pass criteria, pushed before its analyses ran; results and deviations appended below the plan, which `validate_artifact.py` checks is byte-identical to the registered one |
-| `replication.py` | the registered analysis: `build` extracts BixBench v1.0's published with-data runs of gpt-4o and Claude 3.5 Sonnet from `eval_df.csv` (md5-checked) into `results/bixbench_v10_published_runs.json.gz`; `analyse` tests H1-H6 on them and on the new v1.5 run sets; `latex` prints tab:replication |
+| `replication.py` | the registered analysis: `build` extracts BixBench v1.0's published with-data runs of gpt-4o and Claude 3.5 Sonnet from `eval_df.csv` (md5-checked) into `results/bixbench_v10_published_runs.json.gz`; `analyse` tests H1-H6 on them and on the new v1.5 run sets; `latex` prints tab:replication, which the paper no longer prints |
 | `repair_seeds.py` | the repair redrawn at many seeds, the same frozen runs re-read through each draw (exploratory) |
 | `writer_panel.py` | eight writers on BixBench's numeric items (six on v1.0), each on the trade's two axes: the rank rule's held-out leak, and the share of with-data misses its options credit (`--latex` prints tab:panel) |
 | `tolerance_check.py` | the 5% tolerance against BixBench's own range keys and graders, and every tolerance-dependent number restated at 1% and 10% (`--latex` prints tab:tolerance and tab:restated) |
@@ -1804,8 +1806,8 @@ for prompt in "--prompt bixbench" ""; do
 done
 python3 arm_intervals.py   # each cell at 95% and at the level that covers 95%
 python3 frontier_calibrated.py   # the writer frontier, every column at the covering level
-python3 bracketing.py     # the moved-key split and the mechanism (tab:bracket, tab:mechanism)
-python3 rank_attribution.py   # the published runs by key rank, the rewritten options (tab:attribution, tab:rewritten)
+python3 bracketing.py     # the moved-key split and the mechanism (tab:mechanism)
+python3 rank_attribution.py   # the published runs by key rank, the rewritten options (tab:attribution)
 python3 claim_budget.py   # the ten headline findings corrected together (tab:claims)
 python3 replication.py build     # needs eval_df.csv (1.1 GB) from BixBench's bucket; a clone already has its item files from restore_build_inputs.py
 python3 mcq_audit.py --jsonl build/bixbench_v10_items.jsonl \
@@ -1813,9 +1815,9 @@ python3 mcq_audit.py --jsonl build/bixbench_v10_items.jsonl \
 python3 build_placebo_arm.py --items build/bixbench_v10_numeric_released.jsonl \
     --out build/bixbench_v10_numeric_placebo.jsonl
 python3 replication.py pack      # the new v1.5 runs' answers, compact, from build/agent_runs_replication
-python3 replication.py analyse   # the registered tests (tab:replication)
+python3 replication.py analyse   # the registered tests (tab:predictions, fig:test)
 python3 repair_seeds.py --seeds 100
-python3 writer_panel.py          # tab:panel
+python3 writer_panel.py          # the writer panel (not in the paper)
 python3 tolerance_check.py       # tab:tolerance, tab:restated
 
 # the rank-holding placebo for the ten-option file the claim rests on

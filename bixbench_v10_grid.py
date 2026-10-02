@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 r"""The grid's template cell on BixBench v1.0, the release the published baselines ran on.
 
-Table~\ref{tab:gridbix} reads BixBench's own template, one letter at a time, on
+tab:gridbix (no longer in the paper) reads BixBench's own template, one letter at a time, on
 v1.5 -- the release shipped now -- and five of thirteen models clear. The two
 published zero-shot runs are on v1.0, whose rank law is a fifth as wide. What
 the published baseline measured is decided by running the same cell on v1.0.
@@ -33,7 +33,7 @@ import arm_intervals as ai
 import bootstrap_calibration as bc
 from mcq_audit import rank_of
 
-MODELS = [  # tag, name, billions of parameters (Table~\ref{tab:gridbix}'s column)
+MODELS = [  # tag, name, billions of parameters (Figure~\ref{fig:norank}a orders the models by it)
     ("llama1b", "Llama-3.2-1B", 1.2), ("qwen1.5b", "Qwen2.5-1.5B", 1.5),
     ("llama3b", "Llama-3.2-3B", 3.2), ("phi3.5mini", "Phi-3.5-mini", 3.8),
     ("gemma3_4b", "gemma-3-4b", 4.3), ("olmo2_7b", "OLMo-2-1124-7B", 7.3),

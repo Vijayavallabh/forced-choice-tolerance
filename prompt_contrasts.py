@@ -3,8 +3,8 @@ r"""The prompt contrast as a paired difference, per model, and the control as a 
 
 Two readings the grids need, computed from the rollouts they ship.
 
-**Paired, not two marginal intervals.** Tables~\ref{tab:grid} and
-\ref{tab:gridbix} read BixBench's template (one letter) and the chat frame
+**Paired, not two marginal intervals.** The grids tab:grid and
+tab:gridbix (no longer in the paper) read BixBench's template (one letter) and the chat frame
 (generated) on the same items and the same letter orderings, so the difference
 between the two cells is a paired contrast: one bootstrap over the file's
 clusters, both cells read on each resample. It is reported per model, and pooled
@@ -37,7 +37,7 @@ NAMES = {"llama1b": "Llama-3.2-1B", "qwen1_5b": "Qwen2.5-1.5B", "llama3b": "Llam
          "phi35mini": "Phi-3.5-mini", "gemma4b": "gemma-3-4b", "olmo7b": "OLMo-2-1124-7B",
          "qwen7b": "Qwen2.5-7B", "llama8b": "Llama-3.1-8B", "phi4": "phi-4", "qwen14b": "Qwen2.5-14B",
          "qwen32b": "Qwen2.5-32B", "llama70b": "Llama-3.3-70B", "qwen72b": "Qwen2.5-72B"}
-# the level that covers 95% on each file's own clusters (Table~\ref{tab:bootcal})
+# the level that covers 95% on each file's own clusters (bootstrap_calibration.py)
 LEVELS = {"mmlupro": {"margin": 0.985, "difference": 0.9825},
           "bixall": {"margin": 0.9675, "difference": 0.96}}
 OPTION = re.compile(r"^\(([A-Z])\) (.*)$", re.MULTILINE)

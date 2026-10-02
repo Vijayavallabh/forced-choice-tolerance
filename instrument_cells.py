@@ -6,7 +6,7 @@ expected accuracy is exactly $1/k$ for a reader that sees only the options
 (Proposition~\ref{prop:exch}), so subtracting a realised control adds its noise
 and, where it happens to sit below chance, inflates the reading. Each cell is
 read here against chance with the released arm's own cluster bootstrap, at the
-level that covers each file's shape (Table~\ref{tab:bootcal}), and the control
+level that covers each file's shape (bootstrap_calibration.py), and the control
 is reported beside it as a check. Two things about the cells are recorded
 rather than assumed: both prompts carry ``Question: [withheld]``, and the chat
 framing's letter read-out on MMLU-Pro was given the interpreter's rules in its

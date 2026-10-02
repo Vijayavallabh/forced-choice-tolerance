@@ -6,7 +6,7 @@ distractors are $\kappa$ conditioned on the whole $k$-tuple being distinct. The
 operator ``repair_frontier.py`` builds does something else: it removes from the subject's key pool every value equal to *this*
 item's key or to one of its human distractors, then draws three values from what
 is left, weighted by multiplicity and rejecting repeats. Removing the key's own
-mass is the redraw-against-the-key rule Table~\ref{tab:distinctness} prices;
+mass is the redraw-against-the-key rule tab:distinctness priced (no longer in the paper);
 removing the human distractors' values makes the draw depend on the item too.
 
 $\Gamma=\mathbb{E}_V[\max_v\Pr(Y=v\mid V)]-1/k$ is estimated by Monte Carlo over

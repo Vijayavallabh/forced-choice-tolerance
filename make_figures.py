@@ -14,7 +14,11 @@ One command, ``python3 make_figures.py`` from any directory, writes every figure
     figures/design.{pdf,png}         Figure 2: what is compared, one answer graded two ways
     figures/cost.{pdf,png}           Figure 3: who bears the cost of a hidden rank, and what each design trades
     figures/test.{pdf,png}           Figure 4: the pre-specified test, each hypothesis on each data set
-    figures/withdata.{pdf,png}       Figure 5
+    figures/norank.{pdf,png}         Figure 6: no model we tested follows v1.5's key rank
+    figures/withdata.{pdf,png}       Figure 8: with the data, the options decide the reading
+    figures/scaling.{pdf,png}        Figure 9: the cost of a hidden rank against agent accuracy
+
+(Figures 5 and 7, the prompts, are typeset in main.tex.)
 
 Canvases are the NeurIPS text width, 5.5 in, and the paper includes each at
 ``width=\\linewidth`` with no trim, so the absolute font sizes below are the
@@ -306,7 +310,7 @@ save(fig, "design")
 # ---------------------------------------------------------------------------
 # Figure 3: who bears the cost of a hidden rank, and what each design of the options trades
 # ---------------------------------------------------------------------------
-from option_design import TABLE as DESIGNS  # Table 38's rows: (design, its distractors, its key rank)
+from option_design import TABLE as DESIGNS  # tab:design's rows: (design, its distractors, its key rank)
 
 design = load("results/option_design.json")
 RANK_COLOUR = {"released": MID, "middle": RUST, "uniform": BLUE}
@@ -315,7 +319,7 @@ SPACING_MARKER = {"$R$, released": "s", "$P$": "s", "$U$": "s", "redrawn": "o", 
 
 
 def panel_designs(ax):
-    """(b) every design of v1.5's numeric options (Table 38): the rank rule's gain on held-out capsules
+    """(b) every design of v1.5's numeric options (tab:design): the rank rule's gain on held-out capsules
     against the share of misses the nearest-option rule accepts. Colour is the key's rank policy and shape
     how the distractors are written; each rank policy is labelled on the plot, so no class rests on colour
     alone"""
@@ -399,7 +403,61 @@ fig.legend(handles=handles, loc="center left", bbox_to_anchor=(0.725, 0.56), fra
 save(fig, "test")
 
 # ---------------------------------------------------------------------------
-# Figure 5: with the data, the options decide the reading
+# Figure 6: no model we tested follows v1.5's key rank
+# ---------------------------------------------------------------------------
+import bixbench_v10_grid as v10grid
+import icl_analysis as icla
+
+withheld = load("results/rank_attribution.json")["open_question_withheld"]
+gpt_nodata = load("results/openai_nodata_gpt-4o.json")
+gpt_withheld = gpt_nodata["releases"]["v15"]["withheld"]["released"]
+survey = {b["benchmark"]: b for b in load("results/channel_survey.json")["benchmarks"]}
+key_second = 100 * survey["BixBench v1.5"]["key_by_rank"]["1"]
+icl = load("results/icl_probe.json")
+
+# the thirteen models in order of size; the grid's module writes Llama-3.1-8B with its "Meta-" prefix
+size = {name.replace("Meta-", ""): b for _, name, b in v10grid.MODELS}
+rows = [(m, withheld[m]["pick_rank_shares"][1], BLUE, "o") for m in sorted(withheld, key=lambda m: size[m])]
+rows.append((gpt_nodata["served"][0].replace("gpt-4o-", "gpt-4o "), gpt_withheld["pick_rank_shares"][1], RUST, "D"))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(WIDTH, 2.3), gridspec_kw={"width_ratios": [1.0, 0.85]})
+for i, (name, share, colour, marker) in enumerate(rows):
+    ax1.plot(share, i, marker, ms=3.4, color=colour)
+ax1.axvline(100 / 4, color="black", lw=0.7, ls=":")
+ax1.axvline(key_second, color=RUST, lw=0.9, ls="--")
+ax1.text(100 / 4 - 1, -1.1, "uniform choice", ha="right", va="center", fontsize=SMALL)
+ax1.text(key_second - 1, -1.1, "keys at this rank", ha="right", va="center", fontsize=SMALL, color=RUST)
+ax1.set_yticks(range(len(rows)))
+ax1.set_yticklabels([r[0] for r in rows], fontsize=SMALL)
+ax1.set_ylim(len(rows) - 0.5, -1.8)
+ax1.set_xlim(0, 60)
+ax1.set_xlabel("selections on the second-smallest option (%)")
+title(ax1, "(a) Without the question")
+spines(ax1)
+
+models = sorted(icl["models"], key=lambda r: icla.PARAMETERS_B[r["model"]])
+STEMS = (("withheld", "question withheld", BLUE, "o"), ("shown", "shown", RUST, "s"))
+for i, rec in enumerate(models):
+    for j, (stem, _, colour, marker) in enumerate(STEMS):
+        c = next(c for c in rec["contrasts"] if c["question"] == "attributable to key ranks"
+                 and c["stem"] == stem and c["n_shots"] == 64)
+        block = {"mean": 100 * c["difference"], "lo": 100 * c["ci95"][0], "hi": 100 * c["ci95"][1]}
+        interval(ax2, i + (j - 0.5) * 0.3, block, colour, fmt=marker, ms=3.0, horizontal=True)
+for _, label, colour, marker in STEMS:
+    ax2.plot([], [], marker, color=colour, ms=3, label=label)
+ax2.axvline(0, color="black", lw=0.7)
+ax2.set_yticks(range(len(models)))
+ax2.set_yticklabels([icla.SHORT[r["model"]] for r in models], fontsize=SMALL)
+ax2.set_ylim(len(models) - 0.5, -1.6)
+ax2.set_xlabel("released minus uniform (points)")
+ax2.legend(frameon=False, loc="upper center", ncol=2, fontsize=SMALL, handlelength=0.8, borderaxespad=0.0,
+           columnspacing=1.0)
+title(ax2, "(b) Examples in context")
+spines(ax2)
+fig.tight_layout(pad=0.3, w_pad=1.2)
+save(fig, "norank")
+
+# ---------------------------------------------------------------------------
+# Figure 8: with the data, the options decide the reading
 # ---------------------------------------------------------------------------
 withdata = load("results/bixbench_withdata.json")
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(WIDTH, 2.25), gridspec_kw={"width_ratios": [0.9, 1.1]})
@@ -453,3 +511,40 @@ title(ax2, "(b) Lead under each grading")
 spines(ax2)
 fig.tight_layout(pad=0.3, w_pad=1.0)
 save(fig, "withdata")
+
+
+# ---------------------------------------------------------------------------
+# Figure 9: the cost of a hidden rank against agent accuracy
+# ---------------------------------------------------------------------------
+import run_set_scaling as scaling_mod
+
+scal = load("results/run_set_scaling.json")
+model_of = lambda name: scaling_mod.label(name).split(", ")[1]
+sets = sorted(scal["run_sets"].items(), key=lambda kv: (kv[1]["within_5pct"], kv[0]))
+models = list(dict.fromkeys(model_of(n) for n, _ in sets))
+MARKERS = dict(zip(models, "osD^vPX*"))
+RELEASE = {"v1.0": RUST, "v1.5": BLUE}
+fig = plt.figure(figsize=(WIDTH, 2.0))
+axes = [fig.add_axes([0.075, 0.2, 0.31, 0.68]), fig.add_axes([0.47, 0.2, 0.31, 0.68])]
+# each panel's correlation is printed in a corner its points leave empty
+PANELS = (("all", "all on within_5pct", "(a) Over all numeric items", "$U-P$ (points)", (0.97, 0.95, "right", "top")),
+          ("moved_per_miss", "moved_per_miss on within_5pct", "(b) Moved keys, per miss", "$U-P$ per miss (points)",
+           (0.03, 0.04, "left", "bottom")))
+for ax, (field, trend, heading, ylabel, (tx, ty, ha, va)) in zip(axes, PANELS):
+    for name, r in sets:
+        ax.plot(r["within_5pct"], r[field], MARKERS[model_of(name)], ms=3.4, mew=0.8,
+                color=RELEASE[name.split("|")[0].replace(" new", "")], mfc="none")
+    t = scal["trend"][trend]
+    p = "p<0.001" if t["p_value"] < 0.001 else f"p={t['p_value']:.3f}"
+    ax.text(tx, ty, f"$\\rho={t['spearman_rho']:+.2f}$, {p}", transform=ax.transAxes, ha=ha, va=va, fontsize=SMALL)
+    ax.axhline(0, color=PALE, lw=0.8, zorder=0)
+    ax.set_xlabel("answers within 5% of the key (%)")
+    ax.set_ylabel(ylabel)
+    title(ax, heading)
+    spines(ax)
+handles = [Line2D([], [], marker=MARKERS[m], ls="", ms=3.4, mew=0.8, mfc="none", color=GREY, label=m)
+           for m in models]
+handles += [Line2D([], [], marker="s", ls="", ms=4, color=c, label=f"{r} runs") for r, c in RELEASE.items()]
+fig.legend(handles=handles, loc="center left", bbox_to_anchor=(0.8, 0.53), frameon=False, handlelength=1.0,
+           fontsize=SMALL)
+save(fig, "scaling")

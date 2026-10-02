@@ -166,7 +166,7 @@ def dump_of(model, items="bixnum"):
 
 def regrade(out="results/free_response.json", bootstrap=2000, seed=0, grade=None):
     """Grade every model's free arm again from its dumped replies, with no model loaded: the numbers
-    Table~\\ref{tab:free} prints follow ``answer_numbers``, the reader every other table uses. The
+    it reports follow ``answer_numbers``, the reader every other table uses. The
     multiple-choice arm is untouched."""
     stem, items = REGRADED[out]
     path = pathlib.Path(out)

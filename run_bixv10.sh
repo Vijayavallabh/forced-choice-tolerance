@@ -1,7 +1,7 @@
 #!/bin/bash
 # The grid's template cell -- BixBench's own template, one letter at a
 # time -- on BixBench v1.0, the release the published zero-shot baselines ran on.
-# Same invocation as run_bixgrid_remote.sh, so the rows compare with tab:gridbix;
+# Same invocation as run_bixgrid_remote.sh, so the rows compare with tab:gridbix's (no longer in the paper);
 # the control is v1.0's own option-string pool (build_set_control.py).
 #   ./run_bixv10.sh "--device cuda:0" "Qwen/Qwen2.5-7B-Instruct|qwen7b|24" ...
 #   ./run_bixv10.sh "--shard 2,3 --shard-auto 0.9" "meta-llama/Llama-3.3-70B-Instruct|llama70b|8"

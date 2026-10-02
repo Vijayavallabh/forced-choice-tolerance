@@ -21,8 +21,8 @@ and adds the two checks the comparison needs.
   is deliberately generous -- it credits a reply that merely mentions the value
   -- so it bounds from above how much a strict grader could be hiding.
 * **The same rule on the runs where options were deleted by us**
-  (``free_response.py``'s dumps, Table~\ref{tab:free}): the last number is what
-  that table grades, and the any-number rule says how many right values it
+  (``free_response.py``'s dumps): the last number is what
+  its grading reads, and the any-number rule says how many right values it
   missed.
 
     python3 release_arms.py
@@ -122,7 +122,7 @@ def v10_decline(model):
 
 
 def our_free_runs(pattern="build/dumps/free_*_bixnum.jsonl"):
-    """Table~\ref{tab:free}'s free arm on BixBench, last number vs any number."""
+    """Our deleted-option arm on BixBench (free_response.py), last number vs any number."""
     out = {}
     items = [json.loads(l) for l in open("build/bixbench_numeric_q.jsonl")]
     for path in sorted(glob.glob(pattern)):

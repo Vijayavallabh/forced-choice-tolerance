@@ -3,7 +3,7 @@
 # with-data runs are read through: the placebo (every distractor redrawn, the
 # key's rank kept) and the repair (the rank drawn uniformly), on the six open
 # models of results/free_response.json. rank_attribution.py reads the dumps
-# (tab:rewritten); the dumps ship gzipped under results/agentic_dumps/.
+# (one sentence of Appendix C.3); the dumps ship gzipped under results/agentic_dumps/.
 set -u
 cd "$(dirname "$(readlink -f "$0")")"
 DEV=${DEV:-cuda:0}

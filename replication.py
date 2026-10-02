@@ -496,7 +496,7 @@ COLUMNS = ("gain|moved to an edge", "gain|kept", "gain|moved inward", "repaired-
 
 
 def table_rows(report):
-    """tab:replication's rows, two lines per data set: estimates, then intervals."""
+    """tab:replication's rows (no longer in the paper), two lines per data set: estimates, then intervals."""
     rows = []
     entries = [("D1", report["D1"])] + [(k, v) for k, v in report.get("D2", {}).items() if k.endswith("|data")]
     for key, res in entries:
@@ -572,7 +572,7 @@ def main():
     b.add_argument("--eval-df", default=str(ROOT / "build" / "external" / "bixbench_v10_trajectories" / "eval_df.csv"))
     sub.add_parser("items", help="rewrite the v1.0 question files from the shipped extract")
     sub.add_parser("analyse")
-    sub.add_parser("latex", help="print tab:replication's rows from results/replication.json")
+    sub.add_parser("latex", help="print tab:replication's rows (no longer in the paper) from results/replication.json")
     sub.add_parser("pack", help="compact copies of the new v1.5 run sets' answers, to ship")
     args = ap.parse_args()
     if args.cmd == "pack":

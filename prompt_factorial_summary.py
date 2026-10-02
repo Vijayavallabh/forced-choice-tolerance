@@ -6,7 +6,7 @@ orderings), so a factor's effect is a paired contrast: the mean, over the
 sixteen pairs of cells that differ in that factor alone, of the chat level's
 accuracy minus the template level's, on the released file. Its interval is a
 cluster bootstrap over the file's own groups at the level that covers there
-(Table~\ref{tab:bootcal}). The two corners are reported beside it, and so is the
+(bootstrap_calibration.py). The two corners are reported beside it, and so is the
 control: every cell's clean-file accuracy against chance, which
 Proposition~\ref{prop:exch} fixes at $1/k$ for a reader that sees only options.
 
@@ -27,7 +27,7 @@ import numpy as np
 from prompt_factorial import ALPHABET, FILES, orderings
 
 FACTORS = ("instruction", "force", "reason", "format", "placement")
-# covering levels (Table~\ref{tab:bootcal}): a paired difference, and a margin over chance
+# covering levels (bootstrap_calibration.py): a paired difference, and a margin over chance
 LEVEL = {"mmlupro": 0.9825, "bixbench": 0.96}
 LEVEL_MARGIN = {"mmlupro": 0.985, "bixbench": 0.9675}
 CORNERS = {"template": "TTTTT", "chat": "CCCCC", "chat, interpreter rules": "CCCCC+tools"}

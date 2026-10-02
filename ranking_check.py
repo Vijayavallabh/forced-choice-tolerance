@@ -30,7 +30,7 @@ counts as covering it -- is raised to 95%, so no interval is narrower than the n
 Not registered.
 
     python3 ranking_check.py            # results/ranking_check.json
-    python3 ranking_check.py --latex    # tab:ranking's rows
+    python3 ranking_check.py --latex    # tab:ranking's rows (no longer in the paper)
 """
 import collections
 import gzip
@@ -307,7 +307,7 @@ def against_tolerance(scores, capsule, reference="graders", tolerance="within 5%
     return out
 
 
-# tab:ranking: one row per reading; the v1.5 column is Kendall's tau of the seven run sets' order under
+# tab:ranking (no longer in the paper): one row per reading; the v1.5 column is Kendall's tau of the seven run sets' order under
 # that reading against the benchmark's open-answer graders on the same numeric items, the v1.0 column
 # gpt-4o minus Claude 3.5 Sonnet on the published runs
 ROWS = (("BixBench's graders", "graders", "grader"),

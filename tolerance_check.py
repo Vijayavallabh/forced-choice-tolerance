@@ -178,7 +178,7 @@ def restated():
             entry[f"qwen72b - {other}"] = bw.cluster_interval(
                 [within(per["qwen72b"][(q, "data")]) - within(per[other][(q, "data")]) for q in qids], caps)
         out["withdata"][f"{round(100 * t)}%"] = entry
-    # Table 8's free arm: the last number in the reply (its column), and any number in it
+    # the deleted-option arm (free_response.py): the last number in the reply (its column), and any number in it
     # (release_arms.our_free_runs), each model's best
     doc = json.load(open(ROOT / "results" / "free_response.json"))
     import arm_intervals
@@ -252,7 +252,7 @@ def table_rows(report):
     rows.append("\\quad with $-$ without & " + " & ".join(f(w[t]["qwen72b data - nodata"]) for t in tols) + "\\\\")
     rows.append("\\quad lead over Llama-3.3-70B & " + " & ".join(f(w[t]["qwen72b - llama70b"]) for t in tols) + "\\\\")
     rows.append("\\quad lead over gemma-3-27b & " + " & ".join(f(w[t]["qwen72b - gemma27b"]) for t in tols) + "\\\\")
-    rows.append("Table~\\ref{tab:free}, any number, best model & "
+    rows.append("open-weight models, any number, best & "
                 + " & ".join(f"${t3['table_8_cap'][t]['any_number']:.1f}$" for t in tols) + "\\\\")
     rr = t3["released_reading"]
     for key, label in (("v1.0|gpt-4o|forced", "Table~\\ref{tab:released}, gpt-4o, forced"),

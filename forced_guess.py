@@ -8,7 +8,7 @@ gpt-4o (version 2024-11-20; 2024-08-06 is no longer offered to new Azure OpenAI 
 items and order of ``openai_nodata.py`` -- under two prompts:
 
 * ``stated``: ``free_response.py``'s free arm, the question alone and the answer as a number, the condition the
-  open-weight models ran in Table~\ref{tab:free}; a model may still decline;
+  open-weight models ran (tab:free, no longer in the paper); a model may still decline;
 * ``forced``: the same, adding that the data are not available and that a best estimate is required even when
   unsure.
 

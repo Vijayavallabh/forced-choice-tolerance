@@ -14,7 +14,7 @@ this reads, under the nearest-option rule as registered:
 Run sets are weighed alike; the trend is a Spearman correlation over run sets with a permutation p-value.
 
     python3 run_set_scaling.py            # results/run_set_scaling.json
-    python3 run_set_scaling.py --latex    # tab:scaling's rows, by how often the run set is within 5%
+    python3 run_set_scaling.py --latex    # tab:scaling's rows (Figure 9 replaced it), by how often the run set is within 5%
 """
 import collections
 import json

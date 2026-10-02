@@ -411,7 +411,7 @@ def picks_on_misses(read, reading, hit):
 
 
 def picks_rows(report):
-    """tab:picks: what the published forced grades select on a miss with a single nearest option."""
+    """tab:picks (no longer in the paper): what the published forced grades select on a miss with a single nearest option."""
     rows = []
     for model, name in (("gpt-4o", "gpt-4o"), ("Claude 3.5 Sonnet", "Claude 3.5 Sonnet")):
         p = report["v1.0"][model]["published forced"]["picks_on_misses"]

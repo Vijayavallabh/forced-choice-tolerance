@@ -322,8 +322,8 @@ def _ci_small(x):
 
 
 def table_rows(report):
-    """tab:attribution: the published runs, split by where the key sits, then tab:rewritten:
-    our open models' forced arm through the three option sets."""
+    """tab:attribution: the published runs, split by where the key sits, then tab:rewritten (no longer
+    in the paper): our open models' forced arm through the three option sets."""
     rows = []
     for release in ("v1.5", "v1.0"):
         for model in MODELS:

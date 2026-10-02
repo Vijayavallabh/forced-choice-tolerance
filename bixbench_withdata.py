@@ -11,7 +11,7 @@ the vendored sources:
   before an LLM, a range verifier and an LLM verifier, with the upstream
   prompts. Beside it, two LLM-free grades for the numeric items: the answer's
   number, rounded to the precision the key is written at, equals the key; and
-  Table~\ref{tab:free}'s rule, the number within 5% of the key.
+  the tolerance's rule, the number within 5% of the key.
 * **through the options** -- ``MCQ_EVAL_PROMPT``: a reader model is shown the
   agent's notebook, the question with the options shuffled, and the agent's
   answer, and picks a letter, with and without BixBench's refusal option.
@@ -359,7 +359,7 @@ def pick_rank(picked, options):
 
 # ---------------------------------------------------------------- inference
 
-# BixBench's capsules need a nominal 96.0% to cover 95% (Table~\ref{tab:gridbix});
+# BixBench's capsules need a nominal 96.0% to cover 95% (Appendix~\ref{app:stats});
 # every interval here is read there, as the paper's other BixBench intervals are.
 LEVEL = 0.96
 
@@ -405,7 +405,7 @@ def load_items():
 
 
 async def score(args):
-    # Table~\ref{tab:free}'s grader, so a with-data answer is held to the tolerance a no-data one was
+    # the deleted-option arm's grader, so a with-data answer is held to the tolerance a no-data one was
     from answer_numbers import graded as within_tolerance
     items, numeric = load_items()
     readers = dict(r.split("=", 1) for r in args.reader)
@@ -733,7 +733,7 @@ AGENTS_REACT = [("qwen72b-react", "Qwen2.5-72B", "qwen72b"), ("llama70b-react", 
 # The reader a run set's row in Table~\ref{tab:withdata} is read by, where it is not the
 # run set's own family: Qwen3-30B-A3B, reading, deliberates past any reply limit (READ_TOKENS)
 # and gives no pick on half its reads, so gemma-3-27b, every run set's second reader,
-# stands in; Table~\ref{tab:readers} prints Qwen3-30B-A3B's own reading beside it.
+# stands in; tab:readers, no longer in the paper, printed Qwen3-30B-A3B's own reading beside it.
 PRIMARY_READER = {"qwen3a3b-react": "gemma27b"}
 # ldp 0.26.0 puts each reasoning turn back as "Thought: ... Based on this reasoning, let's
 # select the appropriate tool!\nAction: "; a model that copies it into its next reasoning
@@ -759,7 +759,7 @@ def reply_limit_census(trajectories):
 
 
 def reader_rows(summary, second="gemma27b"):
-    """Table~\\ref{tab:readers}'s rows: each run set's released - repaired contrast with the
+    """tab:readers' rows (no longer in the paper): each run set's released - repaired contrast with the
     data, read by its own family, by the second reader, and by the option nearest the
     agent's number. ``validate_artifact.py`` checks the table against these."""
     def cell(c):
@@ -829,7 +829,7 @@ def main():
     ap.add_argument("--pack", action="store_true",
                     help="write results/agent_runs/*.jsonl.gz from build/agent_runs and stop")
     ap.add_argument("--latex", action="store_true",
-                    help="print the rows of Tables~\\ref{tab:withdata} and~\\ref{tab:readers} from --out and stop")
+                    help="print the rows of Table~\\ref{tab:withdata}, then tab:readers' (no longer in the paper), from --out and stop")
     args = ap.parse_args()
     if args.pack:
         pack(args.runs)

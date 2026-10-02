@@ -1,5 +1,5 @@
 #!/bin/bash
-# Complete tab:gridbix: the two grid cells on BixBench's whole released file for
+# Complete tab:gridbix (no longer in the paper): the two grid cells on BixBench's whole released file for
 # the six models tab:grid has and tab:gridbix does not. Same invocation as
 # run_agentic21.sh so the rows are comparable -- 205 items, 3 draws, the file's
 # own option-string control.

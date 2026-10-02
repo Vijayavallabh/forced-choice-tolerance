@@ -14,7 +14,7 @@ excess, so the same gradings of the same with-data runs are set against:
 For the misses whose answer gives no number at all, it asks how often the key's value is written in
 the run's notebook, and how often the grading accepts such a miss when it is and when it is not.
 
-Over the models behind Table~\ref{tab:scaling}'s nineteen configurations it asks whether the cost per
+Over the models behind Figure~\ref{fig:scaling}'s nineteen configurations it asks whether the cost per
 miss still falls with accuracy when each model counts once (Spearman over models, exact permutation
 p-value).
 
@@ -60,7 +60,7 @@ LOG_FACTORS = (2.0, 10.0)
 READINGS = {"v1.0": ("published forced", "published may-decline"),
             "v1.5": ("family forced", "family may-decline")}
 BIOAGENTS = ROOT / "sources" / "cited" / "bioagents_arxiv_2601.12542.txt"
-# each of Table~\ref{tab:scaling}'s configurations belongs to one agent model
+# each of Figure~\ref{fig:scaling}'s configurations belongs to one agent model
 MODEL_OF = (("4o_", "gpt-4o"), ("claude_", "Claude 3.5 Sonnet"), ("qwen3-235b", "Qwen3-235B-A22B"),
             ("qwen3a3b", "Qwen3-30B-A3B"), ("glm45air", "GLM-4.5-Air"), ("qwen72b", "Qwen2.5-72B"),
             ("llama70b", "Llama-3.3-70B"), ("gemma27b", "gemma-3-27b"))
@@ -162,7 +162,7 @@ def spearman(x, y):
 
 
 def per_model():
-    """Table~\\ref{tab:scaling} with each agent model counted once: its configurations averaged."""
+    """Figure~\\ref{fig:scaling}'s configurations with each agent model counted once: its configurations averaged."""
     rs = json.loads((ROOT / "results" / "run_set_scaling.json").read_text())["run_sets"]
     groups = {}
     for name, row in rs.items():
