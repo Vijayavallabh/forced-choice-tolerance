@@ -2816,8 +2816,8 @@ the shipped trajectories.
   all fonts embedded and subset, none of them Type 3.
 - PDF metadata names the title and the author (`pdftitle`, `pdfauthor`), as the camera-ready should.
 - Non-blocking toolchain warnings in `build/main.log` (tectonic's XeTeX engine):
-  `cmap` exits ("pdftex not detected"), `inputenc` is ignored, and 28 underfull
-  boxes, 18 of them in Table 20's narrow columns and four at page breaks. No
+  `cmap` exits ("pdftex not detected"), `inputenc` is ignored, and 24 underfull
+  boxes, 18 of them in Table 20's narrow columns and two at page breaks. No
   overfull boxes. Full logs retained in `build/`.
 - Each appendix's floats print before the next appendix's heading, and those of
   Sections C.2 to C.4 before the next section's: a `\FloatBarrier` (`placeins`)

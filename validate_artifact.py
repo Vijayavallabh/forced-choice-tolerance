@@ -1431,7 +1431,7 @@ check(2.5 <= min(_geo) and max(_geo) <= 4.05,
       f"the larger models' rank credit with examples is {min(_geo):.1f} to {max(_geo):.1f}, not about 3")
 _r64 = {st: [100 * c["difference"] for c in rank_contrasts if c["n_shots"] == 64 and c["stem"] == st]
         for st in ("withheld", "shown")}
-check("showing eight of them $64$ solved v1.5 items as examples does not measurably change their accuracy" in _flat
+check("Showing eight of them $64$ solved v1.5 items as examples does not measurably change their accuracy" in _flat
       and max(abs(v) for v in _r64["withheld"]) < 2 and len(icl["models"]) == 8,
       "sec:open's in-context sentence is stale")
 # fig:norank (b) draws these contrasts from results/icl_probe.json itself (make_figures.py); no table prints them
@@ -1993,7 +1993,7 @@ if _cbc:
     # every claim clears at the nominal 95%, which app:stats and the caption say
     _nominal_ok = all((p["ci95_nominal"][1] < p["rank_reader_difference"]) if "rank_reader_difference" in p
                       else p["ci95_nominal"][0] > 0 for c in _cb["claims"] for p in c["parts"])
-    check(_nominal_ok and "With each finding's own $95\\%$ interval every finding holds." in _flat,
+    check(_nominal_ok and "Every finding holds with its own $95\\%$ interval." in _flat,
           "a headline claim no longer clears at the nominal 95%, which app:stats and tab:claims' caption say they all do")
     # how each claim is calibrated, as app:stats says
     _parametric = {"rank rule", "published, gpt-4o", "published, claude", "not the rank"}
@@ -2027,7 +2027,7 @@ if _cbc:
           and "Rows " + ", ".join(_rows_of[:-1]) + f" and {_rows_of[-1]} are the ten findings." in _flat,
           "tab:claims' caption no longer groups its rows into the family's findings")
     check("\\caption{The paper's ten headline findings, corrected jointly" in _tex
-          and "the current agents' excess for all three agents, and the graders' gain on the published runs for all "
+          and "the current agents' excess for all three agents, and the graders' $U-P$ on the published runs for all "
               "three graders" in _flat,
           "tab:claims' caption misnames the family or its conjunctions")
     # sec:open's bound on the rank's share of the published margins: the upper ends of the corrected intervals over
@@ -2435,7 +2435,7 @@ if _bixall.exists():
 _drift = Path("results/release_drift.json")
 if _drift.exists():
     _dr = json.loads(_drift.read_text())
-    check(f"On v1.0's ${_dr['v1_0']['n_items']}$ numeric items the best rank rule scores" in _flat
+    check(f"On v1.0's ${_dr['v1_0']['n_items']}$ numeric items, the best rank rule scores" in _flat
           and f"BixBench v1.5's ${_dr['v1_5']['n_items']}$ four-option numeric items" in _flat,
           f"sec:theory should give the two releases' numeric counts, {_dr['v1_0']['n_items']} and "
           f"{_dr['v1_5']['n_items']}")
@@ -2551,8 +2551,8 @@ check(abs(_beta15 - 0.810) < 0.0005,
 _p10 = _dr2["v1_0"]["key_by_rank"]
 _beta10 = (_p10[1] + _p10[2]) / 100.0
 _sv10 = {b["benchmark"]: b for b in json.loads(Path("results/channel_survey.json").read_text())["benchmarks"]}["BixBench v1.0"]
-check(f"On v1.0's $159$ numeric items the best rank rule scores ${_dr2['v1_0']['rank_ceiling_points']:+.1f}$ "
-      f"on the items it was chosen on, but ${100 * _sv10['cross_validated']['credit']:+.1f}$ when its rank is "
+check(f"On v1.0's $159$ numeric items, the best rank rule scores ${_dr2['v1_0']['rank_ceiling_points']:+.1f}$ "
+      f"on the items it was chosen on but ${100 * _sv10['cross_validated']['credit']:+.1f}$ when its rank is "
       f"chosen on the other capsules." in _flat
       and _sv10["cross_validated"]["credit"] <= 0,
       "sec:theory's v1.0 rank rule, in sample and held out, is stale")
@@ -2697,8 +2697,8 @@ if _repair.exists():
                                                   zip((_CLAUDE, _GPT), _open))
           and all(abs(100 * _cnt[m] / 205 - _v15[m]["arms"]["mcq_forced"]["accuracy"]) < 1e-6 for m in _cnt),
           "the counts behind the published arms' rates do not reproduce them")
-    # app:arms: each model states the answer without options on the same handful of questions
-    check(f"although without options each states the answer on ${_right[_GPT]}$ of $205$ questions" in _flat
+    # app:arms: each model gives the right answer without options on the same handful of questions
+    check(f"although without options each gives the right answer on only ${_right[_GPT]}$ of $205$ questions" in _flat
           and _right[_GPT] == _right[_CLAUDE],
           "app:arms miscounts the questions the released runs answer without options")
     check(all(_o < _f for _o, _f in zip(_open, [_fc, _fg])),
@@ -3047,7 +3047,9 @@ if _wd_path.exists():
           and f"Graders given BixBench's prompt and the notebook bear less, and on the new seeds none of their "
               f"costs is significant by the sign-flip test ($p={min(_ct_ps):.3f}$ to ${max(_ct_ps):.3f}$)." in _flat
           and len(_ct_ps) == 3 and min(_ct_ps) > 0.05
-          and f"answer-only graders change by ${min(_ct_wt):+.1f}$ to ${max(_ct_wt):+.1f}$ points" in _flat
+          and f"With the within-$5\\%$ option, answer-only graders bear none of the cost: hiding the rank changes what "
+              f"they accept on the moved keys by ${min(_ct_wt):+.1f}$ to ${max(_ct_wt):+.1f}$ points." in _flat
+          and max(_ct_wt) <= 0
           and max(_ct_ra) < _ctv("v1.5, seven configurations", "nearest-option rule", 1)[0],
           "sec:cost's paragraph on who bears the cost no longer quotes tab:cost")
     # sec:cost: the other graders bear a share of the rule's gain, rising with lambda
@@ -3085,7 +3087,7 @@ if _wd_path.exists():
           "sec:withdata's open-answer agent differences are stale")
     check(all(not _clears(_p[f"{k}|{a}"]) for _p in (_ql, _qg) for k in ("own", "gemma27b", "nearest")
               for a in ("released", "repaired"))
-          and "yet no grading through options shows its lead over the other two in-text agents with an interval "
+          and "Yet no grading through options shows its lead over the other two in-text agents with an interval "
               "that excludes zero" in _flat,
           "sec:withdata says no reading through options resolves either lead")
     _qd, _qn = _wd["qwen72b|data"], _wd["qwen72b|nodata"]
@@ -3245,9 +3247,9 @@ check(abs(_beta15 - _brk["share_bracketed"]["released"]) < 0.1,
       "channel_survey.json and bracketing.json disagree on v1.5's bracketed share")
 _n2 = round(_p15[1] * _b15["n_numeric_items"] / 100)
 check(abs(100 * _n2 / _b15["n_numeric_items"] - _p15[1]) < 1e-9
-      and f"where the key lies: the second release, v1.5, makes it the second-smallest of the four values on "
-          f"${_p15[1]:.0f}\\%$ of numeric questions, a rank that a rule ignoring the question learns from the "
-          f"benchmark's" in _flat
+      and f"where the key lies: in the second release, v1.5, the key is the second-smallest of the four values "
+          f"on ${_p15[1]:.0f}\\%$ of numeric questions, and a rule that ignores the question learns this rank "
+          f"from the benchmark's" in _flat
       and abs(100 * _b15["cross_validated"]["credit"] - _rule15) < 1e-9,
       "the abstract's bracketing sentence no longer matches channel_survey.json")
 check(f"BixBench v1.5's ${_b15['n_numeric_items']}$ numeric items: the key is the second-smallest of four "
@@ -3255,7 +3257,7 @@ check(f"BixBench v1.5's ${_b15['n_numeric_items']}$ numeric items: the key is th
       f"v1.0's ${_b10['n_numeric_items']}$ and ${_brk['share_bracketed']['repaired']:.0f}\\%$ under $U$, the "
       f"rewrite that draws"
       in _flat, "fig:overview's panel (b) caption is stale")
-check(f"(${_b15['n_clusters']}$ capsules) the key's rank distribution is "
+check(f"(${_b15['n_clusters']}$ capsules), the key's rank distribution is "
       f"$(p_1,\\dots,p_4)=({','.join(f'{x:.1f}' for x in _p15)})\\%$, far from uniform ($p=4\\times10^{{-8}}$, "
       f"treating each" in _flat,
       "sec:theory's v1.5 key-rank law is stale")
@@ -3305,7 +3307,7 @@ check(not any(o["lo"] > 0 or o["hi"] < 0 for o in _oth) and _hold1 == 4
       and _scl["all on within_5pct"]["spearman_rho"] < 0 and _scl["all on within_5pct"]["p_value"] < 0.05
       and "drawing the rank at random would hide it, but for a grader that \\emph{follows the nearest option}, "
           "selecting the option nearest the submitted number, this conflicts with rejecting misses "
-          "(Observation~\\ref{obs:bracket}, Figure~\\ref{fig:overview}a); real graders bear this cost to the extent "
+          "(Observation~\\ref{obs:bracket}, Figure~\\ref{fig:overview}a); \\item real graders bear this cost to the extent "
           "that they follow the nearest option (\\S\\ref{sec:cost}), and no design of the option values escapes it "
           "(\\S\\ref{sec:design})." in _flat
       and _rule7 > 0 and _rule_all > 0
@@ -3484,14 +3486,15 @@ check(len(_rw_caps) == 1,
 _q14 = _osh["Qwen2.5-14B"]
 # app:arms: the five models that parse keep their margins through the rank-uniform rewrite
 check(len(_osh) == 6 and len(_parse) == 5 and not any(x["lo"] > 0 or x["hi"] < 0 for x in _rr_d)
-      and "with options, drawing the key's rank uniformly changes the margin of none of the five whose replies "
+      and "With options, drawing the key's rank uniformly changes the margin of none of the five whose replies "
           "could be read" in _flat,
       "app:arms no longer finds the five parsed models keeping their margins under the rank-uniform rewrite")
 _ws = _rat["withheld_summary"]
 _num13 = {9: "nine", 10: "ten", 8: "eight", 7: "seven"}
-check(_ws["n_models"] == 13 and f"Thirteen open-weight models shown v1.5's options without the question select the "
-      f"second-smallest on at most ${_ws['max_second_smallest_pick_share']:.1f}\\%$ of their runs, where the key lies "
-      f"on ${_p15[1]:.1f}\\%$ of the items" in _flat,
+check(_ws["n_models"] == 13 and f"Thirteen open-weight models shown v1.5's options without the question select "
+                                f"the second-smallest on at most ${_ws['max_second_smallest_pick_share']:.1f}"
+                                f"\\%$ of their runs, though the key is second-smallest on ${_p15[1]:.1f}\\%$ "
+                                f"of the items." in _flat,
       "sec:open's question-blind pick-rank sentence is stale")
 _w13 = {1: "one", 2: "two", 3: "three", 4: "four", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
 check(all(v["n"] == 3 * _b15["n_numeric_items"] for v in _rat["open_question_withheld"].values()),
@@ -3508,8 +3511,8 @@ _rpl_all = load("results/replication.json")
 for _res in [_rpl_all["D1"]] + [v for k, v in _rpl_all.get("D2", {}).items() if k != "run_to_run"]:
     _lv += [v["level"] for k, v in _res.items() if k.startswith(("gain|", "repaired-placebo|")) and v]
     _lv += [v["level"] for v in _res["per_run"].values() if v]
-check("so each interval uses the level that does cover it $95\\%$ of the time on data built like its own; where no "
-      "level does, none is given (Appendix~\\ref{app:stats})" in _flat
+check("so each interval is read at the level that does cover it $95\\%$ of the time on data built like its own; "
+      "where no level does, we give none (Appendix~\\ref{app:stats})" in _flat
       and 0.95 <= min(_lv) and max(_lv) < 1.0,
       f"the Terms paragraph no longer says a capped interval is not printed, or a level is off: "
       f"{100 * min(_lv):.2f} to {100 * max(_lv):.2f}")
@@ -3578,12 +3581,13 @@ check(_push_gap == 15 and "Replication D1" in Path("provenance/plan_commit.txt")
 check(len(_rep.PREDICTIONS) == 6 and "**H6**" in _prereg[:6631].decode()
       and "we fixed six hypotheses about the nearest-option rule, each with a pass criterion, in a dated plan "
           "(Appendix~\\ref{app:replication}, Table~\\ref{tab:predictions})" in _flat
-      and f"in a plan dated {_d1_day} September 2026, before the published runs were analysed and before the new runs "
-          f"were made. It was committed to our version history and pushed to GitHub, whose push record, archived with "
-          f"the code, dates the push at {_push_plan:%H:%M} UTC, ${_push_gap}$ minutes before that of the first "
-          f"results." in _flat
+      and f"in a plan dated {_d1_day} September 2026, before the published runs were analysed and before the "
+          f"new runs were made. We committed the plan to our version history and pushed it to GitHub, whose "
+          f"push record, archived with the code, dates the push at {_push_plan:%H:%M} UTC, ${_push_gap}$ "
+          f"minutes before the push of the first results." in _flat
       and "not registered publicly" not in _flat.split("\\paragraph{Limitations.}")[0]
-      and "the plan was not registered publicly, so the evidence that it preceded the analysis rests on GitHub's "
+      and "The plan of the pre-specified test was not registered publicly, so the evidence that it preceded the "
+          "analysis rests on GitHub's "
           "record of the push, archived with the code (Appendix~\\ref{app:replication})" in _flat,
       "the paper misstates the hypotheses the plan fixes, its date, or the push record")
 check(all(_d1["verdicts"].values()) and sorted(_d1["verdicts"]) == ["H1", "H2", "H3", "H4", "H5"],
@@ -3608,9 +3612,10 @@ _unk = load("results/miss_anatomy.json")["unchanged_keys"]["v1.0, published"]
 _flip = _unk["parts"]["the other extreme"]
 _q235 = _rpl["D2"]["qwen3-235b|data"]
 check(_q235["gain|moved to an edge"]["lo"] == 0.0 and not _q235["verdicts"]["H1"]
-      and f"Of the two whose outcome Observation~\\ref{{obs:bracket}} does not fix, H4 holds there too, and H2 fails on the published "
-          f"runs, where ${_flip['contribution']:.1f}$ of the unchanged keys' ${_kpt['mean']:+.1f}$ points come "
-          f"from ${_flip['n_items']}$ keys that $U$ moves from one extreme to the other." in _flat
+      and f"Of the two whose outcome Observation~\\ref{{obs:bracket}} does not fix, H4 passes there too, and "
+          f"H2 fails on the published runs, where ${_flip['contribution']:.1f}$ of the unchanged keys' "
+          f"${_kpt['mean']:+.1f}$ points come from ${_flip['n_items']}$ keys that $U$ moves from one extreme "
+          f"to the other." in _flat
       and _d1["verdicts"]["H4"] and _rpl["D2"]["reruns|data"]["verdicts"]["H4"] and _d1["verdicts"]["H2"]
       and _q235["repaired-placebo|moved to an edge"]["lo"] < 0 < _q235["gain|kept"]["lo"]
       and abs(_unk["mean"] - _kpt["mean"]) < 0.05 and _flip["contribution"] > _unk["mean"] / 2
@@ -3646,9 +3651,9 @@ check(all(_rr["verdicts"].values()) and len(_rr["verdicts"]) == 5
       and sorted(k for k, v in _q3["verdicts"].items() if v) == ["H3", "H5"]
       and _q3n["verdicts"] == {"H6": True} and _rrn["verdicts"] == {"H6": True}
       and _q3["gain|moved inward"].get("level_capped")
-      and "so these test only whether the effect is large enough to detect; they pass on the published runs and the "
-          "new seeds" in _flat
-      and "Of the two whose outcome Observation~\\ref{obs:bracket} does not fix, H4 holds there too" in _flat
+      and "so these test only whether the effect is large enough to detect; all three pass on the published runs and "
+          "the new seeds" in _flat
+      and "Of the two whose outcome Observation~\\ref{obs:bracket} does not fix, H4 passes there too" in _flat
       and "Qwen3-235B-A22B fails H1, H2 and H4" in _flat
       and "No interval reaches $95\\%$ coverage on these" in _flat,
       f"the new runs' registered verdicts are not the ones the paper states: {_q3['verdicts']} {_rr['verdicts']} "
@@ -3660,7 +3665,7 @@ check('test = load("results/replication.json")' in Path("make_figures.py").read_
       and _d1["verdicts"]["H2"] and _kpt["lo"] > 0 and abs(_kpt["mean"]) < 5
       and "Qwen3-235B-A22B's inward keys carry no interval, as no interval reaches $95\\%$ coverage on them" in _flat
       and _q3["gain|moved inward"].get("level_capped")
-      and "H3, on where the newly accepted answers lie, passes on all three run sets." in _flat
+      and "H3 passes on all three run sets." in _flat
       and _d1["verdicts"]["H3"] and _rr["verdicts"]["H3"] and _q3["verdicts"]["H3"],
       "fig:test's caption misstates a verdict or an interval the figure leaves out")
 _rtr = _d2["run_to_run"]
@@ -3750,11 +3755,11 @@ _ng10 = f"{_g10['n']:,}".replace(",", "{,}")
 _r5 = _g10["rules"]["within 5%"]
 _dis = _r5["grader_yes_rule_no"] + _r5["grader_no_rule_yes"]
 _k15 = {t: _g15["rules"][f"within {t}%"]["kappa"] for t in (1, 2, 5)}
-check(f"the ${_t1['n_v15']}$ v1.5 keys its authors wrote as ranges have a median half-width of "
-      f"${100 * _t1['median']:.1f}\\%$, and over ${_ng10}$ of gpt-4o's and Claude 3.5 Sonnet's published "
-      f"answers BixBench v1.0's open-ended grader and a $5\\%$ tolerance disagree on ${_dis}$ "
+check(f"The ${_t1['n_v15']}$ v1.5 keys its authors wrote as ranges have a median half-width of "
+      f"${100 * _t1['median']:.1f}\\%$, and on ${_ng10}$ published answers of gpt-4o and Claude 3.5 Sonnet, "
+      f"BixBench v1.0's open-ended grader and a $5\\%$ tolerance disagree on ${_dis}$ "
       f"(${100 * _dis / _g10['n']:.1f}\\%$; chance-corrected agreement $\\kappa={_k5:.2f}$, the highest of the "
-      f"rules we tried)." in _flat
+      f"rules we tried, Table~\\ref{{tab:tolerance}})." in _flat
       and "The v1.5 graders agree best with tolerances of $1$ and $2\\%$ (Table~\\ref{tab:tolerance})" in _flat
       and _k5 == max(r["kappa"] for r in _g10["rules"].values())
       and round(_k15[1], 2) == round(_k15[2], 2) == round(max(r["kappa"] for r in _g15["rules"].values()), 2) > round(_k15[5], 2),
@@ -3793,7 +3798,8 @@ _v10_sv = {b["benchmark"]: b for b in load("results/channel_survey.json")["bench
 check(_v10_sv["n_numeric_items"] == _d1["n_numeric_items"],
       "app:replication's count of v1.0's numeric option sets is stale")
 _rq = _t3["withdata"]["5%"]["qwen72b - llama70b"]
-check(f"; intervals paired over ${_rq['n_clusters']}$ capsules at ${100 * bw.LEVEL:.0f}\\%$), the best of" in _flat,
+check(f"(Appendix~\\ref{{app:withdata}}; intervals paired over ${_rq['n_clusters']}$ capsules at "
+      f"${100 * bw.LEVEL:.0f}\\%$); the best of" in _flat,
       "tab:restated's caption misstates its capsules or level")
 
 # the repair redrawn: sec:withdata's range over 100 seeds, and the first seed is the paper's draw
@@ -3877,9 +3883,9 @@ for _rd, _md in (("gemma27b", "forced"), ("qwen72b", "forced"), ("llama70b", "fo
 _kneed += [f"seven|{r}|{c}|moved|{w}" for r in ("nearest", "own", "gemma27b")
            for c in ("repaired-released", "repaired-placebo") for w in ("all", "without audited")]
 check(all(k in _kac2 for k in _kneed) and len(_kneed) >= 40
-      and f"& ${_kac2['n_dropped']['v1.5']}$ of v1.5's $105$ items, ${_kac2['n_dropped']['v1.0']}$ of v1.0's $159$ & "
-          f"no moved-key difference of the test or of Tables~\\ref{{tab:readers2}} and~\\ref{{tab:readersfull}} changes "
-          f"by more than ${max(_moves):.1f}$" in _flat,
+      and f"but ${_kac2['n_dropped']['v1.5']}$ of v1.5's $105$ items and ${_kac2['n_dropped']['v1.0']}$ of "
+          f"v1.0's $159$ & no moved-key difference of the test or of Tables~\\ref{{tab:readers2}} "
+          f"and~\\ref{{tab:readersfull}} changes by more than ${max(_moves):.1f}$\\\\" in _flat,
       "app:replication's key-audit sentence is stale, or key_audit_check.py misses a reading the tables print: "
       f"{[k for k in _kneed if k not in _kac2][:4]}")
 check(max(_moves) < 2 and not any(k.startswith("reads|") and "codefree" in k for k in _kac2),
@@ -3997,10 +4003,10 @@ check(0.14 < _dg["mean"] / _rule_d1 < 0.2 and 0.7 < max(_qg["mean"], _g1[_mv2]["
 # the limitations
 _g4agr = load("results/published_reads_gpt-4o_forced.json")["D1"]["agreement_with_published_reader"]
 _ltr = load("results/grading_variants.json")["letter"]
-check("we substitute gpt-4o 2024-11-20 for 2024-08-06, though on the same misses the newer version selects no "
-      "option more than twice as often (Appendix~\\ref{app:replication})" in _flat
+check("we substitute gpt-4o 2024-11-20 for 2024-08-06, and no model for the retired Claude 3.5 Sonnet; on the same "
+      "misses, the newer gpt-4o selects no option more than twice as often (Appendix~\\ref{app:replication})" in _flat
       and _gdn["gpt-4o 2024-11-20"]["miss"]["no_pick"] > 2 * _gdn["published, gpt-4o"]["miss"]["no_pick"]
-      and "but not the notebook, approximating, not reproducing, the 2026 system's grader" in _flat
+      and "but not the notebook. They approximate, but do not reproduce, the 2026 system's grader." in _flat
       and abs(_ltr["accepted"]["all misses"] - _ltr["accepted_published"]["all misses"]) < 3 and _ltr["no_pick"] == 0
       and _gnd["served"] == ["gpt-4o-2024-11-20"] and any(k.startswith("claude") for k in _g4agr),
       "the limitations misstate which closed models were run again")
@@ -4189,10 +4195,10 @@ check(f"Forced to choose, BixBench's grader accepts ${min(_rel_all):.0f}$ to ${m
       and len(_rel_all) == 9 and max(_rel_all) <= 25.5
       and f"\\textbf{{Forced-choice grading accepts ${min(_rel_all):.0f}$ to ${max(_rel_all):.0f}\\%$ of the misses, "
           f"most often those nearest the key.}}" in _flat
-      and f"option is the key: on the published runs of gpt-4o and Claude 3.5 Sonnet it accepts them "
+      and f"option is the key: on the published runs of gpt-4o and Claude 3.5 Sonnet, it accepts these "
           f"${_mr(_g4, 'nearest') / _mr(_g4, 'other'):.1f}$ and ${_mr(_cl, 'nearest') / _mr(_cl, 'other'):.1f}"
-          f"$ times as often as those nearest a wrong option." in _flat
-      and f"current agents' runs forced choice still scores ${min(_curx):.0f}$ to ${max(_curx):.0f}$ "
+          f"$ times as often as wrong answers nearest a wrong" in _flat
+      and f"current agents' runs, forced choice still scores ${min(_curx):.0f}$ to ${max(_curx):.0f}$ "
           f"percentage points above" in _flat
       and min(_mr(_g4, "no number"), _mr(_cl, "no number")) > 25
       and max(_smt(_dg4)["mean"], _smt(_dcl)["mean"]) < 4
@@ -4215,7 +4221,7 @@ check(f"Forced to choose, BixBench's grader accepts ${min(_rel_all):.0f}$ to ${m
       and "Misses nearest another option are far more common, so most of the \\emph{excess}, the score minus the "
           "share within $5\\%$ of the key, comes from them and from answers with no number or no single nearest "
           "option." in _flat
-      and f"the correct answers it rejects, ${100 - _cacc(_dg4):.1f}$ and ${100 - _cacc(_dcl):.1f}\\%$ of them "
+      and f"the correct answers it rejects: ${100 - _cacc(_dg4):.1f}$ and ${100 - _cacc(_dcl):.1f}\\%$ of them "
           f"on the published runs, where it refuses ${_dg4['declined']:.0f}$ and ${_dcl['declined']:.0f}\\%$ "
           f"of runs." in _flat
       and min(_g4["pick_is_nearest"], _cl["pick_is_nearest"]) > 50
@@ -4230,7 +4236,7 @@ check(all(s["not_nearest_pick_written"] - s["not_nearest_other_written"] < 5 for
       and Path("results/score_decomposition_notebook_values.jsonl.gz").exists(),
       "app:replication's account of what the released options do is stale")
 # the recommendations: which misses a forced grader accepts most often, and the answers with no number
-check(_follow and "Forced choice accepts misses by where the options place them, and no correction for guessing "
+check(_follow and "Forced choice accepts misses by where they fall among the options, and no correction for guessing "
                   "removes this." in _flat
       and "\\emph{Report how many answers contain no number}, which a tolerance rejects and forced choice can accept "
           "(\\S\\ref{sec:withdata})." in _flat and _mr(_g4, "no number") > 0 and _ng4["graders_accept"] < 1,
@@ -4343,8 +4349,8 @@ check(len(_fsl_t1) == 9 and all("forced" in r for _, _, r in _fsl_t1)
       and "less the correct answers the grading rejects (\\emph{rej.}). The kinds are misses whose single nearest "
           "option is the key (\\emph{key}), another option (\\emph{other}), or neither (no number, or no single nearest "
           "option); an empty answer is scored wrong without grading and adds nothing" in _flat
-      and "which gives a grader that accepts every correct answer and chooses at random on every miss exactly the "
-          "tolerance's score" in _flat,
+      and "A grader that accepts every correct answer and chooses at random on every miss then gets, in expectation, "
+          "exactly the tolerance's score" in _flat,
       "tab:released's corrected column is not the correction for guessing its caption describes, or its runs differ "
       "from score_decomposition.py's")
 # what the published grades select on a miss with a single nearest option (score_decomposition.picks_rows) is no
@@ -4363,7 +4369,8 @@ _cfl = [c["proximity"]["lambda"] for k, c in load("results/grading_variants.json
         if k.startswith("v1.0, published|") and k.endswith(", codefree|original")]
 check(sorted(_pubm) == ["Claude 3.5 Sonnet", "gpt-4o"]
       and min(_cfl) <= _pubm["Claude 3.5 Sonnet"]["lambda"] <= max(_cfl) and _pubm["gpt-4o"]["lambda"] < min(_cfl)
-      and f"BixBench released its own grades only through $R$, so their cost on the published runs' moved keys can "
+      and f"BixBench released its own grades only through $R$, so the cost its graders bear on the published runs' "
+          f"moved keys can "
           f"only be predicted from their proximity weights: ${_pubm['gpt-4o']['moved']['predicted']:+.1f}$ for "
           f"gpt-4o's "
           f"($\\lambda={_pubm['gpt-4o']['lambda']:.2f}$) and "
@@ -4408,7 +4415,7 @@ check(f"nineteen run sets with the data, the rule's cost over all items falls as
       and _tr["moved on within_5pct"]["p_value"] < 0.05 and _tr["all on within_5pct"]["p_value"] < 0.05,
       "sec:withdata's account of who pays is stale")
 _pm = _rss["moved_per_miss_range"]
-check(f"and per miss on the moved keys it decreases with accuracy less than over all items (\\S\\ref{{sec:cost}}): "
+check(f"Per miss on the moved keys, it falls with accuracy more weakly than over all items (\\S\\ref{{sec:cost}}): "
       f"rank correlation ${_tr['moved_per_miss on within_5pct']['spearman_rho']:.2f}$, "
       f"$p={_tr['moved_per_miss on within_5pct']['p_value']:.3f}$." in _flat
       and _tr["moved_per_miss on within_5pct"]["spearman_rho"] > _tr["all on within_5pct"]["spearman_rho"]
@@ -4543,9 +4550,9 @@ check(len(_zs) == 3 and f"frontier agents with added skills now answer ${min(_zs
 _words = {50: "fifty"}
 _vq = int(re.search(r"Total questions (\d+)", _v5).group(1))
 _vr = int(re.search(r"range_verifier \((\d+)\)", _v5).group(1))
-check(f"BixBench-Verified-50 re-checks {_words[_vq]} of its questions with domain experts and grades the "
-      f"free-text answer, ${_vr}$ of the $50$ by a numeric range, keeping the distractors "
-      f"\\citep{{verified50}};" in _flat
+check(f"BixBench-Verified-50 has domain experts re-check {_words[_vq]} of its questions, keeps their "
+      f"distractors and grades the free-text answer, ${_vr}$ of the $50$ by a numeric range "
+      f"\\citep{{verified50}}; frontier agents with added" in _flat
       and "several domain experts" in _v5 and "distractors list Incorrect answer choices" in _v5,
       "sec:related's account of BixBench-Verified-50 no longer matches sources/cited/verified50_dataset_card.txt")
 
@@ -4569,7 +4576,7 @@ _agv = re.search(r"data-analysis-crow v(\d+\.\d+\.\d+)", _agsrc)
 check(_agv is not None and f"BixBench's data-analysis agent at version {_agv.group(1)} of" in _flat,
       "app:withdata misstates the agent's version")
 # app:replication's reading of the v1.0 grader's acceptance curve, and of tab:restated
-check("the tolerance it applies, regardless of its instructions, lies between $2$ and $10\\%$" in _flat
+check("so in effect it applies a tolerance between $2$ and $10\\%$" in _flat
       and _acc["0.01-0.02"] > 0.5 > _acc["0.02-0.05"] and _acc["0.1-0.2"] < 0.05
       and _rsh is not None
       and f"Table~\\ref{{tab:restated}} restates every tolerance-dependent result at ${_rsh.group(1)}$, "
@@ -4651,17 +4658,25 @@ check("Before analysing runs that no earlier analysis had used (the published ru
                                                            "claude_open_no_image"))
       and sorted(_rpl5["D2"]["qwen3-235b|data"]["n_trajectories"]) == ["qwen3-235b|r0", "qwen3-235b|r1"],
       "sec:withdata names other runs for the pre-specified test than replication.json holds")
-check("Qwen2.5-72B and Llama-3.3-70B graded only the new seeds' moved keys." in _flat
+check("On the new seeds, Qwen2.5-72B and Llama-3.3-70B graded only the moved keys." in _flat
       and all(load(f)["D2|reruns|data"].get("groups_read") == ["moved to an edge"]
               for f in ("results/published_reads_qwen72b_forced.json", "results/published_reads_llama70b_forced.json")),
       "tab:readers2's caption misstates which keys Qwen2.5-72B and Llama-3.3-70B graded on the new seeds")
-check("The ten findings corrected jointly were chosen after the v1.5 results" in _flat
+check("Graders as in Table~\\ref{tab:readers2}; on the v1.5 runs, Qwen2.5-72B and Llama-3.3-70B graded only the moved "
+      "keys (--: not graded)." in _flat
+      and all(v["groups_read"] == ["moved to an edge"] for f in ("results/published_reads_qwen72b_forced.json",
+                                                                 "results/published_reads_llama70b_forced.json")
+              for k, v in load(f).items() if k.startswith(("D0", "D2")))
+      and all(len(load(f)["D1"]["groups_read"]) == 3 for f in ("results/published_reads_qwen72b_forced.json",
+                                                               "results/published_reads_llama70b_forced.json")),
+      "tab:readersfull's caption misstates which keys Qwen2.5-72B and Llama-3.3-70B graded on the v1.5 runs")
+check("We chose the ten findings corrected jointly after the v1.5 results" in _flat
       and "We chose the hypotheses, and the split into moved and unchanged keys, after the first v1.5 results"
           in _flat
       and "v1.0, published$^{\\dagger}$ & $159$" in _flat and "v1.5, seven configurations & $105$" in _flat,
       "the limitations or tab:released's caption name another release")
-check("With BixBench's prompt and the notebook, Qwen2.5-72B and Llama-3.3-70B graded every run in a random quarter "
-      "of the published runs and every run on a moved key, and gemma-3-27b graded every run of the test" in _flat
+check("With BixBench's prompt and the notebook, Qwen2.5-72B and Llama-3.3-70B graded a random quarter of the "
+      "published runs and every run on a moved key, and gemma-3-27b graded every run of the test" in _flat
       and load("results/published_reads.json")["reader"] == "gemma27b"
       and load("results/published_reads_gemma27b_decline.json")["reader"] == "gemma27b",
       "app:replication names another grader for the test's runs or for grading with refusal")
@@ -4759,7 +4774,7 @@ _wtc_all = [100 - v["released"]["correct|accepted"] for v in _gv["withintol"].va
 check(all(_rkm(f, g)["lo"] > 0 for f in ("v1.0, published", "v1.5, new seeds")
           for g in ("gpt-4o, codefree", "gemma-3-27b, codefree"))
       and "\\emph{If free-text answers must be graded through options, add an option saying that no value is within "
-          "the tolerance}, and report the correct answers it rejects (\\S\\ref{sec:design})." in _flat
+          "the tolerance}, and report how many correct answers the grader then rejects (\\S\\ref{sec:design})." in _flat
       and min(_wtc_all) > 0 and 100 - _cacc(_dg4) > 0
       and all(w["lo"] <= 0 <= w["hi"] for w in _wtm),
       "the introduction's or the recommendations' account of the other gradings is stale")
@@ -4803,7 +4818,7 @@ check(sorted(_q3new["n_trajectories"]) == ["qwen3-235b|r2", "qwen3-235b|r3", "qw
       and all(n == 105 for n in _q3new["n_numeric_runs"].values())
       and f"four more runs of Qwen3-235B-A22B, after the test & $420$ question runs & "
           f"{_qci(_q3new['repaired-placebo|moved to an edge'])}; with the test's two runs "
-          f"{_qci(_q3all['repaired-placebo|moved to an edge'])}; its "
+          f"{_qci(_q3all['repaired-placebo|moved to an edge'])}; on its "
           f"${_q3all['unchanged_split']['parts']['same rank']['n_items']}$ unchanged keys whose rank $U$ "
           f"leaves as released, ${_q3all['unchanged_split']['parts']['same rank']['U-P']:+.1f}$\\\\" in _flat and "was one of power" not in _flat and len({c["question_id"] for c in _q3cut}) <= 1
       and sum(t.get("wallclock", 0) for t in _q3x["terminations"].values()) == len(_q3cut)
@@ -4835,9 +4850,9 @@ check(f"rule that selects the option with the fewest significant digits is then 
       f"${_fd(_dms, 'placebo')}$ and ${_fd(_dms, 'repaired')}\\%$ of v1.5's $P'$ and $U'$, against "
       f"${_fd(_dmo, 'released')}\\%$ on $R$ and ${_fd(_dmo, 'placebo')}$ and ${_fd(_dmo, 'repaired')}\\%$ on "
       f"$P$ and $U$." in _flat
-      and f"runs but DeepSeek-V4-Pro's, the rule's $U'-P'$ lies within ${_dmdiff:.1f}$ points of its $U-P$ on "
-          f"the moved keys, the unchanged keys and all items; DeepSeek-V4-Pro's cost rests on two to four "
-          f"answers and falls to zero." in _flat
+      and f"DeepSeek-V4-Pro's, the nearest-option rule's $U'-P'$ lies within ${_dmdiff:.1f}$ points of its "
+          f"$U-P$ on the moved keys, the unchanged keys and all items; DeepSeek-V4-Pro's cost rests on two to "
+          f"four answers and falls to zero." in _flat
       and _dmlu <= _dmdiff
       and all(abs(_dmds["digit-matched"][f"repaired-placebo|{g}"]["mean"]) < 1e-9 for g in ("moved to an edge", "kept", "all"))
       and 2 <= round(_dmds["original"]["repaired-placebo|moved to an edge"]["mean"] * 37 / 100)
@@ -4884,9 +4899,9 @@ check(min(_own15["released"]["key_rank"][1], _gem15["released"]["key_rank"][1]) 
 _u10 = _man["unchanged_keys"]["v1.0, published"]
 _u10p = _u10["parts"]
 _uq3 = _man["unchanged_keys"]["v1.5, Qwen3-235B-A22B"]["parts"]["same rank"]
-check(f"On the ${_u10p['the other extreme']['n_items']}$ unchanged keys that $U$ moves from one extreme to the "
-      f"other, whose open side it moves (\\S\\ref{{sec:cost}}), $U-R$ is "
-      f"${_u10p['the other extreme']['U-R']:+.1f}$ points on the published runs." in _flat
+check(f"$U$ moves ${_u10p['the other extreme']['n_items']}$ unchanged keys from one extreme to the other, "
+      f"which changes their open side (\\S\\ref{{sec:cost}}); on them $U-R$ is "
+      f"${_u10p['the other extreme']['U-R']:+.1f}$ points." in _flat
       and f"rank $U$ leaves as released, $U$ gains ${_uq3['U-R']:+.1f}$ points against $R$ and "
           f"${_uq3['U-P']:+.1f}$ against $P$."
           in _flat,
@@ -4960,12 +4975,12 @@ _frng = lambda k, xs: sorted(_fpt(x, k) for x in xs)
 _fci = lambda x: f"${_fcm(x)['mean']:+.1f}$ $[{_fcm(x)['lo']:+.1f},{_fcm(x)['hi']:+.1f}]$"
 _empty = lambda x: x["parts"]["empty"]["share_of_runs"]
 check(f"corrected score comes close to the tolerance's (Table~\\ref{{tab:released}}, \\emph{{corrected}}), but "
-      f"as a sum of opposite parts (Table~\\ref{{tab:formula}}): relative to a random choice, the misses "
+      f"only as a sum of opposite parts (Table~\\ref{{tab:formula}}): relative to a random choice, the misses "
       f"nearest the key add ${_fpt(_fg4, 'miss, key nearest'):.1f}$ and ${_fpt(_fcl, 'miss, key nearest'):.1f}"
       f"$ points and those nearest another option subtract ${-_fpt(_fg4, 'miss, other nearest'):.1f}$ and "
-      f"${-_fpt(_fcl, 'miss, other nearest'):.1f}$. On v1.5 it falls below the tolerance's, largely because "
-      f"forced graders sometimes select no option, which the correction counts as a wrong guess rather than as "
-      f"a skipped question" in _flat
+      f"${-_fpt(_fcl, 'miss, other nearest'):.1f}$. On v1.5 the corrected score falls below the tolerance's, "
+      f"largely because forced graders sometimes select no option, which the correction counts as a wrong "
+      f"guess rather than a skipped" in _flat
       and all(_fpt(x, "miss, key nearest") > 0 > _fpt(x, "miss, other nearest") for x in (_fg4, _fcl))
       and all(_fcm(x)["mean"] < 0 for x in _fv15) and all(_fcm(x)["hi"] < 0 for x in _f15)
       and _foa(_f15[0]) < 0 < min(_foacur)
@@ -4990,14 +5005,16 @@ check(max(abs(_fcm(_fcf[0])["mean"]), abs(_fcm(_fcf[1])["mean"])) < 4 and _fcm(_
 _fce = [_fpt(x, "correct") + _fpt(x, "empty") for x in _fv15]
 check(all(_fpt(x, "miss, other nearest") + _fpt(x, "correct") + _fpt(x, "empty") < -_fpt(x, "miss, key nearest")
               for x in _fv15)
-      and f"moves the corrected score minus the tolerance for the published gpt-4o runs from "
-          f"${_fcm(_fg4)['mean']:+.1f}$ to ${_foa(_fg4):+.1f}$, for gpt-5.1 from ${_fcm(_fcur[0])['mean']:+.1f}"
-          f"$ to ${_foa(_fcur[0]):+.1f}$ and for gpt-6-luna and DeepSeek-V4-Pro from "
+      and f"answer, as skipped rather than wrong moves the corrected score minus the tolerance from "
+          f"${_fcm(_fg4)['mean']:+.1f}$ to ${_foa(_fg4):+.1f}$ for the published gpt-4o runs, from "
+          f"${_fcm(_fcur[0])['mean']:+.1f}$ to ${_foa(_fcur[0]):+.1f}$ for gpt-5.1, and from "
           f"${_fcm(_fcur[1])['mean']:+.1f}$ and ${_fcm(_fcur[2])['mean']:+.1f}$ to ${_foa(_fcur[1]):+.1f}$ and "
-          f"${_foa(_fcur[2]):+.1f}$. gpt-4o selects no option on ${_fsel(_fg4):.1f}$, ${_fsel(_fcur[0]):.1f}$, "
-          f"${_fsel(_fcur[1]):.1f}$ and ${_fsel(_fcur[2]):.1f}\\%$ of their misses, the seven configurations' "
-          f"graders on ${_fsel(_f15[0]):.1f}\\%$ (their difference moves to ${_foa(_f15[0]):+.1f}$), and the "
-          f"other forced gradings of Table~\\ref{{tab:formula}} on fewer than $3\\%$." in _flat
+          f"${_foa(_fcur[2]):+.1f}$ for gpt-6-luna and DeepSeek-V4-Pro. gpt-4o selects no option on "
+          f"${_fsel(_fg4):.1f}$, ${_fsel(_fcur[0]):.1f}$, ${_fsel(_fcur[1]):.1f}$ and ${_fsel(_fcur[2]):.1f}"
+          f"\\%$ of these runs' misses, in that order. The seven configurations' graders do so on "
+          f"${_fsel(_f15[0]):.1f}\\%$, and counting those grades as skipped moves their difference to "
+          f"${_foa(_f15[0]):+.1f}$; the other forced gradings of Table~\\ref{{tab:formula}} do so on fewer "
+          f"than $3\\%$." in _flat
       and max(_fsel(x) for x in (_fcl, _f15[1], _f15[2], _fx("v1.5", "pooled", "gemma forced"))) < 3,
       "app:replication's account of what the correction for guessing leaves is stale")
 
@@ -5042,7 +5059,7 @@ check(sorted(_odg) == ["gemma27b", "gpt-4o", "llama70b", "qwen72b"]
       and _kall(_R10)[2] < _kall(_R10)[0] and _kall(_R15)[2] < _kall(_R15)[0]
       and all(_pr(R, f"k{k}-uniform - k{k}-middle", "all")["lo"] > 0 for R in (_R10, _R15) for k in (4, 8))
       and max(_gsp('k8-middle-s0.2', 'misses_accepted')) < min(_gsp('k4-released', 'misses_accepted'))
-      and f"uniformly without the cost, since the grader applies the tolerance itself, but it rejects "
+      and f"uniformly without the cost, since the grader applies the tolerance itself, but such graders reject "
           f"${min(_wtc_all):.1f}$ to ${max(_wtc_all):.1f}\\%$ of correct answers "
           f"(Appendix~\\ref{{app:replication}})." in _flat
       and f"counting wrong selections too, they reject ${min(_wtc_all):.1f}$ to ${max(_wtc_all):.1f}\\%$ of the "
@@ -5099,7 +5116,8 @@ check(_lhj["all_reproduce_figure"] and len(_lhg) == _lhs["non-moved keys"]["n"] 
           f"those keys, and the observed cost lies within its prediction's interval for ${_lhin}$ of the $42$" in _flat
       and f"though such predictions err by ${_lhs['non-moved keys']['mae']:.1f}$ points on average "
           f"(Appendix~\\ref{{app:replication}})" in _flat
-      and "So $\\lambda$ orders graders but predicts the size of their cost only roughly." in _flat
+      and "The proximity weight predicts which graders bear more of the rule's cost, but the size of that cost only "
+          "roughly." in _flat
       and _lhbias["code-free"] < 0 < _lhbias["none within 5%"]
       and _lhs["kind share"]["mae"] < _lhs["non-moved keys"]["mae"] < _lhs["constant share"]["mae"]
       and _lhi["mae difference, constant share minus non-moved keys"][0] > 0,
@@ -5159,11 +5177,11 @@ check(len(_d7) == 7 and len(_dns) == 6
       "the account of degenerate runs no longer matches degenerate_runs.json")
 _dpc = lambda key, who="configurations": _dpm[key][who]
 check(f"When one answer-only grader grades ${_dpc('gemma-3-27b code-free|misses_accepted')['n']}$ of the "
-      f"${_dpc('as graded|misses_accepted')['n']}$ run sets, the share of misses it accepts rises with accuracy "
-      f"(${_dpc('gemma-3-27b code-free|misses_accepted')['rho']:+.2f}$ for gemma-3-27b, "
+      f"${_dpc('as graded|misses_accepted')['n']}$ run sets, the share of misses it accepts rises with "
+      f"accuracy (${_dpc('gemma-3-27b code-free|misses_accepted')['rho']:+.2f}$ for gemma-3-27b, "
       f"${_dpc('gpt-4o code-free|misses_accepted')['rho']:+.2f}$ for gpt-4o), unlike the share each run set's "
-      f"forced grading accepts (\\S\\ref{{sec:withdata}}); a more accurate agent's misses more often lie nearest "
-      f"the key (${_dpk['rho']:+.2f}$, $p={_dpk['p']:.3f}$)." in _flat
+      f"forced grading accepts (\\S\\ref{{sec:withdata}}). A more accurate agent's misses also lie nearest the "
+      f"key more often (${_dpk['rho']:+.2f}$, $p={_dpk['p']:.3f}$)." in _flat
       and _dpc("as graded|misses_accepted")["p"] >= 0.05
       and _dpc("as graded|misses_accepted", "models")["n"] == 11 and _dpc("as graded|misses_accepted")["n"] == 22
       and all(_dpc(f"{g} code-free|misses_accepted")["n"] == 20 for g in ("gemma-3-27b", "gpt-4o"))
@@ -5181,8 +5199,8 @@ check(len(_v5j["question_ids"]) == 50 and _v5o["in_v15"] == 50
       and f"forced-choice excess {_dsc(_v5x('seven configurations')['score_minus_tolerance'])} (seven configurations) "
           f"and {_dsc(_v5x('new seeds')['score_minus_tolerance'])} (new seeds); the rule's $U-P$ "
           f"{_dsc(_v5m('seven configurations'))} and {_dsc(_v5m('new seeds'))}" in _flat
-      and f"Keys are taken as released, though on the ${_v5o['numeric']}$ numeric items whose keys "
-          f"BixBench-Verified-50's experts re-checked the excess and the rule's cost are about the same as on "
+      and f"We take the keys as released; on the ${_v5o['numeric']}$ numeric items whose keys "
+          f"BixBench-Verified-50's experts re-checked, the excess and the rule's cost are about the same as on "
           f"all items (Table~\\ref{{tab:robust}})." in _flat
       and _v5x("seven configurations")["score_minus_tolerance"]["lo"] > 0 and _v5m("seven configurations")["lo"] > 0,
       "the account of the questions BixBench-Verified-50 re-checked no longer matches verified50.json")
@@ -5249,18 +5267,19 @@ check(Path(_fsup).exists() and hashlib.md5(Path(_fsup).read_bytes()).hexdigest()
 _fsr0 = {(r["block"], r["group"], r["reading"]): r for r in load("results/formula_scoring.json")["rows"]}
 _fnp = [100 - _fsr0[("current", k, "gpt-4o forced")]["misses_selected"] for k in _ford]
 _fpara = (
-    f"DeepSeek-V4-Pro's first runs had two copies of our run script writing to one directory, each overwriting runs "
-    f"the other had finished; we ran all ${_fnrun}$ again on 1 October with one copy and report these, and both sets "
-    f"ship with the code. gpt-4o selects no option on about half of the current agents' misses "
-    f"(Appendix~\\ref{{app:guessing}}); on the quarter of the published runs that it regraded, it did so on "
-    f"${_gdn['gpt-4o 2024-11-20']['miss']['no_pick']:.1f}\\%$ of the misses, where BixBench's own grades, by "
-    f"version 2024-08-06, did on ${_gdn['published, gpt-4o']['miss']['no_pick']:.1f}\\%$. "
-    f"Kimi-K3 is left out: its long answers state its number first, so gpt-4o grades "
-    f"${_frK['open']['mean']:.1f}\\%$ of them correct open-ended, while the last number, which the tolerance reads, is "
-    f"within $5\\%$ of the key in ${_frK['within_5pct']['mean']:.1f}\\%$ and the first number in "
-    f"${_frK['within_5pct_first']['mean']:.1f}\\%$.")
+    f"In DeepSeek-V4-Pro's first runs, two copies of our run script wrote to one directory and overwrote each other's "
+    f"finished runs; we ran all ${_fnrun}$ again on 1 October with one copy and report these, and both sets ship with "
+    f"the code. gpt-4o selects no option on about half of the current agents' misses "
+    f"(Appendix~\\ref{{app:guessing}}), as it does on the published runs: on the quarter of them that it regraded, it "
+    f"selected none on ${_gdn['gpt-4o 2024-11-20']['miss']['no_pick']:.1f}\\%$ of the misses, against "
+    f"${_gdn['published, gpt-4o']['miss']['no_pick']:.1f}\\%$ in BixBench's own grades, made by version 2024-08-06. "
+    f"We leave out Kimi-K3, whose long answers state their number first: gpt-4o grades "
+    f"${_frK['open']['mean']:.1f}\\%$ of them correct open-ended, but the last number, which the tolerance reads, is "
+    f"within $5\\%$ of the key in only ${_frK['within_5pct']['mean']:.1f}\\%$, against "
+    f"${_frK['within_5pct_first']['mean']:.1f}\\%$ for the first number.")
 check(_fpara in _flat
-      and all(40 < x < 60 for x in [100 - _fsr0[("v1.5 closed", "gpt-5.1", "gpt-4o forced")]["misses_selected"], *_fnp])
+      and all(40 < x < 60 for x in [100 - _fsr0[("v1.5 closed", "gpt-5.1", "gpt-4o forced")]["misses_selected"], *_fnp,
+                                  _gdn["gpt-4o 2024-11-20"]["miss"]["no_pick"]])
       and min(_fw) > _s51f["tolerance"] and min(_fw) > max(r["within_5pct"] for r in _rss["run_sets"].values())
       and _frK["median_answer_chars"] > 5 * max(_fch) and _frK["open"]["mean"] > _frK["within_5pct"]["mean"] + 15
       and _frK["within_5pct_first"]["mean"] > _frK["within_5pct"]["mean"] + 15
