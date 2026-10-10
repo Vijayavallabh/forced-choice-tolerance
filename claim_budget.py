@@ -499,9 +499,9 @@ ROWS = {"rank rule": ("A rule that ignores the question selects the second-small
                                          "v1.0, $159$ numeric; within $5\\%$"),
         "forced over tolerance|Claude 3.5 Sonnet": ("The same, Claude 3.5 Sonnet's",
                                                     "v1.0, $159$ numeric; within $5\\%$"),
-        "key over other|gpt-4o": ("Its acceptance of misses nearest the key, gpt-4o's published runs",
-                                  "v1.0; misses nearest another"),
-        "key over other|Claude 3.5 Sonnet": ("The same, Claude 3.5 Sonnet's", "v1.0; misses nearest another"),
+        "key over other|gpt-4o": ("Its acceptance of wrong answers nearest the key, gpt-4o's published runs",
+                                  "v1.0; wrong answers nearest another"),
+        "key over other|Claude 3.5 Sonnet": ("The same, Claude 3.5 Sonnet's", "v1.0; wrong answers nearest another"),
         "corrected below tolerance": ("The tolerance above the forced-choice score corrected for guessing, seven "
                                       "configurations", "v1.5, $105$ numeric; the correction"),
         "current agents|gpt-5.1": ("Forced-choice grading by gpt-4o, gpt-5.1's runs", "v1.5, $105$ numeric; within $5\\%$"),

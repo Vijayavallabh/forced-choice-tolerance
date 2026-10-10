@@ -91,8 +91,8 @@ def test_prediction_rows_state_each_verdict_and_the_equivalence_reading():
     assert "$-5.0$$^{\\ddagger}$ pass" in rows[4]                     # the capped inward interval
     assert rows[5].startswith("H6") and " -- " in rows[5]              # D1 registered no H6
     eq = rows[-1]
-    assert eq.count("not shown") == 2 and "& shown &" in eq           # the new seeds' interval sits inside
-    assert "not shown (upper end $+6.8$)" in eq and "not shown (upper end $+14.9$)" in eq
+    assert eq.count("fails (") == 2 and "& passes &" in eq           # the new seeds' interval sits inside
+    assert "fails (upper end $+6.8$)" in eq and "fails (upper end $+14.9$)" in eq
 
 
 def test_claims_table_marks_what_does_not_clear():

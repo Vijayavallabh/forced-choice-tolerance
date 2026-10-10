@@ -13,12 +13,12 @@ One command, ``python3 make_figures.py`` from any directory, writes every figure
     figures/overview_full.{pdf,png}  Figure 1 with all four panels, for the poster
     figures/design.{pdf,png}         Figure 2: what is compared, one answer graded two ways
     figures/cost.{pdf,png}           Figure 3: who bears the cost of a hidden rank, and what each design trades
-    figures/test.{pdf,png}           Figure 4: the pre-specified test, each hypothesis on each data set
-    figures/norank.{pdf,png}         Figure 6: no model we tested follows v1.5's key rank
-    figures/withdata.{pdf,png}       Figure 8: with the data, the options decide the reading
+    figures/test.{pdf,png}           Figure 8: the pre-specified test, each hypothesis on each data set
+    figures/norank.{pdf,png}         Figure 5: no model we tested follows v1.5's key rank
+    figures/withdata.{pdf,png}       Figure 7: with the data, the options decide the reading
     figures/scaling.{pdf,png}        Figure 9: the cost of a hidden rank against agent accuracy
 
-(Figures 5 and 7, the prompts, are typeset in main.tex.)
+(Figures 4 and 6, the prompts, are typeset in main.tex.)
 
 Canvases are the NeurIPS text width, 5.5 in, and the paper includes each at
 ``width=\\linewidth`` with no trim, so the absolute font sizes below are the
@@ -113,12 +113,12 @@ def panel_a(ax):
     # Values on a line; the agent's answer (triangle) is read as the nearest option.
     ROWS = [(0.66, "Bracketed key (middle)", [0.05, 0.36, 0.50], 0.21,
              [(0.11, False), (0.31, False)],
-             ["without data: the 2nd smallest", "is the key", "with data: a far miss on either",
-              "side is nearer a distractor"]),
+             ["without data: the 2nd smallest", "is the key", "with data: a far-off answer on",
+              "either side is nearer a distractor"]),
             (0.16, "Extreme key (at an end)", [0.24, 0.36, 0.50], 0.09,
              [(0.02, True)],
-             ["without data: no rank favoured", "(rank drawn uniformly)", "with data: any miss on the",
-              "open side is nearest the key"])]
+             ["without data: no rank favoured", "(rank drawn uniformly)", "with data: any wrong answer on",
+              "the open side is nearest the key"])]
     for y, label, distractors, key, misses, notes in ROWS:
         ax.plot([0.0, 0.54], [y, y], color="black", lw=0.7)
         ax.annotate("", xy=(0.56, y), xytext=(0.52, y),
@@ -344,7 +344,7 @@ def panel_designs(ax):
     ax.set_xlim(lo_x, max(xs) + 4.5)
     ax.set_ylim(0, hi_y)
     ax.set_xlabel("rank leak on held-out capsules (points)")
-    ax.set_ylabel("misses the nearest-option\nrule accepts (%)")
+    ax.set_ylabel("wrong answers the nearest-\noption rule accepts (%)")
     title(ax, "(b) What each design trades")
     spines(ax)
 
@@ -357,7 +357,7 @@ panel_designs(fig.add_subplot(grid[1]))
 save(fig, "cost")
 
 # ---------------------------------------------------------------------------
-# Figure 4: the pre-specified test -- each hypothesis's contrast under the nearest-option rule on each data set
+# Figure 8: the pre-specified test -- each hypothesis's contrast under the nearest-option rule on each data set
 # ---------------------------------------------------------------------------
 test = load("results/replication.json")
 # (hypothesis, what it contrasts, its result key, read without the data); H3, a share of the newly accepted runs,
@@ -403,7 +403,7 @@ fig.legend(handles=handles, loc="center left", bbox_to_anchor=(0.725, 0.56), fra
 save(fig, "test")
 
 # ---------------------------------------------------------------------------
-# Figure 6: no model we tested follows v1.5's key rank
+# Figure 5: no model we tested follows v1.5's key rank
 # ---------------------------------------------------------------------------
 import bixbench_v10_grid as v10grid
 import icl_analysis as icla
@@ -457,7 +457,7 @@ fig.tight_layout(pad=0.3, w_pad=1.2)
 save(fig, "norank")
 
 # ---------------------------------------------------------------------------
-# Figure 8: with the data, the options decide the reading
+# Figure 7: with the data, the options decide the reading
 # ---------------------------------------------------------------------------
 withdata = load("results/bixbench_withdata.json")
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(WIDTH, 2.25), gridspec_kw={"width_ratios": [0.9, 1.1]})
@@ -528,7 +528,7 @@ fig = plt.figure(figsize=(WIDTH, 2.0))
 axes = [fig.add_axes([0.075, 0.2, 0.31, 0.68]), fig.add_axes([0.47, 0.2, 0.31, 0.68])]
 # each panel's correlation is printed in a corner its points leave empty
 PANELS = (("all", "all on within_5pct", "(a) Over all numeric items", "$U-P$ (points)", (0.97, 0.95, "right", "top")),
-          ("moved_per_miss", "moved_per_miss on within_5pct", "(b) Moved keys, per miss", "$U-P$ per miss (points)",
+          ("moved_per_miss", "moved_per_miss on within_5pct", "(b) Moved keys, per wrong answer", "$U-P$ per wrong answer (points)",
            (0.03, 0.04, "left", "bottom")))
 for ax, (field, trend, heading, ylabel, (tx, ty, ha, va)) in zip(axes, PANELS):
     for name, r in sets:

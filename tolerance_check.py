@@ -272,7 +272,7 @@ def table_rows(report):
                        ("v1.5|DeepSeek-V4-Pro|may decline", "\\quad v1.5, DeepSeek-V4-Pro, with refusal")):
         rows.append(f"{label} & " + " & ".join(f(rr[key][t]) for t in tols) + "\\\\")
     wr = t3["writers"]
-    for key, label in (("v1.5|released", "Misses the rule accepts, v1.5, $R$"),
+    for key, label in (("v1.5|released", "Wrong answers the rule accepts, v1.5, $R$"),
                        ("v1.5|rank uniform", "\\quad v1.5, $U$"),
                        ("v1.0|released", "\\quad v1.0, $R$"),
                        ("v1.0|rank uniform", "\\quad v1.0, $U$")):

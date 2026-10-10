@@ -248,7 +248,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   and +1.4) and, under BixBench's template, keeps its margin when every
   distractor is redrawn: the margin rests on the question and the key's value,
   not on the options' rank.
-- **Solved examples in context** (`icl_probe.py`, `icl_analysis.py`, Figure 6b).
+- **Solved examples in context** (`icl_probe.py`, `icl_analysis.py`, Figure 5b).
   Eight open models, 1.5 to 72B, shown up to 64 solved v1.5 items from other
   capsules gain no more from examples at the released ranks than from the
   same examples redrawn to a uniform rank (-1.3 to +1.3 points at 64 examples,
@@ -274,7 +274,7 @@ states are pinned to `main.tex` by `validate_artifact.py` (run it with
   the v1.5 graders agree best with 1 or 2% (kappa 0.81 against 0.77 at 5%).
   The paper's tolerance verdicts are restated at 1, 2, 5 and 10%.
 - **The reader** (`prompt_factorial.py`, `prompt_factorial_summary.py`; not in
-  the paper, whose Figure 6a keeps the thirteen models on BixBench). One instruction sentence of BixBench's template moves a
+  the paper, whose Figure 5a keeps the thirteen models on BixBench). One instruction sentence of BixBench's template moves a
   question-blind reading on MMLU-Pro by 3.4 to 7.3 points on each of three
   models.
 - **The closed models** (`openai_api.py`, `openai_nodata.py`,

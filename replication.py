@@ -560,7 +560,7 @@ def prediction_rows(report):
     eq = []
     for name, res, _ in sets:
         v = res["gain|kept"]
-        eq.append("shown" if -5 < v["lo"] and v["hi"] < 5 else f"not shown (upper end ${v['hi']:+.1f}$)")
+        eq.append("passes" if -5 < v["lo"] and v["hi"] < 5 else f"fails (upper end ${v['hi']:+.1f}$)")
     rows.append("H2 as equivalence & the whole interval within $\\pm5$ points & " + " & ".join(eq) + "\\\\")
     return rows
 
